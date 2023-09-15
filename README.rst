@@ -1,0 +1,4 @@
+===========
+informatics
+===========
+basic algorithm toolkit
