@@ -1,47 +1,62 @@
 [project]
-name = "informatics"
-version = "0.0.1"
+name = 'informatics'
+version = '0.0.4rc0'
 license = {file = "LICENSE"}
-description = "basic algorithm toolkit"
+description = 'Framework of fast implementation data processing and operating pipelines'
 readme = "README.rst"
 authors = [
-    { name="ChenZHANG", email="chen.zhang_06sept@foxmail.com" },
-  ]
-maintainers = [
-    {name = "ChenZHANG", email = "chen.zhang_06sept@foxmail.com"},
+    { name="Chen Zhang", email="chen.zhang_06sept@foxmail.com" },
 ]
-requires-python = ">=3.9"
+maintainers = [
+    {name = "Chen Zhang", email = "chen.zhang_06sept@foxmail.com"},
+]
+requires-python = '>= 3.9'
 dependencies = [
-    'numpy'
+    'numpy',
+    'scipy',
+    'dill',
+    'tensorly',
+    # 'pydicom',  # TODO: remove pydicom and SimpleITK later
+    # 'SimpleITK',
+    'pandas',
 ]
 classifiers = [
     'Development Status :: 4 - Beta',
-    'Intended Audience :: Healthcare Industry',
     'Intended Audience :: Science/Research',
     'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries',
     'Topic :: Scientific/Engineering :: Information Analysis',
     'License :: OSI Approved :: Apache Software License',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
 ]
 
 
 [project.optional-dependencies]
-doc = ['sphinx']
+ins = ['pillow', 'requests']
+vis = ['pyqtgraph']  # suggest backend: PySide6(v6.6.1), PyOpenGL, PyOpenGL_accelerate
+med = ['pydicom', 'SimpleITK']
+
 
 [project.urls]
 source = 'https://github.com/CubicZebra/informatics'
+repository = 'https://github.com/CubicZebra/informatics'
+issues = 'https://github.com/CubicZebra/informatics/issues'
+documentation = 'c'
+
 
 [build-system]
-build-backend = "setuptools.build_meta"
-requires = ["setuptools", "cython"]
+build-backend = 'setuptools.build_meta'
+requires = ['setuptools', 'cython']
 
 [tool.setuptools]
 package-dir = {"" = "."}
 
 [tool.setuptools.packages.find]
 where = ["."]  # ["."] by default
-include = ["src*"]
+include = ["info*"]
 namespaces = false  # true by default

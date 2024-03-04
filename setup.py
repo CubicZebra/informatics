@@ -8,9 +8,9 @@ sep = os.path.sep
 cythonize = __import__('Cython.Build', fromlist=['cythonize']).cythonize
 
 
-_archive_src = './docs'
-_build_src = './build'
-_package_src = './src'
+_archive_src = '.' + sep + 'docs'
+_build_src = '.' + sep + 'build'
+_package_src = '.' + sep + 'info'
 
 
 def clean_build_folders():
@@ -27,11 +27,12 @@ def clean_build_folders():
 def include_documents(source_root, interactive=False):
     res = []
     if 'build' in os.listdir(source_root):
-        if 'html' in os.listdir(source_root+'/build'):
-            response = input(f"include documentation in '{source_root}/build/html' ? [y/n]\n> ") if interactive else 'Y'
+        if 'html' in os.listdir(source_root + sep + 'build'):
+            response = input(f"include docs in '{source_root}{sep}build{sep}html' ? [y/n]\n> ") if interactive else 'Y'
             if re.compile(r'\b[y|Y]').match(response) is not None:
-                shutil.make_archive(source_root+'/build/~doc', 'zip', source_root+'/build/html')
-                res = [source_root + '/build/~doc.zip']
+                shutil.make_archive(source_root + sep + 'build' + sep + '~doc', 'zip',
+                                    source_root + sep + 'build' + sep + 'html')
+                res = [source_root + sep + 'build' + sep + '~doc.zip']
     return res
 
 
@@ -74,8 +75,12 @@ class CleanBuildExt(build_ext):
 
 clean_build_folders()
 setup(
-    requires=['numpy']
+    requires=['numpy', 'scipy', 'dill', 'tensorly', 'pydicom', 'SimpleITK', 'pyqtgraph', 'pyradiomics', 'pandas'],
+    ext_modules=_cythonize(['info/basic/**/*.py']),
+    data_files=[('~info', include_documents(_archive_src))],
+    cmdclass={'build_ext': CleanBuildExt},
 )
+_cleanup([_archive_src + '/build/~doc.zip'])
 
 
 if __name__ == '__main__':
