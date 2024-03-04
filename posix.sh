@@ -12,6 +12,7 @@ function single_compiler() {
     python --version
     if pip list | grep info; then pip uninstall info --yes; fi
     python -m build -w -Cbuild_ext
+
     cd "${dist_dir}" || exit
     whl=$(find . -maxdepth 1 | grep linux_x86_64.whl | grep "cp${1}")
     if (($(echo "${whl}" | wc -l) == 1)); then pip install "${whl}"; fi
@@ -20,6 +21,7 @@ function single_compiler() {
     cd "${2}" || exit
     python -m build -w -Cbuild_ext
     pip uninstall info --yes
+
     conda deactivate
 }
 

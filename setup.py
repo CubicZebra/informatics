@@ -17,7 +17,7 @@ def clean_build_folders():
     """clean build and *.egg-info folders before compiling"""
     path = os.getcwd()
     _ = os.listdir(path)
-    rm_src = ['build', '*.egg-info']
+    rm_src = ['build', '*.egg-info', 'docs'+sep+'build']
     _exists = [glob.glob(os.path.join(path, _)) for _ in rm_src]
     exists = [item[0] for item in _exists if len(item) > 0]
     for rm_item in exists:
