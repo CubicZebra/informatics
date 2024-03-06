@@ -1,14 +1,22 @@
 _`Module tensor`
 ================
 
+.. currentmodule:: info.docfunc
+
 Description
 -----------
 
-Data processing module in dataflow. Location in ``info.toolbox.libs.tensor``. For convenience in practice,
-importing from main entry via ``from info.me import tensorn`` for processing numeric tensor, or
-``from info.me import tensorb`` for dealing with the boolean one.
+Data processing module in informatics. Utilities for data processing. Data can be vector, series (1-dimensional
+tensor), matrix (2-dimensional tensor), conventional medical image (3-dimensional tensor), or tensors in higher
+dimensions. Dependent on the type of data being processed, tensors are categorized into two distinct classes:
+Boolean and numerical.
 
-Computing in this module support :ref:`GPU <GPU>` accelerating. Reset the configuration to activate it:
+Namespace of this module is originally ``info.toolbox.libs.tensor``. For convenience, import from main entry via
+``from info.me import tensorn`` for processing numeric tensor, or ``from info.me import tensorb`` for dealing with
+the boolean one, is also available.
+
+Computing in this module support :ref:`GPU <GPU>` accelerating. If `cupy <https://cupy.dev/>`_ is installed in the
+environment, reset the configuration to activate it:
 
 .. code-block:: python
    :caption: activate gpu accelerating for computing
@@ -17,151 +25,214 @@ Computing in this module support :ref:`GPU <GPU>` accelerating. Reset the config
    from info.me import tensorn as tsn
    tsn.config.reset(device='gpu')
 
+Numerical tensor is generally used as container for raw data. For dealing with numeric tensor:
+
+.. autosummary::
+   :nosignatures:
+
+   standardization
+   normalization
+   clipper
+   cropper
+   resize
+   averaging_filter
+   rank_filter
+   minimum_filter
+   maximum_filter
+   mean_filter
+   median_filter
+   gaussian_filter
+   gabor_filter
+   bilateral_filter
+   prewitt_filter
+   prewitt_detector
+   prewitt_sharpen
+   sobel_filter
+   sobel_detector
+   sobel_sharpen
+   canny_filter
+   canny_detector
+   canny_sharpen
+   laplacian_of_gaussian_filter
+   laplacian_of_gaussian_detector
+   laplacian_of_gaussian_sharpen
+   difference_of_gaussian_filter
+   difference_of_gaussian_detector
+   difference_of_gaussian_sharpen
+   hessian_determinant_response
+   hessian_curvature_response
+   hessian_curvature_detector
+   moravec_response
+   harris_response
+   usan_response
+   segment_response
+   fast_response
+
+And boolean tensor is generally used for segmentation, assisted for some specific tasks such as emphasizing some
+certain area of raw data. For dealing with boolean tensor:
+
+.. autosummary::
+   :nosignatures:
+
+   prober
+   connected_domain
+   seg_resize
+   erosion
+   dilation
+   intersection
+   union
+   difference
+   watershed
+
 Docstrings
 ----------
 
 _`Numeric tensor`
 ~~~~~~~~~~~~~~~~~
 
-.. autodata:: info.docfunc.standardization
+.. autodata:: standardization
    :no-value:
 
-.. autodata:: info.docfunc.normalization
+.. autodata:: normalization
    :no-value:
 
-.. autodata:: info.docfunc.clipper
+.. autodata:: clipper
    :no-value:
 
-.. autodata:: info.docfunc.cropper
+.. autodata:: cropper
    :no-value:
 
-.. autodata:: info.docfunc.resize
+.. autodata:: resize
    :no-value:
 
-.. autodata:: info.docfunc.averaging_filter
+.. autodata:: averaging_filter
    :no-value:
 
-.. autodata:: info.docfunc.rank_filter
+.. autodata:: rank_filter
    :no-value:
 
-.. autodata:: info.docfunc.minimum_filter
+.. autodata:: minimum_filter
    :no-value:
 
-.. autodata:: info.docfunc.maximum_filter
+.. autodata:: maximum_filter
    :no-value:
 
-.. autodata:: info.docfunc.mean_filter
+.. autodata:: mean_filter
    :no-value:
 
-.. autodata:: info.docfunc.median_filter
+.. autodata:: median_filter
    :no-value:
 
-.. autodata:: info.docfunc.gaussian_filter
+.. autodata:: gaussian_filter
    :no-value:
 
-.. autodata:: info.docfunc.gabor_filter
+.. autodata:: gabor_filter
    :no-value:
 
-.. autodata:: info.docfunc.bilateral_filter
+.. autodata:: bilateral_filter
    :no-value:
 
-.. autodata:: info.docfunc.prewitt_filter
+.. autodata:: prewitt_filter
    :no-value:
 
-.. autodata:: info.docfunc.prewitt_detector
+.. autodata:: prewitt_detector
    :no-value:
 
-.. autodata:: info.docfunc.prewitt_sharpen
+.. autodata:: prewitt_sharpen
    :no-value:
 
-.. autodata:: info.docfunc.sobel_filter
+.. autodata:: sobel_filter
    :no-value:
 
-.. autodata:: info.docfunc.sobel_detector
+.. autodata:: sobel_detector
    :no-value:
 
-.. autodata:: info.docfunc.sobel_sharpen
+.. autodata:: sobel_sharpen
    :no-value:
 
-.. autodata:: info.docfunc.canny_filter
+.. autodata:: canny_filter
    :no-value:
 
-.. autodata:: info.docfunc.canny_detector
+.. autodata:: canny_detector
    :no-value:
 
-.. autodata:: info.docfunc.canny_sharpen
+.. autodata:: canny_sharpen
    :no-value:
 
-.. autodata:: info.docfunc.laplacian_of_gaussian_filter
+.. autodata:: laplacian_of_gaussian_filter
    :no-value:
 
-.. autodata:: info.docfunc.laplacian_of_gaussian_detector
+.. autodata:: laplacian_of_gaussian_detector
    :no-value:
 
-.. autodata:: info.docfunc.laplacian_of_gaussian_sharpen
+.. autodata:: laplacian_of_gaussian_sharpen
    :no-value:
 
-.. autodata:: info.docfunc.difference_of_gaussian_filter
+.. autodata:: difference_of_gaussian_filter
    :no-value:
 
-.. autodata:: info.docfunc.difference_of_gaussian_detector
+.. autodata:: difference_of_gaussian_detector
    :no-value:
 
-.. autodata:: info.docfunc.difference_of_gaussian_sharpen
+.. autodata:: difference_of_gaussian_sharpen
    :no-value:
 
-.. autodata:: info.docfunc.hessian_determinant_response
+.. autodata:: hessian_determinant_response
    :no-value:
 
-.. autodata:: info.docfunc.hessian_curvature_response
+.. autodata:: hessian_curvature_response
    :no-value:
 
-.. autodata:: info.docfunc.hessian_curvature_detector
+.. autodata:: hessian_curvature_detector
    :no-value:
 
-.. autodata:: info.docfunc.moravec_response
+.. autodata:: moravec_response
    :no-value:
 
-.. autodata:: info.docfunc.harris_response
+.. autodata:: harris_response
    :no-value:
 
-.. autodata:: info.docfunc.usan_response
+.. autodata:: usan_response
    :no-value:
 
-.. autodata:: info.docfunc.segment_response
+.. autodata:: segment_response
    :no-value:
 
-.. autodata:: info.docfunc.fast_response
+.. autodata:: fast_response
    :no-value:
 
 _`Boolean tensor`
 ~~~~~~~~~~~~~~~~~
 
-.. autodata:: info.docfunc.prober
+.. autodata:: prober
    :no-value:
 
-.. autodata:: info.docfunc.connected_domain
+.. autodata:: connected_domain
    :no-value:
 
-.. autodata:: info.docfunc.seg_resize
+.. autodata:: seg_resize
    :no-value:
 
-.. autodata:: info.docfunc.erosion
+.. autodata:: erosion
    :no-value:
 
-.. autodata:: info.docfunc.dilation
+.. autodata:: dilation
    :no-value:
 
-.. autodata:: info.docfunc.intersection
+.. autodata:: intersection
    :no-value:
 
-.. autodata:: info.docfunc.union
+.. autodata:: union
    :no-value:
 
-.. autodata:: info.docfunc.difference
+.. autodata:: difference
    :no-value:
 
-.. autodata:: info.docfunc.watershed
+.. autodata:: watershed
    :no-value:
 
-.. sectionauthor:: |author|, |create| Jun 27, 2023
+----
+
+:Authors: Chen Zhang
+:Version: 0.0.4
+:|create|: Jun 27, 2023

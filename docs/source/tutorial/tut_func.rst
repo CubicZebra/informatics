@@ -28,7 +28,7 @@ _`Arguments predefine and type system`
 
 Parameter passing in Python includes positional arguments, optional arguments with default values, var-positional and
 `var-keyword <https://docs.python.org/3/glossary.html#term-function>`_ arguments where var means the variable length.
-As the illustration in :numref:`dataflow function scripting style`, those passing mechanisms can be equivalently
+As the illustration in :numref:`informatics function scripting style`, those passing mechanisms can be equivalently
 replaced by var-keyword exclusively. The wrapping function, is the main body of a pipeline in the
 :numref:`Figure %s <framework objective>`, while the var-keyword instance, can be deemed as the corresponding config
 to change the operational behavior of that pipe.
@@ -124,7 +124,7 @@ Following code shows a workflow for cropping, normalization, and edge sharpening
         container.append(res)
 
 However, plain scripting in that processing flow in ``for`` loop is unstructured. For more compact organization via
-dataflow pipeline, it can be implemented as:
+informatics pipeline, it can be implemented as:
 
 .. code-block:: python
    :caption: pipeline scripting
@@ -144,8 +144,8 @@ It is also the wrapper for existed functions (or methods, scripts), after which 
 function, or a specific step inside data processing pipeline:
 
 .. code-block:: python
-   :caption: wrap common function into dataflow function
-   :name: wrap common function into dataflow function
+   :caption: wrap common function into informatics function
+   :name: wrap common function into informatics function
 
     from numpy import ndarray
     from info.me import Unit, F
@@ -161,13 +161,13 @@ function, or a specific step inside data processing pipeline:
     info_function_u(data=image)
     p = Unit(mappings=[..., info_function_u, ...])  # or reused in other pipelines
 
-:ref:`Dataflow function <Dataflow function>` is of the form with var-keyword arguments only, which can theoretically
-wrap any callable object in Python.
+:ref:`Informatics function <Informatics function>` is of the form with var-keyword arguments only, which can
+theoretically wrap any callable object in Python.
 
 _`Integrate implemented unit or pipeline`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If there's already a dataflow function or unit implemented by someone, it is also handy to integrate that works
+If there's already an informatics function function or unit implemented by someone, it is also handy to integrate that works
 into your personal task:
 
 .. code-block:: python
@@ -189,7 +189,7 @@ individuals or teams, meanwhile each team can be more focused on the function(s)
 _`Pipe style code`
 ~~~~~~~~~~~~~~~~~~
 
-With unit instances, dataflow support pipe coding style, whose form is even as readily comprehensible as plain
+With unit instances, informatics support pipe coding style, whose form is even as readily comprehensible as plain
 description. For instance, image processing steps from cropping, de-noising, resampling, then using two different
 method to make augmentation, compare their results, and finally save the compared result can be implemented as:
 

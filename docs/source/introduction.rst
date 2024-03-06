@@ -4,19 +4,6 @@ _`Introduction`
 _`Installation`
 ---------------
 
-All `released distributions <file://isi-sh/RT/00_Public/chen.zhang/dist/>`_ are collected in
-:abbr:`UIH (United Imaging Healthcare)` public storage as binary form. Ensure your device connect to *Staff*
-network for downloading.
-
-Pick platform-matched wheel file, then install it via pip:
-
-.. code-block:: console
-
-    (.venv) $ pip install dataflow-*-cp3*-cp3*-*.whl
-
-_`Installation (opt)`
----------------------
-
 _`Platforms and options`
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

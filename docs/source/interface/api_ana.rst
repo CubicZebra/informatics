@@ -1,137 +1,188 @@
 _`Modules for analysis`
 =======================
 
+.. currentmodule:: info.docfunc
+
 _`Module hypotest`
 ------------------
 
 Description
 ~~~~~~~~~~~
 
-Hypothesis test module in dataflow. Location in ``info.toolbox.libs.hypotest``. For convenience in practice,
-importing from main entry via ``from info.me import hypotest`` is also supported.
+Quantitative statistics on multi grouped data. Building proper hypothesis test and quantitative analysis requires
+some basic knowledge on :ref:`mathematical statistics <Mathematical statistics>`.
+
+Hypothesis test module in informatics is mainly in the namespace of ``info.toolbox.libs.hypotest``. For convenience
+the import from mian entry (like ``from info.me import hypotest``) is also supported.
 
 The prefix ``hypoi`` denotes the test required independent data populations, based on which the sizes of all
 population are unnecessary to be identical. ``hypoj`` for joint pairs generally required the sizes of two
-samples are of the same. ``hypos`` is simulation methods using random sampling.
+samples are of the same, intrinsically paired. ``hypos`` is simulation methods using random sampling.
+
+.. autosummary::
+   :nosignatures:
+
+   hypoi_f
+   hypoi_t
+   hypoi_sw
+   hypoi_normality
+   hypoi_ks
+   hypoi_cvm
+   hypoi_ag
+   hypoi_thsd
+   hypoi_kw
+   hypoi_mood
+   hypoi_bartlett
+   hypoi_levene
+   hypoi_fk
+   hypoi_ad
+   hypoi_rank
+   hypoi_es
+   hypoi_u
+   hypoi_bm
+   hypoi_ab
+   hypoi_skew
+   hypoi_kurtosis
+   hypoi_jb
+   hypoi_pd
+   hypoi_chi2
+   hypoj_pearson
+   hypoj_spearman
+   hypoj_kendall
+   hypoj_t
+   hypoj_rank
+   hypoj_friedman
+   hypoj_mgc
+   hypos_mc
+   hypos_permu
 
 Docstrings
 ~~~~~~~~~~
 
-.. autodata:: info.docfunc.hypoi_f
+.. autodata:: hypoi_f
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_t
+.. autodata:: hypoi_t
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_sw
+.. autodata:: hypoi_sw
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_normality
+.. autodata:: hypoi_normality
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_ks
+.. autodata:: hypoi_ks
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_cvm
+.. autodata:: hypoi_cvm
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_ag
+.. autodata:: hypoi_ag
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_thsd
+.. autodata:: hypoi_thsd
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_kw
+.. autodata:: hypoi_kw
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_mood
+.. autodata:: hypoi_mood
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_bartlett
+.. autodata:: hypoi_bartlett
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_levene
+.. autodata:: hypoi_levene
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_fk
+.. autodata:: hypoi_fk
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_ad
+.. autodata:: hypoi_ad
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_rank
+.. autodata:: hypoi_rank
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_es
+.. autodata:: hypoi_es
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_u
+.. autodata:: hypoi_u
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_bm
+.. autodata:: hypoi_bm
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_ab
+.. autodata:: hypoi_ab
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_skew
+.. autodata:: hypoi_skew
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_kurtosis
+.. autodata:: hypoi_kurtosis
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_jb
+.. autodata:: hypoi_jb
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_pd
+.. autodata:: hypoi_pd
    :no-value:
 
-.. autodata:: info.docfunc.hypoi_chi2
+.. autodata:: hypoi_chi2
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_pearson
+.. autodata:: hypoj_pearson
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_spearman
+.. autodata:: hypoj_spearman
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_kendall
+.. autodata:: hypoj_kendall
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_t
+.. autodata:: hypoj_t
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_rank
+.. autodata:: hypoj_rank
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_friedman
+.. autodata:: hypoj_friedman
    :no-value:
 
-.. autodata:: info.docfunc.hypoj_mgc
+.. autodata:: hypoj_mgc
    :no-value:
 
-.. autodata:: info.docfunc.hypos_mc
+.. autodata:: hypos_mc
    :no-value:
 
-.. autodata:: info.docfunc.hypos_permu
+.. autodata:: hypos_permu
    :no-value:
 
-_`Module feature`
+_`Module factors`
 -----------------
 
 Description
 ~~~~~~~~~~~
 
-Radiomics feature extraction and analysis module in dataflow. Location in ``info.toolbox.omics.radi.feature``.
-For convenience in practice, importing directly from main entry through ``info.me``.
+The module factors will support for scientific experiment design, data exploration, and etc. It is a powerful tool
+for data exploration, allowing researchers to extract meaningful patterns and relationships from complex datasets.
+Refer :ref:`supplementary <Factor analysis>` for its scientific background.
+
+Similarly, the import through entry through ``info.me`` is available.
+
+.. autosummary::
+   :nosignatures:
+
+   priori_scoring
 
 Docstrings
 ~~~~~~~~~~
 
-.. autodata:: info.docfunc.radiomics_features
+.. autodata:: priori_scoring
    :no-value:
 
-.. autodata:: info.docfunc.priori_scoring
-   :no-value:
+----
 
-.. sectionauthor:: |author|, |create| Jun 30, 2023
+:Authors: Chen Zhang
+:Version: 0.0.4
+:|create|: Jun 30, 2023

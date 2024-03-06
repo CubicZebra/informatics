@@ -46,7 +46,7 @@ data (e.g. transferring or copy into new space) that results in heavy read-write
    :name: regroup by patient ID
 
    from info.me import io, Unit, unarchive
-   from info.me import rebuild as dcm
+   from info.med import rebuild as dcm
    import os
 
    p = Unit(mappings=[io.search_from_root, dcm.dcm_regroup])
@@ -93,7 +93,7 @@ scans respectively. Combine the operations of file search and folder relocating 
    :name: loading CT and MR for patients
 
    from info.me import io, Unit
-   from info.me import rebuild as dcm
+   from info.med import rebuild as dcm
 
    for f in io.leaf_folders(data='path/to/root/folder'):
        dcm_slices = [_ for _ in io.search_from_root(data=f, search_condition=lambda x: x[-3:] == 'dcm')]
@@ -166,8 +166,9 @@ connector, integrating from file system to the feature extraction.
    :caption: ROI access for feature extraction
    :name: ROI access for feature extraction
 
-   from info.me import io, F, Unit, radiomics_features
-   from info.me import rebuild as dcm
+   from info.me import io, F, Unit
+   from info.med import radiomics_features
+   from info.med import rebuild as dcm
 
    def _gen(root):
        for f in io.leaf_folders(data=root):
@@ -214,9 +215,10 @@ from list of ROI names to be investigated is available.
    :caption: case study of radiotherapy schedule
    :name: case study of radiotherapy schedule
 
-   from info.me import io, ImageViewer
-   from info.me import rebuild as dcm
-   from info.me import visualization as vis
+   from info.me import io
+   from info.med import rebuild as dcm
+   from info.vis import visualization as vis
+   from info.vis import ImageViewer
    from info.basic.functions import dvh_res_to_vis
 
    *m, dose, struct = [_ for _ in io.search_from_root(data='case/folder', search_condition=lambda x: x[-3:] == 'dcm')]

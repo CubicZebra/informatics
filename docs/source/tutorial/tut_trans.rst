@@ -49,9 +49,10 @@ and :numref:`Figure %s <canny filter 3D>` is canny filter applied on a 3-dimensi
    :caption: natural image processing
    :name: natural image processing
 
-   from info.me import datasets, ImageViewer
-   from info.me import visualization as vis
    from info.me import tensorn as tsn
+   from info.vis import visualization as vis
+   from info.vis import ImageViewer
+   from info.ins import datasets
    import numpy as np
 
 
@@ -111,7 +112,7 @@ Demonstrated implementation is as showed in :numref:`segmentation labeling`:
    :name: segmentation labeling
 
    from info.me import tensorb as tsb
-   from info.me import visualization as vis
+   from info.vis import visualization as vis
    from scipy.ndimage import distance_transform_edt
    import numpy as np
    np.random.seed(10)

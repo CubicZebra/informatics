@@ -1,35 +1,52 @@
 _`Module io`
 ============
 
+.. currentmodule:: info.docfunc
+
 Description
 -----------
 
-:ref:`IO <IO>` module in dataflow. Location in ``info.toolbox.libs.io``. For convenience in practice, importing
-from main entry via ``from info.me import io``. As for ``archive`` and ``unarchive``, directly import from
-``info.me``.
+Utilities for file or folder selection, filter, regrouping, or mapping. Can be derived as attribute or data loader
+function as required. Original location of :ref:`IO <IO>` module in informatics is mainly in namespace
+``info.toolbox.libs.io``. The main entry ``info.me`` is also available for convenience.
+
+.. autosummary::
+   :nosignatures:
+
+   leaf_folders
+   search_from_root
+   generic_filter
+   files_regroup
+   dict_filter
+   archive
+   unarchive
 
 Docstrings
 ----------
 
-.. autodata:: info.docfunc.leaf_folders
+.. autodata:: leaf_folders
    :no-value:
 
-.. autodata:: info.docfunc.search_from_root
+.. autodata:: search_from_root
    :no-value:
 
-.. autodata:: info.docfunc.generic_filter
+.. autodata:: generic_filter
    :no-value:
 
-.. autodata:: info.docfunc.files_regroup
+.. autodata:: files_regroup
    :no-value:
 
-.. autodata:: info.docfunc.dict_filter
+.. autodata:: dict_filter
    :no-value:
 
-.. autodata:: info.docfunc.archive
+.. autodata:: archive
    :no-value:
 
-.. autodata:: info.docfunc.unarchive
+.. autodata:: unarchive
    :no-value:
 
-.. sectionauthor:: |author|, |create| Jun 27, 2023
+----
+
+:Authors: Chen Zhang
+:Version: 0.0.4
+:|create|: Jun 27, 2023

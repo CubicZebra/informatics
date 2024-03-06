@@ -15,13 +15,17 @@ verifying prototypes, optimize algorithm performance, as well as lower maintenan
 
 Data processing is akin to an assembly line, where an increase in the number of steps results in a exponential
 growth of factors that can impact the final result. While manually configuring all possible options for trial may
-seem feasible, it often leads to a chaotic outcome. Following examples demonstrate how to establish pipelines for
-automating complex tasks.
+seem feasible, it often leads to a chaotic outcome.
+
+An uniform protocol, or programming norm, is therefore not only of advantages in integrating various tools developed
+by teams in different fields in Python ecosystem, but also time-saving for building practical pipelines or
+applications, on basis of each naive functional module. Following examples demonstrate how to establish pipelines
+for automating complex tasks.
 
 _`Normalized scientific computing`
 ----------------------------------
 
-Scientific computing flow implemented through dataflow functions is of high completeness. And their units are readily
+Scientific computing flow implemented through informatics functions is of high completeness. And their units are readily
 to be flexibly reused when create new processing flow. :numref:`flexibility and reusability of unit` is a snippet
 in implementation for exporting :numref:`Figure %s <pathological image statistics>`.
 
@@ -56,9 +60,10 @@ prewitt and canny filters on a natural image:
    :caption: auto experiment pipeline
    :name: auto experiment pipeline
 
-   from info.me import datasets, Unit, F
+   from info.me import Unit, F
    from info.me import tensorn as tsn
-   from info.me import visualization as vis
+   from info.vis import visualization as vis
+   from info.ins import datasets
    import numpy as np
    img = datasets.cat()
 
@@ -77,7 +82,7 @@ paralleled unit of filters. The user-customized process is implemented via lambd
 deviation of difference between two paralleled output, display their pixel distribution difference, then return
 those two filtered figures.
 
-As most functions in tensor namespace, including the :code:`F` lambda, have been already registered as dataflow
+As most functions in tensor namespace, including the :code:`F` lambda, have been already registered as informatics
 version, the :code:`p` can automatically analyze what keyword arguments are the required at least. Making a
 parameter pool based on the required arguments. The following code can auto trigger the experiments then dump
 each running case.
@@ -106,7 +111,7 @@ by case; then the histogram figure will be popped up like :numref:`Figure %s <ex
 
    histogram for pixels distribution after prewitt and canny filters
 
-All experiment results will be collected into a persistence file titled `experiment_results. pyp` inplace.
+All experiment results will be collected into a persistence file titled `experiment_results.pyp` inplace.
 
 _`Automation testing`
 ---------------------
@@ -114,7 +119,7 @@ _`Automation testing`
 Different from automation experiment which can export the computed results, the automation testing only records
 the exit code. If the pipeline exits with raised exception, related information will also be noted. Similar as
 :code:`experiments` in :numref:`run auto experiment`, this meta implementation :code:`funtest` is in the same
-namespace. It can test for dataflow functions, unit and pipelines defined via this framework.
+namespace. It can test for informatics functions, unit and pipelines defined via this framework.
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/auto_test.jpg
    :name: automation testing result

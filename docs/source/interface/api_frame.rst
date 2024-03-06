@@ -1,75 +1,85 @@
-_`Framework objects`
-====================
+_`Framework utilities`
+======================
+
+.. currentmodule:: info.docfunc
 
 Description
 -----------
 
-Utility set for agile development in dataflow. For easy importing, all functions listed here have been integrated
-into the main entry ``info.me``.
+Utility set of informatics framework for agile development. Functions cover attribute registering, document attaching,
+runtime type checking, unit testing, workflow design, building and interface wrapping. For easy importing, all
+classes and functions listed here have been integrated into the main entry ``info.me``.
+
+.. autosummary::
+   :nosignatures:
+
+   T
+   F
+   FuncTools
+   Unit
+   TrialDict
+   ExeDict
+   SingleMap
+   traversal_on_params
+   experiments
+   functest
+
+And also some meta implementation frameworks for data loading, processing, visualization, analyzing, and exporting,
+as well as some code block wrapper for easy develop. Function here mainly in namespace ``info.libs.operations``.
+All those function are integrated into ``info.me`` as well.
+
+.. autosummary::
+   :nosignatures:
+
+   generic_printer
+   generic_logger
+   exception_logger
+   default_param
+   diagnosing_tests
 
 Docstrings
 ----------
 
-.. autoclass:: info.docfunc.T
+.. autoclass:: T
 
-.. autoclass:: info.docfunc.F
+.. autoclass:: F
 
-.. autoclass:: info.docfunc.FuncTools
+.. autoclass:: FuncTools
 
-.. autoclass:: info.docfunc.Unit
+.. autoclass:: Unit
 
-.. autoclass:: info.docfunc.TrialDict
+.. autoclass:: TrialDict
 
-.. autoclass:: info.docfunc.ExeDict
+.. autoclass:: ExeDict
 
-.. autoclass:: info.docfunc.SingleMap
+.. autoclass:: SingleMap
 
-.. autodata:: info.docfunc.traversal_on_params
+.. autodata:: traversal_on_params
    :no-value:
 
-.. autodata:: info.docfunc.experiments
+.. autodata:: experiments
    :no-value:
 
-.. autodata:: info.docfunc.functest
+.. autodata:: functest
    :no-value:
 
-.. autodata:: info.docfunc.operations
+.. autodata:: generic_printer
    :no-value:
 
-.. autodata:: info.docfunc.printing_u
+.. autodata:: generic_logger
    :no-value:
 
-.. autodata:: info.docfunc.saving_u
+.. autodata:: exception_logger
    :no-value:
 
-.. autodata:: info.docfunc.visual_u
+.. autodata:: default_param
    :no-value:
 
-.. autodata:: info.docfunc.generic_printer
+.. autodata:: diagnosing_tests
    :no-value:
 
-.. autodata:: info.docfunc.generic_logger
-   :no-value:
+----
 
-.. autodata:: info.docfunc.exception_logger
-   :no-value:
-
-.. autodata:: info.docfunc.assert_info_raiser
-   :no-value:
-
-.. autodata:: info.docfunc.default_param
-   :no-value:
-
-.. autodata:: info.docfunc.diagnosing_tests
-   :no-value:
-
-.. autodata:: info.docfunc.drop_down
-   :no-value:
-
-.. autodata:: info.docfunc.distance_matrix
-   :no-value:
-
-.. autodata:: info.docfunc.window_to_clipper
-   :no-value:
-
-.. sectionauthor:: |author|, |create| Jun 29, 2023
+:Authors: Chen Zhang
+:Version: 0.0.4
+:|create|: Jun 29, 2023

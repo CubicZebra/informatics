@@ -178,4 +178,8 @@ _`References`
    _`[Bazen2002]` Bazen, A. M. (2002). Fingerprint Identification: Feature Extraction, Matching, and Database Search.
    Twente University Press.
 
-.. sectionauthor:: |author|, |create| May 8, 2023
+----
+
+:Authors: Chen Zhang
+:Version: 0.0.4
+:|create|: May 8, 2023

@@ -16,8 +16,6 @@ dependencies = [
     'scipy',
     'dill',
     'tensorly',
-    # 'pydicom',  # TODO: remove pydicom and SimpleITK later
-    # 'SimpleITK',
     'pandas',
 ]
 classifiers = [
@@ -46,7 +44,7 @@ med = ['pydicom', 'SimpleITK']
 source = 'https://github.com/CubicZebra/informatics'
 repository = 'https://github.com/CubicZebra/informatics'
 issues = 'https://github.com/CubicZebra/informatics/issues'
-documentation = 'c'
+documentation = 'https://github.com/CubicZebra/informatics/docs'
 
 
 [build-system]

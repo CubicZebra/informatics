@@ -186,13 +186,83 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-    NOTICE:
+   NOTICE:
 
-      1. the copyrighted library is exclusively permitted for
-         united-imaging healthcare (UIH) related projects or
-         researches.
+      1. Acknowledgements:
 
-   Copyright 2022 [Chen ZHANG] All rights reserved
+         * basic::
+
+            - numpy: https://www.numpy.org
+              3-Clause BSD
+              Copyright (c) 2005-2023, NumPy Developers.
+
+            - scipy: https://scipy.org
+              3-Clause BSD
+              Copyright (c) 2001-2002 Enthought, Inc. 2003-2023, SciPy Developers.
+
+            - dill: https://github.com/uqfoundation/dill
+              3-Clause BSD
+              Copyright (c) 2004-2016 California Institute of Technology.
+              Copyright (c) 2016-2024 The Uncertainty Quantification Foundation.
+
+            - tensorly: https://tensorly.org
+              Modified 3-Clause BSDt
+              Copyright (c) 2016 The tensorly Developers.
+
+            - pandas: https://pandas.pydata.org
+              BSD 3-Clause License
+              Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team.
+
+         * option:: instance:
+
+            - requests: https://requests.readthedocs.io/en/latest
+              Apache License v2.0
+              Copyright (c) 2023 Kenneth Reitz.
+
+            - pillow: https://pypi.org/project/pillow
+              HPND license
+              Copyright (c) 1997-2011 by Secret Labs AB.
+              Copyright (c) 1995-2011 by Fredrik Lundh.
+
+         * option:: visualization:
+
+            - pyqtgraph: http://www.pyqtgraph.org
+              MIT License
+              Copyright (c) 2012 University of North Carolina at Chapel Hill, Luke Campagnola.
+
+         * option:: medical:
+
+            - pydicom: https://github.com/pydicom/pydicom
+              MIT License
+              Copyright (c) 2008-2020 Darcy Mason and pydicom contributors.
+
+            - SimpleITK: http://simpleitk.org
+              Apache License v2.0
+              Copyright (c) 2023 NumFOCUS.
+
+         * build:: package:
+
+            - setuptools: https://github.com/pypa/setuptools
+              MIT License
+              Copyright (c) 2023 Python Packaging Authority, setuptools Team.
+
+            - cython: https://cython.org
+              Apache License v2.0
+              Copyright (c) 2024 Cython Developers.
+
+         * build:: documentation:
+
+            - sphinx: https://www.sphinx-doc.org
+              BSD License
+              Copyright (c) 2007-2023 by the Sphinx team.
+
+            - sphinx-inline-tabs: https://github.com/pradyunsg/sphinx-inline-tabs
+              MIT License
+              Copyright (c) 2020 Pradyun Gedam.
+
+      2. ...
+
+   Copyright (c) 2024 Chen Zhang. All rights reserved
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

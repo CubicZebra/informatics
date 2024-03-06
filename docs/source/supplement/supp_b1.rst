@@ -55,7 +55,7 @@ Technically, it is not enough to understand how values will be calculated, but w
 There's a concept of *anchor* in kernel, as shown in :numref:`Figure %s <anchor in kernel>`. The grey pixel is the
 anchor location of kernel where the pixel will be replaced. By default, an anchor should be the center of a kernel
 (otherwise the output image will be biased), however, it is weired to limit all dimensions of kernel as odd numbers.
-The basic idea in **scipy** is showed in :numref:`Figure %s <anchor in kernel>` which is also applied in dataflow,
+The basic idea in **scipy** is showed in :numref:`Figure %s <anchor in kernel>` which is also applied in informatics,
 for even number, the anchor in that dimension will be located one pixel next to the center.
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/anchor_in_kernel.jpg

@@ -9,7 +9,7 @@ today_fmt = '%B %d, %Y'
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'info'
+project = 'informatics'
 copyright = '2023, Chen Zhang'
 author = 'Chen Zhang'
 version = '0.0.4'

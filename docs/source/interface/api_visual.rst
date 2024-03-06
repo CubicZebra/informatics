@@ -1,21 +1,37 @@
-_`Module visualization`
+_`Option visualization`
 =======================
+
+.. currentmodule:: info.docfunc
 
 Description
 -----------
 
-The module for visualizing generic data, as well as 3D medical images. For easy importing, all object listed
-here have been integrated into the main entry ``info.me``.
+Applications that enable visualize data anywhere in any stages through minimal calling. Helpful for data diagnosis,
+position and orientation checking (specifically for medical images), making analysis and summary, as well as result
+export. Running of this module requires `pyqtgraph <http://www.pyqtgraph.org/>`_ and one of compatible backends.
+All object listed here have been integrated into the entry of ``info.vis``.
+
+.. autosummary::
+   :nosignatures:
+
+   GrpSettings
+   FigConfigs
+   Canvas
+   ImageViewer
 
 Docstrings
 ----------
 
-.. autoclass:: info.docfunc.GrpSettings
+.. autoclass:: GrpSettings
 
-.. autoclass:: info.docfunc.FigConfigs
+.. autoclass:: FigConfigs
 
-.. autoclass:: info.docfunc.Canvas
+.. autoclass:: Canvas
 
-.. autoclass:: info.docfunc.ImageViewer
+.. autoclass:: ImageViewer
 
-.. sectionauthor:: |author|, |create| Jun 29, 2023
+----
+
+:Authors: Chen Zhang
+:Version: 0.0.4
+:|create|: Jun 29, 2023

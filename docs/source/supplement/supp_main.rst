@@ -33,15 +33,15 @@ construct functions for data pre- and post-processing, modality transition, appl
 .. toctree::
    Feature capturing <supp_b1>
 
-_`Dataflow essentials`
-----------------------
+_`Informatics essentials`
+-------------------------
 
-Essentials of functional programming and computing flow control in dataflow. The indispensable concepts
-for building functional units and pipelines via dataflow.
+Essentials of functional programming and computing flow control in informatics. The indispensable concepts
+for building functional units and pipelines via informatics.
 
 .. toctree::
    Functional programming primer <supp_c1>
-   Basic concepts in dataflow <supp_c2>
+   Basic concepts in informatics <supp_c2>
 
 ----
 
