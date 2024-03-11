@@ -6,7 +6,7 @@
 #       PS> nt.ps1 '311' -add_doc $FALSE
 
 
-param([Array]$envs=('39', '310', '311'), [String]$root='C:\Users\Chen\Projects\Python\informatics',
+param([Array]$envs=('39', '310', '311'), [String]$root=$PWD.ToString(),
       [Bool]$add_doc=$TRUE)
 $dist_dir = $root+'/dist'
 $doc_dir = $root+'/docs'

@@ -178,6 +178,14 @@ _`References`
    _`[Bazen2002]` Bazen, A. M. (2002). Fingerprint Identification: Feature Extraction, Matching, and Database Search.
    Twente University Press.
 
+   _`[Metropolis1953]` Metropolis, N., Rosenbluth, A. W., Rosenbluth, M. N., Teller, A. H., & Teller, E. (1953).
+   Equation of state calculations by fast computing machines. The journal of chemical physics, 21(6), 1087-1092.
+
+   _`[Hastings1970]` Hastings, W. K. (1970). Monte Carlo sampling methods using Markov chains and their applications.
+
+   _`[Robert1999]` Robert, C. P., Casella, G., & Casella, G. (1999). Monte Carlo statistical methods (Vol. 2).
+   New York: Springer.
+
 ----
 
 :Authors: Chen Zhang
