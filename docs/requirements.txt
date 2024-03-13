@@ -1,1 +1,2 @@
+informatics
 Sphinx==7.0.0

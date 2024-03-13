@@ -50,4 +50,4 @@ ideas.
 
 :Authors: Chen Zhang
 :Version: 0.0.4
-:|create|: Mar 12, 2024
+:Created on: Mar 12, 2024
