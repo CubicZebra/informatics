@@ -62,6 +62,7 @@ html_sidebars = {
     '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html']
 }
 html_search_language = 'en'
+html_favicon = './images/favicon.jpg'
 html_last_updated_fmt = '%b %d, %Y'
 pygments_style = 'dracula'
 

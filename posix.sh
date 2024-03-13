@@ -12,7 +12,8 @@ dist_dir="${root}/dist"
 doc_dir="${root}/docs"
 # shellcheck disable=SC2050
 # shellcheck disable=SC1014
-target=$([ uname != 'Linux' ] && echo "linux_x86_64.whl" || echo "macos_10_9_x86_64.whl")
+target=$([ uname == 'Linux' ] && echo "linux_x86_64.whl" || echo "macosx_10_9_x86_64.whl")
+prefix=$([ uname == 'Linux' ] && echo "/home/chen" || echo "/Users/chen_zhang" )
 
 
 function single_compiler() {
@@ -40,7 +41,7 @@ function single_compiler() {
 }
 
 function batch_compiler() {
-    source /home/chen/anaconda3/etc/profile.d/conda.sh
+    source "${prefix}"/anaconda3/etc/profile.d/conda.sh
     single_compiler "${1}" "${2}"
     cd "${root}" || exit
 }
@@ -50,5 +51,5 @@ IFS=' '
 read -ra arr <<< "$environments"
 for var in "${arr[@]}";
 do
-    batch_compiler "$var" "$add_doc" "${3}"
+    batch_compiler "$var" "$add_doc" "$root"
 done

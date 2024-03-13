@@ -173,10 +173,14 @@ convolved using gabor filtering, with directions of :math:`(1, 0)` and :math:`(0
 
       real part of gabor kernel in different dimensions
 
-_`Keypoint detection`
+_`Curvature of image`
 ---------------------
 
-Text here...
+The study of image curvature presents a fundamental understanding of the shape and deformation of objects within
+a digital image. Curvature, a measure of the rate of change in direction of a curve at a given point, is a critical
+geometric property in computer vision and image processing. In this context, curvature analysis refers to the
+quantitative evaluation of the deviation from straightness in the contours or boundaries of objects in an image
+(as shown in :numref:`Figure %s <effect of gaussian curvature via hessian filter>`).
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/gaussian_curvature.jpg
    :name: effect of gaussian curvature via hessian filter
