@@ -39,7 +39,7 @@ extensions = [
     # 'sphinx_inline_tabs',
 ]
 
-root_doc = 'main'
+root_doc = 'index'
 templates_path = ['_templates']
 exclude_patterns = []
 add_function_parentheses = False
