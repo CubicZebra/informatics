@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
-    'sphinx_inline_tabs',
+    'sphinx-inline-tabs',
 ]
 
 root_doc = 'main'
