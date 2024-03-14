@@ -1,1 +1,2 @@
 informatics
+sphinx_inline_tabs
