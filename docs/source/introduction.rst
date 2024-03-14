@@ -17,59 +17,63 @@ _`Platforms and options`
 
 Ensure Python (|ge| 3.9) is installed. Install :code:`informatics` via pip-based installer as appropriate:
 
-.. tab:: Basic
+.. tabs::
 
-   Install :code:`informatics` with basic dependent components.
+   .. tab:: Basic
 
-   .. code-block:: console
+      Install :code:`informatics` with basic dependent components.
 
-      (.venv) $ pip install informatics
+      .. code-block:: console
 
-.. tab:: Instances
+         (.venv) $ pip install informatics
 
-   Install basic :code:`informatics` with instance data.
+   .. tab:: Instances
 
-   .. code-block:: console
+      Install basic :code:`informatics` with instance data.
 
-      (.venv) $ pip install informatics[ins]
+      .. code-block:: console
 
-.. tab:: Visualization
+         (.venv) $ pip install informatics[ins]
 
-   Install basic :code:`informatics` with visualization dependencies. Backend of visualization utilities requires at
-   least one of `PySide2 <https://pypi.org/project/PySide2/>`_, `PySide6 <https://pypi.org/project/PySide6/>`_,
-   `PyQt5 <https://pypi.org/project/PyQt5/>`_, `PyQt6 <https://pypi.org/project/PyQt6/>`_.
-   `PySide6 <https://pypi.org/project/PySide6/>`_ is suggested. For functions who using spatial rendering,
-   `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_ is necessary as well.
+   .. tab:: Visualization
 
-   .. code-block:: console
+      Install basic :code:`informatics` with visualization dependencies. Backend of visualization utilities requires at
+      least one of `PySide2 <https://pypi.org/project/PySide2/>`_, `PySide6 <https://pypi.org/project/PySide6/>`_,
+      `PyQt5 <https://pypi.org/project/PyQt5/>`_, `PyQt6 <https://pypi.org/project/PyQt6/>`_.
+      `PySide6 <https://pypi.org/project/PySide6/>`_ is suggested. For functions who using spatial rendering,
+      `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_ is necessary as well.
 
-      (.venv) $ pip install informatics[vis]
+      .. code-block:: console
 
-.. tab:: Medical
+         (.venv) $ pip install informatics[vis]
 
-   Install basic :code:`informatics` with medical image related dependencies.
+   .. tab:: Medical
 
-   .. code-block:: console
+      Install basic :code:`informatics` with medical image related dependencies.
 
-      (.venv) $ pip install informatics[med]
+      .. code-block:: console
+
+         (.venv) $ pip install informatics[med]
 
 _`Check installation`
 ~~~~~~~~~~~~~~~~~~~~~
 
 To check whether :code:`informatics` was installed, run following code in Python or command line shell:
 
-.. tab:: Python
+.. tabs::
 
-   .. code-block:: python
+   .. tab:: Python
 
-      import info
-      print(info.__version__)
+      .. code-block:: python
 
-.. tab:: Terminal
+         import info
+         print(info.__version__)
 
-   .. code-block:: console
+   .. tab:: Terminal
 
-      (.venv) $ python -c "import info; print(info.__version__)"
+      .. code-block:: console
+
+         (.venv) $ python -c "import info; print(info.__version__)"
 
 Version number will in the prompt if :code:`informatics` has been properly installed, otherwise error message.
 

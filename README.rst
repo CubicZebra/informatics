@@ -15,9 +15,9 @@ informatics
 .. image:: https://img.shields.io/github/commit-activity/m/CubicZebra/informatics
    :alt: GitHub commit activity
 
-.. image:: https://img.shields.io/readthedocs/zc-tutorial-template
+.. image:: https://img.shields.io/readthedocs/informatics
    :alt: Read the Docs
-   :target: https://zc-tutorial-template.readthedocs.io/en/latest/
+   :target: https://informatics.readthedocs.io/en/latest/index.html
 
 .. image:: https://img.shields.io/pypi/dm/informatics.svg?label=Pypi%20downloads
   :target: https://pypi.org/project/informatics/
@@ -29,7 +29,7 @@ informatics
    :width: 350
    :align: center
 
-   informatics logo
+   informatics
 
 Informatics, sourced from its original meaning: the sciences concerned with gathering, manipulating, storing,
 retrieving, and classifying recorded information.
@@ -43,7 +43,7 @@ functions to facilitate these tasks.
 
 Informatics is built to serve for science as well as engineer domains. It provides ready-made solutions for common
 tasks like feature engineering, model training, evaluation, deployment, and more. Refer the
-`documentation <https://img.shields.io/readthedocs/zc-tutorial-template>`_ for a crash course about its essential
+`documentation <https://informatics.readthedocs.io/en/latest/index.html>`_ for a crash course about its essential
 ideas.
 
 ----
