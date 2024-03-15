@@ -13,7 +13,7 @@ project = 'informatics'
 copyright = '2023, Chen Zhang'
 author = 'Chen Zhang'
 version = '0.0.4'
-release = '0.0.4rc0'
+release = '0.0.4rc1'
 
 numfig = True
 numfig_format = {'figure': 'Figure %s', 'code-block': 'Code %s'}

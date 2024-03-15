@@ -43,8 +43,39 @@ functions to facilitate these tasks.
 
 Informatics is built to serve for science as well as engineer domains. It provides ready-made solutions for common
 tasks like feature engineering, model training, evaluation, deployment, and more. Refer the
-`documentation <https://informatics.readthedocs.io/en/latest/index.html>`_ for a crash course about its essential
-ideas.
+`documentation <https://informatics.readthedocs.io/en/latest/index.html>`_ for a detailed information about its
+essential designs, functions, as well as applied scopes.
+
+Main Features
+=============
+
+Here list a few of things that informatics featured:
+
+* Powerful integration capability for various utilities (e.g. functions, frames, packages, and etc.) in Python
+  ecosystem.
+
+* Universal processing interface designed in high dimensionality to guarantee consistency of calling for different
+  types of data.
+
+* Scripting on basis of functional programming paradigm, with properties of robust performance, and easy decoupling
+  for extension.
+
+* Intuitive combination of data processing units, for fast experiments, validation, or building for upper
+  applications.
+
+* Documentation in details for not only basic functions, but the tutorials, interpretation for essential concepts,
+  examples of applications, and such like.
+
+License
+=======
+
+Apache License v2.0
+
+Getting Help
+============
+
+For usage questions about functions, API reference and example code snippet on documentation would be helpful. While
+other questions or discussions, please directly contact the author.
 
 ----
 

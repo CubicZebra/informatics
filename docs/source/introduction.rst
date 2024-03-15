@@ -7,6 +7,8 @@ _`Installation`
 _`Platforms and options`
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. |ge| unicode:: U+2265
+
 :code:`informatics` is officially support the following desktop platforms:
 
 * Windows
@@ -84,7 +86,75 @@ of remote.
 
 Or alternatively, using pip installer to install missing module(s) when :code:`ImportError` raised in the prompt.
 
-.. |ge| unicode:: U+2265
+_`Overview`
+-----------
+
+Informatics is designed to enable users to solve complex problems in science, engineering, and other domains
+efficiently and accurately. Its powerful capabilities are achieved through a combination of cutting-edge software
+engineering techniques and the elegance of Python's functional programming paradigm. The strength of highly modular
+and extensible architecture allows users to quickly assemble and customize data processing pipelines to meet their
+specific needs. Whether it's data cleaning, transformation, analysis, or visualization, informatics provides a rich
+set of tools and functions to facilitate these tasks.
+
+It is in active development, in order to satisfy increasing requests in scientific computation.
+
+_`Features`
+~~~~~~~~~~~
+
+Informatics is currently featured:
+
+* Powerful integration capability for various utilities (e.g. functions, frames, packages, and etc.) in Python
+  ecosystem.
+
+* Universal processing interface designed in high dimensionality to guarantee consistency of calling for different
+  types of data.
+
+* Scripting on basis of functional programming paradigm, with properties of robust performance, and easy decoupling
+  for extension.
+
+* Intuitive combination of data processing units, for fast experiments, validation, or building for upper
+  applications.
+
+* Documentation in details for not only basic functions, but the tutorials, interpretation for essential concepts,
+  examples of applications, and such like.
+
+_`At a glance`
+~~~~~~~~~~~~~~
+
+Critical structure called :py:func:`~info.docfunc.Unit` can wrap any of the callable object in Python. Data processing
+can be implemented via :ref:`functional programming scripting <Function based scripting>`. Therefore with various
+units (e.g. :code:`u1`, :code:`u2` with different arguments), it is able to combine them as desired:
+
+.. code-block:: python
+   :caption: glance of unit combination
+   :name: glance of unit combination
+
+   p = u1 >> u2
+
+Auto test the pipe :code:`p` for determining its optimal argument combination:
+
+.. code-block:: python
+   :caption: glance of auto test
+   :name: glance of auto test
+
+   param_options = {
+       'u1_arg1': [...],
+       'u1_arg2': [...],
+       ...,
+       'u2_arg4': [...],
+       'u2_arg5': [...],
+   }
+
+   functest(data=p, params_pool=param_options)
+
+Or apply that pipe, as well as its optimal argument configuration from (or to) others' works:
+
+.. code-block:: python
+   :caption: glance of reuse pipe
+   :name: glance of reuse pipe
+
+   from other_libs import pipe, opt_config
+   my_pipe = pipe.shadow(**opt_config) >> u1 >> u2
 
 ----
 

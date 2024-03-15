@@ -40,7 +40,7 @@ _`Related URLs`
 
 * `repository <https://github.com/CubicZebra/informatics>`_
 
-* `documentation <https://img.shields.io/readthedocs/zc-tutorial-template>`_
+* `documentation <https://informatics.readthedocs.io/en/latest/index.html>`_
 
 ----
 

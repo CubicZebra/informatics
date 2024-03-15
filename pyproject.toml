@@ -1,6 +1,6 @@
 [project]
 name = 'informatics'
-version = '0.0.4rc0'
+version = '0.0.4rc1'
 license = {file = "LICENSE"}
 description = 'Framework of fast implementation data processing and operating pipelines'
 readme = "README.rst"
@@ -42,10 +42,9 @@ med = ['pydicom', 'SimpleITK']
 
 
 [project.urls]
-source = 'https://github.com/CubicZebra/informatics'
-repository = 'https://github.com/CubicZebra/informatics'
+homepage = 'https://github.com/CubicZebra/informatics'
 issues = 'https://github.com/CubicZebra/informatics/issues'
-documentation = 'https://github.com/CubicZebra/informatics/docs'
+documentation = 'https://informatics.readthedocs.io/en/latest/index.html'
 
 
 [build-system]
