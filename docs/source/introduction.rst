@@ -98,8 +98,8 @@ set of tools and functions to facilitate these tasks.
 
 It is in active development, in order to satisfy increasing requests in scientific computation.
 
-_`Features`
-~~~~~~~~~~~
+_`Featured items`
+~~~~~~~~~~~~~~~~~
 
 Informatics is currently featured:
 
@@ -118,24 +118,24 @@ Informatics is currently featured:
 * Documentation in details for not only basic functions, but the tutorials, interpretation for essential concepts,
   examples of applications, and such like.
 
-_`At a glance`
-~~~~~~~~~~~~~~
+_`Simple examples`
+~~~~~~~~~~~~~~~~~~
 
 Critical structure called :py:func:`~info.docfunc.Unit` can wrap any of the callable object in Python. Data processing
 can be implemented via :ref:`functional programming scripting <Function based scripting>`. Therefore with various
 units (e.g. :code:`u1`, :code:`u2` with different arguments), it is able to combine them as desired:
 
 .. code-block:: python
-   :caption: glance of unit combination
-   :name: glance of unit combination
+   :caption: example of unit combination
+   :name: example of unit combination
 
    p = u1 >> u2
 
 Auto test the pipe :code:`p` for determining its optimal argument combination:
 
 .. code-block:: python
-   :caption: glance of auto test
-   :name: glance of auto test
+   :caption: example of auto test
+   :name: example of auto test
 
    param_options = {
        'u1_arg1': [...],
@@ -150,11 +150,12 @@ Auto test the pipe :code:`p` for determining its optimal argument combination:
 Or apply that pipe, as well as its optimal argument configuration from (or to) others' works:
 
 .. code-block:: python
-   :caption: glance of reuse pipe
-   :name: glance of reuse pipe
+   :caption: example of reuse pipe
+   :name: example of reuse pipe
 
    from other_libs import pipe, opt_config
-   my_pipe = pipe.shadow(**opt_config) >> u1 >> u2
+   my_unit = ...
+   my_pipe = pipe.shadow(**opt_config) >> my_unit
 
 ----
 
