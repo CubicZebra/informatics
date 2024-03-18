@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/supplement/supp_m1.rst:2
+msgid "_`Math symbols and abbreviations`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:5
+msgid "_`Math symbols`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:7
+msgid ":math:`\\boldsymbol{x}`: bold lowercase for vector"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:9
+msgid ":math:`\\boldsymbol{X}`: bold italic uppercase for matrix"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:11
+msgid ":math:`\\textbf{X}`: bold orthographic uppercase for tensor"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:13
+msgid ""
+":math:`\\mathrm{r}(\\boldsymbol{A})`: the rank of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:15
+msgid ""
+":math:`\\mathrm{Tr}(\\boldsymbol{A})`: the trace of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:17
+msgid ""
+":math:`\\mathrm{det}(\\boldsymbol{A})`: the determinant of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:19
+msgid ""
+":math:`\\boldsymbol{A}^{-1}`: the inverse of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:21
+msgid ""
+":math:`\\boldsymbol{A}^\\top`: the transpose of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:23
+msgid ""
+":math:`\\boldsymbol{A}^\\ast`: the conjugate of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:25
+msgid ""
+":math:`\\boldsymbol{A}^\\mathrm{H}`: the Hermitian of matrix "
+":math:`\\boldsymbol{A}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:27
+msgid ":math:`\\varnothing`: empty set"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:29
+msgid ":math:`\\in`: in"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:31
+msgid ":math:`\\mathbb{Z}`: integer numerical domain"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:33
+msgid ":math:`\\mathbb{N}`: natural numerical domain"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:35
+msgid ":math:`\\mathbb{R}`: real numerical domain"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:37
+msgid ":math:`\\mathbb{C}`: complex numerical domain"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:39
+msgid ":math:`\\mathbb{Z}^+`: numerical domain for positive integer"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:41
+msgid ":math:`\\mathbb{R}^+`: numerical domain for positive real number"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:43
+msgid ":math:`\\forall`: for all"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:45
+msgid ":math:`\\cap`: intersection of sets"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:47
+msgid ":math:`\\cup`: union of sets"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:49
+msgid ""
+":math:`\\subset`: subset; e.g. :math:`A\\ \\subset\\ B` for :math:`A` is "
+"a subset of :math:`B`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:51
+msgid ""
+":math:`\\subseteq`: subset or equal; e.g. :math:`A\\ \\subseteq\\ B` for "
+":math:`A\\ \\subset\\ B` or :math:`A = B`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:53
+msgid ""
+":math:`\\sum`: sum; e.g. :math:`\\sum_{i=1}^n a_i = a_1 + a_2 + \\dots + "
+"a_{n-1} + a_n`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:55
+msgid ""
+":math:`\\prod`: product; e.g. :math:`\\prod_{i=1}^n a_i = a_1 \\times a_2"
+" \\times \\dots \\times a_{n-1} \\times a_n`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:57
+msgid ":math:`p(X)`: the probability of :math:`X`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:59
+msgid ":math:`x_i`: the :math:`i`-th element in series :math:`\\boldsymbol{x}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:61
+msgid ""
+":math:`x_{(i)}`: the :math:`i`-th smallest in series "
+":math:`\\boldsymbol{x}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:63
+msgid ":math:`\\bar{x}`: the sample mean of a series :math:`\\boldsymbol{x}`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:65
+msgid ":math:`\\Vert\\cdot\\Vert_2`: the Euclidean norm of something"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:67
+msgid ""
+":math:`\\mathrm{sgn}(\\cdot)`: sign function of something; e.g. "
+":math:`\\mathrm{sgn}(x) = 1` if :math:`x \\geq 0` otherwise 0"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:70
+msgid ""
+":math:`I_A(\\cdot)`: indicator function of something; e.g. :math:`I_A(x) "
+"= 1` if :math:`x \\in A` otherwise 0"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:72
+msgid ":math:`\\mathrm{sup}(\\cdot)`: supremum of something"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:75
+msgid "_`Acronyms`"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:77
+msgid "_`AI`: Artificial Intelligence"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:79
+msgid "_`LoG`: Laplacian of Gaussian"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:81
+msgid "_`DoG`: Difference of Gaussian"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:83
+msgid "_`FCA`: Formal Concept Analysis"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:85
+msgid "_`DOE`: Design of Experiments"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:87
+msgid "_`MC`: Monte Carlo methods"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:89
+msgid "_`ANOVA`: Analysis of Variance"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:91
+msgid "_`ROI`: Region of Interest"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:93
+msgid "_`DVH`: Dose Volume Histogram"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:95
+msgid "_`IO`: Input and Output"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:97
+msgid "_`GPU`: Graphic Processing Unit"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:99
+msgid "_`DICOM`: Digital Imaging and Communications in Medicine"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:101
+msgid "_`I.I.D.` Independent and Identically Distributed"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:103
+msgid "_`DoF` Degree of Freedom"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:105
+msgid "_`CT` Computed Tomography"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:107
+msgid "_`MR` Magnetic Resonance"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:109
+msgid "_`SNR` Signal to Noise Ratio"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:111
+msgid "_`ANN` Artificial Neural Network"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:115
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:116
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:117
+msgid "Jul 19, 2023"
+msgstr ""
+

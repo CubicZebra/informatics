@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/supplement/supp_a5.rst:2
+msgid "_`Monte Carlo method`"
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst:4
+msgid ""
+"Monte Carlo is a powerful technique used to understand and analyze "
+"complex systems by generating synthetic data that mimic real-world "
+"processes. It can be used to solve any problem having a probabilistic "
+"interpretation. By creating virtual experiments that are difficult or "
+"even impossible to study through traditional methods on computer, it "
+"provides approximate solutions to problems that are too intractable to be"
+" analyzed mathematically, enables many scientific and technological "
+"breakthroughs in fields such like physics, engineering, finance."
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst:10
+msgid ""
+"The Monte Carlo is often associated with Markov Chain due to its inherent"
+" stochastic nature, which typically manifests as a stochastic process.  "
+"Contrary to simultaneous generation, the pseudo data points are "
+"determined individually in a sequential manner.  Beginning with an "
+"initial point, subsequent cases are sampled from the conditional "
+"probability. This process is iteratively repeated, thereby establishing a"
+" connection with the concept of random walk."
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst:15
+msgid ""
+"A Monte Carlo Markov Chain can be recognized with the property that from "
+"any initial start point, it will converge towards an identical stationary"
+" distribution if the period for generation is long enough "
+"(:ref:`Metropolis1953 <[Metropolis1953]>`, :ref:`Hastings1970 "
+"<[Hastings1970]>`, :ref:`Robert1999 <[Robert1999]>`)."
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst:21
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst:22
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/supplement/supp_a5.rst:23
+msgid "Feb 27, 2024"
+msgstr ""
+

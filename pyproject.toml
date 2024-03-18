@@ -10,6 +10,17 @@ authors = [
 maintainers = [
     {name = "Chen Zhang", email = "chen.zhang_06sept@foxmail.com"},
 ]
+keywords = [
+    'mathematical statistics',
+    'artificial intellegence',
+    'scientific calculation',
+    'scientific computation',
+    'computer vision',
+    'anomaly detection',
+    'data processing',
+    'data visualization',
+    'pipeline framework',
+]
 requires-python = '>= 3.9'
 dependencies = [
     'numpy',
@@ -20,18 +31,36 @@ dependencies = [
 ]
 classifiers = [
     'Development Status :: 4 - Beta',
-    'Intended Audience :: Science/Research',
     'Intended Audience :: Developers',
-    'Topic :: Software Development :: Libraries',
-    'Topic :: Scientific/Engineering :: Information Analysis',
+    'Intended Audience :: Education',
+    'Intended Audience :: Healthcare Industry',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: Science/Research',
     'License :: OSI Approved :: Apache Software License',
+    'Natural Language :: English',
+    'Natural Language :: Chinese (Simplified)',
+    'Operating System :: MacOS :: MacOS X',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX :: Linux',
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
-    'Operating System :: Microsoft :: Windows',
-    'Operating System :: POSIX :: Linux',
-    'Operating System :: MacOS :: MacOS X',
+    'Programming Language :: Python :: 3.12',
+    'Topic :: Documentation :: Sphinx',
+    'Topic :: Education',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+    'Topic :: Scientific/Engineering :: Bio-Informatics',
+    'Topic :: Scientific/Engineering :: Image Processing',
+    'Topic :: Scientific/Engineering :: Information Analysis',
+    'Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator',
+    'Topic :: Scientific/Engineering :: Mathematics',
+    'Topic :: Scientific/Engineering :: Visualization',
+    'Topic :: Software Development',
+    'Topic :: Software Development :: Libraries',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Software Development :: Testing',
 ]
 
 
@@ -42,9 +71,9 @@ med = ['pydicom', 'SimpleITK']
 
 
 [project.urls]
-homepage = 'https://github.com/CubicZebra/informatics'
-issues = 'https://github.com/CubicZebra/informatics/issues'
-documentation = 'https://informatics.readthedocs.io/en/latest/index.html'
+Homepage = 'https://github.com/CubicZebra/informatics'
+Issues = 'https://github.com/CubicZebra/informatics/issues'
+Documentation = 'https://informatics.readthedocs.io/en/latest/index.html'
 
 
 [build-system]

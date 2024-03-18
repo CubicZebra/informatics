@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/tutorial/tut_func.rst:2
+msgid "_`Framework in a nutshell`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:6
+#, python-format
+msgid ""
+"Works in research always want fast verification for some experimental "
+"ideas. Nevertheless, those ideas are usually too prototypical to be "
+"implemented in practice. This framework can be deemed as a language "
+"intersection between researcher and engineer: for researchers, it affords"
+" abundant enough utilities assisting building their processing and "
+"algorithm flow, while for engineers, it is standardized wrapper for "
+"algorithm implementation. As showed in :numref:`Figure %s <framework "
+"objective>`, it contributes to accelerate forming the practicable data "
+"processing flow, from the scientific prototype to engineering practice."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:18
+msgid "the bridge between research and practice"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:21
+msgid "_`Featured syntax`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:23
+msgid ""
+"Framework is featured for relatively unambiguous parameterization design "
+"on data processing. Furthermore, type hint and check, lambda calculus is "
+"enhanced in this system in order to fast implement customized computing "
+"steps."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:27
+msgid "_`Arguments predefine and type system`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:29
+#, python-format
+msgid ""
+"Parameter passing in Python includes positional arguments, optional "
+"arguments with default values, var-positional and `var-keyword "
+"<https://docs.python.org/3/glossary.html#term-function>`_ arguments where"
+" var means the variable length. As the illustration in "
+":numref:`informatics function scripting style`, those passing mechanisms "
+"can be equivalently replaced by var-keyword exclusively. The wrapping "
+"function, is the main body of a pipeline in the :numref:`Figure %s "
+"<framework objective>`, while the var-keyword instance, can be deemed as "
+"the corresponding config to change the operational behavior of that pipe."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:36
+msgid ""
+"Pre-definition of default values and type check of argument can refer the"
+" example implementation in :numref:`decorator for parameter setting`. "
+"Activating the entry or return type checking controlling can see the "
+":numref:`decorator to attach documents or execute type checking`."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:40
+msgid ""
+"Design language of function here is mapping: data will be calculated from"
+" a certain form to the another.  This framework separates executing body "
+"of function, parameters, and type checking system, for presenting a clear"
+" feeling on this mapping logic."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:45
+msgid "_`Function based scripting`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:47
+msgid ""
+"In coding practice, a junior implementor might extend lots of branches to"
+" satisfy different constraint conditions. This habit will make the code "
+"block difficult to be maintained in the future. Following example shows a"
+" pseudo code with a mass of that indented branches for numeric "
+"calculating, type conversion, output control:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:51
+msgid "indentation style in python"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:70
+msgid ""
+"Fortunately, applying ternary expression in Python can considerably "
+"simplify :numref:`indentation style in python`, using non-indentation "
+"style as:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:73
+msgid "non-indentation style in python"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:81
+msgid ""
+"The magic of non-indentation style is not only compacting code, if use "
+"the operator ``:=`` to replace the assigning operator ``=``, each line in"
+" :numref:`non-indentation style in python` will be a hashable object, "
+"which can be included into a mutable object (e.g. list). Therefore, "
+"equivalent script on basis of lambda calculus is realizable as:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:86
+msgid "lambda style of python"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:95
+msgid ""
+"The lambda calculus using :py:func:`~info.docfunc.F` is the practice of "
+"var-keyword only function superpositioned with non-indentation style. "
+"This programming paradigm is preferred for designing customized "
+"processing flow for tasks."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:99
+msgid "_`Unit of data processing`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:101
+msgid ""
+"The purpose of class :py:func:`~info.docfunc.Unit` using as data "
+"processing unit, is four-fold."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:104
+msgid "_`Packaging units`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:106
+msgid ""
+"Code styles of plain Python script may vary individually, especially in "
+"scientific computation where test and trials are usually exists. For most"
+" researches, people spend amount time, on code construction for data "
+"preprocessing. Therefore, a well-organized form of code should make the "
+"previous works (related code implementation) be of high reusability, then"
+" time saving."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:111
+msgid ""
+"Following code shows a workflow for cropping, normalization, and edge "
+"sharpening sequentially for 3D images:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:113
+msgid "plain scripting"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:126
+msgid ""
+"However, plain scripting in that processing flow in ``for`` loop is "
+"unstructured. For more compact organization via informatics pipeline, it "
+"can be implemented as:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:129
+msgid "pipeline scripting"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:141
+msgid "_`Function wrapper`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:143
+msgid ""
+"It is also the wrapper for existed functions (or methods, scripts), after"
+" which can either be called as common function, or a specific step inside"
+" data processing pipeline:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:146
+msgid "wrap common function into informatics function"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:164
+msgid ""
+":ref:`Informatics function <Informatics function>` is of the form with "
+"var-keyword arguments only, which can theoretically wrap any callable "
+"object in Python."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:168
+msgid "_`Integrate implemented unit or pipeline`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:170
+msgid ""
+"If there's already an informatics function function or unit implemented "
+"by someone, it is also handy to integrate that works into your personal "
+"task:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:173
+msgid "use implemented function or unit in your task"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:186
+msgid ""
+"Therefore the big significance of the framework is, data can flow "
+"seamlessly among functions, in spite of varying individuals or teams, "
+"meanwhile each team can be more focused on the function(s) they are "
+"building up."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:190
+msgid "_`Pipe style code`"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:192
+msgid ""
+"With unit instances, informatics support pipe coding style, whose form is"
+" even as readily comprehensible as plain description. For instance, image"
+" processing steps from cropping, de-noising, resampling, then using two "
+"different method to make augmentation, compare their results, and finally"
+" save the compared result can be implemented as:"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:196
+msgid "pipe coding style"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:209
+msgid ""
+"The operator :code:`>>` intuitively prompt the data processing units, of "
+"before and after steps, while operator :code:`|` connects the paralleled "
+"processing units. When it involved more steps, factors that can affect "
+"final result will increase exponentially. Trial on all possible options "
+"using manual configuration sometimes intelligible, but always make the "
+"result mess. However, with this, data processing can be of ease for "
+"disassembly or integrating, just like building lego."
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:217
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:218
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_func.rst:219
+msgid "Feb 8, 2024"
+msgstr ""
+

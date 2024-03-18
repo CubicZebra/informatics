@@ -1,0 +1,1139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_ana.rst:2
+msgid "_`Modules for analysis`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:7
+msgid "_`Module hypotest`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:10 ../../source/interface/api_ana.rst:165
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:12
+msgid ""
+"Quantitative statistics on multi grouped data. Building proper hypothesis"
+" test and quantitative analysis requires some basic knowledge on "
+":ref:`mathematical statistics <Mathematical statistics>`."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:15
+msgid ""
+"Hypothesis test module in informatics is mainly in the namespace of "
+"``info.toolbox.libs.hypotest``. For convenience the import from mian "
+"entry (like ``from info.me import hypotest``) is also supported."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:18
+msgid ""
+"The prefix ``hypoi`` denotes the test required independent data "
+"populations, based on which the sizes of all population are unnecessary "
+"to be identical. ``hypoj`` for joint pairs generally required the sizes "
+"of two samples are of the same, intrinsically paired. ``hypos`` is "
+"simulation methods using random sampling."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_f <info.docfunc.hypoi_f>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_f:1 of
+msgid ""
+"perform :ref:`one-way ANOVA test <one-way ANOVA test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_t <info.docfunc.hypoi_t>`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ""
+"perform :ref:`pair-wise independent T test <Student's T test>` among "
+"multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_sw <info.docfunc.hypoi_sw>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_sw:1 of
+msgid ""
+"perform :ref:`Shapiro-Wilk test <Shapiro-Wilk test>` on each group among "
+"multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_normality <info.docfunc.hypoi_normality>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_normality:1 of
+msgid ""
+"perform :ref:`Omnibus Normality test <Omnibus Normality test>` on each "
+"group among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_ks <info.docfunc.hypoi_ks>`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ""
+"perform :ref:`Kolmogorov-Smirnov test <Kolmogorov-Smirnov test>` among "
+"multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_cvm <info.docfunc.hypoi_cvm>`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ""
+"perform :ref:`Cramér-von Mises test <Cramér-von Mises test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_ag <info.docfunc.hypoi_ag>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_ag:1 of
+msgid ""
+"perform :ref:`Alexander Govern test <Alexander Govern test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_thsd <info.docfunc.hypoi_thsd>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_thsd:1 of
+msgid ""
+"perform :ref:`Tukey's range test <Tukey's range test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_kw <info.docfunc.hypoi_kw>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_kw:1 of
+msgid ""
+"perform :ref:`Kruskal-Wallis H-test <Kruskal-Wallis H-test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_mood <info.docfunc.hypoi_mood>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_mood:1 of
+msgid ""
+"perform :ref:`Mood's median and scale test <Mood's test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_bartlett <info.docfunc.hypoi_bartlett>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_bartlett:1 of
+msgid "perform :ref:`Bartlett's test <Bartlett's test>` among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_levene <info.docfunc.hypoi_levene>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_levene:1 of
+msgid "perform :ref:`Levene test <Levene test>` among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_fk <info.docfunc.hypoi_fk>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_fk:1 of
+msgid ""
+"perform :ref:`Fligner-Killeen test <Fligner-Killeen test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_ad <info.docfunc.hypoi_ad>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_ad:1 of
+msgid ""
+"perform :ref:`Anderson-Darling test <Anderson-Darling test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_rank <info.docfunc.hypoi_rank>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_rank:1 of
+msgid ""
+"perform :ref:`rank sum test <Wilcoxon rank test>` among multi-grouped "
+"data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_es <info.docfunc.hypoi_es>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_es:1 of
+msgid ""
+"perform :ref:`Epps-Singleton test <Epps-Singleton test>` on each possible"
+" pairs among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_u <info.docfunc.hypoi_u>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_u:1 of
+msgid ""
+"perform :ref:`Mann–Whitney U test <Mann–Whitney U test>` on each possible"
+" pairs among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_bm <info.docfunc.hypoi_bm>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_bm:1 of
+msgid ""
+"perform :ref:`Brunner-Munzel test <Brunner-Munzel test>` on each possible"
+" pairs among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_ab <info.docfunc.hypoi_ab>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_ab:1 of
+msgid ""
+"perform :ref:`Ansari-Bradley test <Ansari-Bradley test>` on each possible"
+" pairs among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_skew <info.docfunc.hypoi_skew>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_skew:1 of
+msgid ""
+"perform :ref:`skew test <Skew test>` on each group among multi-grouped "
+"data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_kurtosis <info.docfunc.hypoi_kurtosis>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_kurtosis:1 of
+msgid ""
+"perform :ref:`kurtosis test <Kurtosis test>` on each group among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_jb <info.docfunc.hypoi_jb>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_jb:1 of
+msgid ""
+"perform :ref:`Jarque-Bera test <Jarque-Bera test>` on each group among "
+"multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_pd <info.docfunc.hypoi_pd>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_pd:1 of
+msgid ""
+"perform :ref:`Cressie-Read power divergence test <Cressie-Read power "
+"divergence test>` on each group among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoi_chi2 <info.docfunc.hypoi_chi2>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoi_chi2:1 of
+msgid ""
+"perform :ref:`Chi-Squared test <Chi-Squared test>` on each group among "
+"multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_pearson <info.docfunc.hypoj_pearson>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoj_pearson:1 of
+msgid ""
+"compute :ref:`Pearson correlation coefficient <Pearson correlation "
+"coefficient>` on each possible pairs among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_spearman <info.docfunc.hypoj_spearman>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoj_spearman:1 of
+msgid ""
+"compute :ref:`Spearman correlation coefficient <Spearman correlation "
+"coefficient>` on each possible pairs among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_kendall <info.docfunc.hypoj_kendall>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoj_kendall:1 of
+msgid ""
+"compute :ref:`Kendall's tau correlation coefficient <Kendall's tau "
+"correlation coefficient>` on each possible pairs among multi-grouped "
+"data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_t <info.docfunc.hypoj_t>`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ""
+"perform :ref:`pair-wise related T test <Student's T test>` among multi-"
+"grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_rank <info.docfunc.hypoj_rank>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoj_rank:1 of
+msgid ""
+"perform :ref:`single-rank test <Wilcoxon rank test>` among multi-grouped "
+"data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_friedman <info.docfunc.hypoj_friedman>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoj_friedman:1 of
+msgid "perform :ref:`Friedman test <Friedman test>` among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypoj_mgc <info.docfunc.hypoj_mgc>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypoj_mgc:1 of
+msgid ""
+"perform :ref:`Multiscale Graph Correlation test <Multiscale Graph "
+"Correlation test>` on each possible pairs among multi high-dimensional "
+"data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypos_mc <info.docfunc.hypos_mc>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypos_mc:1 of
+msgid ""
+"perform :ref:`Monte Carlo hypothesis test <Monte Carlo hypothesis test>` "
+"on each group among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:58:<autosummary>:1
+msgid ":py:obj:`hypos_permu <info.docfunc.hypos_permu>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:58:<autosummary>:1
+#: info.docfunc.hypos_permu:1 of
+msgid ""
+"perform :ref:`Permutation test <Permutation test>` on each possible "
+"permutation of groups among multi-grouped data."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:60 ../../source/interface/api_ana.rst:179
+msgid "Docstrings"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab info.docfunc.hypoi_ad
+#: info.docfunc.hypoi_ag info.docfunc.hypoi_bartlett info.docfunc.hypoi_bm
+#: info.docfunc.hypoi_chi2 info.docfunc.hypoi_cvm info.docfunc.hypoi_es
+#: info.docfunc.hypoi_f info.docfunc.hypoi_fk info.docfunc.hypoi_jb
+#: info.docfunc.hypoi_ks info.docfunc.hypoi_kurtosis info.docfunc.hypoi_kw
+#: info.docfunc.hypoi_levene info.docfunc.hypoi_mood
+#: info.docfunc.hypoi_normality info.docfunc.hypoi_pd info.docfunc.hypoi_rank
+#: info.docfunc.hypoi_skew info.docfunc.hypoi_sw info.docfunc.hypoi_t
+#: info.docfunc.hypoi_thsd info.docfunc.hypoi_u info.docfunc.hypoj_friedman
+#: info.docfunc.hypoj_kendall info.docfunc.hypoj_mgc info.docfunc.hypoj_pearson
+#: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
+#: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
+#: of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab:5 info.docfunc.hypoi_ad:5
+#: info.docfunc.hypoi_ag:5 info.docfunc.hypoi_bartlett:5
+#: info.docfunc.hypoi_bm:5 info.docfunc.hypoi_chi2:5 info.docfunc.hypoi_cvm:6
+#: info.docfunc.hypoi_es:5 info.docfunc.hypoi_f:5 info.docfunc.hypoi_fk:5
+#: info.docfunc.hypoi_jb:5 info.docfunc.hypoi_ks:6
+#: info.docfunc.hypoi_kurtosis:5 info.docfunc.hypoi_kw:5
+#: info.docfunc.hypoi_levene:5 info.docfunc.hypoi_mood:5
+#: info.docfunc.hypoi_normality:5 info.docfunc.hypoi_pd:6
+#: info.docfunc.hypoi_rank:5 info.docfunc.hypoi_skew:5 info.docfunc.hypoi_sw:5
+#: info.docfunc.hypoi_t:6 info.docfunc.hypoi_thsd:5 info.docfunc.hypoi_u:5
+#: info.docfunc.hypoj_friedman:5 info.docfunc.hypoj_kendall:6
+#: info.docfunc.hypoj_mgc:6 info.docfunc.hypoj_pearson:6
+#: info.docfunc.hypoj_rank:5 info.docfunc.hypoj_spearman:6
+#: info.docfunc.hypoj_t:6 info.docfunc.hypos_mc:5 info.docfunc.hypos_permu:5 of
+msgid "dict composed of group names as keywords and corresponding values"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab info.docfunc.hypoi_ad
+#: info.docfunc.hypoi_ag info.docfunc.hypoi_bartlett info.docfunc.hypoi_bm
+#: info.docfunc.hypoi_chi2 info.docfunc.hypoi_cvm info.docfunc.hypoi_es
+#: info.docfunc.hypoi_f info.docfunc.hypoi_fk info.docfunc.hypoi_jb
+#: info.docfunc.hypoi_ks info.docfunc.hypoi_kurtosis info.docfunc.hypoi_kw
+#: info.docfunc.hypoi_levene info.docfunc.hypoi_mood
+#: info.docfunc.hypoi_normality info.docfunc.hypoi_pd info.docfunc.hypoi_rank
+#: info.docfunc.hypoi_skew info.docfunc.hypoi_sw info.docfunc.hypoi_t
+#: info.docfunc.hypoi_thsd info.docfunc.hypoi_u info.docfunc.hypoj_friedman
+#: info.docfunc.hypoj_kendall info.docfunc.hypoj_mgc info.docfunc.hypoj_pearson
+#: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
+#: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
+#: of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_f:6 of
+msgid "F statistic and :math:`p`-value"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab info.docfunc.hypoi_ad
+#: info.docfunc.hypoi_ag info.docfunc.hypoi_bartlett info.docfunc.hypoi_bm
+#: info.docfunc.hypoi_chi2 info.docfunc.hypoi_cvm info.docfunc.hypoi_es
+#: info.docfunc.hypoi_f info.docfunc.hypoi_fk info.docfunc.hypoi_jb
+#: info.docfunc.hypoi_ks info.docfunc.hypoi_kurtosis info.docfunc.hypoi_kw
+#: info.docfunc.hypoi_levene info.docfunc.hypoi_mood
+#: info.docfunc.hypoi_normality info.docfunc.hypoi_pd info.docfunc.hypoi_rank
+#: info.docfunc.hypoi_skew info.docfunc.hypoi_sw info.docfunc.hypoi_t
+#: info.docfunc.hypoi_thsd info.docfunc.hypoi_u info.docfunc.hypoj_friedman
+#: info.docfunc.hypoj_kendall info.docfunc.hypoj_mgc info.docfunc.hypoj_pearson
+#: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
+#: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
+#: of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_f:11 of
+msgid "one-way ANOVA on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab:27 info.docfunc.hypoi_ad:29
+#: info.docfunc.hypoi_ag:29 info.docfunc.hypoi_bartlett:25
+#: info.docfunc.hypoi_bm:33 info.docfunc.hypoi_chi2:27
+#: info.docfunc.hypoi_cvm:33 info.docfunc.hypoi_es:26 info.docfunc.hypoi_f:25
+#: info.docfunc.hypoi_fk:31 info.docfunc.hypoi_jb:25 info.docfunc.hypoi_ks:36
+#: info.docfunc.hypoi_kurtosis:31 info.docfunc.hypoi_kw:29
+#: info.docfunc.hypoi_levene:31 info.docfunc.hypoi_mood:38
+#: info.docfunc.hypoi_normality:29 info.docfunc.hypoi_pd:31
+#: info.docfunc.hypoi_rank:27 info.docfunc.hypoi_skew:31
+#: info.docfunc.hypoi_sw:25 info.docfunc.hypoi_t:45 info.docfunc.hypoi_thsd:27
+#: info.docfunc.hypoi_u:35 info.docfunc.hypoj_friedman:25
+#: info.docfunc.hypoj_kendall:50 info.docfunc.hypoj_mgc:33
+#: info.docfunc.hypoj_pearson:28 info.docfunc.hypoj_rank:40
+#: info.docfunc.hypoj_spearman:32 info.docfunc.hypoj_t:38
+#: info.docfunc.hypos_mc:37 info.docfunc.hypos_permu:43
+#: info.docfunc.priori_scoring:70 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:1 of
+msgid ""
+"perform :ref:`pair-wise independent T test <Student's T test>` among "
+"multi-grouped data. statistic uses :eq:`statistic_t1`."
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:7 of
+msgid ""
+"tigger to determine whether groups under comparison are of the identical "
+"variance; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:9 of
+msgid ""
+"fraction to trim data from two-tails (:ref:`Yuen's T test <[Yuen1974]>`);"
+" valid value ranges from 0.0 to 0.5; 0.0 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:11 of
+msgid ""
+":math:`\\mathbb{N}`, number of permutations used for calculating "
+"numerical solution for :math:`p`-value; 0 or ``None`` for analytical "
+"solution using `t` distribution without permutations; ``None`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:14 of
+msgid ""
+"random state in Monte Carlo; effective when ``permutations`` is "
+"activated; ``None`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ag:6 info.docfunc.hypoi_bm:6
+#: info.docfunc.hypoi_kurtosis:6 info.docfunc.hypoi_kw:6
+#: info.docfunc.hypoi_mood:11 info.docfunc.hypoi_skew:6 info.docfunc.hypoi_t:16
+#: info.docfunc.hypoj_kendall:7 info.docfunc.hypoj_spearman:7
+#: info.docfunc.hypoj_t:7 of
+msgid ""
+"strategy for null value-contained in data; ``'propagate'`` return "
+"``nan``; ``'raise'`` will throw exception; ``'omit'`` will ignore null "
+"values; ``'propagate'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab:6 info.docfunc.hypoi_bm:10
+#: info.docfunc.hypoi_ks:10 info.docfunc.hypoi_kurtosis:10
+#: info.docfunc.hypoi_mood:15 info.docfunc.hypoi_rank:6
+#: info.docfunc.hypoi_skew:10 info.docfunc.hypoi_t:20 info.docfunc.hypoi_u:12
+#: info.docfunc.hypoj_kendall:11 info.docfunc.hypoj_pearson:7
+#: info.docfunc.hypoj_rank:14 info.docfunc.hypoj_spearman:11
+#: info.docfunc.hypoj_t:11 info.docfunc.hypos_mc:14 info.docfunc.hypos_permu:20
+#: of
+msgid "type of alternative hypothesis :math:`H_1`; ``'two-sided'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:22 info.docfunc.hypoj_t:15 of
+msgid "t statistics and :math:`p`-values on pair-wised groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:27 of
+msgid "independent t test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_t:39 of
+msgid ":py:func:`~info.docfunc.hypoj_t`"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_sw:6 of
+msgid "shapiro statistic and :math:`p`-value via Monte Carlo simulation"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_sw:11 of
+msgid "Shapiro-Wilk test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_normality:6 of
+msgid ""
+"strategy for null value-contained in data; ``'propagate'`` return "
+"``nan``; ``'raise'`` will throw exception; ``'omit'`` will ignore null "
+"values; ``'omit'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab:8 info.docfunc.hypoi_bm:14
+#: info.docfunc.hypoi_chi2:8 info.docfunc.hypoi_es:7 info.docfunc.hypoi_jb:6
+#: info.docfunc.hypoi_kurtosis:12 info.docfunc.hypoi_normality:10
+#: info.docfunc.hypoi_pd:12 info.docfunc.hypoi_skew:12 info.docfunc.hypoi_u:16
+#: info.docfunc.hypos_mc:18 info.docfunc.hypos_permu:24 of
+msgid "statistic and :math:`p`-value on each group"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_normality:15 of
+msgid "omnibus test for normality on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ks:1 of
+msgid ""
+"perform :ref:`Kolmogorov-Smirnov test <Kolmogorov-Smirnov test>` among "
+"multi-grouped data. calculating on each group, as well as on pair-wised "
+"groups."
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_cvm:7 info.docfunc.hypoi_ks:7 of
+msgid ""
+"distribution pre-defined as criterion (or criteria); ``rv_frozen`` "
+"object, or list of those objects in ``scipy``; the standard uni-variate "
+"gaussian ``scipy.stats.norm(loc=0, scale=1)`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_cvm:10 info.docfunc.hypoi_ks:12 of
+msgid ""
+"the method to calculate :math:`p`-value; ``'exact'`` uses exact "
+"distribution of distribution(s); ``'asymp'`` uses asymptotic "
+"distribution(s); ``'auto'`` uses one of the above options; ``'auto'`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ks:16 of
+msgid ""
+"number of samples generated from pre-defined distribution(s); 20 as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_cvm:14 info.docfunc.hypoi_ks:17 of
+msgid "statistic and :math:`p`-value on each group, and pair-wised groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ks:22 of
+msgid "Kolmogorov-Smirnov test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_cvm:1 of
+msgid ""
+"perform :ref:`Cramér-von Mises test <Cramér-von Mises test>` among multi-"
+"grouped data. calculating on each group, as well as on pair-wised groups."
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_cvm:19 of
+msgid "Cramér-von Mises test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ad:10 info.docfunc.hypoi_ag:10
+#: info.docfunc.hypoi_bartlett:6 info.docfunc.hypoi_fk:12
+#: info.docfunc.hypoi_kw:10 info.docfunc.hypoi_levene:12
+#: info.docfunc.hypoi_rank:8 info.docfunc.hypoj_friedman:6
+#: info.docfunc.hypoj_kendall:31 info.docfunc.hypoj_mgc:14
+#: info.docfunc.hypoj_pearson:9 info.docfunc.hypoj_rank:21
+#: info.docfunc.hypoj_spearman:13 of
+msgid "statistic and :math:`p`-value"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ag:15 of
+msgid "Alexander Govern test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ad info.docfunc.hypoi_mood
+#: info.docfunc.hypoi_thsd info.docfunc.hypoj_mgc info.docfunc.hypoj_rank
+#: info.docfunc.hypoj_t info.docfunc.hypos_mc info.docfunc.hypos_permu of
+msgid "Variables"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_thsd:6 of
+msgid ""
+"if ``True``, low and high of confidence interval will be returned as "
+"extra information as well; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_thsd:8 of
+msgid "statistic and :math:`p`-value on pair-wised groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_thsd:13 of
+msgid "Tukey's range test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_kw:15 of
+msgid "Kruskal-Wallis H-test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_mood:6 of
+msgid ""
+"determines how values equal to the grand median are classified; "
+"``'below'`` and ``'above'`` counts for below and above respectively; "
+"``'ignore'`` will not count; ``'below'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_mood:10 of
+msgid ""
+"number used for power divergence; 1.0 as default for Pearson's chi-"
+"squared statistic"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_mood:17 of
+msgid ""
+"if ``True``, median and contingency table will be returned as extra "
+"information from median test as well; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_mood:19 of
+msgid "statistics and :math:`p`-values for median and scale tests"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_mood:24 of
+msgid "Mood's median and scale test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_bartlett:11 of
+msgid "Bartlett's test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_fk:6 info.docfunc.hypoi_levene:6 of
+msgid ""
+"the referenced center to determine absolute distance for each "
+"observation; ``'mean'`` uses mean; ``'median'`` uses median; "
+"``'trimmed'`` uses the mean calculate from trimmed data; ``'median'`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_fk:10 info.docfunc.hypoi_levene:10 of
+msgid ""
+"fraction from leftmost and rightmost to be trimmed; effective when "
+"``center`` is ``'trimmed'``; valid value ranges from 0.0 to 0.5; 0.05 as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_levene:17 of
+msgid "Levene test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_fk:17 of
+msgid "Fligner-Killeen test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ad:6 of
+msgid ""
+"type of Anderson-Darling test; ``True`` for to continuous and discrete "
+"distributions; ``False`` for right side empirical distribution; ``True`` "
+"as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ad:8 of
+msgid ""
+"if ``True``, critical values in different significance levels will be "
+"returned as extra information; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ad:15 of
+msgid "Anderson-Darling test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_rank:13 of
+msgid "Rank sum test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_es:6 of
+msgid ""
+"where the characteristic function to be evaluated; ``(0.4, 0.8)`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_es:12 of
+msgid "Epps-Singleton on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_u:6 of
+msgid ""
+"the method to calculate :math:`p`-value; ``'exact'`` uses exact "
+"distribution of distribution(s); ``'asymptotic'`` uses approximate "
+"distribution(s); ``'auto'`` uses one of the above options; ``'auto'`` as "
+"default to choose ``'exact'`` when one of the samples is no greater than "
+"8 and no ties, otherwise ``'asymptotic'``"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_u:14 of
+msgid ""
+"whether apply continuity correction; effective when ``'method'`` is "
+"``'asymptotic'``; default is ``True``"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_u:21 of
+msgid "Mann–Whitney U test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_bm:12 of
+msgid ""
+"determine :math:`p`-value calculated from t or normal distribution; "
+"``\"t\"`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_bm:19 of
+msgid "Brunner-Munzel test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_ab:13 of
+msgid "Ansari-Bradley test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_skew:17 of
+msgid "skew test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_kurtosis:17 of
+msgid "kurtosis test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_jb:11 of
+msgid "Jarque-Bera test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_chi2:6 info.docfunc.hypoi_pd:7 of
+msgid ""
+"expected frequencies of all categories; ``None`` as default for all equal"
+" for all categories"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_pd:9 of
+msgid ""
+"number to be subtracted from degree of freedom; ``0`` as default uses "
+"degree of freedom :math:`k-1` where :math:`k` is the number of all "
+"observations"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_pd:11 of
+msgid ""
+"real-value to determine the power of statistic; 1 as default for Pearson "
+"version"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_pd:17 of
+msgid "Power divergence on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoi_chi2:13 of
+msgid "Chi-Squared test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_pearson:14 of
+msgid "Pearson correlation coefficient on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_spearman:18 of
+msgid "Spearman correlation coefficient on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_kendall:13 of
+msgid ""
+"the method to calculate :math:`p`-value; ``'exact'`` uses exact "
+"distribution of distribution(s); ``'approx'`` uses double probability of "
+"`single-tailed` to approximate that of `two-tailed`; ``'asymp'`` uses "
+"asymptotic distribution(s); ``'auto'`` uses one of the above options; "
+"``'auto'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_kendall:20 of
+msgid ""
+"determine type of :math:`     au` to be calculated; ``'b'`` uses Kendall "
+":math:`       au`; ``'c'`` uses Stuart's :math:`      au`; ``'w'`` will "
+"activate weighted :math:`        au`."
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_kendall:23 of
+msgid ""
+"whether using decreasing lexicographical rank; if ``False``, index of "
+"element will be processed as rank; effective when weighted :math:`     "
+"au` is activated; ``True`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_kendall:25 of
+msgid ""
+"trigger to determine whether using weight when computing rank :math:`r`; "
+"acceptable mapping must be able to convert positive integer into weight "
+"(e.g. :math:`f(r) = (1+r)^{-1}`); ``None`` as default to use no weight"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_kendall:28 of
+msgid ""
+"determine how weight be calculated on statistic; if ``True``, weight will"
+" be processed as item to be added; Otherwise the item to be multiplied; "
+"effective when weighted :math:`    au` is activated; ``True`` as default;"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_kendall:36 of
+msgid "Kendall's tau correlation coefficient on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_t:1 of
+msgid ""
+"perform :ref:`pair-wise related T test <Student's T test>` among multi-"
+"grouped data. statistic uses :eq:`statistic_t4`."
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_t:13 of
+msgid ""
+"if ``True``, degree of freedom will be returned as extra information as "
+"well; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_t:20 of
+msgid "related t test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_t:32 of
+msgid ":py:func:`~info.docfunc.hypoi_t`"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_rank:6 of
+msgid ""
+"method for counting the pairs with equal value; ``'wilcox'`` ignore that "
+"cases; ``'pratt'`` only include that cases in ranking process; "
+"``'zsplit'`` include that cases in ranking process and split half-half to"
+" positive and negative counts; ``'wilcox'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_rank:12 of
+msgid ""
+"Whether apply continuity correction to adjust rank statistic if normal "
+"approximation used; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_rank:16 of
+msgid ""
+"the method to calculate :math:`p`-value; ``'exact'`` uses exact "
+"distribution of distribution(s); ``'approx'`` uses approximate "
+"distribution(s); ``'auto'`` uses one of the above options; ``'auto'`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_rank:20 of
+msgid ""
+"if ``True``, the :math:`Z` statistic will be returned; ``False`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_rank:26 of
+msgid "Single rank test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_friedman:11 of
+msgid "Friedman test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_mgc:7 of
+msgid ""
+"criterion to measure the distance of two element when calculating "
+"distance matrix; ``lambda x, y: np.linalg.norm(x-y, ord=2, axis=0)`` as "
+"default to calculate the Euclidean distance"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_mgc:10 of
+msgid ""
+"number of resampled permutations to calculate :math:`p`-value; 1000 as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_mgc:11 of
+msgid "random state to control random sample generation; ``None`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_mgc:12 of
+msgid ""
+"if ``True``, scale map, optimal scales, and random points for null "
+"distribution will be returned as extra information as well; ``False`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypoj_mgc:19 of
+msgid "Multiscale Graph Correlation test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_mc:6 of
+msgid ""
+"distribution(s) predefined; standard uni-variate gaussian ``norm(loc=0, "
+"scale=1)`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_mc:8 info.docfunc.hypos_permu:11 of
+msgid ""
+"number of resampled datapoints generated from predefined distribution(s);"
+" 9999 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_mc:10 of
+msgid ""
+"dict composed of name and aggregation function mapping to calculate "
+"statistic; ``{'mean': lambda x: numpy.mean(x)}`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_mc:12 info.docfunc.hypos_permu:18 of
+msgid ""
+"number of samples used for each call of values in ``agg_statistics``; "
+"``None`` as default which equals the ``n_resamples``"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_mc:16 info.docfunc.hypos_permu:22 of
+msgid ""
+"if ``True``, random points for null distribution will be returned as "
+"extra information as well; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_mc:23 of
+msgid "Monte Carlo hypothesis test on multi groups"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_permu:6 of
+msgid ""
+"permutation type; ``'samples'`` and ``'pairings'`` requires all data to "
+"be compared have the same size; ``'independent'`` assume all input data "
+"are of independent; ``'independent'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_permu:13 of
+msgid ""
+"number of groups for each call of test; acceptable value is integer equal"
+" or greater than 2; 2 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_permu:15 of
+msgid ""
+"dict composed of name and aggregation mapping to calculate statistic; "
+"``{'std_of_mean': lambda *x: np.std([np.mean(_) for _ in x])}`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hypos_permu:29 of
+msgid "Permutation test on multi groups"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:162
+msgid "_`Module factors`"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:167
+msgid ""
+"The module factors will support for scientific experiment design, data "
+"exploration, and etc. It is a powerful tool for data exploration, "
+"allowing researchers to extract meaningful patterns and relationships "
+"from complex datasets. Refer :ref:`supplementary <Factor analysis>` for "
+"its scientific background."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:171
+msgid "Similarly, the import through entry through ``info.me`` is available."
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:177:<autosummary>:1
+msgid ":py:obj:`priori_scoring <info.docfunc.priori_scoring>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_ana.rst:177:<autosummary>:1
+#: info.docfunc.priori_scoring:1 of
+msgid ""
+":ref:`priori scoring <Priori scoring>` implementation for :ref:`multi "
+"factors analysis <Factor analysis>`."
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:5 of
+msgid "table with multi factors as indexing, whose columns are un-ranked"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:6 of
+msgid ""
+"constructor to parse the factors and corresponding levels in indexing of "
+"data; dict used factor names as keywords, and list composed of level "
+"names as the corresponding value"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:9 of
+msgid ""
+"list composed of factors that sensitive to affect the final numeric; the "
+"factor selection should follow the common sense, or expertise in that "
+"field"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:12 of
+msgid ""
+"list composed of factors that no sensitive to affect the final numeric; "
+"``None`` as default will automatically the unselected factors based on "
+"``constructor`` and ``response_dimensions``"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:16 of
+msgid ""
+"the callback :ref:`aggregation function <aggregation function>` to map "
+"the :ref:`rearranged pseudo-tensor <Rearranged pseudo-tensor>` to a "
+"scalar; ``None`` as default to use :ref:`normality <Shapiro-Wilk test>` "
+"combined with :ref:`ANOVA <one-way ANOVA test>` to measure how extent the"
+" data departure from the priori hypothesis"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:21 of
+msgid ""
+"value to fill the un-existed factor combinations; the ``measure`` "
+"function should be capable to deal with this value if use customized "
+"method; ``numpy.nan`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:24 of
+msgid "whether export the final scores for all column names; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:25 of
+msgid ""
+"a dict composed of importance level, and column names (and corresponding "
+"scores) in that level"
+msgstr ""
+
+#: ../../docstring info.docfunc.priori_scoring:30 of
+msgid "factor analysis automation using priori scoring algorithm"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:186
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:187
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_ana.rst:188
+msgid "Jun 30, 2023"
+msgstr ""
+

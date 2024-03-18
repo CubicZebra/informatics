@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/tutorial/tut_main.rst:9
+msgid "Scripting via function"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:9
+msgid "Pipelining data process"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:20
+msgid "Preparing batch processing"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:20
+msgid "Transform and identification"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:20
+msgid "DICOM related operations"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:20
+msgid "Applying data augmentation"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:2
+msgid "_`Tutorials`"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:5
+msgid "_`Functional programming`"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:7
+msgid "Collection for concept and practice for Python in functional programming."
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:15
+msgid "_`Example navigation`"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:17
+msgid ""
+"Gallery of examples on various scientific computing fields, with scopes "
+"from theoretical simulation to practical application."
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:29
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:30
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:31
+msgid "Jan 2, 2024"
+msgstr ""
+

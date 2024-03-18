@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_io.rst:2
+msgid "_`Module io`"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:9
+msgid ""
+"Utilities for file or folder selection, filter, regrouping, or mapping. "
+"Can be derived as attribute or data loader function as required. Original"
+" location of :ref:`IO <IO>` module in informatics is mainly in namespace "
+"``info.toolbox.libs.io``. The main entry ``info.me`` is also available "
+"for convenience."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`leaf_folders <info.docfunc.leaf_folders>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_io.rst:23:<autosummary>:1
+#: info.docfunc.leaf_folders:1 of
+msgid "search leaf folders recursively from a root folder."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`search_from_root <info.docfunc.search_from_root>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_io.rst:23:<autosummary>:1
+#: info.docfunc.search_from_root:1 of
+msgid "search (specific) files recursively from root folder."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`generic_filter <info.docfunc.generic_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid "filter a sequence of str using regex pattern."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`files_regroup <info.docfunc.files_regroup>`"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid "regroup a str sequence based on a list of patterns."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`dict_filter <info.docfunc.dict_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid "filter values of dict using regex pattern."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`archive <info.docfunc.archive>`"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid "python object(s) persistence toolkit."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:23:<autosummary>:1
+msgid ":py:obj:`unarchive <info.docfunc.unarchive>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_io.rst:23:<autosummary>:1
+#: info.docfunc.unarchive:1 of
+msgid "toolkit to load python persistence object(s)."
+msgstr ""
+
+#: ../../source/interface/api_io.rst:25
+msgid "Docstrings"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive info.docfunc.dict_filter
+#: info.docfunc.files_regroup info.docfunc.generic_filter
+#: info.docfunc.leaf_folders info.docfunc.search_from_root
+#: info.docfunc.unarchive of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring info.docfunc.leaf_folders:5 info.docfunc.search_from_root:5
+#: of
+msgid "path-like string of root folder"
+msgstr ""
+
+#: ../../docstring info.docfunc.leaf_folders:6 info.docfunc.search_from_root:7
+#: of
+msgid ""
+"file system mode; ``'desktop'`` for desktop file system and ``'hdfs'`` "
+"for distributed file system; ``'desktop'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive info.docfunc.dict_filter
+#: info.docfunc.files_regroup info.docfunc.generic_filter
+#: info.docfunc.leaf_folders info.docfunc.search_from_root
+#: info.docfunc.unarchive of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring info.docfunc.leaf_folders:8 of
+msgid "a generator for paths of leaf folders from root folder"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive info.docfunc.dict_filter
+#: info.docfunc.files_regroup info.docfunc.generic_filter
+#: info.docfunc.leaf_folders info.docfunc.search_from_root
+#: info.docfunc.unarchive of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter info.docfunc.files_regroup
+#: info.docfunc.generic_filter info.docfunc.leaf_folders
+#: info.docfunc.search_from_root of
+msgid "Raises"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:11 info.docfunc.files_regroup:9
+#: info.docfunc.generic_filter:11 info.docfunc.leaf_folders:10
+#: info.docfunc.search_from_root:11 of
+msgid "``data`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.leaf_folders:14 of
+msgid "list all leaf folders from root"
+msgstr ""
+
+#: ../../docstring info.docfunc.leaf_folders:43
+#: info.docfunc.search_from_root:29 of
+msgid "support search in distributed file system"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:45 info.docfunc.dict_filter:34
+#: info.docfunc.files_regroup:27 info.docfunc.generic_filter:32
+#: info.docfunc.leaf_folders:45 info.docfunc.search_from_root:31
+#: info.docfunc.unarchive:35 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.search_from_root:6 of
+msgid "function to determine selected files; ``lambda x: x`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.search_from_root:9 of
+msgid "a generator for selected files from root folder"
+msgstr ""
+
+#: ../../docstring info.docfunc.search_from_root:15 of
+msgid "list all python scripts from root"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_filter:1 of
+msgid ""
+"filter a sequence of str using regex pattern. return a generator for a "
+"sequence composed of filtered str, or mapped object from those str."
+msgstr ""
+
+#: ../../docstring info.docfunc.files_regroup:5 info.docfunc.generic_filter:6
+#: of
+msgid "a str sequence"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:7 info.docfunc.generic_filter:7 of
+msgid "regular pattern for filter; ``r'.*'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_filter:8 of
+msgid "mapping function for filtered str as input; ``None`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_filter:9 of
+msgid "a generator of filtered str, or mapped object from those str"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_filter:15 of
+msgid "filtering and mapping for names"
+msgstr ""
+
+#: ../../docstring info.docfunc.files_regroup:1 of
+msgid ""
+"regroup a str sequence based on a list of patterns. regular expression "
+"supported."
+msgstr ""
+
+#: ../../docstring info.docfunc.files_regroup:6 of
+msgid "a regular expression list; ``[r'.*']`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.files_regroup:7 of
+msgid ""
+"a dict with patterns as keywords, and elements matched those patterns as "
+"their respective values"
+msgstr ""
+
+#: ../../docstring info.docfunc.files_regroup:13 of
+msgid "regroup names by initial"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:1 of
+msgid ""
+"filter values of dict using regex pattern. return a dict composed of "
+"elements which matches pattern, or mapped objects from that elements as "
+"values."
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:6 of
+msgid "a dict composed of keywords and str sequence values"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:8 of
+msgid "mapping function for matched str as input; ``None`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:9 of
+msgid ""
+"dict composed of elements which matches pattern, or mapped objects from "
+"that elements as values"
+msgstr ""
+
+#: ../../docstring info.docfunc.dict_filter:15 of
+msgid "select female names and calculate name length"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:1 of
+msgid ""
+"python object(s) persistence toolkit. append `pyp` or `pyp.gz` suffix on "
+"file name(s)."
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:5 of
+msgid "object, or objects to be saved contained in an iterable container"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:6 of
+msgid "file name(s) for objects to be saved"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:7 of
+msgid ""
+"file name when use compression; if assigned, a ``_header.pyp`` will be "
+"generated to note down file list; ``None`` as default to not activate"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive info.docfunc.unarchive of
+msgid "Variables"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:9 of
+msgid ""
+"compression method code; 0 for ``STORED``; 8 for ``DEFLATED``; 12 for "
+"``BZIP2``; and 14 for ``LZMA``; 8 as default; available only if "
+"``compress_in`` is not ``None``"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:12 of
+msgid ""
+"int of 0 (``DEFLATED``), 1 to 9 (``DEFLATED`` and ``BZIP2``) are "
+"accepted; 5 as default; available only if ``compress_in`` is not ``None``"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:14 info.docfunc.unarchive:11 of
+msgid "NoReturn"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:19 of
+msgid ""
+"Without compression, python object can be saved integrally and "
+"individually:"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:21 of
+msgid "data persistence for python objects"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:33 of
+msgid "Or integrate all individual cases into a compressed file:"
+msgstr ""
+
+#: ../../docstring info.docfunc.archive:35 of
+msgid "data persistence for python objects with compression"
+msgstr ""
+
+#: ../../docstring info.docfunc.unarchive:5 of
+msgid ""
+"archived file with `pyp.gz` or 'pyp' suffix, or list of archived files "
+"with `pyp` suffix"
+msgstr ""
+
+#: ../../docstring info.docfunc.unarchive:7 of
+msgid ""
+"compression method code; 0 for ``STORED``; 8 for ``DEFLATED``; 12 for "
+"``BZIP2``; and 14 for ``LZMA``; 8 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.unarchive:9 of
+msgid ""
+"int of 0 (``DEFLATED``), 1 to 9 (``DEFLATED`` and ``BZIP2``) are "
+"accepted; 5 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.unarchive:16 of
+msgid "load persistent python objects"
+msgstr ""
+
+#: ../../source/interface/api_io.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:50
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_io.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:51
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_io.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_io.rst:52
+msgid "Jun 27, 2023"
+msgstr ""
+

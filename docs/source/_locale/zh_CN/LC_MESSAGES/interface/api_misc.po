@@ -1,0 +1,563 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_misc.rst:2
+msgid "_`Misc modules and functions`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:7
+msgid "_`Kernel related utilities`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:10
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:12
+msgid ""
+"Kernel generator using for multipurpose such as de-noising, filtering, "
+"local feature capturing, and etc. Advanced constructor tool applied for "
+"highly customized numerical computing. Or kernel related utilities."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:15
+msgid ""
+"Tensor kernel generator module in informatics. Location in "
+"``info.toolbox.libs._basic``. Also can import through ``from info.me "
+"import kernel_utils``."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ":py:obj:`KernelGen <info.docfunc.KernelGen>`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid "kernel generator."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ":py:obj:`averaging_kernel <info.docfunc.averaging_kernel>`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid "generate an averaging kernel with specified shape."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ":py:obj:`gaussian_kernel <info.docfunc.gaussian_kernel>`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid "generate a Gaussian kernel from a multivariate gaussian distribution."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`laplacian_of_gaussian_kernel "
+"<info.docfunc.laplacian_of_gaussian_kernel>`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ""
+"generate a :ref:`LoG <LoG>` kernel through multivariate gaussian "
+"distribution."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ":py:obj:`gabor_kernel <info.docfunc.gabor_kernel>`"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:26:<autosummary>:1
+msgid ""
+"generate a Gabor kernel via a harmonic sine multivariate gaussian "
+"distribution."
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:28
+msgid "Docstrings"
+msgstr ""
+
+#: info.docfunc.KernelGen:1 of
+msgid "kernel generator. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.KernelGen info.docfunc.averaging_kernel
+#: info.docfunc.gabor_kernel info.docfunc.gaussian_kernel
+#: info.docfunc.laplacian_of_gaussian_kernel of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring info.docfunc.KernelGen:5 info.docfunc.averaging_kernel:5
+#: info.docfunc.gabor_kernel:6 info.docfunc.gaussian_kernel:5
+#: info.docfunc.laplacian_of_gaussian_kernel:5 of
+msgid "tuple for kernel shape"
+msgstr ""
+
+#: info.docfunc.KernelGen:6 of
+msgid "element type passed on numpy ndarray; int as default"
+msgstr ""
+
+#: info.docfunc.KernelGen:7 info.docfunc.KernelGen:9 of
+msgid "argument passed on numpy ndarray; ``None`` as default"
+msgstr ""
+
+#: info.docfunc.KernelGen:8 of
+msgid "argument passed on numpy ndarray; 0 as default"
+msgstr ""
+
+#: info.docfunc.KernelGen:10 of
+msgid ""
+"argument passed on numpy ndarray; ``'C'`` for row-major and ``'F'`` for "
+"column-major; ``'C'`` as default"
+msgstr ""
+
+#: info.docfunc.KernelGen:12 of
+msgid ""
+"bias of kernel center; must be Iterable object of int to specify bias for"
+" each axis, or int assignment applied that bias to all axis; 0 as default"
+msgstr ""
+
+#: info.docfunc.KernelGen:15 of
+msgid "int or float for filling all elements in Kernel; 1 as default"
+msgstr ""
+
+#: info.docfunc.KernelGen:16 of
+msgid ""
+"substituting element by customized ndarray if specified; ``None`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.KernelGen info.docfunc.averaging_kernel
+#: info.docfunc.gabor_kernel info.docfunc.gaussian_kernel
+#: info.docfunc.laplacian_of_gaussian_kernel of
+msgid "Returns"
+msgstr ""
+
+#: info.docfunc.KernelGen:18 of
+msgid "a ndarray kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.KernelGen info.docfunc.averaging_kernel
+#: info.docfunc.gabor_kernel info.docfunc.gaussian_kernel
+#: info.docfunc.laplacian_of_gaussian_kernel of
+msgid "Return type"
+msgstr ""
+
+#: info.docfunc.KernelGen:25 of
+msgid "anchor coordinate relative to zero-origin anchor."
+msgstr ""
+
+#: info.docfunc.KernelGen:29 of
+msgid "physical center of kernel."
+msgstr ""
+
+#: info.docfunc.KernelGen:33 of
+msgid "anchor coordinate of kernel."
+msgstr ""
+
+#: info.docfunc.KernelGen:37 of
+msgid "anchor index in raveled kernel."
+msgstr ""
+
+#: info.docfunc.KernelGen:41 of
+msgid "a raveled coordinates of all kernel elements relative to kernel center."
+msgstr ""
+
+#: info.docfunc.KernelGen:45 of
+msgid "averaging kernel with shape (2, 3)"
+msgstr ""
+
+#: ../../docstring info.docfunc.KernelGen:59 info.docfunc.averaging_kernel:27
+#: info.docfunc.gabor_kernel:80 info.docfunc.gaussian_kernel:60
+#: info.docfunc.laplacian_of_gaussian_kernel:97 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_kernel:1 of
+msgid ""
+"generate an averaging kernel with specified shape. available for numpy "
+"and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_kernel:6 of
+msgid "an averaging kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_kernel info.docfunc.gabor_kernel
+#: info.docfunc.gaussian_kernel info.docfunc.laplacian_of_gaussian_kernel of
+msgid "Raises"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_kernel:8 of
+msgid "argument ``'k_shape'`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_kernel:12 of
+msgid "generate an averaging kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_kernel:21
+#: info.docfunc.gabor_kernel:72 info.docfunc.gaussian_kernel:54
+#: info.docfunc.laplacian_of_gaussian_kernel:89 of
+msgid ":py:class:`~info.docfunc.KernelGen`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:1 of
+msgid ""
+"generate a Gaussian kernel from a multivariate gaussian distribution. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:6
+#: info.docfunc.laplacian_of_gaussian_kernel:6 of
+msgid "mean of Gaussian; :math:`\\boldsymbol{0}` vector as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:7
+#: info.docfunc.laplacian_of_gaussian_kernel:7 of
+msgid "covariance matrix of Gaussian; diagonal matrix of ``k_shape`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel of
+msgid "Variables"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:9 of
+msgid "whether return the other information about kernel; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:10 of
+msgid ""
+"a Gaussian kernel object, and possibly the covariance "
+":math:`\\boldsymbol{\\Sigma}` and the corresponding rank "
+":math:`r(\\boldsymbol{\\Sigma})`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:13
+#: info.docfunc.laplacian_of_gaussian_kernel:11 of
+msgid "argument ``k_shape`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:17 of
+msgid "generate a Gaussian kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:26 of
+msgid ""
+"The kernel generation uses Gaussian multivariate probability density "
+"function as follows:"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:28 of
+msgid ""
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma}) = "
+"\\frac{1}{(2\\pi)^{\\frac{k}{2}} \\vert\n"
+"\\boldsymbol{\\Sigma} \\vert^{\\frac{1}{2}}} \\exp{[-\\frac{1}{2} "
+"(\\boldsymbol{x} - \\boldsymbol{\\mu})^T\n"
+"\\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} - \\boldsymbol{\\mu})]}"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:35 of
+msgid ""
+"Where :math:`\\boldsymbol{m}^T\\boldsymbol{\\Sigma}\\boldsymbol{m} > 0`, "
+"for all :math:`\\boldsymbol{m} \\in \\mathbb{R}^k`."
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:38 of
+msgid ""
+"Internal variable ``'~other_info'`` can be overwritten, default value "
+"uses ``False``; if ``True``, the values of returned kernel will not be "
+"rescaled, and :math:`\\boldsymbol{\\Sigma}` and "
+":math:`\\mathrm{r}(\\boldsymbol{\\Sigma})` will be returned as well. here"
+" shows the demonstration:"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:42 of
+msgid "Gaussian kernel returned with extra information"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_kernel:49 of
+#, python-format
+msgid ""
+"Final effect of gaussian kernel showed with a 3-dimensional surface is "
+"showed as :numref:`Figure %s <gaussian kernel>`."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:1 of
+msgid ""
+"generate a :ref:`LoG <LoG>` kernel through multivariate gaussian "
+"distribution. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:9 of
+msgid "an un-rescaled :ref:`LoG <LoG>` kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:15 of
+msgid "generate a Laplacian of Gaussian kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:24 of
+msgid ""
+"The 1st order derivative of gaussian distribution :eq:`multivariate "
+"Gaussian` are:"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:26 of
+msgid ""
+"\\frac{\\partial "
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma})}{\\partial "
+"\\boldsymbol{x}} = -\n"
+"\\frac{\\boldsymbol{\\Sigma}^{-1}(\\boldsymbol{x} - "
+"\\boldsymbol{\\mu})}{(2\\pi)^\\frac{k}{2} \\vert\n"
+"\\boldsymbol{\\Sigma} \\vert^\\frac{1}{2}} \\exp{[-\\frac{1}{2} "
+"(\\boldsymbol{x} - \\boldsymbol{\\mu})^T\n"
+"\\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} - \\boldsymbol{\\mu})]} = - "
+"\\boldsymbol{\\Sigma}^{-1}(\\boldsymbol{x} -\n"
+"\\boldsymbol{\\mu}) "
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma})"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:35 of
+msgid "And the derivative of 2nd order:"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:37 of
+msgid ""
+"\\begin{eqnarray}\n"
+"\\frac{\\partial^2 "
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma})}{\\partial "
+"\\boldsymbol{x} \\partial\n"
+"\\boldsymbol{x}^T} &=& "
+"\\frac{[\\boldsymbol{\\Sigma}^{-1}(\\boldsymbol{x}-\\boldsymbol{\\mu})(\\boldsymbol{x}"
+" -\n"
+"\\boldsymbol{\\mu})^T \\boldsymbol{\\Sigma}^{-1} - "
+"\\boldsymbol{\\Sigma}^{-1}]}{(2\\pi)^\\frac{k}{2} \\vert\n"
+"\\boldsymbol{\\Sigma} \\vert^\\frac{1}{2}} \\exp{[-\\frac{1}{2} "
+"(\\boldsymbol{x} - \\boldsymbol{\\mu})^T\n"
+"\\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} - \\boldsymbol{\\mu})]} \\\\ "
+"&=& [\\boldsymbol{\\Sigma}^{-1}(\\boldsymbol{x}\n"
+"- \\boldsymbol{\\mu}) (\\boldsymbol{x}-\\boldsymbol{\\mu})^T "
+"\\boldsymbol{\\Sigma}^{-1} - \\boldsymbol{\\Sigma}^{-1}]\n"
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma})\n"
+"\\end{eqnarray}"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:50 of
+msgid ""
+"Based on the definition of 2nd order gradient operator :math:`\\nabla^2`,"
+" the Laplacian of Gaussian can be calculated through traces of each "
+"matrices in :eq:`2nd order derivative of multivariate Gaussian` "
+"theoretically, however for simplification, generating its weights via the"
+" following kernel is much speedy and practical:"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:54 of
+msgid ""
+"f(\\boldsymbol{x} | \\boldsymbol{\\mu}, \\boldsymbol{\\Sigma}) \\propto  "
+"[\\frac{(\\boldsymbol{x} -\n"
+"\\boldsymbol{\\mu})^T \\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} - "
+"\\boldsymbol{\\mu})}{2} - 1]\n"
+"\\exp{[-\\frac{(\\boldsymbol{x} - \\boldsymbol{\\mu})^T "
+"\\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} -\n"
+"\\boldsymbol{\\mu})}{2}]}"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:62 of
+msgid ""
+"Where the :math:`\\boldsymbol{\\mu}` denotes the geometric center of the "
+"kernel, for any :math:`\\boldsymbol{m} \\in \\mathbb{R}^k` (:math:`k` is "
+"the number of dimensions), the :math:`\\boldsymbol{\\Sigma}` must be "
+"positive definite (:math:`\\boldsymbol{m}^T \\boldsymbol{\\Sigma} "
+"\\boldsymbol{m} > 0`)."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:67 of
+msgid ""
+"In practice, info takes :math:`\\boldsymbol{\\mu} = \\boldsymbol{0}`, and"
+" the kernel will be of the following form:"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:70 of
+msgid ""
+"\\mathrm{LoG}(\\boldsymbol{x} | \\boldsymbol{0}, \\boldsymbol{\\Sigma}) ="
+" C_1 \\cdot (1 - \\boldsymbol{x}^T\n"
+"\\boldsymbol{\\Sigma_{d}^{-1}} \\boldsymbol{x}) \\exp{(- "
+"\\boldsymbol{x}^T \\boldsymbol{\\Sigma_{d}^{-1}}\n"
+"\\boldsymbol{x})} + C_2"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:77 of
+msgid ""
+":math:`C_1` and :math:`C_2` are constants for scale and location "
+"respectively. :math:`\\boldsymbol{0}` and :math:`\\boldsymbol{\\Sigma}` "
+"are parameters for Gaussian component in kernel. The sign of :math:`C_1` "
+"determine how this kernel works: if :math:`\\mathrm{sgn}(C_1) = 1`, it "
+"will perform as a 2nd-order differential operator to highlight the areas "
+"with high change rate in value (or edge-like areas in conventional "
+"description); if :math:`\\mathrm{sgn}(C_1) = -1`, it will obtain a "
+"reversed the high change rate areas, with which overlapped into the "
+"original data the result will be revealed in higher contrast in edge-like"
+" areas."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_kernel:84 of
+#, python-format
+msgid ""
+"Final effect of gaussian kernel showed with a 3-dimensional surface is "
+"showed as :numref:`Figure %s <LoG kernel>`."
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:74
+#: info.docfunc.laplacian_of_gaussian_kernel:91 of
+msgid ":py:func:`~info.docfunc.gaussian_kernel`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:1 of
+msgid ""
+"generate a Gabor kernel via a harmonic sine multivariate gaussian "
+"distribution. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:7 of
+msgid ""
+"spatial orientation where the harmonic sine function periodically "
+"repeats; ``None`` as default to automatically generate 1 for each "
+"dimension (e.g. ``[1, 1, 1]`` for 3D data)"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:10 of
+msgid ""
+"rescale coefficient to determine the size of gaussian envelope; 1 as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:11 of
+msgid "wavelength of harmonic sine function; :math:`2\\pi` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:12 of
+msgid "phase position of harmonic sine function; 0 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:13 of
+msgid "a complex number domain Gabor kernel object"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:15 of
+msgid "argument ``k_shape`` or ``k_orientation`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:19 of
+msgid "generate a Gabor kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:28 of
+msgid ""
+"The kernel generation uses multivariate gaussian, combined with "
+":ref:`spatial sine harmonic function <spatial sine function>` as follows:"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:31 of
+msgid ""
+"G(\\boldsymbol{x}|\\boldsymbol{\\mu}, \\boldsymbol{\\Sigma}, "
+"\\boldsymbol{n}, A, \\lambda, \\phi) = A \\cdot\n"
+"\\exp{[-\\frac{1}{2} (\\boldsymbol{x} - \\boldsymbol{\\mu})^T "
+"\\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} -\n"
+"\\boldsymbol{\\mu})]} \\cdot \\exp{[i(2\\pi\\frac{\\boldsymbol{x}^T "
+"\\boldsymbol{n} }{\\lambda} + \\phi)]}"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:38 of
+msgid ""
+"Where :math:`\\boldsymbol{\\mu}` and :math:`\\boldsymbol{\\Sigma}` are "
+"parameters in multivariate gaussian kernel. Generally, "
+":math:`\\boldsymbol{\\mu} = \\boldsymbol{0}`, and "
+":math:`\\boldsymbol{\\Sigma}` is automatically determined based on "
+"``k_shape``. :math:`A` refers amplitude for rescaling the gaussian "
+"envelope. :math:`\\boldsymbol{n}` is the normal direction for hyperplane "
+"of spatial sine (cosine) function (see note in :ref:`spatial filtering "
+"<spatial sine function>`), therefore, the scalar :math:`\\boldsymbol{x} "
+"\\cdot \\boldsymbol{n}` is the projection of :math:`\\boldsymbol{x}` in "
+"direction of :math:`\\boldsymbol{n}`. :math:`\\lambda` and :math:`\\phi` "
+"is the wavelength and phase position for the spatial sine (cosine) "
+"function respectively."
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:47 of
+msgid ""
+"As the last item in :eq:`multivariate Gabor` is of the Euler's formula, "
+"the :math:`G(\\boldsymbol{x}|\\boldsymbol{\\mu}, \\boldsymbol{\\Sigma}, "
+"\\boldsymbol{n}, A, \\lambda, \\phi)` must be a complex kernel. More "
+"specifically, let :math:`N^\\prime(\\boldsymbol{x} | \\boldsymbol{\\mu}, "
+"\\boldsymbol{\\Sigma}) = \\exp{[-\\frac{1}{2} (\\boldsymbol{x} - "
+"\\boldsymbol{\\mu})^T \\boldsymbol{\\Sigma}^{-1} (\\boldsymbol{x} - "
+"\\boldsymbol{\\mu})]}`, the real part of :eq:`multivariate Gabor` will "
+"be:"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:54 of
+msgid ""
+"G_{\\mathrm{rel}}(\\boldsymbol{x}|\\boldsymbol{\\mu}, "
+"\\boldsymbol{\\Sigma}, \\boldsymbol{n}, A, \\lambda, \\phi)\n"
+"= A \\cdot N^\\prime(\\boldsymbol{x} | \\boldsymbol{\\mu}, "
+"\\boldsymbol{\\Sigma}) \\cdot \\cos{(2\\pi\n"
+"\\frac{\\boldsymbol{x}^T \\boldsymbol{n} }{\\lambda} + \\phi)}"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:61 of
+msgid "And for the imaginary part:"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_kernel:63 of
+msgid ""
+"G_{\\mathrm{img}}(\\boldsymbol{x}|\\boldsymbol{\\mu}, "
+"\\boldsymbol{\\Sigma}, \\boldsymbol{n}, A, \\lambda,\n"
+"\\phi) = A \\cdot N^\\prime(\\boldsymbol{x} | \\boldsymbol{\\mu}, "
+"\\boldsymbol{\\Sigma}) \\cdot \\sin{(2\\pi\n"
+"\\frac{\\boldsymbol{x}^T \\boldsymbol{n} }{\\lambda} + \\phi)}"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:46
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:47
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_misc.rst:48
+msgid "Jun 28, 2023"
+msgstr ""
+

@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/supplement/supp_c2.rst:2
+msgid "_`Informatics primer`"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:5
+msgid "_`Informatics function`"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:7
+msgid "Informatics function is a derived Python function featured:"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:9
+msgid "Use keyword arguments exclusively."
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:10
+msgid "Use :code:`data` as reserved keyword, to accept the data to be processed"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:12
+msgid ""
+"In a nutshell, informatics function can theoretically wrap any type of "
+"python function. Here shows the examples:"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:14
+msgid "informatics function scripting style"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:40
+msgid "_`Unit and pipeline`"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:42
+msgid ""
+"The glue for informatics functions, as well as for unit instance self. "
+"With registered informatics function, except for auto type checking, you "
+"can attach it anywhere embedded in your data processing pipeline. "
+"Following the example in :numref:`informatics function scripting style`:"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:46
+msgid "use informatics function in unit"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:54
+msgid ""
+"Unit is an elementary pipeline which cannot be disassembled further. More"
+" complicated pipelines can be implemented based on those elementary "
+"units, or on the existing pipelines themselves."
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:57
+msgid "combine units into pipeline"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:67
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:68
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/supplement/supp_c2.rst:69
+msgid "May 8, 2023"
+msgstr ""
+

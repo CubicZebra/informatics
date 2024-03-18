@@ -1,0 +1,284 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/tutorial/tut_dicom.rst:2
+msgid "_`DICOM related operations`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:4
+msgid ""
+":ref:`DICOM <DICOM>` is a standard for the exchange of medical images and"
+" related information between different modalities and systems. Proper use"
+" of pipe can greatly simplify the DICOM data related processing "
+"implementation, improve accessibility for data navigation, then "
+"accelerate obtaining content to be investigated in subsequent studies."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:10
+msgid "_`Regroup DICOM dataset`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:12
+msgid ""
+"Regrouping a DICOM dataset is a crucial step in processing medical "
+"images. It involves rearranging the DICOM files into a more organized and"
+" manageable format. This process ensures that the images can be easily "
+"accessed and analyzed by medical professionals."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:16
+msgid ""
+"More specifically, this operation must indispensably identify the DICOM "
+"files typically stored in a specific folder or directory, based on "
+"relevant criteria such as some attributes (e.g. patient ID, study date) "
+"in file headers, to ensure that the images are grouped together in a "
+"meaningful way."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:21
+msgid "_`Unrolling and reading attributes`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:23
+msgid ""
+"DICOM header is of a hierarchical structure that organizes attributes of "
+"DICOM object. Expanding its structure can visualize the keywords for "
+"these attributes. Examples can refer the snippet in :numref:`parse the "
+"structure of keywords in dicom`. Multi layered attribute is flatten via "
+"list in our design. For instance, if the value of "
+"*ReferencedFractionGroupNumber* in :numref:`parse the structure of "
+"keywords in dicom` is desired, we can read that by:"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:29
+msgid "reading multi layered attribute"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:39
+msgid "_`Create file relation map`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:41
+msgid ""
+"It gives solution to that by generating a cache for file relation map, "
+"instead of directly operating on original data (e.g. transferring or copy"
+" into new space) that results in heavy read-write load."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:44
+msgid "regroup by patient ID"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:59
+msgid ""
+"The processing frame in :numref:`regroup by patient ID` shows if there is"
+" no file relation cache exists inplace, using the pipeline to generate "
+"it, otherwise load that cache where patient-wise data processing could be"
+" started."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:63
+msgid "_`Construct DICOM images`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:82
+msgid ""
+"Reading DICOM images is a time-consuming and labor-intensive task that "
+"commonly requires processing multiple files at once. This typically "
+"involves reading the DICOM files from the file system, decoding the DICOM"
+" metadata, and extracting the pixel data for further computation."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:86
+msgid ""
+"Assume to process a folder of :ref:`DICOM dataset <DICOM file structure "
+"1>`: each patient has his or her sub-folder as second-level directory, "
+"within which there are two sets of medical images for :ref:`CT <CT>` and "
+":ref:`MR <MR>` scans respectively. Combine the operations of file search "
+"and folder relocating (see :ref:`demonstration <File searcher and folder "
+"relocation>`), its implementation can be fulfilled as:"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:91
+msgid "loading CT and MR for patients"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:105
+msgid ""
+"The ellipsis denotes real execution in this code block. Considering there"
+" might be varying research purposes from the identical dataset, thus it "
+"will make convenience to wrap :numref:`loading CT and MR for patients` "
+"into an :ref:`generator function <Applying generator function>`:"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:109
+msgid "CT and MR loading generator for patients"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:125
+msgid ""
+"Additionally, if DICOM files are not axial slice images exclusively (e.g."
+" struct, dose file are also included), the reconstructed object can even "
+"link to these extra files to acquire corresponding advanced functions. In"
+" that case however, a single variable to accept set of DICOM files is not"
+" enough. Function to distinguish whether the file is of image or not, is "
+"also required. For example, in following demonstrations, it can be seen "
+"the reconstructed image self can directly map :ref:`ROI <ROI>` name into "
+"array, and into :ref:`DVH <DVH>` result for different studies, after "
+"linking to struct and dose files respectively."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:133
+msgid "_`Comprehensive applications`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:135
+msgid ""
+"To illustrate its flexibility of operations on DICOM files, let's "
+"consider two distinct studies as examples."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:138
+msgid "_`Imaging feature extraction`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:155
+msgid ""
+"Consider the :ref:`DICOM dataset <DICOM file structure 2>` with case "
+"folders as sub directories, within which there are one set of CT scan, "
+"and the corresponding structure DICOM file where ROI stored. As shown in "
+":numref:`ROI access for feature extraction`, each search step can ensure "
+"the last case must be struct file, hence two variables :code:`slices` and"
+" :code:`struct` are declared, to accept these two different types of "
+"DICOM file(s). With linking the constructed image into the struct file "
+"via :code:`link_struct`, the method :code:`roi_name_map` will be "
+"activated in :code:`_gen_for_feature`."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:162
+msgid ""
+"After wrapping with :ref:`lambda calculus frame <Function based "
+"scripting>`, the :code:`loader` can be treated as the connector, "
+"integrating from file system to the feature extraction."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:165
+msgid "ROI access for feature extraction"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:190
+#, python-format
+msgid ""
+"Return value from the above pipeline is a data frame object with patient "
+"name coupled with ROI name as its indexing, while imaging features as its"
+" columns. The :numref:`Figure %s <image feature sheet>` shows a glance of"
+" the feature collection, obtained using `lesion`, `invasion1` and "
+"`invasion2` in ROI name list."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:199
+msgid "image feature collection"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:202
+msgid "_`Evaluation for radiotherapy schedule`"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:204
+msgid ""
+"An evaluation for radiotherapy schedule is crucial for ensuring effective"
+" treatment and minimizing side effects. Conducting a thorough evaluation "
+"can help healthcare professionals ensure that the chosen radiotherapy "
+"schedule provides the acceptable outcomes for the patient."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:208
+msgid ""
+"Except for struct DICOM, in radiotherapy schedule task there must be a "
+"dose file. Make sure the DICOM files have been properly subdivided into "
+"set for image, dose, and struct file individually (as shown in "
+":numref:`case study of radiotherapy schedule`), the linkage from "
+"constructed image, to dose and struct file will activate methods of "
+":code:`roi_name_map` and :code:`dvh_name_map` respectively, after which "
+"calculation directly from list of ROI names to be investigated is "
+"available."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:214
+msgid "case study of radiotherapy schedule"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:240
+#, python-format
+msgid ""
+"Last two lines in :numref:`case study of radiotherapy schedule` visualize"
+" the image as :ref:`DVH <DVH>` figure. The 3D image and the selected ROIs"
+" will be like :numref:`Figure %s <visualization for cervical lesion>`:"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:248
+msgid "visualization for cervical cancer case with ROIs"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:250
+#, python-format
+msgid ""
+"The computed DVH result is shown as :numref:`Figure %s <dvh for cervical "
+"lesion>` and will be export as `DVH1.png` inplace."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:258
+msgid "dose volume histogram for ROIs"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:260
+msgid ""
+"Include the main body of :numref:`case study of radiotherapy schedule` "
+"within a callable unit make its logic available anywhere. If :ref:`batch "
+"processing <Operations on file search and mapping>` is necessary, it can "
+"automatically generate DVH figures, maybe useful for downstream analysis."
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:266
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:267
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_dicom.rst:268
+msgid "Feb 19, 2024"
+msgstr ""
+

@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_instance.rst:2
+msgid "_`Option instances`"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:9
+msgid ""
+"Optional branch to import example data. Running this module requires "
+"internet connection. Additionally, libraries of `requests "
+"<https://requests.readthedocs.io/en/latest>`_ and `pillow "
+"<https://pypi.org/project/pillow>`_ were installed. Main entry is in "
+"``info.ins``."
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:17:<autosummary>:1
+msgid ":py:obj:`datasets <info.docfunc.datasets>`"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:17:<autosummary>:1
+#: info.docfunc.datasets:1 of
+msgid "example images collection."
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:19
+msgid "Docstrings"
+msgstr ""
+
+#: info.docfunc.datasets:7 of
+msgid "grey level image with shape of (1000, 781)"
+msgstr ""
+
+#: info.docfunc.datasets:11 of
+msgid "grey level image with shape of (1152, 768)"
+msgstr ""
+
+#: info.docfunc.datasets:15 of
+msgid "grey level image with shape of (725, 544)"
+msgstr ""
+
+#: info.docfunc.datasets:19 of
+msgid "grey level image with shape of (1280, 696)"
+msgstr ""
+
+#: info.docfunc.datasets:23 of
+msgid "boolean image with shape of (748, 533)"
+msgstr ""
+
+#: info.docfunc.datasets:29 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:25
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:26
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_instance.rst:27
+msgid "Mar 6, 2024"
+msgstr ""
+

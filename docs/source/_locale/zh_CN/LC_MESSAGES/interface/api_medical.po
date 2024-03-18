@@ -1,0 +1,720 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_medical.rst:2
+msgid "_`Option digitmed`"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:9
+msgid ""
+"Medical image related tools (data mainly in :ref:`DICOM <DICOM>` "
+"protocol). Operations include regrouping and re-sorting slices, read meta"
+" information, link to other type of DICOM files and etc. In addition, "
+"measurement for images as feature extraction is also supported. "
+"Dependencies of `SimpltITK <http://simpleitk.org>`_ and `pydicom "
+"<https://github.com/pydicom/pydicom>`_ are required."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:14
+msgid ""
+"Namespace of this module is mainly in ``info.toolbox.digitmed.rebuild``. "
+"For convenience in practice, use main entry of ``info.med``."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`DcmSetConstructor <info.docfunc.DcmSetConstructor>`"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: info.docfunc.DcmSetConstructor:1 of
+msgid "load and re-organize a set of dicom slices in memory."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`DcmSeries <info.docfunc.DcmSeries>`"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: info.docfunc.DcmSeries:1 of
+msgid "build 3D image from a dicom series."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`dcm_hierarchical_parser <info.docfunc.dcm_hierarchical_parser>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: info.docfunc.dcm_hierarchical_parser:1 of
+msgid "parse keywords in dicom headers recursively."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`dcm_attr_loader <info.docfunc.dcm_attr_loader>`"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid "generic attribute loader for dicom file."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`dcm_constructor <info.docfunc.dcm_constructor>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: info.docfunc.dcm_constructor:1 of
+msgid "rebuild dicom image(s) from a set of dicom slice files."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`dcm_regroup <info.docfunc.dcm_regroup>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: info.docfunc.dcm_regroup:1 of
+msgid "generate a cache for logging regrouped dicom files."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+msgid ":py:obj:`radiomics_features <info.docfunc.radiomics_features>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: info.docfunc.radiomics_features:1 of
+msgid "feature extraction automation."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:29
+msgid "Docstrings"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
+#: info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor
+#: info.docfunc.dcm_hierarchical_parser info.docfunc.dcm_regroup
+#: info.docfunc.radiomics_features of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:5 info.docfunc.DcmSetConstructor:5
+#: info.docfunc.dcm_constructor:5 of
+msgid "Iterable object composed of paths of dicom slices"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:6 info.docfunc.DcmSetConstructor:6
+#: info.docfunc.dcm_constructor:6 of
+msgid "library as load engine; ``'SimpleITK'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:7 info.docfunc.DcmSetConstructor:7
+#: info.docfunc.dcm_constructor:7 of
+msgid ""
+"keyword or tag for determining the same set of dicom slices; "
+"``\"0020|000e\"`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:8 info.docfunc.DcmSetConstructor:8
+#: info.docfunc.dcm_constructor:8 of
+msgid ""
+"keyword or tag for determining the individual dicom slice instance; "
+"``\"0008|0018\"`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:10 info.docfunc.DcmSetConstructor:10
+#: info.docfunc.dcm_constructor:10 of
+msgid ""
+"keyword or tag of Image Orientation (Patient); ``\"0020|0037\"`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:11 info.docfunc.DcmSetConstructor:11
+#: info.docfunc.dcm_constructor:11 of
+msgid "keyword or tag of Pixel Spacing; ``\"0028|0030\"`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:12 info.docfunc.DcmSetConstructor:12
+#: info.docfunc.dcm_constructor:12 of
+msgid "keyword or tag of Image Position (Patient); ``\"0020|0032\"`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:13 info.docfunc.DcmSetConstructor:13
+#: info.docfunc.dcm_constructor:13 of
+msgid "keyword or tag of Spacing Between Slices; ``\"0018|0088\"`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
+#: info.docfunc.dcm_constructor info.docfunc.dcm_regroup of
+msgid "Variables"
+msgstr ""
+
+#: info.docfunc.DcmSeries:17 info.docfunc.DcmSetConstructor:14 of
+msgid "index of stacking axis; 2 as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:18 info.docfunc.DcmSetConstructor:15 of
+msgid "trigger for prompting message during data loading; ``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSetConstructor:16
+#: info.docfunc.dcm_constructor:17 info.docfunc.dcm_regroup:17 of
+msgid ""
+"customized loader to transfer string of file path, to object in memory; "
+"``None`` as default to use ``pydicom`` or ``SimpleITK`` automatically"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
+#: info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor
+#: info.docfunc.dcm_hierarchical_parser info.docfunc.dcm_regroup
+#: info.docfunc.radiomics_features of
+msgid "Returns"
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:19 of
+msgid "a DcmSetConstructor instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
+#: info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor
+#: info.docfunc.dcm_hierarchical_parser info.docfunc.dcm_regroup
+#: info.docfunc.radiomics_features of
+msgid "Return type"
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:26 of
+msgid "list of original dicom slice paths."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:30 of
+msgid ""
+"nested lists of re-organized dicom slice paths. paths attributed to the "
+"identical series were gathered into the same inner list."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:35 of
+msgid ""
+"engine for loading and meta information. SimpleITK and pydicom are "
+"supported."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:39 of
+msgid "header files using data loading engine mapped from ``files`` attribute."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:43 of
+msgid ""
+"nested lists of re-organized header files. header files attributed to the"
+" identical series were gathered into the same inner list."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:48 of
+msgid ""
+"keyword or tag for determining the same set of dicom slices. fetched from"
+" ``settings`` attribute."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:52 of
+msgid ""
+"keyword or tag for determining the individual dicom slice instance. "
+"fetched from ``settings`` attribute."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:56 of
+msgid "default settings for re-organizing."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:60 of
+msgid ""
+"index for stacking axis. determined by internal parameter "
+"``~stacking_axis``."
+msgstr ""
+
+#: info.docfunc.DcmSetConstructor:64 of
+msgid "re-organizing dicom slices"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSetConstructor:81
+#: info.docfunc.dcm_constructor:55 of
+msgid ""
+"support customized file loader via built-in argument "
+"``~user_defined_io``, to enable dicom construction in distributed file "
+"system."
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:232 info.docfunc.DcmSetConstructor:84
+#: info.docfunc.dcm_attr_loader:57 info.docfunc.dcm_constructor:58
+#: info.docfunc.dcm_hierarchical_parser:43 info.docfunc.dcm_regroup:69
+#: info.docfunc.radiomics_features:44 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.DcmSeries:14 info.docfunc.dcm_constructor:14 of
+msgid ""
+"combination of ``'x'``, ``'y'`` and ``'z'`` to specify axis order; "
+"``'zyx'`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:15 of
+msgid "get a meta information template; ``None`` for default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:16 of
+msgid "trigger to escape sort step; ``True`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:19 of
+msgid "a DcmSeries instance"
+msgstr ""
+
+#: info.docfunc.DcmSeries:26 of
+msgid "dict composed of header information for a set of dicom file series."
+msgstr ""
+
+#: info.docfunc.DcmSeries:30 of
+msgid ""
+"a :math:`\\mathbb{R}^{4 \\times 4}` ndarray of affine matrix. affine "
+"describe the transformation from pixel to voxel space (see `affine matrix"
+" <https://dicom.innolitics.com/ciods/ct-image/image-plane/00200037>`_)."
+msgstr ""
+
+#: info.docfunc.DcmSeries:36 of
+msgid ""
+"a :math:`\\mathbb{R}^3` ndarray of voxel spacing in order of "
+"``_intrinsic_order`` attribute."
+msgstr ""
+
+#: info.docfunc.DcmSeries:40 of
+msgid ""
+"a :math:`\\mathbb{R}^3` ndarray of original location in order of "
+"``_intrinsic_order`` attribute."
+msgstr ""
+
+#: info.docfunc.DcmSeries:44 of
+msgid ""
+"tuple composed of ndarray as coordinate in order of ``_intrinsic_order`` "
+"attribute."
+msgstr ""
+
+#: info.docfunc.DcmSeries:48 of
+msgid "3-dimensional ndarray of image."
+msgstr ""
+
+#: info.docfunc.DcmSeries:52 of
+msgid ""
+"3-dimensional ndarray of standard uptake values built from image. applied"
+" exclusively in positron emission tomography (:ref:`PET "
+"<[Wiyaporn2011]>`) modality."
+msgstr ""
+
+#: info.docfunc.DcmSeries:57 of
+msgid "the same as ``affine``."
+msgstr ""
+
+#: info.docfunc.DcmSeries:61 of
+msgid ""
+"a certain combination of ``(0, 1, 2)``, determined by parameter "
+"``axis_order``. for example, the default ``axis_order`` used ``'zyx'`` "
+"will result in intrinsic order of ``(2, 1, 0)``."
+msgstr ""
+
+#: info.docfunc.DcmSeries:66 of
+msgid "acquired attribute after linkage to struct file via ``link_struct``."
+msgstr ""
+
+#: info.docfunc.DcmSeries:70 of
+msgid "acquired attribute after linkage to dose file via ``link_dose``."
+msgstr ""
+
+#: info.docfunc.DcmSeries:74 of
+msgid "acquired attribute after linkage to plan file via ``link_plan``."
+msgstr ""
+
+#: info.docfunc.DcmSeries:80 of
+msgid "link object to current dicom series."
+msgstr ""
+
+#: info.docfunc.DcmSeries:82 of
+msgid "path-like string for struct file"
+msgstr ""
+
+#: info.docfunc.DcmSeries:83 of
+msgid ""
+"attribute keywords to visit roi names; ``['StructureSetROISequence', "
+"'ROIName']`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:85 of
+msgid ""
+"attribute keywords to visit roi numbers; ``['StructureSetROISequence', "
+"'ROINumber']`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:87 of
+msgid ""
+"attribute keywords to visit contour sequence; ``['ROIContourSequence', "
+"'ContourSequence']`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:89 of
+msgid ""
+"attribute keywords to visit referenced roi numbers; "
+"``['ROIContourSequence', 'ReferencedROINumber']`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:91 of
+msgid ""
+"callable object to map roi from name to ndarray; a ``SingleMap`` instance"
+" generated through previous arguments as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:95 of
+msgid "link to struct file"
+msgstr ""
+
+#: info.docfunc.DcmSeries:107 of
+msgid ""
+"acquired method after linking to struct file via ``link_struct``. obtain "
+"the :ref:`ROI <ROI>` ndarray from names."
+msgstr ""
+
+#: info.docfunc.DcmSeries:110 info.docfunc.DcmSeries:173 of
+msgid "names for desired rois"
+msgstr ""
+
+#: info.docfunc.DcmSeries:112 of
+msgid "load rois after struct linkage"
+msgstr ""
+
+#: info.docfunc.DcmSeries:121 of
+msgid "link object to current dicom dose."
+msgstr ""
+
+#: info.docfunc.DcmSeries:123 of
+msgid "path-like string for dose file"
+msgstr ""
+
+#: info.docfunc.DcmSeries:124 of
+msgid ""
+"attribute keywords to visit grid frame offset vector; ``\"3004|000c\"`` "
+"as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:126 of
+msgid ""
+"attribute keywords to visit dose grid scaling; ``\"3004|000e\"`` as "
+"default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:128 of
+msgid ""
+"decomposition method when applying :py:func:`~info.docfunc.resize` for "
+"resampling; ``'cp'`` or ``'tucker'`` is available; ``'tucker'`` as "
+"default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:131 of
+msgid ""
+"interpolation method when applying :py:func:`~info.docfunc.resize`; "
+"options are ``'linear'``, ``'nearest'``, ``'nearest-up'``, ``'zero'``, "
+"``'slinear'``, ``'quadratic'``, ``'cubic'``, ``'previous'``, and "
+"``'next'``; ``'linear'`` as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:135 of
+msgid "number of points to be generated for dose volume histogram; 100 as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:136 of
+msgid ""
+"callable object to map roi from name to dose volume histogram points in "
+"(x, y) pairs; before which the ``link_struct`` method must be activated; "
+"a ``SingleMap`` instance generated through previous argument as default"
+msgstr ""
+
+#: info.docfunc.DcmSeries:152 of
+msgid "link to dose file"
+msgstr ""
+
+#: info.docfunc.DcmSeries:166 of
+msgid ""
+"acquired attribute to obtain the dose ndarray calibrated via original "
+"image"
+msgstr ""
+
+#: info.docfunc.DcmSeries:170 of
+msgid ""
+"acquired method after linking to dose file via ``link_dose``. obtain the "
+":ref:`DVH <DVH>` ndarray from names."
+msgstr ""
+
+#: info.docfunc.DcmSeries:175 of
+msgid "load points after struct and dose linkage"
+msgstr ""
+
+#: info.docfunc.DcmSeries:190 of
+msgid ""
+"the corresponding dose volume histogram plot using "
+":py:class:`~info.docfunc.Canvas` to visualize will be like:"
+msgstr ""
+
+#: info.docfunc.DcmSeries:198 of
+msgid "dose volume histogram plot"
+msgstr ""
+
+#: info.docfunc.DcmSeries:202 of
+msgid "|und dev|"
+msgstr ""
+
+#: info.docfunc.DcmSeries:206 of
+msgid "rebuild re-organized dicom slices"
+msgstr ""
+
+#: info.docfunc.DcmSeries:220 of
+msgid ":py:class:`~info.docfunc.SingleMap`"
+msgstr ""
+
+#: info.docfunc.DcmSeries:222 of
+msgid ":py:func:`~info.docfunc.dcm_constructor`"
+msgstr ""
+
+#: info.docfunc.DcmSeries:230 of
+msgid ""
+"support linkage to struct file, acquired attribute and ``roi_name_map`` "
+"method after linkage."
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_hierarchical_parser:5 of
+msgid ""
+"path-like str, the return from :py:func:`~info.docfunc.dcm_attr_loader`, "
+"or ``Sequence`` instance from ``pydicom``"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_hierarchical_parser:7 of
+msgid "the parsed structure of keywords"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_hierarchical_parser:12 of
+msgid "parse the structure of keywords in dicom"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:1 of
+msgid ""
+"generic attribute loader for dicom file. with attribute keyword, or list "
+"of keywords describing the hierarchical relationship, corresponding "
+"values can be obtained."
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:6 of
+msgid "path-like string for dicom file, or pydicom ``DataFileset`` object"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:7 of
+msgid ""
+"str for attribute, list of keywords for attribute path, or tuple of path "
+"list for multiple attributes reading"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:9 of
+msgid "values in dicom headers"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor of
+msgid "Raises"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:11
+#: info.docfunc.dcm_constructor:22 of
+msgid "``data`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:15 of
+msgid "Load attributes starting from a dicom file:"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:17 of
+msgid "dicom attribute loading pipeline from file"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:36 of
+msgid ""
+"Or load attributes, from the return of "
+":py:func:`~info.docfunc.dcm_attr_loader` self. This property is expected "
+"to be used in the circumstance of existing complicated parallel structure"
+" in parent attributes."
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:39 of
+msgid "dicom attribute loading pipeline from self return"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_attr_loader:51 of
+msgid ""
+"``pydicom`` styled attribute path is supported exclusively, due to its "
+"stable capability to parse header."
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_constructor:15 of
+msgid ""
+"whether save a template meta via ``pydicom`` for each ``DcmSeries``; "
+"``True`` will use headers in the first slice as example meta; ``False`` "
+"as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_constructor:20 of
+msgid "a list composed of DcmSeries instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_constructor:26 of
+msgid "dicom image rebuilding pipeline"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_constructor:45 of
+msgid ":py:class:`~info.docfunc.DcmSetConstructor`"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_constructor:47 of
+msgid ":py:class:`~info.docfunc.DcmSeries`"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:5 of
+msgid "generator for dicom files to be integrated"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:6 of
+msgid ""
+"list of tags using for regrouping; tag from first to last refers the "
+"hierarchical structure from root to leaf in regrouped reference"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:8 of
+msgid ""
+"loader engine for dicom files; ``'SimpleITK'`` or ``'pydicom'`` is "
+"acceptable; ``'SimpleTIK'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:10 of
+msgid ""
+"whether rearrange dicom files with pre-defined ``loader`` engine; if "
+"``False``, regrouped dicom-like files will be rearranged by file names in"
+" a simple list, otherwise in a nested list composed of file names "
+"rearranged by their stacking axis locations, defined intrinsically in the"
+" data loading engine; ``True`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:14 of
+msgid ""
+"file name for saving regroup file reference; ``'_regroup_refs'`` as "
+"default to generate a ``_regroup_refs.pyp`` file in work directory"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:16 of
+msgid ""
+"trigger for prompting message during data processing and loading; "
+"``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:20 of
+msgid "dict composed of basic settings of regrouping, and regroup files reference"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:25 of
+msgid "regroup dicom files"
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:57 of
+msgid ""
+"When ``rearrange`` is ``True``, this function will call "
+":py:func:`~info.docfunc.DcmSetConstructor` using ``loader`` as data "
+"loading engine. In this condition, arguments can be passed into "
+":py:func:`~info.docfunc.DcmSetConstructor` (like the ``~verbosity`` "
+"does)."
+msgstr ""
+
+#: ../../docstring info.docfunc.dcm_regroup:63 of
+msgid ":py:func:`~info.docfunc.DcmSetConstructor`"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:5 of
+msgid "generator to yield case name, ndarray image, ndarray segmentation, spacing"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:6 of
+msgid ""
+"parameters passed on radiomics extractor when initiation; empty dict "
+"``{}`` as default to use default setting"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:8 of
+msgid ""
+"log to note down exceptive case; ``None`` as default to use "
+"'err_case.log' inplace, if any exceptive case captured during extraction"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:10 of
+msgid ""
+"parameters use image type as keyword to specify desired modality; value "
+"should be extraction setting during extraction, empty dict for using "
+"default setting; ``None`` as default to apply all image types"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:14 of
+msgid ""
+"customize selection features from sub feature class; keyword should be "
+"valid name of sub feature class, and the value is list composed of "
+"desired feature names; value can be ``None``, or empty list ``[]`` to "
+"enable all features of that modality; ``None`` as default, for not "
+"applying customized feature selection"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:21 of
+msgid "table uses case names as indexing, and feature names as column names"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:26 of
+msgid "radiomic feature extraction implementation"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:52
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:53
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:54
+msgid "Jun 29, 2023"
+msgstr ""
+

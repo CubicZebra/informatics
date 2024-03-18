@@ -98,8 +98,8 @@ set of tools and functions to facilitate these tasks.
 
 It is in active development, in order to satisfy increasing requests in scientific computation.
 
-_`Featured items`
-~~~~~~~~~~~~~~~~~
+_`Featured as`
+~~~~~~~~~~~~~~
 
 Informatics is currently featured:
 

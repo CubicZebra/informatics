@@ -1,0 +1,928 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_frame.rst:2
+msgid "_`Framework utilities`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:9
+msgid ""
+"Utility set of informatics framework for agile development. Functions "
+"cover attribute registering, document attaching, runtime type checking, "
+"unit testing, workflow design, building and interface wrapping. For easy "
+"importing, all classes and functions listed here have been integrated "
+"into the main entry ``info.me``."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`T <info.docfunc.T>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ""
+"marker for setting default values, add constraint type for keyword "
+"arguments."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`F <info.docfunc.F>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1 info.docfunc.F:1 of
+msgid "info lambda function."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`FuncTools <info.docfunc.FuncTools>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+#: info.docfunc.FuncTools:1 of
+msgid "decorator collections for multi purposes."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`Unit <info.docfunc.Unit>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1 info.docfunc.Unit:1
+#: of
+msgid ""
+"package a single or multiple data processing or operation steps within a "
+"Unit."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`TrialDict <info.docfunc.TrialDict>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid "dict with ``trial`` method."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`ExeDict <info.docfunc.ExeDict>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ""
+"executable dict composed of ``execute`` keyword and function or generic "
+"function as value."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`SingleMap <info.docfunc.SingleMap>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+#: info.docfunc.SingleMap:1 of
+msgid "tool to make single map function."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`traversal_on_params <info.docfunc.traversal_on_params>`"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid "traversal on parameters pool."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`experiments <info.docfunc.experiments>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:26:<autosummary>:1
+#: info.docfunc.experiments:1 of
+msgid "experiment test pipeline for info function or unit."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:26:<autosummary>:1
+msgid ":py:obj:`functest <info.docfunc.functest>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:26:<autosummary>:1
+#: info.docfunc.functest:1 of
+msgid "unit test pipeline for info function or unit."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:27
+msgid ""
+"And also some meta implementation frameworks for data loading, "
+"processing, visualization, analyzing, and exporting, as well as some code"
+" block wrapper for easy develop. Function here mainly in namespace "
+"``info.libs.operations``. All those function are integrated into "
+"``info.me`` as well."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:39:<autosummary>:1
+msgid ":py:obj:`generic_printer <info.docfunc.generic_printer>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
+#: info.docfunc.generic_printer:1 of
+msgid "generic printing function to show print attributes or methods for data."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:39:<autosummary>:1
+msgid ":py:obj:`generic_logger <info.docfunc.generic_logger>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
+#: info.docfunc.generic_logger:1 of
+msgid ""
+"generic logger function for saving export from feature extracting "
+"functions."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:39:<autosummary>:1
+msgid ":py:obj:`exception_logger <info.docfunc.exception_logger>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
+#: info.docfunc.exception_logger:1 of
+msgid "info function or Unit implementation for recording exceptive case."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:39:<autosummary>:1
+msgid ":py:obj:`default_param <info.docfunc.default_param>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
+#: info.docfunc.default_param:1 of
+msgid "dynamic default value setting in function body."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:39:<autosummary>:1
+msgid ":py:obj:`diagnosing_tests <info.docfunc.diagnosing_tests>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
+#: info.docfunc.diagnosing_tests:1 of
+msgid "diagnose unit test result then return a list of bool values."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:41
+msgid "Docstrings"
+msgstr ""
+
+#: info.docfunc.T:1 of
+msgid ""
+"marker for setting default values, add constraint type for keyword "
+"arguments. Using combined with :py:class:`~info.docfunc.FuncTools`."
+msgstr ""
+
+#: info.docfunc.T:6 of
+msgid "using T for multi purposes"
+msgstr ""
+
+#: info.docfunc.T:32 of
+msgid ""
+"In info, the built-in value ``Null`` is a mnemonic name to remind the "
+"required argument(s):"
+msgstr ""
+
+#: info.docfunc.T:34 of
+msgid "null value to remind required arguments"
+msgstr ""
+
+#: info.docfunc.T:44 of
+msgid ""
+"Note under this circumstance, if call ``func`` without assignment for "
+"``a`` or ``b``, ``TypeError`` raised."
+msgstr ""
+
+#: ../../docstring info.docfunc.T:48 info.docfunc.default_param:13 of
+msgid ":py:class:`~info.docfunc.FuncTools`"
+msgstr ""
+
+#: info.docfunc.T:56 of
+msgid "Support new union typing hint like A | B in python 3.10 or later."
+msgstr ""
+
+#: ../../docstring info.docfunc.ExeDict:67 info.docfunc.F:30
+#: info.docfunc.FuncTools:214 info.docfunc.SingleMap:31 info.docfunc.T:58
+#: info.docfunc.TrialDict:19 info.docfunc.Unit:99 info.docfunc.default_param:19
+#: info.docfunc.diagnosing_tests:19 info.docfunc.exception_logger:42
+#: info.docfunc.experiments:47 info.docfunc.functest:48
+#: info.docfunc.generic_logger:60 info.docfunc.generic_printer:45
+#: info.docfunc.traversal_on_params:42 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.ExeDict info.docfunc.F info.docfunc.SingleMap
+#: info.docfunc.TrialDict info.docfunc.Unit info.docfunc.default_param
+#: info.docfunc.diagnosing_tests info.docfunc.exception_logger
+#: info.docfunc.experiments info.docfunc.functest info.docfunc.generic_logger
+#: info.docfunc.generic_printer info.docfunc.traversal_on_params of
+msgid "Parameters"
+msgstr ""
+
+#: info.docfunc.F:5 of
+msgid "lambda expression with key word arguments ``**kwargs``"
+msgstr ""
+
+#: ../../docstring info.docfunc.F info.docfunc.SingleMap info.docfunc.TrialDict
+#: info.docfunc.Unit info.docfunc.default_param info.docfunc.diagnosing_tests
+#: info.docfunc.exception_logger info.docfunc.experiments info.docfunc.functest
+#: info.docfunc.generic_logger info.docfunc.generic_printer
+#: info.docfunc.traversal_on_params of
+msgid "Returns"
+msgstr ""
+
+#: info.docfunc.F:6 of
+msgid "anonymous function in info version"
+msgstr ""
+
+#: info.docfunc.F:10 of
+msgid "fast register an info function"
+msgstr ""
+
+#: info.docfunc.F:24 info.docfunc.Unit:16 of
+msgid ":py:class:`~info.docfunc.Unit`"
+msgstr ""
+
+#: info.docfunc.FuncTools:7 of
+msgid ""
+"statistic method to add document to function, applying typing hint, or "
+"type checking with hint"
+msgstr ""
+
+#: ../../docstring info.docfunc.FuncTools info.docfunc.Unit
+#: info.docfunc.diagnosing_tests of
+msgid "Variables"
+msgstr ""
+
+#: info.docfunc.FuncTools:9 of
+msgid "replace document of decorated function"
+msgstr ""
+
+#: info.docfunc.FuncTools:10 of
+msgid ""
+"marker whether is info function; if ``True``, the ``entry_tp`` and "
+"``return_tp`` will be added into type checker flow, and keyword "
+"``'data'`` argument must be included; otherwise just hint only"
+msgstr ""
+
+#: info.docfunc.FuncTools:13 of
+msgid ""
+"the data type for decorated function to process; use python builtin class"
+" or typing hint; when ``'info_func'`` is ``True``, it is considered as "
+"the type of ``'data'`` value and will be checked before processing start"
+msgstr ""
+
+#: info.docfunc.FuncTools:16 of
+msgid ""
+"return type for decorated function; can use python builtin class or "
+"typing hint; when ``'info_func'`` is ``True``, the result will be checked"
+" before actually return"
+msgstr ""
+
+#: info.docfunc.FuncTools:18 info.docfunc.FuncTools:94 of
+msgid ""
+"whether check deeper when meet a simple iterable object; ``True`` as "
+"default"
+msgstr ""
+
+#: info.docfunc.FuncTools:19 of
+msgid ""
+"if ``False``, will raise ``UnSupportableTypeError`` when dealing with "
+"unparseable type; ``True`` will pass the test for unparseable type; and "
+"list of unparseable type(s) will add those types in checking workflow; "
+"``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.ExeDict info.docfunc.FuncTools
+#: info.docfunc.SingleMap info.docfunc.Unit info.docfunc.generic_printer of
+msgid "Raises"
+msgstr ""
+
+#: info.docfunc.FuncTools:23 info.docfunc.FuncTools:99 of
+msgid "if ``info_func`` is ``True`` and no keyword assignment for ``'data'``"
+msgstr ""
+
+#: info.docfunc.FuncTools:24 info.docfunc.FuncTools:100 of
+msgid ""
+"if ``info_func`` is ``True`` and entry type of ``'data'``, or return data"
+" do not match the desired type"
+msgstr ""
+
+#: info.docfunc.FuncTools:27 of
+msgid ""
+"It can be used to attach documents on decorated function, or checking "
+"whether the data match the desired type in entry, or the data after "
+"processing matched the desired type as well. for example:"
+msgstr ""
+
+#: info.docfunc.FuncTools:30 of
+msgid "decorator to attach documents or execute type checking"
+msgstr ""
+
+#: info.docfunc.FuncTools:75 of
+msgid ""
+"However, this decorator can also handy to attach some customized "
+"attribute if necessary:"
+msgstr ""
+
+#: info.docfunc.FuncTools:77 of
+msgid "customize function by decorator"
+msgstr ""
+
+#: info.docfunc.FuncTools:91 of
+msgid ""
+"statistic method to set default values, applying typing hint, or type "
+"checking with those hints. some complicated situation can also use "
+"anonymous ``lambda`` function to check."
+msgstr ""
+
+#: info.docfunc.FuncTools:95 of
+msgid ""
+"if ``False``, will raise UnSupportableTypeError when meet unparseable "
+"type; ``True`` will pass the test for unparseable type; and list of "
+"unparseable type(s) will add those types in checking workflow; ``False`` "
+"as default"
+msgstr ""
+
+#: info.docfunc.FuncTools:103 of
+msgid ""
+"Flowing examples show how to pre-define default parameters for info "
+"function."
+msgstr ""
+
+#: info.docfunc.FuncTools:105 of
+msgid "decorator for parameter setting"
+msgstr ""
+
+#: info.docfunc.FuncTools:124 of
+msgid ""
+"This example show the convenience to use ``params_setting`` to build the "
+"function. for ``data``, the ``Null`` mark it as a required argument when "
+"calling, ``ndarray`` confines its type; the same as ``clip`` but with "
+"default value as ``(0.2, 0.8)``; for ``coefficient``, its acceptable "
+"value is no less than zero and no greater than one."
+msgstr ""
+
+#: info.docfunc.FuncTools:129 of
+msgid ""
+"As all conditions are guaranteed so it can safely using one line pythonic"
+" statement to obtain ``dt``, without worrying about wrong parameters "
+"passed in. Additionally, maybe sometimes it needs dynamic setting for "
+"some arguments. For instance the ``normalize`` in above code can hardly "
+"determined using ``T`` as it depends ``data``, in this circumstance, set "
+"it as ``None`` then use ``default_param`` to implement the calculation in"
+" the body. If calling without assignment of ``normalize``, the ``_mean`` "
+"and ``_std`` will be automatically calculated based on ``dt``, otherwise "
+"using the parameters passed in."
+msgstr ""
+
+#: info.docfunc.FuncTools:138 of
+msgid ""
+"whether use as the decorator; if ``False``, will return a none argument "
+"lambda function to get test result, and cost time; ``True`` as default"
+msgstr ""
+
+#: info.docfunc.FuncTools:141 of
+msgid "statistic method to test the decorated function."
+msgstr ""
+
+#: info.docfunc.FuncTools:143 of
+msgid "decorator to do function testing"
+msgstr ""
+
+#: info.docfunc.FuncTools:173 of
+msgid ""
+"Unnecessary to edit the test script in addition. It capable for testing "
+"while editing. When finish function, clean the test arguments inside, or "
+"comment that line."
+msgstr ""
+
+#: info.docfunc.FuncTools:178 of
+msgid ""
+"With ``FuncTools``, you can design, implement, and test for function all "
+"in one script. Using the previous :numref:`decorator for parameter "
+"setting` , make it as a info version, then doing test, the script will "
+"be:"
+msgstr ""
+
+#: info.docfunc.FuncTools:181 of
+msgid "all in one script"
+msgstr ""
+
+#: info.docfunc.FuncTools:202 of
+msgid ":py:const:`~info.docfunc.T`"
+msgstr ""
+
+#: info.docfunc.FuncTools:204 of
+msgid ":py:func:`~info.docfunc.default_param`"
+msgstr ""
+
+#: info.docfunc.FuncTools:212 of
+msgid "branch ``~in_decorator`` in ``test_for`` method."
+msgstr ""
+
+#: info.docfunc.Unit:5 of
+msgid ""
+"list composed of :ref:`info function(s) <Informatics function>`, or "
+":py:class:`~info.docfunc.Unit` instance(s)"
+msgstr ""
+
+#: info.docfunc.Unit:7 of
+msgid ""
+"``'sequential'`` or ``'parallel'``, to determine the mapping order of the"
+" Unit; ``'sequential'`` as default"
+msgstr ""
+
+#: info.docfunc.Unit:9 of
+msgid ""
+"the type of data in entry of this Unit; ``None`` as default to guess the "
+"inflow type based on ``structure``"
+msgstr ""
+
+#: info.docfunc.Unit:11 of
+msgid ""
+"the type of data in entry of this Unit; ``None`` as default to guess the "
+"outflow type based on ``structure``"
+msgstr ""
+
+#: info.docfunc.Unit:13 of
+msgid ""
+"docstring or formal function which contains objective docstring; ``None``"
+" as default to automatically generate based on docstrings of elements"
+msgstr ""
+
+#: info.docfunc.Unit:15 of
+msgid "a Unit for data processing or operation"
+msgstr ""
+
+#: ../../docstring info.docfunc.ExeDict info.docfunc.SingleMap
+#: info.docfunc.TrialDict info.docfunc.Unit info.docfunc.default_param
+#: info.docfunc.diagnosing_tests info.docfunc.exception_logger
+#: info.docfunc.experiments info.docfunc.functest info.docfunc.generic_logger
+#: info.docfunc.generic_printer info.docfunc.traversal_on_params of
+msgid "Return type"
+msgstr ""
+
+#: info.docfunc.Unit:17 of
+msgid ""
+"when ``mappings`` are not all registered functions or unit; or inflow "
+"data not pass correctly through type checker"
+msgstr ""
+
+#: info.docfunc.Unit:24 of
+msgid ""
+"lock arguments of current unit as default values, through ``**kwargs`` "
+"assignments."
+msgstr ""
+
+#: info.docfunc.Unit:28 of
+msgid ""
+"update arguments of current unit as default values, through ``**kwargs`` "
+"assignments."
+msgstr ""
+
+#: info.docfunc.Unit:32 of
+msgid ""
+"return a copy of self, with a set of specified ``**kwargs`` parameters "
+"related to the inner functions."
+msgstr ""
+
+#: info.docfunc.Unit:36 of
+msgid "overwrite docstring of the unit."
+msgstr ""
+
+#: info.docfunc.Unit:38 of
+msgid "str for docstring, or callable object contained that str."
+msgstr ""
+
+#: info.docfunc.Unit:42 of
+msgid "reset default values for all arguments when initiate the Unit."
+msgstr ""
+
+#: info.docfunc.Unit:46 of
+msgid ""
+"output the equivalent values for all arguments when the unit is actually "
+"called."
+msgstr ""
+
+#: info.docfunc.Unit:50 of
+msgid "call as function using ``data`` as required argument."
+msgstr ""
+
+#: info.docfunc.Unit:52 of
+msgid "instance to be processed via this unit."
+msgstr ""
+
+#: info.docfunc.Unit:56 of
+msgid "sequentially connects the next unit."
+msgstr ""
+
+#: info.docfunc.Unit:60 of
+msgid "parallel connects the next unit."
+msgstr ""
+
+#: info.docfunc.Unit:64 of
+msgid "Using info Unit to build comprehensive processing steps sequentially:"
+msgstr ""
+
+#: info.docfunc.Unit:66 of
+msgid "coupled crop and resize processing via info Unit"
+msgstr ""
+
+#: info.docfunc.Unit:79 of
+msgid ""
+"Or applied parallel structure to process data in different sets of "
+"processing parameters simultaneously. The inner functions use Unit "
+"instance self:"
+msgstr ""
+
+#: info.docfunc.Unit:82 of
+msgid ""
+"crop and resize processing steps with different sets of parameters, in a "
+"parallel Unit"
+msgstr ""
+
+#: info.docfunc.Unit:97 of
+msgid "Support operator ``>>`` and ``|`` to build pipeline."
+msgstr ""
+
+#: info.docfunc.TrialDict:1 of
+msgid ""
+"dict with ``trial`` method. The argument assignment in ``trial`` does not"
+" modify the dict itself."
+msgstr ""
+
+#: info.docfunc.TrialDict:5 of
+msgid "``**kwargs`` as general dict"
+msgstr ""
+
+#: info.docfunc.TrialDict:6 of
+msgid "the dict with ``trial`` method"
+msgstr ""
+
+#: info.docfunc.TrialDict:7 of
+msgid ":py:class:`~info.docfunc.TrialDict`"
+msgstr ""
+
+#: info.docfunc.TrialDict:13 of
+msgid "return a copy of self with updated keywords and values"
+msgstr ""
+
+#: info.docfunc.ExeDict:1 of
+msgid ""
+"executable dict composed of ``execute`` keyword and function or generic "
+"function as value. uses for high-order function."
+msgstr ""
+
+#: info.docfunc.ExeDict:6 of
+msgid "a Callable object, usually function for generic function"
+msgstr ""
+
+#: info.docfunc.ExeDict:7 of
+msgid ""
+"dict contains other keyword and default values as parameters of that "
+"executable object"
+msgstr ""
+
+#: info.docfunc.ExeDict:9 of
+msgid "required argument ``execute`` is not assigned properly"
+msgstr ""
+
+#: info.docfunc.ExeDict:15 of
+msgid ""
+"run using ``execute`` as the function body, while other keywords and "
+"values as its parameter assignments"
+msgstr ""
+
+#: info.docfunc.ExeDict:19 of
+msgid ""
+"Without ExeDict, for building derived function with different default "
+"assignment values must require high-order function, which one is usually "
+"of high abstract and low readability:"
+msgstr ""
+
+#: info.docfunc.ExeDict:22 of
+msgid "high-order function to derive version with different argument values"
+msgstr ""
+
+#: info.docfunc.ExeDict:35 of
+msgid ""
+"The calling of high-order function is not such explicit as common "
+"functions, because of the :ref:`currying <function currying>` character "
+"of it. With the previous example, it can be found the following calling "
+"are equivalent, but difficult to understand as common function:"
+msgstr ""
+
+#: info.docfunc.ExeDict:39 of
+msgid "currying of high-order function calling"
+msgstr ""
+
+#: info.docfunc.ExeDict:47 of
+msgid ""
+"With ExeDict, it can derive a common function to versions with different "
+"argument assignments. This property also supports :ref:`info function "
+"<Informatics function>` intrinsically."
+msgstr ""
+
+#: info.docfunc.ExeDict:50 of
+msgid "functions derived from a meta using different arguments"
+msgstr ""
+
+#: info.docfunc.ExeDict:60 of
+msgid ""
+"Obviously, the call itself of ``add_baseline`` in the last example is "
+"more explicit than that of high-order functions."
+msgstr ""
+
+#: info.docfunc.SingleMap:5 of
+msgid ""
+"an 1-length dict with a callable object as keyword, and a dict composed "
+"of keywords and values for the default arguments assignment for this "
+"callable object"
+msgstr ""
+
+#: info.docfunc.SingleMap:7 of
+msgid "a partial function"
+msgstr ""
+
+#: info.docfunc.SingleMap:9 of
+msgid "if the argument ``x`` was not assigned properly"
+msgstr ""
+
+#: info.docfunc.SingleMap:13 of
+msgid ""
+"This class is usually used for building single map function ``f(x)`` when"
+" the arguments require adaptive modification in the main process. It is "
+"mainly used for lazy calculation, for example:"
+msgstr ""
+
+#: info.docfunc.SingleMap:16 of
+msgid "build single map function via SingleMap"
+msgstr ""
+
+#: ../../docstring info.docfunc.traversal_on_params:1 of
+msgid ""
+"traversal on parameters pool. function to make auto unit test, or auto "
+"experiment, for info pipeline."
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:5 info.docfunc.functest:5
+#: info.docfunc.traversal_on_params:5 of
+msgid "info function or unit"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:6 info.docfunc.functest:6
+#: info.docfunc.traversal_on_params:6 of
+msgid ""
+"pool for parameters, values to be investigated should be collected into a"
+" list"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:12 info.docfunc.functest:12
+#: info.docfunc.traversal_on_params:8 of
+msgid ""
+"trigger to determine whether testing for built-in parameters in pool; "
+"``False`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.traversal_on_params:10 of
+msgid ""
+"trigger to determine whether reserve the test results; if ``False``, "
+"original will be included, otherwise class type if final results are not "
+"short enough; ``True`` as default for unit test"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:14 info.docfunc.functest:14
+#: info.docfunc.traversal_on_params:13 of
+msgid "DataFrame container for testing result"
+msgstr ""
+
+#: ../../docstring info.docfunc.traversal_on_params:18 of
+msgid "testing on parameters pool"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:8 info.docfunc.functest:8 of
+msgid ""
+"cache file to dump result of test parameters; ``None`` will create a new "
+"dict in each invocation"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:10 info.docfunc.functest:10 of
+msgid ""
+"prefix marker for callable object to be tested if necessary; ``''`` as "
+"default for no prefix attached to the function name"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:19 of
+msgid "experiment pipeline"
+msgstr ""
+
+#: ../../docstring info.docfunc.experiments:41 of
+msgid "experiments dump the original result for each test."
+msgstr ""
+
+#: ../../docstring info.docfunc.functest:19 of
+msgid "function test pipeline"
+msgstr ""
+
+#: ../../docstring info.docfunc.functest:41 of
+msgid ""
+"functest dump the class type of result for each test, if the final result"
+" is difficult to be printed out concisely."
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:5 of
+msgid "original data with attributes or methods to be showed"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:6 of
+msgid ""
+"list of callable attributes; no assignment uses empty list ``[]`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:10
+#: info.docfunc.generic_logger:14 info.docfunc.generic_printer:7 of
+msgid "NoReturn"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:9 of
+msgid "invalid attribute or method calling in ``attrs`` assignment"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:13 of
+msgid "For exporting dimension, shape and max value for images individually:"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:15 of
+msgid "attribute printing through generic printer"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:25 of
+msgid ""
+"Or alternative implementation using ``printing_u`` unit coupled with "
+"``ExeDict`` class:"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:27 of
+msgid "attribute printing through printing unit wrapper"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_printer:37 of
+msgid ":py:func:`~info.docfunc.printing_u`"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:36
+#: info.docfunc.generic_logger:54 info.docfunc.generic_printer:39 of
+msgid ":py:class:`~info.docfunc.ExeDict`"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:5 of
+msgid "data prepared to be executed via extractors"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:6 of
+msgid ""
+"dict composed of feature names and mapping methods on data as values; no "
+"assignment uses empty dict ``{}`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:7
+#: info.docfunc.generic_logger:9 of
+msgid ""
+"path-like string for folder where the file will be saved; no assignment "
+"uses current work directory (``os.getcwd()``) as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:11 of
+msgid "file name for recording output; ``'.df_sav'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:12 of
+msgid ""
+"the global parameters passed on all mapping methods in extractors; no "
+"assignment uses empty dict ``{}`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:19 of
+msgid ""
+"For example, logging max and percentile values for each image into the "
+"file ``'describe.log'``:"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:21 of
+msgid "logger to record max and percentile values"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:37 of
+msgid "It can also be wrapped into a saving unit:"
+msgstr ""
+
+#: ../../docstring info.docfunc.generic_logger:39 of
+msgid "generic logger wrapped into saving unit"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:34
+#: info.docfunc.generic_logger:52 of
+msgid ":py:func:`~info.docfunc.saving_u`"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:5 of
+msgid ""
+"tuple composed of str for exceptive case, and exception raised during "
+"running the corresponding case"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:9 of
+msgid "file name for recording exceptive cases; ``'run_error.log'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:15 of
+msgid "exception logger used in try except code block"
+msgstr ""
+
+#: ../../docstring info.docfunc.exception_logger:32 of
+msgid ":py:func:`~info.docfunc.generic_logger`"
+msgstr ""
+
+#: ../../docstring info.docfunc.default_param:5 of
+msgid "dict params to be detected"
+msgstr ""
+
+#: ../../docstring info.docfunc.default_param:6 of
+msgid "keyword for parameter"
+msgstr ""
+
+#: ../../docstring info.docfunc.default_param:7 of
+msgid "default value"
+msgstr ""
+
+#: ../../docstring info.docfunc.default_param:8 of
+msgid "``v`` if ``k`` in ``params`` is ``None``, else the value in ``params``"
+msgstr ""
+
+#: ../../docstring info.docfunc.diagnosing_tests:5 of
+msgid "dataframe result"
+msgstr ""
+
+#: ../../docstring info.docfunc.diagnosing_tests:6 of
+msgid "trigger to show details for the exceptive cases; ``True`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.diagnosing_tests:7 of
+msgid ""
+"list of bool for dataframe result; ``True`` for case with 0 exit code, "
+"otherwise ``False``"
+msgstr ""
+
+#: ../../docstring info.docfunc.diagnosing_tests:12 of
+msgid ""
+"the tool is used for auto unit test framework. If all cases pass, its "
+"return will be list of ``True`` only."
+msgstr ""
+
+#: ../../source/interface/api_frame.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:83
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:84
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_frame.rst:85
+msgid "Jun 29, 2023"
+msgstr ""
+

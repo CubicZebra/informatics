@@ -1,0 +1,2023 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/interface/api_tensor.rst:2
+msgid "_`Module tensor`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:9
+msgid ""
+"Data processing module in informatics. Utilities for data processing. "
+"Data can be vector, series (1-dimensional tensor), matrix (2-dimensional "
+"tensor), conventional medical image (3-dimensional tensor), or tensors in"
+" higher dimensions. Dependent on the type of data being processed, "
+"tensors are categorized into two distinct classes: Boolean and numerical."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:14
+msgid ""
+"Namespace of this module is originally ``info.toolbox.libs.tensor``. For "
+"convenience, import from main entry via ``from info.me import tensorn`` "
+"for processing numeric tensor, or ``from info.me import tensorb`` for "
+"dealing with the boolean one, is also available."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:18
+msgid ""
+"Computing in this module support :ref:`GPU <GPU>` accelerating. If `cupy "
+"<https://cupy.dev/>`_ is installed in the environment, reset the "
+"configuration to activate it:"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:21
+msgid "activate gpu accelerating for computing"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:28
+msgid ""
+"Numerical tensor is generally used as container for raw data. For dealing"
+" with numeric tensor:"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`standardization <info.docfunc.standardization>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+"standard scaler function or Unit to shrink data with values distributed "
+"as :math:`N(1, 0)`."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`normalization <info.docfunc.normalization>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+"normal scalar function or Unit to shrink values of data confined from 0 "
+"to 1."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`clipper <info.docfunc.clipper>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+"clipper scalar function or Unit to clip values of data with lower and "
+"upper bound."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`cropper <info.docfunc.cropper>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "function or Unit to crop data via start and end assignments."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`resize <info.docfunc.resize>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "resizing data into specific shape."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`averaging_filter <info.docfunc.averaging_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "averaging filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`rank_filter <info.docfunc.rank_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "rank filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`minimum_filter <info.docfunc.minimum_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "local minimum filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`maximum_filter <info.docfunc.maximum_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "local maximum filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`mean_filter <info.docfunc.mean_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "local mean filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`median_filter <info.docfunc.median_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "local median filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`gaussian_filter <info.docfunc.gaussian_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "gaussian filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`gabor_filter <info.docfunc.gabor_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "gabor filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`bilateral_filter <info.docfunc.bilateral_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "bilateral filter for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`prewitt_filter <info.docfunc.prewitt_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "prewitt filter to highlight edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`prewitt_detector <info.docfunc.prewitt_detector>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "prewitt detector to determine edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`prewitt_sharpen <info.docfunc.prewitt_sharpen>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "prewitt sharpen to get higher-contrast-edge tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`sobel_filter <info.docfunc.sobel_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "sobel filter to highlight edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`sobel_detector <info.docfunc.sobel_detector>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "sobel detector to determine edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`sobel_sharpen <info.docfunc.sobel_sharpen>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "sobel sharpen to get higher-contrast-edge tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`canny_filter <info.docfunc.canny_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "canny filter to highlight edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`canny_detector <info.docfunc.canny_detector>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "canny detector to determine edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`canny_sharpen <info.docfunc.canny_sharpen>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "canny sharpen to get higher-contrast-edge tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`laplacian_of_gaussian_filter "
+"<info.docfunc.laplacian_of_gaussian_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "laplacian of gaussian filter to highlight edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`laplacian_of_gaussian_detector "
+"<info.docfunc.laplacian_of_gaussian_detector>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "laplacian of gaussian detector to determine edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`laplacian_of_gaussian_sharpen "
+"<info.docfunc.laplacian_of_gaussian_sharpen>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "laplacian of gaussian sharpen to get higher-contrast-edge tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`difference_of_gaussian_filter "
+"<info.docfunc.difference_of_gaussian_filter>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "difference of gaussian filter to highlight edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`difference_of_gaussian_detector "
+"<info.docfunc.difference_of_gaussian_detector>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "difference of gaussian detector to determine edge of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`difference_of_gaussian_sharpen "
+"<info.docfunc.difference_of_gaussian_sharpen>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "difference of gaussian sharpen to get higher-contrast-edge tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`hessian_determinant_response "
+"<info.docfunc.hessian_determinant_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "hessian determinant to highlight corner of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`hessian_curvature_response "
+"<info.docfunc.hessian_curvature_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "hessian curvature to highlight corner of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ""
+":py:obj:`hessian_curvature_detector "
+"<info.docfunc.hessian_curvature_detector>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "hessian detector to determine corners of tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`moravec_response <info.docfunc.moravec_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "moravec response for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`harris_response <info.docfunc.harris_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "harris curvature response for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`usan_response <info.docfunc.usan_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "usan response for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`segment_response <info.docfunc.segment_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "segment test response for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid ":py:obj:`fast_response <info.docfunc.fast_response>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:70:<autosummary>:1
+msgid "fast response for tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:71
+msgid ""
+"And boolean tensor is generally used for segmentation, assisted for some "
+"specific tasks such as emphasizing some certain area of raw data. For "
+"dealing with boolean tensor:"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`prober <info.docfunc.prober>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "sub segmentation generator from a bool ndarray."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`connected_domain <info.docfunc.connected_domain>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "connected domain generator from a bool or an integer ndarray."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`seg_resize <info.docfunc.seg_resize>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`erosion <info.docfunc.erosion>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "morphological erosion operation for boolean tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`dilation <info.docfunc.dilation>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "morphological dilation operation for boolean tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`intersection <info.docfunc.intersection>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "intersection operation for boolean tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`union <info.docfunc.union>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "union operation for boolean tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`difference <info.docfunc.difference>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "difference operation for boolean tensor."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid ":py:obj:`watershed <info.docfunc.watershed>`"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:86:<autosummary>:1
+msgid "watershed algorithm for labeling segmentation."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:88
+msgid "Docstrings"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:91
+msgid "_`Numeric tensor`"
+msgstr ""
+
+#: ../../docstring info.docfunc.standardization:1 of
+msgid ""
+"standard scaler function or Unit to shrink data with values distributed "
+"as :math:`N(1, 0)`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter info.docfunc.bilateral_filter
+#: info.docfunc.canny_detector info.docfunc.canny_filter
+#: info.docfunc.canny_sharpen info.docfunc.clipper
+#: info.docfunc.connected_domain info.docfunc.cropper info.docfunc.difference
+#: info.docfunc.difference_of_gaussian_detector
+#: info.docfunc.difference_of_gaussian_filter
+#: info.docfunc.difference_of_gaussian_sharpen info.docfunc.dilation
+#: info.docfunc.erosion info.docfunc.fast_response info.docfunc.gabor_filter
+#: info.docfunc.gaussian_filter info.docfunc.harris_response
+#: info.docfunc.hessian_curvature_detector
+#: info.docfunc.hessian_curvature_response
+#: info.docfunc.hessian_determinant_response info.docfunc.intersection
+#: info.docfunc.laplacian_of_gaussian_detector
+#: info.docfunc.laplacian_of_gaussian_filter
+#: info.docfunc.laplacian_of_gaussian_sharpen info.docfunc.maximum_filter
+#: info.docfunc.mean_filter info.docfunc.median_filter
+#: info.docfunc.minimum_filter info.docfunc.moravec_response
+#: info.docfunc.normalization info.docfunc.prewitt_detector
+#: info.docfunc.prewitt_filter info.docfunc.prewitt_sharpen info.docfunc.prober
+#: info.docfunc.rank_filter info.docfunc.resize info.docfunc.seg_resize
+#: info.docfunc.segment_response info.docfunc.sobel_detector
+#: info.docfunc.sobel_filter info.docfunc.sobel_sharpen
+#: info.docfunc.standardization info.docfunc.union info.docfunc.usan_response
+#: info.docfunc.watershed of
+msgid "Parameters"
+msgstr ""
+
+#: ../../docstring info.docfunc.standardization:6 of
+msgid "data to be standardized"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter info.docfunc.bilateral_filter
+#: info.docfunc.canny_detector info.docfunc.canny_filter
+#: info.docfunc.canny_sharpen info.docfunc.clipper
+#: info.docfunc.connected_domain info.docfunc.cropper info.docfunc.difference
+#: info.docfunc.difference_of_gaussian_detector
+#: info.docfunc.difference_of_gaussian_filter
+#: info.docfunc.difference_of_gaussian_sharpen info.docfunc.dilation
+#: info.docfunc.erosion info.docfunc.fast_response info.docfunc.gabor_filter
+#: info.docfunc.gaussian_filter info.docfunc.harris_response
+#: info.docfunc.hessian_curvature_detector
+#: info.docfunc.hessian_curvature_response
+#: info.docfunc.hessian_determinant_response info.docfunc.intersection
+#: info.docfunc.laplacian_of_gaussian_detector
+#: info.docfunc.laplacian_of_gaussian_filter
+#: info.docfunc.laplacian_of_gaussian_sharpen info.docfunc.maximum_filter
+#: info.docfunc.mean_filter info.docfunc.median_filter
+#: info.docfunc.minimum_filter info.docfunc.moravec_response
+#: info.docfunc.normalization info.docfunc.prewitt_detector
+#: info.docfunc.prewitt_filter info.docfunc.prewitt_sharpen info.docfunc.prober
+#: info.docfunc.rank_filter info.docfunc.resize info.docfunc.seg_resize
+#: info.docfunc.segment_response info.docfunc.sobel_detector
+#: info.docfunc.sobel_filter info.docfunc.sobel_sharpen
+#: info.docfunc.standardization info.docfunc.union info.docfunc.usan_response
+#: info.docfunc.watershed of
+msgid "Returns"
+msgstr ""
+
+#: ../../docstring info.docfunc.standardization:7 of
+msgid "data after standardization"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter info.docfunc.bilateral_filter
+#: info.docfunc.canny_detector info.docfunc.canny_filter
+#: info.docfunc.canny_sharpen info.docfunc.clipper
+#: info.docfunc.connected_domain info.docfunc.cropper info.docfunc.difference
+#: info.docfunc.difference_of_gaussian_detector
+#: info.docfunc.difference_of_gaussian_filter
+#: info.docfunc.difference_of_gaussian_sharpen info.docfunc.dilation
+#: info.docfunc.erosion info.docfunc.fast_response info.docfunc.gabor_filter
+#: info.docfunc.gaussian_filter info.docfunc.harris_response
+#: info.docfunc.hessian_curvature_detector
+#: info.docfunc.hessian_curvature_response
+#: info.docfunc.hessian_determinant_response info.docfunc.intersection
+#: info.docfunc.laplacian_of_gaussian_detector
+#: info.docfunc.laplacian_of_gaussian_filter
+#: info.docfunc.laplacian_of_gaussian_sharpen info.docfunc.maximum_filter
+#: info.docfunc.mean_filter info.docfunc.median_filter
+#: info.docfunc.minimum_filter info.docfunc.moravec_response
+#: info.docfunc.normalization info.docfunc.prewitt_detector
+#: info.docfunc.prewitt_filter info.docfunc.prewitt_sharpen info.docfunc.prober
+#: info.docfunc.rank_filter info.docfunc.resize info.docfunc.seg_resize
+#: info.docfunc.segment_response info.docfunc.sobel_detector
+#: info.docfunc.sobel_filter info.docfunc.sobel_sharpen
+#: info.docfunc.standardization info.docfunc.union info.docfunc.usan_response
+#: info.docfunc.watershed of
+msgid "Return type"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter info.docfunc.bilateral_filter
+#: info.docfunc.canny_detector info.docfunc.canny_filter
+#: info.docfunc.canny_sharpen info.docfunc.clipper
+#: info.docfunc.connected_domain info.docfunc.cropper info.docfunc.difference
+#: info.docfunc.difference_of_gaussian_detector
+#: info.docfunc.difference_of_gaussian_filter
+#: info.docfunc.difference_of_gaussian_sharpen info.docfunc.dilation
+#: info.docfunc.erosion info.docfunc.fast_response info.docfunc.gabor_filter
+#: info.docfunc.gaussian_filter info.docfunc.harris_response
+#: info.docfunc.hessian_curvature_detector
+#: info.docfunc.hessian_curvature_response
+#: info.docfunc.hessian_determinant_response info.docfunc.intersection
+#: info.docfunc.laplacian_of_gaussian_detector
+#: info.docfunc.laplacian_of_gaussian_filter
+#: info.docfunc.laplacian_of_gaussian_sharpen info.docfunc.maximum_filter
+#: info.docfunc.mean_filter info.docfunc.median_filter
+#: info.docfunc.minimum_filter info.docfunc.moravec_response
+#: info.docfunc.normalization info.docfunc.prewitt_detector
+#: info.docfunc.prewitt_filter info.docfunc.prewitt_sharpen info.docfunc.prober
+#: info.docfunc.rank_filter info.docfunc.resize info.docfunc.seg_resize
+#: info.docfunc.segment_response info.docfunc.sobel_detector
+#: info.docfunc.sobel_filter info.docfunc.sobel_sharpen
+#: info.docfunc.standardization info.docfunc.union info.docfunc.usan_response
+#: info.docfunc.watershed of
+msgid "Raises"
+msgstr ""
+
+#: ../../docstring info.docfunc.normalization:8 info.docfunc.standardization:9
+#: of
+msgid "if ``data`` was not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.standardization:13 of
+msgid "standardize a series"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:34
+#: info.docfunc.bilateral_filter:64 info.docfunc.canny_detector:47
+#: info.docfunc.canny_filter:47 info.docfunc.canny_sharpen:47
+#: info.docfunc.clipper:27 info.docfunc.connected_domain:28
+#: info.docfunc.cropper:32 info.docfunc.difference:26
+#: info.docfunc.difference_of_gaussian_detector:72
+#: info.docfunc.difference_of_gaussian_filter:72
+#: info.docfunc.difference_of_gaussian_sharpen:72 info.docfunc.dilation:39
+#: info.docfunc.erosion:39 info.docfunc.fast_response:52
+#: info.docfunc.gabor_filter:41 info.docfunc.gaussian_filter:38
+#: info.docfunc.harris_response:74 info.docfunc.hessian_curvature_detector:71
+#: info.docfunc.hessian_curvature_response:71
+#: info.docfunc.hessian_determinant_response:71 info.docfunc.intersection:26
+#: info.docfunc.laplacian_of_gaussian_detector:45
+#: info.docfunc.laplacian_of_gaussian_filter:45
+#: info.docfunc.laplacian_of_gaussian_sharpen:45 info.docfunc.maximum_filter:55
+#: info.docfunc.mean_filter:55 info.docfunc.median_filter:55
+#: info.docfunc.minimum_filter:55 info.docfunc.moravec_response:52
+#: info.docfunc.normalization:25 info.docfunc.prewitt_detector:45
+#: info.docfunc.prewitt_filter:45 info.docfunc.prewitt_sharpen:45
+#: info.docfunc.prober:33 info.docfunc.rank_filter:33 info.docfunc.resize:49
+#: info.docfunc.seg_resize:37 info.docfunc.segment_response:41
+#: info.docfunc.sobel_detector:46 info.docfunc.sobel_filter:46
+#: info.docfunc.sobel_sharpen:46 info.docfunc.standardization:26
+#: info.docfunc.union:26 info.docfunc.usan_response:42
+#: info.docfunc.watershed:46 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.normalization:1 of
+msgid ""
+"normal scalar function or Unit to shrink values of data confined from 0 "
+"to 1. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.normalization:5 of
+msgid "data to be normalized"
+msgstr ""
+
+#: ../../docstring info.docfunc.normalization:6 of
+msgid "data after normalization"
+msgstr ""
+
+#: ../../docstring info.docfunc.normalization:12 of
+msgid "normalize a series"
+msgstr ""
+
+#: ../../docstring info.docfunc.clipper:1 of
+msgid ""
+"clipper scalar function or Unit to clip values of data with lower and "
+"upper bound. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.clipper:6 of
+msgid "data to be clipped"
+msgstr ""
+
+#: ../../docstring info.docfunc.clipper:7 of
+msgid "2-length list, composed of lower and upper bound"
+msgstr ""
+
+#: ../../docstring info.docfunc.clipper:8 of
+msgid "data with values after clipping"
+msgstr ""
+
+#: ../../docstring info.docfunc.clipper:10 of
+msgid "if ``data`` or ``clip`` was not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.clipper:14 of
+msgid "clip a series"
+msgstr ""
+
+#: ../../docstring info.docfunc.cropper:1 of
+msgid ""
+"function or Unit to crop data via start and end assignments. available "
+"for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.cropper:5 of
+msgid "data to be cropped"
+msgstr ""
+
+#: ../../docstring info.docfunc.cropper:6 of
+msgid ""
+"list composed of start & end points or ratios, values in end points or "
+"ratios must strictly greater than starts ones in each dimension"
+msgstr ""
+
+#: ../../docstring info.docfunc.cropper:8 of
+msgid "cropped ndarray"
+msgstr ""
+
+#: ../../docstring info.docfunc.cropper:10 of
+msgid "if ``data`` or ``crop_range`` was not assigned as available type"
+msgstr ""
+
+#: ../../docstring info.docfunc.cropper:14 of
+msgid "crop an image"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:1 of
+msgid ""
+"resizing data into specific shape. spline interpolation supported. "
+"algorithm is implemented through canonical decomposition "
+":ref:`[Battaglino2018] <[Battaglino2018]>`, or Tucker decomposition for "
+"tensor :ref:`[Kolda2009] <[Kolda2009]>`. available for numpy and cupy "
+"ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:7 info.docfunc.seg_resize:6 of
+msgid "data to be resized"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:8 info.docfunc.seg_resize:7 of
+msgid "tuple to determine new size for input data"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:9 of
+msgid ""
+"decomposition method for ``data``; ``'cp'`` for canonical decomposition "
+"into parallel factors, ``'tucker'`` for Tucker decomposition; ``'tt'`` "
+"for tensor train decomposition; ``'tr'`` for tensor ring "
+"decomposition;``'cp'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:14 of
+msgid ""
+"decomposition rank; integer for all ranks, or tuple of integers for each "
+"rank; ``None`` as default to calculate automatically"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:16 info.docfunc.seg_resize:8 of
+msgid ""
+"interpolation method links to ``kind`` argument of ``interp1d``; options "
+"are ``'linear'``, ``'nearest'``, ``'nearest-up'``, ``'zero'``, "
+"``'slinear'``, ``'quadratic'``, ``'cubic'``, ``'previous'``, and "
+"``'next'``; ``'linear'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:20 info.docfunc.seg_resize:12 of
+msgid "re-sized data"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:22 info.docfunc.seg_resize:14 of
+msgid "if ``data`` or ``new_size`` was not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:26 of
+msgid "resize an image through interpolation"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:41 info.docfunc.seg_resize:29 of
+msgid ""
+"`Interpolation "
+"<https://scipy.github.io/devdocs/tutorial/interpolate/1D.html>`_"
+msgstr ""
+
+#: ../../docstring info.docfunc.resize:43 info.docfunc.seg_resize:31 of
+msgid ""
+"`Tensor decomposition and synthesis "
+"<http://tensorly.org/stable/user_guide/tensor_decomposition.html>`_"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:1 of
+msgid "averaging filter for tensor. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:5
+#: info.docfunc.bilateral_filter:5 info.docfunc.canny_detector:11
+#: info.docfunc.canny_filter:11 info.docfunc.canny_sharpen:11
+#: info.docfunc.difference_of_gaussian_detector:6
+#: info.docfunc.difference_of_gaussian_filter:6
+#: info.docfunc.difference_of_gaussian_sharpen:6 info.docfunc.fast_response:5
+#: info.docfunc.gabor_filter:6 info.docfunc.gaussian_filter:6
+#: info.docfunc.harris_response:5 info.docfunc.hessian_curvature_detector:6
+#: info.docfunc.hessian_curvature_response:6
+#: info.docfunc.hessian_determinant_response:6
+#: info.docfunc.laplacian_of_gaussian_detector:9
+#: info.docfunc.laplacian_of_gaussian_filter:9
+#: info.docfunc.laplacian_of_gaussian_sharpen:9 info.docfunc.maximum_filter:6
+#: info.docfunc.mean_filter:6 info.docfunc.median_filter:6
+#: info.docfunc.minimum_filter:6 info.docfunc.moravec_response:5
+#: info.docfunc.prewitt_detector:9 info.docfunc.prewitt_filter:9
+#: info.docfunc.prewitt_sharpen:9 info.docfunc.rank_filter:5
+#: info.docfunc.segment_response:6 info.docfunc.sobel_detector:10
+#: info.docfunc.sobel_filter:10 info.docfunc.sobel_sharpen:10
+#: info.docfunc.usan_response:5 of
+msgid "the input tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:6
+#: info.docfunc.bilateral_filter:6 info.docfunc.gaussian_filter:7
+#: info.docfunc.maximum_filter:7 info.docfunc.mean_filter:7
+#: info.docfunc.median_filter:7 info.docfunc.minimum_filter:7
+#: info.docfunc.rank_filter:6 of
+msgid "the shape of averaging kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:7
+#: info.docfunc.bilateral_filter:11 info.docfunc.canny_detector:13
+#: info.docfunc.canny_filter:13 info.docfunc.canny_sharpen:13
+#: info.docfunc.difference_of_gaussian_detector:10
+#: info.docfunc.difference_of_gaussian_filter:10
+#: info.docfunc.difference_of_gaussian_sharpen:10 info.docfunc.fast_response:7
+#: info.docfunc.gabor_filter:14 info.docfunc.gaussian_filter:11
+#: info.docfunc.harris_response:15 info.docfunc.hessian_curvature_detector:8
+#: info.docfunc.hessian_curvature_response:8
+#: info.docfunc.hessian_determinant_response:8
+#: info.docfunc.laplacian_of_gaussian_detector:11
+#: info.docfunc.laplacian_of_gaussian_filter:11
+#: info.docfunc.laplacian_of_gaussian_sharpen:11 info.docfunc.maximum_filter:8
+#: info.docfunc.mean_filter:8 info.docfunc.median_filter:8
+#: info.docfunc.minimum_filter:8 info.docfunc.moravec_response:8
+#: info.docfunc.prewitt_detector:11 info.docfunc.prewitt_filter:11
+#: info.docfunc.prewitt_sharpen:11 info.docfunc.rank_filter:9
+#: info.docfunc.segment_response:8 info.docfunc.sobel_detector:12
+#: info.docfunc.sobel_filter:12 info.docfunc.sobel_sharpen:12
+#: info.docfunc.usan_response:7 of
+msgid ""
+"method of edge filling; valid options are ``'reflect'``, ``'constant'``, "
+"``'nearest'``, ``'mirror'``, and ``'wrap'``; ``'reflect'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:9
+#: info.docfunc.bilateral_filter:13 info.docfunc.canny_detector:15
+#: info.docfunc.canny_filter:15 info.docfunc.canny_sharpen:15
+#: info.docfunc.difference_of_gaussian_detector:12
+#: info.docfunc.difference_of_gaussian_filter:12
+#: info.docfunc.difference_of_gaussian_sharpen:12 info.docfunc.fast_response:9
+#: info.docfunc.gabor_filter:16 info.docfunc.gaussian_filter:13
+#: info.docfunc.harris_response:17 info.docfunc.hessian_curvature_detector:10
+#: info.docfunc.hessian_curvature_response:10
+#: info.docfunc.hessian_determinant_response:10
+#: info.docfunc.laplacian_of_gaussian_detector:13
+#: info.docfunc.laplacian_of_gaussian_filter:13
+#: info.docfunc.laplacian_of_gaussian_sharpen:13 info.docfunc.maximum_filter:10
+#: info.docfunc.mean_filter:10 info.docfunc.median_filter:10
+#: info.docfunc.minimum_filter:10 info.docfunc.moravec_response:10
+#: info.docfunc.prewitt_detector:13 info.docfunc.prewitt_filter:13
+#: info.docfunc.prewitt_sharpen:13 info.docfunc.rank_filter:11
+#: info.docfunc.segment_response:10 info.docfunc.sobel_detector:14
+#: info.docfunc.sobel_filter:14 info.docfunc.sobel_sharpen:14
+#: info.docfunc.usan_response:9 of
+msgid "filling number when ``k_mode`` is ``'constant'``; 0.0 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:10
+#: info.docfunc.bilateral_filter:14 info.docfunc.canny_detector:16
+#: info.docfunc.canny_filter:16 info.docfunc.canny_sharpen:16
+#: info.docfunc.difference_of_gaussian_detector:13
+#: info.docfunc.difference_of_gaussian_filter:13
+#: info.docfunc.difference_of_gaussian_sharpen:13 info.docfunc.gabor_filter:17
+#: info.docfunc.gaussian_filter:14
+#: info.docfunc.laplacian_of_gaussian_detector:14
+#: info.docfunc.laplacian_of_gaussian_filter:14
+#: info.docfunc.laplacian_of_gaussian_sharpen:14 info.docfunc.maximum_filter:11
+#: info.docfunc.mean_filter:11 info.docfunc.median_filter:11
+#: info.docfunc.minimum_filter:11 info.docfunc.prewitt_detector:14
+#: info.docfunc.prewitt_filter:14 info.docfunc.prewitt_sharpen:14
+#: info.docfunc.rank_filter:12 info.docfunc.sobel_detector:15
+#: info.docfunc.sobel_filter:15 info.docfunc.sobel_sharpen:15 of
+msgid "origin of anchor pixel in kernel; 0 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:11
+#: info.docfunc.bilateral_filter:15 info.docfunc.gabor_filter:18
+#: info.docfunc.gaussian_filter:15 info.docfunc.maximum_filter:12
+#: info.docfunc.mean_filter:12 info.docfunc.median_filter:12
+#: info.docfunc.minimum_filter:12 info.docfunc.rank_filter:13 of
+msgid "a filtered tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:13
+#: info.docfunc.bilateral_filter:17 info.docfunc.gaussian_filter:17
+#: info.docfunc.maximum_filter:14 info.docfunc.mean_filter:14
+#: info.docfunc.median_filter:14 info.docfunc.minimum_filter:14 of
+msgid "``data`` or ``k_shape`` are not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:17 of
+msgid "averaging filter for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.averaging_filter:28 of
+msgid ":py:func:`~info.docfunc.averaging_kernel`"
+msgstr ""
+
+#: ../../docstring info.docfunc.rank_filter:1 of
+msgid "rank filter for tensor. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.rank_filter:7 of
+msgid ""
+"rank for filter, int as indexing or float from 0. to 1. as quantile; for "
+"examples, 0 for minimum, -1 for maximum using int assignment, 0.5 for "
+"median using float assignment"
+msgstr ""
+
+#: ../../docstring info.docfunc.rank_filter:15 of
+msgid "``data``, ``k_shape`` or ``k_rank`` are not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.rank_filter:19 of
+msgid "rank filter for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.minimum_filter:1 of
+msgid ""
+"local minimum filter for tensor. an :ref:`aggregation function "
+"<aggregation function>` is type of data transfer method to map a multi-"
+"element data into a scalar. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.maximum_filter:18 info.docfunc.mean_filter:18
+#: info.docfunc.median_filter:18 info.docfunc.minimum_filter:18 of
+msgid "aggregation functional filters for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.maximum_filter:33 info.docfunc.mean_filter:33
+#: info.docfunc.median_filter:33 info.docfunc.minimum_filter:33 of
+msgid ""
+"Some aggregation functions are specific forms of "
+":py:func:`~info.docfunc.rank_filter`:"
+msgstr ""
+
+#: ../../docstring info.docfunc.maximum_filter:35 info.docfunc.mean_filter:35
+#: info.docfunc.median_filter:35 info.docfunc.minimum_filter:35 of
+msgid ""
+"homogeneity of mappings for some aggregation functional filters and rank "
+"filter"
+msgstr ""
+
+#: ../../docstring info.docfunc.maximum_filter:49 info.docfunc.mean_filter:49
+#: info.docfunc.median_filter:49 info.docfunc.minimum_filter:49 of
+msgid ":py:func:`~info.docfunc.rank_filter`"
+msgstr ""
+
+#: ../../docstring info.docfunc.maximum_filter:1 of
+msgid ""
+"local maximum filter for tensor. an :ref:`aggregation function "
+"<aggregation function>` is type of data transfer method to map a multi-"
+"element data into a scalar. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.mean_filter:1 of
+msgid ""
+"local mean filter for tensor. an :ref:`aggregation function <aggregation "
+"function>` is type of data transfer method to map a multi-element data "
+"into a scalar. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.median_filter:1 of
+msgid ""
+"local median filter for tensor. an :ref:`aggregation function "
+"<aggregation function>` is type of data transfer method to map a multi-"
+"element data into a scalar. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_filter:1 of
+msgid ""
+"gaussian filter for tensor. gaussian kernel is generated using "
+":py:func:`~info.docfunc.gaussian_kernel` based on :eq:`multivariate "
+"Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_filter:8 of
+msgid "mean of Gaussian; :math:`\\boldsymbol{0}` vector as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:7
+#: info.docfunc.gaussian_filter:9 of
+msgid "covariance matrix of Gaussian; diagonal matrix of ``k_shape`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian_filter:21 of
+msgid "gaussian filter for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:64
+#: info.docfunc.difference_of_gaussian_filter:64
+#: info.docfunc.difference_of_gaussian_sharpen:64
+#: info.docfunc.gaussian_filter:32 of
+msgid ":py:func:`~info.docfunc.gaussian_kernel`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:1 of
+msgid ""
+"gabor filter for tensor. gabor kernel is generated using "
+":py:func:`~info.docfunc.gabor_kernel` based on :eq:`multivariate "
+"Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:7 of
+msgid "tuple for kernel shape"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:8 of
+msgid ""
+"rescale coefficient to determine the size of gaussian envelope; 1 as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:9 of
+msgid ""
+"spatial orientation where the harmonic sine function periodically "
+"repeats; ``None`` as default to automatically generate 1 for each "
+"dimension (e.g. ``[1, 1, 1]`` for 3D data)"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:12 of
+msgid "wavelength of harmonic sine function; :math:`2\\pi` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:13 of
+msgid "phase position of harmonic sine function; 0 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:20 of
+msgid "``data``, ``k_shape`` or ``k_orientation`` are not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:24 of
+msgid "gabor filter for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.gabor_filter:35 of
+msgid ":py:func:`~info.docfunc.gabor_kernel`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:1 of
+msgid "bilateral filter for tensor. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:9 of
+msgid "variance of ranged space; ``None`` for local adaptive variance as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:21 of
+msgid "bilateral filter for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:40 of
+msgid "For each element-dependent block, the general form of wight kernel follow:"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:42 of
+msgid ""
+"W(\\boldsymbol{x}, \\boldsymbol{s}) \\propto "
+"\\exp{[-\\frac{(\\boldsymbol{x}-\\boldsymbol{s})^T\n"
+"\\boldsymbol{\\Sigma}^{-1}_{d} (\\boldsymbol{x}-\\boldsymbol{s})}{2} - "
+"\\frac{\\Vert I(\\boldsymbol{x}) -\n"
+"I(\\boldsymbol{s}) \\Vert^{2}}{2 \\sigma^{2}_{r}}]}"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:49 of
+msgid ""
+"Where :math:`I(\\boldsymbol{x})` and :math:`I(\\boldsymbol{s})` are the "
+"values spaced in tensor and kernel respectively. In kernel space, "
+":math:`\\boldsymbol{x}` is the anchor pixel with zero offset, therefore "
+"the 1st exponential item in :eq:`bilateral weight kernel` is the Gaussian"
+" kernel (:eq:`multivariate Gaussian`) with :math:`\\boldsymbol{\\mu} = "
+"\\boldsymbol{0}`. For each element, :math:`W(\\boldsymbol{x}, "
+"\\boldsymbol{s})` is rescaled by :math:`W = "
+"W(\\boldsymbol{x},\\boldsymbol{s})/\\sum_{\\boldsymbol{s}}W(\\boldsymbol{x},"
+" \\boldsymbol{s})`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bilateral_filter:55 of
+msgid ""
+"Bilateral filter was proposed by :ref:`C. Tomasi et. al. <[Tomasi1998]>` "
+"for an edge-preserving smoothing on image processing. As a no-linear "
+"method, kernel of bilateral will be a function of both Gaussian "
+"distribution, and the local element in tensor itself. Therefore, the "
+"computing cost of bilateral is heavier, compared to other static kernels"
+msgstr ""
+
+#: ../../docstring info.docfunc.prewitt_filter:1 of
+msgid ""
+"prewitt filter to highlight edge of tensor. each derivative operator is "
+"constructed with planes filled with -1 and 1 in start and end surface, "
+"respectively. for prewitt filter, gradient components of tensor were "
+"calculated for all axis then integrated through 2 norm. for prewitt "
+"detector, pixels with gray level upper more than threshold will be "
+"identified as edges. for prewitt sharpen, pixels around edge-like area "
+"will be augmented into the effect of higher contrast. available for numpy"
+" and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:12 info.docfunc.canny_filter:12
+#: info.docfunc.canny_sharpen:12 info.docfunc.difference_of_gaussian_detector:9
+#: info.docfunc.difference_of_gaussian_filter:9
+#: info.docfunc.difference_of_gaussian_sharpen:9 info.docfunc.fast_response:6
+#: info.docfunc.hessian_curvature_detector:7
+#: info.docfunc.hessian_curvature_response:7
+#: info.docfunc.hessian_determinant_response:7
+#: info.docfunc.laplacian_of_gaussian_detector:10
+#: info.docfunc.laplacian_of_gaussian_filter:10
+#: info.docfunc.laplacian_of_gaussian_sharpen:10
+#: info.docfunc.prewitt_detector:10 info.docfunc.prewitt_filter:10
+#: info.docfunc.prewitt_sharpen:10 info.docfunc.segment_response:7
+#: info.docfunc.sobel_detector:11 info.docfunc.sobel_filter:11
+#: info.docfunc.sobel_sharpen:11 info.docfunc.usan_response:6 of
+msgid "the shape of averaging kernel; 3 for each dimension as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:17 info.docfunc.canny_filter:17
+#: info.docfunc.canny_sharpen:17
+#: info.docfunc.difference_of_gaussian_detector:14
+#: info.docfunc.difference_of_gaussian_filter:14
+#: info.docfunc.difference_of_gaussian_sharpen:14
+#: info.docfunc.laplacian_of_gaussian_detector:15
+#: info.docfunc.laplacian_of_gaussian_filter:15
+#: info.docfunc.laplacian_of_gaussian_sharpen:15
+#: info.docfunc.prewitt_detector:15 info.docfunc.prewitt_filter:15
+#: info.docfunc.prewitt_sharpen:15 info.docfunc.sobel_detector:16
+#: info.docfunc.sobel_filter:16 info.docfunc.sobel_sharpen:16 of
+msgid ""
+"(detector only) threshold for edge identification; values ranged from 0. "
+"to 1. for relative threshold using quantiles, otherwise the absolute one;"
+" 0.9 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:19 info.docfunc.canny_filter:19
+#: info.docfunc.canny_sharpen:19
+#: info.docfunc.difference_of_gaussian_detector:16
+#: info.docfunc.difference_of_gaussian_filter:16
+#: info.docfunc.difference_of_gaussian_sharpen:16
+#: info.docfunc.laplacian_of_gaussian_detector:17
+#: info.docfunc.laplacian_of_gaussian_filter:17
+#: info.docfunc.laplacian_of_gaussian_sharpen:17
+#: info.docfunc.prewitt_detector:17 info.docfunc.prewitt_filter:17
+#: info.docfunc.prewitt_sharpen:17 info.docfunc.sobel_detector:18
+#: info.docfunc.sobel_filter:18 info.docfunc.sobel_sharpen:18 of
+msgid "(sharpen only) intensity for increasing edge contrast; 1 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:20 info.docfunc.canny_filter:20
+#: info.docfunc.canny_sharpen:20
+#: info.docfunc.difference_of_gaussian_detector:17
+#: info.docfunc.difference_of_gaussian_filter:17
+#: info.docfunc.difference_of_gaussian_sharpen:17
+#: info.docfunc.laplacian_of_gaussian_detector:18
+#: info.docfunc.laplacian_of_gaussian_filter:18
+#: info.docfunc.laplacian_of_gaussian_sharpen:18
+#: info.docfunc.prewitt_detector:18 info.docfunc.prewitt_filter:18
+#: info.docfunc.prewitt_sharpen:18 info.docfunc.sobel_detector:19
+#: info.docfunc.sobel_filter:19 info.docfunc.sobel_sharpen:19 of
+msgid "a numeric (filter, sharpen) or bool (detector) tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:22 info.docfunc.canny_filter:22
+#: info.docfunc.canny_sharpen:22 info.docfunc.connected_domain:11
+#: info.docfunc.difference_of_gaussian_detector:19
+#: info.docfunc.difference_of_gaussian_filter:19
+#: info.docfunc.difference_of_gaussian_sharpen:19 info.docfunc.fast_response:27
+#: info.docfunc.harris_response:20 info.docfunc.hessian_curvature_detector:21
+#: info.docfunc.hessian_curvature_response:21
+#: info.docfunc.hessian_determinant_response:21
+#: info.docfunc.laplacian_of_gaussian_detector:20
+#: info.docfunc.laplacian_of_gaussian_filter:20
+#: info.docfunc.laplacian_of_gaussian_sharpen:20
+#: info.docfunc.moravec_response:13 info.docfunc.prewitt_detector:20
+#: info.docfunc.prewitt_filter:20 info.docfunc.prewitt_sharpen:20
+#: info.docfunc.segment_response:16 info.docfunc.sobel_detector:21
+#: info.docfunc.sobel_filter:21 info.docfunc.sobel_sharpen:21
+#: info.docfunc.usan_response:16 of
+msgid "``data`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.prewitt_detector:24
+#: info.docfunc.prewitt_filter:24 info.docfunc.prewitt_sharpen:24 of
+msgid "prewitt detector, filter and sharpen for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.prewitt_detector:1 of
+msgid ""
+"prewitt detector to determine edge of tensor. each derivative operator is"
+" constructed with planes filled with -1 and 1 in start and end surface, "
+"respectively. for prewitt filter, gradient components of tensor were "
+"calculated for all axis then integrated through 2 norm. for prewitt "
+"detector, pixels with gray level upper more than threshold will be "
+"identified as edges. for prewitt sharpen, pixels around edge-like area "
+"will be augmented into the effect of higher contrast. available for numpy"
+" and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.prewitt_sharpen:1 of
+msgid ""
+"prewitt sharpen to get higher-contrast-edge tensor. each derivative "
+"operator is constructed with planes filled with -1 and 1 in start and end"
+" surface, respectively. for prewitt filter, gradient components of tensor"
+" were calculated for all axis then integrated through 2 norm. for prewitt"
+" detector, pixels with gray level upper more than threshold will be "
+"identified as edges. for prewitt sharpen, pixels around edge-like area "
+"will be augmented into the effect of higher contrast. available for numpy"
+" and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.sobel_filter:1 of
+msgid ""
+"sobel filter to highlight edge of tensor. each derivative operator is "
+"constructed with planes distributed as :math:`-G` and :math:`G` in start "
+"and end surface respectively, where :math:`G` is 1-dimensional "
+"degenerated marginal distribution of Gaussian (see :ref:`marginal "
+"probability <Marginal probability>`). for sobel filter, gradient "
+"components of tensor were calculated for all axis then integrated through"
+" 2 norm. for sobel detector, pixels with gray level upper more than "
+"threshold will be identified as edges. for sobel sharpen, pixels around "
+"edge-like area will be augmented into the effect of higher contrast. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.sobel_detector:25 info.docfunc.sobel_filter:25
+#: info.docfunc.sobel_sharpen:25 of
+msgid "sobel detector, filter and sharpen for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.sobel_detector:1 of
+msgid ""
+"sobel detector to determine edge of tensor. each derivative operator is "
+"constructed with planes distributed as :math:`-G` and :math:`G` in start "
+"and end surface respectively, where :math:`G` is 1-dimensional "
+"degenerated marginal distribution of Gaussian (see :ref:`marginal "
+"probability <Marginal probability>`). for sobel filter, gradient "
+"components of tensor were calculated for all axis then integrated through"
+" 2 norm. for sobel detector, pixels with gray level upper more than "
+"threshold will be identified as edges. for sobel sharpen, pixels around "
+"edge-like area will be augmented into the effect of higher contrast. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.sobel_sharpen:1 of
+msgid ""
+"sobel sharpen to get higher-contrast-edge tensor. each derivative "
+"operator is constructed with planes distributed as :math:`-G` and "
+":math:`G` in start and end surface respectively, where :math:`G` is "
+"1-dimensional degenerated marginal distribution of Gaussian (see "
+":ref:`marginal probability <Marginal probability>`). for sobel filter, "
+"gradient components of tensor were calculated for all axis then "
+"integrated through 2 norm. for sobel detector, pixels with gray level "
+"upper more than threshold will be identified as edges. for sobel sharpen,"
+" pixels around edge-like area will be augmented into the effect of higher"
+" contrast. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_filter:1 of
+msgid ""
+"canny filter to highlight edge of tensor. each derivative operator is "
+"constructed with planes distributed as :math:`-G` and :math:`G` in start "
+"and end surface respectively, where :math:`G` is 1-dimensional "
+"degenerated marginal distribution of Gaussian (see :ref:`marginal "
+"probability <Marginal probability>`). tensor will be preprocessed through"
+" kernel :math:`N(\\boldsymbol{\\mu}, \\boldsymbol{\\Sigma})`. for canny "
+"filter, gradient components of tensor were calculated for all axis then "
+"integrated through 2 norm. for canny detector, pixels with gray level "
+"upper more than threshold will be identified as edges. for canny sharpen,"
+" pixels around edge-like area will be augmented into the effect of higher"
+" contrast. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:26 info.docfunc.canny_filter:26
+#: info.docfunc.canny_sharpen:26 of
+msgid "canny detector, filter and sharpen for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_detector:1 of
+msgid ""
+"canny detector to determine edge of tensor. each derivative operator is "
+"constructed with planes distributed as :math:`-G` and :math:`G` in start "
+"and end surface respectively, where :math:`G` is 1-dimensional "
+"degenerated marginal distribution of Gaussian (see :ref:`marginal "
+"probability <Marginal probability>`). tensor will be preprocessed through"
+" kernel :math:`N(\\boldsymbol{\\mu}, \\boldsymbol{\\Sigma})`. for canny "
+"filter, gradient components of tensor were calculated for all axis then "
+"integrated through 2 norm. for canny detector, pixels with gray level "
+"upper more than threshold will be identified as edges. for canny sharpen,"
+" pixels around edge-like area will be augmented into the effect of higher"
+" contrast. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.canny_sharpen:1 of
+msgid ""
+"canny sharpen to get higher-contrast-edge tensor. each derivative "
+"operator is constructed with planes distributed as :math:`-G` and "
+":math:`G` in start and end surface respectively, where :math:`G` is "
+"1-dimensional degenerated marginal distribution of Gaussian (see "
+":ref:`marginal probability <Marginal probability>`). tensor will be "
+"preprocessed through kernel :math:`N(\\boldsymbol{\\mu}, "
+"\\boldsymbol{\\Sigma})`. for canny filter, gradient components of tensor "
+"were calculated for all axis then integrated through 2 norm. for canny "
+"detector, pixels with gray level upper more than threshold will be "
+"identified as edges. for canny sharpen, pixels around edge-like area will"
+" be augmented into the effect of higher contrast. available for numpy and"
+" cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_filter:1 of
+msgid ""
+"laplacian of gaussian filter to highlight edge of tensor. kernel of "
+":ref:`LoG <LoG>` is determined by :eq:`laplacian of gaussian in "
+"practice`. for LoG filter, :math:`C_1 > 0` then all weights in kernel "
+"will sum to 0, gradient components of tensor were calculated for all axis"
+" then integrated through 2 norm. for LoG detector, pixels with gray level"
+" upper more than threshold will be identified as edges. for LoG sharpen, "
+":math:`C_1 < 0` and pixels around edge-like area will be augmented into "
+"the effect of higher contrast. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_detector:24
+#: info.docfunc.laplacian_of_gaussian_filter:24
+#: info.docfunc.laplacian_of_gaussian_sharpen:24 of
+msgid "LoG detector, filter and sharpen for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_detector:1 of
+msgid ""
+"laplacian of gaussian detector to determine edge of tensor. kernel of "
+":ref:`LoG <LoG>` is determined by :eq:`laplacian of gaussian in "
+"practice`. for LoG filter, :math:`C_1 > 0` then all weights in kernel "
+"will sum to 0, gradient components of tensor were calculated for all axis"
+" then integrated through 2 norm. for LoG detector, pixels with gray level"
+" upper more than threshold will be identified as edges. for LoG sharpen, "
+":math:`C_1 < 0` and pixels around edge-like area will be augmented into "
+"the effect of higher contrast. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.laplacian_of_gaussian_sharpen:1 of
+msgid ""
+"laplacian of gaussian sharpen to get higher-contrast-edge tensor. kernel "
+"of :ref:`LoG <LoG>` is determined by :eq:`laplacian of gaussian in "
+"practice`. for LoG filter, :math:`C_1 > 0` then all weights in kernel "
+"will sum to 0, gradient components of tensor were calculated for all axis"
+" then integrated through 2 norm. for LoG detector, pixels with gray level"
+" upper more than threshold will be identified as edges. for LoG sharpen, "
+":math:`C_1 < 0` and pixels around edge-like area will be augmented into "
+"the effect of higher contrast. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_filter:1 of
+msgid ""
+"difference of gaussian filter to highlight edge of tensor. two kernels "
+"are determined by :py:func:`~info.docfunc.gaussian_kernel` based on "
+":eq:`multivariate Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:7
+#: info.docfunc.difference_of_gaussian_filter:7
+#: info.docfunc.difference_of_gaussian_sharpen:7 of
+msgid ""
+"ratio of two scales of two kernels; 1.6 as default, suggested by Marr and"
+" Hildreth for balancing bandwidth and sensitivity :ref:`[Marr1980] "
+"<[Marr1980]>`"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:23
+#: info.docfunc.difference_of_gaussian_filter:23
+#: info.docfunc.difference_of_gaussian_sharpen:23 of
+msgid "DoG detector, filter and sharpen for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:42
+#: info.docfunc.difference_of_gaussian_filter:42
+#: info.docfunc.difference_of_gaussian_sharpen:42 of
+msgid ""
+"For covariance :math:`\\boldsymbol{\\Sigma}` of multivariate gaussian "
+"distribution, its inverse :math:`\\boldsymbol{\\Sigma}^{-1}` is also "
+"symmetric. Therefore, the derivative of covariance matrix "
+":math:`\\boldsymbol{\\Sigma}` in multivariate gaussian is:"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:46
+#: info.docfunc.difference_of_gaussian_filter:46
+#: info.docfunc.difference_of_gaussian_sharpen:46 of
+msgid ""
+"\\begin{eqnarray}\n"
+"\\frac{\\partial "
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma})}{\\partial "
+"\\boldsymbol{\\Sigma}} &=&\n"
+"\\frac{[\\boldsymbol{\\Sigma}^{-1}(\\boldsymbol{x}-\\boldsymbol{\\mu})(\\boldsymbol{x}-\\boldsymbol{\\mu})^{T}"
+"\n"
+"\\boldsymbol{\\Sigma}^{-1} - \\boldsymbol{\\Sigma}^{-1}]}{2 \\cdot "
+"(2\\pi)^\\frac{k}{2} \\vert \\boldsymbol{\\Sigma}\n"
+"\\vert^\\frac{1}{2}} \\exp{[-\\frac{1}{2} (\\boldsymbol{x} - "
+"\\boldsymbol{\\mu})^T \\boldsymbol{\\Sigma}^{-1}\n"
+"(\\boldsymbol{x} - \\boldsymbol{\\mu})]} \\\\ &=& "
+"\\frac{[\\boldsymbol{\\Sigma}^{-1}(\\boldsymbol{x}-\\boldsymbol{\\mu})\n"
+"(\\boldsymbol{x}-\\boldsymbol{\\mu})^{T} \\boldsymbol{\\Sigma}^{-1} - "
+"\\boldsymbol{\\Sigma}^{-1}]}{2}\n"
+"f(\\boldsymbol{x}|\\boldsymbol{\\mu},\\boldsymbol{\\Sigma})\n"
+"\\end{eqnarray}"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:59
+#: info.docfunc.difference_of_gaussian_filter:59
+#: info.docfunc.difference_of_gaussian_sharpen:59 of
+msgid ""
+"Whose format is almost identical as :eq:`2nd order derivative of "
+"multivariate Gaussian`. That is, the :ref:`LoG <LoG>` can be approximated"
+" using gaussian filtered results with different scales."
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:66
+#: info.docfunc.difference_of_gaussian_filter:66
+#: info.docfunc.difference_of_gaussian_sharpen:66 of
+msgid ":py:func:`~info.docfunc.laplacian_of_gaussian_kernel`"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_detector:1 of
+msgid ""
+"difference of gaussian detector to determine edge of tensor. two kernels "
+"are determined by :py:func:`~info.docfunc.gaussian_kernel` based on "
+":eq:`multivariate Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.difference_of_gaussian_sharpen:1 of
+msgid ""
+"difference of gaussian sharpen to get higher-contrast-edge tensor. two "
+"kernels are determined by :py:func:`~info.docfunc.gaussian_kernel` based "
+"on :eq:`multivariate Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_determinant_response:1 of
+msgid ""
+"hessian determinant to highlight corner of tensor. two kernels are "
+"determined by :py:func:`~info.docfunc.gaussian_kernel` based on "
+":eq:`multivariate Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:11
+#: info.docfunc.hessian_curvature_response:11
+#: info.docfunc.hessian_determinant_response:11 of
+msgid ""
+"pixel spacing to determine differential operator; if numeric, operator "
+"uses equal spacing for all dimensions; if iterable of numeric, operator "
+"applies spacing in accordance with each numeric for each dimension; "
+"``None`` as default to generate 1 spacing for all dimensions"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:16
+#: info.docfunc.hessian_curvature_response:16
+#: info.docfunc.hessian_determinant_response:16 of
+msgid ""
+"(detector only) threshold for edge identification; values ranged from 0. "
+"to 1. 0.9 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:18
+#: info.docfunc.hessian_curvature_response:18
+#: info.docfunc.hessian_determinant_response:18 of
+msgid "(sharpen only) intensity for increasing corner contrast; 1 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:19
+#: info.docfunc.hessian_curvature_response:19
+#: info.docfunc.hessian_determinant_response:19 of
+msgid "a numeric (determinant, curvature) or bool (detector) tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:25
+#: info.docfunc.hessian_curvature_response:25
+#: info.docfunc.hessian_determinant_response:25 of
+msgid "hessian detector, filter and sharpen for image"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:44
+#: info.docfunc.hessian_curvature_response:44
+#: info.docfunc.hessian_determinant_response:44 of
+msgid ""
+"The gaussian curvature of :math:`m`-dimensional tensor "
+":math:`\\textbf{I}` is defined as:"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:46
+#: info.docfunc.hessian_curvature_response:46
+#: info.docfunc.hessian_determinant_response:46 of
+msgid ""
+"\\textbf{K} = "
+"\\frac{\\det{(\\boldsymbol{H}(\\textbf{I}))}}{(1+\\sum_{i=1}^m "
+"\\textbf{I}_{d_i}^2)^2}"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:51
+#: info.docfunc.hessian_curvature_response:51
+#: info.docfunc.hessian_determinant_response:51 of
+msgid ""
+"Where :math:`I_{d_i}` refers the 1st order differentiate of :math:`I`, in"
+" aspect of the :math:`i`-th dimension; "
+":math:`\\boldsymbol{H}(\\textbf{I})` is hessian matrix:"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:54
+#: info.docfunc.hessian_curvature_response:54
+#: info.docfunc.hessian_determinant_response:54 of
+msgid ""
+"\\boldsymbol{H}(\\textbf{I}) =\n"
+"\\begin{bmatrix}\n"
+"\\textbf{I}_{d_{1}d_{1}}  & \\dots  & \\textbf{I}_{d_{1}d_{m}} \\\\\n"
+"\\vdots  & \\ddots  & \\vdots \\\\\n"
+"\\textbf{I}_{d_{m}d_{1}} & \\dots & \\textbf{I}_{d_{m}d_{m}}\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:64
+#: info.docfunc.hessian_curvature_response:64
+#: info.docfunc.hessian_determinant_response:64 of
+msgid ""
+"determinant and curvature responses the measure of the hessian matrix, "
+"and the gaussian curvature respectively. detector uses the limen based on"
+" numerical response of curvature."
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_response:1 of
+msgid ""
+"hessian curvature to highlight corner of tensor. two kernels are "
+"determined by :py:func:`~info.docfunc.gaussian_kernel` based on "
+":eq:`multivariate Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.hessian_curvature_detector:1 of
+msgid ""
+"hessian detector to determine corners of tensor. two kernels are "
+"determined by :py:func:`~info.docfunc.gaussian_kernel` based on "
+":eq:`multivariate Gaussian`. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:1 of
+msgid ""
+"moravec response for tensor. approach using for edge and corner augment. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:6 of
+msgid ""
+"norm order to determine how to aggregate differentials vector; ``2`` as "
+"default to use Euclidean norm"
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:11 of
+msgid "the moravec response tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:17 of
+msgid "moravec response on image"
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:29 of
+msgid "The moravec response can be summarized simply as:"
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:31 of
+msgid ""
+"\\textbf{M} = f(\\textbf{T}_{\\boldsymbol{i}(\\boldsymbol{j})} - "
+"\\textbf{T}_\\boldsymbol{j})"
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:36 of
+msgid ""
+"Where :math:`\\textbf{T}` and :math:`\\textbf{M}` is the original tensor,"
+" and its moravec response respectively. :math:`\\boldsymbol{j}` and "
+":math:`\\boldsymbol{i}(\\boldsymbol{j})` are indices both in "
+":math:`\\mathbb{Z}^{m+}`, and :math:`\\boldsymbol{i}(\\boldsymbol{j})` is"
+" the function of :math:`\\boldsymbol{j}` who satisfies (assume "
+":math:`\\boldsymbol{v} = \\boldsymbol{i}(\\boldsymbol{j}) - "
+"\\boldsymbol{j}`) each element :math:`v_k` in :math:`\\boldsymbol{v}` is "
+"in set :math:`\\{0, 1\\}`, and :math:`\\sum_{k=1}^{m} v_k \\neq 0`."
+msgstr ""
+
+#: ../../docstring info.docfunc.moravec_response:42 of
+msgid ""
+"As for each index :math:`\\boldsymbol{j}`, the function mapping "
+":math:`\\boldsymbol{i}(\\boldsymbol{j})` will expand "
+":math:`\\textbf{T}_{\\boldsymbol{i}(\\boldsymbol{j})}` one dimension "
+"plus, to contain the indices who satisfy the above-mentioned constraints."
+" This results the container is in :math:`\\mathbb{R}^{(m+1)}` who "
+"packages all differentials related to original pixels, the function "
+":math:`f` needs to degenerate this expanded dimension, via aggregation "
+"approaches."
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:1 of
+msgid ""
+"harris curvature response for tensor. approach using for corner augment. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:6 of
+msgid ""
+"spacing for each dimension in the unit voxel; if no-iterable numeric "
+"object, this value will be applied on all dimensions. 1 as default, to "
+"calculate in pixel spacing"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:9 of
+msgid ""
+"coefficient of trace in harris response; range from 0.04 to 0.06 is "
+"suggested; 0.05 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:11 of
+msgid ""
+"window function for harris kernel; ``'binomial'`` applies a rescaled "
+"binary gaussian kernel, and ``'continuous'`` applies a gaussian kernel; "
+"``'binomial'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:14 of
+msgid "tuple for kernel shape; ``None`` as default to apply 3 in all dimensions"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:18 of
+msgid "the harris curvature response tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:24 of
+msgid "harris response on image"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:36 of
+msgid "For harris response, it can be defined as:"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:38 of
+msgid ""
+"\\textbf{H}(\\boldsymbol{i}) = \\sum_{\\boldsymbol{j}} w(\\boldsymbol{j})"
+" [\\textbf{T}(\\boldsymbol{i} +\n"
+"\\boldsymbol{j}) - \\textbf{T}(\\boldsymbol{i})]^2"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:44 of
+msgid ""
+"Where :math:`\\textbf{T}` and :math:`\\textbf{M}` is the original tensor,"
+" and its moravec response respectively. :math:`\\boldsymbol{i}` is the "
+"index in :math:`\\textbf{T}`, and :math:`\\boldsymbol{j}` is the index in"
+" harris kernel. :math:`w(\\boldsymbol{j})` is the clip window for "
+"computing weight of kernel. if it uses binary option, all values in "
+"kernel will be :math:`\\{0, a\\}` where the sum of :math:`a` is positions"
+" of :math:`m`-dimensional ellipse determined by kernel shape, and the sum"
+" of kernel will be 1; if continuous option is selected, weight uses "
+"general gaussian distribution."
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:51 of
+msgid ""
+"Using 1st order Taylor expansion as approximation, each pixel of "
+":math:`\\textbf{T}` will be expanded in two extra dimensions (cornerness "
+"matrix) as:"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:54 of
+msgid ""
+"\\boldsymbol{M} = \\sum_{j} w(\\boldsymbol{j})\n"
+"\\begin{bmatrix}\n"
+"\\textbf{T}_{d_{1}}^2  & \\dots  & \\textbf{T}_{d_1} \\textbf{T}_{d_m} "
+"\\\\\n"
+"\\vdots  & \\dots  & \\vdots \\\\\n"
+"\\textbf{T}_{d_m}\\textbf{T}_{d_1} & \\dots & \\textbf{T}_{d_{m}}^2\n"
+"\\end{bmatrix}"
+msgstr ""
+
+#: ../../docstring info.docfunc.harris_response:64 of
+msgid ""
+"Where :math:`T_{d_i}` refers the 1st order differentiate of "
+":math:`\\textbf{T}`, in aspect of the :math:`i`-th dimension. In "
+"practice, cornerness is implemented using :math:`C = "
+"\\det{\\boldsymbol{M}} - k (\\mathrm{Tr}(\\boldsymbol{M}))^2`, where "
+":math:`k` is the hyperparameter had effect on cornerness computing, the "
+"determinant and trace of :math:`\\boldsymbol{M}` can be obtained through "
+"its singular values."
+msgstr ""
+
+#: ../../docstring info.docfunc.usan_response:1 of
+msgid ""
+"usan response for tensor. approach using for edge and corner augment. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.usan_response:10 of
+msgid ""
+"window function for harris kernel; ``'binomial'`` applies a rescaled "
+"binary gaussian kernel, and ``'continuous'`` applies 3rd moment of "
+"gaussian kernel; ``'binomial'`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.usan_response:14 of
+msgid "the usan response tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.usan_response:20 of
+msgid "usan and susan response on image"
+msgstr ""
+
+#: ../../docstring info.docfunc.usan_response:33 of
+msgid ""
+"usan response generates a series of kernels, to obtain differentials from"
+" :math:`m`-dimensional ellipse determined by shape, related to the center"
+" of the kernel. By determining the threshold :math:`g`, the function "
+"mapping :math:`\\min(0, g-\\mathrm{usan\\_response}(\\textbf{T}))` will "
+"be the corresponding susan response (see :ref:`Smith1997 <[Smith1997]>`)."
+msgstr ""
+
+#: ../../docstring info.docfunc.segment_response:1 of
+msgid ""
+"segment test response for tensor. approach using for edge and corner "
+"augment. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.segment_response:11 of
+msgid ""
+"threshold, to reject pixels whose differential is lower than that value "
+"in any orthogonal direction; if it ranges in :math:`(0, 1)`, the quantile"
+" will be used; 0.6 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.segment_response:14 of
+msgid "the segment test response tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.segment_response:20 of
+msgid "segment test response on image"
+msgstr ""
+
+#: ../../docstring info.docfunc.segment_response:32 of
+msgid ""
+"Kernel of segment test uses :math:`m`-dimensional ellipsoidal shell, "
+"instead of :math:`m`-dimensional ellipse. Pixels whose differential in "
+"any orthogonal direction is lower than the threshold will be rejected, "
+"then the accepted pixels will be subdivided into positive and negative "
+"classes. Absolute sum mapping is applied on the two classes, then the "
+"final response of pixel is determined by the maximum of the two sums."
+msgstr ""
+
+#: ../../docstring info.docfunc.fast_response:1 of
+msgid ""
+"fast response for tensor. approach using for edge and corner augment. "
+"available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.fast_response:10 of
+msgid ""
+"thresholds of ``(a, b)`` to make :math:`\\mathbb{R}^1` into division "
+":math:`(-\\infty, a] \\cup (a, b] \\cup (b,+\\infty)`, as the scopes for "
+"differentials lower than, similar as, and greater than the kernel center "
+"respectively; if single float :math:`t`, it must range from 0 to 0.5, for"
+" quantiles of ``(t, 1-t)``; if ``a`` and ``b`` both range from 0 to 1, "
+"quantiles are calculated automatically; else uses the numeric themselves;"
+" ``(0.4, 0.6)`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.fast_response:23 of
+msgid ""
+"callable object to transfer vector container for differentials to "
+"numeric; ``None`` as default to not apply"
+msgstr ""
+
+#: ../../docstring info.docfunc.fast_response:25 of
+msgid "the fast response tensor"
+msgstr ""
+
+#: ../../docstring info.docfunc.fast_response:31 of
+msgid "fast response on image"
+msgstr ""
+
+#: ../../docstring info.docfunc.fast_response:43 of
+msgid ""
+"Kernel of segment test uses :math:`m`-dimensional ellipsoidal shell, "
+"instead of :math:`m`-dimensional ellipse. Pixels whose differentials will"
+" be subdivided into three classes: similar as, lower, and greater than, "
+"through two pre-defined thresholds. Two sums are calculated in last two "
+"types, then final response is determined by the maximum of the two sums."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:205
+msgid "_`Boolean tensor`"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:1 of
+msgid ""
+"sub segmentation generator from a bool ndarray. available for numpy and "
+"cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.difference:5 info.docfunc.dilation:6
+#: info.docfunc.erosion:6 info.docfunc.intersection:5 info.docfunc.prober:5
+#: info.docfunc.union:5 info.docfunc.watershed:5 of
+msgid "the bool ndarray segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:6 of
+msgid "number of generated sub segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:7 of
+msgid "radius for each generated sub segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:8 of
+msgid ""
+"voxel spacing for all dimensions; if assigned, ``prob_radius`` will be "
+"re-calculated, to adapt voxel space; ``None`` as default to use pixel "
+"space"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:11 of
+msgid "generator composed of sub segmentations with specified radius"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:13 of
+msgid "``data``, ``prob_nums`` or ``prob_radius`` are not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:17 of
+msgid "generate 15 sub segmentations from a meta segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.prober:31 of
+msgid "support ``in_spacing`` argument for sampling in voxel space."
+msgstr ""
+
+#: ../../docstring info.docfunc.connected_domain:1 of
+msgid ""
+"connected domain generator from a bool or an integer ndarray. available "
+"for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.connected_domain:5 of
+msgid ""
+"bool ndarray segmentation, or int ndarray using different integers for "
+"connected domains"
+msgstr ""
+
+#: ../../docstring info.docfunc.connected_domain:7 of
+msgid ""
+"structure to determine connected domain; ``None`` as default to use "
+"orthogonal connection in each dimension"
+msgstr ""
+
+#: ../../docstring info.docfunc.connected_domain:9 of
+msgid "generator composed of connected domains as segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.connected_domain:15 of
+msgid "generate connected domains from a meta segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.seg_resize:1 of
+msgid ""
+"resizing data into specific shape. spline interpolation supported. "
+"algorithm is implemented through canonical decomposition "
+":ref:`[Battaglino2018] <[Battaglino2018]>`. available for numpy and cupy "
+"ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.seg_resize:18 of
+msgid "resize a meta segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.erosion:1 of
+msgid ""
+"morphological erosion operation for boolean tensor. can be applied in "
+"pixel or voxel space. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.dilation:7 info.docfunc.erosion:7 of
+msgid ""
+"criterion to be eroded; 2nd order norm for orthogonal components in each "
+"dimension if numeric; or a sequence of numeric, customized in each "
+"dimension; ``1`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.dilation:10 info.docfunc.erosion:10 of
+msgid ""
+"spacing for each dimension in the unit voxel; ``None`` as default for "
+"pixel spacing"
+msgstr ""
+
+#: ../../docstring info.docfunc.dilation:12 info.docfunc.erosion:12 of
+msgid "eroded segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.dilation:14 info.docfunc.erosion:14 of
+msgid "if ``data`` is not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.erosion:18 of
+msgid "erosion for segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.dilation:1 of
+msgid ""
+"morphological dilation operation for boolean tensor. can be applied in "
+"pixel or voxel space. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.dilation:18 of
+msgid "dilation for segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.intersection:1 of
+msgid ""
+"intersection operation for boolean tensor. available for numpy and cupy "
+"ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.intersection:6 of
+msgid "the intersection of ``data`` and ``instances`` segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.intersection:7 of
+msgid "intersection segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference:9 info.docfunc.intersection:9
+#: info.docfunc.union:9 of
+msgid "if ``data`` and ``instances`` are not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.intersection:13 of
+msgid "calculate intersection of segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.union:1 of
+msgid "union operation for boolean tensor. available for numpy and cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.union:6 of
+msgid "the union of ``data`` and ``instances`` segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.union:7 of
+msgid "union segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.union:13 of
+msgid "calculate union of segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference:1 of
+msgid ""
+"difference operation for boolean tensor. available for numpy and cupy "
+"ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.difference:6 of
+msgid "the difference of ``data`` and ``instances`` segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference:7 of
+msgid "difference segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.difference:13 of
+msgid "calculate difference of segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:1 of
+msgid ""
+"watershed algorithm for labeling segmentation. available for numpy and "
+"cupy ndarray."
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:6 of
+msgid ""
+"initial positions for flooding; must be label object with integers to "
+"mark each individual segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:8 of
+msgid ""
+"geography for flooding; ``None`` as default will calculate through basic "
+"segmentation"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:10 of
+msgid ""
+"trigger to determine whether return label-like result; if ``True``, a "
+"label-like ndarray will be obtained, otherwise a generator of bool "
+"ndarray for each label; ``True`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:13 of
+msgid ""
+"ndarray of labels as ``flood_seeds``, or generator of bool ndarray for "
+"each label"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:15 of
+msgid "if ``data`` and ``flood_seeds`` are not assigned properly"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:19 of
+msgid "watershed for segmentations"
+msgstr ""
+
+#: ../../docstring info.docfunc.watershed:39 of
+msgid ""
+"Numpy implementation for topological watershed algorithm suggested by "
+":ref:`Beucher, S. and & Meyer, F. <[Beucher2018]>`."
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:236
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:237
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_tensor.rst:238
+msgid "Jun 27, 2023"
+msgstr ""
+

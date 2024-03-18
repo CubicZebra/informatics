@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/tutorial/tut_trans.rst:2
+msgid "_`Data transform and identification`"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:4
+msgid ""
+"In data analytics, machine learning, or deep learning, approaches to "
+"build proper pipes for pre and post processing, are critical steps for "
+"determining the ceiling of model performance. Data defined here mainly "
+"refers to :math:`n`-dimensional array in computer science (or tensor in "
+"mathematics). This tutorial demonstrates image enhancement methods "
+"generally applied in computer vision, as well as their upper applications"
+" in certain study fields."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:11
+msgid "_`Edge and corner detection`"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:13
+#, python-format
+msgid ""
+"General filters can be applied on tensor for profile detection, keypoint "
+"identification for registration, and such like. :numref:`Figure %s "
+"<transform of edge and corner detection>` reveal the effect of (b) the "
+"bilateral filter, (c) the canny filter and (d) the harris response, "
+"applied on (a) a original natural image, respectively. The edge of "
+"objects, as well as corner-like region can be emphasised through those "
+"data processing methods."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:18
+msgid ""
+"Different transformations might contribute for varying objectives: de-"
+"noising processing possibly prefers the bilateral filtered result; to "
+"evaluate degree of interspace of bricks, canny response would be helpful."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:26
+msgid "bilateral filter, edge and corner response"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:28
+#, python-format
+msgid ""
+"Additionally, those processing transforms can also be called, in "
+"consistence with data with different dimension(s). :numref:`Figure %s "
+"<harris response 1D>` shows harris response for high curvature, on "
+"1-dimensional series, and :numref:`Figure %s <canny filter 3D>` is canny "
+"filter applied on a 3-dimensional cubic instance."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:37
+msgid "harris response on 1D series"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:44
+msgid "canny filter on 3D volume"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:46
+msgid ""
+":numref:`natural image processing` is for referenced implementation, as "
+"well as visualization for those examples."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:48
+msgid "natural image processing"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:86
+msgid ""
+"With appropriate method of transformation customized for specific task as"
+" upstream processing, information with high analytical value remains "
+"while disturbance signal is restricted, therefore increasing upper bond "
+"on performance of modeling, can rationally be expected."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:91
+msgid "_`Segmentation for quantitative statistics`"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:93
+msgid ""
+"Quantitative analysis takes labeling different objects from a total "
+"segmentation as the prerequisite. In practice, some classic algorithms, "
+"or their combinations can be applied to identify each individual, then "
+"downstream mathematical statistics, as well as corresponding analysis are"
+" capable to be undertaken."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:97
+#, python-format
+msgid ""
+"As illustrated in :numref:`Figure %s <labeling segmentation>`, for "
+"determining each instance, whether overlapped among two or not, proper "
+"configuration of distance transform combined with connected domain will "
+"precisely allocate each basin for initial flooding seed."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:106
+msgid "labeling segmentation through topography"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:108
+msgid ""
+"Demonstrated implementation is as showed in :numref:`segmentation "
+"labeling`:"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:110
+msgid "segmentation labeling"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:134
+msgid "_`Data processing on different disciplines`"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:136
+#, python-format
+msgid ""
+"Comprehensively utilizing those essential techniques for transform and "
+"identification, can build considerably complicated data processing "
+"pipelines on many study fields. :numref:`Figure %s <pathological image "
+"statistics>` is for evaluating equivalent area of tumor cell nucleus. "
+"Data is collected from a hepatocellular carcinoma case from The Cancer "
+"Genome Atlas (`TCGA <https://www.cancer.gov/tcga>`_) program."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:146
+msgid "statistics for nucleus of tumor cells on pathological image"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:148
+#, python-format
+msgid ""
+"Another example is for surveying and mapping engineering.  After certain "
+"preprocessing flows, road net can be highlighted, and the envelopes for "
+"water, grass, tree cover, and the corresponding area percentages were "
+"determined as well, as showed in :numref:`Figure %s <semantic on "
+"topography>`."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:157
+msgid "semantic statistics on topography"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:159
+#, python-format
+msgid ""
+"In material research, measuring grain is a conventional approach to "
+"understand formation, as well as the principle of the formation of "
+"microstructure. :numref:`Figure %s <grain measure>` demonstrates grain "
+"boundaries determination via 2nd order differential transformation "
+"followed by labels identification, then exporting scatter plots for grain"
+" radius and area as x- and y-axis, respectively. The test data is from a "
+"bulletin published on `Vac Aero <https://vacaero.com/information-"
+"resources>`_."
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:170
+msgid "metallic grain measurement"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:174
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:175
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_trans.rst:176
+msgid "Jan 2, 2024"
+msgstr ""
+

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/supplement/supp_a2.rst:2
+msgid "_`About matrix`"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:4
+msgid ""
+"In :ref:`previous section <High dimensional data>` we discuss about how "
+"dataset organized in form of matrix. Thus, knowledge about matrix, will "
+"contribute for correctly building downstream analysis flow."
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:7
+msgid ""
+"For a design matrix :math:`\\boldsymbol{M} \\in \\mathbb{R}^{n \\times "
+"m}` where :math:`n` and :math:`m` refer the numbers of observations "
+"(samples) and data dimensions, respectively, most statistical methods are"
+" of basis on certain hypothesis, in which condition that requires the "
+"design matrix to satisfy certain properties (usually related to :math:`n`"
+" and :math:`m`). Therefore, the estimation for some problems such like "
+"how large of the data scale should be prepared for an experiment, or the "
+"rational number of dimension for modeling the data, can be deducted "
+"through matrix properties, on the basis of scientific rigor, instead of "
+"empiricism."
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:15
+msgid "_`Rank and trace`"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:17
+msgid ""
+"Rank of matrix corresponds to the maximal dimension of a *no-"
+"degeneration* (see :ref:`degeneration <degeneracy>`) linear system. In "
+"most cases, :math:`m \\neq n`, therefore the rank of "
+":math:`\\boldsymbol{M}` will be like :math:`\\mathrm{r}(\\boldsymbol{M}) "
+"= \\min{(m, n)}`. Using linear model as example, when :math:`m` is much "
+"greater than :math:`n`, the upper bound of matrix rank, that means most "
+"dimensions in that design matrix are redundant to be removed through "
+"dimension reduction component. In reverse, in case of :math:`m \\lt n`, "
+"the number of observations is sufficient for building linear (or "
+"generalized linear) model."
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:26
+msgid ""
+"linear model here can be conventional linear function like square error "
+":math:`f(\\boldsymbol{M}) = (\\boldsymbol{M} - "
+"\\overline{\\boldsymbol{M}})(\\boldsymbol{M} - "
+"\\overline{\\boldsymbol{M}})^T`, or other derived methods "
+":math:`f(\\boldsymbol{M}, \\dots)` such like Pearson correlation "
+"coefficient (PCC), Pearson product moment correlation coefficient "
+"(PPMCC), or other formats with different location and rescale items "
+"(detailed definition see :ref:`SPSS tutorial <[SPSS2014]>`)."
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:32
+msgid "Further visualization for meaning of rank..."
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:36
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:37
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/supplement/supp_a2.rst:38
+msgid "May 11, 2023"
+msgstr ""
+

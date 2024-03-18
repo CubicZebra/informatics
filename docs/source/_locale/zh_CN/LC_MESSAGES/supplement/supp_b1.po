@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/supplement/supp_b1.rst:2
+msgid "_`Feature capturing`"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:5
+msgid "_`How we define features`"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:7
+msgid ""
+"In many field, people process and analysis data, not only for summary, "
+"but for the possible fact underneath the data self. Different disciplines"
+" have their own context or terminology. In machine learning, we call it "
+"*pattern*; in statistics, we call it *probability distribution*; in "
+"physics or other related researches, we call it *model*. However, when it"
+" comes to this concept, they consistently desires there's the thing: the "
+"minimal representation of information."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:13
+msgid ""
+"Use the image recognition task for example, values of grey level varies "
+"pixel to pixel, but people can still distinguish the objective from "
+"background, can tell whether the object is a person, or the other "
+"creatures. Thus, even though pixel varies, the form of their "
+"combinations, or the location where they changed, is regular to some "
+"extent."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:18
+msgid ""
+"Concisely, the really informative thing is not pixels themselves, but how"
+" they distributed, where they changed. If the thing is capable enough to "
+"automatically finish a certain task, it can be considered as the "
+"`features`, bonding with this task."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:23
+msgid "_`Spatial filtering`"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:25
+msgid ""
+"Spatial filtering is the techniques to emphasis the local features. It is"
+" applied globally, but can augment local contrast where obvious changes "
+"occurs. This tech has been widely used in edge detection, object "
+"recognition."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:28
+#, python-format
+msgid ""
+"The :numref:`Figure %s <kernel framework>` shows the principle of spatial"
+" filtering applied in 2 dimensional image. kernel moves globally on "
+"image, and values of output image are replaced pixel by pixel based on "
+"pre-defined computing method."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:37
+msgid "data transition via kernel"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:39
+#, python-format
+msgid ""
+"The most used computing methods, are illustrated in :numref:`Figure %s "
+"<kernel calculation methods>`. :math:`\\boldsymbol{K}` refers kernel, and"
+" the values from :math:`r` to :math:`z` are the weights in "
+":math:`\\boldsymbol{K}`. :math:`\\boldsymbol{F}` refers the figure, and "
+"the values from :math:`a` to :math:`i` are the numeric on "
+":math:`\\boldsymbol{F}`, overlapped where the kernel "
+":math:`\\boldsymbol{K}` is currently located. :math:`\\boldsymbol{I}` is "
+"the numeric to replace after filtering. The difference between "
+"correlation and convolution, is the order of weight. Additionally, there "
+"also some generic filter using certain statistic on the localized values "
+"(e.g. rank filter)."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:52
+msgid "correlation, convolution, and generic mapping using kernel"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:54
+#, python-format
+msgid ""
+"Technically, it is not enough to understand how values will be "
+"calculated, but where the replacement will take place. There's a concept "
+"of *anchor* in kernel, as shown in :numref:`Figure %s <anchor in "
+"kernel>`. The grey pixel is the anchor location of kernel where the pixel"
+" will be replaced. By default, an anchor should be the center of a kernel"
+" (otherwise the output image will be biased), however, it is weired to "
+"limit all dimensions of kernel as odd numbers. The basic idea in "
+"**scipy** is showed in :numref:`Figure %s <anchor in kernel>` which is "
+"also applied in informatics, for even number, the anchor in that "
+"dimension will be located one pixel next to the center."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:66
+msgid "positions of anchor in kernels"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:68
+#, python-format
+msgid ""
+"In addition, when kernel moves on edges or corners of the image, the real"
+" numeric in original image will be insufficient for calculation. In this "
+"condition it requires padding some pseudo-data in outer scope. "
+":numref:`Figure %s <edge padding methods>` shows five padding methods. "
+"Keep in mind that this factor only makes difference on the corner- or "
+"edge-like regions."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:78
+msgid "padding methods for numerical computing in edges"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:80
+#, python-format
+msgid ""
+"Back to the kernel itself. Different kernels are designed for different "
+"purposes. For example, gaussian kernel is a center-emphasising localized "
+"averaging, can be used for smoothing or de-noising. laplacian of gaussian"
+" kernel using contrary signs between center and the area enveloped, to "
+"measure the local contrast. The gaussian kernel and laplacian of gaussian"
+" kernel in 2 dimension are illustrated in :numref:`Figure %s <gaussian "
+"kernel>` and :numref:`Figure %s <LoG kernel>`."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:91
+msgid "gaussian kernel"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:98
+msgid "laplacian of gaussian kernel"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:101
+msgid ""
+"The effect of denoising, or object edge and profile detection, through "
+"gaussian and some gaussian-related kernels filtering will be like:"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:109
+msgid "spatial filtering applied on image processing"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:113
+msgid ""
+"Most kernels are central symmetric, in which condition the correlation "
+"and convolution will be substantially equivalent."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:116
+#, python-format
+msgid ""
+"Some kernels are designed to augment features along some certain "
+"orientations, due to their aeolotropy. For example, the real part of "
+"2-dimensional gabor kernel with radian of :math:`\\theta = 0.5\\pi` will "
+"be like the surface in :numref:`Figure %s <gabor kernel>`"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:125
+msgid "gabor kernel"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:127
+#, python-format
+msgid ""
+"Specifying the desired direction of :ref:`spatial sine harmonic function "
+"<spatial sine function>`, the texture of object aligned with, will be "
+"augmented. This tech is generally thought to be in accordance with the "
+"principle of primary visual cortex. It can be applied on feature "
+"engineering for data augmentation for multipurpose, if the directional "
+"information of the data is though to be of importance in analysis. For "
+"easy of understanding, here shows the real and imaginary parts of the "
+"case (a) in :numref:`Figure %s <spatial filtering applied on image "
+"processing>` convolved using gabor filtering, with directions of "
+":math:`(1, 0)` and :math:`(0, 1)`, respectively:"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:139
+msgid "gabor filtering applied on image processing"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:145
+msgid ""
+"Gabor kernel is defined as a gaussian envelope, multiplied with a sine "
+"harmonic function. However, when dealing with data in different "
+"dimensions, its form might be different since in different coordinate "
+"systems (e.g. cartesian or polar in dimension 2, or spherical frame in "
+"dimension 3)."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:149
+msgid ""
+"For most libraries, they has presumed the dimensions of data to be "
+"processed therefore it is difficult to use a consistent method to obtain "
+"the Gabor kernel. Based on definition, the multivariate gaussian is handy"
+" to be obtained, so the keypoint is the generalization for sine function "
+"into n-dimension."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:153
+msgid ""
+"Consider the degeneracy of degree fo freedom (:ref:`DoF <DoF>`) occurs "
+"(see topic :ref:`degeneracy <degeneracy>`), for sine function, in 1D line"
+" (DoF=1), value varies in each point (DoF=0); in 2D plane (DoF=2), value "
+"varies in each line (DoF=1); for 3D volume (DoF=3), value varies in each "
+"plane (DoF=2). Generally, for n-dimension case, if a 1-dimension "
+"degenerated hyperplane is defined, the sine function will be described as"
+" simple as that in 1-dimension. Here, we use normal to define those "
+"hyperplanes, through which the spatial sine function can be implemented "
+"in different dimensions with the identical interface:"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:165
+msgid "real part of spatial sine in different dimensions"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:167
+msgid ""
+"Then multiply them into the corresponding multivariate gaussian, the "
+"gabor kernel will be obtained as:"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:174
+msgid "real part of gabor kernel in different dimensions"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:177
+msgid "_`Curvature of image`"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:179
+#, python-format
+msgid ""
+"The study of image curvature presents a fundamental understanding of the "
+"shape and deformation of objects within a digital image. Curvature, a "
+"measure of the rate of change in direction of a curve at a given point, "
+"is a critical geometric property in computer vision and image processing."
+" In this context, curvature analysis refers to the quantitative "
+"evaluation of the deviation from straightness in the contours or "
+"boundaries of objects in an image (as shown in :numref:`Figure %s <effect"
+" of gaussian curvature via hessian filter>`)."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:190
+msgid "effect of gaussian curvature via hessian filter"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:192
+msgid "Text here..."
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:199
+msgid "keypoint determination through curvature"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:203
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:204
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/supplement/supp_b1.rst:205
+msgid "Jun 28, 2023"
+msgstr ""
+

@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/tutorial/tut_inflow.rst:2
+msgid "_`Operations on file search and mapping`"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:4
+msgid ""
+"Most of the analysis occurs in data stored in the file system. The "
+"ability to accurately manipulate (primarily loading) these files is an "
+"essential skill. Accurately loading and manipulating files improves the "
+"overall efficiency of the process, as it ensures that the correct data is"
+" being used for analysis, reducing the risk of errors and "
+"inconsistencies."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:9
+msgid ""
+"Engineering implementation of file operations requires good understanding"
+" of the file structure and format, as well as size and complexity of the "
+"files being analyzed. Large or complex files can pose challenges in terms"
+" of processing power, memory usage, and time required for analysis."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:14
+msgid "_`Applying generator function`"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:16
+msgid ""
+"For persistent inflow data, the cost of memory consuming should be under "
+"consideration. :numref:`generator function` demonstrates the logic to "
+"return a iterable container via two different implemented methods. "
+"Compare to the case of :code:`iter2`, :code:`iter1` will increasingly "
+"occupy the cache until release after return, which readily results in "
+"memory leak if the scale of :code:`cases` is large enough."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:21
+msgid "generator function"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:41
+msgid ""
+"Notably, the tuple comprehension in Python will trigger lazy evaluation. "
+"In that case a generator object will be return. From example above, "
+":code:`iter3` can be seem as an another equivalent implementation for "
+":code:`iter2`."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:45
+msgid "_`File searcher and folder relocation`"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:47
+msgid ""
+"For universality, interfaces of search or filtering are designed in form "
+"of high-order function. Example of :numref:`file searcher` shows two "
+"different pipelines for searching image files with `jpg` or `jpeg` "
+"suffix, and for finding empty files."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:51
+msgid "file searcher"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:76
+msgid ""
+"Occasionally files in identical folder needs some kind of uniformed "
+"treatment (like using labels as folder names for data with different "
+"attributes). Under this circumstance, folder relocation can escape "
+"redundant operation on files. Following the :code:`p1` in :numref:`file "
+"searcher`, the example implementation in :numref:`folder relocation` "
+"shows an operation of reading images located in different file folders "
+"named using file format suffix (as shown in :ref:`example right side "
+"<file structure for JPG and BMP>`)."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:82
+msgid ""
+"Those two searchers can both be run, in desktop or hadoop distributed "
+"file systems. Refer their documentations for details."
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:85
+msgid "folder relocation"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:94
+msgid "_`Universal data loader`"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:96
+msgid ""
+"The charm of :ref:`functional programming <Abstraction for behaviors>` is"
+" using function to define behaviors. It is of greater scalability to deal"
+" with different dataset. Simple combination and definition can make "
+"pipeline be capable for loading any type of data:"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:100
+msgid "meta data loader"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:116
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:117
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_inflow.rst:118
+msgid "Feb 18, 2024"
+msgstr ""
+

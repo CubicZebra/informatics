@@ -50,6 +50,7 @@ autodoc_default_options = {
     'exclude-members': '__init__, __new__',
     'ignore-module-all': True
 }
+language = 'zh_CN'
 locale_dirs = ['_locale']
 gettext_compact = False
 

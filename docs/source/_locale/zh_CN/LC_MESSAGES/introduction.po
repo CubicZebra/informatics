@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/introduction.rst:2
+msgid "_`Introduction`"
+msgstr ""
+
+#: ../../source/introduction.rst:5
+msgid "_`Installation`"
+msgstr ""
+
+#: ../../source/introduction.rst:8
+msgid "_`Platforms and options`"
+msgstr ""
+
+#: ../../source/introduction.rst:12
+msgid ":code:`informatics` is officially support the following desktop platforms:"
+msgstr ""
+
+#: ../../source/introduction.rst:14
+msgid "Windows"
+msgstr ""
+
+#: ../../source/introduction.rst:16
+msgid "Linux"
+msgstr ""
+
+#: ../../source/introduction.rst:18
+msgid "MacOS"
+msgstr ""
+
+#: ../../source/introduction.rst:20
+msgid ""
+"Ensure Python (|ge| 3.9) is installed. Install :code:`informatics` via "
+"pip-based installer as appropriate:"
+msgstr ""
+
+#: ../../source/introduction.rst:24
+msgid "Install :code:`informatics` with basic dependent components."
+msgstr ""
+
+#: ../../source/introduction.rst:32
+msgid "Install basic :code:`informatics` with instance data."
+msgstr ""
+
+#: ../../source/introduction.rst:40
+msgid ""
+"Install basic :code:`informatics` with visualization dependencies. "
+"Backend of visualization utilities requires at least one of `PySide2 "
+"<https://pypi.org/project/PySide2/>`_, `PySide6 "
+"<https://pypi.org/project/PySide6/>`_, `PyQt5 "
+"<https://pypi.org/project/PyQt5/>`_, `PyQt6 "
+"<https://pypi.org/project/PyQt6/>`_. `PySide6 "
+"<https://pypi.org/project/PySide6/>`_ is suggested. For functions who "
+"using spatial rendering, `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_"
+" is necessary as well."
+msgstr ""
+
+#: ../../source/introduction.rst:52
+msgid "Install basic :code:`informatics` with medical image related dependencies."
+msgstr ""
+
+#: ../../source/introduction.rst:59
+msgid "_`Check installation`"
+msgstr ""
+
+#: ../../source/introduction.rst:61
+msgid ""
+"To check whether :code:`informatics` was installed, run following code in"
+" Python or command line shell:"
+msgstr ""
+
+#: ../../source/introduction.rst:76
+msgid ""
+"Version number will in the prompt if :code:`informatics` has been "
+"properly installed, otherwise error message."
+msgstr ""
+
+#: ../../source/introduction.rst:79
+msgid "_`Upgrade for options`"
+msgstr ""
+
+#: ../../source/introduction.rst:81
+msgid ""
+"Default installation only consist of basic component. If optional "
+"dependencies are required to be activated, re do the pip installer with "
+"its `identifier <https://peps.python.org/pep-0685/>`_ (e.g. :code:`pip "
+"install informatics[ins] informatics[vis]` for integrating instance data "
+"and visualization tools, whether basic :code:`informatics` was installed "
+"already or not). Notably, the local version must keep the identical as "
+"one of remote."
+msgstr ""
+
+#: ../../source/introduction.rst:87
+msgid ""
+"Or alternatively, using pip installer to install missing module(s) when "
+":code:`ImportError` raised in the prompt."
+msgstr ""
+
+#: ../../source/introduction.rst:90
+msgid "_`Overview`"
+msgstr ""
+
+#: ../../source/introduction.rst:92
+msgid ""
+"Informatics is designed to enable users to solve complex problems in "
+"science, engineering, and other domains efficiently and accurately. Its "
+"powerful capabilities are achieved through a combination of cutting-edge "
+"software engineering techniques and the elegance of Python's functional "
+"programming paradigm. The strength of highly modular and extensible "
+"architecture allows users to quickly assemble and customize data "
+"processing pipelines to meet their specific needs. Whether it's data "
+"cleaning, transformation, analysis, or visualization, informatics "
+"provides a rich set of tools and functions to facilitate these tasks."
+msgstr ""
+
+#: ../../source/introduction.rst:99
+msgid ""
+"It is in active development, in order to satisfy increasing requests in "
+"scientific computation."
+msgstr ""
+
+#: ../../source/introduction.rst:102
+msgid "_`Featured as`"
+msgstr ""
+
+#: ../../source/introduction.rst:104
+msgid "Informatics is currently featured:"
+msgstr ""
+
+#: ../../source/introduction.rst:106
+msgid ""
+"Powerful integration capability for various utilities (e.g. functions, "
+"frames, packages, and etc.) in Python ecosystem."
+msgstr ""
+
+#: ../../source/introduction.rst:109
+msgid ""
+"Universal processing interface designed in high dimensionality to "
+"guarantee consistency of calling for different types of data."
+msgstr ""
+
+#: ../../source/introduction.rst:112
+msgid ""
+"Scripting on basis of functional programming paradigm, with properties of"
+" robust performance, and easy decoupling for extension."
+msgstr ""
+
+#: ../../source/introduction.rst:115
+msgid ""
+"Intuitive combination of data processing units, for fast experiments, "
+"validation, or building for upper applications."
+msgstr ""
+
+#: ../../source/introduction.rst:118
+msgid ""
+"Documentation in details for not only basic functions, but the tutorials,"
+" interpretation for essential concepts, examples of applications, and "
+"such like."
+msgstr ""
+
+#: ../../source/introduction.rst:122
+msgid "_`Simple examples`"
+msgstr ""
+
+#: ../../source/introduction.rst:124
+msgid ""
+"Critical structure called :py:func:`~info.docfunc.Unit` can wrap any of "
+"the callable object in Python. Data processing can be implemented via "
+":ref:`functional programming scripting <Function based scripting>`. "
+"Therefore with various units (e.g. :code:`u1`, :code:`u2` with different "
+"arguments), it is able to combine them as desired:"
+msgstr ""
+
+#: ../../source/introduction.rst:128
+msgid "example of unit combination"
+msgstr ""
+
+#: ../../source/introduction.rst:134
+msgid ""
+"Auto test the pipe :code:`p` for determining its optimal argument "
+"combination:"
+msgstr ""
+
+#: ../../source/introduction.rst:136
+msgid "example of auto test"
+msgstr ""
+
+#: ../../source/introduction.rst:150
+msgid ""
+"Or apply that pipe, as well as its optimal argument configuration from "
+"(or to) others' works:"
+msgstr ""
+
+#: ../../source/introduction.rst:152
+msgid "example of reuse pipe"
+msgstr ""
+
+#: ../../source/introduction.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/introduction.rst:162
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/introduction.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/introduction.rst:163
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/introduction.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/introduction.rst:164
+msgid "Apr 25, 2023"
+msgstr ""
+

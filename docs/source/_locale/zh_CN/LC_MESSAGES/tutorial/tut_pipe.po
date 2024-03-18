@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/tutorial/tut_pipe.rst:2
+msgid "_`Pipelining the data process`"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:4
+msgid ""
+"As the preferred language for artificial intelligence, Python is featured"
+" as its rich ecosystem, as well as the convenience for fast "
+"implementation and developing. Data processing involving in different "
+"technical approaches requires systematical integration. Thus, the unified"
+" data controlling among those utilities contributes to accelerate "
+"verifying prototypes, optimize algorithm performance, as well as lower "
+"maintenance cost."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:14
+msgid "ecosystem of Python"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:16
+msgid ""
+"Data processing is akin to an assembly line, where an increase in the "
+"number of steps results in a exponential growth of factors that can "
+"impact the final result. While manually configuring all possible options "
+"for trial may seem feasible, it often leads to a chaotic outcome."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:20
+msgid ""
+"An uniform protocol, or programming norm, is therefore not only of "
+"advantages in integrating various tools developed by teams in different "
+"fields in Python ecosystem, but also time-saving for building practical "
+"pipelines or applications, on basis of each naive functional module. "
+"Following examples demonstrate how to establish pipelines for automating "
+"complex tasks."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:26
+msgid "_`Normalized scientific computing`"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:28
+#, python-format
+msgid ""
+"Scientific computing flow implemented through informatics functions is of"
+" high completeness. And their units are readily to be flexibly reused "
+"when create new processing flow. :numref:`flexibility and reusability of "
+"unit` is a snippet in implementation for exporting :numref:`Figure %s "
+"<pathological image statistics>`."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:32
+msgid "flexibility and reusability of unit"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:44
+msgid ""
+":code:`to_fig3` corresponds to the case (c). Obtain this figure must "
+"overlap the random colored cell nucleus masks, superpositioned with grey "
+"scale image, then pass on an image viewer unit. It is the reason unit "
+":code:`u1` is arranged paralleled with a sequential processing line "
+":code:`u1 >> u2 >> u3 >> u4`."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:48
+#, python-format
+msgid ""
+"To export the (c) case in :numref:`Figure %s <pathological image "
+"statistics>`, call :code:`to_fig3(data=file)`. If a researcher desires "
+"other parameters, call :code:`to_fig3(data=file, **user_defined_config)`."
+" Or in more complicated situation, if the researcher want to compare "
+"outcomes from an identical pipe in different parameters, those derived "
+"pipes can also be readily obtained by: :code:`p = "
+"to_fig3.shadow(**config1) | to_fig3.shadow(**config2)`."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:54
+msgid "_`Automation experiment`"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:56
+msgid ""
+"There are also meta tools, for automation computing. The following "
+"example concerned the difference between global prewitt and canny filters"
+" on a natural image:"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:59
+msgid "auto experiment pipeline"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:80
+msgid ""
+"It includes data processing functions dealing with cropping, de-noising, "
+"and resampling, followed by another paralleled unit of filters. The user-"
+"customized process is implemented via lambda calculus: print out the "
+"standard deviation of difference between two paralleled output, display "
+"their pixel distribution difference, then return those two filtered "
+"figures."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:85
+msgid ""
+"As most functions in tensor namespace, including the :code:`F` lambda, "
+"have been already registered as informatics version, the :code:`p` can "
+"automatically analyze what keyword arguments are the required at least. "
+"Making a parameter pool based on the required arguments. The following "
+"code can auto trigger the experiments then dump each running case."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:90
+msgid "run auto experiment"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:104
+#, python-format
+msgid ""
+"Prompt will info the current condition and calculated standard deviation,"
+" running time, and the final result case by case; then the histogram "
+"figure will be popped up like :numref:`Figure %s <experiment flow "
+"histogram>`."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:112
+msgid "histogram for pixels distribution after prewitt and canny filters"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:114
+msgid ""
+"All experiment results will be collected into a persistence file titled "
+"`experiment_results.pyp` inplace."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:117
+msgid "_`Automation testing`"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:119
+msgid ""
+"Different from automation experiment which can export the computed "
+"results, the automation testing only records the exit code. If the "
+"pipeline exits with raised exception, related information will also be "
+"noted. Similar as :code:`experiments` in :numref:`run auto experiment`, "
+"this meta implementation :code:`funtest` is in the same namespace. It can"
+" test for informatics functions, unit and pipelines defined via this "
+"framework."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:129
+msgid "automation testing result for resize function"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:131
+#, python-format
+msgid ""
+":numref:`Figure %s <automation testing result>` is the test result for "
+":code:`resize` function. Class type remains in *result* column. The cost "
+"time, arguments for each test item are also be recorded."
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:136
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:137
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_pipe.rst:138
+msgid "Feb 7, 2024"
+msgstr ""
+

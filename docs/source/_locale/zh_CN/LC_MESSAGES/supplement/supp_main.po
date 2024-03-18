@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/supplement/supp_main.rst:9
+msgid "Math symbols and abbreviations"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:19
+msgid "High dimensional data"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:19
+msgid "About matrix"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:19
+msgid "Factor analysis"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:19
+msgid "Mathematical statistics"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:19
+msgid "Monte Carlo method"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:33
+msgid "Feature capturing"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:42
+msgid "Functional programming primer"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:42
+msgid "Basic concepts in informatics"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:2
+msgid "_`Supplementary`"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:5
+msgid "_`Nomenclature`"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:7
+msgid ""
+"Collection of mathematical notations and abbreviations in this "
+"documentation."
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:13
+msgid "_`Data science essentials`"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:15
+msgid ""
+"Essentials of multivariate statistics and analysis. Basic concepts of "
+"analytics used for statistical algorithm, data mining, decision theory, "
+"automation, as well as :ref:`AI <AI>`-support systems "
+":ref:`[MacCrimmon1968, <[MacCrimmon1968]>` :ref:`Slovic1977, "
+"<[Slovic1977]>` :ref:`Nelder1990] <[Nelder1990]>`."
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:28
+msgid "_`Scientific calculation essentials`"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:30
+msgid ""
+"Essentials of scientific calculation from principle to implementation. "
+"Basic technical foundations to construct functions for data pre- and "
+"post-processing, modality transition, applying statistics, and etc."
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:37
+msgid "_`Informatics essentials`"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:39
+msgid ""
+"Essentials of functional programming and computing flow control in "
+"informatics. The indispensable concepts for building functional units and"
+" pipelines via informatics."
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:48
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:49
+msgid "0.0.4"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:50
+msgid "Apr 26, 2023"
+msgstr ""
+
