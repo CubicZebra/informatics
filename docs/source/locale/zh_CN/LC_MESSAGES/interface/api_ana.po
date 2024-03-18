@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2024-03-18 18:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -427,7 +427,7 @@ msgstr ""
 #: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
 #: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
 #: of
-msgid "Parameters"
+msgid "参数"
 msgstr ""
 
 #: ../../docstring info.docfunc.hypoi_ab:5 info.docfunc.hypoi_ad:5
@@ -460,7 +460,7 @@ msgstr ""
 #: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
 #: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
 #: of
-msgid "Returns"
+msgid "返回"
 msgstr ""
 
 #: ../../docstring info.docfunc.hypoi_f:6 of
@@ -480,7 +480,7 @@ msgstr ""
 #: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
 #: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
 #: of
-msgid "Return type"
+msgid "返回类型"
 msgstr ""
 
 #: ../../docstring info.docfunc.hypoi_f:11 of
@@ -661,7 +661,7 @@ msgstr ""
 #: ../../docstring info.docfunc.hypoi_ad info.docfunc.hypoi_mood
 #: info.docfunc.hypoi_thsd info.docfunc.hypoj_mgc info.docfunc.hypoj_rank
 #: info.docfunc.hypoj_t info.docfunc.hypos_mc info.docfunc.hypos_permu of
-msgid "Variables"
+msgid "变量"
 msgstr ""
 
 #: ../../docstring info.docfunc.hypoi_thsd:6 of

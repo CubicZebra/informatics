@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2024-03-18 18:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -103,7 +103,7 @@ msgstr ""
 #: ../../docstring info.docfunc.KernelGen info.docfunc.averaging_kernel
 #: info.docfunc.gabor_kernel info.docfunc.gaussian_kernel
 #: info.docfunc.laplacian_of_gaussian_kernel of
-msgid "Parameters"
+msgid "参数"
 msgstr ""
 
 #: ../../docstring info.docfunc.KernelGen:5 info.docfunc.averaging_kernel:5
@@ -149,7 +149,7 @@ msgstr ""
 #: ../../docstring info.docfunc.KernelGen info.docfunc.averaging_kernel
 #: info.docfunc.gabor_kernel info.docfunc.gaussian_kernel
 #: info.docfunc.laplacian_of_gaussian_kernel of
-msgid "Returns"
+msgid "返回"
 msgstr ""
 
 #: info.docfunc.KernelGen:18 of
@@ -159,7 +159,7 @@ msgstr ""
 #: ../../docstring info.docfunc.KernelGen info.docfunc.averaging_kernel
 #: info.docfunc.gabor_kernel info.docfunc.gaussian_kernel
 #: info.docfunc.laplacian_of_gaussian_kernel of
-msgid "Return type"
+msgid "返回类型"
 msgstr ""
 
 #: info.docfunc.KernelGen:25 of
@@ -204,7 +204,7 @@ msgstr ""
 
 #: ../../docstring info.docfunc.averaging_kernel info.docfunc.gabor_kernel
 #: info.docfunc.gaussian_kernel info.docfunc.laplacian_of_gaussian_kernel of
-msgid "Raises"
+msgid "抛出"
 msgstr ""
 
 #: ../../docstring info.docfunc.averaging_kernel:8 of
@@ -238,7 +238,7 @@ msgid "covariance matrix of Gaussian; diagonal matrix of ``k_shape`` as default"
 msgstr ""
 
 #: ../../docstring info.docfunc.gaussian_kernel of
-msgid "Variables"
+msgid "变量"
 msgstr ""
 
 #: ../../docstring info.docfunc.gaussian_kernel:9 of

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2024-03-18 18:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -82,7 +82,7 @@ msgid ""
 msgstr ""
 
 #: info.docfunc.Canvas info.docfunc.GrpSettings info.docfunc.ImageViewer of
-msgid "Parameters"
+msgid "参数"
 msgstr ""
 
 #: info.docfunc.GrpSettings:6 of
@@ -92,7 +92,7 @@ msgid ""
 msgstr ""
 
 #: info.docfunc.GrpSettings info.docfunc.ImageViewer of
-msgid "Variables"
+msgid "变量"
 msgstr ""
 
 #: info.docfunc.GrpSettings:7 of
@@ -101,7 +101,7 @@ msgstr ""
 
 #: info.docfunc.Canvas info.docfunc.FigConfigs info.docfunc.GrpSettings
 #: info.docfunc.ImageViewer of
-msgid "Returns"
+msgid "返回"
 msgstr ""
 
 #: info.docfunc.GrpSettings:8 of
@@ -110,11 +110,11 @@ msgstr ""
 
 #: info.docfunc.Canvas info.docfunc.FigConfigs info.docfunc.GrpSettings
 #: info.docfunc.ImageViewer of
-msgid "Return type"
+msgid "返回类型"
 msgstr ""
 
 #: info.docfunc.Canvas info.docfunc.GrpSettings of
-msgid "Raises"
+msgid "抛出"
 msgstr ""
 
 #: info.docfunc.GrpSettings:10 of

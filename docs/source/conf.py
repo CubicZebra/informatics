@@ -51,7 +51,7 @@ autodoc_default_options = {
     'ignore-module-all': True
 }
 language = 'zh_CN'
-locale_dirs = ['_locale']
+locale_dirs = ['locale/']
 gettext_compact = False
 
 # -- Options for HTML output -------------------------------------------------

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2024-03-18 18:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -104,7 +104,7 @@ msgstr ""
 #: info.docfunc.files_regroup info.docfunc.generic_filter
 #: info.docfunc.leaf_folders info.docfunc.search_from_root
 #: info.docfunc.unarchive of
-msgid "Parameters"
+msgid "参数"
 msgstr ""
 
 #: ../../docstring info.docfunc.leaf_folders:5 info.docfunc.search_from_root:5
@@ -123,7 +123,7 @@ msgstr ""
 #: info.docfunc.files_regroup info.docfunc.generic_filter
 #: info.docfunc.leaf_folders info.docfunc.search_from_root
 #: info.docfunc.unarchive of
-msgid "Returns"
+msgid "返回"
 msgstr ""
 
 #: ../../docstring info.docfunc.leaf_folders:8 of
@@ -134,13 +134,13 @@ msgstr ""
 #: info.docfunc.files_regroup info.docfunc.generic_filter
 #: info.docfunc.leaf_folders info.docfunc.search_from_root
 #: info.docfunc.unarchive of
-msgid "Return type"
+msgid "返回类型"
 msgstr ""
 
 #: ../../docstring info.docfunc.dict_filter info.docfunc.files_regroup
 #: info.docfunc.generic_filter info.docfunc.leaf_folders
 #: info.docfunc.search_from_root of
-msgid "Raises"
+msgid "抛出"
 msgstr ""
 
 #: ../../docstring info.docfunc.dict_filter:11 info.docfunc.files_regroup:9
@@ -270,7 +270,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring info.docfunc.archive info.docfunc.unarchive of
-msgid "Variables"
+msgid "变量"
 msgstr ""
 
 #: ../../docstring info.docfunc.archive:9 of

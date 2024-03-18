@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2024-03-18 18:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -237,7 +237,7 @@ msgstr ""
 #: info.docfunc.diagnosing_tests info.docfunc.exception_logger
 #: info.docfunc.experiments info.docfunc.functest info.docfunc.generic_logger
 #: info.docfunc.generic_printer info.docfunc.traversal_on_params of
-msgid "Parameters"
+msgid "参数"
 msgstr ""
 
 #: info.docfunc.F:5 of
@@ -249,7 +249,7 @@ msgstr ""
 #: info.docfunc.exception_logger info.docfunc.experiments info.docfunc.functest
 #: info.docfunc.generic_logger info.docfunc.generic_printer
 #: info.docfunc.traversal_on_params of
-msgid "Returns"
+msgid "返回"
 msgstr ""
 
 #: info.docfunc.F:6 of
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../docstring info.docfunc.FuncTools info.docfunc.Unit
 #: info.docfunc.diagnosing_tests of
-msgid "Variables"
+msgid "变量"
 msgstr ""
 
 #: info.docfunc.FuncTools:9 of
@@ -316,7 +316,7 @@ msgstr ""
 
 #: ../../docstring info.docfunc.ExeDict info.docfunc.FuncTools
 #: info.docfunc.SingleMap info.docfunc.Unit info.docfunc.generic_printer of
-msgid "Raises"
+msgid "抛出"
 msgstr ""
 
 #: info.docfunc.FuncTools:23 info.docfunc.FuncTools:99 of
@@ -481,7 +481,7 @@ msgstr ""
 #: info.docfunc.diagnosing_tests info.docfunc.exception_logger
 #: info.docfunc.experiments info.docfunc.functest info.docfunc.generic_logger
 #: info.docfunc.generic_printer info.docfunc.traversal_on_params of
-msgid "Return type"
+msgid "返回类型"
 msgstr ""
 
 #: info.docfunc.Unit:17 of

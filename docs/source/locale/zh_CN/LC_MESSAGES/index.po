@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/index.rst:22
 msgid "Home"
-msgstr ""
+msgstr "主页"
 
 #: ../../source/index.rst:2
 msgid "_`Welcome to informatics documentation!`"
