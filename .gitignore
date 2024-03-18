@@ -150,3 +150,6 @@ cython_debug/
 /test/misc/
 /docs/build/
 /info/
+
+# Others
+.pypirc
