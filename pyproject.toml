@@ -80,8 +80,10 @@ Documentation = 'https://informatics.readthedocs.io/en/latest/index.html'
 build-backend = 'setuptools.build_meta'
 requires = ['setuptools', 'cython']
 
+
 [tool.setuptools]
 package-dir = {"" = "."}
+
 
 [tool.setuptools.packages.find]
 where = ["."]  # ["."] by default
