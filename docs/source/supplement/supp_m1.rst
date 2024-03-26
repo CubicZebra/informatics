@@ -98,17 +98,17 @@ _`Acronyms`
 
 * _`DICOM`: Digital Imaging and Communications in Medicine
 
-* _`I.I.D.` Independent and Identically Distributed
+* _`I.I.D.`: Independent and Identically Distributed
 
-* _`DoF` Degree of Freedom
+* _`DoF`: Degree of Freedom
 
-* _`CT` Computed Tomography
+* _`CT`: Computed Tomography
 
-* _`MR` Magnetic Resonance
+* _`MR`: Magnetic Resonance
 
-* _`SNR` Signal to Noise Ratio
+* _`SNR`: Signal to Noise Ratio
 
-* _`ANN` Artificial Neural Network
+* _`ANN`: Artificial Neural Network
 
 ----
 
