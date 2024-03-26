@@ -117,6 +117,8 @@ msgid ""
 " with different dataset. Simple combination and definition can make "
 "pipeline be capable for loading any type of data:"
 msgstr ""
+":ref:`函数式编程 <Abstraction for behaviors>` 的魅力在于用函数来定义行为。"
+"处理不同的数据集具有更大的可扩展性。简单的组合和定义可以使管道能够加载任何类型的数据："
 
 #: ../../source/tutorial/tut_inflow.rst:100
 msgid "meta data loader"

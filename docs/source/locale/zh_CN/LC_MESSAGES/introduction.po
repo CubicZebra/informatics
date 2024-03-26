@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,19 +22,19 @@ msgstr ""
 
 #: ../../source/introduction.rst:2
 msgid "_`Introduction`"
-msgstr ""
+msgstr "项目简介"
 
 #: ../../source/introduction.rst:5
 msgid "_`Installation`"
-msgstr ""
+msgstr "安装"
 
 #: ../../source/introduction.rst:8
 msgid "_`Platforms and options`"
-msgstr ""
+msgstr "运行平台与安装可选项"
 
 #: ../../source/introduction.rst:12
 msgid ":code:`informatics` is officially support the following desktop platforms:"
-msgstr ""
+msgstr ":code:`informatics` 正式支持下列桌面平台："
 
 #: ../../source/introduction.rst:14
 msgid "Windows"
@@ -53,14 +53,15 @@ msgid ""
 "Ensure Python (|ge| 3.9) is installed. Install :code:`informatics` via "
 "pip-based installer as appropriate:"
 msgstr ""
+"确保环境中安装了Python（不小于3.9）。通过基于pip的包管理器，根据实际需要来进行安装："
 
 #: ../../source/introduction.rst:24
 msgid "Install :code:`informatics` with basic dependent components."
-msgstr ""
+msgstr "安装 :code:`informatics` 及其基础依赖项。"
 
 #: ../../source/introduction.rst:32
 msgid "Install basic :code:`informatics` with instance data."
-msgstr ""
+msgstr "安装基础版 :code:`informatics` ，以及测试数据。"
 
 #: ../../source/introduction.rst:40
 msgid ""
@@ -74,30 +75,38 @@ msgid ""
 "using spatial rendering, `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_"
 " is necessary as well."
 msgstr ""
+"安装基础版 :code:`informatics` ，以及相应可视化依赖项。可视化程序的运行需要环境中至少存在 "
+"`PySide2 <https://pypi.org/project/PySide2/>`_ ， `PySide6 <https://pypi.org/project/PySide6/>`_ ，"
+"`PyQt5 <https://pypi.org/project/PyQt5/>`_ ， `PyQt6 <https://pypi.org/project/PyQt6/>`_ 的其中之一。"
+"推荐使用PySide6作为运行后端。"
+"对于需要用到空间渲染的函数，还必须保证环境中 `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_ 的正确安装。"
 
 #: ../../source/introduction.rst:52
 msgid "Install basic :code:`informatics` with medical image related dependencies."
-msgstr ""
+msgstr "安装基础版 :code:`informatics` ，以及医学图像相关依赖项。"
 
 #: ../../source/introduction.rst:59
 msgid "_`Check installation`"
-msgstr ""
+msgstr "检查安装"
 
 #: ../../source/introduction.rst:61
 msgid ""
 "To check whether :code:`informatics` was installed, run following code in"
 " Python or command line shell:"
 msgstr ""
+"检查 :code:`informatics` 是否已正确安装，可以在Python环境中，或命令行解释器里运行："
 
 #: ../../source/introduction.rst:76
 msgid ""
 "Version number will in the prompt if :code:`informatics` has been "
 "properly installed, otherwise error message."
 msgstr ""
+"如果 :code:`informatics` 已正确安装，则对应的版本号将会在显示在对应的提示界面内，"
+"否则将会出现错识信息。"
 
 #: ../../source/introduction.rst:79
 msgid "_`Upgrade for options`"
-msgstr ""
+msgstr "升级安装可选项"
 
 #: ../../source/introduction.rst:81
 msgid ""
@@ -109,16 +118,23 @@ msgid ""
 "already or not). Notably, the local version must keep the identical as "
 "one of remote."
 msgstr ""
+"默认安装只包含基本组件。"
+"如果需要激活使用可选项的相关功能，请使用相应 `标识符 <https://peps.python.org/pep-0685/>`_ 重新执行pip包管理器"
+"（例如，:code:`pip install informatics[ins] informatics[vis]` 用于集成实例数据和可视化工具，"
+"无论环境中是否已经安装了基本版 :code:`informatics` ）。"
+"值得注意的是，进行上述可选项升级时，本地版本必须与远程版本保持相同。"
 
 #: ../../source/introduction.rst:87
 msgid ""
 "Or alternatively, using pip installer to install missing module(s) when "
 ":code:`ImportError` raised in the prompt."
 msgstr ""
+"亦或者，在实际运行时，在提示界面出现 :code:`ImportError` 时，"
+"使用pip包管理器安装所缺失的模块。"
 
 #: ../../source/introduction.rst:90
 msgid "_`Overview`"
-msgstr ""
+msgstr "概述"
 
 #: ../../source/introduction.rst:92
 msgid ""
@@ -132,44 +148,54 @@ msgid ""
 "cleaning, transformation, analysis, or visualization, informatics "
 "provides a rich set of tools and functions to facilitate these tasks."
 msgstr ""
+"Informatics旨在使用户能够高效、准确地解决科学、工程和其他领域的复杂问题。"
+"它的强大性能是通过前沿的软件工程技术，以及先进的Python函数式编程范式相结合来得以保证。"
+"高度模块化和可扩展架构的优势允许使用者快速组装和定制数据处理管道，以满足用户的特定需求。"
+"无论是对于数据清理、变换、分析还是可视化，informatics都提供了一套丰富的工具集"
+"和函数接口，来加速这些任务的完成。"
 
 #: ../../source/introduction.rst:99
 msgid ""
 "It is in active development, in order to satisfy increasing requests in "
 "scientific computation."
 msgstr ""
+"并且它还在积极地开发中，以适应日益增长的科学计算的需求。"
 
 #: ../../source/introduction.rst:102
 msgid "_`Featured as`"
-msgstr ""
+msgstr "特色总结"
 
 #: ../../source/introduction.rst:104
 msgid "Informatics is currently featured:"
-msgstr ""
+msgstr "Informatics目前具备以下几个特点："
 
 #: ../../source/introduction.rst:106
 msgid ""
 "Powerful integration capability for various utilities (e.g. functions, "
 "frames, packages, and etc.) in Python ecosystem."
 msgstr ""
+"对Python生态中各种实用工具集(如函数、框架、包等)的强大集成能力；"
 
 #: ../../source/introduction.rst:109
 msgid ""
 "Universal processing interface designed in high dimensionality to "
 "guarantee consistency of calling for different types of data."
 msgstr ""
+"采用高维设计的通用处理接口，以保证对不同类型数据处理时，接口调用的一致性；"
 
 #: ../../source/introduction.rst:112
 msgid ""
 "Scripting on basis of functional programming paradigm, with properties of"
 " robust performance, and easy decoupling for extension."
 msgstr ""
+"基于函数式编程范式的脚本设计，程序架构上具有高鲁棒、易解耦及扩展等优点；"
 
 #: ../../source/introduction.rst:115
 msgid ""
 "Intuitive combination of data processing units, for fast experiments, "
 "validation, or building for upper applications."
 msgstr ""
+"可直观对各数据处理单元进行组合，可用于快速实验设计，流程验证或构建上层应用程序；"
 
 #: ../../source/introduction.rst:118
 msgid ""
@@ -177,10 +203,12 @@ msgid ""
 " interpretation for essential concepts, examples of applications, and "
 "such like."
 msgstr ""
+"详细完善的配套文档，不仅包含基本函数接口释义，还包括详尽的教程指南、"
+"所涉及的基本概念解释、综合的演示程序示例等。"
 
 #: ../../source/introduction.rst:122
 msgid "_`Simple examples`"
-msgstr ""
+msgstr "一些简单的例子"
 
 #: ../../source/introduction.rst:124
 msgid ""
@@ -190,34 +218,39 @@ msgid ""
 "Therefore with various units (e.g. :code:`u1`, :code:`u2` with different "
 "arguments), it is able to combine them as desired:"
 msgstr ""
+"称为 :py:func:`~info.docfunc.Unit` 的关键结构可以在Python中包装任何可调用对象。"
+"数据处理可以通过 :ref:`函数式编程脚本 <Function based scripting>` 实现。"
+"因此，对于不同的单位(例如，带不同参数的 :code:`u1` , :code:`u2` )，它可以根据需要组合它们:"
 
 #: ../../source/introduction.rst:128
 msgid "example of unit combination"
-msgstr ""
+msgstr "单元复合"
 
 #: ../../source/introduction.rst:134
 msgid ""
 "Auto test the pipe :code:`p` for determining its optimal argument "
 "combination:"
 msgstr ""
+"用以确定最佳参数组合的自动化测试管道 :code:`p` ："
 
 #: ../../source/introduction.rst:136
 msgid "example of auto test"
-msgstr ""
+msgstr "自动化测试"
 
 #: ../../source/introduction.rst:150
 msgid ""
 "Or apply that pipe, as well as its optimal argument configuration from "
 "(or to) others' works:"
 msgstr ""
+"复用别处的数据管道以及相应最佳参数配置，亦或是自己的数据管道及配置分享出去："
 
 #: ../../source/introduction.rst:152
 msgid "example of reuse pipe"
-msgstr ""
+msgstr "管道复用"
 
 #: ../../source/introduction.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/introduction.rst:162
 msgid "Chen Zhang"
@@ -225,7 +258,7 @@ msgstr ""
 
 #: ../../source/introduction.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/introduction.rst:163
 msgid "0.0.4"
@@ -233,9 +266,9 @@ msgstr ""
 
 #: ../../source/introduction.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/introduction.rst:164
 msgid "Apr 25, 2023"
-msgstr ""
+msgstr "2023年4月25日"
 

@@ -70,7 +70,7 @@ msgstr "内容目录一览"
 
 #: ../../source/index.rst
 msgid "Authors"
-msgstr "作者"
+msgstr "译者"
 
 #: ../../source/index.rst:37
 msgid "Chen Zhang"

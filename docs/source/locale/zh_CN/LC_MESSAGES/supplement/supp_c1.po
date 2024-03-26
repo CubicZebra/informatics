@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../../source/supplement/supp_c1.rst:5
 msgid "_`Abstraction for behaviors`"
-msgstr ""
+msgstr "对行为抽像"
 
 #: ../../source/supplement/supp_c1.rst:7
 msgid ""
