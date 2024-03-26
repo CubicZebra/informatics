@@ -1,8 +1,9 @@
-from info.me import archive, unarchive, Unit, F, datasets, TrialDict, io
+from info.me import archive, unarchive, Unit, F, TrialDict, io
 from info.me import tensorn as tsn
 from info.me import tensorb as tsb
 from info.me import autotesting as tst
 from info.me import hypotest as ht
+from info.ins import datasets
 from scipy.stats import norm
 import sys
 import numpy
