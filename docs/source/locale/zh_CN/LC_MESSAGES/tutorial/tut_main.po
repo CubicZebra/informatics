@@ -22,53 +22,55 @@ msgstr ""
 
 #: ../../source/tutorial/tut_main.rst:9
 msgid "Scripting via function"
-msgstr ""
+msgstr "通过函数编写脚本"
 
 #: ../../source/tutorial/tut_main.rst:9
 msgid "Pipelining data process"
-msgstr ""
+msgstr "数据处理管道化"
 
 #: ../../source/tutorial/tut_main.rst:20
 msgid "Preparing batch processing"
-msgstr ""
+msgstr "数据批处理准备"
 
 #: ../../source/tutorial/tut_main.rst:20
 msgid "Transform and identification"
-msgstr ""
+msgstr "转换与标定"
 
 #: ../../source/tutorial/tut_main.rst:20
 msgid "DICOM related operations"
-msgstr ""
+msgstr "DICOM相关操作"
 
 #: ../../source/tutorial/tut_main.rst:20
 msgid "Applying data augmentation"
-msgstr ""
+msgstr "应用数据增强"
 
 #: ../../source/tutorial/tut_main.rst:2
 msgid "_`Tutorials`"
-msgstr ""
+msgstr "教程"
 
 #: ../../source/tutorial/tut_main.rst:5
 msgid "_`Functional programming`"
-msgstr ""
+msgstr "函数式编程"
 
 #: ../../source/tutorial/tut_main.rst:7
 msgid "Collection for concept and practice for Python in functional programming."
-msgstr ""
+msgstr "Python函数式编程相关概念与工程实践的集合。"
 
 #: ../../source/tutorial/tut_main.rst:15
 msgid "_`Example navigation`"
-msgstr ""
+msgstr "示例导航"
 
 #: ../../source/tutorial/tut_main.rst:17
 msgid ""
 "Gallery of examples on various scientific computing fields, with scopes "
 "from theoretical simulation to practical application."
 msgstr ""
+"各种科学计算领域的案例教程，"
+"涉及范围从理论层面模拟、到实践应用展示。"
 
 #: ../../source/tutorial/tut_main.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/tutorial/tut_main.rst:29
 msgid "Chen Zhang"
@@ -76,7 +78,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_main.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/tutorial/tut_main.rst:30
 msgid "0.0.4"
@@ -84,9 +86,9 @@ msgstr ""
 
 #: ../../source/tutorial/tut_main.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/tutorial/tut_main.rst:31
 msgid "Jan 2, 2024"
-msgstr ""
+msgstr "2024年1月2日"
 

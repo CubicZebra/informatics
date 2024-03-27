@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_func.rst:2
 msgid "_`Framework in a nutshell`"
-msgstr ""
+msgstr "框架概要"
 
 #: ../../source/tutorial/tut_func.rst:6
 #, python-format
@@ -37,14 +37,21 @@ msgid ""
 "objective>`, it contributes to accelerate forming the practicable data "
 "processing flow, from the scientific prototype to engineering practice."
 msgstr ""
+"在研究工作中，往往需要快速对一些原型思想进行验证。"
+"然而，这些想法通常过于原型化，无法在真正地得以落地实现。"
+"而这个框架可以看成是研究人员和工程师之间的共同工作语言："
+"对于研究人员来说，它提供了丰富的工具以帮助他们构建原型处理和算法流程，"
+"而对于工程师而言，它可以作为各种算法实现的标准化包装器。"
+"如 :numref:`图 %s <framework objective>` 所示，它有助于加速成型"
+"从科学研究到工程实践皆可应用的标准化数据处理流程。"
 
 #: ../../source/tutorial/tut_func.rst:18
 msgid "the bridge between research and practice"
-msgstr ""
+msgstr "科学研究与工程实践之间的桥梁"
 
 #: ../../source/tutorial/tut_func.rst:21
 msgid "_`Featured syntax`"
-msgstr ""
+msgstr "特殊语法"
 
 #: ../../source/tutorial/tut_func.rst:23
 msgid ""
@@ -53,10 +60,13 @@ msgid ""
 "enhanced in this system in order to fast implement customized computing "
 "steps."
 msgstr ""
+"该框架的以在数据处理上具备相对明确的参数化设计为特点。"
+"此外，系统还增强了类型提示与检查、lambda演算等功能，"
+"以便对自定义计算步骤进行快速实现。"
 
 #: ../../source/tutorial/tut_func.rst:27
 msgid "_`Arguments predefine and type system`"
-msgstr ""
+msgstr "参数预定义与类型系统"
 
 #: ../../source/tutorial/tut_func.rst:29
 #, python-format
@@ -71,6 +81,12 @@ msgid ""
 "<framework objective>`, while the var-keyword instance, can be deemed as "
 "the corresponding config to change the operational behavior of that pipe."
 msgstr ""
+"Python中的参数传递机制包括位置参数、带有默认值的可选参数、"
+"var-positional参数和 `var-keyword <https://docs.python.org/3/glossary.html#term-function>`_ 参数"
+"（var表示变量长度）。如 :numref:`代码 %s <informatics function scripting style>` 所示，"
+"这些传递机制可以等效地用var-keyword进行替换。"
+"在 :numref:`图 %s <framework objective>` 中，包装器函数对应着数据管道的主体，"
+"而var-keyword的设置参数，则可以被认为是改变管道具体操作行为的相应配置。"
 
 #: ../../source/tutorial/tut_func.rst:36
 msgid ""
@@ -79,6 +95,8 @@ msgid ""
 "Activating the entry or return type checking controlling can see the "
 ":numref:`decorator to attach documents or execute type checking`."
 msgstr ""
+"默认值的预定义和参数类型检查可以参阅 :numref:`代码 %s <decorator for parameter setting>` 中的案例说明。"
+"启用输入输出类型检查的控制则可以参阅 :numref:`代码 %s <decorator to attach documents or execute type checking>` 。"
 
 #: ../../source/tutorial/tut_func.rst:40
 msgid ""
@@ -87,10 +105,12 @@ msgid ""
 "of function, parameters, and type checking system, for presenting a clear"
 " feeling on this mapping logic."
 msgstr ""
+"这里的函数设计语言基于映射思想：将数据从一种形式转换到另一种形式。"
+"这种体系框架将函数的执行主体、运行参数、以及类型检查系统相隔离，以便对这种映射逻辑进行清晰地体现。"
 
 #: ../../source/tutorial/tut_func.rst:45
 msgid "_`Function based scripting`"
-msgstr ""
+msgstr "基于函数的脚本"
 
 #: ../../source/tutorial/tut_func.rst:47
 msgid ""
@@ -100,10 +120,13 @@ msgid ""
 " pseudo code with a mass of that indented branches for numeric "
 "calculating, type conversion, output control:"
 msgstr ""
+"在编程实践中，初学者可能会扩展出许多逻辑分支，以满足不同的条件约束。"
+"但这种编程习惯将会使代码块在未来变得难以维护。"
+"下面的案例展示了类似的一个伪代码片段，其中包含用于处理数值计算、类型转换、输出提示的分支缩进："
 
 #: ../../source/tutorial/tut_func.rst:51
 msgid "indentation style in python"
-msgstr ""
+msgstr "Python中的缩进风格"
 
 #: ../../source/tutorial/tut_func.rst:70
 msgid ""
@@ -111,10 +134,13 @@ msgid ""
 "simplify :numref:`indentation style in python`, using non-indentation "
 "style as:"
 msgstr ""
+"幸运的是，在Python中如果应用三元表达式，"
+"就可以对 :numref:`代码 %s <indentation style in python>` 进行极大程度的非缩进式简化。"
+"其等效实现如下："
 
 #: ../../source/tutorial/tut_func.rst:73
 msgid "non-indentation style in python"
-msgstr ""
+msgstr "Python中的非缩进风格"
 
 #: ../../source/tutorial/tut_func.rst:81
 msgid ""
@@ -124,10 +150,15 @@ msgid ""
 "which can be included into a mutable object (e.g. list). Therefore, "
 "equivalent script on basis of lambda calculus is realizable as:"
 msgstr ""
+"非缩进风格的神奇之处不仅在于压缩代码，"
+"如果使用操作符 ``:=`` 代替赋值操作符 ``=`` ，则 "
+":numref:`代码 %s <non-indentation style in python>` 中的每一行都将变成一个可哈希对象，"
+"并可以包含在可变对象中（例如list）。"
+"因此，可以基于lambda演算对该脚本重新进行等效函数化:"
 
 #: ../../source/tutorial/tut_func.rst:86
 msgid "lambda style of python"
-msgstr ""
+msgstr "Python中的lambda演算风格"
 
 #: ../../source/tutorial/tut_func.rst:95
 msgid ""
@@ -136,20 +167,24 @@ msgid ""
 "This programming paradigm is preferred for designing customized "
 "processing flow for tasks."
 msgstr ""
+"框架中的 :py:func:`~info.docfunc.F` 作为预定义的lambda演算，"
+"是对结合仅使用var-keyword传参的函数与非缩进风格的语法约定。"
+"对于为需要高度定制的数据处理流任务，应用这种编程范式组织脚本是应该优先考虑的。"
 
 #: ../../source/tutorial/tut_func.rst:99
 msgid "_`Unit of data processing`"
-msgstr ""
+msgstr "数据处理单元"
 
 #: ../../source/tutorial/tut_func.rst:101
 msgid ""
 "The purpose of class :py:func:`~info.docfunc.Unit` using as data "
 "processing unit, is four-fold."
 msgstr ""
+":py:func:`~info.docfunc.Unit` 类作为数据处理管道的目的有四个方面。"
 
 #: ../../source/tutorial/tut_func.rst:104
 msgid "_`Packaging units`"
-msgstr ""
+msgstr "管道封装"
 
 #: ../../source/tutorial/tut_func.rst:106
 msgid ""
@@ -160,16 +195,20 @@ msgid ""
 "previous works (related code implementation) be of high reusability, then"
 " time saving."
 msgstr ""
+"普通Python脚本的代码风格可能会因人而异，特别是在通常存在大量实验及测试的科学计算场景中。"
+"对于大多数的研究，人们不得不花费大量时间，用于对数据预处理的代码进行构建。"
+"因此，良好的代码组织形式，理应使先前的工作（相关的代码实现）具备很高的可复用性，从而给新流程的搭建节省时间。"
 
 #: ../../source/tutorial/tut_func.rst:111
 msgid ""
 "Following code shows a workflow for cropping, normalization, and edge "
 "sharpening sequentially for 3D images:"
 msgstr ""
+"下面的代码片段展示了对3D图像进行裁剪，归一化，以及边缘锐化的工作流："
 
 #: ../../source/tutorial/tut_func.rst:113
 msgid "plain scripting"
-msgstr ""
+msgstr "普通脚本"
 
 #: ../../source/tutorial/tut_func.rst:126
 msgid ""
@@ -177,14 +216,16 @@ msgid ""
 "unstructured. For more compact organization via informatics pipeline, it "
 "can be implemented as:"
 msgstr ""
+"然而， ``for`` 循环中的普通脚本处理流程，是相对非结构化的。"
+"如果以更加紧凑的代码组织形式重新实现，则它可以被informatics管道化为:"
 
 #: ../../source/tutorial/tut_func.rst:129
 msgid "pipeline scripting"
-msgstr ""
+msgstr "管道化脚本"
 
 #: ../../source/tutorial/tut_func.rst:141
 msgid "_`Function wrapper`"
-msgstr ""
+msgstr "函数包装器"
 
 #: ../../source/tutorial/tut_func.rst:143
 msgid ""
@@ -192,10 +233,13 @@ msgid ""
 " which can either be called as common function, or a specific step inside"
 " data processing pipeline:"
 msgstr ""
+"它也可以作为现有函数（或方法，脚本）的包装器，将可调用对象包装为informatics函数。"
+"应用以后的informatics函数即可以作为普通函数来调用，"
+"也可以作为新的数据处理管道中的特定步骤，来进行嵌入:"
 
 #: ../../source/tutorial/tut_func.rst:146
 msgid "wrap common function into informatics function"
-msgstr ""
+msgstr "将普通函数包装为informatics函数"
 
 #: ../../source/tutorial/tut_func.rst:164
 msgid ""
@@ -203,10 +247,12 @@ msgid ""
 "var-keyword arguments only, which can theoretically wrap any callable "
 "object in Python."
 msgstr ""
+":ref:`informatics函数 <Informatics function>` 是约定仅以var-keyword传参的一类函数，"
+"它理论上可以对一切Python的可调用对象进行包装。"
 
 #: ../../source/tutorial/tut_func.rst:168
 msgid "_`Integrate implemented unit or pipeline`"
-msgstr ""
+msgstr "对已实现的单元或管道进行集成"
 
 #: ../../source/tutorial/tut_func.rst:170
 msgid ""
@@ -214,10 +260,12 @@ msgid ""
 "by someone, it is also handy to integrate that works into your personal "
 "task:"
 msgstr ""
+"如果存在已经实现了的informatics函数或功能管道，"
+"那么也能十分方便地将其迅速集成至您的个人任务中："
 
 #: ../../source/tutorial/tut_func.rst:173
 msgid "use implemented function or unit in your task"
-msgstr ""
+msgstr "在任务中应用已实现的函数或管道"
 
 #: ../../source/tutorial/tut_func.rst:186
 msgid ""
@@ -226,10 +274,13 @@ msgid ""
 "meanwhile each team can be more focused on the function(s) they are "
 "building up."
 msgstr ""
+"因此，该框架的重要意义在于，尽管个人或团队的代码构建风格不尽相同，"
+"但应用统一的包装器后，数据能够在函数或管道间无缝流动。"
+"这样就能够使得每个团队可以更专注于提升他们正在开发构建的功能，而不用对后期的集成有过多的担心。"
 
 #: ../../source/tutorial/tut_func.rst:190
 msgid "_`Pipe style code`"
-msgstr ""
+msgstr "代码管道化"
 
 #: ../../source/tutorial/tut_func.rst:192
 msgid ""
@@ -239,10 +290,15 @@ msgid ""
 "different method to make augmentation, compare their results, and finally"
 " save the compared result can be implemented as:"
 msgstr ""
+"对于管道实例，informatics支持管道化的编码风格，"
+"其代码的组织形式甚至像普通叙述一样容易理解。"
+"例如，从裁剪、去噪、重采样，然后使用两种不同的方式进行增强，"
+"并比较它们的结果，最后对比较后的结果进行保存的图像处理步骤，"
+"应用informatics的管道化风格可以实现为:"
 
 #: ../../source/tutorial/tut_func.rst:196
 msgid "pipe coding style"
-msgstr ""
+msgstr "管道化的编程范式"
 
 #: ../../source/tutorial/tut_func.rst:209
 msgid ""
@@ -254,10 +310,15 @@ msgid ""
 "result mess. However, with this, data processing can be of ease for "
 "disassembly or integrating, just like building lego."
 msgstr ""
+"操作符 :code:`>>` 直观地提示着前后两个数据处理单元的贯序关系，"
+"而操作符 :code:`|` 则连接着两个需要并行处理的单元。"
+"当数据流涉及的步骤越多，最终能影响结果的因素就会成倍增加。"
+"手动地去尝试所有可能处理步骤及变数组合有时是可以理解的，但最终总是导致结果的混乱。"
+"然应用了该框架后，数据处理可以变得像拆搭乐高玩具一样，方便地进行拆解与集成。"
 
 #: ../../source/tutorial/tut_func.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/tutorial/tut_func.rst:217
 msgid "Chen Zhang"
@@ -265,7 +326,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_func.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/tutorial/tut_func.rst:218
 msgid "0.0.4"
@@ -273,9 +334,9 @@ msgstr ""
 
 #: ../../source/tutorial/tut_func.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/tutorial/tut_func.rst:219
 msgid "Feb 8, 2024"
-msgstr ""
+msgstr "2024年2月8日"
 
