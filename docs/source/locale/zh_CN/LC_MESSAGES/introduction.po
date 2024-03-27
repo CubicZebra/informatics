@@ -148,7 +148,7 @@ msgid ""
 "cleaning, transformation, analysis, or visualization, informatics "
 "provides a rich set of tools and functions to facilitate these tasks."
 msgstr ""
-"Informatics旨在使用户能够高效、准确地解决科学、工程和其他领域的复杂问题。"
+"informatics旨在使用户能够高效、准确地解决科学、工程和其他领域的复杂问题。"
 "它的强大性能是通过前沿的软件工程技术，以及先进的Python函数式编程范式相结合来得以保证。"
 "高度模块化和可扩展架构的优势允许使用者快速组装和定制数据处理管道，以满足用户的特定需求。"
 "无论是对于数据清理、变换、分析还是可视化，informatics都提供了一套丰富的工具集"
@@ -163,11 +163,11 @@ msgstr ""
 
 #: ../../source/introduction.rst:102
 msgid "_`Featured as`"
-msgstr "特色总结"
+msgstr "特色陈列"
 
 #: ../../source/introduction.rst:104
 msgid "Informatics is currently featured:"
-msgstr "Informatics目前具备以下几个特点："
+msgstr "informatics目前具备以下几个特点："
 
 #: ../../source/introduction.rst:106
 msgid ""
