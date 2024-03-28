@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../source/supplement/supp_b1.rst:2
 msgid "_`Feature capturing`"
-msgstr ""
+msgstr "特征捕获"
 
 #: ../../source/supplement/supp_b1.rst:5
 msgid "_`How we define features`"
-msgstr ""
+msgstr "何谓特征"
 
 #: ../../source/supplement/supp_b1.rst:7
 msgid ""
@@ -38,6 +38,13 @@ msgid ""
 " comes to this concept, they consistently desires there's the thing: the "
 "minimal representation of information."
 msgstr ""
+"在许多领域，人们处理和分析数据，"
+"不仅仅是为了对数据提炼总结，而是为了挖掘数据自身背后可能存在的事实。"
+"根据学科的不同，专业背景或术语也可能会有所差异。"
+"在机器学习中，它可能被称为 *模式* ；在数理统计中，它可能被称为 *概率分布* ；"
+"在物理学或其他相关领域研究中，它可能被称为 *模型* 。"
+"然而无论叫法如何，每当提起这个概念，他们内涵总是一致的："
+"那就是信息的最小化表达。"
 
 #: ../../source/supplement/supp_b1.rst:13
 msgid ""
@@ -48,6 +55,10 @@ msgid ""
 "combinations, or the location where they changed, is regular to some "
 "extent."
 msgstr ""
+"以图像识别任务为例，即使灰度值逐像素发生变化，"
+"但人们仍然可以区分出目标物体和所属背景，仍然可以分辨出物体是人，还是其他生物。"
+"这是因为，尽管像素全然不同，但它们的某些组合形式，亦或是变化所产生的位置，"
+"在一定程度上是有规律地呈现的。"
 
 #: ../../source/supplement/supp_b1.rst:18
 msgid ""
@@ -56,10 +67,14 @@ msgid ""
 "automatically finish a certain task, it can be considered as the "
 "`features`, bonding with this task."
 msgstr ""
+"简而言之，其实真正有价值的内容不是像素本身，"
+"反而是它们在空间中如何分布，在哪里产生变化等等。"
+"如果这样的情报足够支撑起系统自动完成某项任务的能力，"
+"那它就可以被认为与该任务相匹配的所谓 `特征` 。"
 
 #: ../../source/supplement/supp_b1.rst:23
 msgid "_`Spatial filtering`"
-msgstr ""
+msgstr "空间滤波"
 
 #: ../../source/supplement/supp_b1.rst:25
 msgid ""
@@ -68,6 +83,9 @@ msgid ""
 "occurs. This tech has been widely used in edge detection, object "
 "recognition."
 msgstr ""
+"空间滤波是一种突显出局部特征的技术。"
+"它应用于数据全局，但可以在发生明显变化的位置增强局部对比度。"
+"该技术已广泛应用于边缘检测、目标识别等领域。"
 
 #: ../../source/supplement/supp_b1.rst:28
 #, python-format
@@ -77,10 +95,12 @@ msgid ""
 "image, and values of output image are replaced pixel by pixel based on "
 "pre-defined computing method."
 msgstr ""
+":numref:`图 %s <kernel framework>` 显示了空间滤波在二维图像中的计算原理。"
+"滤波核在输入图像上全局移动，而输出图像的像素值，则根据预定义的计算方法逐像素替换。"
 
 #: ../../source/supplement/supp_b1.rst:37
 msgid "data transition via kernel"
-msgstr ""
+msgstr "经由滤波核的数据转换"
 
 #: ../../source/supplement/supp_b1.rst:39
 #, python-format
@@ -97,10 +117,17 @@ msgid ""
 "also some generic filter using certain statistic on the localized values "
 "(e.g. rank filter)."
 msgstr ""
+"最常用的计算方法如 :numref:`图 %s <kernel calculation methods>` 所示。"
+":math:`\boldsymbol{K}` 代表滤波核，其中从 :math:`r` 到 :math:`z` 的值则为 :math:`\boldsymbol{K}` 中不同权重。"
+":math:`\boldsymbol{F}` 则代表图像， :math:`a` 到 :math:`i` 则代表了滤波核 :math:`\boldsymbol{K}` 处"
+"于当前位置时，所遮盖住的像素值。 :math:`\boldsymbol{I}` 是在当前位置将发生像素替换的数值。"
+"线性计算与卷积计算的区别在于，其权重参与计算的顺序不同。"
+"另外，还有滤波器的计算是通过对数值进行某些聚合统计来得以实现的"
+"（例如秩滤波）。"
 
 #: ../../source/supplement/supp_b1.rst:52
 msgid "correlation, convolution, and generic mapping using kernel"
-msgstr ""
+msgstr "线性计算、卷积计算、与通用映射"
 
 #: ../../source/supplement/supp_b1.rst:54
 #, python-format
@@ -116,10 +143,17 @@ msgid ""
 "also applied in informatics, for even number, the anchor in that "
 "dimension will be located one pixel next to the center."
 msgstr ""
+"技术架构上而言，仅仅理解数值运算的规则是不充分的，"
+"还要了解将在何处进行替换。滤波核中存在一个锚的概念，如 :numref:`图 %s <anchor in kernel>` 所示。"
+"灰色像素是将发生像素替换的位点在核中的位置，被称为锚。"
+"默认情况下，锚点应该是位于核的中心位置（否则图像的输出会存在整体的像素偏移），"
+"然而，强假定核中的所有维度的像素必须为奇数会显得比较奇怪。"
+"**scipy** 中的基本设计思想如 :numref:`图 %s <anchor in kernel>` 所示，这在informatics中也一贯沿用："
+"对于偶数像素的维度，锚点位置将位于靠近几何中心下一个像素的地方。"
 
 #: ../../source/supplement/supp_b1.rst:66
 msgid "positions of anchor in kernels"
-msgstr ""
+msgstr "锚在滤波核中的位置"
 
 #: ../../source/supplement/supp_b1.rst:68
 #, python-format
@@ -131,10 +165,14 @@ msgid ""
 "Keep in mind that this factor only makes difference on the corner- or "
 "edge-like regions."
 msgstr ""
+"此外，当滤波核在图像的边缘或角落移动时，原始图像中的数值将不足以进行运算。"
+"为应对这种情况，需要在外部作用域中填充一些伪数据。"
+":numref:`图 %s <edge padding methods>` 展示了五种不同的填充方法。"
+"需要记住的是，不同的填充方式，其效应差异仅在图像角落或者边缘的区域产生。"
 
 #: ../../source/supplement/supp_b1.rst:78
 msgid "padding methods for numerical computing in edges"
-msgstr ""
+msgstr "边缘数值计算的填充方法"
 
 #: ../../source/supplement/supp_b1.rst:80
 #, python-format
@@ -147,30 +185,37 @@ msgid ""
 " kernel in 2 dimension are illustrated in :numref:`Figure %s <gaussian "
 "kernel>` and :numref:`Figure %s <LoG kernel>`."
 msgstr ""
+"话题回到滤波核本身。不同的核被设计用于不同的目的。"
+"例如，高斯核是一种突出中心区域的局部平均，可用于平滑或降噪。"
+"拉普拉斯高斯核使用相反符号的中心和环中心区域，来测量局部对比度。"
+"二维高斯核及其拉普拉斯-高斯核函数的形貌，分别如 :numref:`图 %s <gaussian kernel>` 和 :numref:`图 %s <LoG kernel>` 所示。"
 
 #: ../../source/supplement/supp_b1.rst:91
 msgid "gaussian kernel"
-msgstr ""
+msgstr "高斯核"
 
 #: ../../source/supplement/supp_b1.rst:98
 msgid "laplacian of gaussian kernel"
-msgstr ""
+msgstr "拉普拉斯-高斯核"
 
 #: ../../source/supplement/supp_b1.rst:101
 msgid ""
 "The effect of denoising, or object edge and profile detection, through "
 "gaussian and some gaussian-related kernels filtering will be like:"
 msgstr ""
+"通过高斯和一些与高斯相关的核滤波降噪，"
+"或者进行目标边缘和轮廓检测，效果如下如示："
 
 #: ../../source/supplement/supp_b1.rst:109
 msgid "spatial filtering applied on image processing"
-msgstr ""
+msgstr "空间滤波在图像处理中的应用"
 
 #: ../../source/supplement/supp_b1.rst:113
 msgid ""
 "Most kernels are central symmetric, in which condition the correlation "
 "and convolution will be substantially equivalent."
 msgstr ""
+"大多数核是中心对称的，在这种情况下，线性运算和卷积运算实质上是等效的。"
 
 #: ../../source/supplement/supp_b1.rst:116
 #, python-format
@@ -180,10 +225,13 @@ msgid ""
 "2-dimensional gabor kernel with radian of :math:`\\theta = 0.5\\pi` will "
 "be like the surface in :numref:`Figure %s <gabor kernel>`"
 msgstr ""
+"某些滤波核由于其各向异性，常被用作沿着某些特定的方向进行特征增强。"
+"例如，弧度为 :math:`\\theta = 0.5\\pi` 的二维gabor核，其实部函数形貌如 "
+":numref:`图 %s <gabor kernel>` 所示："
 
 #: ../../source/supplement/supp_b1.rst:125
 msgid "gabor kernel"
-msgstr ""
+msgstr "gabor核"
 
 #: ../../source/supplement/supp_b1.rst:127
 #, python-format
@@ -199,10 +247,15 @@ msgid ""
 "processing>` convolved using gabor filtering, with directions of "
 ":math:`(1, 0)` and :math:`(0, 1)`, respectively:"
 msgstr ""
+"一旦指定了 :ref:`空间正弦调和函数 <spatial sine function>` 的方向，与之对齐的图像的纹理将被增强。"
+"这种技术通常被认为与初级视觉皮层的原理相契合。"
+"如果数据的位向信息在分析中至关紧要，则可以将该技术手段应用于特征工程中，"
+"进行多用途的数据增强。为了便于理解，我们将 :numref:`图 %s <spatial filtering applied on image processing>` 中"
+"中的原始图像（a），分别应用gabor滤波器的实部与虚部来进行卷积："
 
 #: ../../source/supplement/supp_b1.rst:139
 msgid "gabor filtering applied on image processing"
-msgstr ""
+msgstr "gabor滤波在图像处理中的应用"
 
 #: ../../source/supplement/supp_b1.rst:145
 msgid ""
@@ -212,6 +265,10 @@ msgid ""
 "systems (e.g. cartesian or polar in dimension 2, or spherical frame in "
 "dimension 3)."
 msgstr ""
+"Gabor核被定义为一个高斯包络，乘以一个正弦调和函数。"
+"然而，在处理不同维度的数据时，由于处于不同的坐标体系中，"
+"其形式可能会有所差别（例如，在二维平面上应用的是笛卡尔坐标系，"
+"或极坐标系，而在三维空间中，应用的则是球面坐标系）。"
 
 #: ../../source/supplement/supp_b1.rst:149
 msgid ""
@@ -221,6 +278,10 @@ msgid ""
 " to be obtained, so the keypoint is the generalization for sine function "
 "into n-dimension."
 msgstr ""
+"对于绝大多数库而言，它们已经强假定了需要处理的数据维度，"
+"所以很难定义一种一贯的方法，来在不同维度的情况下获得gabor核。"
+"从定义出发，多元高斯函数是很容易实现的，因此这里的关键是在n维空间中定义正弦函数。"
+
 
 #: ../../source/supplement/supp_b1.rst:153
 msgid ""
@@ -234,24 +295,33 @@ msgid ""
 "hyperplanes, through which the spatial sine function can be implemented "
 "in different dimensions with the identical interface:"
 msgstr ""
+"考虑自由度（ :ref:`DoF <DoF>` ）发生退化（参考主题 :ref:`退化 <degeneracy>` ）时，"
+"对于正弦函数，在1维直线上（DoF=1），其数值在某个点上变化（DoF=0）；"
+"在2维平面内（DoF=2），其数值在一组平行线上发生变化（DoF=1）；"
+"在3维空间中（DoF=3），其数值则在一组平行面上发生变化（DoF=2）。"
+"更一般地，对于n维的情况，如果定义了基n-1维的退化超平面，"
+"则正弦函数的描述会如同一维的情况同样简单。在这里，我们使用空间法线来定义这些超平面，"
+"通过这些超平面，在不同维度上的空间正弦函数，都可以以一个统一的接口来实现："
 
 #: ../../source/supplement/supp_b1.rst:165
 msgid "real part of spatial sine in different dimensions"
-msgstr ""
+msgstr "不同维空间正弦的实部"
 
 #: ../../source/supplement/supp_b1.rst:167
 msgid ""
 "Then multiply them into the corresponding multivariate gaussian, the "
 "gabor kernel will be obtained as:"
 msgstr ""
+"然后将它们与同维度下的多元高斯函数相乘，"
+"得到相应的gabor核为:"
 
 #: ../../source/supplement/supp_b1.rst:174
 msgid "real part of gabor kernel in different dimensions"
-msgstr ""
+msgstr "不同维数下gabor核的实部"
 
 #: ../../source/supplement/supp_b1.rst:177
 msgid "_`Curvature of image`"
-msgstr ""
+msgstr "图像曲率"
 
 #: ../../source/supplement/supp_b1.rst:179
 #, python-format
@@ -265,10 +335,14 @@ msgid ""
 "boundaries of objects in an image (as shown in :numref:`Figure %s <effect"
 " of gaussian curvature via hessian filter>`)."
 msgstr ""
+"图像曲率的研究提供了对数字图像中物体形状及形变的基本解释。"
+"曲率是曲线在给定点上方向变化率的度量，是计算机视觉和图像处理中的一个重要几何性质。"
+"在这里的上下文中，曲率分析是指对图像中物体的轮廓或边界偏离直线度的定量评价"
+"（如 :numref:`图 %s <effect of gaussian curvature via hessian filter>` 所示）。"
 
 #: ../../source/supplement/supp_b1.rst:190
 msgid "effect of gaussian curvature via hessian filter"
-msgstr ""
+msgstr "通过hessian滤波器求解图像高斯曲率的效果"
 
 #: ../../source/supplement/supp_b1.rst:192
 msgid "Text here..."
@@ -276,11 +350,11 @@ msgstr ""
 
 #: ../../source/supplement/supp_b1.rst:199
 msgid "keypoint determination through curvature"
-msgstr ""
+msgstr "通过曲率确定关键点"
 
 #: ../../source/supplement/supp_b1.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/supplement/supp_b1.rst:203
 msgid "Chen Zhang"
@@ -288,7 +362,7 @@ msgstr ""
 
 #: ../../source/supplement/supp_b1.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/supplement/supp_b1.rst:204
 msgid "0.0.4"
@@ -296,9 +370,9 @@ msgstr ""
 
 #: ../../source/supplement/supp_b1.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/supplement/supp_b1.rst:205
 msgid "Jun 28, 2023"
-msgstr ""
+msgstr "2023年6月28日"
 
