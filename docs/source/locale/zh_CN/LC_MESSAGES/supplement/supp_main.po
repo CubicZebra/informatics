@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,57 +22,58 @@ msgstr ""
 
 #: ../../source/supplement/supp_main.rst:9
 msgid "Math symbols and abbreviations"
-msgstr ""
+msgstr "数学符号及简写"
 
 #: ../../source/supplement/supp_main.rst:19
 msgid "High dimensional data"
-msgstr ""
+msgstr "高维数据"
 
 #: ../../source/supplement/supp_main.rst:19
 msgid "About matrix"
-msgstr ""
+msgstr "关于矩阵"
 
 #: ../../source/supplement/supp_main.rst:19
 msgid "Factor analysis"
-msgstr ""
+msgstr "因子分析"
 
 #: ../../source/supplement/supp_main.rst:19
 msgid "Mathematical statistics"
-msgstr ""
+msgstr "数理统计"
 
 #: ../../source/supplement/supp_main.rst:19
 msgid "Monte Carlo method"
-msgstr ""
+msgstr "蒙特卡罗方法"
 
 #: ../../source/supplement/supp_main.rst:33
 msgid "Feature capturing"
-msgstr ""
+msgstr "特征捕获"
 
 #: ../../source/supplement/supp_main.rst:42
 msgid "Functional programming primer"
-msgstr ""
+msgstr "函数式编程入门"
 
 #: ../../source/supplement/supp_main.rst:42
 msgid "Basic concepts in informatics"
-msgstr ""
+msgstr "informatics基础概念"
 
 #: ../../source/supplement/supp_main.rst:2
 msgid "_`Supplementary`"
-msgstr ""
+msgstr "补充材料"
 
 #: ../../source/supplement/supp_main.rst:5
 msgid "_`Nomenclature`"
-msgstr ""
+msgstr "命名法"
 
 #: ../../source/supplement/supp_main.rst:7
 msgid ""
 "Collection of mathematical notations and abbreviations in this "
 "documentation."
 msgstr ""
+"本文档中所使用数学符号及简写的集合。"
 
 #: ../../source/supplement/supp_main.rst:13
 msgid "_`Data science essentials`"
-msgstr ""
+msgstr "数据科学基础"
 
 #: ../../source/supplement/supp_main.rst:15
 msgid ""
@@ -82,10 +83,13 @@ msgid ""
 ":ref:`[MacCrimmon1968, <[MacCrimmon1968]>` :ref:`Slovic1977, "
 "<[Slovic1977]>` :ref:`Nelder1990] <[Nelder1990]>`."
 msgstr ""
+"多元统计分析基础。可应用于统计学算法、数据挖掘、决策理论、"
+"自动化、及 :ref:`人工智能 <AI>` 系统的分析学基础概念 "
+":ref:`[MacCrimmon1968, <[MacCrimmon1968]>` :ref:`Slovic1977, <[Slovic1977]>` :ref:`Nelder1990] <[Nelder1990]>` 。"
 
 #: ../../source/supplement/supp_main.rst:28
 msgid "_`Scientific calculation essentials`"
-msgstr ""
+msgstr "科学计算基础"
 
 #: ../../source/supplement/supp_main.rst:30
 msgid ""
@@ -93,10 +97,12 @@ msgid ""
 "Basic technical foundations to construct functions for data pre- and "
 "post-processing, modality transition, applying statistics, and etc."
 msgstr ""
+"科学计算从基本原理到应用实现。本篇目是构建数据前后处理、"
+"模态转换、统计应用等功能的技术基础。"
 
 #: ../../source/supplement/supp_main.rst:37
 msgid "_`Informatics essentials`"
-msgstr ""
+msgstr "informatics基础"
 
 #: ../../source/supplement/supp_main.rst:39
 msgid ""
@@ -104,10 +110,12 @@ msgid ""
 "informatics. The indispensable concepts for building functional units and"
 " pipelines via informatics."
 msgstr ""
+"informatics中关于函数式编程和计算流程控制的基础。"
+"通过informatics构建函数单元和管道的必不可少的概念。"
 
 #: ../../source/supplement/supp_main.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/supplement/supp_main.rst:48
 msgid "Chen Zhang"
@@ -115,7 +123,7 @@ msgstr ""
 
 #: ../../source/supplement/supp_main.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/supplement/supp_main.rst:49
 msgid "0.0.4"
@@ -123,9 +131,9 @@ msgstr ""
 
 #: ../../source/supplement/supp_main.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/supplement/supp_main.rst:50
 msgid "Apr 26, 2023"
-msgstr ""
+msgstr "2023年4月26日"
 
