@@ -58,7 +58,7 @@ msgstr "informatics基础概念"
 
 #: ../../source/supplement/supp_main.rst:2
 msgid "_`Supplementary`"
-msgstr "补充材料"
+msgstr "资料补全"
 
 #: ../../source/supplement/supp_main.rst:5
 msgid "_`Nomenclature`"

@@ -224,7 +224,7 @@ msgstr ""
 
 #: ../../source/introduction.rst:128
 msgid "example of unit combination"
-msgstr "单元复合"
+msgstr "管道复合"
 
 #: ../../source/introduction.rst:134
 msgid ""

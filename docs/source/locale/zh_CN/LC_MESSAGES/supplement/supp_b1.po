@@ -39,7 +39,7 @@ msgid ""
 "minimal representation of information."
 msgstr ""
 "在许多领域，人们处理和分析数据，"
-"不仅仅是为了对数据提炼总结，而是为了挖掘数据自身背后可能存在的事实。"
+"不仅仅是为了对数据提炼总结，更是为了挖掘数据自身背后可能存在的事实。"
 "根据学科的不同，专业背景或术语也可能会有所差异。"
 "在机器学习中，它可能被称为 *模式* ；在数理统计中，它可能被称为 *概率分布* ；"
 "在物理学或其他相关领域研究中，它可能被称为 *模型* 。"
@@ -342,7 +342,7 @@ msgstr ""
 
 #: ../../source/supplement/supp_b1.rst:190
 msgid "effect of gaussian curvature via hessian filter"
-msgstr "通过hessian滤波器求解图像高斯曲率的效果"
+msgstr "通过hessian曲率确定图像角点位置"
 
 #: ../../source/supplement/supp_b1.rst:192
 msgid "Text here..."

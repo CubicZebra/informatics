@@ -180,7 +180,7 @@ msgid ""
 "The purpose of class :py:func:`~info.docfunc.Unit` using as data "
 "processing unit, is four-fold."
 msgstr ""
-":py:func:`~info.docfunc.Unit` 类作为数据处理管道的目的有四个方面。"
+":py:func:`~info.docfunc.Unit` 类作为数据处理管道的作用有四个方面。"
 
 #: ../../source/tutorial/tut_func.rst:104
 msgid "_`Packaging units`"
