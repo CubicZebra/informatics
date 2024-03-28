@@ -66,14 +66,15 @@ classifiers = [
 
 [project.optional-dependencies]
 ins = ['pillow', 'requests']
-vis = ['pyqtgraph']  # suggest backend: PySide6(v6.6.1), PyOpenGL, PyOpenGL_accelerate
+vis = ['pyqtgraph']  # suggest backend: PySide6, PyOpenGL, PyOpenGL_accelerate
 med = ['pydicom', 'SimpleITK']
 
 
 [project.urls]
 Homepage = 'https://github.com/CubicZebra/informatics'
-Issues = 'https://github.com/CubicZebra/informatics/issues'
+Release = 'https://github.com/CubicZebra/informatics/releases'
 Documentation = 'https://informatics.readthedocs.io/en/latest/index.html'
+Issues = 'https://github.com/CubicZebra/informatics/issues'
 
 
 [build-system]
