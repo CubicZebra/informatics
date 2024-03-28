@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../../source/supplement/supp_a1.rst:2
 msgid "_`High dimensional data`"
-msgstr ""
+msgstr "高维数据"
 
 #: ../../source/supplement/supp_a1.rst:5
 msgid "_`Design matrix`"
-msgstr ""
+msgstr "设计矩阵"
 
 #: ../../source/supplement/supp_a1.rst:9
 #, python-format
@@ -37,10 +37,13 @@ msgid ""
 "dimensional data in statistics :ref:`[Box1973, <[Box1973]>` "
 ":ref:`Timm2007] <[Timm2007]>`. Here shows an instance:"
 msgstr ""
+":numref:`表 %s <design_mat1>` 是一种用以描述统计学中的高维数据的常用形态，"
+"其数据点（或观测值）沿行阵列，而每个数据点的维度（或特征）则按列阵列， "
+":ref:`[Box1973, <[Box1973]>` :ref:`Timm2007] <[Timm2007]>` 。下面是一个例子:"
 
 #: ../../source/supplement/supp_a1.rst:13
 msgid "table of design matrix (:math:`n \\times m`)"
-msgstr ""
+msgstr "设计矩阵表（ :math:`n \\times m` ）"
 
 #: ../../source/supplement/supp_a1.rst:18
 msgid ":math:`-`"
@@ -142,14 +145,19 @@ msgid ""
 "dimensions were considered on basis of groups of the same sort (e.g. "
 "spatial omics for tumor researches :ref:`[Wu2022] <[Wu2022]>`)"
 msgstr ""
+"然而，并非所有维度对观测结果的响应都能同样灵敏。"
+"如果将该矩阵可视化为 :numref:`图 %s <design_mat2>` ，"
+"不难看出数据点的红色虚线框出的维度对结果的响应，会比绿色框线的维度更加灵敏。"
+"在一些特定的学科中，维度间可能会基于相同类型来进行分组"
+"（例如用于肿瘤研究的空间组学 :ref:`[Wu2022] <[Wu2022]>` ）。"
 
 #: ../../source/supplement/supp_a1.rst:37
 msgid "heatmap for design matrix"
-msgstr ""
+msgstr "设计矩阵热图"
 
 #: ../../source/supplement/supp_a1.rst:40
 msgid "_`Distance matrix`"
-msgstr ""
+msgstr "距离矩阵"
 
 #: ../../source/supplement/supp_a1.rst:44
 msgid ""
@@ -159,6 +167,10 @@ msgid ""
 "relations among the high dimensional points, or how they distributed, to "
 "some extent."
 msgstr ""
+"距离矩阵一般定义为类平方矩阵，"
+"它由所有被观测值两两之间的距离构成 :ref:`[Weyenberg2015] <[Weyenberg2015]>` 。"
+"某种意义上，它告知了高维数据点之间的空间位置关系，"
+"以及它们是如何分布的。"
 
 #: ../../source/supplement/supp_a1.rst:48
 msgid ""
@@ -171,16 +183,19 @@ msgid ""
 ":math:`\\boldsymbol{A}`, :math:`d` refers the measure for distance (e.g. "
 "Euclidean, Frobenius)."
 msgstr ""
+""
 
 #: ../../source/supplement/supp_a1.rst:54
 msgid ""
 "Using Euclidean norm of two vectors as their distance, the distance "
 "matrix for previous design matrix :math:`\\boldsymbol{A}` would be like:"
 msgstr ""
+"利用两个向量差的欧氏范数作为它们的距离，"
+"则前述设计的矩阵所对应的距离矩阵为："
 
 #: ../../source/supplement/supp_a1.rst:62
 msgid "distance matrix for :ref:`design matrix A <design_mat2>`"
-msgstr ""
+msgstr ":ref:`设计矩阵A <design_mat2>` 所对应的距离距阵"
 
 #: ../../source/supplement/supp_a1.rst:66
 msgid ""
@@ -189,6 +204,8 @@ msgid ""
 "(:math:`d(\\boldsymbol{a}, \\boldsymbol{b}) = d(\\boldsymbol{b}, "
 "\\boldsymbol{a})`)."
 msgstr ""
+"值得注意的是，距离矩阵在多数情况下沿对角呈现对称性，"
+"这因为大多数距离的定义满足交换律（ :math:`d(\boldsymbol{a}, \boldsymbol{b}) = d(\boldsymbol{b}, \boldsymbol{a})` ）"
 
 #: ../../source/supplement/supp_a1.rst:69
 msgid ""
@@ -198,12 +215,16 @@ msgid ""
 "measure, applied in lots of fields. The following result compares the "
 "identical data in three different dimension groups:"
 msgstr ""
+"通常，距离矩阵可以直观地展示某些特定维度上信息的密集程度。"
+"此外，它是综合分析和定量测量的基础，可应用于许多领域。"
+"下面的结果比较了相同的高维数据，在三组不同维度组中的信息量："
 
 #: ../../source/supplement/supp_a1.rst:78
 msgid ""
 "comparison for design matrix and distance matrix among varying dimension "
 "groups"
 msgstr ""
+"不同维度组间设计矩阵和距离矩阵的比较"
 
 #: ../../source/supplement/supp_a1.rst:80
 msgid ""
@@ -211,6 +232,9 @@ msgid ""
 "more details presented in design matrix (i.e. more informative in those "
 "groups)."
 msgstr ""
+"显然，对于对数据点的响应越频繁的维度组，"
+"其设计矩阵中所呈现的细节也就越多"
+"（即这些组中所能提供的信息越丰富）。"
 
 #: ../../source/supplement/supp_a1.rst:85
 msgid ""
@@ -222,10 +246,15 @@ msgid ""
 "some permutation-included method can also alleviate the error induced "
 "from one specific order."
 msgstr ""
+"设计矩阵本身并不规定数据点的排列顺序。因此，"
+"如果有必要通过设计矩阵来评估具体的维度，或者维度的组合，"
+"则一些顺序无关的统计量（例如 :math:`\mathrm{r}(\boldsymbol{A})` ， :math:`\mathrm{Tr}(\boldsymbol{A})` ）"
+"将会有是效的。此外，一些引入了排列变异性的方法，也"
+"可以减轻由某种具体顺序而导致的整体误差。"
 
 #: ../../source/supplement/supp_a1.rst:91
 msgid "_`Pattern in high dimensional data`"
-msgstr ""
+msgstr "高维数据中的模式"
 
 #: ../../source/supplement/supp_a1.rst:93
 msgid ""
@@ -234,6 +263,9 @@ msgid ""
 "information <How we define features>`, in order to obtain the regularity "
 "possibly exists underlying the data."
 msgstr ""
+"模式这个概念可以概括为对某个数据集的高效率表达。"
+"人们希望把这种信息进行 :ref:`最小化的表示 <How we define features>` ，"
+"以便获取数据背后可能存在的规律性。"
 
 #: ../../source/supplement/supp_a1.rst:97
 #, python-format
@@ -246,6 +278,10 @@ msgid ""
 "reason of dimension reduction techniques are generally applied on data "
 "pre processing."
 msgstr ""
+"如 :numref:`图 %s <distance_mat1>` 所示，仅使用高信息密度维度作为设计矩阵子集，"
+"其计算出的距离矩阵，将与从原始设计矩阵中计算出来的距离矩阵没有差别。"
+"因此，去除低效表达的维度，并不会改变数据点的分布，这也就是数据预处理中"
+"通常要采用降维技术的原因。"
 
 #: ../../source/supplement/supp_a1.rst:102
 msgid ""
@@ -255,10 +291,14 @@ msgid ""
 "case, decomposition algorithms can further factorize dataset, after which"
 " possible pattern of data can be readily determined."
 msgstr ""
+"尽管数据点频繁响应，我们这里使用了术语 *信息量丰富* 在"
+"某种意义上是不准确的，因为它并不能排除维度间存在耦合的可能性"
+"（想象一下两个高度相关的维度）。这种情况下，"
+"分解算法可以进一步解构数据集，进而可以更容易地确定数据可能潜藏的模式。"
 
 #: ../../source/supplement/supp_a1.rst:111
 msgid "linear decomposition to determine pattern"
-msgstr ""
+msgstr "线性分解以确定模式"
 
 #: ../../source/supplement/supp_a1.rst:113
 #, python-format
@@ -270,10 +310,15 @@ msgid ""
 "recognition, using 20 groups of singular values and their vector pairs is"
 " sufficient, instead of the image itself."
 msgstr ""
+"以 :numref:`图 %s <decomposition for pattern>` 中的演示为例，"
+"去除低信息量的内容（或者说可能确定为干扰信息的内容）有点类似于分割，"
+"信号的分解及合成则与模式提取相相似：对于物种识别任务而言，"
+"仅使用20对奇异值及其对应向量对图像进行重构就足够了，"
+"而并不需要使用到图像本身。"
 
 #: ../../source/supplement/supp_a1.rst:119
 msgid "_`Correlation on high dimensional data`"
-msgstr ""
+msgstr "高维数据的相关性"
 
 #: ../../source/supplement/supp_a1.rst:121
 msgid ""
@@ -282,6 +327,9 @@ msgid ""
 " high dimensional datasets will calculate for their respective optimal "
 "number of dimension in condition of their mutual characterizations."
 msgstr ""
+"与通过最优信息维数来表征数据本身的模识提取不同，"
+"多个高维数据集的相关性会在相互表征的情况下，"
+"计算各自用作表征的最优维数。"
 
 #: ../../source/supplement/supp_a1.rst:125
 msgid ""
@@ -292,10 +340,14 @@ msgid ""
 "relationships, optimal scales, dense of information and etc., of high "
 "dimensional data with different attributes or modalities."
 msgstr ""
+"由Vogelstein等人提出的多层次图相关算法（MGC），"
+"是一种用于统计高维数据的强大方法，"
+"也可以作为确定其内在尺度的基准 :ref:`[Vogelstein2019] <[Vogelstein2019]>` 。"
+"它可以用于量化具有不同属性或模态的高维数据间的相关性、关系、最优尺度、信息密度等等。"
 
 #: ../../source/supplement/supp_a1.rst:131
 msgid "_`Multi Graph Correlation`"
-msgstr ""
+msgstr "多层次图相关"
 
 #: ../../source/supplement/supp_a1.rst:136
 #, python-format
@@ -304,10 +356,12 @@ msgid ""
 "reported (:ref:`[Pandas2019] <[Pandas2019]>`). Algorithm of MGC can be "
 "illustrated as :numref:`Figure %s <MGC_algorithm>`:"
 msgstr ""
+"MGC的具体实现，以及和基准测试也被有报道（ :ref:`[Pandas2019] <[Pandas2019]>` ）。"
+"MGC算法如 :numref:`图 %s <MGC_algorithm>` 所示:"
 
 #: ../../source/supplement/supp_a1.rst:144
 msgid "algorithm for multi graph correlation (MGC)"
-msgstr ""
+msgstr "多层次图相关算法（MGC）"
 
 #: ../../source/supplement/supp_a1.rst:146
 msgid ""
