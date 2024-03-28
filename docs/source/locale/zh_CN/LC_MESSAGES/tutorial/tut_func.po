@@ -173,7 +173,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_func.rst:99
 msgid "_`Unit of data processing`"
-msgstr "数据处理单元"
+msgstr "数据处理管道"
 
 #: ../../source/tutorial/tut_func.rst:101
 msgid ""
@@ -314,7 +314,7 @@ msgstr ""
 "而操作符 :code:`|` 则连接着两个需要并行处理的单元。"
 "当数据流涉及的步骤越多，最终能影响结果的因素就会成倍增加。"
 "手动地去尝试所有可能处理步骤及变数组合有时是可以理解的，但最终总是导致结果的混乱。"
-"然应用了该框架后，数据处理可以变得像拆搭乐高玩具一样，方便地进行拆解与集成。"
+"然而应用了该框架后，数据处理可以变得像拆搭乐高玩具一样，方便地进行拆解与集成。"
 
 #: ../../source/tutorial/tut_func.rst
 msgid "Authors"
