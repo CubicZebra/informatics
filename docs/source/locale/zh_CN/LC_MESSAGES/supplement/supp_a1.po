@@ -183,10 +183,10 @@ msgid ""
 ":math:`\\boldsymbol{A}`, :math:`d` refers the measure for distance (e.g. "
 "Euclidean, Frobenius)."
 msgstr ""
-"对于某个具体的设计矩阵 :math:`\boldsymbol{A} in \boldsymbol{R}^{n \times m}` ，"
-"它所对应的距离矩阵 :math:`\boldsymbol{M}_{i, j} \in \boldsymbol{R}^{n \times n}` 可以"
+"对于某个具体的设计矩阵 :math:`\boldsymbol{A} \in \boldsymbol{R}^{n \\times m}` ，"
+"它所对应的距离矩阵 :math:`\boldsymbol{M}_{i, j} \in \boldsymbol{R}^{n \\times n}` 可以"
 "通过 :math:`d(\boldsymbol{A}_{i,:}, \boldsymbol{A}_{j,:})` 计算求解。"
-"这其中 :math:`\boldsymbol{A}_{k,:}` 表示 :math:`\boldsymbol{A}` 中第 *k* 个数据点中的所有元素组成的向量，"
+"这其中 :math:`\boldsymbol{A}_{k,:}` 表示 :math:`\boldsymbol{A}` 中第 *k* 个数据点中的所有元素所组成的向量，"
 "而 :math:`d` 代表了距离的某种测度（例如欧几里德、弗罗宾尼斯）。"
 
 #: ../../source/supplement/supp_a1.rst:54
