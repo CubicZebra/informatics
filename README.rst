@@ -19,8 +19,8 @@ informatics
    :alt: Read the Docs
    :target: https://informatics.readthedocs.io/en/latest/index.html
 
-.. image:: https://img.shields.io/pypi/dm/informatics.svg?label=Pypi%20downloads
-  :target: https://pypi.org/project/informatics/
+.. image:: https://img.shields.io/pypi/dm/informatics
+   :alt: PyPI - Downloads
 
 .. https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_0.jpg
 
