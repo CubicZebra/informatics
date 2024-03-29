@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_dicom.rst:2
 msgid "_`DICOM related operations`"
-msgstr ""
+msgstr "DICOM相关操作"
 
 #: ../../source/tutorial/tut_dicom.rst:4
 msgid ""
@@ -32,10 +32,13 @@ msgid ""
 "implementation, improve accessibility for data navigation, then "
 "accelerate obtaining content to be investigated in subsequent studies."
 msgstr ""
+":ref:`DICOM <DICOM>` 是在不同模式和系统之间传输医学图像，"
+"以及相关信息的标准。正确使用管道可以大大简化对DICOM数据相关"
+"处理的实现，提高数据导航的可访问性，从而加快进行后续研究的内容。"
 
 #: ../../source/tutorial/tut_dicom.rst:10
 msgid "_`Regroup DICOM dataset`"
-msgstr ""
+msgstr "整理DICOM数据集"
 
 #: ../../source/tutorial/tut_dicom.rst:12
 msgid ""
@@ -44,6 +47,9 @@ msgid ""
 " manageable format. This process ensures that the images can be easily "
 "accessed and analyzed by medical professionals."
 msgstr ""
+"对DICOM数据集进行整理是医学图像处理的核心步骤。"
+"它涉及到将DICOM文件重新归整为更有组织及可管理的形式。"
+"这一过程确保了医学专业人员可以对图像进行轻松地访问和分析。"
 
 #: ../../source/tutorial/tut_dicom.rst:16
 msgid ""
@@ -53,10 +59,14 @@ msgid ""
 "in file headers, to ensure that the images are grouped together in a "
 "meaningful way."
 msgstr ""
+"更具体地，该操作一定会根据文件头中的某些属性"
+"（例如患者ID，扫描日期）等作为标准，识别通常"
+"存储于特定文件目录中的DICOM文件，"
+"确保以有意义的方式将图像重新整理在一起。"
 
 #: ../../source/tutorial/tut_dicom.rst:21
 msgid "_`Unrolling and reading attributes`"
-msgstr ""
+msgstr "展开和读取属性"
 
 #: ../../source/tutorial/tut_dicom.rst:23
 msgid ""
@@ -68,14 +78,20 @@ msgid ""
 "*ReferencedFractionGroupNumber* in :numref:`parse the structure of "
 "keywords in dicom` is desired, we can read that by:"
 msgstr ""
+"DICOM的头文件是一种分层结构，用于保存DICOM对象的各种属性。"
+"展开其结构可以清晰呈现这些属性的字段。"
+"案例可以参考 :numref:`代码 %s <parse the structure of keywords in dicom>` 中的代码片段。"
+"在我们的设计中，指定多层属性是通过列表来实现扁平化的。"
+"例如，如果需要 :numref:`代码 %s <parse the structure of keywords in dicom>` 中"
+"的 *ReferencedFractionGroupNumber* 的值，可以这样实现:"
 
 #: ../../source/tutorial/tut_dicom.rst:29
 msgid "reading multi layered attribute"
-msgstr ""
+msgstr "读取多层属性"
 
 #: ../../source/tutorial/tut_dicom.rst:39
 msgid "_`Create file relation map`"
-msgstr ""
+msgstr "创建文件相关性映射"
 
 #: ../../source/tutorial/tut_dicom.rst:41
 msgid ""
@@ -83,10 +99,13 @@ msgid ""
 "instead of directly operating on original data (e.g. transferring or copy"
 " into new space) that results in heavy read-write load."
 msgstr ""
+"这里通过为原生的文件生成关系映射的缓存，"
+"而非直接基于原始文件进行操作（例如复制或剪切到新的空间），"
+"这样不会在系统中导致沉重的读写负载。"
 
 #: ../../source/tutorial/tut_dicom.rst:44
 msgid "regroup by patient ID"
-msgstr ""
+msgstr "按患者ID重建分组"
 
 #: ../../source/tutorial/tut_dicom.rst:59
 msgid ""
@@ -95,10 +114,13 @@ msgid ""
 "it, otherwise load that cache where patient-wise data processing could be"
 " started."
 msgstr ""
+":numref:`代码 %s <regroup by patient ID>` 中的处理逻辑框架是，"
+"如果工作目录中不存在映射文件关系的缓存，则使用管道将它生成，"
+"否则将加载该缓存，以便对患者的数据进行快速访问及处理。"
 
 #: ../../source/tutorial/tut_dicom.rst:63
 msgid "_`Construct DICOM images`"
-msgstr ""
+msgstr "构造DICOM图像"
 
 #: ../../source/tutorial/tut_dicom.rst:82
 msgid ""
@@ -107,6 +129,11 @@ msgid ""
 "involves reading the DICOM files from the file system, decoding the DICOM"
 " metadata, and extracting the pixel data for further computation."
 msgstr ""
+"读取DICOM图像是一项耗时且费力的任务，"
+"它通常需要一次性处理复数个文件。"
+"这一般包括从文件系统中读取加载DICOM文件、"
+"解析DICOM文件中头文件里的数据标签及属性，"
+"并对影像数据进行提取，以便进一步开展计算。"
 
 #: ../../source/tutorial/tut_dicom.rst:86
 msgid ""
@@ -117,10 +144,15 @@ msgid ""
 "and folder relocating (see :ref:`demonstration <File searcher and folder "
 "relocation>`), its implementation can be fulfilled as:"
 msgstr ""
+"假设待处理 :ref:`DICOM数据集 <DICOM file structure 1>` 存放于一个如右所示的根文件夹目录："
+"在这其中每个患者均有以自己的患者ID命名的子文件夹作为二级目录，"
+"每个二级目录里面分别有扫描该患者的 :ref:`CT <CT>` 及 :ref:`MR <MR>` 两个模态的医学图像。"
+"结合前述对文件系统的搜索，以及与文件夹进行重定位的操作（参考 :ref:`演示 <File searcher and folder relocation>` ），"
+"可以基于下述代码对该批次图像实现快速访问："
 
 #: ../../source/tutorial/tut_dicom.rst:91
 msgid "loading CT and MR for patients"
-msgstr ""
+msgstr "加载患者的CT及MR影像"
 
 #: ../../source/tutorial/tut_dicom.rst:105
 msgid ""
@@ -129,10 +161,14 @@ msgid ""
 "will make convenience to wrap :numref:`loading CT and MR for patients` "
 "into an :ref:`generator function <Applying generator function>`:"
 msgstr ""
+"省略号替换掉的是该代码块中的实际执行。"
+"考虑到相同的数据集有可能会用于不同的研究目的，"
+"因此将 :numref:`代码 %s <loading CT and MR for patients>` 包"
+"装成一个 :ref:`生成器函数 <Applying generator function>` 将会十分便利："
 
 #: ../../source/tutorial/tut_dicom.rst:109
 msgid "CT and MR loading generator for patients"
-msgstr ""
+msgstr "加载患者CT及MR影像的生成器函数"
 
 #: ../../source/tutorial/tut_dicom.rst:125
 msgid ""
@@ -146,20 +182,31 @@ msgid ""
 "array, and into :ref:`DVH <DVH>` result for different studies, after "
 "linking to struct and dose files respectively."
 msgstr ""
+"此外，如果DICOM文件不完全是轴向切片图像"
+"（例如结构, 剂量文件也被包含在目录内），"
+"构造出来的对象可以支持链接到这些附属的文件，"
+"以获得相应的高级功能。但是，在这种情况下，"
+"仅使用一个变量来接收一组DICOM文件是不够的。"
+"还需要用来区分DICOM文件是否为图像的功能逻辑。"
+"例如，在下面的案例中，可以看到将构造的图像自身分别链接到结构和剂量文件上以后，"
+"可以支持将 :ref:`ROI <ROI>` 从名称直接映射为掩码数组，"
+"并输出到 :ref:`DVH <DVH>` 图像以评估结果。"
 
 #: ../../source/tutorial/tut_dicom.rst:133
 msgid "_`Comprehensive applications`"
-msgstr ""
+msgstr "综合应用"
 
 #: ../../source/tutorial/tut_dicom.rst:135
 msgid ""
 "To illustrate its flexibility of operations on DICOM files, let's "
 "consider two distinct studies as examples."
 msgstr ""
+"为了说明其在DICOM文件上操作的灵活性，"
+"我们考虑以两个不同的研究作为展示。"
 
 #: ../../source/tutorial/tut_dicom.rst:138
 msgid "_`Imaging feature extraction`"
-msgstr ""
+msgstr "影像特征提取"
 
 #: ../../source/tutorial/tut_dicom.rst:155
 msgid ""
@@ -173,6 +220,14 @@ msgid ""
 "via :code:`link_struct`, the method :code:`roi_name_map` will be "
 "activated in :code:`_gen_for_feature`."
 msgstr ""
+"考虑 :ref:`DICOM数据集 <DICOM file structure 2>` ，"
+"其中案例文件夹作为其子目录。每个子目录里包含一组CT扫描，"
+"以及存储相应ROI的结构DICOM文件。"
+"如 :numref:`代码 %s <ROI access for feature extraction>` 所示，"
+"每个搜索步骤里都可以确保最后一个文件必定是结构文件，"
+"因此这里声明了两个变量 :code:`slices` 和 :code:`struct` ，用以保存这两种不同类型的DICOM文件。"
+"通过 :code:`link_struct` 将构造的图像链接至 :code:`struct` 文件中，"
+"则方法 :code:`roi_name_map` 将在 :code:`_gen_for_feature` 中可以被激活使用。"
 
 #: ../../source/tutorial/tut_dicom.rst:162
 msgid ""
@@ -180,10 +235,12 @@ msgid ""
 "scripting>`, the :code:`loader` can be treated as the connector, "
 "integrating from file system to the feature extraction."
 msgstr ""
+"在使用 :ref:`lambda演算框架 <Function based scripting>` 进行包装之后，`loader` 可以作"
+"为连接件，整合出从文件系统到特征提取的管道。"
 
 #: ../../source/tutorial/tut_dicom.rst:165
 msgid "ROI access for feature extraction"
-msgstr ""
+msgstr "特征提取中的ROI访问"
 
 #: ../../source/tutorial/tut_dicom.rst:190
 #, python-format
@@ -194,14 +251,19 @@ msgid ""
 " the feature collection, obtained using `lesion`, `invasion1` and "
 "`invasion2` in ROI name list."
 msgstr ""
+"上述管道的返回值是一个数据框架对象，"
+"其索引为患者姓名和ROI名称，其列名为影像特征名称。 "
+":numref:`图 %s <image feature sheet>` 展示了以 "
+"`lesion` ， `invasion1` 和 `invasion2` 作为ROI名称列表，"
+"所提取特征表格的概览。"
 
 #: ../../source/tutorial/tut_dicom.rst:199
 msgid "image feature collection"
-msgstr ""
+msgstr "图像特征集合"
 
 #: ../../source/tutorial/tut_dicom.rst:202
 msgid "_`Evaluation for radiotherapy schedule`"
-msgstr ""
+msgstr "放疗计划评估"
 
 #: ../../source/tutorial/tut_dicom.rst:204
 msgid ""
@@ -210,6 +272,9 @@ msgid ""
 "can help healthcare professionals ensure that the chosen radiotherapy "
 "schedule provides the acceptable outcomes for the patient."
 msgstr ""
+"放射治疗计划的评估是确保治疗效果和减少副作用的关键。"
+"进行彻底的计划评估可以帮助医疗保健专业人员"
+"确保所选择的放疗计划质量，并为患者提供可接受的结果。"
 
 #: ../../source/tutorial/tut_dicom.rst:208
 msgid ""
@@ -222,10 +287,15 @@ msgid ""
 "calculation directly from list of ROI names to be investigated is "
 "available."
 msgstr ""
+"在放疗计划评估中，除涉及DICOM结构文件外，"
+"还会包含剂量文件。确保DICOM文件分别被准确地划分为影像、剂量及结构文件"
+"（如 :numref:`代码 %s <case study of radiotherapy schedule>` 所示），"
+"从构造好的影像链接到剂量及结构文件的操作，将分别激活 :code:`roi_name_map` 和 :code:`dvh_name_map` 方法，"
+"后续计算可以直接基于ROI名称列表来进行展开。"
 
 #: ../../source/tutorial/tut_dicom.rst:214
 msgid "case study of radiotherapy schedule"
-msgstr ""
+msgstr "放射治疗计划个案研究"
 
 #: ../../source/tutorial/tut_dicom.rst:240
 #, python-format
@@ -234,10 +304,12 @@ msgid ""
 " the image as :ref:`DVH <DVH>` figure. The 3D image and the selected ROIs"
 " will be like :numref:`Figure %s <visualization for cervical lesion>`:"
 msgstr ""
+"在 :numref:`代码 %s <case study of radiotherapy schedule>` 中的最后两行将 :ref:`DVH <DVH>` 图进行了可视化。"
+"所构建的三维影像，以及选择的ROI，在 :numref:`图 %s <visualization for cervical lesion>` 中展示："
 
 #: ../../source/tutorial/tut_dicom.rst:248
 msgid "visualization for cervical cancer case with ROIs"
-msgstr ""
+msgstr "宫颈癌及相关ROI的可视化案例分析"
 
 #: ../../source/tutorial/tut_dicom.rst:250
 #, python-format
@@ -245,10 +317,12 @@ msgid ""
 "The computed DVH result is shown as :numref:`Figure %s <dvh for cervical "
 "lesion>` and will be export as `DVH1.png` inplace."
 msgstr ""
+"计算得到的DVH曲线如 :numref:`图 %s <dvh for cervical lesion>` 所示，"
+"运行后将导出名为 `DVH1.png` 的文件。"
 
 #: ../../source/tutorial/tut_dicom.rst:258
 msgid "dose volume histogram for ROIs"
-msgstr ""
+msgstr "ROI的剂量体积直方图"
 
 #: ../../source/tutorial/tut_dicom.rst:260
 msgid ""
@@ -257,10 +331,13 @@ msgid ""
 "processing <Operations on file search and mapping>` is necessary, it can "
 "automatically generate DVH figures, maybe useful for downstream analysis."
 msgstr ""
+"在任何可调用的单元里包含 :numref:`代码 %s <case study of radiotherapy schedule>` 的主体，"
+"可使其逻辑在任何地方都可复用。如果是 :ref:`批处理 <Operations on file search and mapping>` 的逻辑单元主体，"
+"则它能够自动对相应DVH图进行生成，这可能会有助于下游分析。"
 
 #: ../../source/tutorial/tut_dicom.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/tutorial/tut_dicom.rst:266
 msgid "Chen Zhang"
@@ -268,7 +345,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_dicom.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/tutorial/tut_dicom.rst:267
 msgid "0.0.4"
@@ -276,9 +353,9 @@ msgstr ""
 
 #: ../../source/tutorial/tut_dicom.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/tutorial/tut_dicom.rst:268
 msgid "Feb 19, 2024"
-msgstr ""
+msgstr "2024年2月19日"
 
