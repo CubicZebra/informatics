@@ -34,7 +34,7 @@ informatics
 Informatics, sourced from its original meaning: the sciences concerned with gathering, manipulating, storing,
 retrieving, and classifying recorded information.
 
-It is designed to enable users to solve complex problems in science, engineering, and other domains efficiently and
+It is designed to enable users solve complex problems in science, engineering, and other domains efficiently and
 accurately. Its powerful capabilities are achieved through a combination of cutting-edge software engineering
 techniques and the elegance of Python's functional programming paradigm. The strength of highly modular and extensible
 architecture allows users to quickly assemble and customize data processing pipelines to meet their specific needs.
