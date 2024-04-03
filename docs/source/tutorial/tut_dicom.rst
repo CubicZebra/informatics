@@ -165,6 +165,7 @@ connector, integrating from file system to the feature extraction.
 .. code-block:: python
    :caption: ROI access for feature extraction
    :name: ROI access for feature extraction
+   :emphasize-lines: 9, 15
 
    from info.me import io, F, Unit
    from info.med import radiomics_features
@@ -214,6 +215,7 @@ from list of ROI names to be investigated is available.
 .. code-block:: python
    :caption: case study of radiotherapy schedule
    :name: case study of radiotherapy schedule
+   :emphasize-lines: 9-10, 13-14
 
    from info.me import io
    from info.med import rebuild as dcm

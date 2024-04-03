@@ -59,6 +59,7 @@ prewitt and canny filters on a natural image:
 .. code-block:: python
    :caption: auto experiment pipeline
    :name: auto experiment pipeline
+   :emphasize-lines: 15
 
    from info.me import Unit, F
    from info.me import tensorn as tsn
