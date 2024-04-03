@@ -115,6 +115,14 @@ Using demonstration in :numref:`Figure %s <decomposition for pattern>` as exampl
 similarity as extracting pattern: for species recognition, using 20 groups of singular values and their vector pairs
 is sufficient, instead of the image itself.
 
+This illustration takes linear decomposition as example is not to make explanation for the algorithm self, is to
+express the idea that the informative thing of data is commonly underlying other spaces (just like k-space in
+:ref:`MR <MR>` image, the frequency domain in speech recognition, linear sub spaces in natural image). There is
+neither elixir for all diseases in this world, nor generic solution for all questions. A valid algorithm targeted
+as solution for certain scientific problem, should include the specific framework designed to process and interpret
+this key information according to the discipline characteristics, instead of introducing and integrating set of
+gorgeous things unreasonably.
+
 _`Correlation on high dimensional data`
 ---------------------------------------
 
