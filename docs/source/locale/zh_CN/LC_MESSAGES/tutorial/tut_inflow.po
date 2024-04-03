@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_inflow.rst:2
 msgid "_`Operations on file search and mapping`"
-msgstr ""
+msgstr "_`文件搜索以及映射操作`"
 
 #: ../../source/tutorial/tut_inflow.rst:4
 msgid ""
@@ -33,6 +33,8 @@ msgid ""
 " being used for analysis, reducing the risk of errors and "
 "inconsistencies."
 msgstr ""
+"大多数分析发生在存储在文件系统中的数据中。正确处理（主要是加载）这些文件的能力是一种基本技能。"
+"正确地加载和处理文件确保了用于分析的是正确的数据，减少错误与不一致的风险，可以提高整体工作效率。"
 
 #: ../../source/tutorial/tut_inflow.rst:9
 msgid ""
@@ -40,11 +42,12 @@ msgid ""
 " of the file structure and format, as well as size and complexity of the "
 "files being analyzed. Large or complex files can pose challenges in terms"
 " of processing power, memory usage, and time required for analysis."
-msgstr ""
+msgstr "文件处理的工程实现需要很好地理解文件的结构和格式，以及被分析文件的大小和复杂性。"
+"大型或复杂的文件可能在处理能力、内存使用和分析所需的时间方面带来挑战。"
 
 #: ../../source/tutorial/tut_inflow.rst:14
 msgid "_`Applying generator function`"
-msgstr ""
+msgstr "_`生成器功能的应用`"
 
 #: ../../source/tutorial/tut_inflow.rst:16
 msgid ""
@@ -54,11 +57,13 @@ msgid ""
 "Compare to the case of :code:`iter2`, :code:`iter1` will increasingly "
 "occupy the cache until release after return, which readily results in "
 "memory leak if the scale of :code:`cases` is large enough."
-msgstr ""
+msgstr "对于持续流入的数据，内存开销是不得不考虑的一个问题 :numref:`generator function` 演示了"
+"通过两个不同的实现方法返回可迭代容器的逻辑。与 :code:`iter2` 中的例子相比， :code:`iter1` 会"
+"持续增加缓存占用，直到返回后释放为止，如果 :code:`cases` 足够大，很容易导致内存泄漏。"
 
 #: ../../source/tutorial/tut_inflow.rst:21
 msgid "generator function"
-msgstr ""
+msgstr "生成器函数"
 
 #: ../../source/tutorial/tut_inflow.rst:41
 msgid ""
@@ -67,10 +72,12 @@ msgid ""
 ":code:`iter3` can be seem as an another equivalent implementation for "
 ":code:`iter2`."
 msgstr ""
+"值得注意的是，Python中的元组推导会触发延迟求值。在这种情况下，将返回一个生成器对象。"
+"从上面的例子来看，:code:`iter3` 可以被看作是 :code:`iter2` 的一个等效实现"
 
 #: ../../source/tutorial/tut_inflow.rst:45
 msgid "_`File searcher and folder relocation`"
-msgstr ""
+msgstr "_`文件检索器与文件夹重定位`"
 
 #: ../../source/tutorial/tut_inflow.rst:47
 msgid ""
@@ -78,11 +85,12 @@ msgid ""
 "of high-order function. Example of :numref:`file searcher` shows two "
 "different pipelines for searching image files with `jpg` or `jpeg` "
 "suffix, and for finding empty files."
-msgstr ""
+msgstr "为了通用性，搜索或过滤接口采用高阶函数形式设计。示例 :numref:`file searcher` 显示了"
+"两种不同的管道，用于搜索带有‘jpg’或‘jpeg’后缀的图像文件，以及查找空文件。"
 
 #: ../../source/tutorial/tut_inflow.rst:51
 msgid "file searcher"
-msgstr ""
+msgstr "文件检索器"
 
 #: ../../source/tutorial/tut_inflow.rst:76
 msgid ""
@@ -94,21 +102,24 @@ msgid ""
 "shows an operation of reading images located in different file folders "
 "named using file format suffix (as shown in :ref:`example right side "
 "<file structure for JPG and BMP>`)."
-msgstr ""
+msgstr "有时候，同一个文件夹下的文件需要使用统一的处理方式（例如使用标签作为具有不同属性的数据的文件夹名称）。"
+"在这种情况下，文件重定位可以跳过冗余的文件操作。顺着 :numref:`file searcher` 中"
+"的 :code:`p1` , :numref:`folder relocation` 中的示例实现展示了一种读取位于不同文件夹中的"
+"后缀名不同的图像的操作（如 :ref:`右边例子 <file structure for JPG and BMP>` ）所示。"
 
 #: ../../source/tutorial/tut_inflow.rst:82
 msgid ""
 "Those two searchers can both be run, in desktop or hadoop distributed "
 "file systems. Refer their documentations for details."
-msgstr ""
+msgstr "这两个检索器都可以在单机或hadoop分布式文件系统中运行。具体信息请参考其官方文档。"
 
 #: ../../source/tutorial/tut_inflow.rst:85
 msgid "folder relocation"
-msgstr ""
+msgstr "文件夹重定位"
 
 #: ../../source/tutorial/tut_inflow.rst:94
 msgid "_`Universal data loader`"
-msgstr ""
+msgstr "_`通用数据加载器`"
 
 #: ../../source/tutorial/tut_inflow.rst:96
 msgid ""
@@ -122,19 +133,19 @@ msgstr ""
 
 #: ../../source/tutorial/tut_inflow.rst:100
 msgid "meta data loader"
-msgstr ""
+msgstr "元数据加载器"
 
 #: ../../source/tutorial/tut_inflow.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/tutorial/tut_inflow.rst:116
 msgid "Chen Zhang"
-msgstr ""
+msgstr "Marin<381017759@qq.com>"
 
 #: ../../source/tutorial/tut_inflow.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/tutorial/tut_inflow.rst:117
 msgid "0.0.4"
@@ -142,9 +153,9 @@ msgstr ""
 
 #: ../../source/tutorial/tut_inflow.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/tutorial/tut_inflow.rst:118
 msgid "Feb 18, 2024"
-msgstr ""
+msgstr "2024年2月18日"
 

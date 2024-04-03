@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_pipe.rst:2
 msgid "_`Pipelining the data process`"
-msgstr ""
+msgstr "_`数据处理中的管道化`"
 
 #: ../../source/tutorial/tut_pipe.rst:4
 msgid ""
@@ -33,11 +33,13 @@ msgid ""
 " data controlling among those utilities contributes to accelerate "
 "verifying prototypes, optimize algorithm performance, as well as lower "
 "maintenance cost."
-msgstr ""
+msgstr "作为人工智能的首选语言，Python以其丰富的生态系统以及快速实现和开发的便利性而闻名。"
+"涉及不同技术方法的数据处理需要系统化地集成。因此，各个应用程序之间的统一数据控制有助于加速"
+"原型验证，优化算法性能，降低维护成本。"
 
 #: ../../source/tutorial/tut_pipe.rst:14
 msgid "ecosystem of Python"
-msgstr ""
+msgstr "Python生态系统"
 
 #: ../../source/tutorial/tut_pipe.rst:16
 msgid ""
@@ -45,7 +47,8 @@ msgid ""
 "number of steps results in a exponential growth of factors that can "
 "impact the final result. While manually configuring all possible options "
 "for trial may seem feasible, it often leads to a chaotic outcome."
-msgstr ""
+msgstr "数据处理类似于装配线，其中步骤数量的增加会导致影响最终结果的因素呈指数增长。"
+"虽然手动配置所有可能的试验选项似乎是可行的，但往往会导致混乱的结果。"
 
 #: ../../source/tutorial/tut_pipe.rst:20
 msgid ""
@@ -55,11 +58,12 @@ msgid ""
 "pipelines or applications, on basis of each naive functional module. "
 "Following examples demonstrate how to establish pipelines for automating "
 "complex tasks."
-msgstr ""
+msgstr "因此，统一的协议或编程规范不仅在集成Python生态系统中不同领域的团队开发的各种工具方面具有优势，"
+"而且还在基于每个原始功能模块构建实际管道或应用程序时也节省了时间。下面的例子演示了如何建立自动化复杂任务的管道。"
 
 #: ../../source/tutorial/tut_pipe.rst:26
 msgid "_`Normalized scientific computing`"
-msgstr ""
+msgstr "_`规范化科学计算`"
 
 #: ../../source/tutorial/tut_pipe.rst:28
 #, python-format
@@ -69,11 +73,13 @@ msgid ""
 "when create new processing flow. :numref:`flexibility and reusability of "
 "unit` is a snippet in implementation for exporting :numref:`Figure %s "
 "<pathological image statistics>`."
-msgstr ""
+msgstr "通过informatics函数实现的科学计算流程具有较高的完备性。当新的处理流程被创建时，其组成单元"
+"就可以很容易且灵活地被复用。:numref:`flexibility and reusability of unit` 是"
+"导出 :numref:`图 %s <pathological image statistics>` 的一个代码实现片段。"
 
 #: ../../source/tutorial/tut_pipe.rst:32
 msgid "flexibility and reusability of unit"
-msgstr ""
+msgstr "单元的灵活性和可重用性"
 
 #: ../../source/tutorial/tut_pipe.rst:44
 msgid ""
@@ -83,6 +89,8 @@ msgid ""
 ":code:`u1` is arranged paralleled with a sequential processing line "
 ":code:`u1 >> u2 >> u3 >> u4`."
 msgstr ""
+":code:`to_fig3` 与案例（c）对应。获得这样一张图必须将随机着色的细胞核蒙版重叠，随之与灰度图像叠加，"
+"然后传递给图像查看器单元。这就是单元 :code:`u1` 与顺序处理流程并联布置的原因。"
 
 #: ../../source/tutorial/tut_pipe.rst:48
 #, python-format
@@ -98,18 +106,18 @@ msgstr ""
 
 #: ../../source/tutorial/tut_pipe.rst:54
 msgid "_`Automation experiment`"
-msgstr ""
+msgstr "_`自动化实验`"
 
 #: ../../source/tutorial/tut_pipe.rst:56
 msgid ""
 "There are also meta tools, for automation computing. The following "
 "example concerned the difference between global prewitt and canny filters"
 " on a natural image:"
-msgstr ""
+msgstr "此外还提供自动化计算的元工具。下面的例子是关于自然图像上全局prewitt滤波器和canny滤波器的区别："
 
 #: ../../source/tutorial/tut_pipe.rst:59
 msgid "auto experiment pipeline"
-msgstr ""
+msgstr "自动实验管道"
 
 #: ../../source/tutorial/tut_pipe.rst:80
 msgid ""
@@ -119,7 +127,9 @@ msgid ""
 "standard deviation of difference between two paralleled output, display "
 "their pixel distribution difference, then return those two filtered "
 "figures."
-msgstr ""
+msgstr "自动实验管道包括处理裁剪、去噪和重采样等数据处理功能，与之并行的还有滤波器单元。"
+"通过lambda演算实现用户自定义的处理流程：打印出两个并行输出之间标准差的区别，显示它们的像素分布差，"
+"随后返回这两个过滤后的图形。"
 
 #: ../../source/tutorial/tut_pipe.rst:85
 msgid ""
@@ -128,34 +138,37 @@ msgid ""
 "automatically analyze what keyword arguments are the required at least. "
 "Making a parameter pool based on the required arguments. The following "
 "code can auto trigger the experiments then dump each running case."
-msgstr ""
+msgstr "和张量命名空间中的大多数函数一样，包括 :code:`F` 在内，lambda已被封装为Informatics版本, :co  de:`p` 可以"
+"自动化地分析那些关键词参数是必要的，并基于需要的参数创建参数工具。下面的代码可以自动触发上述实验，"
+"然后转储每个运行的情况。"
 
 #: ../../source/tutorial/tut_pipe.rst:90
 msgid "run auto experiment"
-msgstr ""
+msgstr "运行自动实验"
 
 #: ../../source/tutorial/tut_pipe.rst:104
 #, python-format
 msgid ""
-"Prompt will info the current condition and calculated standard deviation,"
+"Prompt will info the current condition and calculated standard deviation, "
 " running time, and the final result case by case; then the histogram "
 "figure will be popped up like :numref:`Figure %s <experiment flow "
 "histogram>`."
-msgstr ""
+msgstr "提示将逐例提示当前状态并计算标准差、运行时间，以及最终结果，随后则会弹出"
+"如下 :numref:`Figure %s <experiment flow histogram>` 直方图。"
 
 #: ../../source/tutorial/tut_pipe.rst:112
 msgid "histogram for pixels distribution after prewitt and canny filters"
-msgstr ""
+msgstr "经prewitt和canny算子滤波后的像素分布直方图"
 
 #: ../../source/tutorial/tut_pipe.rst:114
 msgid ""
 "All experiment results will be collected into a persistence file titled "
 "`experiment_results.pyp` inplace."
-msgstr ""
+msgstr "所有实验结果将被整合到一个名为“experiment_results.pyp”的持久性本地文件中。"
 
 #: ../../source/tutorial/tut_pipe.rst:117
 msgid "_`Automation testing`"
-msgstr ""
+msgstr "_`自动化测试`"
 
 #: ../../source/tutorial/tut_pipe.rst:119
 msgid ""
@@ -166,11 +179,13 @@ msgid ""
 "this meta implementation :code:`funtest` is in the same namespace. It can"
 " test for informatics functions, unit and pipelines defined via this "
 "framework."
-msgstr ""
+msgstr "与自动化实验可以输出计算结果不同，自动化测试只记录退出代码。如果管道退出并引发异常，"
+"也会记录相关信息。与 :code:`experiments` 类似，在 :numref:`run auto experiment` 中，"
+"元实现 :code:`funtest` 在同一个namespace中。通过这个框架可以测试informatics的函数、单元和管道。"
 
 #: ../../source/tutorial/tut_pipe.rst:129
 msgid "automation testing result for resize function"
-msgstr ""
+msgstr "重新缩放函数的自动化测试结果"
 
 #: ../../source/tutorial/tut_pipe.rst:131
 #, python-format
@@ -178,19 +193,20 @@ msgid ""
 ":numref:`Figure %s <automation testing result>` is the test result for "
 ":code:`resize` function. Class type remains in *result* column. The cost "
 "time, arguments for each test item are also be recorded."
-msgstr ""
+msgstr " :numref:`图 %s <automation testing result>` 是 :code:`resize` 函数的测试结果。"
+"类别名称在 *result* 一列中。运行时间，每次测试的参数也被记录在其中。"
 
 #: ../../source/tutorial/tut_pipe.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/tutorial/tut_pipe.rst:136
 msgid "Chen Zhang"
-msgstr ""
+msgstr "Marin<381017759@qq.com>"
 
 #: ../../source/tutorial/tut_pipe.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/tutorial/tut_pipe.rst:137
 msgid "0.0.4"
@@ -198,9 +214,9 @@ msgstr ""
 
 #: ../../source/tutorial/tut_pipe.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/tutorial/tut_pipe.rst:138
 msgid "Feb 7, 2024"
-msgstr ""
+msgstr "2024年2月7日"
 

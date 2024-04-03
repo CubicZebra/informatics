@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_aug.rst:2
 msgid "_`Data augmentation technique`"
-msgstr ""
+msgstr "_`数据增强技术`"
 
 #: ../../source/tutorial/tut_aug.rst:4
 msgid ""
@@ -32,7 +32,9 @@ msgid ""
 " mimic the natural uncertainty found in the data. This helps to improve "
 "the model's generalization and robustness, making it more resilient to "
 "noise and variations in real-world scenarios."
-msgstr ""
+msgstr "数据扩增是机器学习领域中一种增加训练数据量的人工手段。 通过对现有数据进行转换"
+"引入变化，模拟数据中的自然不确定性，有助于提高模型的通用性和鲁棒性，使其更能适应噪声及"
+"真实世界的场景"
 
 #: ../../source/tutorial/tut_aug.rst:9
 msgid ""
@@ -45,6 +47,10 @@ msgid ""
 "high :ref:`SNR <SNR>`, then high interpretability and generalization of "
 "trained model can be expected."
 msgstr ""
+":ref:`变换 <Data transform and identification>` 是有利的，因为它可以决定后续模型"
+"的性能上限，根据 :ref:`特征定义 <How we define features>` 一文中的描述"
+"一种实用的转换能够将原始数据转换为有助于完成目标任务的最小化的信息表达，经过增强转换后"
+"的数据具有高 :ref:`信噪比 <SNR>`，由此训练得到的模型将具有高度可解释性与通用性。"
 
 #: ../../source/tutorial/tut_aug.rst:15
 msgid ""
@@ -57,10 +63,13 @@ msgid ""
 " <ANN>`), but also the data self (random sub sampling, zoom-in, rotation "
 "etc.)."
 msgstr ""
+"模型的泛化性对于它在真实世界场景中的性能是至关重要的。泛化性越好，模型在实际应用中就更鲁棒与可靠。"
+"引入随机性是增加泛化性的常用方法，不仅适用于模型（如：集合学习中的随机森林、随机批计算以及网络节点"
+"的随机失活 :ref:`ANN <ANN>` ）, 还适用于数据本身（如：随机子采样、缩放、旋转等等）。"
 
 #: ../../source/tutorial/tut_aug.rst:22
 msgid "_`Determine appropriate transformation`"
-msgstr ""
+msgstr "选择合适的变换"
 
 #: ../../source/tutorial/tut_aug.rst:24
 #, python-format
@@ -68,23 +77,28 @@ msgid ""
 "Valid transformation connects key nodes in the processing flow for auto "
 "modeling or prediction. For example, automation for thinprep cytologic "
 "test (TCT) requires labeling and measuring cells in morphology or "
-"structure, for further diagnosis or investigation. (a) in :numref:`Figure"
-" %s <immunofluorescence image augmentation>` is an immunofluorescence "
+"structure, for further diagnosis or investigation. (a) in :numref:`Figure "
+"%s <immunofluorescence image augmentation>` is an immunofluorescence "
 "nuclei image. Automation labeling task is as similar as determining "
 "nuclei of hepatocellular carcinoma in :numref:`Figure %s <pathological "
 "image statistics>`. Reuse that pipeline with arguments fine-tuned for "
 "immunofluorescence image:"
 msgstr ""
+"有效的转换将处理流程中的关键节点连接起来，用于自动建模或预测。例如，薄层细胞学检测"
+"（TCT）的自动化需要对细胞的形态或结构进行标记和测量，以便进一步诊断或调查."
+"(a) :numref:`图 %s <immunofluorescence image augmentation>` 是免疫荧光"
+"核图像。自动化标记任务与确定肝细胞癌的细胞核类似，重复使用该管道，并针对免疫荧光图像对参数进行微调："
+":numref:`图 %s <pathological image statistics>` "
 
 #: ../../source/tutorial/tut_aug.rst:36
 msgid "augmentation for locating nuclei in immunofluorescence image"
-msgstr ""
+msgstr "免疫荧光图像中定位细胞核的数据增强"
 
 #: ../../source/tutorial/tut_aug.rst:38
 msgid ""
 "Nucleus labeling can be generally fulfilled, even though overlapped "
 "nuclei appear in observation scope."
-msgstr ""
+msgstr "一般情况下，即使在观测范围内出现重叠的细胞核，标记也能完成"
 
 #: ../../source/tutorial/tut_aug.rst:40
 #, python-format
@@ -96,10 +110,14 @@ msgid ""
 "images are listed from (b) to (e) in :numref:`Figure %s <gabor "
 "fingerprint augmentation>`."
 msgstr ""
+"另一个应用数据增强的例子是在指纹识别中使用gabor滤波器对指纹进行增"
+"强 :ref:`gabor滤波器 <spatial filtering applied on image processing>` 文"
+"中从（b）到（e）列出了四个相同 :ref:`空间正弦函数 <spatial sine function>` 的核以及对应的增强图"
+"像 :numref:`图 %s <gabor fingerprint augmentation>` 。"
 
 #: ../../source/tutorial/tut_aug.rst:50
-msgid "fingerprint augmentation using gabor filter"
-msgstr ""
+msgid "fingerprint augmentation using gabor filter "
+msgstr "通过Gabor滤波器对指纹进行增强"
 
 #: ../../source/tutorial/tut_aug.rst:52
 msgid ""
@@ -107,11 +125,12 @@ msgid ""
 "contribute to extract the pattern of fingerprint for further recognition."
 " Test data is sourced from Bazen (in section :ref:`Traditional Minutiae "
 "Extraction <[Bazen2002]>`)."
-msgstr ""
+msgstr "通过增强不同方向上的纹理，有助于提取指纹范式，以便进一步识别。测试数据来自"
+"Bazen（参考章节 :ref:`Traditional Minutiae Extraction <[Bazen2002]>` ）"
 
 #: ../../source/tutorial/tut_aug.rst:56
 msgid "_`Random observer on data`"
-msgstr ""
+msgstr "数据上的随机观测"
 
 #: ../../source/tutorial/tut_aug.rst:58
 msgid ""
@@ -119,7 +138,8 @@ msgid ""
 "used to solve complex problems that can hardly be solved analytically. "
 "One of its merits is to estimate the expected value of a function or to "
 "find the solution to a problem, relying on repeated random sampling."
-msgstr ""
+msgstr ":ref:`蒙特卡罗方法 <Monte Carlo method>` 是一种用于解析方法难以求解的数值方法”
+"它的优点之一是可以估计函数的期望值，依靠反复的随机抽样来找到问题的解。"
 
 #: ../../source/tutorial/tut_aug.rst:62
 #, python-format
@@ -134,6 +154,10 @@ msgid ""
 "%s <mc on pathological image>`), can possibly result in the fat tail of "
 "distribution or even outliers appears."
 msgstr ""
+"在 :ref:`病理图像转换 <pathological image statistics>` 之后进行复核，对已识别核的等效面积分布进行统计，"
+"其结果如图所示 :numref:`图 %s (d) <pathological image statistics>` 然而，在任何情况下，转换都不可能是绝对合适的。"
+"例如，由于一些原因，如重叠的细胞核或可能正常的肝组织中的细胞核分离失败的情况，"
+"也会被标注出来（ :numref:`图 %s <mc on pathological image>` ），可能会导致分布出现长尾，乃至离群值。"
 
 #: ../../source/tutorial/tut_aug.rst:69
 msgid ""
@@ -145,7 +169,10 @@ msgid ""
 "cancerous nuclei aggregation unveils its more distinctive pattern, on "
 "basis of the corresponding scatter plot for those two statistics on Monte"
 " Carlo sampling."
-msgstr ""
+msgstr "如果需要针对某个统计量（如癌细胞中细胞核的平均表面积）进行更精确计算的模型的"
+"同时还期望具有更高的泛化性，通过蒙特卡洛建立大量的观测数据是非常有利的。对于每个随机"
+"观测值蒙特卡洛模拟都会计算出标记细胞核的数量以及它们在观测范围内的平均表面积。根据蒙"
+"特卡洛抽样中上述两个统计量的相应散点图，癌细胞核聚集的样本会呈现出更独特的表征。"
 
 #: ../../source/tutorial/tut_aug.rst:75
 #, python-format
@@ -158,11 +185,14 @@ msgid ""
 " (d) <pathological image statistics>`. Or be more rigorous and "
 "comprehensive, compute for its multivariate gaussian distribution "
 "analytically."
-msgstr ""
+msgstr "提取这些样本有助于进一步建立精确的统计模型。如，癌细胞平均核面积的直方图既没有长尾"
+"也没有异常值。因此，与 :numref:`Figure %s (d) <pathological image statistics>` "
+"中的标准偏差（37.632）相比，对其标准偏差的近似估计应该更可靠，也可以说是更加严谨与全面地"
+"对其多元高斯分布进行了计算分析。"
 
 #: ../../source/tutorial/tut_aug.rst:86
 msgid "Monte Carlo sampling and statistical modeling on pathological image"
-msgstr ""
+msgstr "病理图像的蒙特卡罗采样和统计建模"
 
 #: ../../source/tutorial/tut_aug.rst:88
 msgid ""
@@ -173,19 +203,21 @@ msgid ""
 "observations can be built in the same manner in area to be predicted as "
 "well, through which some atypical signals that have impact on final "
 "outcome can be suppressed in probability."
-msgstr ""
+msgstr "由于上述所有处理步骤都具有物理和统计上的可解释性，因此所获得的模型可望具有"
+"高度可解释性和高普适性。此外，蒙特卡洛方法还有助于提高预测的精确度：大量的随机观测数据"
+"也可以以同样的方式建立在待预测区域内，从而在概率上抑制一些对最终结果有影响的非典型信号。"
 
 #: ../../source/tutorial/tut_aug.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
 #: ../../source/tutorial/tut_aug.rst:95
 msgid "Chen Zhang"
-msgstr ""
+msgstr "Marin <381017759@qq.com>"
 
 #: ../../source/tutorial/tut_aug.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../source/tutorial/tut_aug.rst:96
 msgid "0.0.4"
@@ -193,9 +225,9 @@ msgstr ""
 
 #: ../../source/tutorial/tut_aug.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
 #: ../../source/tutorial/tut_aug.rst:97
 msgid "Feb 22, 2024"
-msgstr ""
+msgstr "2024年2月22日"
 
