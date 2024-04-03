@@ -74,7 +74,7 @@ msgstr "译者"
 
 #: ../../source/tutorial/tut_main.rst:29
 msgid "Chen Zhang"
-msgstr ""
+msgstr "Marin <381017759@qq.com>"
 
 #: ../../source/tutorial/tut_main.rst
 msgid "Version"
