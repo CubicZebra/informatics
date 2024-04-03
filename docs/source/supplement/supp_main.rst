@@ -32,6 +32,7 @@ construct functions for data pre- and post-processing, modality transition, appl
 
 .. toctree::
    Feature capturing <supp_b1>
+   Anomaly and change <supp_b2>
 
 _`Informatics essentials`
 -------------------------
