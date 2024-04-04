@@ -1,7 +1,7 @@
 _`Operations on file search and mapping`
 ========================================
 
-Most of the analysis occurs in data stored in the file system. The ability to accurately manipulate (primarily loading)
+Most of the analysis occurs on data stored in the file system. The ability to accurately manipulate (primarily loading)
 these files is an essential skill. Accurately loading and manipulating files improves the overall efficiency of the
 process, as it ensures that the correct data is being used for analysis, reducing the risk of errors and
 inconsistencies.

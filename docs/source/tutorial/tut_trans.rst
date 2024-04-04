@@ -1,7 +1,7 @@
 _`Data transform and identification`
 ====================================
 
-In data analytics, machine learning, or deep learning, approaches to build proper pipes for pre and post
+In data analytics, machine learning, or deep learning, approaches to build proper pipes of pre and post
 processing, are critical steps for determining the ceiling of model performance. Data defined here mainly refers
 to :math:`n`-dimensional array in computer science (or tensor in mathematics). This tutorial demonstrates image
 enhancement methods generally applied in computer vision, as well as their upper applications in certain study
@@ -94,9 +94,9 @@ Quantitative analysis takes labeling different objects from a total segmentation
 some classic algorithms, or their combinations can be applied to identify each individual, then downstream
 mathematical statistics, as well as corresponding analysis are capable to be undertaken.
 
-As illustrated in :numref:`Figure %s <labeling segmentation>`, for determining each instance, whether overlapped
-among two or not, proper configuration of distance transform combined with connected domain will precisely allocate
-each basin for initial flooding seed.
+As illustrated in :numref:`Figure %s <labeling segmentation>`, for determining each instance in condition that
+overlapped area among two or more might occur, proper configuration of distance transform combined with
+connected domain will precisely allocate each basin for initial flooding seed.
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/watershed_seg.jpg
    :name: labeling segmentation

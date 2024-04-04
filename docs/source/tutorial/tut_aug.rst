@@ -21,7 +21,7 @@ sampling, zoom-in, rotation etc.).
 _`Determine appropriate transformation`
 ---------------------------------------
 
-Valid transformation connects key nodes in the processing flow for auto modeling or prediction. For example,
+Valid transformation plays as key nodes in the processing flow for auto modeling or prediction. For example,
 automation for thinprep cytologic test (TCT) requires labeling and measuring cells in morphology or structure,
 for further diagnosis or investigation. (a) in :numref:`Figure %s <immunofluorescence image augmentation>` is an
 immunofluorescence nuclei image. Automation labeling task is as similar as determining nuclei of hepatocellular
