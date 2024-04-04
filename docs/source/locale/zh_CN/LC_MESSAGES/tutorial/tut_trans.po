@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Marin <381017759@qq.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,24 +22,26 @@ msgstr ""
 
 #: ../../source/tutorial/tut_trans.rst:2
 msgid "_`Data transform and identification`"
-msgstr "_`数据的转换与标定`"
+msgstr "数据的转换与标定"
 
 #: ../../source/tutorial/tut_trans.rst:4
 msgid ""
 "In data analytics, machine learning, or deep learning, approaches to "
-"build proper pipes for pre and post processing, are critical steps for "
+"build proper pipes of pre and post processing, are critical steps for "
 "determining the ceiling of model performance. Data defined here mainly "
 "refers to :math:`n`-dimensional array in computer science (or tensor in "
 "mathematics). This tutorial demonstrates image enhancement methods "
 "generally applied in computer vision, as well as their upper applications"
 " in certain study fields."
-msgstr "在数据分析、机器学习或深度学习中，为预处理和后处理构建适当管道的方法是决定模型性能上限的关键步骤。"
-"这里定义的数据主要指计算机科学中的 :math:`n` 维数组(或数学中的张量)。本教程演示了计算机视觉中常用的"
-"图像增强方法，以及它们在某些研究领域的高级应用。"
+msgstr ""
+"在数据分析、机器学习或深度学习中，建立合适的数据预处理前后管道，是可以决定模"
+"型性能上界的关键步骤。这里对数据定义，主要指计算机科学中的:math:`n`-维数组"
+"（或者数学意义上的张量）。本篇教程展示了计算机视觉中普遍应用的图像增强方法，"
+"以及基于这些方法在特定研究领域构建的上层应用。"
 
 #: ../../source/tutorial/tut_trans.rst:11
 msgid "_`Edge and corner detection`"
-msgstr "_`边角检测`"
+msgstr "边缘与角点检测"
 
 #: ../../source/tutorial/tut_trans.rst:13
 #, python-format
@@ -51,21 +53,24 @@ msgid ""
 "applied on (a) a original natural image, respectively. The edge of "
 "objects, as well as corner-like region can be emphasised through those "
 "data processing methods."
-msgstr "通用滤波器可以用于张量的轮廓检测与关键点检测以进行配准"
-"等等。 :numref:`图 %s <transform of edge and corner detection>` 展示了（b）双边滤波器"
-"（c）canny算子以及（d）哈里斯响应分别应用在一张自然图像（a）上的结果。通过这些处理方法，目标的边缘、"
-"类似角的区域可以得到增强。"
+msgstr ""
+"通用滤波器可用于张量图像的轮廓检测、关键点识别配准等"
+"。 :numref:`图 %s <transform of edge and corner detection>` 展示"
+"了分别应用于(a)原始自然图像的(b)双边滤波器、(c)康尼滤波器和(d)哈里斯响应的效果。"
+"通过这些数据处理方法，物体的边缘和类似角状的区域，其信号得到加强。"
 
 #: ../../source/tutorial/tut_trans.rst:18
 msgid ""
 "Different transformations might contribute for varying objectives: de-"
 "noising processing possibly prefers the bilateral filtered result; to "
 "evaluate degree of interspace of bricks, canny response would be helpful."
-msgstr "不同的变换可能有助于不同的目标：双边滤波更适合去噪，canny算子更适合评估砖块的间距。"
+msgstr ""
+"不同的变换可能有助于实现不同的目标：双边滤波可能更适合应用"
+"于对噪声的去除；而康尼响应则可能更适合于对砖块的间隙进行评估。"
 
 #: ../../source/tutorial/tut_trans.rst:26
 msgid "bilateral filter, edge and corner response"
-msgstr "双边滤波器与边角响应"
+msgstr "双边滤波器、边缘与角点响应"
 
 #: ../../source/tutorial/tut_trans.rst:28
 #, python-format
@@ -75,9 +80,9 @@ msgid ""
 "<harris response 1D>` shows harris response for high curvature, on "
 "1-dimensional series, and :numref:`Figure %s <canny filter 3D>` is canny "
 "filter applied on a 3-dimensional cubic instance."
-msgstr "此外，还可以根据不同维度的数据调用这些变换处理。 :numref:`图 %s <harris response 1D>` 展示了"
-"哈里斯响应对一维序列的高曲率响应； :numref:`图 %s <canny filter 3D>` 是canny算子应用到"
-"三维立方体实例上的效果。"
+msgstr ""
+"此外，不同维度的数据也能够统一调用这些变换处理。 :numref:`图 %s <harris response 1D>` 显示了"
+"一维序列的高曲率哈里斯响应； :numref:`图 %s <canny filter 3D>` 则是康尼滤波器作用在三维立方体后上的效果。"
 
 #: ../../source/tutorial/tut_trans.rst:37
 msgid "harris response on 1D series"
@@ -85,14 +90,14 @@ msgstr "一维序列的哈里斯响应"
 
 #: ../../source/tutorial/tut_trans.rst:44
 msgid "canny filter on 3D volume"
-msgstr "三维体的canny滤波"
+msgstr "三维体的康尼滤波"
 
 #: ../../source/tutorial/tut_trans.rst:46
 msgid ""
 ":numref:`natural image processing` is for referenced implementation, as "
 "well as visualization for those examples."
 msgstr ""
-":numref:`natural image processing` 是参考实现，也是上述例子的可视化结果。"
+":numref:`代码 %s <natural image processing>` 是上例案例及可视化结果的参考实现。"
 
 #: ../../source/tutorial/tut_trans.rst:48
 msgid "natural image processing"
@@ -104,12 +109,14 @@ msgid ""
 " upstream processing, information with high analytical value remains "
 "while disturbance signal is restricted, therefore increasing upper bond "
 "on performance of modeling, can rationally be expected."
-msgstr "有了为类似下游处理的特定任务而定制的合适的变换，具有高分析价值的信息将被保留，而干扰信号将被限制，"
-"因此期望模型的性能上限提升是合理的。"
+msgstr ""
+"通过为上游处理等特定任务定制适当的转换方法，具有高分析价值的信息将"
+"从数据中得到保留，而产生干扰信号将被抑制。因此可以合理地预期，模型性"
+"能的上限将会得到提高。"
 
 #: ../../source/tutorial/tut_trans.rst:91
 msgid "_`Segmentation for quantitative statistics`"
-msgstr "_`用于定量统计的图像分割`"
+msgstr "用于定量统计的图像分割"
 
 #: ../../source/tutorial/tut_trans.rst:93
 msgid ""
@@ -118,37 +125,40 @@ msgid ""
 "or their combinations can be applied to identify each individual, then "
 "downstream mathematical statistics, as well as corresponding analysis are"
 " capable to be undertaken."
-msgstr "定量分析的先决条件是从所有分割中标记出不同的目标。在实践中，可以使用一些经典算法"
-"或者其组合应用来识别出每个单独的个体，随后便能够进行下游的数理统计和相应的分析。"
-""
+msgstr ""
+"定量分析的前提条件是从整体分割中对不同的对象进行标定。"
+"在实践中，可以应用一些经典算法或其组合来识别每个单独的个体，"
+"然后进行下游数理统计以及相应的分析。"
 
 #: ../../source/tutorial/tut_trans.rst:97
 #, python-format
 msgid ""
 "As illustrated in :numref:`Figure %s <labeling segmentation>`, for "
-"determining each instance, whether overlapped among two or not, proper "
-"configuration of distance transform combined with connected domain will "
+"determining each instance in condition that overlapped area among two or "
+"more might occur, proper configuration of distance transform combined with connected domain will "
 "precisely allocate each basin for initial flooding seed."
-msgstr "如 :numref:`Figure %s <labeling segmentation>` 所阐述的那样，为了确定每一个实例"
-"不论两者之间是否重叠，适当配置距离变换并结合连通域，将精确分配每个流域作为初始泛洪种子。"
+msgstr ""
+"如 :numref:`图 %s <labeling segmentation>` 所示，在可能出现两个"
+"或多个重叠区域的情况下，为标定每个个体，适当配置距离变换结合连通域的"
+"算法管道，每个低洼区域将被分配到泛洪种子以用作初始化。"
 
 #: ../../source/tutorial/tut_trans.rst:106
 msgid "labeling segmentation through topography"
-msgstr "地形标记分割"
+msgstr "通过地势标定分割"
 
 #: ../../source/tutorial/tut_trans.rst:108
 msgid ""
 "Demonstrated implementation is as showed in :numref:`segmentation "
 "labeling`:"
-msgstr "代码实现演示在 :numref:`segmentation labeling` 中展示："
+msgstr "相应演示实现在 :numref:`代码 %s <segmentation labeling>` 中展示："
 
 #: ../../source/tutorial/tut_trans.rst:110
 msgid "segmentation labeling"
-msgstr "分割标记"
+msgstr "分割标定"
 
 #: ../../source/tutorial/tut_trans.rst:134
 msgid "_`Data processing on different disciplines`"
-msgstr "_`不同学科下的数据处理`"
+msgstr "应用在不同学科中的数据处理"
 
 #: ../../source/tutorial/tut_trans.rst:136
 #, python-format
@@ -159,13 +169,15 @@ msgid ""
 "statistics>` is for evaluating equivalent area of tumor cell nucleus. "
 "Data is collected from a hepatocellular carcinoma case from The Cancer "
 "Genome Atlas (`TCGA <https://www.cancer.gov/tcga>`_) program."
-msgstr "综合利用这些基本的转换和识别技术，可以在许多研究领域建立相当复杂的数据处理"
-"管道。 :numref:`图 %s <pathological image statistics>` 为评估肿瘤细胞核等效面积的示例。"
-数据来自癌症基因组图谱(TCGA)项目中的一个肝细胞癌病例。"
+msgstr ""
+"综合利用这些基本技术进行数换变换和标定，可以在许多研究领域建立起相当复杂的数据处理"
+"管道。 :numref:`图 %s <pathological image statistics>` 展示了用以进行肿瘤细"
+"胞核的等效面积进行评估的应用。数据来自癌症基因组图谱（ `TCGA <https://www.cancer.gov/tcga>`_ ）项目"
+"中的一个肝细胞癌病例。"
 
 #: ../../source/tutorial/tut_trans.rst:146
 msgid "statistics for nucleus of tumor cells on pathological image"
-msgstr "病理图像上肿瘤细胞核的统计"
+msgstr "病理图像上肿瘤细胞核的量化统计"
 
 #: ../../source/tutorial/tut_trans.rst:148
 #, python-format
@@ -175,12 +187,14 @@ msgid ""
 "water, grass, tree cover, and the corresponding area percentages were "
 "determined as well, as showed in :numref:`Figure %s <semantic on "
 "topography>`."
-msgstr "另一个例子是测绘工程。如 :numref:`图 %s <semantic on topography>` 所示，"
-"经过一定的预处理流程后，可以高亮显示路网，并确定水、草、树覆盖的包络以及相应的面积百分比。"
+msgstr ""
+"另一个例子是测绘工程。如 :numref:`图 %s <semantic on topography>` 所示，"
+"在经由一定的预处理流程后，可以突出显示路网，并确定水域、草地、植被覆盖的包络，以及相应"
+"的面积比例。"
 
 #: ../../source/tutorial/tut_trans.rst:157
 msgid "semantic statistics on topography"
-msgstr "地形语义统计"
+msgstr "测绘图像的语义统计"
 
 #: ../../source/tutorial/tut_trans.rst:159
 #, python-format
@@ -193,10 +207,11 @@ msgid ""
 " radius and area as x- and y-axis, respectively. The test data is from a "
 "bulletin published on `Vac Aero <https://vacaero.com/information-"
 "resources>`_."
-msgstr "在材料研究中，测量晶粒是了解微观结构形成和形成原理的常规方法。"
-" :numref:`图 %s <grain measure>` 展示了通过二阶微分变换确定晶界，识别标签，"
-"然后分别在x轴和y轴上导出晶粒半径和面积的散点图。测试数据来自"
-"于 `Vac Aero <https://vacaero.com/information-resources>`_ 发布的公告。"
+msgstr ""
+"在材料研究领域，测量晶粒是了解材料微观组织，以及其成型原理的常规方法。 "
+":numref:`图 %s <grain measure>` 展示了通过二阶微分变换突出晶界，标定晶粒，"
+"最后分别在x和y轴上输出晶粒半径及面积构成的散点图。测试数据来自"
+"于 `Vac Aero <https://vacaero.com/information-resources>`_ 发布的一则简报。"
 
 #: ../../source/tutorial/tut_trans.rst:170
 msgid "metallic grain measurement"
@@ -208,7 +223,7 @@ msgstr "译者"
 
 #: ../../source/tutorial/tut_trans.rst:174
 msgid "Chen Zhang"
-msgstr "Marin<381017759@q.com>"
+msgstr "`Marin <381017759@qq.com>`_ ; Chen Zhang"
 
 #: ../../source/tutorial/tut_trans.rst
 msgid "Version"

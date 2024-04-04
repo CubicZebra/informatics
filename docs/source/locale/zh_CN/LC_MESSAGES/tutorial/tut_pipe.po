@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Marin <381017759@qq.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_pipe.rst:2
 msgid "_`Pipelining the data process`"
-msgstr "_`数据处理中的管道化`"
+msgstr "数据处理中管道化实现"
 
 #: ../../source/tutorial/tut_pipe.rst:4
 msgid ""
@@ -33,9 +33,10 @@ msgid ""
 " data controlling among those utilities contributes to accelerate "
 "verifying prototypes, optimize algorithm performance, as well as lower "
 "maintenance cost."
-msgstr "作为人工智能的首选语言，Python以其丰富的生态系统以及快速实现和开发的便利性而闻名。"
-"涉及不同技术方法的数据处理需要系统化地集成。因此，各个应用程序之间的统一数据控制有助于加速"
-"原型验证，优化算法性能，降低维护成本。"
+msgstr ""
+"作为人工智能的首选语言，Python以其丰富的生态系统以及快速实现和开发的便利性而闻名。"
+"运用不同技术栈的数据处理方法需要以系统化的方式集成。因此，在不同技术栈间构建统一的数据控制，将"
+"有助于加速实现原型的验证，优化算法性能，进而降低运维的成本。"
 
 #: ../../source/tutorial/tut_pipe.rst:14
 msgid "ecosystem of Python"
@@ -47,8 +48,10 @@ msgid ""
 "number of steps results in a exponential growth of factors that can "
 "impact the final result. While manually configuring all possible options "
 "for trial may seem feasible, it often leads to a chaotic outcome."
-msgstr "数据处理类似于装配线，其中步骤数量的增加会导致影响最终结果的因素呈指数增长。"
-"虽然手动配置所有可能的试验选项似乎是可行的，但往往会导致混乱的结果。"
+msgstr ""
+"数据处理类似于装配流水线，其中步骤数量的增多会导致能影响最终结果的因素呈指数级增长。"
+"虽然人工管控所有流程节点中的参数可选项直观上似乎可行，但（随着系统复杂度的上升）"
+"最后却往往会导致其结果的混程不堪。"
 
 #: ../../source/tutorial/tut_pipe.rst:20
 msgid ""
@@ -58,12 +61,14 @@ msgid ""
 "pipelines or applications, on basis of each naive functional module. "
 "Following examples demonstrate how to establish pipelines for automating "
 "complex tasks."
-msgstr "因此，统一的协议或编程规范不仅在集成Python生态系统中不同领域的团队开发的各种工具方面具有优势，"
-"而且还在基于每个原始功能模块构建实际管道或应用程序时也节省了时间。下面的例子演示了如何建立自动化复杂任务的管道。"
+msgstr ""
+"因此，使用统一的协议或编程规范来进行测试开发，不仅在对Python生态里分属不同领域、不同团"
+"队所开发的各种数据处理工具的集成上具有优势，而且利用功能化的模组也缩短了从处理流程的"
+"搭建，到进一步开发工程化应用的所需时间。下面的例子演示了如何对复杂任务建立自动化的处理管道。"
 
 #: ../../source/tutorial/tut_pipe.rst:26
 msgid "_`Normalized scientific computing`"
-msgstr "_`规范化科学计算`"
+msgstr "规范化科学计算"
 
 #: ../../source/tutorial/tut_pipe.rst:28
 #, python-format
@@ -73,13 +78,14 @@ msgid ""
 "when create new processing flow. :numref:`flexibility and reusability of "
 "unit` is a snippet in implementation for exporting :numref:`Figure %s "
 "<pathological image statistics>`."
-msgstr "通过informatics函数实现的科学计算流程具有较高的完备性。当新的处理流程被创建时，其组成单元"
-"就可以很容易且灵活地被复用。:numref:`flexibility and reusability of unit` 是"
-"导出 :numref:`图 %s <pathological image statistics>` 的一个代码实现片段。"
+msgstr ""
+"基于经由informatics包装的函数所构建的科学计算流程，具有很高的完备性。在创建新的处理"
+"流程时，已有的管道就可以以一种很灵活的方式被复用。 :numref:`代码 %s <flexibility and reusability of unit>` 是"
+"导出 :numref:`图 %s <pathological image statistics>` 的分析脚中的实现片段。"
 
 #: ../../source/tutorial/tut_pipe.rst:32
 msgid "flexibility and reusability of unit"
-msgstr "单元的灵活性和可重用性"
+msgstr "管道的灵活性及可复用性"
 
 #: ../../source/tutorial/tut_pipe.rst:44
 msgid ""
@@ -89,8 +95,9 @@ msgid ""
 ":code:`u1` is arranged paralleled with a sequential processing line "
 ":code:`u1 >> u2 >> u3 >> u4`."
 msgstr ""
-":code:`to_fig3` 与案例（c）对应。获得这样一张图必须将随机着色的细胞核蒙版重叠，随之与灰度图像叠加，"
-"然后传递给图像查看器单元。这就是单元 :code:`u1` 与顺序处理流程并联布置的原因。"
+":code:`to_fig3` 对应着输出子图(c)的逻辑执行。获得这样一张图片必须对标定出的癌细胞核"
+"分割进行随机着色，随后与原始的图像灰度图相叠加，最后再统一输出到图像可视化单元。"
+"这也就是管道 :code:`u1` 与贯序管道 :code:`u1 >> u2 >> u3 >> u4` 进行并联结构布置的原因。"
 
 #: ../../source/tutorial/tut_pipe.rst:48
 #, python-format
@@ -103,17 +110,25 @@ msgid ""
 "pipes can also be readily obtained by: :code:`p = "
 "to_fig3.shadow(**config1) | to_fig3.shadow(**config2)`."
 msgstr ""
+"如果需要输出 :numref:`图 %s (c) <pathological image statistics>` 中的结果，则可以"
+"调用管道 :code:`to_fig3(data=file)` 。如果研究人员想尝试使用不同的参数，那么则可以通"
+"过 :code:`to_fig3(data=file, **user_defined_config)` 来进行使用。又或者对应更复杂"
+"的情况，如果研究人员想验证比较相同管道在不同参数下的输出结果，那么新的实验流程则可以通"
+"过 :code:`p = to_fig3.shadow(**config1) | to_fig3.shadow(**config2)` 的方式"
+"来进行快速搭建。"
 
 #: ../../source/tutorial/tut_pipe.rst:54
 msgid "_`Automation experiment`"
-msgstr "_`自动化实验`"
+msgstr "自动化实验"
 
 #: ../../source/tutorial/tut_pipe.rst:56
 msgid ""
 "There are also meta tools, for automation computing. The following "
 "example concerned the difference between global prewitt and canny filters"
 " on a natural image:"
-msgstr "此外还提供自动化计算的元工具。下面的例子是关于自然图像上全局prewitt滤波器和canny滤波器的区别："
+msgstr ""
+"另外，这里还提供了自动化计算的元实现。"
+"下面的案例流程，是比较在自然图像上应用全局prewitt及canny滤波器的区别："
 
 #: ../../source/tutorial/tut_pipe.rst:59
 msgid "auto experiment pipeline"
@@ -127,9 +142,10 @@ msgid ""
 "standard deviation of difference between two paralleled output, display "
 "their pixel distribution difference, then return those two filtered "
 "figures."
-msgstr "自动实验管道包括处理裁剪、去噪和重采样等数据处理功能，与之并行的还有滤波器单元。"
-"通过lambda演算实现用户自定义的处理流程：打印出两个并行输出之间标准差的区别，显示它们的像素分布差，"
-"随后返回这两个过滤后的图形。"
+msgstr ""
+"该自动实验管道包括处理裁剪、去噪和重采样的数据处理功能单元，后接并行的两个滤波器单元。"
+"用户对两幅经预处理后的图像打印标准差、绘制像素分布的比较图，最后对两图像进行保存的"
+"自定义处理流程，则通过lambda演算予以实现。"
 
 #: ../../source/tutorial/tut_pipe.rst:85
 msgid ""
@@ -138,9 +154,12 @@ msgid ""
 "automatically analyze what keyword arguments are the required at least. "
 "Making a parameter pool based on the required arguments. The following "
 "code can auto trigger the experiments then dump each running case."
-msgstr "和张量命名空间中的大多数函数一样，包括 :code:`F` 在内，lambda已被封装为Informatics版本, :co  de:`p` 可以"
-"自动化地分析那些关键词参数是必要的，并基于需要的参数创建参数工具。下面的代码可以自动触发上述实验，"
-"然后转储每个运行的情况。"
+msgstr ""
+"在tensor命名空间里中的大多数函数，也包括 :code:`F` 的lambda演算，均已被封"
+"装为informatics的函数版本, （由这类函数搭建起来的）管道 :code:`p` 可以支持"
+"自动化地分析那些关键词参数是调用时的必须。基于管道的必要参数可以创建一个参数池。"
+"下面的代码可以利用该参数池，自动触发上述实验管道，并对每种参数组合下的运行状况"
+"进行记录。"
 
 #: ../../source/tutorial/tut_pipe.rst:90
 msgid "run auto experiment"
@@ -153,22 +172,25 @@ msgid ""
 " running time, and the final result case by case; then the histogram "
 "figure will be popped up like :numref:`Figure %s <experiment flow "
 "histogram>`."
-msgstr "提示将逐例提示当前状态并计算标准差、运行时间，以及最终结果，随后则会弹出"
-"如下 :numref:`Figure %s <experiment flow histogram>` 直方图。"
+msgstr ""
+"消息记录框将会逐例提示当前状态并计算标准差、记录运行时间，输出保存处理结果；"
+"如 :numref:`图 %s <experiment flow histogram>` 的统计直方图，也将于上述"
+"步骤结束后弹出。"
 
 #: ../../source/tutorial/tut_pipe.rst:112
 msgid "histogram for pixels distribution after prewitt and canny filters"
-msgstr "经prewitt和canny算子滤波后的像素分布直方图"
+msgstr "经prewitt和canny算子滤波后的像素统计直方图"
 
 #: ../../source/tutorial/tut_pipe.rst:114
 msgid ""
 "All experiment results will be collected into a persistence file titled "
 "`experiment_results.pyp` inplace."
-msgstr "所有实验结果将被整合到一个名为“experiment_results.pyp”的持久性本地文件中。"
+msgstr ""
+"而上述所有实验结果将会被持久化至一个名为“experiment_results.pyp”的本地文件中。"
 
 #: ../../source/tutorial/tut_pipe.rst:117
 msgid "_`Automation testing`"
-msgstr "_`自动化测试`"
+msgstr "自动测试框架"
 
 #: ../../source/tutorial/tut_pipe.rst:119
 msgid ""
@@ -179,13 +201,16 @@ msgid ""
 "this meta implementation :code:`funtest` is in the same namespace. It can"
 " test for informatics functions, unit and pipelines defined via this "
 "framework."
-msgstr "与自动化实验可以输出计算结果不同，自动化测试只记录退出代码。如果管道退出并引发异常，"
-"也会记录相关信息。与 :code:`experiments` 类似，在 :numref:`run auto experiment` 中，"
-"元实现 :code:`funtest` 在同一个namespace中。通过这个框架可以测试informatics的函数、单元和管道。"
+msgstr ""
+"自动化实验可以输出记录最终的结果，与其不同的时，自动化测试框架只记录程序的退"
+"出代码。如果测试用例引发了异常，则相关信息也会被捕获和记录。测试框架的调用"
+"与在 :numref:`代码 %s <run auto experiment>` 中的 :code:`experiments` 相类似，"
+"其元实现 :code:`funtest` 也位于同一个命名空间中。通过这个框架可以对informatics包装的函数、"
+"功能单元和管道开展测试。"
 
 #: ../../source/tutorial/tut_pipe.rst:129
 msgid "automation testing result for resize function"
-msgstr "重新缩放函数的自动化测试结果"
+msgstr "重采样函数的自动化测试结果"
 
 #: ../../source/tutorial/tut_pipe.rst:131
 #, python-format
@@ -193,8 +218,9 @@ msgid ""
 ":numref:`Figure %s <automation testing result>` is the test result for "
 ":code:`resize` function. Class type remains in *result* column. The cost "
 "time, arguments for each test item are also be recorded."
-msgstr " :numref:`图 %s <automation testing result>` 是 :code:`resize` 函数的测试结果。"
-"类别名称在 *result* 一列中。运行时间，每次测试的参数也被记录在其中。"
+msgstr ""
+":numref:`图 %s <automation testing result>` 是 :code:`resize` 函数的测试结果。"
+"输出数据的类型被记录在 *result* 一列里。每次测试的运行时间、运行参数也会被记录在其中。"
 
 #: ../../source/tutorial/tut_pipe.rst
 msgid "Authors"
@@ -202,7 +228,7 @@ msgstr "译者"
 
 #: ../../source/tutorial/tut_pipe.rst:136
 msgid "Chen Zhang"
-msgstr "Marin<381017759@qq.com>"
+msgstr "`Marin <381017759@qq.com>`_ ; Chen Zhang"
 
 #: ../../source/tutorial/tut_pipe.rst
 msgid "Version"

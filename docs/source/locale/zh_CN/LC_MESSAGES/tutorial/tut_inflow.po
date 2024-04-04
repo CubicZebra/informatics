@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Marin <381017759@qq.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,19 +22,20 @@ msgstr ""
 
 #: ../../source/tutorial/tut_inflow.rst:2
 msgid "_`Operations on file search and mapping`"
-msgstr "_`文件搜索以及映射操作`"
+msgstr "文件搜索及映射操作"
 
 #: ../../source/tutorial/tut_inflow.rst:4
 msgid ""
-"Most of the analysis occurs in data stored in the file system. The "
+"Most of the analysis occurs on data stored in the file system. The "
 "ability to accurately manipulate (primarily loading) these files is an "
 "essential skill. Accurately loading and manipulating files improves the "
 "overall efficiency of the process, as it ensures that the correct data is"
 " being used for analysis, reducing the risk of errors and "
 "inconsistencies."
 msgstr ""
-"大多数分析发生在存储在文件系统中的数据中。正确处理（主要是加载）这些文件的能力是一种基本技能。"
-"正确地加载和处理文件确保了用于分析的是正确的数据，减少错误与不一致的风险，可以提高整体工作效率。"
+"大部分分析都是针对存储在文件系统中的数据进行的。精确地对文件进行操作（主要是加载）的能力是"
+"一项基础技能。准确地对文件加载和操作可以提高整个流程的效率，它可以确保使用正确的数据进行"
+"分析，降低错误和不一致的风险。"
 
 #: ../../source/tutorial/tut_inflow.rst:9
 msgid ""
@@ -42,12 +43,13 @@ msgid ""
 " of the file structure and format, as well as size and complexity of the "
 "files being analyzed. Large or complex files can pose challenges in terms"
 " of processing power, memory usage, and time required for analysis."
-msgstr "文件处理的工程实现需要很好地理解文件的结构和格式，以及被分析文件的大小和复杂性。"
-"大型或复杂的文件可能在处理能力、内存使用和分析所需的时间方面带来挑战。"
+msgstr ""
+"文件操作的工程化实现需要充分了解文件结构和格式，以及所分析文件的大小及复杂程度。"
+"针对大型或复杂的文件的操作会在处理能力、内存使用和分析所需的时间方面带来挑战。"
 
 #: ../../source/tutorial/tut_inflow.rst:14
 msgid "_`Applying generator function`"
-msgstr "_`生成器功能的应用`"
+msgstr "应用生成器函数"
 
 #: ../../source/tutorial/tut_inflow.rst:16
 msgid ""
@@ -57,9 +59,10 @@ msgid ""
 "Compare to the case of :code:`iter2`, :code:`iter1` will increasingly "
 "occupy the cache until release after return, which readily results in "
 "memory leak if the scale of :code:`cases` is large enough."
-msgstr "对于持续流入的数据，内存开销是不得不考虑的一个问题 :numref:`generator function` 演示了"
-"通过两个不同的实现方法返回可迭代容器的逻辑。与 :code:`iter2` 中的例子相比， :code:`iter1` 会"
-"持续增加缓存占用，直到返回后释放为止，如果 :code:`cases` 足够大，很容易导致内存泄漏。"
+msgstr ""
+"对于持续流入的数据，内存开销是一个不得不考虑的一个问题。 :numref:`代码 %s <generator function>` 演示了"
+"实现返回一个可迭代容器的两种不同处理逻辑。与 :code:`iter2` 相比， :code:`iter1` 会"
+"持续增加缓存的占用，直到结果打包返回后才会被释放。如果 :code:`cases` 容器被撑到足够大，就很容易导致内存的泄漏。"
 
 #: ../../source/tutorial/tut_inflow.rst:21
 msgid "generator function"
@@ -72,8 +75,8 @@ msgid ""
 ":code:`iter3` can be seem as an another equivalent implementation for "
 ":code:`iter2`."
 msgstr ""
-"值得注意的是，Python中的元组推导会触发延迟求值。在这种情况下，将返回一个生成器对象。"
-"从上面的例子来看，:code:`iter3` 可以被看作是 :code:`iter2` 的一个等效实现"
+"值得注意的是，在Python中进行元组推导会触发延迟求值。种情况下，将返回一个生成器对象。"
+"从上面的例子来看， :code:`iter3` 可以被看作是 :code:`iter2` 的一个等效实现"
 
 #: ../../source/tutorial/tut_inflow.rst:45
 msgid "_`File searcher and folder relocation`"
@@ -85,8 +88,9 @@ msgid ""
 "of high-order function. Example of :numref:`file searcher` shows two "
 "different pipelines for searching image files with `jpg` or `jpeg` "
 "suffix, and for finding empty files."
-msgstr "为了通用性，搜索或过滤接口采用高阶函数形式设计。示例 :numref:`file searcher` 显示了"
-"两种不同的管道，用于搜索带有‘jpg’或‘jpeg’后缀的图像文件，以及查找空文件。"
+msgstr ""
+"考虑到通用性，搜索和过滤接口均采用了高阶函数的设计形式。 :numref:`代码 %s <file searcher>` 展示了"
+"两种不同的管道，分别用于搜索带有jpg或jpeg后缀的图像文件，以及查找系统中的空文件。"
 
 #: ../../source/tutorial/tut_inflow.rst:51
 msgid "file searcher"
@@ -102,16 +106,21 @@ msgid ""
 "shows an operation of reading images located in different file folders "
 "named using file format suffix (as shown in :ref:`example right side "
 "<file structure for JPG and BMP>`)."
-msgstr "有时候，同一个文件夹下的文件需要使用统一的处理方式（例如使用标签作为具有不同属性的数据的文件夹名称）。"
-"在这种情况下，文件重定位可以跳过冗余的文件操作。顺着 :numref:`file searcher` 中"
-"的 :code:`p1` , :numref:`folder relocation` 中的示例实现展示了一种读取位于不同文件夹中的"
-"后缀名不同的图像的操作（如 :ref:`右边例子 <file structure for JPG and BMP>` ）所示。"
+msgstr ""
+"有时，针对同一文件夹下的文件需要以一种统一的处理方式来进行处理（例如以所存文件的某"
+"些共有属性作为其存放目录名称标记的文件夹）。这种情况下，对文件夹的重定位能够"
+"绕开对文件的冗余操作。继续以 :numref:`代码 %s <file searcher>` 中"
+"的 :code:`p1` 管道为例， :numref:`代码 %s <folder relocation>` 中的案例实现，展示了"
+"某种针对位于以文件后缀格式来命名的不同文件夹中，对图像进行加载的操作实现"
+"（文件系统结构如 :ref:`右图 <file structure for JPG and BMP>` 所示）。"
 
 #: ../../source/tutorial/tut_inflow.rst:82
 msgid ""
 "Those two searchers can both be run, in desktop or hadoop distributed "
 "file systems. Refer their documentations for details."
-msgstr "这两个检索器都可以在单机或hadoop分布式文件系统中运行。具体信息请参考其官方文档。"
+msgstr ""
+"以上介绍的两个搜索器，都可以基于传统桌面系统，或者是以hadoop架构的分布式文件存储系统中正常运行。"
+"具体细节可以参阅其帮助文档。"
 
 #: ../../source/tutorial/tut_inflow.rst:85
 msgid "folder relocation"
@@ -119,7 +128,7 @@ msgstr "文件夹重定位"
 
 #: ../../source/tutorial/tut_inflow.rst:94
 msgid "_`Universal data loader`"
-msgstr "_`通用数据加载器`"
+msgstr "通用数据加载器"
 
 #: ../../source/tutorial/tut_inflow.rst:96
 msgid ""
@@ -128,8 +137,9 @@ msgid ""
 " with different dataset. Simple combination and definition can make "
 "pipeline be capable for loading any type of data:"
 msgstr ""
-":ref:`函数式编程 <Abstraction for behaviors>` 的魅力在于用函数来定义行为。"
-"处理不同的数据集具有更大的可扩展性。简单的组合和定义可以使管道能够加载任何类型的数据："
+":ref:`函数式编程 <Abstraction for behaviors>` 的魅力在于利用函数来制定对数据操作的具体行为。"
+"这使得在处理不同的数据集时，代码逻辑具备更大的可扩展性。通对简单地对函数进行组合，以及定义相应的操作逻辑，"
+"使得管道能够胜任加载任何类型的数据："
 
 #: ../../source/tutorial/tut_inflow.rst:100
 msgid "meta data loader"
@@ -141,7 +151,7 @@ msgstr "译者"
 
 #: ../../source/tutorial/tut_inflow.rst:116
 msgid "Chen Zhang"
-msgstr "Marin<381017759@qq.com>"
+msgstr "`Marin <381017759@qq.com>`_ ; Chen Zhang"
 
 #: ../../source/tutorial/tut_inflow.rst
 msgid "Version"
