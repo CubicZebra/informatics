@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 ":ref:`数据变换 <Data transform and identification>` 可以决定后续模型"
 "的性能上界，因此十分重要。根据 :ref:`特征定义 <How we define features>` 里的描述，"
-"一个切实有效的数据效换，能够将原始数据转变为有助于目标达成的最小化信息表达。数据经过特定变换的增强，"
+"一个切实有效的数据变换，能够将原始数据转变为有助于目标达成的最小化信息表达。数据经过特定变换的增强，"
 "将会使得其 :ref:`信噪比 <SNR>` 得到提高，基于此训练而得到的模型也同样期待具备高的可解释性与泛化性能。"
 
 #: ../../source/tutorial/tut_aug.rst:15
@@ -146,7 +146,7 @@ msgid ""
 "find the solution to a problem, relying on repeated random sampling."
 msgstr ""
 ":ref:`蒙特卡罗方法 <Monte Carlo method>` 是一种数值方法，常用于解决利用解析类方法所"
-"难以对应的问题。它的其中优势之一，是可以利用重复的随机抽样来估计函数的近似期望，以进一步找到问题"
+"难以应对的问题。它的一大优势，是可以利用重复的随机抽样来估计函数的近似期望，以便进一步找到问题"
 "的概率解。"
 
 #: ../../source/tutorial/tut_aug.rst:62

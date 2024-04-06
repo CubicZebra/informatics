@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_trans.rst:2
 msgid "_`Data transform and identification`"
-msgstr "数据的转换与标定"
+msgstr "数据的变换与标定"
 
 #: ../../source/tutorial/tut_trans.rst:4
 msgid ""
@@ -139,8 +139,8 @@ msgid ""
 "precisely allocate each basin for initial flooding seed."
 msgstr ""
 "如 :numref:`图 %s <labeling segmentation>` 所示，在可能出现两个"
-"或多个重叠区域的情况下，为标定每个个体，适当配置距离变换结合连通域的"
-"算法管道，每个低洼区域将被分配到泛洪种子以用作初始化。"
+"或多个重叠区域的情况下，为标定每个个体，适当配置测地距离变换结合连通域的"
+"算法管道，每个低洼地势将被分配到泛洪种子以用作初始化。"
 
 #: ../../source/tutorial/tut_trans.rst:106
 msgid "labeling segmentation through topography"

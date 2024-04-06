@@ -50,8 +50,8 @@ msgid ""
 "for trial may seem feasible, it often leads to a chaotic outcome."
 msgstr ""
 "数据处理类似于装配流水线，其中步骤数量的增多会导致能影响最终结果的因素呈指数级增长。"
-"虽然人工管控所有流程节点中的参数可选项直观上似乎可行，但（随着系统复杂度的上升）"
-"最后却往往会导致其结果的混程不堪。"
+"虽然手动管控所有流程节点中的参数可选项直观上似乎可行，但（随着系统复杂度的上升）"
+"最后却往往会导致其结果的混乱不堪。"
 
 #: ../../source/tutorial/tut_pipe.rst:20
 msgid ""
@@ -63,7 +63,7 @@ msgid ""
 "complex tasks."
 msgstr ""
 "因此，使用统一的协议或编程规范来进行测试开发，不仅在对Python生态里分属不同领域、不同团"
-"队所开发的各种数据处理工具的集成上具有优势，而且利用功能化的模组也缩短了从处理流程的"
+"队所开发的各种数据处理工具的集成上具备优势，而且利用功能化的模组也缩短了从处理流程的"
 "搭建，到进一步开发工程化应用的所需时间。下面的例子演示了如何对复杂任务建立自动化的处理管道。"
 
 #: ../../source/tutorial/tut_pipe.rst:26
@@ -128,7 +128,7 @@ msgid ""
 " on a natural image:"
 msgstr ""
 "另外，这里还提供了自动化计算的元实现。"
-"下面的案例流程，是比较在自然图像上应用全局prewitt及canny滤波器的区别："
+"下面的案例流程，是比较在自然图像上应用全局Prewitt及康尼滤波器的区别："
 
 #: ../../source/tutorial/tut_pipe.rst:59
 msgid "auto experiment pipeline"
@@ -169,7 +169,7 @@ msgstr "运行自动实验"
 #, python-format
 msgid ""
 "Prompt will info the current condition and calculated standard deviation, "
-" running time, and the final result case by case; then the histogram "
+"running time, and the final result case by case; then the histogram "
 "figure will be popped up like :numref:`Figure %s <experiment flow "
 "histogram>`."
 msgstr ""
@@ -179,7 +179,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_pipe.rst:112
 msgid "histogram for pixels distribution after prewitt and canny filters"
-msgstr "经prewitt和canny算子滤波后的像素统计直方图"
+msgstr "经Prewitt和康尼算子滤波后的像素统计直方图"
 
 #: ../../source/tutorial/tut_pipe.rst:114
 msgid ""
@@ -219,7 +219,7 @@ msgid ""
 ":code:`resize` function. Class type remains in *result* column. The cost "
 "time, arguments for each test item are also be recorded."
 msgstr ""
-":numref:`图 %s <automation testing result>` 是 :code:`resize` 函数的测试结果。"
+":numref:`图 %s <automation testing result>` 是针对 :code:`resize` 函数的测试结果。"
 "输出数据的类型被记录在 *result* 一列里。每次测试的运行时间、运行参数也会被记录在其中。"
 
 #: ../../source/tutorial/tut_pipe.rst
