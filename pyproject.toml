@@ -12,7 +12,9 @@ maintainers = [
 ]
 keywords = [
     'mathematical statistics',
+    'Bayesian inference',
     'artificial intellegence',
+    'amonly detection',
     'scientific calculation',
     'scientific computation',
     'computer vision',
