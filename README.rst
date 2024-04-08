@@ -2,6 +2,9 @@
 informatics
 ===========
 
+.. CodeFactor for documentation only; sphinx use sphinx-inline-tabs ext;
+   https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_0.jpg
+
 .. image:: https://img.shields.io/pypi/pyversions/informatics
    :alt: PyPI - Python Version
 
@@ -12,6 +15,10 @@ informatics
 .. image:: https://img.shields.io/github/license/CubicZebra/informatics
    :target: https://github.com/CubicZebra/informatics/blob/main/LICENSE
 
+.. image:: https://www.codefactor.io/repository/github/cubiczebra/informatics/badge
+   :target: https://www.codefactor.io/repository/github/cubiczebra/informatics
+   :alt: CodeFactor
+
 .. image:: https://img.shields.io/github/commit-activity/m/CubicZebra/informatics
    :alt: GitHub commit activity
 
@@ -21,8 +28,6 @@ informatics
 
 .. image:: https://img.shields.io/pypi/dm/informatics
    :alt: PyPI - Downloads
-
-.. https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_0.jpg
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_font.jpg
    :name: informatics logo
