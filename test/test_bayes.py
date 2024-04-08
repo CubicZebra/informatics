@@ -30,7 +30,7 @@ _sp_cls1 = np.array([st.multinomial.rvs(30, _p3 + _p4) for _ in range(400)])
 _sp_cls2 = np.array([st.multinomial.rvs(30, _p4 + _p3) for _ in range(400)])
 _sparse = np.vstack([_sp_cls1, _sp_cls1])
 coo_mat = _as_coo_mat(_sparse)
-csr_mat = coo_mat.tocsr(copy=True)
+csr_mat = coo_mat.tocsr(copy=True)  # use this during dev
 csc_mat = coo_mat.tocsc(copy=True)
 bsr_mat = coo_mat.tobsr(copy=True)
 dia_mat = coo_mat.todia(copy=True)
@@ -55,6 +55,11 @@ nb_args = {
     'validation_rate': [0.1, 0.2],
     'model_lightweight': [True, False]
 }
+
+
+sys = __import__('sys')
+_tp, _size = np.array([(type(_s), sys.getsizeof(_s)) for _s in nb_args.get('data')], dtype=object).T
+_tp, _size = np.array([_.split('.')[-1].split("'")[0] for _ in _tp.astype(str)]), _size.astype(int)  # 64218 vs 48
 
 
 if not tested:
