@@ -6,10 +6,11 @@ _`Option digitmed`
 Description
 -----------
 
-Medical image related tools (data mainly in :ref:`DICOM <DICOM>` protocol). Operations include regrouping and
-re-sorting slices, read meta information, link to other type of DICOM files and etc. In addition, measurement
-for images as feature extraction is also supported. Dependencies of `SimpltITK <http://simpleitk.org>`_ and
-`pydicom <https://github.com/pydicom/pydicom>`_ are required.
+Medical image related tools (data mainly in :ref:`DICOM <DICOM>` or :ref:`NIfTI <NIfTI>` protocol). For DICOM,
+Operations include regrouping and re-sorting slices, read meta information, link to other type of DICOM files
+and etc. In addition, measurement for images as feature extraction is also supported. For NIfTI image, the
+relation between pixel and voxel space requires computation. Dependencies of `SimpltITK <http://simpleitk.org>`_
+and `pydicom <https://github.com/pydicom/pydicom>`_ are required.
 
 Namespace of this module is mainly in ``info.toolbox.digitmed.rebuild``. For convenience in practice, use main
 entry of ``info.med``.
@@ -23,6 +24,8 @@ entry of ``info.med``.
    dcm_attr_loader
    dcm_constructor
    dcm_regroup
+   NIfTI
+   nii_constructor
    radiomics_features
 
 Docstrings
@@ -42,6 +45,11 @@ Docstrings
    :no-value:
 
 .. autodata:: dcm_regroup
+   :no-value:
+
+.. autoclass:: NIfTI
+
+.. autodata:: nii_constructor
    :no-value:
 
 .. autodata:: radiomics_features
