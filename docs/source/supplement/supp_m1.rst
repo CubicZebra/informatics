@@ -98,6 +98,8 @@ _`Acronyms`
 
 * _`DICOM`: Digital Imaging and Communications in Medicine
 
+* _`NIfTI`: Neuroimaging Informatics Technology Initiative
+
 * _`I.I.D.`: Independent and Identically Distributed
 
 * _`DoF`: Degree of Freedom
