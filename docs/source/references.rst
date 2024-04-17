@@ -186,6 +186,12 @@ _`References`
    _`[Robert1999]` Robert, C. P., Casella, G., & Casella, G. (1999). Monte Carlo statistical methods (Vol. 2).
    New York: Springer.
 
+   _`[Ramirez1991]` Ramirez, D. E., & Jensen, D. R. (1991). Misspecified T2 tests. II. series expansions.
+   Communications in Statistics - Simulation and Computation, 97–108. https://doi.org/10.1080/03610919108812941
+
+   _`[Holst2011]` Holst, E., & Kulahci, M. (2011). Hotelling’s T 2–an introduction to theory and applications. In
+   33rd Symposium in Applied Statistics.
+
 ----
 
 :Authors: Chen Zhang
