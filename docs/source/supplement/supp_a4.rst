@@ -14,13 +14,13 @@ _`Parameters`
 
 Most of probabilities, discrete or continuous ones, can be uniquely described using several numbers. Those
 numbers are commonly expressed by Greek letter. These numbers are called parameters of distribution. For examples,
-uni-variate gaussian is expressed as :math:`N(\mu, \sigma)`, beta distribution is expressed as
+uni-variate gaussian is expressed as :math:`\mathcal{N}(\mu, \sigma)`, beta distribution is expressed as
 :math:`\mathrm{Beta}(\alpha, \beta)`.
 
 Generally, those numbers are unknown variate. Customarily it uses hat :math:`\hat{a}` as example, to describe a
 certain calculation rule to obtained approximated result for the parameter :math:`a` from some data points (samples).
 Or in terminology, *parameter estimation*. As example, we assume some data sampled from a certain uni-variate
-gaussian :math:`N(\mu, \sigma)`, the parameter :math:`\mu` is actually unknown, however, we can estimate via
+gaussian :math:`\mathcal{N}(\mu, \sigma)`, the parameter :math:`\mu` is actually unknown, however, we can estimate via
 :math:`\hat{\mu} = (\sum_{i=1}^n x_i)/n`.
 
 _`Kernel and scale`
@@ -53,9 +53,9 @@ _`Parametric and non-parametric`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In statistics, there is a system with strong assumption relying on probability distribution, called *parametric*
-methods in terminology. We *believe* the data sourced from a uni-variate gaussian :math:`N(\mu, \sigma)`, therefore
-we use :math:`\hat{\mu} = \mathbb{E}[X]` and :math:`\hat{\sigma^2} = \mathbb{E}[X^2] - (\mathbb{E}[X])^2` to
-make estimation. It works well unless the priori belief is actually guaranteed.
+methods in terminology. We *believe* the data sourced from a uni-variate gaussian :math:`\mathcal{N}(\mu, \sigma)`,
+therefore we use :math:`\hat{\mu} = \mathbb{E}[X]` and :math:`\hat{\sigma^2} = \mathbb{E}[X^2] - (\mathbb{E}[X])^2`
+to make estimation. It works well unless the priori belief is actually guaranteed.
 
 *Non-parametric*, correspondingly, is the method to focus the rank of values, rather than the values themselves.
 Considering sets with two treatments :math:`A = \{1, 2, 3, 4, 5\}` and :math:`B = \{1, 2, 3, 4, 5000\}`,
@@ -638,14 +638,14 @@ continuity of probability distributions, and applied whether continuity or not o
       .. math::
          :label: statistic_es
 
-         s  = \sqrt{n_1+n_2} \cdot (g_1-g_2) \sim N(\boldsymbol{0}, \boldsymbol{\Omega})
+         s  = \sqrt{n_1+n_2} \cdot (g_1-g_2) \sim \mathcal{N}(\boldsymbol{0}, \boldsymbol{\Omega})
 
       Where :math:`n_1` and :math:`n_2` are numbers of observations of two groups. :math:`g` is the characteristic
       function defined as Fourier transform of observed distribution :math:`F`
       (:math:`g_i = \int_{-\inf}^{\inf} e^{itx} dF_{n_i}(x) = n_i^{-1} \sum_{j=1}^{n_i} e^{itX_{ij}}`). The item
       :math:`g(X_{ij}) = e^{itX_{ij}}` is expressed via Euler number as 4-dimensional vector. This statistic will
-      asymptotically approximates to a multivariate gaussian :math:`N(\boldsymbol{0}, \boldsymbol{\Omega})`. For
-      :math:`\boldsymbol{\Omega}`, it can be estimated as
+      asymptotically approximates to a multivariate gaussian :math:`\mathcal{N}(\boldsymbol{0}, \boldsymbol{\Omega})`.
+      For :math:`\boldsymbol{\Omega}`, it can be estimated as
       :math:`\hat{\boldsymbol{\Omega}}=\sum_{i=1}^{2}[(n_{i}-1)(\sum_{i=1}^{2}n_i)/n_{i}^2]\mathrm{cov}\{g(X_{ij})\}`.
 
 _`Mann–Whitney U test`
