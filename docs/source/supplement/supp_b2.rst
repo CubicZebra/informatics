@@ -85,13 +85,14 @@ For new observation :math:`\boldsymbol{x}^\prime`, define its T\ :sup:`2` statis
    deviation is :math:`n`, while if they are of samples from certain population, this value will be :math:`n-1`)
 
 Where :math:`N` is the number of observations, and :math:`M` is the dimensionality. Now consider the condition
-:math:`N \geq M`, if :math:`N \gg M`, even though there might be duplicated samples, the full rank property of
-:math:`\boldsymbol{\Sigma}` can still be guaranteed. Thus, the item of :math:`(\boldsymbol{x}^\prime -
+:math:`N \geq M` which can be easily achieved through data preparation or dimension reduction, the full rank
+property of :math:`\boldsymbol{\Sigma}` can be established. Thus, the item of :math:`(\boldsymbol{x}^\prime -
 \hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})` in
-:eq:`T2 statistic` is actually the sum of square with :math:`M` degree of freedom.
+:eq:`T2 statistic` is actually the sum of squares with :math:`M` degree of freedom.
 
-For the distribution which can hardly be expressed analytically, we can use Jacobian transformation formula.
-Its :math:`M`-variate version of probability density function can be noted as
+For new variable :math:`z` as function of :math:`z = f(\boldsymbol{x}) \in \mathbb{R}^1`, the Jacobian transformation
+is generally used for calculation for its probability mass or density. In this case, the :math:`M`-variate version
+of probability density function can be noted as:
 
 .. math::
    :label: Jacobian of probability density function
@@ -107,6 +108,59 @@ density function of variable :math:`u = c(x_1^2 + x_2^2 + \cdots + x_M^2)` is:
 
    q(u) = \int_{-\infty}^{\infty} dx_1 \cdots dx_M \delta (u - c(x_1^2 + \cdots + x_M^2)) \prod_{n=1}^M
    \mathcal{N} (x_n | 0, \sigma^2)
+
+It can utilize the :math:`M`-dimensional spherical coordinates to make simplification for
+:eq:`probability density function of u`, the infinitesimal of :math:`dx_1 \cdots dx_M` can be equivalently replaced
+by the :math:`dr \cdot r^{M-1}dS_M` (:math:`dr` and :math:`r^{M-1}dS_M` are infinitesimals of thickness, and surface
+area in :math:`M`-dimensional sphere respectively). Let :math:`v = cr^2 = c \sum_{i=1}^{M} x_i^2`, :math:`dr` will
+be :math:`d(v/c)^{1/2} = (1/2c) \cdot (v/c)^(1/2) dv`, the :eq:`probability density function of u` will be:
+
+.. math::
+   :label: integral transformation of u
+
+   q(u) = \int_{0}^{\infty} \frac{dv}{2c} (\frac{v}{c})^{(M/2)-1} \delta (u-v) \frac{1}{(2 \pi
+   \sigma^2)^{M/2}} \exp(-\frac{v}{2c\sigma^2}) \int dS_M
+
+For the last item :math:`\int dS_M`, it is the surface area of :math:`M`-dimensional sphere with :math:`r = 1`.
+Consider the property of :ref:`high dimensional sphere <high dimensional sphere>`.
+:math:`\int S_M` is actually :math:`(2\pi^{M/2})/\Gamma(M/2)`. Because for :math:`\delta` impulse,
+:math:`\int dx \delta (x - b) f(x) = \int dx \delta (b - x) = f(b)`, the :eq:`integral transformation of u` can be
+finally simplified as :eq:`final simplification of u`:
+
+.. note::
+
+   .. _`high dimensional sphere`:
+
+   For a :math:`K`-dimensional sphere with radius of :math:`R`, its volume is:
+
+   .. math::
+      :label: volume of K dimensional sphere
+
+      V_K = \frac{\pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2}+1)} R^K
+
+   Its surface area will be one dimensional degenerated like:
+
+   .. math::
+      :label: surface of K dimensional sphere
+
+      S_{K-1} = \frac{2 \pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2})} R^{K-1}
+
+.. math::
+   :label: final simplification of u
+
+   q(u) &= \int_0^{\infty} dv \delta (u-v) \frac{1}{2c} (\frac{v}{c})^{\frac{M}{2}-1} (2 \pi \sigma^2)^{-\frac{M}{2}}
+   \exp (-\frac{v}{2 c \sigma^2}) \frac{2 \pi^{\frac{M}{2}}}{\Gamma(M/2)} \\
+   &= \int_0^{\infty} dv \delta (u-v) \frac{1}{2 c \sigma^2 \Gamma(M/2)} (\frac{v}{2 c \sigma^2})^{\frac{M}{2}-1}
+   \exp (-\frac{v}{2 c \sigma^2}) \\
+   &= \frac{1}{2 c \sigma^2 \Gamma(M/2)} (\frac{u}{2 c \sigma^2})^{\frac{M}{2}-1} \exp (-\frac{u}{2 c \sigma^2})
+   \sim \chi^2 (u | M, c \sigma^2)
+
+Here deduced the most important property: the probability density of sum of squares, is come from a certain
+:math:`\chi^2` distribution with :math:`M` degrees of freedom, and :math:`c \sigma^2` as scale. For the item
+:math:`(\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime -
+\hat{\boldsymbol{\mu}})`, it uses unbias estimation as standardization while no spatial rescaling for
+:math:`\boldsymbol{x}^\prime`, thus :math:`c = \sigma^2 = 1`. Therefore, the final anomaly threshold is determined
+through the maximum likelihood estimation of :math:`\chi^2 (x | M, 1)`.
 
 _`Naive bayes`
 ~~~~~~~~~~~~~~
