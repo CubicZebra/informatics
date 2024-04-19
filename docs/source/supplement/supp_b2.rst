@@ -24,17 +24,17 @@ means in data, in aspect of binary classification task, its precondition for usi
 datasets have their respective patterns, and their representations are possibly clustered in high dimension space
 individually.
 
-To concrete this abstract concept, imagine two though experiments: training classifiers for distinguishing images of
+To concrete this abstract concept, imagine two thought experiments: training classifiers for distinguishing images of
 cat and dog, and for distinguishing images of cat and no cat. For the former, obviously you know what those two
 species look like, but for the later, can you image a precise definition for the class *no cat*? A dog can be no cat,
-however a book, a pen, a cup can also be *no cat*. Either cat or dog, is narrow concept with explicit definition,
-abstraction for these narrow concepts is also the suggested scope for practice of current :ref:`AI <AI>` approaches.
-But for *no cat*, it is a comparatively broader concept more than a clear definition.
+however a book, a pen, a cup can also be called *no cat*. Either cat or dog, is narrow concept with explicit
+definition, abstraction for these narrow concepts is also the suggested scope for practice of current :ref:`AI <AI>`
+approaches. But for *no cat*, it is a comparatively broader concept more than a clear definition.
 
 Thus, for summary using the following :numref:`Figure %s <classification and anomaly>`, the most difference between
 binary classification and anomaly determination, is that for binary classification, it actually calculates the most
 possible margin between two clusters, however for anomaly determination, it only hypotheses the existence of one
-cluster, then using certain approaches to determine tis boundary of this cluster.
+cluster, then using certain approaches to determine the boundary of this cluster.
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/classification_and_anomaly_diff.jpg
    :name: classification and anomaly
@@ -43,16 +43,16 @@ cluster, then using certain approaches to determine tis boundary of this cluster
 
    difference between binary classification and anomaly determination
 
-Make confusion on those two types of tasks seems ridiculous, but take places over and over for many junior data
-analysts. They uses classification algorithm frames to train models expected to make distinguishing on *stable*
-and *unstable* signals, on *healthy* and *unhealthy* cases, or such like. They integrated expertise, struggled in
-dealing with data cleaning and labeling, trained and validated the models. Nevertheless, once observations, with
-new patterns in comparison to the ones in their training data, appear, the performance of the models decline, hence
-new model is in urgent. All things happen just like an infinite loop.
+Make confusion on those two types of tasks seems ridiculous, but this mistake takes place over and over on many
+junior data analysts. They uses classification algorithm frames to train models expected to make distinguishing
+on *stable* and *unstable* signals, on *healthy* and *unhealthy* cases, or such like. They integrated expertise,
+struggled in dealing with data cleaning and labeling, trained and validated the models. Nevertheless, once
+observations, with new patterns in comparison to the ones embedded in their training data, appear, the performance
+of the models decline, hence new model is in urgent. All things happen just like in an infinite loop.
 
 Therefore, the correct understanding and definition of the problem is a prerequisite and crucial step in
-problem-solving. If our analytical task tends to establish patterns on one side, various methods of anomaly
-detection will excel in such tasks.
+problem-solving. If our analytical data tends to establish one side pattern, various methods of anomaly detection
+will excel in such tasks.
 
 _`Hotelling T-squared`
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -73,8 +73,6 @@ For new observation :math:`\boldsymbol{x}^\prime`, define its T\ :sup:`2` statis
    T^2 = \frac{N-M}{(N+1)M} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1}
    (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}}) \sim F(M, N-M)
 
-Where :math:`N` is the number of observations, and :math:`M` is the dimensionality.
-
 .. note::
 
    .. _`unbias estimation`:
@@ -84,7 +82,31 @@ Where :math:`N` is the number of observations, and :math:`M` is the dimensionali
    these samples. An identical statistic may differ on population and samples. It called bias in terminology.
    The unbiased estimation is designed in consideration of those impacts in order to reduce the bias of samples
    from population. (e.g. for :math:`n` observations, if they are of population, the denominator of its standard
-   deviation is :math:`n`, while if they are of samples from certain population, :math:`n-1`)
+   deviation is :math:`n`, while if they are of samples from certain population, this value will be :math:`n-1`)
+
+Where :math:`N` is the number of observations, and :math:`M` is the dimensionality. Now consider the condition
+:math:`N \geq M`, if :math:`N \gg M`, even though there might be duplicated samples, the full rank property of
+:math:`\boldsymbol{\Sigma}` can still be guaranteed. Thus, the item of :math:`(\boldsymbol{x}^\prime -
+\hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})` in
+:eq:`T2 statistic` is actually the sum of square with :math:`M` degree of freedom.
+
+For the distribution which can hardly be expressed analytically, we can use Jacobian transformation formula.
+Its :math:`M`-variate version of probability density function can be noted as
+
+.. math::
+   :label: Jacobian of probability density function
+
+   q(z) = \int_{-\infty}^{\infty} d\boldsymbol{x} \delta (z-f(x^{(1)}, \dots, x^{(M)})) p(x_1, \dots, x_M)
+
+Where :math:`\delta` is Dirac's delta function. Now we assume there is :math:`M` samples independently derived from
+:math:`\mathcal{N}(0, \sigma^2)` noted as :math:`x_1, \dots, x_M`, and a coefficient :math:`c > 0`, the probability
+density function of variable :math:`u = c(x_1^2 + x_2^2 + \cdots + x_M^2)` is:
+
+.. math::
+   :label: probability density function of u
+
+   q(u) = \int_{-\infty}^{\infty} dx_1 \cdots dx_M \delta (u - c(x_1^2 + \cdots + x_M^2)) \prod_{n=1}^M
+   \mathcal{N} (x_n | 0, \sigma^2)
 
 _`Naive bayes`
 ~~~~~~~~~~~~~~
