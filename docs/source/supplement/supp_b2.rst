@@ -138,7 +138,7 @@ finally simplified as :eq:`final simplification of u`:
 
       V_K = \frac{\pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2}+1)} R^K
 
-   Its surface area will be one dimensional degenerated like:
+   Its surface area will be one dimension degenerated as the form of:
 
    .. math::
       :label: surface of K dimensional sphere
@@ -162,8 +162,89 @@ Here deduced the most important property: the probability density of sum of squa
 :math:`\boldsymbol{x}^\prime`, thus :math:`c = \sigma^2 = 1`. Therefore, the final anomaly threshold is determined
 through the maximum likelihood estimation of :math:`\chi^2 (x | M, 1)`.
 
-_`Naive bayes`
-~~~~~~~~~~~~~~
+_`Empirical distribution and neighbors`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In spite of concision and lightweight, Hotelling T\ :sup:`2` sometime shows insufficient accuracy due to its
+strong assumption on statistical distribution. Once the collected data is not as sufficient to satisfy the
+underlying conditions like :math:`F` or :math:`\chi^2` distributions, this method hits possible the ceiling.
+
+Here introduce a :ref:`non-parametric <Parametric and non-parametric>` concept of empirical distribution which
+is defined as:
+
+.. math::
+   :label: empirical distribution
+
+   p_{\mathrm{emp}} (\boldsymbol{x} | \boldsymbol{x}^{(1)}, \dots, \boldsymbol{x}^{(N)}) = \frac{1}{N} \sum_{n=1}^N
+   \delta (\boldsymbol{x} - \boldsymbol{x}^{(n)})
+
+It is a probability density function because for any :math:`\boldsymbol{x} \in \mathbb{R}^M`, its
+:math:`p_{\mathrm{emp}}` value in :eq:`empirical distribution` is equal or greater than 1, while
+:math:`\int p_{\mathrm{emp}} d\boldsymbol{x} = 1`. For any point :math:`\boldsymbol{x}^\prime in \mathbb{R}^M`, define
+its neighbor a :math:`M`-dimensional sphere with radius :math:`\epsilon`, according to :eq:`volume of K dimensional sphere` its volume will be
+:math:`V_M (\boldsymbol{x}^\prime, \epsilon) = (\epsilon^M \pi^{M/2}) / \Gamma(M/2 + 1) = C \cdot \epsilon^M`, where
+:math:`C` is an :math:`\epsilon` independent constant.
+
+Therefore in empirical distribution, the probability of that :math:`\boldsymbol{x}^\prime` will be
+:math:`p (\boldsymbol{x}^\prime) = k/(N \cdot V_M (\boldsymbol{x}^\prime, \epsilon))`, :math:`k` is the number of
+existing data from :math:`x_1` to :math:`x_N` inside the :math:`V_M (\boldsymbol{x}^\prime, \epsilon))` sphere.
+The anomaly statistic of :math:`\boldsymbol{x}^\prime` is:
+
+.. math::
+   :label: anomaly statistic on empirical distribution
+
+   a(\boldsymbol{x}^\prime) = - \ln p (\boldsymbol{x}^\prime) = - \ln k + M \ln \epsilon + C^\prime
+
+Where :math:`C^\prime` is a constant which independent with :math:`k`, and :math:`\epsilon`. The lower the
+:math:`k` in condition of fixed :math:`\epsilon`, or the greater the :math:`\epsilon` in condition of fixed
+:math:`k`, the less probability of :math:`\boldsymbol{x}^\prime` as anomalous instance. It is not difficult to
+imagine, if we modeled a certain dataset :math:`D = \{\boldsymbol{x}_1, \dots, \boldsymbol{x}_N\}` with almost
+normal observations, for given radius :math:`\epsilon`, the more similar data points distributed inside the
+:math:`V_M` of a new observation, the higher tendency of no anomaly; while for given :math:`k`, if a new observation
+will require greater radius :math:`\epsilon`, it means the higher bias this new observation distributed from
+the original :math:`D`, so it is safe to say it, anomaly like.
+
+We can also back the topic to binary classification. If we use :math:`y=0` and :math:`y=1` to label the classes of
+normal and anomaly, respectively, the anomaly statistic can be noted as:
+
+.. math::
+   :label: anomaly statistic of binary classification
+
+   a (\boldsymbol{x}^\prime) = \ln \frac{p(\boldsymbol{x}^\prime | y=1, D)}{p(\boldsymbol{x}^\prime | y=0, D)}
+
+Consider the bayes formula:
+
+.. math::
+   :label: bayes formula in anomaly statistic
+
+   p(\boldsymbol{x}^\prime|y=i, D) = \frac{p(y=i |\boldsymbol{x}^\prime, D) p(\boldsymbol{x}^\prime, D)}{p(y=i, D)}
+   = \frac{N^i (\boldsymbol{x}^\prime)}{k} \frac{1}{\pi^i} p(\boldsymbol{x}^\prime, D)
+
+The :math:`N^i (\boldsymbol{x}^\prime) / k` corresponds to :math:`p (y=i | \boldsymbol{x}^\prime, D)` that for
+:math:`k` neighbors of :math:`\boldsymbol{x}^\prime`, the number of data points in :math:`D` with label of
+:math:`y=i`; While the :math:`\pi^i` corresponds to the fraction of :math:`y=i` among total data points. Thus, the
+:eq:`anomaly statistic of binary classification` can be further simplified into:
+
+.. math::
+   :label: simplification of anomaly statistic of binary classification
+
+   a (\boldsymbol{x}^\prime) = \ln \frac{\pi^0 N^1 (\boldsymbol{x}^\prime)}{\pi^1 N^0 (\boldsymbol{x}^\prime)}
+
+For method using neighbor data points, it needs to calculate the distance. The definition of distance measure for
+this type of method is the crucial step since it matters how data points organized and distributed, for further
+analytics. Customarily, people use Euclidean distance in original space (e.g. for :math:`\boldsymbol{a}` and
+:math:`\boldsymbol{b}`,
+:math:`d^2 (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a}-\boldsymbol{b})^T(\boldsymbol{a}-\boldsymbol{b})`).
+Or for some algorithm frames, the order of norm has been design as an optional argument as callback for distance
+computing, however still in original space.
+
+From former deduction it is cleared how neighbors distributed makes difference on the accuracy of this type of
+method. Therefore, the performance ceil for this type of method, depends seldom on the order of norm we used to
+calculate the distance, it indeed relies on whether we can obtain a space, that data points with same labels can
+as clustered as possible, which ones with different labels can be separated.
+
+_`Bayesian and mixture Gaussian`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 text here
 
