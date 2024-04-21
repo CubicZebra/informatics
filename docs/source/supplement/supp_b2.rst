@@ -180,7 +180,7 @@ is defined as:
 
 It is a probability density function because for any :math:`\boldsymbol{x} \in \mathbb{R}^M`, its
 :math:`p_{\mathrm{emp}}` value in :eq:`empirical distribution` is equal or greater than 1, while
-:math:`\int p_{\mathrm{emp}} d\boldsymbol{x} = 1`. For any point :math:`\boldsymbol{x}^\prime in \mathbb{R}^M`, define
+:math:`\int p_{\mathrm{emp}} d\boldsymbol{x} = 1`. For any point :math:`\boldsymbol{x}^\prime \in \mathbb{R}^M`, define
 its neighbor a :math:`M`-dimensional sphere with radius :math:`\epsilon`, according to :eq:`volume of K dimensional sphere` its volume will be
 :math:`V_M (\boldsymbol{x}^\prime, \epsilon) = (\epsilon^M \pi^{M/2}) / \Gamma(M/2 + 1) = C \cdot \epsilon^M`, where
 :math:`C` is an :math:`\epsilon` independent constant.
@@ -230,18 +230,31 @@ The :math:`N^i (\boldsymbol{x}^\prime) / k` corresponds to :math:`p (y=i | \bold
 
    a (\boldsymbol{x}^\prime) = \ln \frac{\pi^0 N^1 (\boldsymbol{x}^\prime)}{\pi^1 N^0 (\boldsymbol{x}^\prime)}
 
-For method using neighbor data points, it needs to calculate the distance. The definition of distance measure for
-this type of method is the crucial step since it matters how data points organized and distributed, for further
-analytics. Customarily, people use Euclidean distance in original space (e.g. for :math:`\boldsymbol{a}` and
-:math:`\boldsymbol{b}`,
+For method using neighbor data points, it requires computing and sort the distance. The distance measure of
+neighbor related method is pre-determined. Customarily, people use Euclidean distance in original space
+(e.g. for :math:`\boldsymbol{a}` and :math:`\boldsymbol{b}`,
 :math:`d^2 (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a}-\boldsymbol{b})^T(\boldsymbol{a}-\boldsymbol{b})`).
-Or for some algorithm frames, the order of norm has been design as an optional argument as callback for distance
-computing, however still in original space.
+Or for some algorithm frames, the order of norm has also been designed as an optional callback for distance
+measurement. Whatever norm order was defined, the calculation of distance takes places in original Cartesian
+coordinate system.
 
-From former deduction it is cleared how neighbors distributed makes difference on the accuracy of this type of
-method. Therefore, the performance ceil for this type of method, depends seldom on the order of norm we used to
-calculate the distance, it indeed relies on whether we can obtain a space, that data points with same labels can
-as clustered as possible, which ones with different labels can be separated.
+Based on the former discussion, it is cleared how neighbors distributed makes difference on the accuracy of neighbor
+related method. Therefore, the performance ceil for this algorithm, depends seldom on norm order, it indeed relies
+on whether we can obtain a space, that data points with same labels can as clustered as possible, while ones with
+different labels can be separated. From :ref:`previous section <About matrix>` we know the matrix, or transformation
+means certain operation(s) on the original (Cartesian) space. Here we introduce the
+:ref:`Riemannian metric <Riemannian metric>`, to fulfill that spatial transformation we desired.
+
+.. note::
+
+   .. _`Riemannian metric`:
+
+   When it comes to the concept *homeomorphism* in topology, a very famous example is the assertion that donut
+   equals the cup. As it is still little difficult to imagine, it is preferential to use *decompression toy* as
+   analogous example: now there is a plastic decompression toy, you can press, tense, twist, squeeze it into
+   whatever shape you like. For this toy, although it can possess different shapes under varying effect of
+   deformation, these shapes are of *homeomorphic*. While the operations of deformation, correspond to certain
+   transformations on the original space.
 
 _`Bayesian and mixture Gaussian`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
