@@ -218,7 +218,7 @@ Consider the bayes formula:
    :label: bayes formula in anomaly statistic
 
    p(\boldsymbol{x}^\prime|y=i, D) = \frac{p(y=i |\boldsymbol{x}^\prime, D) p(\boldsymbol{x}^\prime, D)}{p(y=i, D)}
-   = \frac{N^i (\boldsymbol{x}^\prime)}{k} \frac{1}{\pi^i} p(\boldsymbol{x}^\prime, D)
+   = \frac{N^i (\boldsymbol{x}^\prime)}{k} \cdot \frac{1}{\pi^i} \cdot p(\boldsymbol{x}^\prime, D)
 
 The :math:`N^i (\boldsymbol{x}^\prime) / k` corresponds to :math:`p (y=i | \boldsymbol{x}^\prime, D)` that for
 :math:`k` neighbors of :math:`\boldsymbol{x}^\prime`, the number of data points in :math:`D` with label of
@@ -247,14 +247,31 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
 
 .. note::
 
+   .. _`Homeomorphism`:
+
+   .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/homeomorphism_donut_mug.gif
+      :name: homeomorphism joke animation
+      :width: 200
+      :align: center
+
+      coffee mug as a homeomorphic object of donut :ref:`[Hubbard2012] <[Hubbard2012]>`
+
+   When it comes to the concept *homeomorphism* in topology, a very famous example is the joke about donut and
+   coffee mug :ref:`[Hubbard2012] <[Hubbard2012]>`. As it is still little difficult to imagine, it is preferential
+   to use *decompression toy* as analogous example: now there is an ideal plastic decompression toy, you can press,
+   tense, twist, squeeze it into whatever shape you like. For this toy, although it can possess different shapes
+   under varying effects of deformation, these shapes are of *homeomorphic*. While the operations of deformation,
+   are conceptually in consistence with the transformation on the original space.
+
    .. _`Riemannian metric`:
 
-   When it comes to the concept *homeomorphism* in topology, a very famous example is the assertion that donut
-   equals the cup. As it is still little difficult to imagine, it is preferential to use *decompression toy* as
-   analogous example: now there is a plastic decompression toy, you can press, tense, twist, squeeze it into
-   whatever shape you like. For this toy, although it can possess different shapes under varying effect of
-   deformation, these shapes are of *homeomorphic*. While the operations of deformation, correspond to certain
-   transformations on the original space.
+   .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/trans_in_riemannian.jpg
+      :name: deformation in riemannian
+      :width: 350
+      :align: center
+
+      illustration for deformation in Riemannian geometry
+
 
 _`Bayesian and mixture Gaussian`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
