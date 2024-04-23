@@ -71,6 +71,9 @@ _`Math symbols`
 
 * :math:`\mathrm{sup}(\cdot)`: supremum of something
 
+* :math:`\left[ \cdot \right]_{+}`: the rectified linear function of something; e.g. :math:`\left[ x \right]_{+} = x`
+  if :math:`x > 0` otherwise :math:`\left[ x \right]_{+} = 0`
+
 _`Acronyms`
 -----------
 

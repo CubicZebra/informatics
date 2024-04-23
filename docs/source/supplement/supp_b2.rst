@@ -258,20 +258,79 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
 
    When it comes to the concept *homeomorphism* in topology, a very famous example is the joke about donut and
    coffee mug :ref:`[Hubbard2012] <[Hubbard2012]>`. As it is still little difficult to imagine, it is preferential
-   to use *decompression toy* as analogous example: now there is an ideal plastic decompression toy, you can press,
+   to use *decompression toy* as analogous example: now there is an ideal elastic decompression toy, you can press,
    tense, twist, squeeze it into whatever shape you like. For this toy, although it can possess different shapes
    under varying effects of deformation, these shapes are of *homeomorphic*. While the operations of deformation,
    are conceptually in consistence with the transformation on the original space.
 
    .. _`Riemannian metric`:
 
-   .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/trans_in_riemannian.jpg
+   .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/deformation_riemannian.jpg
       :name: deformation in riemannian
       :width: 350
       :align: center
 
       illustration for deformation in Riemannian geometry
 
+   The concept of homeomorphism is of essence to understand Riemannian metric. As illustration in
+   :numref:`Figure %s <deformation in riemannian>`, transformation on Riemannian geometry allows local deformation
+   anywhere. Imagine all of the data points located on surface of a certain Riemannian geometry (ideal elasticity),
+   it can get any desired new distribution of these data points, by introducing a combination of certain
+   local deformation operations.
+
+The measure of distance varies from different algorithms. Euclidean defined as :math:`d^2 (\boldsymbol{a},
+\boldsymbol{b}) = (\boldsymbol{a} - \boldsymbol{b})^T\boldsymbol{I}(\boldsymbol{a} - \boldsymbol{b})` can be deem as
+the computation in original Cartesian space, while the anomaly statistic mentioned in :ref:`Hotelling T-squared
+<Hotelling T-squared>` is equivalent of using a rescaled Cartesian space via :math:`\hat{\boldsymbol{\Sigma}}^{-1}`.
+More generally, it can define a Riemannian space :math:`\boldsymbol{R}` that the corresponding distance measure is
+:math:`d^2_{\boldsymbol{R}} (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a} - \boldsymbol{b})^T
+\boldsymbol{R} (\boldsymbol{a} - \boldsymbol{b})`. How to determine an optimal Riemannian
+metric :math:`\boldsymbol{R}` so that data points with identical labels can be clustered, while different clusters
+can be as separated as possible (like the illustration in :numref:`Figure %s <deformation in riemannian>`), is the
+scope of a sub field in machine learning, called *metric learning*.
+
+For more generic solution, we can discuss this problem in frame of multi classification so that it is rational to
+assume a prior weights for all categories, and the prior weight for peers of :math:`y = y^{(n)}` is :math:`w_{(n)}`.
+Focus on a certain :math:`\boldsymbol{x}^{(n)}` in :eq:`empirical distribution` with label :math:`y = y^{(n)}`,
+define the set :math:`N^{(n)}` the points with identical label as :math:`\boldsymbol{x}^{(n)}`, among :math:`k`-nearest
+neighbors of :math:`\boldsymbol{x}^{(n)}`, the mathematical expression for concept *data points with identical
+labels can be clustered*, can be represented as:
+
+.. math::
+   :label: Riemannian item 1
+
+   \psi_1^{(n)} (\boldsymbol{R}) = \sum_{i \in N^{(n)}} d_{\boldsymbol{R}}^2 (\boldsymbol{x}^{(n)},
+   \boldsymbol{x}^{(i)})
+
+While for the concept *different clusters can be as separated as possible*:
+
+.. math::
+   :label: Riemannian item 2
+
+   \psi_2^{(n)} (\boldsymbol{R}) = \sum_{j \in N^{(n)}} \sum_{l=1}^N I_{y^{(l)} \neq y^{(n)}}(y^{(l)}) \left[ 1 +
+   d^2_{\boldsymbol{A}} (\boldsymbol{x}^{(n)}, \boldsymbol{x}^{(j)}) -  d^2_{\boldsymbol{A}} (\boldsymbol{x}^{(n)},
+   \boldsymbol{x}^{(l)}) \right]_{+}
+
+The item :math:`\boldsymbol{x}^{(j)}` and :math:`\boldsymbol{x}^{(l)}` in :eq:`Riemannian item 2` are the data
+points, with and without identical label as :math:`\boldsymbol{x}^{(n)}` respectively. Assume the set of labels
+:math:`C = {1, \dots, s}` represents for :math:`s` different classes, the optimization target of Riemannian
+:math:`\boldsymbol{R}` is:
+
+.. math::
+   :label: Riemannian optimization
+
+   \Psi (\boldsymbol{R}) = \frac{1}{N} \sum_{c=1}^s \sum_{n=1}^N \left[ w_s \cdot \psi_1^{(n)} (\boldsymbol{R}) +
+   \sum_{m \in \{c\}^C} w_m \cdot \psi_2^{(n)} (\boldsymbol{R}) \right] \quad \mathrm{s.t.} \> \boldsymbol{R} \succeq 0
+
+The constraint :math:`\boldsymbol{R} \succeq 0` is for semi-positive definite matrix. Therefore set the eigen
+value(s) as 0, if negative value dimension(s) were calculated during learning steps. Metric learning updates the
+:math:`\boldsymbol{R}` using subgradient via the item :math:`\partial \Psi (\boldsymbol{R}) / \partial \boldsymbol{R}`
+until convergence. Using decomposition on the updated Riemannian metric
+:math:`\boldsymbol{R}^* = \boldsymbol{L}^T \boldsymbol{L}`, the distance measure in Riemannian space is therefore
+:math:`(\boldsymbol{a} - \boldsymbol{b})^T \boldsymbol{R}^* (\boldsymbol{a} - \boldsymbol{b})
+= [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]^T [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]`. Thus, the
+relationship between original space and the final Riemannian space is nothing other than the transformation
+:math:`\boldsymbol{L}`.
 
 _`Bayesian and mixture Gaussian`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
