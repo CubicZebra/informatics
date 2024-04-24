@@ -65,7 +65,7 @@ _`Math symbols`
 * :math:`\Vert\cdot\Vert_2`: the Euclidean norm of something
 
 * :math:`\mathrm{sgn}(\cdot)`: sign function of something; e.g. :math:`\mathrm{sgn}(x) = 1` if :math:`x \geq 0`
-  otherwise 0
+  otherwise -1
 
 * :math:`I_A(\cdot)`: indicator function of something; e.g. :math:`I_A(x) = 1` if :math:`x \in A` otherwise 0
 
@@ -73,6 +73,9 @@ _`Math symbols`
 
 * :math:`\left[ \cdot \right]_{+}`: the rectified linear function of something; e.g. :math:`\left[ x \right]_{+} = x`
   if :math:`x > 0` otherwise :math:`\left[ x \right]_{+} = 0`
+
+* :math:`\delta ( \cdot )`: Dirac's delta function; 1 if and only if the expression inside established, otherwise 0;
+  also called unit impulse function
 
 _`Acronyms`
 -----------
