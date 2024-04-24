@@ -308,7 +308,7 @@ While for the concept *different clusters can be as separated as possible*:
    :label: Riemannian item 2
 
    \psi_2^{(n)} (\boldsymbol{R}) = \sum_{j \in N^{(n)}} \sum_{l=1}^N I_{y^{(l)} \neq y^{(n)}}(y^{(l)}) \left[ 1 +
-   d^2_{\boldsymbol{A}} (\boldsymbol{x}^{(n)}, \boldsymbol{x}^{(j)}) -  d^2_{\boldsymbol{A}} (\boldsymbol{x}^{(n)},
+   d^2_{\boldsymbol{R}} (\boldsymbol{x}^{(n)}, \boldsymbol{x}^{(j)}) -  d^2_{\boldsymbol{R}} (\boldsymbol{x}^{(n)},
    \boldsymbol{x}^{(l)}) \right]_{+}
 
 The item :math:`\boldsymbol{x}^{(j)}` and :math:`\boldsymbol{x}^{(l)}` in :eq:`Riemannian item 2` are the data
@@ -319,18 +319,18 @@ points, with and without identical label as :math:`\boldsymbol{x}^{(n)}` respect
 .. math::
    :label: Riemannian optimization
 
-   \Psi (\boldsymbol{R}) = \frac{1}{N} \sum_{c=1}^s \sum_{n=1}^N \left[ w_s \cdot \psi_1^{(n)} (\boldsymbol{R}) +
+   \Psi (\boldsymbol{R}) = \frac{1}{N} \sum_{c=1}^s \sum_{n=1}^N \left[ w_c \cdot \psi_1^{(n)} (\boldsymbol{R}) +
    \sum_{m \in \{c\}^C} w_m \cdot \psi_2^{(n)} (\boldsymbol{R}) \right] \quad \mathrm{s.t.} \> \boldsymbol{R} \succeq 0
 
 The constraint :math:`\boldsymbol{R} \succeq 0` is for semi-positive definite matrix. Therefore set the eigen
-value(s) as 0, if negative value dimension(s) were calculated during learning steps. Metric learning updates the
-:math:`\boldsymbol{R}` using subgradient via the item :math:`\partial \Psi (\boldsymbol{R}) / \partial \boldsymbol{R}`
-until convergence. Using decomposition on the updated Riemannian metric
-:math:`\boldsymbol{R}^* = \boldsymbol{L}^T \boldsymbol{L}`, the distance measure in Riemannian space is therefore
-:math:`(\boldsymbol{a} - \boldsymbol{b})^T \boldsymbol{R}^* (\boldsymbol{a} - \boldsymbol{b})
-= [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]^T [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]`. Thus, the
-relationship between original space and the final Riemannian space is nothing other than the transformation
-:math:`\boldsymbol{L}`.
+value(s) as 0, if negative value dimension(s) were calculated during learning steps. :math:`\{c\}^C` is the
+complementary set of :math:`c` in :math:`C`. Metric learning updates the :math:`\boldsymbol{R}` using subgradient
+via the item :math:`\partial \Psi (\boldsymbol{R}) / \partial \boldsymbol{R}` until convergence. Using decomposition
+on the updated Riemannian metric :math:`\boldsymbol{R}^* = \boldsymbol{L}^T \boldsymbol{L}`, the distance measure in
+Riemannian space is therefore :math:`(\boldsymbol{a} - \boldsymbol{b})^T \boldsymbol{R}^* (\boldsymbol{a} -
+\boldsymbol{b}) = [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]^T [\boldsymbol{L}(\boldsymbol{a} -
+\boldsymbol{b})]`. Thus, the relationship between original space and the final Riemannian space is nothing other
+than the transformation :math:`\boldsymbol{L}`.
 
 _`Bayesian and mixture Gaussian`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
