@@ -70,7 +70,7 @@ For new observation :math:`\boldsymbol{x}^\prime`, define its T\ :sup:`2` statis
 .. math::
    :label: T2 statistic
 
-   T^2 = \frac{N-M}{(N+1)M} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1}
+   T^2 = \frac{N-M}{(N+1)M} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})^\top \hat{\boldsymbol{\Sigma}}^{-1}
    (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}}) \sim F(M, N-M)
 
 .. note::
@@ -87,7 +87,7 @@ For new observation :math:`\boldsymbol{x}^\prime`, define its T\ :sup:`2` statis
 Where :math:`N` is the number of observations, and :math:`M` is the dimensionality. Now consider the condition
 :math:`N \geq M` which can be easily achieved through data preparation or dimension reduction, the full rank
 property of :math:`\boldsymbol{\Sigma}` can be established. Thus, the item of :math:`(\boldsymbol{x}^\prime -
-\hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})` in
+\hat{\boldsymbol{\mu}})^\top \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})` in
 :eq:`T2 statistic` is actually the sum of squares with :math:`M` degree of freedom.
 
 For new variable :math:`z` as function of :math:`z = f(\boldsymbol{x}) \in \mathbb{R}^1`, the Jacobian transformation
@@ -157,7 +157,7 @@ finally simplified as :eq:`final simplification of u`:
 
 Here deduced the most important property: the probability density of sum of squares, is come from a certain
 :math:`\chi^2` distribution with :math:`M` degrees of freedom, and :math:`c \sigma^2` as scale. For the item
-:math:`(\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})^T \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime -
+:math:`(\boldsymbol{x}^\prime - \hat{\boldsymbol{\mu}})^\top \hat{\boldsymbol{\Sigma}}^{-1} (\boldsymbol{x}^\prime -
 \hat{\boldsymbol{\mu}})`, it uses unbias estimation as standardization while no spatial rescaling for
 :math:`\boldsymbol{x}^\prime`, thus :math:`c = \sigma^2 = 1`. Therefore, the final anomaly threshold is determined
 through the maximum likelihood estimation of :math:`\chi^2 (x | M, 1)`.
@@ -233,7 +233,7 @@ The :math:`N^i (\boldsymbol{x}^\prime) / k` corresponds to :math:`p (y=i | \bold
 For method using neighbor data points, it requires computing and sort the distance. The distance measure of
 neighbor related method is pre-determined. Customarily, people use Euclidean distance in original space
 (e.g. for :math:`\boldsymbol{a}` and :math:`\boldsymbol{b}`,
-:math:`d^2 (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a}-\boldsymbol{b})^T(\boldsymbol{a}-\boldsymbol{b})`).
+:math:`d^2 (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a}-\boldsymbol{b})^\top(\boldsymbol{a}-\boldsymbol{b})`).
 Or for some algorithm frames, the order of norm has also been designed as an optional callback for distance
 measurement. Whatever norm order was defined, the calculation of distance takes places in original Cartesian
 coordinate system.
@@ -279,11 +279,11 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
    local deformation operations.
 
 The measure of distance varies from different algorithms. Euclidean defined as :math:`d^2 (\boldsymbol{a},
-\boldsymbol{b}) = (\boldsymbol{a} - \boldsymbol{b})^T\boldsymbol{I}(\boldsymbol{a} - \boldsymbol{b})` can be deem as
-the computation in original Cartesian space, while the anomaly statistic mentioned in :ref:`Hotelling T-squared
+\boldsymbol{b}) = (\boldsymbol{a} - \boldsymbol{b})^\top\boldsymbol{I}(\boldsymbol{a} - \boldsymbol{b})` can be deem
+as the computation in original Cartesian space, while the anomaly statistic mentioned in :ref:`Hotelling T-squared
 <Hotelling T-squared>` is equivalent of using a rescaled Cartesian space via :math:`\hat{\boldsymbol{\Sigma}}^{-1}`.
 More generally, it can define a Riemannian space :math:`\boldsymbol{R}` that the corresponding distance measure is
-:math:`d^2_{\boldsymbol{R}} (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a} - \boldsymbol{b})^T
+:math:`d^2_{\boldsymbol{R}} (\boldsymbol{a}, \boldsymbol{b}) = (\boldsymbol{a} - \boldsymbol{b})^\top
 \boldsymbol{R} (\boldsymbol{a} - \boldsymbol{b})`. How to determine an optimal Riemannian
 metric :math:`\boldsymbol{R}` so that data points with identical labels can be clustered, while different clusters
 can be as separated as possible (like the illustration in :numref:`Figure %s <deformation in riemannian>`), is the
@@ -326,9 +326,9 @@ The constraint :math:`\boldsymbol{R} \succeq 0` is for semi-positive definite ma
 value(s) as 0, if negative value dimension(s) were calculated during learning steps. :math:`\{c\}^C` is the
 complementary set of :math:`c` in :math:`C`. Metric learning updates the :math:`\boldsymbol{R}` using subgradient
 via the item :math:`\partial \Psi (\boldsymbol{R}) / \partial \boldsymbol{R}` until convergence. Using decomposition
-on the updated Riemannian metric :math:`\boldsymbol{R}^* = \boldsymbol{L}^T \boldsymbol{L}`, the distance measure in
-Riemannian space is therefore :math:`(\boldsymbol{a} - \boldsymbol{b})^T \boldsymbol{R}^* (\boldsymbol{a} -
-\boldsymbol{b}) = [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]^T [\boldsymbol{L}(\boldsymbol{a} -
+on the updated Riemannian metric :math:`\boldsymbol{R}^* = \boldsymbol{L}^\top \boldsymbol{L}`, the distance measure in
+Riemannian space is therefore :math:`(\boldsymbol{a} - \boldsymbol{b})^\top \boldsymbol{R}^* (\boldsymbol{a} -
+\boldsymbol{b}) = [\boldsymbol{L}(\boldsymbol{a} - \boldsymbol{b})]^\top [\boldsymbol{L}(\boldsymbol{a} -
 \boldsymbol{b})]`. Thus, the relationship between original space and the final Riemannian space is nothing other
 than the transformation :math:`\boldsymbol{L}`.
 
