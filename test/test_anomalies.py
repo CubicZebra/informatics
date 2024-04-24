@@ -3,7 +3,6 @@ from info.me import archive, unarchive, F, Unit
 from info.me import autotesting as tst
 import numpy as np
 import scipy.stats as st
-import scipy.sparse as sp
 np.random.seed(10)
 
 
@@ -24,11 +23,19 @@ label_3class = np.array([0 for _ in range(100)] + [1 for _ in range(100)] + [2 f
 
 
 hotelling_pipe = F(lambda **kw: [md := ano.Hotelling(**kw), md.predict(data=kw.get('prediction'))][-1])
+hotelling_pipe.__name__ = 'hotelling_pipe'
 hot_args = {'data': [dense_1class], 'significance_level': [0.05, 0.1], 'prediction': [dense_1class, dense_2class]}
+neighbors_pipe = F(lambda **kw: [xy := kw.pop('data'), md := ano.Neighbors(data=xy[0], labels=xy[1], **kw),
+                                 md.predict(data=kw.get('prediction'))][-1])
+neighbors_pipe.__name__ = 'neighbors_pipe'
+nei_args = {'data': [(dense_2class, label_2class), (dense_3class, label_3class)],
+            'distance_measure': [1, 2], 'nearing_mode': ['KNN'], 'k_determine': [8, 10],
+            'eta_determine': [0.05, 0.1], 'prediction': [dense_3class]}  # TODO: test LMNN
 
 
 if not tested:
     meta_flow(data=hotelling_pipe, params_pool=hot_args)
+    meta_flow(data=neighbors_pipe, params_pool=nei_args)
 else:
     ...
 
