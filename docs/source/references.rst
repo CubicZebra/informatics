@@ -192,6 +192,9 @@ _`References`
    _`[Holst2011]` Holst, E., & Kulahci, M. (2011). Hotelling’s T 2–an introduction to theory and applications. In
    33rd Symposium in Applied Statistics.
 
+   _`[Hubbard2012]` Hubbard, J. H., & West, B. H. (2012). Differential equations: a dynamical systems approach:
+   higher-dimensional systems (Vol. 18). Springer Science & Business Media.
+
 ----
 
 :Authors: Chen Zhang

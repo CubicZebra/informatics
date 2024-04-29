@@ -25,7 +25,7 @@ classes and functions listed here have been integrated into the main entry ``inf
    functest
 
 And also some meta implementation frameworks for data loading, processing, visualization, analyzing, and exporting,
-as well as some code block wrapper for easy develop. Function here mainly in namespace ``info.libs.operations``.
+as well as some code block wrapper for easy develop. Function here mainly in namespace ``info.toolbox.libs.operations``.
 All those function are integrated into ``info.me`` as well.
 
 .. autosummary::
