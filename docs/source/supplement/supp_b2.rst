@@ -113,7 +113,7 @@ It can utilize the :math:`M`-dimensional spherical coordinates to make simplific
 :eq:`probability density function of u`, the infinitesimal of :math:`dx_1 \cdots dx_M` can be equivalently replaced
 by the :math:`dr \cdot r^{M-1}dS_M` (:math:`dr` and :math:`r^{M-1}dS_M` are infinitesimals of thickness, and surface
 area in :math:`M`-dimensional sphere respectively). Let :math:`v = cr^2 = c \sum_{i=1}^{M} x_i^2`, :math:`dr` will
-be :math:`d(v/c)^{1/2} = (1/2c) \cdot (v/c)^(1/2) dv`, the :eq:`probability density function of u` will be:
+be :math:`d(v/c)^{1/2} = (1/2c) \cdot (v/c)^{(1/2)} dv`, the :eq:`probability density function of u` will be:
 
 .. math::
    :label: integral transformation of u
@@ -181,7 +181,8 @@ is defined as:
 It is a probability density function because for any :math:`\boldsymbol{x} \in \mathbb{R}^M`, its
 :math:`p_{\mathrm{emp}}` value in :eq:`empirical distribution` is equal or greater than 1, while
 :math:`\int p_{\mathrm{emp}} d\boldsymbol{x} = 1`. For any point :math:`\boldsymbol{x}^\prime \in \mathbb{R}^M`, define
-its neighbor a :math:`M`-dimensional sphere with radius :math:`\epsilon`, according to :eq:`volume of K dimensional sphere` its volume will be
+its neighbor a :math:`M`-dimensional sphere with radius :math:`\epsilon`, according to
+:eq:`volume of K dimensional sphere` its volume will be
 :math:`V_M (\boldsymbol{x}^\prime, \epsilon) = (\epsilon^M \pi^{M/2}) / \Gamma(M/2 + 1) = C \cdot \epsilon^M`, where
 :math:`C` is an :math:`\epsilon` independent constant.
 
