@@ -36,7 +36,7 @@ binary classification and anomaly determination, is that for binary classificati
 possible margin between two clusters, however for anomaly determination, it only hypotheses the existence of one
 cluster, then using certain approaches to determine the boundary of this cluster.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/classification_and_anomaly_diff.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/d640b1cc-5eb0-4150-a2bc-f2f5a27c6dbf
    :name: classification and anomaly
    :width: 600
    :align: center
@@ -250,7 +250,7 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
 
    .. _`Homeomorphism`:
 
-   .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/homeomorphism_donut_mug.gif
+   .. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/52f7cd3a-6ba9-4512-9335-c8ce38aa459e
       :name: homeomorphism joke animation
       :width: 200
       :align: center
@@ -266,7 +266,7 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
 
    .. _`Riemannian metric`:
 
-   .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/deformation_riemannian.jpg
+   .. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a4f466eb-224b-417e-9373-8ccca2eada9b
       :name: deformation in riemannian
       :width: 350
       :align: center
