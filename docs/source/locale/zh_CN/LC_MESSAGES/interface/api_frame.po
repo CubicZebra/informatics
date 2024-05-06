@@ -2,7 +2,7 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# Marin <381017759@qq.com>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-18 18:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/interface/api_frame.rst:2
 msgid "_`Framework utilities`"
-msgstr "_`框架工具`"
+msgstr "框架工具集"
 
 #: ../../source/interface/api_frame.rst:7
 msgid "Description"
@@ -35,8 +35,9 @@ msgid ""
 "unit testing, workflow design, building and interface wrapping. For easy "
 "importing, all classes and functions listed here have been integrated "
 "into the main entry ``info.me``."
-msgstr "用于敏捷开发的信息学框架实用工具集。功能包括属性注册、文档附加、运行时类型检查、"
-"单元测试、工作流设计、构建和接口包装。为了便于导入，这里列出的所有类和函数都已集成到主入口 ``info.me`` 中。"
+msgstr ""
+"用于敏捷开发的informatics框架实用工具集。功能包括属性注册、文档添加、运行时类型检查、"
+"单元测试、工作流设计、构建和接口包装。为了便于导入，这里列出的所有类和函数都已集成到主入口\ ``info.me``\ 中。"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`T <info.docfunc.T>`"
@@ -44,9 +45,10 @@ msgstr ""
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ""
-"marker for setting default values, add constraint type for keyword "
+"indicator for setting default values, add constraint type for keyword "
 "arguments."
-msgstr "用于设置默认值的标记，为关键字参数添加约束类型。"
+msgstr ""
+"用于设置默认值、为关键字参数添加类型约束的标记。"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`F <info.docfunc.F>`"
@@ -54,7 +56,7 @@ msgstr ""
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1 info.docfunc.F:1 of
 msgid "info lambda function."
-msgstr "informatics下的lambda函数"
+msgstr "informatics中的匿名函数"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`FuncTools <info.docfunc.FuncTools>`"
@@ -74,7 +76,7 @@ msgstr ""
 msgid ""
 "package a single or multiple data processing or operation steps within a "
 "Unit."
-msgstr "将单个或多个数据处理或操作步骤打包在一个单元内。"
+msgstr "将单个或多个数据处理或操作步骤打包在一个处理单元内。"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`TrialDict <info.docfunc.TrialDict>`"
@@ -82,7 +84,7 @@ msgstr ""
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid "dict with ``trial`` method."
-msgstr "带有 ``trial`` 方法的字典"
+msgstr "带有\ ``trial``\ 方法的字典"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`ExeDict <info.docfunc.ExeDict>`"
@@ -92,7 +94,7 @@ msgstr ""
 msgid ""
 "executable dict composed of ``execute`` keyword and function or generic "
 "function as value."
-msgstr "由关键字 ``execute`` 和函数或泛型函数作为值组成的可执行字典"
+msgstr "以\ ``execute``\ 作为关键字、函数或泛型函数作为值的可执行字典"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`SingleMap <info.docfunc.SingleMap>`"
@@ -101,7 +103,7 @@ msgstr ""
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 #: info.docfunc.SingleMap:1 of
 msgid "tool to make single map function."
-msgstr "用于创建单个映射函数的工具"
+msgstr "用于创建简单映射函数的工具"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`traversal_on_params <info.docfunc.traversal_on_params>`"
@@ -118,7 +120,7 @@ msgstr ""
 #: ../../docstring ../../source/interface/api_frame.rst:26:<autosummary>:1
 #: info.docfunc.experiments:1 of
 msgid "experiment test pipeline for info function or unit."
-msgstr "信息函数或单元的实验测试管道。"
+msgstr "informatics函数或功能单元的实验测试管道。"
 
 #: ../../source/interface/api_frame.rst:26:<autosummary>:1
 msgid ":py:obj:`functest <info.docfunc.functest>`"
@@ -127,17 +129,21 @@ msgstr ""
 #: ../../docstring ../../source/interface/api_frame.rst:26:<autosummary>:1
 #: info.docfunc.functest:1 of
 msgid "unit test pipeline for info function or unit."
-msgstr "用于信息功能或单元的单元测试管道。"
+msgstr "info函数或功能单元的单元测试管道。"
 
 #: ../../source/interface/api_frame.rst:27
 msgid ""
 "And also some meta implementation frameworks for data loading, "
 "processing, visualization, analyzing, and exporting, as well as some code"
 " block wrapper for easy develop. Function here mainly in namespace "
-"``info.libs.operations``. All those function are integrated into "
+"``info.toolbox.libs.operations``. All those function are integrated into "
 "``info.me`` as well."
-msgstr "以及一些用于数据加载、处理、可视化、分析和导出的元实现框架，以及一些便于开发的代码块包装器。"
-"函数主要在命名空间 ``info.lib.operations`` 中。所有这些功能都集成到 ``info.me`` 中"
+msgstr ""
+"还包括一些用于数据加载、处理、可视化、分析或"
+"数据导出的元实现框架，以及一些便于开发的代码块封装。"
+"这些函数基本位于命名空间\ ``info.toolbox.lib.operations``\ 中。"
+"所有的这些函数也都能通过\ ``info.me``\ 来"
+"进行调用。"
 
 #: ../../source/interface/api_frame.rst:39:<autosummary>:1
 msgid ":py:obj:`generic_printer <info.docfunc.generic_printer>`"
@@ -146,7 +152,7 @@ msgstr ""
 #: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
 #: info.docfunc.generic_printer:1 of
 msgid "generic printing function to show print attributes or methods for data."
-msgstr "通用打印功能，显示数据的属性或方法。"
+msgstr "通用打印功能，用以展示数据的属性或方法。"
 
 #: ../../source/interface/api_frame.rst:39:<autosummary>:1
 msgid ":py:obj:`generic_logger <info.docfunc.generic_logger>`"
@@ -157,7 +163,8 @@ msgstr ""
 msgid ""
 "generic logger function for saving export from feature extracting "
 "functions."
-msgstr "通用的日志记录功能，用于保存从特征提取函数的输出"
+msgstr ""
+"通用的日志记录功能，用于保存特征提取函数的输出。"
 
 #: ../../source/interface/api_frame.rst:39:<autosummary>:1
 msgid ":py:obj:`exception_logger <info.docfunc.exception_logger>`"
@@ -166,7 +173,7 @@ msgstr ""
 #: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
 #: info.docfunc.exception_logger:1 of
 msgid "info function or Unit implementation for recording exceptive case."
-msgstr "用于记录异常情况的info函数或单元实现。"
+msgstr "用于记录异常日志的info函数或功能单元。"
 
 #: ../../source/interface/api_frame.rst:39:<autosummary>:1
 msgid ":py:obj:`default_param <info.docfunc.default_param>`"
@@ -175,7 +182,7 @@ msgstr ""
 #: ../../docstring ../../source/interface/api_frame.rst:39:<autosummary>:1
 #: info.docfunc.default_param:1 of
 msgid "dynamic default value setting in function body."
-msgstr "函数主体中的动态默认值设定"
+msgstr "用于函数主体中，动态设置默认值的功能函数。"
 
 #: ../../source/interface/api_frame.rst:39:<autosummary>:1
 msgid ":py:obj:`diagnosing_tests <info.docfunc.diagnosing_tests>`"
@@ -192,30 +199,35 @@ msgstr "文档字符串"
 
 #: info.docfunc.T:1 of
 msgid ""
-"marker for setting default values, add constraint type for keyword "
+"indicator for setting default values, add constraint type for keyword "
 "arguments. Using combined with :py:class:`~info.docfunc.FuncTools`."
-msgstr "用于设置默认值的标记，为关键字参数添加约束类型。与 :py:class:`~info.docfunc.FuncTools` 结合使用。"
+msgstr ""
+"用于设置默认值、为关键字参数添加类型约束的标记。"
+"与\ :py:class:`~info.docfunc.FuncTools`\ 结合使用。"
 
 #: info.docfunc.T:6 of
 msgid "using T for multi purposes"
-msgstr "为不同的目的使用T"
+msgstr "标记T的综合运用"
 
 #: info.docfunc.T:32 of
 msgid ""
 "In info, the built-in value ``Null`` is a mnemonic name to remind the "
 "required argument(s):"
-msgstr "在informatics中，内置值 ``Null`` 是一个助记名称，用于提醒所需的参数。"
+msgstr ""
+"在informatics中，内置值\ ``Null``\ 是一个助记名称，"
+"用于提示调用所必须指定的参数。"
 
 #: info.docfunc.T:34 of
 msgid "null value to remind required arguments"
-msgstr "用于提醒所需参数的空值"
+msgstr "null用于提醒所必须指定的参数"
 
 #: info.docfunc.T:44 of
 msgid ""
 "Note under this circumstance, if call ``func`` without assignment for "
 "``a`` or ``b``, ``TypeError`` raised."
-msgstr "需要注意的是，在这种情况下，如果调用 ``func`` 而没有对 ``a`` 或 ``b`` 进行赋值，则会"
-"引发 ``TypeError`` 。"
+msgstr ""
+"需要注意的是，在这种情况下，如果调用\ ``func``\ 时没有对\ ``a``\ 或\ ``b``\ 进"
+"行赋值，则会引发\ ``TypeError``\ 。"
 
 #: ../../docstring info.docfunc.T:48 info.docfunc.default_param:13 of
 msgid ":py:class:`~info.docfunc.FuncTools`"
@@ -223,7 +235,7 @@ msgstr ""
 
 #: info.docfunc.T:56 of
 msgid "Support new union typing hint like A | B in python 3.10 or later."
-msgstr "在python 3.10或更高版本中支持新的联合类型提示，如A | B。"
+msgstr "在python 3.10或更高版本中增加对新的联合类型的语法支持，如A | B。"
 
 #: ../../docstring info.docfunc.ExeDict:67 info.docfunc.F:30
 #: info.docfunc.FuncTools:214 info.docfunc.SingleMap:31 info.docfunc.T:58
@@ -245,7 +257,7 @@ msgstr ""
 
 #: info.docfunc.F:5 of
 msgid "lambda expression with key word arguments ``**kwargs``"
-msgstr "带关键字参数 ``**kwargs`` 的lambda表达式"
+msgstr "带关键字参数\ ``**kwargs``\ 的lambda表达式"
 
 #: ../../docstring info.docfunc.F info.docfunc.SingleMap info.docfunc.TrialDict
 #: info.docfunc.Unit info.docfunc.default_param info.docfunc.diagnosing_tests
@@ -257,11 +269,11 @@ msgstr ""
 
 #: info.docfunc.F:6 of
 msgid "anonymous function in info version"
-msgstr ""
+msgstr "info版本的匿名函数"
 
 #: info.docfunc.F:10 of
 msgid "fast register an info function"
-msgstr "info版本的匿名函数"
+msgstr "info函数的快速实现"
 
 #: info.docfunc.F:24 info.docfunc.Unit:16 of
 msgid ":py:class:`~info.docfunc.Unit`"
@@ -269,9 +281,11 @@ msgstr ""
 
 #: info.docfunc.FuncTools:7 of
 msgid ""
-"statistic method to add document to function, applying typing hint, or "
+"static method to add document to function, applying typing hint, or "
 "type checking with hint"
-msgstr "将文档添加到函数的统计方法，应用类型提示或使用提示进行类型检查"
+msgstr ""
+"将文档添加到函数，应用类型提示或使用提示进行类型检查"
+"的静态方法"
 
 #: ../../docstring info.docfunc.FuncTools info.docfunc.Unit
 #: info.docfunc.diagnosing_tests of
@@ -287,30 +301,34 @@ msgid ""
 "marker whether is info function; if ``True``, the ``entry_tp`` and "
 "``return_tp`` will be added into type checker flow, and keyword "
 "``'data'`` argument must be included; otherwise just hint only"
-msgstr "是否为info函数的指示物，如果为 ``True`` ，``entry_tp`` 以及``return_tp`` 就会"
-"被添加到类型检查流中，并且关键词 ``'data'`` 必须被包含在内否则便只有提示"
+msgstr ""
+"是否为info函数的标记；如果为\ ``True``\ ，\ ``entry_tp``\ 以及\ ``return_tp``\ 所提示的类型"
+"就会被添加到类型检查工作流中，并且关键字\ ``'data'``\ 会作为调用的必须；否则仅用作类型提示"
 
 #: info.docfunc.FuncTools:13 of
 msgid ""
 "the data type for decorated function to process; use python builtin class"
 " or typing hint; when ``'info_func'`` is ``True``, it is considered as "
 "the type of ``'data'`` value and will be checked before processing start"
-msgstr "修饰函数要处理的数据类型;使用python内置类或输入提示；当 ``'info_func'`` 为``True`` 时"
-"将其视为 ``data`` 值的类型，并在开始处理之前进行检查"
+msgstr ""
+"被装饰函数要处理的数据类型；支持以python内置类型或typing hint用作类型检查；当\ ``'info_func'``\ 为\ ``True``\ 时，"
+"将其视为关键字\ ``data``\ 的传入类型，并在开始实际处理之前进行检查"
 
 #: info.docfunc.FuncTools:16 of
 msgid ""
 "return type for decorated function; can use python builtin class or "
 "typing hint; when ``'info_func'`` is ``True``, the result will be checked"
 " before actually return"
-msgstr "修饰函数的返回类型；可以使用python内置类或输入提示；当 ``'info_func'`` 为 ``Trrue`` 时，"
-"结果将在实际返回之前进行检查"
+msgstr ""
+"被修饰函数的返回类型；支持以python内置类型或typing hint用作类型检查；当\ ``'info_func'``\ 为\ ``True``\ 时，"
+"结果将在实际返回之前被检查"
 
 #: info.docfunc.FuncTools:18 info.docfunc.FuncTools:94 of
 msgid ""
 "whether check deeper when meet a simple iterable object; ``True`` as "
 "default"
-msgstr "是否在遇到简单可迭代对象时进行更深层次的检查； ``True`` 作为默认值"
+msgstr ""
+"是否在遇到简单可迭代对象时，对更深层次的结构进行类型检查；其默认值为\ ``True``\ "
 
 #: info.docfunc.FuncTools:19 of
 msgid ""
@@ -318,8 +336,10 @@ msgid ""
 "unparseable type; ``True`` will pass the test for unparseable type; and "
 "list of unparseable type(s) will add those types in checking workflow; "
 "``False`` as default"
-msgstr "当处理不可解析类型时，如果为 ``False`` ，会抛出 ``UnSupportableTypeError`` 错"
-"误。 ``True`` 将通过不可解析类型的测试；不可解析类型列表将在检查工作流中添加这些类型；``False`` 为默认值"
+msgstr ""
+"当遇到无法解析的类型时，如果为\ ``False``\ ，则会抛出\ ``UnSupportableTypeError``\ 错"
+"误。若为\ ``True``\ 则会跳过不可解析类型的检查，予以通过；"
+"如若为包含不可解析类型的列表，则会将这些类型添加至类型检查的工作流中；其默认值为\ ``False``\ "
 
 #: ../../docstring info.docfunc.ExeDict info.docfunc.FuncTools
 #: info.docfunc.SingleMap info.docfunc.Unit info.docfunc.generic_printer of
@@ -328,42 +348,47 @@ msgstr ""
 
 #: info.docfunc.FuncTools:23 info.docfunc.FuncTools:99 of
 msgid "if ``info_func`` is ``True`` and no keyword assignment for ``'data'``"
-msgstr "如果 ``info_func`` 为 ``True`` ，并且 ``'data'`` 没有分配关键字"
+msgstr "如果\ ``info_func``\ 为\ ``True``\ ，并且在调用中并未对\ ``'data'``\ 赋值"
 
 #: info.docfunc.FuncTools:24 info.docfunc.FuncTools:100 of
 msgid ""
 "if ``info_func`` is ``True`` and entry type of ``'data'``, or return data"
 " do not match the desired type"
-msgstr "如果 ``info_func`` 为 ``True`` ，且输入类型为 ``'data'`` ，或者返回的数据类型不匹配"
+msgstr ""
+"如果\ ``info_func``\ 为\ ``True``\ ，并且调用中为\ ``'data'``\ 赋值"
+"的类型，或者返回的数据类型发生不匹配"
 
 #: info.docfunc.FuncTools:27 of
 msgid ""
 "It can be used to attach documents on decorated function, or checking "
 "whether the data match the desired type in entry, or the data after "
 "processing matched the desired type as well. for example:"
-msgstr "它可以用于在修饰函数上附加文档，或者检查条目中的数据是否匹配所需类型，"
-"或者处理后的数据是否也匹配所需类型。例如:"
+msgstr ""
+"它可以用于在被修饰函数上附加文档，或者检查函数的输入输出是否与所需要的"
+"数据类型相匹配。例如:"
 
 #: info.docfunc.FuncTools:30 of
 msgid "decorator to attach documents or execute type checking"
-msgstr "装饰器附加文档或执行类型检查"
+msgstr "装饰器用于文档附加或执行类型检查"
 
 #: info.docfunc.FuncTools:75 of
 msgid ""
 "However, this decorator can also handy to attach some customized "
 "attribute if necessary:"
-msgstr "然而，如果需要的话，这个装饰器也可以方便地附加一些自定义属性："
+msgstr "并且，如果需要的话，该装饰器也可以方便地为函数附加一些自定义的属性："
 
 #: info.docfunc.FuncTools:77 of
 msgid "customize function by decorator"
-msgstr "通过装饰器自定义函数"
+msgstr "通过装饰器实现函数定制化"
 
 #: info.docfunc.FuncTools:91 of
 msgid ""
-"statistic method to set default values, applying typing hint, or type "
+"static method to set default values, applying typing hint, or type "
 "checking with those hints. some complicated situation can also use "
 "anonymous ``lambda`` function to check."
-msgstr "统计学方法设置默认值、应用类型提示或使用这些提示进行类型检查。一些复杂的情况也可以使用匿名的 ``lambda`` 函数进行检查。"
+msgstr ""
+"用于设置默认值、应用类型提示或使用这些提示进行类型检查的静态方法。"
+"一些复杂的情况也可以使用\ ``lambda``\ 匿名函数来进行检查。"
 
 #: info.docfunc.FuncTools:95 of
 msgid ""
@@ -371,14 +396,17 @@ msgid ""
 "type; ``True`` will pass the test for unparseable type; and list of "
 "unparseable type(s) will add those types in checking workflow; ``False`` "
 "as default"
-msgstr "如果为 ``False``，当遇到不可解析的类型时将引发 ``UnSupportableTypeError`` ；为 ``True`` 将通过不可解析类型的测试；"
-"不可解析类型列表将在检查工作流中添加这些类型； ``False`` 为默认值"
+msgstr ""
+"当遇到无法解析的类型时，如果为\ ``False``\ ，则会抛出\ ``UnSupportableTypeError``\ 错"
+"误。若为\ ``True``\ 则会跳过不可解析类型的检查，予以通过；"
+"如若为包含不可解析类型的列表，则会将这些类型添加至类型检查的工作流中；其默认值为\ ``False``\ "
 
 #: info.docfunc.FuncTools:103 of
 msgid ""
 "Flowing examples show how to pre-define default parameters for info "
 "function."
-msgstr "下面的示例演示了如何为info函数预定义默认参数。"
+msgstr ""
+"下面的示例演示了如何为info函数预定义默认参数。"
 
 #: info.docfunc.FuncTools:105 of
 msgid "decorator for parameter setting"
@@ -391,9 +419,10 @@ msgid ""
 "calling, ``ndarray`` confines its type; the same as ``clip`` but with "
 "default value as ``(0.2, 0.8)``; for ``coefficient``, its acceptable "
 "value is no less than zero and no greater than one."
-msgstr "这个例子展示了使用 ``params_setting`` 来构建函数的便利性。对于 ``data`` ， ``Null`` 在"
-"调用时将其标记为必需的参数， ``narray`` 限制了其类型；与 ``clip`` 相同，但默认值为 ``(0.2,0.8)`` ；"
-"对于 ``系数``，其可接受值为不小于零且不大于1。"
+msgstr ""
+"这个例子展示了使用\ ``params_setting``\ 来构建函数的便利性。对于\ ``data``\ ，利用\ ``Null``\ 将"
+"其标记为调用时的必须参数，\ ``ndarray``\ 限制了其数据类型；\ ``clip``\ 也是相同的原理，只不过其默认值为\ ``(0.2, 0.8)``\ ；"
+"对于\ ``coefficient``\ 参数，其可接受值限定为0至1之间的任一数值。"
 
 #: info.docfunc.FuncTools:129 of
 msgid ""
@@ -406,33 +435,37 @@ msgid ""
 " the body. If calling without assignment of ``normalize``, the ``_mean`` "
 "and ``_std`` will be automatically calculated based on ``dt``, otherwise "
 "using the parameters passed in."
-msgstr "由于所有条件都得到了保证，所以可以安全地使用一行python语句来获得 ``dt`` ，"
+msgstr ""
+"由于所有条件都得到了确证，所以可以安全地使用一行python语句来计算获得\ ``dt``\ ，"
 "而不必担心传入的错误参数。此外，有时可能需要对某些参数进行动态设置。例如，上面代码中"
-"的 ``normalize`` 很难使用 ``T`` 来确定，因为它取决于 ``data`` ，在这种情况下，将其"
-"设置为 ``None`` ，然后使用 ``default_param`` 来实现主体中的计算。如果调用时没有"
-"赋值 ``normalize``， ``_mean`` 和 ``_std`` 将根据 ``dt`` 自动计算，否则使用传入的参数。"
+"的\ ``normalize``\ 很难直接使用\ ``T``\ 来确定，因为它取决于传入的\ ``data``\ 值，在这种情况下，将其"
+"设置为\ ``None``\ ，然后使用\ ``default_param``\ 函数在主体中对其进行动态赋值。如果调用时没有"
+"赋值\ ``normalize``\ ，那么\ ``_mean``\ 和\ ``_std``\ 都将根据\ ``dt``\ 的分布进行自动计算，否则则使用传入的参数。"
 
 #: info.docfunc.FuncTools:138 of
 msgid ""
 "whether use as the decorator; if ``False``, will return a none argument "
 "lambda function to get test result, and cost time; ``True`` as default"
-msgstr "是否用作装饰器；如果为 ``False`` ，将返回一个无参数lambda函数来获取测试结果，"
-"并且会消耗时间； ``True`` 为默认值"
+msgstr ""
+"是否用于装饰器；如果为\ ``False``\ ，则将返回一个无参数lambda函数用以获取测试结果、"
+"计算函数运行时间；其默认值为\ ``True``\ "
 
 #: info.docfunc.FuncTools:141 of
-msgid "statistic method to test the decorated function."
-msgstr "检验装饰功能的统计方法"
+msgid "static method to test the decorated function."
+msgstr "测试被装饰函数的静态方法"
 
 #: info.docfunc.FuncTools:143 of
 msgid "decorator to do function testing"
-msgstr "用作功能测试的装饰器"
+msgstr "用作函数测试的装饰器"
 
 #: info.docfunc.FuncTools:173 of
 msgid ""
 "Unnecessary to edit the test script in addition. It capable for testing "
 "while editing. When finish function, clean the test arguments inside, or "
 "comment that line."
-msgstr "不需要额外编辑测试脚本，用作测试功能的装饰器能够在编辑时进行测试。当函数执行完成时，清除其中的测试参数，或者注释该行。"
+msgstr ""
+"不需要额外编写测试脚本，调用函数测试装饰器能够在函数编辑时同步进行测试。"
+"当函数编写完成后，可以清除其中的测试参数，或者对该测试用例进行注释。"
 
 #: info.docfunc.FuncTools:178 of
 msgid ""
@@ -440,12 +473,13 @@ msgid ""
 "in one script. Using the previous :numref:`decorator for parameter "
 "setting` , make it as a info version, then doing test, the script will "
 "be:"
-msgstr "有了 ``FuncTools`` ， 你可以在一个脚本中设计、实现并且测试所有的方程。"
-"使用之前的 :numref:`decorator for parameter setting` ， 把它作为一个info版本，然后做测试，脚本将是："
+msgstr "有了\ ``FuncTools``\ ， 你可以在同一个脚本中对函数进行一体化地设计、编写并且同步测试。"
+"以之前的\ :numref:`decorator for parameter setting`\ 为例， 把它改写为info函数版本，然后进行函数测试，"
+"其脚本将会是："
 
 #: info.docfunc.FuncTools:181 of
 msgid "all in one script"
-msgstr "全在一个脚本中"
+msgstr "脚本编写一体化"
 
 #: info.docfunc.FuncTools:202 of
 msgid ":py:const:`~info.docfunc.T`"
@@ -464,30 +498,38 @@ msgid ""
 "list composed of :ref:`info function(s) <Informatics function>`, or "
 ":py:class:`~info.docfunc.Unit` instance(s)"
 msgstr ""
+"以\ :ref:`info function(s) <Informatics function>`\ 或者\ :py:class:`~info.docfunc.Unit`\ 所"
+"组成的列表"
 
 #: info.docfunc.Unit:7 of
 msgid ""
 "``'sequential'`` or ``'parallel'``, to determine the mapping order of the"
 " Unit; ``'sequential'`` as default"
-msgstr " ``'sequential'`` 或 ``'parallel'`` ，以确定单元的映射顺序；默认为 ``'sequential'`` "
+msgstr ""
+"\ ``'sequential'``\ 或\ ``'parallel'``\ ，用以确定单元的映射结构；"
+"其默认值为\ ``'sequential'``\ "
 
 #: info.docfunc.Unit:9 of
 msgid ""
 "the type of data in entry of this Unit; ``None`` as default to guess the "
 "inflow type based on ``structure``"
-msgstr "该单位输入的数据类型； ``None`` 作为默认根据 ``结构`` 猜测流入类型"
+msgstr ""
+"Unit输入的数据类型；默认值\ ``None``\ 会根据\ ``structure``\ 进行流入类型猜测"
 
 #: info.docfunc.Unit:11 of
 msgid ""
-"the type of data in entry of this Unit; ``None`` as default to guess the "
+"the type of return data of this Unit; ``None`` as default to guess the "
 "outflow type based on ``structure``"
-msgstr "该单位输入的数据类型； ``None`` 作为默认根据 ``结构`` 猜测流入类型"
+msgstr ""
+"Unit输出的数据类型；默认值\ ``None``\ 会根据\ ``structure``\ 进行流出类型猜测"
 
 #: info.docfunc.Unit:13 of
 msgid ""
 "docstring or formal function which contains objective docstring; ``None``"
 " as default to automatically generate based on docstrings of elements"
-msgstr "文档字符串或包含目标文档字符串的形式函数； ``None``  作为默认值，根据元素的文档字符串自动生成"
+msgstr ""
+"文档字符串对象，或包含文档字符串的形式函数；\ ``None``\ 作为默认值，会根据所含元素的文档字符串"
+"进行自动生成"
 
 #: info.docfunc.Unit:15 of
 msgid "a Unit for data processing or operation"
@@ -505,25 +547,28 @@ msgstr ""
 msgid ""
 "when ``mappings`` are not all registered functions or unit; or inflow "
 "data not pass correctly through type checker"
-msgstr "当 ``映射`` 不是所有注册函数或单元时;或者输入数据没有正确通过类型检查器"
+msgstr "当\ ``mappings``\ 的对象包含了未注册为info函数或管道的对象时；或者输入数据没有与预定义的类型产生匹配"
 
 #: info.docfunc.Unit:24 of
 msgid ""
 "lock arguments of current unit as default values, through ``**kwargs`` "
 "assignments."
-msgstr "通过 ``**kwargs`` 赋值将当前单元的参数锁定为默认值。"
+msgstr ""
+"以\ ``**kwargs``\ 的赋值方式，对将当前单元的参数默认值进行锁定。"
 
 #: info.docfunc.Unit:28 of
 msgid ""
 "update arguments of current unit as default values, through ``**kwargs`` "
 "assignments."
-msgstr "通过 ``**kwargs`` 赋值将当前单元的参数更新为默认值。"
+msgstr ""
+"以\ ``**kwargs``\ 的赋值方式，对将当前单元的锁定参数进行更新。"
 
 #: info.docfunc.Unit:32 of
 msgid ""
 "return a copy of self, with a set of specified ``**kwargs`` parameters "
 "related to the inner functions."
-msgstr "返回self的副本，同时带有一组与内部函数相关的指定 `` **kwargs`` 参数。"
+msgstr ""
+"返回self的副本，同时以\ ``**kwargs``\ 的赋值方式，对该返回单元的参数默认值进行锁定。"
 
 #: info.docfunc.Unit:36 of
 msgid "overwrite docstring of the unit."
@@ -531,72 +576,76 @@ msgstr "覆盖该单元的文档字符串"
 
 #: info.docfunc.Unit:38 of
 msgid "str for docstring, or callable object contained that str."
-msgstr "str表示文档字符串，或包含该str的可调用对象"
+msgstr "表示文档字符串的str类型对象，或包含该文档字符串str类型的可调用对象"
 
 #: info.docfunc.Unit:42 of
 msgid "reset default values for all arguments when initiate the Unit."
-msgstr "str表示文档字符串，或包含该str的可调用对象。"
+msgstr "重置初始化Unit时，所有参数的默认值。"
 
 #: info.docfunc.Unit:46 of
 msgid ""
 "output the equivalent values for all arguments when the unit is actually "
 "called."
-msgstr "当实际调用该单元时，输出所有参数的等效值。"
+msgstr ""
+"输出在实际调用该单元时，所有参数的实际等效值。"
 
 #: info.docfunc.Unit:50 of
 msgid "call as function using ``data`` as required argument."
-msgstr "使用 ``data`` 作为所需参数调用函数。"
+msgstr "使用\ ``data``\ 作为必须参数来调用该单元。"
 
 #: info.docfunc.Unit:52 of
 msgid "instance to be processed via this unit."
-msgstr "要通过此单元处理的实例"
+msgstr "通过该单元要处理的数据实例"
 
 #: info.docfunc.Unit:56 of
 msgid "sequentially connects the next unit."
-msgstr "顺序连接下一个单元"
+msgstr "贯序连接下一个单元"
 
 #: info.docfunc.Unit:60 of
 msgid "parallel connects the next unit."
-msgstr "并联连接下一个单元"
+msgstr "并行连接下一个单元"
 
 #: info.docfunc.Unit:64 of
 msgid "Using info Unit to build comprehensive processing steps sequentially:"
-msgstr "利用信息单元依次构建综合处理步骤："
+msgstr "利用info单元依次构建综合数据处理："
 
 #: info.docfunc.Unit:66 of
 msgid "coupled crop and resize processing via info Unit"
-msgstr "通过info单元耦合裁剪和调整大小处理"
+msgstr "通过info单元耦合裁剪和重采样"
 
 #: info.docfunc.Unit:79 of
 msgid ""
 "Or applied parallel structure to process data in different sets of "
 "processing parameters simultaneously. The inner functions use Unit "
 "instance self:"
-msgstr "或采用并行结构同时处理不同处理参数组的数据。内部函数使用单元实例self："
+msgstr ""
+"或采用并行结构，同时处理比较同一管道不同预设参数下的数据。"
+"内部函数使用Unit自身实例："
 
 #: info.docfunc.Unit:82 of
 msgid ""
 "crop and resize processing steps with different sets of parameters, in a "
 "parallel Unit"
-msgstr "裁剪和调整处理步骤与不同的参数集，在一个并行单元"
+msgstr ""
+"并行单元中不同预设参数下的裁剪及重采样"
 
 #: info.docfunc.Unit:97 of
 msgid "Support operator ``>>`` and ``|`` to build pipeline."
-msgstr "支持使用 ``>>`` 和 ``|`` 来构建管道"
+msgstr "支持使用\ ``>>``\ 和\ ``|``\ 操作符来构建管道"
 
 #: info.docfunc.TrialDict:1 of
 msgid ""
 "dict with ``trial`` method. The argument assignment in ``trial`` does not"
 " modify the dict itself."
-msgstr "带有 ``trial`` 方法的字典。在 ``trial`` 赋值参数不会修改字典本身。"
+msgstr "带有\ ``trial``\ 方法的字典。利用\ ``trial``\ 更新字典参数不会对原字典自身产生修改。"
 
 #: info.docfunc.TrialDict:5 of
 msgid "``**kwargs`` as general dict"
-msgstr "通用字典 ``**kwargs`` "
+msgstr "普通字典\ ``**kwargs``\ "
 
 #: info.docfunc.TrialDict:6 of
 msgid "the dict with ``trial`` method"
-msgstr "有 ``trial`` 方法的字典"
+msgstr "带有\ ``trial``\ 方法的字典"
 
 #: info.docfunc.TrialDict:7 of
 msgid ":py:class:`~info.docfunc.TrialDict`"
@@ -604,45 +653,46 @@ msgstr ""
 
 #: info.docfunc.TrialDict:13 of
 msgid "return a copy of self with updated keywords and values"
-msgstr "返回self的副本，其中包含更新的关键字和值"
+msgstr "返回自身的副本，其中包含被更新的关键字和所对应值"
 
 #: info.docfunc.ExeDict:1 of
 msgid ""
 "executable dict composed of ``execute`` keyword and function or generic "
 "function as value. uses for high-order function."
-msgstr "由 ``execute`` 关键字和函数或泛型函数作为值组成的可执行字典。用于高阶函数。"
+msgstr "以\ ``execute``\ 作为关键字，函数或泛型函数作为值的可执行字典。用于高阶函数。"
 
 #: info.docfunc.ExeDict:6 of
 msgid "a Callable object, usually function for generic function"
-msgstr "一个可调用的对象，通常是泛型函数的函数"
+msgstr "可调用的对象，通常是接受函数类型的泛型函数"
 
 #: info.docfunc.ExeDict:7 of
 msgid ""
 "dict contains other keyword and default values as parameters of that "
 "executable object"
-msgstr "包含其他关键字和默认值的字典作为该可执行对象的参数"
+msgstr "由包含其他关键字和默认值的字典作为该可执行对象参数的字典"
 
 #: info.docfunc.ExeDict:9 of
 msgid "required argument ``execute`` is not assigned properly"
-msgstr "所需参数 ``execute`` 没有正确赋值"
+msgstr "所需参数\ ``execute``\ 没有正确赋值"
 
 #: info.docfunc.ExeDict:15 of
 msgid ""
 "run using ``execute`` as the function body, while other keywords and "
 "values as its parameter assignments"
-msgstr "使用 ``execute`` 作为函数体运行，而其他关键字和值作为其参数赋值"
+msgstr "使用\ ``execute``\ 作为函数主体、其他关键字和值作为其参数赋值运行"
 
 #: info.docfunc.ExeDict:19 of
 msgid ""
 "Without ExeDict, for building derived function with different default "
 "assignment values must require high-order function, which one is usually "
 "of high abstract and low readability:"
-msgstr "如果没有ExeDict，要构建具有不同默认赋值值的派生函数必须需要高阶函数，"
-"这通常是高抽象性和低可读性的："
+msgstr ""
+"如果没有ExeDict，要构建具有不同默认赋值值的派生函数必须借助于高阶函数，"
+"通常这样做的代价是代码的高抽象性和低可读性："
 
 #: info.docfunc.ExeDict:22 of
 msgid "high-order function to derive version with different argument values"
-msgstr "派生具有不同参数值的版本的高阶函数"
+msgstr "可派生不同参数值版本的高阶函数"
 
 #: info.docfunc.ExeDict:35 of
 msgid ""
@@ -650,8 +700,9 @@ msgid ""
 "functions, because of the :ref:`currying <function currying>` character "
 "of it. With the previous example, it can be found the following calling "
 "are equivalent, but difficult to understand as common function:"
-msgstr "高阶函数的调用不像普通函数一样是显式的，因为它的 :柯里化:`currying <function currying>` 字符。"
-"通过前面的例子，可以发现下面的调用是等价的，但很难理解为通用函数："
+msgstr ""
+"高阶函数的调用不像普通函数一样是显式的，这是因为它的\ :ref:`柯里化 <function currying>`\ 特性。"
+"通过前面的例子，可以发现下面的调用其实是等价的，但这却很难理解为一般的函数行为："
 
 #: info.docfunc.ExeDict:39 of
 msgid "currying of high-order function calling"
@@ -662,25 +713,29 @@ msgid ""
 "With ExeDict, it can derive a common function to versions with different "
 "argument assignments. This property also supports :ref:`info function "
 "<Informatics function>` intrinsically."
-msgstr "使用ExeDict，它可以为具有不同参数赋值的版本派生一个公共函数。这个属性本质上"
-"也支持 :ref:`info function <Informatics function>` 。"
+msgstr ""
+"利用ExeDict，可以为具有不同参数赋值的普通函数派生建立一个公共函数。这个特性本质上"
+"也支持\ :ref:`info函数 <Informatics function>`\ 。"
 
 #: info.docfunc.ExeDict:50 of
 msgid "functions derived from a meta using different arguments"
-msgstr "使用不同参数从元派生的函数"
+msgstr "使用不同参数从元实现中派生普通函数"
 
 #: info.docfunc.ExeDict:60 of
 msgid ""
 "Obviously, the call itself of ``add_baseline`` in the last example is "
 "more explicit than that of high-order functions."
-msgstr "显然，在最后一个例子中， ``add_baseline`` 的调用本身比高阶函数的调用更显式。"
+msgstr ""
+"显然，在最后一个例子中，\ ``add_baseline``\ 的调用本身，"
+"会比高阶函数的调用更加通俗易懂。"
 
 #: info.docfunc.SingleMap:5 of
 msgid ""
 "an 1-length dict with a callable object as keyword, and a dict composed "
 "of keywords and values for the default arguments assignment for this "
 "callable object"
-msgstr "一个长度为1的字典，以可调用对象作为关键字，以及一个由关键字和值组成的字典，用于该可调用对象的默认参数赋值"
+msgstr ""
+"一个长度为1的字典，其关键字为可调用对象，值为由该可调用对像的关键字和值组成的字典。"
 
 #: info.docfunc.SingleMap:7 of
 msgid "a partial function"
@@ -688,55 +743,57 @@ msgstr "偏函数"
 
 #: info.docfunc.SingleMap:9 of
 msgid "if the argument ``x`` was not assigned properly"
-msgstr "如果参数 ``x`` 没有被正确地赋值"
+msgstr "如果参数\ ``x``\ 没有被正确地赋值"
 
 #: info.docfunc.SingleMap:13 of
 msgid ""
 "This class is usually used for building single map function ``f(x)`` when"
 " the arguments require adaptive modification in the main process. It is "
 "mainly used for lazy calculation, for example:"
-msgstr "当参数需要在主进程中进行自适应修改时，此类通常用于构建单个映射函数 ``f(x)`` 。它主要用于惰性计算，例如:"
+msgstr "该类型通常用于构建需要对参数进行自适应赋值的单映射函数\ ``f(x)``\ 。它主要用于惰性计算，例如:"
 
 #: info.docfunc.SingleMap:16 of
 msgid "build single map function via SingleMap"
-msgstr "通过SingleMap构建单个映射函数"
+msgstr "通过SingleMap构建单映射函数"
 
 #: ../../docstring info.docfunc.traversal_on_params:1 of
 msgid ""
 "traversal on parameters pool. function to make auto unit test, or auto "
 "experiment, for info pipeline."
-msgstr "遍历参数池。用于对信息管道进行自动单元测试或实验。"
+msgstr "遍历参数池。用于对info管道进行自动化单元测试或实验。"
 
 #: ../../docstring info.docfunc.experiments:5 info.docfunc.functest:5
 #: info.docfunc.traversal_on_params:5 of
 msgid "info function or unit"
-msgstr "info函数或单元"
+msgstr "info函数或功能单元"
 
 #: ../../docstring info.docfunc.experiments:6 info.docfunc.functest:6
 #: info.docfunc.traversal_on_params:6 of
 msgid ""
 "pool for parameters, values to be investigated should be collected into a"
 " list"
-msgstr "对于参数池，应将待调查的值收集成一个列表"
+msgstr "对于参数池，应将待测试的备选值整理成一个列表"
 
 #: ../../docstring info.docfunc.experiments:12 info.docfunc.functest:12
 #: info.docfunc.traversal_on_params:8 of
 msgid ""
 "trigger to determine whether testing for built-in parameters in pool; "
 "``False`` as default"
-msgstr "触发以确定是否测试池中的内置参数； ``False`` 为默认值"
+msgstr "是否针对参数池中的内置参数也进行测试的开关；其默认值为\ ``False``\ "
 
 #: ../../docstring info.docfunc.traversal_on_params:10 of
 msgid ""
 "trigger to determine whether reserve the test results; if ``False``, "
 "original will be included, otherwise class type if final results are not "
 "short enough; ``True`` as default for unit test"
-msgstr "触发以确定是否测试池中的内置参数； ``False`` 为默认值"
+msgstr ""
+"是否保留测试结果的开关；如果为\ ``False``\ ，原测试结果将被保留，否则在"
+"结果不足够精简时，仅保留输出的结果类型；\ ``True``\ 作为默认值，用作单元测试。"
 
 #: ../../docstring info.docfunc.experiments:14 info.docfunc.functest:14
 #: info.docfunc.traversal_on_params:13 of
 msgid "DataFrame container for testing result"
-msgstr "用于测试结果的DataFrame容器"
+msgstr "用于保存测试结果的DataFrame容器"
 
 #: ../../docstring info.docfunc.traversal_on_params:18 of
 msgid "testing on parameters pool"
@@ -746,13 +803,15 @@ msgstr "参数池测试"
 msgid ""
 "cache file to dump result of test parameters; ``None`` will create a new "
 "dict in each invocation"
-msgstr "缓存文件转储测试参数的结果； ``None`` 将在每次调用中创建一个新字典"
+msgstr ""
+"存储测试结果的缓存文件；默认值\ ``None``\ 将在每次调用中创建一个新字典（并不进行缓存）"
 
 #: ../../docstring info.docfunc.experiments:10 info.docfunc.functest:10 of
 msgid ""
 "prefix marker for callable object to be tested if necessary; ``''`` as "
 "default for no prefix attached to the function name"
-msgstr "必要时要测试的可调用对象的前缀标记； ``''`` 作为默认值，没有前缀附加到函数名"
+msgstr ""
+"根据需要对测试的可调用对象增加的前缀标记；\ ``''``\ 作为默认值，则不会对可调用对象附加额外的前缀"
 
 #: ../../docstring info.docfunc.experiments:19 of
 msgid "experiment pipeline"
@@ -760,7 +819,7 @@ msgstr "实验管道"
 
 #: ../../docstring info.docfunc.experiments:41 of
 msgid "experiments dump the original result for each test."
-msgstr "实验会转储每个测试的原始结果"
+msgstr "存储每个测试用例的原始实验结果"
 
 #: ../../docstring info.docfunc.functest:19 of
 msgid "function test pipeline"
@@ -770,44 +829,45 @@ msgstr "函数测试管道"
 msgid ""
 "functest dump the class type of result for each test, if the final result"
 " is difficult to be printed out concisely."
-msgstr "如果最终结果难以简洁地打印出来，测试函数会转而存储每个测试结果的类型。"
+msgstr ""
+"如果最终结果难以被简洁地打印出来，functest函数将会存储每个测试结果的类型。"
 
 #: ../../docstring info.docfunc.generic_printer:5 of
 msgid "original data with attributes or methods to be showed"
-msgstr "具有要显示的属性或方法的原始数据"
+msgstr "具有待打印的属性或方法的原始数据对象"
 
 #: ../../docstring info.docfunc.generic_printer:6 of
 msgid ""
 "list of callable attributes; no assignment uses empty list ``[]`` as "
 "default"
-msgstr "可调用属性列表；没有赋值使用空列表 ``[]`` 作为默认值"
+msgstr "可调用属性列表；没有赋值时使用空列表\ ``[]``\ 作为默认值"
 
 #: ../../docstring info.docfunc.exception_logger:10
 #: info.docfunc.generic_logger:14 info.docfunc.generic_printer:7 of
 msgid "NoReturn"
-msgstr "NoReturn"
+msgstr ""
 
 #: ../../docstring info.docfunc.generic_printer:9 of
 msgid "invalid attribute or method calling in ``attrs`` assignment"
-msgstr "在 ``attrs`` 赋值中调用无效的属性或方法"
+msgstr "在\ ``attrs``\ 的赋值中调用了无效的属性或方法"
 
 #: ../../docstring info.docfunc.generic_printer:13 of
 msgid "For exporting dimension, shape and max value for images individually:"
-msgstr "用于单独导出图像的尺寸，形状和最大值:"
+msgstr "输出导出图像的维度、形状和最大值："
 
 #: ../../docstring info.docfunc.generic_printer:15 of
 msgid "attribute printing through generic printer"
-msgstr "通过通用打印器打印属性"
+msgstr "通过通用打印器实现属性输出"
 
 #: ../../docstring info.docfunc.generic_printer:25 of
 msgid ""
 "Or alternative implementation using ``printing_u`` unit coupled with "
 "``ExeDict`` class:"
-msgstr "或者使用 ``printing_u`` 单元与 ``ExeDict``  类耦合的替代实现:"
+msgstr "或者，使用\ ``printing_u``\ 单元与\ ``ExeDict``\ 类的结合来进行替代实现："
 
 #: ../../docstring info.docfunc.generic_printer:27 of
 msgid "attribute printing through printing unit wrapper"
-msgstr "属性印刷通过印刷单元包装"
+msgstr "通过打印单元包装器实现属性输出"
 
 #: ../../docstring info.docfunc.generic_printer:37 of
 msgid ":py:func:`~info.docfunc.printing_u`"
@@ -820,48 +880,48 @@ msgstr ""
 
 #: ../../docstring info.docfunc.generic_logger:5 of
 msgid "data prepared to be executed via extractors"
-msgstr "准备通过提取器提取的数据"
+msgstr "待通过提取器的数据"
 
 #: ../../docstring info.docfunc.generic_logger:6 of
 msgid ""
 "dict composed of feature names and mapping methods on data as values; no "
 "assignment uses empty dict ``{}`` as default"
-msgstr "由特征名和数据作为值的映射方法组成的字典；没有赋值使用空字典 ``{}`` 作为默认值"
+msgstr "由特征名和数据映射方法作为值的字典；在没有赋值时使用空字典\ ``{}``\ 作为其默认值"
 
 #: ../../docstring info.docfunc.exception_logger:7
 #: info.docfunc.generic_logger:9 of
 msgid ""
 "path-like string for folder where the file will be saved; no assignment "
 "uses current work directory (``os.getcwd()``) as default"
-msgstr "类似路径的字符串，用于存放文件的文件夹;没有赋值使用当前工作目录（ ``os.getcwd()`` ）作为默认值"
+msgstr "指示路径的字符串，作为待存放文件的路径；在未赋值时使用当前工作目录（\ ``os.getcwd()``\ ）作为其默认值"
 
 #: ../../docstring info.docfunc.generic_logger:11 of
 msgid "file name for recording output; ``'.df_sav'`` as default"
-msgstr "记录输出的文件名；默认为 ``df_sav`` "
+msgstr "记录输出的文件名；默认值为\ ``df_sav``\ "
 
 #: ../../docstring info.docfunc.generic_logger:12 of
 msgid ""
 "the global parameters passed on all mapping methods in extractors; no "
 "assignment uses empty dict ``{}`` as default"
-msgstr "在提取器中的所有映射方法上传递的全局参数；没有赋值使用空字典 ``{}`` 作为默认值"
+msgstr "在提取器中的针对所有映射方法所传递的全局参数；在没有赋值使用空字典\ ``{}``\ 作为其默认值"
 
 #: ../../docstring info.docfunc.generic_logger:19 of
 msgid ""
 "For example, logging max and percentile values for each image into the "
 "file ``'describe.log'``:"
-msgstr "例如，将每个图像的最大值和百分位数记录到文件 ``describe.log`` 中。"
+msgstr "例如，将每个图像的最大值和百分位数保存到文件\ ``describe.log``\ 中："
 
 #: ../../docstring info.docfunc.generic_logger:21 of
 msgid "logger to record max and percentile values"
-msgstr "用于记录最大值和百分位数值的记录器"
+msgstr "最大值和百分位数值的记录器"
 
 #: ../../docstring info.docfunc.generic_logger:37 of
 msgid "It can also be wrapped into a saving unit:"
-msgstr " 同时也可以被封装成一个保存单元"
+msgstr "同时也可以被封装成一个存储单元"
 
 #: ../../docstring info.docfunc.generic_logger:39 of
 msgid "generic logger wrapped into saving unit"
-msgstr "被封装到单元中的通用记录器"
+msgstr "封装为存储单元的通用记录器"
 
 #: ../../docstring info.docfunc.exception_logger:34
 #: info.docfunc.generic_logger:52 of
@@ -872,15 +932,15 @@ msgstr ""
 msgid ""
 "tuple composed of str for exceptive case, and exception raised during "
 "running the corresponding case"
-msgstr "由字符串组成的元组，用于异常情况，并在运行相应情况时引发异常"
+msgstr "由异常用例字符串，及该用例运行时所引发的异常所构成的元组"
 
 #: ../../docstring info.docfunc.exception_logger:9 of
 msgid "file name for recording exceptive cases; ``'run_error.log'`` as default"
-msgstr "记录特殊情况的文件名；默认为 ``run_error.log`` "
+msgstr "记录异常用例的文件名；默认值为\ ``run_error.log``\ "
 
 #: ../../docstring info.docfunc.exception_logger:15 of
 msgid "exception logger used in try except code block"
-msgstr "在try except代码块中使用的异常记录器"
+msgstr "在try和except代码块中使用的异常记录器"
 
 #: ../../docstring info.docfunc.exception_logger:32 of
 msgid ":py:func:`~info.docfunc.generic_logger`"
@@ -888,7 +948,7 @@ msgstr ""
 
 #: ../../docstring info.docfunc.default_param:5 of
 msgid "dict params to be detected"
-msgstr "需要被检测的字典参数"
+msgstr "待被检测的字典参数"
 
 #: ../../docstring info.docfunc.default_param:6 of
 msgid "keyword for parameter"
@@ -900,27 +960,27 @@ msgstr "默认值"
 
 #: ../../docstring info.docfunc.default_param:8 of
 msgid "``v`` if ``k`` in ``params`` is ``None``, else the value in ``params``"
-msgstr " ``v`` if ``k`` in ``params`` is ``None``, else the value in ``params`` "
+msgstr "如果\ ``k``\ 在\ ``params``\ 中的结果为\ ``None``\ 则返回\ ``v``\ ，否则则返回\ ``params``\ 中的该值"
 
 #: ../../docstring info.docfunc.diagnosing_tests:5 of
 msgid "dataframe result"
-msgstr "dataframe结果"
+msgstr "dataframe对象"
 
 #: ../../docstring info.docfunc.diagnosing_tests:6 of
 msgid "trigger to show details for the exceptive cases; ``True`` as default"
-msgstr "显示例外情况的详细警报信息；默认值为 ``True`` "
+msgstr "是否为异常用例输出详细警报信息的开关；其默认值为\ ``True``\ "
 
 #: ../../docstring info.docfunc.diagnosing_tests:7 of
 msgid ""
 "list of bool for dataframe result; ``True`` for case with 0 exit code, "
 "otherwise ``False``"
-msgstr "dataframe检查结果的布尔值列表；如果退出码为0，则为 ``True`` ，否则为 ``False`` "
+msgstr "针对dataframe结果的布尔值列表；如果退出码为0，则为\ ``True``\ ，否则为\ ``False``\ "
 
 #: ../../docstring info.docfunc.diagnosing_tests:12 of
 msgid ""
 "the tool is used for auto unit test framework. If all cases pass, its "
 "return will be list of ``True`` only."
-msgstr "该工具用于自动单元测试框架。如果所有情况都通过了检查，它的返回将是一个只有 ``True`` 的列表。"
+msgstr "该工具用于自动单元测试框架。在所有情况都通过检查的情况下，它的返回值将是一个只包含\ ``True``\ 的列表。"
 
 #: ../../source/interface/api_frame.rst
 msgid "Authors"
@@ -928,7 +988,7 @@ msgstr "译者"
 
 #: ../../source/interface/api_frame.rst:83
 msgid "Chen Zhang"
-msgstr "Marin<381017759@qq.com>"
+msgstr "`Marin <381017759@qq.com>`_ ; Chen Zhang"
 
 #: ../../source/interface/api_frame.rst
 msgid "Version"
@@ -945,4 +1005,3 @@ msgstr "创建于"
 #: ../../source/interface/api_frame.rst:85
 msgid "Jun 29, 2023"
 msgstr "2023年6月29日"
-
