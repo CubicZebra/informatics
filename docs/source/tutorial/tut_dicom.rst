@@ -192,7 +192,7 @@ Return value from the above pipeline is a data frame object with patient name co
 while imaging features as its columns. The :numref:`Figure %s <image feature sheet>` shows a glance of the feature
 collection, obtained using `lesion`, `invasion1` and `invasion2` in ROI name list.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/image_feature_glance.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/0c93de89-7db7-421a-976d-256c651e6da3
    :name: image feature sheet
    :width: 450
    :align: center
@@ -242,7 +242,7 @@ from list of ROI names to be investigated is available.
 Last two lines in :numref:`case study of radiotherapy schedule` visualize the image as :ref:`DVH <DVH>` figure.
 The 3D image and the selected ROIs will be like :numref:`Figure %s <visualization for cervical lesion>`:
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/cervical_cancer_img.jpg
+.. figure:: ttps://github.com/users/CubicZebra/projects/6/assets/34041412/24067623-141e-45b2-82c3-7c829732bdfc
    :name: visualization for cervical lesion
    :width: 700
    :align: center
@@ -252,7 +252,7 @@ The 3D image and the selected ROIs will be like :numref:`Figure %s <visualizatio
 The computed DVH result is shown as :numref:`Figure %s <dvh for cervical lesion>` and will be export as `DVH1.png`
 inplace.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/cervical_cancer_dvh.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a947e3e6-0536-4e8e-89d3-86649971c337
    :name: dvh for cervical lesion
    :width: 450
    :align: center

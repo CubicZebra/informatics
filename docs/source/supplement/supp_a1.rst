@@ -29,7 +29,7 @@ However, not all dimensions response observations equal-sensitively. If visualiz
 data points, than that of green ones. In some specific disciplines, dimensions were considered on basis of groups
 of the same sort (e.g. spatial omics for tumor researches :ref:`[Wu2022] <[Wu2022]>`)
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/design_matrix.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/d33dafaf-b571-4348-95ff-f412ad26b517
    :name: design_mat2
    :width: 250
    :align: center
@@ -54,7 +54,7 @@ Euclidean, Frobenius).
 Using Euclidean norm of two vectors as their distance, the distance matrix for previous design matrix
 :math:`\boldsymbol{A}` would be like:
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/distance_matrix.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/fccf13da-fd2a-401c-a6f5-5623afceebe8
    :name: distance_mat1
    :width: 300
    :align: center
@@ -70,7 +70,7 @@ Generally, the distance matrix can afford an intuitive visualization, for how de
 specific dimensions. Moreover, it is a foundation of comprehensive analytics, as well as quantitative measure,
 applied in lots of fields. The following result compares the identical data in three different dimension groups:
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/design_distance.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/9eb61579-4096-4244-a4c8-8890dcf4ae63
    :name: design_distance
    :width: 700
    :align: center
@@ -103,7 +103,7 @@ Despite the variation of datapoints, we use the term *informative* is somehow no
 possibility of exist of coupled dimensions (imagine two highly correlated dimensions). In that case, decomposition
 algorithms can further factorize dataset, after which possible pattern of data can be readily determined.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/decomp_for_pattern.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/e70a47c6-03af-4107-846a-2bbe514510c0
    :name: decomposition for pattern
    :width: 650
    :align: center
@@ -144,7 +144,7 @@ _`Multi Graph Correlation`
 The detailed implementation and benchmark test of MGC has also been reported (:ref:`[Pandas2019] <[Pandas2019]>`).
 Algorithm of MGC can be illustrated as :numref:`Figure %s <MGC_algorithm>`:
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/MGC_illustration.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/b56724b7-912d-4cb0-8d9c-f078c71a435c
    :name: MGC_algorithm
    :width: 400
    :align: center
@@ -189,7 +189,7 @@ From which the conventional uni-variate statistics and corresponding methodologi
 However, more than had the conventional statistical test, MGC consists of luxuriant details about independence
 between two set to be compared, inside the scale map in the test result:
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/correlation_pattern_mgc.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/ebbf5fba-132e-48d4-a674-5567f08c373b
    :name: MGC_pattern
    :width: 700
    :align: center
@@ -206,7 +206,7 @@ where information barely overlaps among those two modalities, it means that juxt
 expected to be profitable; The last case (d) shows the those two modalities are entirely of the same, however this
 conclusion is not supported by statistical significance, additional data would be beneficial to further analysis.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/applied_mgc.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/34d6f1d7-46d8-4f75-b68a-d43dfa905972
    :name: MGC_applied
    :width: 500
    :align: center

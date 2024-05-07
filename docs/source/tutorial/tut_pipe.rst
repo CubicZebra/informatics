@@ -6,7 +6,7 @@ convenience for fast implementation and developing. Data processing involving in
 requires systematical integration. Thus, the unified data controlling among those utilities contributes to accelerate
 verifying prototypes, optimize algorithm performance, as well as lower maintenance cost.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/python_ecosystem.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a31fba16-d6cd-40e2-bb88-3b31dddc0040
    :name: python ecosystem
    :width: 650
    :align: center
@@ -105,7 +105,7 @@ each running case.
 Prompt will info the current condition and calculated standard deviation, running time, and the final result case
 by case; then the histogram figure will be popped up like :numref:`Figure %s <experiment flow histogram>`.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/experiment_flow_demo.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/d9aa5d25-e116-4747-9d72-6364d2fba64a
    :name: experiment flow histogram
    :width: 450
    :align: center
@@ -122,7 +122,7 @@ the exit code. If the pipeline exits with raised exception, related information 
 :code:`experiments` in :numref:`run auto experiment`, this meta implementation :code:`funtest` is in the same
 namespace. It can test for informatics functions, unit and pipelines defined via this framework.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/auto_test.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/cba44cac-998f-4c4a-b9c2-c446f794967a
    :name: automation testing result
    :width: 500
    :align: center

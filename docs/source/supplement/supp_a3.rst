@@ -38,7 +38,7 @@ the modeling parameters, or the label of data. The :numref:`Figure %s <factors a
 corresponding factor, will include :math:`\prod_{i=1}^4 s_i` items (:math:`s_i \in s = \{3, 2, 4, 3\}`), whose form
 is often utilized as indexing, or row name in the :ref:`design matrix <Design matrix>` customarily.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/factors_levels_illustration.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a3e009bf-d6b9-427f-a245-fa68d0db507c
    :name: factors and levels
    :width: 400
    :align: center
@@ -80,7 +80,7 @@ it is handy to measure then score how well that dimension matches the hypothesis
    be a series, a vector, a tensor, or a customized structure such as the pseudo-tensor proposed in this section
    (e.g. mean, standard deviation, or etc.).
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/rearranged_tensor.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/2f508a60-b511-46bb-a053-52a753f967cd
    :name: pseudo-tensor
    :width: 480
    :align: center
@@ -117,7 +117,7 @@ Priori scoring utilizes :ref:`Shapiro-Wilk test <Shapiro-Wilk test>` to measure 
 the complex number space. For the data in a certain column, the Euclidean norm of :math:`s_{ps}` is sample mean
 :math:`\bar{x}`; the direction of :math:`s_{ps}` is determined by :math:`s_{sw}` and :math:`1-p_{sw}`.
 
-.. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/statistic1_priori_scoring.jpg
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/1c58ce83-ad0a-4165-b03d-a9fa74969fcc
    :name: statistic1_priori_scoring
    :width: 300
    :align: center
