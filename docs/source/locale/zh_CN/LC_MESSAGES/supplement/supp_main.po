@@ -84,8 +84,8 @@ msgid ""
 "<[Slovic1977]>` :ref:`Nelder1990] <[Nelder1990]>`."
 msgstr ""
 "多元统计分析基础。可应用于统计学算法、数据挖掘、决策理论、"
-"自动化、及 :ref:`人工智能 <AI>` 系统的分析学基础概念 "
-":ref:`[MacCrimmon1968, <[MacCrimmon1968]>` :ref:`Slovic1977, <[Slovic1977]>` :ref:`Nelder1990] <[Nelder1990]>` 。"
+"自动化、及\ :ref:`人工智能 <AI>`\ 系统的分析学基础概念"
+"\ :ref:`[MacCrimmon1968, <[MacCrimmon1968]>`\ :ref:`Slovic1977, <[Slovic1977]>`\ :ref:`Nelder1990] <[Nelder1990]>`\ 。"
 
 #: ../../source/supplement/supp_main.rst:28
 msgid "_`Scientific calculation essentials`"

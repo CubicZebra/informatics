@@ -34,7 +34,7 @@ msgstr "运行平台与安装可选项"
 
 #: ../../source/introduction.rst:12
 msgid ":code:`informatics` is officially support the following desktop platforms:"
-msgstr ":code:`informatics` 正式支持下列桌面平台："
+msgstr ":code:`informatics`\ 正式支持下列桌面平台："
 
 #: ../../source/introduction.rst:14
 msgid "Windows"
@@ -57,11 +57,11 @@ msgstr ""
 
 #: ../../source/introduction.rst:24
 msgid "Install :code:`informatics` with basic dependent components."
-msgstr "安装 :code:`informatics` 及其基础依赖项。"
+msgstr "安装\ :code:`informatics`\ 及其基础依赖项。"
 
 #: ../../source/introduction.rst:32
 msgid "Install basic :code:`informatics` with instance data."
-msgstr "安装基础版 :code:`informatics` ，以及测试数据。"
+msgstr "安装基础版\ :code:`informatics`\ ，以及测试数据。"
 
 #: ../../source/introduction.rst:40
 msgid ""
@@ -75,15 +75,15 @@ msgid ""
 "using spatial rendering, `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_"
 " is necessary as well."
 msgstr ""
-"安装基础版 :code:`informatics` ，以及相应可视化依赖项。可视化程序的运行需要环境中至少存在 "
-"`PySide2 <https://pypi.org/project/PySide2/>`_ ， `PySide6 <https://pypi.org/project/PySide6/>`_ ，"
-"`PyQt5 <https://pypi.org/project/PyQt5/>`_ ， `PyQt6 <https://pypi.org/project/PyQt6/>`_ 的其中之一。"
+"安装基础版\ :code:`informatics`\ ，以及相应可视化依赖项。可视化程序的运行需要环境中至少存在"
+"\ `PySide2 <https://pypi.org/project/PySide2/>`_\ ，\ `PySide6 <https://pypi.org/project/PySide6/>`_\ ，"
+"\ `PyQt5 <https://pypi.org/project/PyQt5/>`_\ ，\ `PyQt6 <https://pypi.org/project/PyQt6/>`_\ 的其中之一。"
 "推荐使用PySide6作为运行后端。"
-"对于需要用到空间渲染的函数，还必须保证环境中 `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_ 的正确安装。"
+"对于需要用到空间渲染的函数，还必须保证环境中\ `PyOpenGL <https://pypi.org/project/PyOpenGL/>`_\ 的正确安装。"
 
 #: ../../source/introduction.rst:52
 msgid "Install basic :code:`informatics` with medical image related dependencies."
-msgstr "安装基础版 :code:`informatics` ，以及医学图像相关依赖项。"
+msgstr "安装基础版\ :code:`informatics`\ ，以及医学图像相关依赖项。"
 
 #: ../../source/introduction.rst:59
 msgid "_`Check installation`"
@@ -94,14 +94,14 @@ msgid ""
 "To check whether :code:`informatics` was installed, run following code in"
 " Python or command line shell:"
 msgstr ""
-"检查 :code:`informatics` 是否已正确安装，可以在Python环境中，或命令行解释器里运行："
+"检查\ :code:`informatics`\ 是否已正确安装，可以在Python环境中，或命令行解释器里运行："
 
 #: ../../source/introduction.rst:76
 msgid ""
 "Version number will in the prompt if :code:`informatics` has been "
 "properly installed, otherwise error message."
 msgstr ""
-"如果 :code:`informatics` 已正确安装，则对应的版本号将会在显示在对应的提示界面内，"
+"如果\ :code:`informatics`\ 已正确安装，则对应的版本号将会在显示在对应的提示界面内，"
 "否则将会出现错识信息。"
 
 #: ../../source/introduction.rst:79
@@ -119,9 +119,9 @@ msgid ""
 "one of remote."
 msgstr ""
 "默认安装只包含基本组件。"
-"如果需要激活使用可选项的相关功能，请使用相应 `标识符 <https://peps.python.org/pep-0685/>`_ 重新执行pip包管理器"
-"（例如，:code:`pip install informatics[ins] informatics[vis]` 用于集成实例数据和可视化工具，"
-"无论环境中是否已经安装了基本版 :code:`informatics` ）。"
+"如果需要激活使用可选项的相关功能，请使用相应\ `标识符 <https://peps.python.org/pep-0685/>`_\ 重新执行pip包管理器"
+"（例如，\ :code:`pip install informatics[ins] informatics[vis]`\ 用于集成实例数据和可视化工具，"
+"无论环境中是否已经安装了基本版\ :code:`informatics`\ ）。"
 "值得注意的是，进行上述可选项升级时，本地版本必须与远程版本保持一致。"
 
 #: ../../source/introduction.rst:87
@@ -129,7 +129,7 @@ msgid ""
 "Or alternatively, using pip installer to install missing module(s) when "
 ":code:`ImportError` raised in the prompt."
 msgstr ""
-"亦或者，在实际运行时，在提示界面出现 :code:`ImportError` 时，"
+"亦或者，在实际运行时，在提示界面出现\ :code:`ImportError`\ 时，"
 "使用pip包管理器安装所缺失的模块。"
 
 #: ../../source/introduction.rst:90
@@ -218,9 +218,9 @@ msgid ""
 "Therefore with various units (e.g. :code:`u1`, :code:`u2` with different "
 "arguments), it is able to combine them as desired:"
 msgstr ""
-"称为 :py:func:`~info.docfunc.Unit` 的关键结构可以在Python中包装任何可调用对象。"
-"数据处理可以通过 :ref:`函数式编程脚本 <Function based scripting>` 实现。"
-"因此，对于不同的单位(例如，带不同参数的 :code:`u1` , :code:`u2` )，它可以根据需要组合它们:"
+"称为\ :py:func:`~info.docfunc.Unit`\ 的关键结构可以在Python中包装任何可调用对象。"
+"数据处理可以通过\ :ref:`函数式编程脚本 <Function based scripting>`\ 实现。"
+"因此，对于不同的单位(例如，带不同参数的\ :code:`u1`\ ，\ :code:`u2`\ )，它可以根据需要组合它们:"
 
 #: ../../source/introduction.rst:128
 msgid "example of unit combination"
@@ -231,7 +231,7 @@ msgid ""
 "Auto test the pipe :code:`p` for determining its optimal argument "
 "combination:"
 msgstr ""
-"用以确定最佳参数组合的自动化测试管道 :code:`p` ："
+"用以确定最佳参数组合的自动化测试管道\ :code:`p`\ ："
 
 #: ../../source/introduction.rst:136
 msgid "example of auto test"
