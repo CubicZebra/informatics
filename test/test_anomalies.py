@@ -29,8 +29,8 @@ neighbors_pipe = F(lambda **kw: [xy := kw.pop('data'), md := ano.Neighbors(data=
                                  md.predict(data=kw.get('prediction'))][-1])
 neighbors_pipe.__name__ = 'neighbors_pipe'
 nei_args = {'data': [(dense_2class, label_2class), (dense_3class, label_3class)],
-            'distance_measure': [1, 2], 'nearing_mode': ['KNN'], 'k_determine': [8, 10],
-            'eta_determine': [0.05, 0.1], 'prediction': [dense_3class]}  # TODO: test LMNN
+            'distance_measure': [1, 2], 'nearing_mode': ['KNN', 'LMNN'], 'k_determine': [8, 10],
+            'eta_determine': [0.05, 0.1], 'prediction': [dense_3class]}
 
 
 if not tested:
