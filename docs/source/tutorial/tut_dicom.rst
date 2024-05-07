@@ -242,7 +242,7 @@ from list of ROI names to be investigated is available.
 Last two lines in :numref:`case study of radiotherapy schedule` visualize the image as :ref:`DVH <DVH>` figure.
 The 3D image and the selected ROIs will be like :numref:`Figure %s <visualization for cervical lesion>`:
 
-.. figure:: ttps://github.com/users/CubicZebra/projects/6/assets/34041412/24067623-141e-45b2-82c3-7c829732bdfc
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/24067623-141e-45b2-82c3-7c829732bdfc
    :name: visualization for cervical lesion
    :width: 700
    :align: center
