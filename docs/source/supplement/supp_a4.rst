@@ -156,10 +156,10 @@ distribution :ref:`[Lowry2014, <[Lowry2014]>` :ref:`Heiman2001] <[Heiman2001]>`.
       .. math::
          :label: statistic_f
 
-         s = \frac{{MS}_{B}}{{MS}_{W}} \sim F
+         s = \frac{{MS}_{B}}{{MS}_{W}} \sim \mathcal{F}
 
 Where :math:`MS_{B}` and :math:`MS_{W}` are the mean squares between and within groups respectively. This statistic
-:math:`s` follows a certain :math:`F` distribution.
+:math:`s` follows a certain :math:`\mathcal{F}` distribution.
 
 More specifically, :math:`MS_{B} = S_{B}/f_{B}`, where :math:`S_{B}` is the sum of squared difference, and the
 :math:`f_{B}` is the degrees of freedom, for between groups. All about :math:`MS_{W}` is as similar as those of
