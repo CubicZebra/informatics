@@ -195,6 +195,9 @@ _`References`
    _`[Hubbard2012]` Hubbard, J. H., & West, B. H. (2012). Differential equations: a dynamical systems approach:
    higher-dimensional systems (Vol. 18). Springer Science & Business Media.
 
+   _`[Oinar2023]` Oinar, C., Le, B. M., & Woo, S. S. (2023). Kappaface: adaptive additive angular margin loss for
+   deep face recognition. IEEE Access.
+
 ----
 
 :Authors: Chen Zhang

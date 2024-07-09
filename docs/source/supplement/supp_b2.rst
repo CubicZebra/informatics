@@ -357,22 +357,22 @@ direction :math:`\boldsymbol{\mu}` and the concentration parameter :math:`\kappa
 .. math::
    :label: Von Mises Fisher pdf
 
-   \mathcal{M}(\boldsymbol{x}|\boldsymbol{\mu}, \kappa) = \frac{\kappa^{M/2-1}}{(2\pi)^{M/2} B_{M/2-1} (\kappa)}
+   \mathcal{M}(\boldsymbol{x}|\boldsymbol{\mu}, \kappa) = \frac{\kappa^{M/2-1}}{(2\pi)^{M/2} I_{M/2-1} (\kappa)}
    \exp(\kappa \boldsymbol{\mu}^\top \boldsymbol{x})
 
-Where :math:`\boldsymbol{\mu}` is an :math:`M`-length unit vector, and the item :math:`B_{M/2-1} (\kappa)` refers to
-the modified Bessel function of the 1st kind. In general, a :math:`\theta`-ordered 1st kind modified Bessel function
-:math:`B_{\theta} (x)` is defined as:
+Where :math:`\boldsymbol{\mu}` is an :math:`M`-length unit vector, and the item :math:`I_{M/2-1} (\kappa)` refers to
+the modified Bessel function of the 1st kind. In general, a :math:`o`-ordered 1st kind modified Bessel function
+:math:`I_o (x)` is defined as:
 
 .. math::
    :label: modified Bessel function of the 1st kind
 
-   B_{\theta} (x) = \frac{2^{-\theta} x^{\theta}}{\sqrt{\pi} \Gamma (x + 0.5)} \int_0^{\pi} d\phi \cdot \sin^{2\theta}
-   \phi \exp(x \cos \phi)
+   I_o (x) = \frac{2^{-o} x^{o}}{\sqrt{\pi} \Gamma (x + 0.5)} \int_0^{\pi} d\phi \cdot \sin^{2 o} \phi \exp
+   (x \cos \phi)
 
 We use the :math:`c_M (\kappa)` to substitute the coefficient term for that of :math:`\exp` in
 :eq:`Von Mises Fisher pdf`. As for the data set :math:`D = \{ \boldsymbol{x}^{(1)}, \dots, \boldsymbol{x}^{(n)} \}`,
-its logarithmic Lagrange for the most likelihood estimation on :math:`\boldsymbol{\mu}` is:
+its logarithmic Lagrange for the most likelihood estimation (MLE) on :math:`\boldsymbol{\mu}` is:
 
 .. math::
    :label: logarithmic Lagrange of Von Mises Fisher
@@ -389,9 +389,22 @@ constraint of :math:`\boldsymbol{\mu}^\top \boldsymbol{\mu} = 1` with coefficien
    \frac{\partial}{\partial \boldsymbol{\mu}} (L - \lambda \boldsymbol{\mu}^\top \boldsymbol{\mu}) = \kappa
    \sum_{n=1}^N \boldsymbol{x}^{(n)} - 2 \lambda \boldsymbol{\mu} = 0
 
-Therefore the estimation :math:`\hat{\boldsymbol{\mu}}` is
+Therefore the MLE on :math:`\hat{\boldsymbol{\mu}}` is equal to
 :math:`\boldsymbol{s} / \sqrt{\boldsymbol{s}^\top \boldsymbol{s}}` where the :math:`\boldsymbol{s}` satisfies
-:math:`( \sum_{n=1}^N \boldsymbol{x}^{(n)} ) / N`.
+:math:`\boldsymbol{s} = ( \sum_{n=1}^N \boldsymbol{x}^{(n)} ) / N`. There is not explicit solution for analytically
+estimating the concentration parameter :math:`\kappa` so far. For reference, :ref:`Oinar et al. <[Oinar2023]>`
+gave an intuitive demonstration for the 3-dimensional Von Mises Fisher distributions with different :math:`\kappa`,
+as showed in :numref:`Figure %s <3-dimensional Von Mises Fisher distribution>`. The lower the :math:`\kappa`, the
+more dispersive the data points are.
+
+.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/32720e51-87f5-4e72-8857-71cb3170450a
+   :name: 3-dimensional Von Mises Fisher distribution
+   :width: 300
+   :align: center
+
+   3-dimensional Von Mises Fisher distributions with varying :math:`\kappa` :ref:`[Oinar2023] <[Oinar2023]>`
+
+
 
 ----
 
