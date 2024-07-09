@@ -404,7 +404,19 @@ more dispersive the data points are.
 
    3-dimensional Von Mises Fisher distributions with varying :math:`\kappa` :ref:`[Oinar2023] <[Oinar2023]>`
 
+As for a new direction :math:`\boldsymbol{x}^\prime`, the measurement for the anomaly based on the Von Mises Fisher
+distribution can be defined using its negative logarithmic likelihood
+:math:`- \ln \mathcal{M} (\boldsymbol{x}^\prime | \boldsymbol{\hat{\mu}}, \kappa)`:
 
+.. math::
+   :label: anomaly of Von Mises Fisher
+
+   a(\boldsymbol{x}^\prime) &= - \ln \{c_M (\kappa) \cdot \exp (\kappa \boldsymbol{\hat{\mu}}^\top
+   \boldsymbol{x}^\prime)\} \\
+   &= - \ln \{c_M (\kappa) \cdot \frac{\exp(\kappa)}{\exp(\kappa)} \cdot \exp (\kappa
+   \boldsymbol{\hat{\mu}}^\top\boldsymbol{x}^\prime)\} \\
+   &= C + \kappa - \kappa \boldsymbol{\hat{\mu}}^\top\boldsymbol{x}^\prime \propto 1 - \boldsymbol{\hat{\mu}}^\top
+   \boldsymbol{x}^\prime
 
 ----
 
