@@ -16,14 +16,20 @@ namespace ``info.toolbox.libs.anomaly``. All those objects are also integrated i
    :nosignatures:
 
    Hotelling
+   NaiveBayes
    Neighbors
+   VonMisesFisher
 
 Docstrings
 ----------
 
 .. autoclass:: Hotelling
 
+.. autoclass:: NaiveBayes
+
 .. autoclass:: Neighbors
+
+.. autoclass:: VonMisesFisher
 
 ----
 
