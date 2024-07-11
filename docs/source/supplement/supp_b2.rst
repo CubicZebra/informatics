@@ -123,27 +123,35 @@ be :math:`d(v/c)^{1/2} = (1/2c) \cdot (v/c)^{(1/2)} dv`, the :eq:`probability de
 
 For the last item :math:`\int dS_M`, it is the surface area of :math:`M`-dimensional sphere with :math:`r = 1`.
 Consider the property of :ref:`high dimensional sphere <high dimensional sphere>`.
-:math:`\int S_M` is actually :math:`(2\pi^{M/2})/\Gamma(M/2)`. Because for :math:`\delta` impulse,
-:math:`\int dx \delta (x - b) f(x) = \int dx \delta (b - x) = f(b)`, the :eq:`integral transformation of u` can be
-finally simplified as :eq:`final simplification of u`:
+:math:`\int S_M` is actually :math:`(2\pi^{M/2})/\Gamma(M/2)`.
+
+As for a continuous function :math:`f(x)`, consider the symmetric property of :math:`\delta` function, the variable
+change relationship can be established through the :math:`\delta` functions as following:
+
+.. math::
+   :label: delta function changing variable
+
+   \int dx \delta (x - b) f(x) = \int dx \delta (b - x) f(x) = f(b)
+
+Therefore the :eq:`integral transformation of u` can be finally simplified as :eq:`final simplification of u`:
 
 .. note::
 
    .. _`high dimensional sphere`:
 
-   For a :math:`K`-dimensional sphere with radius of :math:`R`, its volume is:
+   For a :math:`K`-dimensional sphere with radius of :math:`r`, its volume is:
 
    .. math::
       :label: volume of K dimensional sphere
 
-      V_K = \frac{\pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2}+1)} R^K
+      V_K = \frac{\pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2}+1)} r^K
 
    Its surface area will be one dimension degenerated as the form of:
 
    .. math::
       :label: surface of K dimensional sphere
 
-      S_{K-1} = \frac{2 \pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2})} R^{K-1}
+      S_{K-1} = \frac{2 \pi^{\frac{K}{2}}}{\Gamma(\frac{K}{2})} r^{K-1}
 
 .. math::
    :label: final simplification of u
@@ -417,6 +425,44 @@ distribution can be defined using its negative logarithmic likelihood
    \boldsymbol{\hat{\mu}}^\top\boldsymbol{x}^\prime)\} \\
    &= C + \kappa - \kappa \boldsymbol{\hat{\mu}}^\top\boldsymbol{x}^\prime \propto 1 - \boldsymbol{\hat{\mu}}^\top
    \boldsymbol{x}^\prime
+
+Where :math:`C` in :eq:`anomaly of Von Mises Fisher` refers to a :math:`\boldsymbol{x}^\prime` irrelevant constant.
+Using the :eq:`Jacobian of probability density function` to change the variable of anomaly :math:`a` as a function
+of :math:`1-\boldsymbol{\hat{\mu}}^\top \boldsymbol{x}^\prime`, the probability of :math:`a(\boldsymbol{x}^\prime)`
+can be represented as:
+
+.. math::
+   :label: probability expression of directional anomaly
+
+   p(a) = \int_{S_{M}} d\boldsymbol{x} \delta(a - (1 - \boldsymbol{\hat{\mu}}^\top \boldsymbol{x})) c_M (\kappa)
+   \exp(\kappa \boldsymbol{\hat{\mu}}^\top \boldsymbol{x})
+
+:math:`S_M` is the surface of a :math:`M`-dimensional sphere. The :math:`d\boldsymbol{x}` represents the differential
+area of :math:`S_M`. Consider the :math:`M`-dimensional sphere is the integration of its :math:`M-1`-dimensional
+spherical surface along the radian angle :math:`\theta`. The differential :math:`d\boldsymbol{x}` can be represented
+by the :math:`d\theta \sin^{M-2}\theta dS_{M-1}` (due to the differential :math:`dS_{M-1}` is the function of
+:math:`r^{M-2}`, the :math:`(r \cdot \sin \theta)^{M-2}` can project the :math:`M-1`-dimensional sphere on the
+radian angle :math:`\theta`, in unit sphere the :math:`r = 1`).
+
+As the :math:`\boldsymbol{\hat{\mu}}` and :math:`\boldsymbol{x}` in :eq:`probability expression of directional anomaly`
+are both unit vectors, the relationship :math:`|\boldsymbol{\hat{\mu}}||\boldsymbol{x}| = 1` can be established.
+The radian angle :math:`\theta` can therefore be defined using the relationship
+:math:`\cos \theta = \boldsymbol{\hat{\mu}}^\top \boldsymbol{x}`. Ignore the :math:`a` irrelevant terms, consider
+the property of :math:`\delta` function as showed in :eq:`delta function changing variable`, the
+:eq:`probability expression of directional anomaly` can be further simplified as:
+
+.. math::
+   :label: simplification on vmf anomaly
+
+   p(a) &\propto \int_{S_{M}} d\theta \sin^{M-2}\theta dS_{M-1} \delta (a-(1-\cos\theta)) \exp(\kappa\cos\theta) \\
+   &= \int_0^{\pi} d\cos\theta \cdot \delta (\cos\theta-(1-a)) \cdot (1-\cos^2\theta)^{\frac{M-3}{2}} \exp(\kappa
+   \cos\theta) \int_{{S}_{M-1}} d{S}_{M-1} \\
+   &= (2a - a^2)^{\frac{M-3}{2}} \exp(\kappa-\kappa a)
+
+:math:`p(a)` is the probability of anomaly therefore :math:`a \leq 1` can be established. It is therefore rational
+to apply low-rank approximation, to ignore the term of :math:`a^2`. Consequently, the
+:eq:`simplification on vmf anomaly` can further be simplified as proportional to :math:`a^{(M-1)/2-1}\exp(- \kappa a)`,
+which is exactly the kernel of :math:`\chi^2 (M-1, 0.5\kappa)`.
 
 ----
 
