@@ -80,7 +80,7 @@ Getting Help
 ============
 
 For usage questions about functions, API reference and example code snippet on documentation would be helpful. While
-other questions or discussions, please directly contact the author.
+for other issues and suggestions, post your advice here or mail the author.
 
 ----
 
