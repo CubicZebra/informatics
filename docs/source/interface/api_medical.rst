@@ -13,7 +13,8 @@ relation between pixel and voxel space requires computation. Dependencies of `Si
 and `pydicom <https://github.com/pydicom/pydicom>`_ are required.
 
 Namespace of this module is mainly in ``info.toolbox.digitmed.rebuild``. For convenience in practice, use main
-entry of ``info.med``.
+entry of ``info.med``. As for the image reconstruction related functions, import the ``rebuild`` module from
+``info.med``.
 
 .. autosummary::
    :nosignatures:
@@ -26,7 +27,14 @@ entry of ``info.med``.
    dcm_regroup
    NIfTI
    nii_constructor
+
+While for other functional units, directly import from ``info.med``.
+
+.. autosummary::
+   :nosignatures:
+
    radiomics_features
+   vascular_invasion
 
 Docstrings
 ----------
@@ -53,6 +61,9 @@ Docstrings
    :no-value:
 
 .. autodata:: radiomics_features
+   :no-value:
+
+.. autodata:: vascular_invasion
    :no-value:
 
 ----
