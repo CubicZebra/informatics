@@ -1,6 +1,6 @@
 [project]
 name = 'informatics'
-version = '0.0.4rc1'
+version = '0.0.5rc0'
 license = {file = "LICENSE"}
 description = 'Framework of fast implementation data processing and operating pipelines'
 readme = "README.rst"
