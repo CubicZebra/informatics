@@ -19,5 +19,5 @@ towards an identical stationary distribution if the period for generation is lon
 ----
 
 :Authors: Chen Zhang
-:Version: 0.0.4
+:Version: 0.0.5
 :|create|: Feb 27, 2024

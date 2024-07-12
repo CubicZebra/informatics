@@ -467,5 +467,5 @@ which is exactly the kernel of :math:`\chi^2 (M-1, 0.5\kappa)`.
 ----
 
 :Authors: Chen Zhang
-:Version: 0.0.4
+:Version: 0.0.5
 :|create|: Apr 2, 2024

@@ -40,5 +40,5 @@ For building the function with high reusability, here shows some advice:
 ----
 
 :Authors: Chen Zhang
-:Version: 0.0.4
+:Version: 0.0.5
 :|create|: Jun 16, 2023

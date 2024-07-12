@@ -47,5 +47,5 @@ for building functional units and pipelines via informatics.
 ----
 
 :Authors: Chen Zhang
-:Version: 0.0.4
+:Version: 0.0.5
 :|create|: Apr 26, 2023

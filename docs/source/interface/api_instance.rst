@@ -23,5 +23,5 @@ Docstrings
 ----
 
 :Authors: Chen Zhang
-:Version: 0.0.4
+:Version: 0.0.5
 :|create|: Mar 6, 2024

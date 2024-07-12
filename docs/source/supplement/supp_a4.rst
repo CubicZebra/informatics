@@ -1116,5 +1116,5 @@ statistical simulation to test whether two groups of data have the same underlyi
 ----
 
 :Authors: Chen Zhang
-:Version: 0.0.4
+:Version: 0.0.5
 :|create|: May 26, 2023
