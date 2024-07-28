@@ -22,6 +22,7 @@ algorithm, data mining, decision theory, automation, as well as :ref:`AI <AI>`-s
    Factor analysis <supp_a3>
    Mathematical statistics <supp_a4>
    Monte Carlo method <supp_a5>
+   Bayesian statistics <supp_a6>
    :maxdepth: 2
 
 _`Scientific calculation essentials`
