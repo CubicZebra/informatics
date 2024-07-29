@@ -198,6 +198,12 @@ _`References`
    _`[Oinar2023]` Oinar, C., Le, B. M., & Woo, S. S. (2023). Kappaface: adaptive additive angular margin loss for
    deep face recognition. IEEE Access.
 
+   _`[Bayes1958]` Bayes, T. (1958). An essay towards solving a problem in the doctrine of chances. Biometrika,
+   45(3-4), 296-315.
+
+   _`[Glüsenkamp]` Glüsenkamp, T. (2018). Probabilistic treatment of the uncertainty from the finite size of
+   weighted Monte Carlo data. The European Physical Journal Plus, 133(6), 218.
+
 ----
 
 :Authors: Chen Zhang
