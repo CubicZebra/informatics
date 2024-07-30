@@ -152,7 +152,7 @@ discussion. The final expression of :eq:`multinomial bayes posterior 2` showed t
 .. math::
    :label: parameter of multinomial posterior
 
-   \hat{\alpha}_k = \sum_{n=1}^N {m}_{n, k} + \alpha_k - 1
+   \hat{\alpha}_k = \sum_{n=1}^N {m}_{n, k} + \alpha_k
 
 As for the posterior predictive distribution of multinomial, apply the :eq:`Bayesian posterior predictive`,
 the :math:`\boldsymbol{\pi}` marginalized distribution will be like:
@@ -173,23 +173,24 @@ the :math:`\boldsymbol{\pi}` marginalized distribution will be like:
    \pi_k^{m^*_k + \alpha_k - 1} d\boldsymbol{\pi} \\
    &= \frac{M!}{\prod_{k=1}^K m^*_k !} \cdot \frac{\Gamma(\sum_{k=1}^K \alpha_k) \prod_{k=1}^K \Gamma(m^*_k +
    \alpha_k)}{\prod_{k=1}^K \Gamma(\alpha_k) \Gamma(\sum_{k=1}^K (m^*_k + \alpha_k))} \cdot \int \mathrm{Dir}
-   (\boldsymbol{\pi} | \boldsymbol{\alpha} + \boldsymbol{m}) d\boldsymbol{\pi} \\
-   &\propto \prod_{k=1}^K \frac{\Gamma(m^*_k + \alpha_k)}{m^*! \cdot \Gamma(\alpha_k)}
+   (\boldsymbol{\pi} | \boldsymbol{\alpha} + \boldsymbol{m}^*) d\boldsymbol{\pi} \\
+   &\propto \prod_{k=1}^K \frac{\Gamma(m^*_k + \alpha_k)}{m^*_k ! \cdot \Gamma(\alpha_k)}
 
 The last step can be established because :math:`\sum_{k=1}^K m^*_k = M`. From :eq:`multinomial bayes predictive`
-it can finally deduce that it is the kernel of a :ref:`dirichlet-multinomial distribution <[Glüsenkamp]>` with
-parameters :math:`M` and :math:`\boldsymbol{\alpha}`. Consider the conjugate property of dirichlet prior as for
-multinomial distribution, replace the :math:`\mathrm{Dir}(\boldsymbol{\pi} | \boldsymbol{\alpha})` by
+it can finally deduce that it is the kernel of a dirichlet-multinomial distribution with parameter
+:math:`M` and :math:`\boldsymbol{\alpha}` (see :ref:`[Glüsenkamp] <[Glüsenkamp]>`). Consider the conjugate property
+of dirichlet prior as for multinomial distribution, replace the
+:math:`\mathrm{Dir}(\boldsymbol{\pi} | \boldsymbol{\alpha})` by
 :math:`\mathrm{Dir}(\boldsymbol{\pi} | \hat{\boldsymbol{\alpha}})` then the Bayesian posterior of multinomial
 can be obtained.
 
 Here it have to consider two sorts of special cases. The first one is :math:`M = 1`. Under that constraint,
 the main likelihood function will become categorical distribution according to
 :numref:`Table %s <discrete distribution relations>`. Its Bayesian posterior still keep the form of
-:eq:`multinomial bayes posterior 2` but all of the variables (:math:`m_{n, k}`and :math:`m^*_k`) take the domain
-of :math:`\{0, 1\}` instead. Its posterior is consequently still dirichlet distribution with parameter in
-accordance with :eq:`parameter of multinomial posterior` as well. However for its posteriori predictive,
-consider the :math:`0! = 1! = 1`, the :math:`p(\boldsymbol{m}^*)` is actually:
+:eq:`multinomial bayes posterior 2` but all of the variables (:math:`m_{n, k}` and :math:`m^*_k`) take the domain
+of :math:`\{0, 1\}` instead. The posterior of categorical distribution is consequently still dirichlet distribution
+with parameter in accordance with :eq:`parameter of multinomial posterior` as well. However for its posteriori
+predictive, consider the :math:`0! = 1! = 1`, the :math:`p(\boldsymbol{m}^*)` is actually:
 
 .. math::
    :label: categorical bayes predictive 1
@@ -198,8 +199,8 @@ consider the :math:`0! = 1! = 1`, the :math:`p(\boldsymbol{m}^*)` is actually:
    \alpha_k)}{\prod_{k=1}^K \Gamma(\alpha_k) \Gamma(\sum_{k=1}^K (m^*_k + \alpha_k))}
 
 Consider the probability of :math:`p(m^*_{k^\prime} = 1)`, because the :math:`\sum_{k=1}^K m^*_k = 1` and the
-property :math:`\Gamma(x + 1) = x \Gamma(x)`, the :eq:`categorical bayes predictive 1` can be further simplified
-as:
+property :math:`\Gamma(x + 1) = x \Gamma(x)` of gamma function, the :eq:`categorical bayes predictive 1` can be
+further simplified as:
 
 .. math::
    :label: categorical bayes predictive 2
@@ -211,13 +212,13 @@ as:
    \alpha_k) \cdot \Gamma(\sum_{k=1}^K \alpha_k) \cdot \Gamma(\alpha_{k^\prime})} \\
    & = \frac{\alpha_{k^\prime}}{\sum_{k=1}^K \alpha_k}
 
-Therefore its Bayesian posterior predictive is a categorical distribution of
+Therefore the Bayesian posterior predictive of categorical distribution is another categorical one noted as
 :math:`\mathrm{Cat}(\boldsymbol{m}^* | \{\frac{\alpha_k}{\sum_{i=1}^K \alpha_i}\}_{k=1}^K)`.
 
-The second one is for the binomial distribution with constraint :math:`K = 2`. In that case, the
-:eq:` multinomial bayes posterior 2` has only two parameters :math:`\alpha_1` and :math:`\alpha_2`, the dirichlet
-prior will also collapse to the beta distribution :math:`\mathrm{Beta}(x | \alpha_1, \alpha_2)`. Its predictive
-also convert correspondingly as:
+The second special case is for the binomial distribution with constraint :math:`K = 2`. In that condition, the
+:eq:`multinomial bayes posterior 2` has only two parameters :math:`\alpha_1` and :math:`\alpha_2`, the dirichlet
+prior will collapse to the beta distribution :math:`\mathrm{Beta}(x | \alpha_1, \alpha_2)` as well. Its predictive
+also convert correspondingly like:
 
 .. math::
    :label: binomial bayes predictive
@@ -227,7 +228,7 @@ also convert correspondingly as:
    &\propto \frac{M!}{m^*_1 ! (M - m^*_1) !} \cdot \frac{\Gamma(m^*_1 + \alpha_1) \Gamma(M - m^*_1 + \alpha_2)}{
    \Gamma(M + \alpha_1 + \alpha_2)} \cdot \frac{\Gamma(\alpha_1 + \alpha_2)}{\Gamma(\alpha_1) \Gamma(\alpha_2)}
 
-Which is exactly the kernel of the beta binomial distribution.
+Which is exactly the kernel of a certain beta binomial distribution.
 
 If simultaneously consider the :math:`M = 1` and :math:`K = 2`. It can be conducted for the bernoulli likelihood,
 its Bayesian posterior is beta distribution, while its predictive is another bernoulli.
@@ -242,8 +243,8 @@ For conclusion, the common likelihood functions with discrete distribution famil
    =========== ======================== ========= ========= =====================
    likelihood  parameter                condition conjugate predictive
    =========== ======================== ========= ========= =====================
-   bernoulli   :math:`\mu`              :math:`-` beta      bernoulli
-   binomial    :math:`\mu`              :math:`M` beta      beta binomial
+   bernoulli   :math:`p`                :math:`-` beta      bernoulli
+   binomial    :math:`p`                :math:`M` beta      beta binomial
    categorical :math:`\boldsymbol{\pi}` :math:`-` dirichlet categorical
    multinomial :math:`\boldsymbol{\pi}` :math:`M` dirichlet dirichlet multinomial
    =========== ======================== ========= ========= =====================
