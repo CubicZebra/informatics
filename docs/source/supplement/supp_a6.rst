@@ -26,11 +26,11 @@ seek to navigate the complexities of decision-making under uncertainty.
 _`The basic theories`
 ---------------------
 
-In the context of classical statistics, it customarily utilize the maximum likelihood estimation (MLE) to solve the
-parameter(s) of interested distribution. For an observed data set :math:`\mathcal{D}`, assume there is a statistical
-model and its corresponding parameter :math:`\theta`. The MLE approach actually calculate
-the :math:`\arg\max_{\theta} p(\mathcal{D} | \theta)`. In this situation, parameter :math:`\theta` is nothing else but
-a numerical solution.
+In the context of classical statistics, the classical model of probability customarily utilize the maximum likelihood
+estimation (MLE) to solve the interested distribution. For an observed data set :math:`\mathcal{D}`,
+assume there is a statistical model and its corresponding parameter :math:`\theta`. The MLE approach actually
+calculate the :math:`\arg\max_{\theta} p(\mathcal{D} | \theta)`. In this manner, parameter :math:`\theta` is
+nothing else but a numerical solution.
 
 While in the Bayesian context, if it identically assumes a statistical model with parameter :math:`\theta`, as well
 as an observed data :math:`\mathcal{D}`, according to the Bayesian theorem:
@@ -46,11 +46,11 @@ approach. The distribution :math:`p(\theta)` is called the Bayesian prior while 
 is termed as Bayesian posterior.
 
 For convenience, the denominator of :eq:`Bayesian theorem` is a parameter :math:`\theta` independent distribution
-that could be simplified as a certain constant during calculation. Therefore it generally using
+that is reducible as a certain constant during calculation. Therefore it generally employs
 :math:`p(\theta | \mathcal{D}) \propto p(\mathcal{D} | \theta) p(\theta)` for further calculations.
-And also, during calculation it concerns more about the parameter related term. If a
-:ref:`kernel <Kernel and scale>` unveiled during simplification, the corresponding distribution can be established
-rationally.
+And also, during reduction it concerns more about the parameter related term. If a
+:ref:`kernel <Kernel and scale>` like term unveiled during simplification, the corresponding distribution can be
+established rationally.
 
 Generally, the :math:`p(\theta)` and :math:`p(\theta | \mathcal{D})` are of the identical family of
 probabilistic distribution, therefore the Bayesian prior and posterior are relative concepts. A updated Bayesian
@@ -188,9 +188,9 @@ Here it have to consider two sorts of special cases. The first one is :math:`M =
 the main likelihood function will become categorical distribution according to
 :numref:`Table %s <discrete distribution relations>`. Its Bayesian posterior still keep the form of
 :eq:`multinomial bayes posterior 2` but all of the variables (:math:`m_{n, k}` and :math:`m^*_k`) take the domain
-of :math:`\{0, 1\}` instead. The posterior of categorical distribution is consequently still dirichlet distribution
-with parameter in accordance with :eq:`parameter of multinomial posterior` as well. However for its posteriori
-predictive, consider the :math:`0! = 1! = 1`, the :math:`p(\boldsymbol{m}^*)` is actually:
+of :math:`\{0, 1\}` instead of :math:`\{0, 1, \dots, M\}`. The posterior of categorical distribution is consequently
+still dirichlet distribution with parameter in accordance with :eq:`parameter of multinomial posterior` as well.
+However for its posteriori predictive, consider the :math:`0! = 1! = 1`, the :math:`p(\boldsymbol{m}^*)` is actually:
 
 .. math::
    :label: categorical bayes predictive 1
@@ -252,7 +252,66 @@ For conclusion, the common likelihood functions with discrete distribution famil
 _`Poisson distribution`
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-text here...
+Poisson distribution is a discrete probability distribution that models the probability of a given number of
+events occurring in a fixed interval of time or space, given that these events occur with a known average rate
+and independently of each other.   It is commonly used in various fields such as statistics, probability theory,
+and even in some applications of artificial intelligence.
+
+As for the poisson likelihood function, its conjugate prior and posterior are of gamma distributions. Let
+:math:`p(x | \lambda) = \mathrm{Poi}(x | \lambda)`, :math:`p(x) = \mathrm{Gam}(\lambda | a, b)`, and :math:`N`
+non-negative observations :math:`\textbf{X} = \{x_1, \dots, x_N \}`, its Bayesian posterior will be like:
+
+.. math::
+   :label: poisson bayes posterior
+
+   p(\lambda | \textbf{X}) &\propto p(\textbf{X} | \lambda) p(\lambda) \\
+   &= \{ \prod_{n=1}^N \mathrm{Poi}(x_n | \lambda) \} \mathrm{Gam}(\lambda | a, b)
+
+For convenience, conduct the reduction in logarithmic space:
+
+.. math::
+   :label: log poisson bayes posterior
+
+   \ln p(\lambda | \textbf{X}) &= \sum_{n=1}^N \ln \mathrm{Poi}(x_n | \lambda) + \ln \mathrm{Gam}(\lambda | a, b)
+   + C_1 \\
+   &= \sum_{n=1}^N \{ x_n \ln \lambda - \ln x_n ! - \lambda \} + (a-1) \ln \lambda - b \ln \lambda + \ln \left(
+   \frac{b^a}{\Gamma(a)} \right) + C_1 \\
+   &= (\sum_{n=1}^N x_n + a - 1) \ln \lambda - (N + b) \lambda + C_2
+
+The final step of :eq:`log poisson bayes posterior` is established because that for :math:`p(\lambda | \textbf{X})`,
+the variable :math:`\lambda` involved terms are just :math:`\lambda` and :math:`\ln \lambda`. Other :math:`\lambda`
+independent factors is included into the constant :math:`C_2`. The posterior of :eq:`log poisson bayes posterior`
+obviously reveals the kernel of a gamma :math:`\mathrm{Gam}(\lambda | \hat{a}, \hat{b})`, with parameters
+:math:`\hat{a}` and :math:`\hat{b}` that satisfies:
+
+.. math::
+   :label: poisson posterior parameters
+
+   \hat{a} &= \sum_{n=1}^N x_n + a \\
+   \hat{b} &= N + b
+
+And for the predictive:
+
+.. math::
+   :label: poisson bayes predictive
+
+   p(x^*) &= \int p(x^* | \lambda) p(\lambda) d\lambda \\
+   &= \int \frac{\lambda^{x^*}}{x^* !} e^{-\lambda} \frac{b^a}{\Gamma(a)} \lambda^{a-1} e^{-b\lambda} d\lambda \\
+   &= \frac{b^a}{x^* ! \Gamma(a)} \cdot \frac{\Gamma(x^* + a)}{(x^* + a)^{(1 + b)}} \int  \frac{(x^* + a)^{(1 + b)}
+   }{\Gamma(x^* + a)} \lambda^{x^* + a - 1} e^{-(1+b)\lambda} d\lambda \\
+   &= \frac{b^a}{x^* ! \Gamma(a)} \cdot \frac{\Gamma(x^* + a)}{(x^* + a)^{(1 + b)}} \int \mathrm{Gam}(\lambda |
+   x^* + a, 1 + b) d\lambda \\
+   &= \frac{b^a}{x^* ! \Gamma(a)} \cdot \frac{\Gamma(x^* + a)}{(x^* + a)^{(1 + b)}} \\
+   &= \frac{\Gamma(x^* + a)}{x^* ! \Gamma(a)} \cdot (\frac{1}{b+1})^{x^*} (1-\frac{1}{b+1})^a
+
+Thus, the predictive of poisson distribution is a negative binomial distribution with parameter :math:`a` and
+:math:`(1+b)^{-1}`. As for its Bayesian posterior predictive, replace the :math:`a` and :math:`b` by :math:`\hat{a}`
+and :math:`\hat{b}` as showed in :eq:`poisson posterior parameters`.
+
+_`Continuous distribution family`
+--------------------------------
+
+Gauss family...
 
 ----
 
