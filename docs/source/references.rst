@@ -204,6 +204,9 @@ _`References`
    _`[Glüsenkamp]` Glüsenkamp, T. (2018). Probabilistic treatment of the uncertainty from the finite size of
    weighted Monte Carlo data. The European Physical Journal Plus, 133(6), 218.
 
+   _`[Higham2002]` Higham, N. J. (2002). Accuracy and stability of numerical algorithms. Society for industrial
+   and applied mathematics.
+
 ----
 
 :Authors: Chen Zhang

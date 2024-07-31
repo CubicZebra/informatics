@@ -280,7 +280,7 @@ For convenience, conduct the reduction in logarithmic space:
 
 The final step of :eq:`log poisson bayes posterior` is established because that for :math:`p(\lambda | \textbf{X})`,
 the variable :math:`\lambda` involved terms are just :math:`\lambda` and :math:`\ln \lambda`. Other :math:`\lambda`
-independent factors is included into the constant :math:`C_2`. The posterior of :eq:`log poisson bayes posterior`
+independent factors are all included into the constant :math:`C_2`. The posterior of :eq:`log poisson bayes posterior`
 obviously reveals the kernel of a gamma :math:`\mathrm{Gam}(\lambda | \hat{a}, \hat{b})`, with parameters
 :math:`\hat{a}` and :math:`\hat{b}` that satisfies:
 
@@ -309,9 +309,212 @@ Thus, the predictive of poisson distribution is a negative binomial distribution
 and :math:`\hat{b}` as showed in :eq:`poisson posterior parameters`.
 
 _`Continuous distribution family`
---------------------------------
+---------------------------------
 
-Gauss family...
+Gauss, also called normal distribution, is a conventional but widely used continuous distribution. In statistics and
+probability theory, beyond its fundamental role in describing natural phenomena and modeling error distributions, the
+normal distribution has evolved to serve as a cornerstone in statistical inference.   In hypothesis testing, for
+instance, the null hypothesis is often assumed to follow a normal distribution under certain conditions, allowing
+researchers to determine the statistical significance of their findings. This framework has facilitated
+groundbreaking discoveries in numerous scientific disciplines, where the precision and reliability of conclusions
+are paramount.
+
+As for Gauss likelihood function, it is acceptable for 3 different types of conjugate priors. Similarly without loss
+of generality, all following reduction will be conducted in the context of multivariate Gauss. The properties of
+univariate one will be further investigated through distribution degeneration. For convenience, here introduces
+precision matrix :math:`\boldsymbol{\Lambda}` which is the inverse of covariance matrix :math:`\boldsymbol{\Sigma}`
+of Gauss (:math:`\mathcal{N}(\boldsymbol{x}|\boldsymbol{\mu}, \boldsymbol{\Sigma})` is equivalent to
+:math:`\mathcal{N}(\boldsymbol{x}|\boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1})`).
+
+- **Gauss prior**
+
+For the likelihood :math:`\mathcal{N}(\boldsymbol{x} | \boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1})`, the prior of
+another Gauss :math:`\mathcal{N}(\boldsymbol{\mu} | \boldsymbol{m}, \boldsymbol{\Lambda}_{\boldsymbol{\mu}}^{-1})`
+is the framework to infer the unknown mean :math:`\boldsymbol{\mu}`. In that case, the precision
+:math:`\boldsymbol{\Lambda}` is the given condition during whole calculation.
+
+Therefore for :math:`N` observations :math:`\boldsymbol{X} = \{\boldsymbol{x}_1, \dots, \boldsymbol{x}_N\}`, its
+Bayesian posterior will be:
+
+.. math::
+   :label: Gauss bayes posterior in prior 1
+
+   p(\boldsymbol{\mu} | \boldsymbol{X}) &\propto p(\boldsymbol{X} | \boldsymbol{\mu}) p(\boldsymbol{\mu}) \\
+   &= \left\{ \prod_{n=1}^N \mathcal{N}(\boldsymbol{x}_n | \boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1}) \right\}
+   \mathcal{N}(\boldsymbol{\mu} | \boldsymbol{m}, \boldsymbol{\Lambda}_{\boldsymbol{\mu}}^{-1})
+
+Conduct further calculation in logarithmic space:
+
+.. math::
+   :label: log Gauss bayes posterior in prior 1
+
+   \ln p(\boldsymbol{\mu} | \boldsymbol{X}) &=  \sum_{n=1}^N \ln \mathcal{N}(\boldsymbol{x}_n | \boldsymbol{\mu},
+   \boldsymbol{\Lambda}^{-1}) + \ln \mathcal{N}(\boldsymbol{\mu} | \boldsymbol{m},
+   \boldsymbol{\Lambda}_{\boldsymbol{\mu}}^{-1}) + C_1 \\
+   &= -\frac{1}{2} \left\{ \sum_{n=1}^N (\boldsymbol{x}_n - \boldsymbol{\mu})^\top \boldsymbol{\Lambda}
+   (\boldsymbol{x}_n - \boldsymbol{\mu})  + (\boldsymbol{\mu} - \boldsymbol{m})^\top
+   \boldsymbol{\Lambda}_{\boldsymbol{\mu}} (\boldsymbol{\mu} - \boldsymbol{m}) \right\} + C_2 \\
+   &= -\frac{1}{2} \left\{ \boldsymbol{\mu}^\top (N\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_{\boldsymbol{\mu}})
+   \boldsymbol{\mu} - 2\boldsymbol{\mu}^\top (\boldsymbol{\Lambda} \sum_{n=1}^N \boldsymbol{x}_n +
+   \boldsymbol{\Lambda}_{\boldsymbol{\mu}} \boldsymbol{m}) \right\} + C_3 \\
+   &= -\frac{1}{2} \left\{ \boldsymbol{\mu}^\top \hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}} \boldsymbol{\mu} -
+   2 \boldsymbol{\mu}^\top \hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}} \hat{\boldsymbol{m}} \right\} + C_3 \\
+   &= -\frac{1}{2} \left\{ (\boldsymbol{\mu}-\hat{\boldsymbol{m}})^\top \hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}}
+   (\boldsymbol{\mu} - \hat{\boldsymbol{m}}) \right\} + C_4
+
+Thus, the Bayesian posterior of Gauss used Gauss prior is also another Gauss distribution
+:math:`\mathcal{N}(\boldsymbol{\mu} | \hat{\boldsymbol{m}}, \hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}}^{-1})` with
+parameters of :math:`\hat{\boldsymbol{m}}` and :math:`\hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}}` where:
+
+.. math::
+   :label: solution of Gauss posterior in prior 1
+
+   \hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}} &= N\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_{\boldsymbol{\mu}} \\
+   \hat{\boldsymbol{m}} &= \hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}}^{-1} (\boldsymbol{\Lambda} \sum_{n=1}^N
+   \boldsymbol{x}_n + \boldsymbol{\Lambda}_{\boldsymbol{\mu}} \boldsymbol{m})
+
+Because :math:`p(\boldsymbol{x}^*|\boldsymbol{\mu}) \propto p(\boldsymbol{\mu}|\boldsymbol{x}^*) p(\boldsymbol{x}^*)`,
+the predictive under Gauss prior can be calculated via:
+
+.. math::
+   :label: predictive in Gauss prior 1
+
+   \ln p(\boldsymbol{x}^*) = \ln p(\boldsymbol{x}^* | \boldsymbol{\mu}) - \ln p(\boldsymbol{\mu}|\boldsymbol{x}^*) + C
+
+Where the :math:`p(\boldsymbol{\mu}|\boldsymbol{x}^*)` can be defined as taking one :math:`\boldsymbol{x}^*` sample.
+Thus, from :eq:`solution of Gauss posterior in prior 1`, the :math:`p(\boldsymbol{x}^*|\boldsymbol{\mu})` will be:
+
+.. math::
+   :label: predictive in Gauss prior 2
+
+   p(\boldsymbol{x}^*|\boldsymbol{\mu}) &= \mathcal{N} (\boldsymbol{\mu} | (\boldsymbol{\Lambda} +
+   \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1} (\boldsymbol{\Lambda x}^* + \boldsymbol{\Lambda_{\mu} m}),
+   (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1}) \\
+   &= \mathcal{N} (\boldsymbol{\mu} | \boldsymbol{m}(\boldsymbol{x}^*), (\boldsymbol{\Lambda} +
+   \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1})
+
+In this circumstance, consider the :math:`\boldsymbol{\Lambda}` and :math:`\boldsymbol{\Lambda_{\mu}}` are both
+symmetric matrices, the :eq:`predictive in Gauss prior 1` can be simplified by the following steps:
+
+.. math::
+   :label: predictive in Gauss prior 3
+
+   \ln p(\boldsymbol{x}^*) =& -\frac{1}{2} (\boldsymbol{x}^* - \boldsymbol{\mu})^\top \boldsymbol{\Lambda}
+   (\boldsymbol{x}^* - \boldsymbol{\mu}) + \frac{1}{2} \left\{ \left[\boldsymbol{\mu} -\boldsymbol{m}(\boldsymbol{x}^*)
+   \right]^\top (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu}) \left[ \boldsymbol{\mu} -
+   \boldsymbol{m}(\boldsymbol{x}^*) \right] \right\} + C_1 \\
+   \propto& -\frac{1}{2} \left[ \boldsymbol{x}^{*\top} \boldsymbol{\Lambda} \boldsymbol{x}^* - 2 \boldsymbol{x}^{*\top}
+   \boldsymbol{\Lambda} \boldsymbol{\mu} + C_2 \right] + \frac{1}{2} \left[ \boldsymbol{m}(\boldsymbol{x}^*)^\top
+   (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu}) \boldsymbol{m}(\boldsymbol{x}^*) -
+   2 \boldsymbol{\mu}^\top (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu})
+   \boldsymbol{m}(\boldsymbol{x}^*) + C_3 \right] \\
+   \propto& -\frac{1}{2} \left[ \boldsymbol{x}^{*\top} \boldsymbol{\Lambda} \boldsymbol{x}^* - 2 \boldsymbol{x}^{*\top}
+   \boldsymbol{\Lambda} \boldsymbol{\mu} \right] + \frac{1}{2} \left\{ (\boldsymbol{\Lambda x}^* +
+   \boldsymbol{\Lambda_{\mu} m})^\top \left[ (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1}
+   \right]^\top (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu}) (\boldsymbol{\Lambda} +
+   \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1} (\boldsymbol{\Lambda x}^* + \boldsymbol{\Lambda_{\mu} m}) \right\} \\
+   &- \left[ \boldsymbol{\mu}^\top (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu}) (\boldsymbol{\Lambda}
+   + \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1} (\boldsymbol{\Lambda x}^* + \boldsymbol{\Lambda_{\mu} m})
+   + C_3 \right] \\
+   =& -\frac{1}{2} \left[ \boldsymbol{x}^{*\top} \boldsymbol{\Lambda} \boldsymbol{x}^* - 2 \boldsymbol{x}^{*\top}
+   \boldsymbol{\Lambda} \boldsymbol{\mu} \right] + \frac{1}{2} \left[ \boldsymbol{x}^* \boldsymbol{\Lambda}
+   (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1} \boldsymbol{\Lambda x}^* + 2
+   \boldsymbol{x}^{*\top} \boldsymbol{\Lambda} (\boldsymbol{\Lambda} + \boldsymbol{\Lambda}_\boldsymbol{\mu})^{-1}
+   \boldsymbol{\Lambda_{\mu} m} - 2 \boldsymbol{x}^{*\top} \boldsymbol{\Lambda \mu} + C_4 \right] \\
+   =& -\frac{1}{2} \left\{ \boldsymbol{x}^{*\top} \left[ \boldsymbol{\Lambda} - \boldsymbol{\Lambda}
+   (\boldsymbol{\Lambda} + \boldsymbol{\Lambda_\mu})^{-1} \boldsymbol{\Lambda} \right] \boldsymbol{x}^* -
+   2 \boldsymbol{x}^{*\top} \boldsymbol{\Lambda} (\boldsymbol{\Lambda} + \boldsymbol{\Lambda_\mu})^{-1}
+   \boldsymbol{\Lambda_\mu m}  \right\} + C_5
+
+Therefore, its Bayesian predictive is still a sort of Gauss distribution
+:math:`\mathcal{N}(\boldsymbol{x}^* | \boldsymbol{\mu}^*, \boldsymbol{\Lambda}^{* -1})` that:
+
+.. math::
+   :label: solution of Gauss predictive in prior 1
+
+   \boldsymbol{\Lambda}^* &= \boldsymbol{\Lambda} - \boldsymbol{\Lambda} (\boldsymbol{\Lambda} +
+   \boldsymbol{\Lambda_\mu})^{-1} \boldsymbol{\Lambda} \\
+   &= \boldsymbol{\Lambda} - \boldsymbol{\Lambda I} (\boldsymbol{\Lambda} +
+   \boldsymbol{\Lambda_\mu})^{-1} \boldsymbol{I \Lambda} \\
+   &= (\boldsymbol{\Lambda}^{-1} + \boldsymbol{I \Lambda_{\mu}}^{-1} \boldsymbol{I})^{-1} \\
+   &= (\boldsymbol{\Lambda}^{-1} + \boldsymbol{\Lambda_{\mu}}^{-1})^{-1} \\
+   \boldsymbol{\mu}^* &= \boldsymbol{\Lambda}^{* -1} \boldsymbol{\Lambda} (\boldsymbol{\Lambda} +
+   \boldsymbol{\Lambda_\mu})^{-1} \boldsymbol{\Lambda_\mu m} \\
+   &= \boldsymbol{\Lambda}^{* -1} \boldsymbol{\Lambda} [\boldsymbol{\Lambda}^{-1} - \boldsymbol{\Lambda}^{-1}
+   \boldsymbol{\Lambda}^* \boldsymbol{\Lambda}^{-1}] \boldsymbol{\Lambda_{\mu} m} \\
+   &= (\boldsymbol{\Lambda}^{* -1} \boldsymbol{\Lambda_{\mu}} - \boldsymbol{\Lambda}^{-1}
+   \boldsymbol{\Lambda_{\mu}}) \boldsymbol{m} \\
+   & = (\boldsymbol{\Lambda}^{-1} + \boldsymbol{\Lambda_{\mu}}^{-1} - \boldsymbol{\Lambda}^{-1})
+   \boldsymbol{\Lambda_{\mu} m} = \boldsymbol{m}
+
+The reduction of :eq:`solution of Gauss predictive in prior 1` can be established by Sherman–Morrison–Woodbury
+formula (see :ref:`[Higham2002] <[Higham2002]>`). As for Bayesian posterior predictive, replace all the
+:math:`\boldsymbol{m}` and :math:`\boldsymbol{\Lambda_{\mu}}` by :math:`\hat{\boldsymbol{m}}` and
+:math:`\hat{\boldsymbol{\Lambda}}_{\boldsymbol{\mu}}` as noted in :eq:`solution of Gauss posterior in prior 1`.
+
+If it confines all :math:`\boldsymbol{\mu}` related variables :math:`\in \mathbb{R}^1`, and all
+:math:`\boldsymbol{\Lambda}` ones are :math:`\in \mathbb{R}^{1 \times 1}` (e.g. :math:`\lambda = \sigma^2`), all
+above conclusions can be applied in univariate Gauss.
+
+- **Wishart prior**
+
+For the likelihood :math:`\mathcal{N}(\boldsymbol{x} | \boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1})`, the prior of
+a Wishart distribution :math:`\mathcal{W}(\boldsymbol{\Lambda} | \mu, \boldsymbol{W})`
+is the framework to infer the unknown precision :math:`\boldsymbol{\Lambda}`. Conditions of
+:math:`\boldsymbol{W} \in \mathbb{R}^{D \times D}` and :math:`\nu > D - 1` are established. In that case, the mean
+vector :math:`\boldsymbol{\mu}` is the given condition during whole calculation.
+
+Therefore for :math:`N` observations :math:`\boldsymbol{X} = \{\boldsymbol{x}_1, \dots, \boldsymbol{x}_N\}`, its
+Bayesian posterior will be:
+
+.. math::
+   :label: Gauss bayes posterior in prior 2
+
+   \ln p(\boldsymbol{\Lambda} | \boldsymbol{X}) &\propto \ln \left\{ \left[ \prod_{n=1}^N \mathcal{N}(\boldsymbol{x}_n
+   | \boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1}) \right] \mathcal{W}(\boldsymbol{\Lambda} | \nu, \boldsymbol{W})
+   \right\} + C_1 \\
+   &= \sum_{n=1}^N \ln \mathcal{N} (\boldsymbol{x}_n | \boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1}) + \ln \mathcal{W}
+   (\boldsymbol{\Lambda} | \nu, \boldsymbol{W}) + C_1 \\
+   &= \frac{N + \nu - D - 1}{2} \ln | \boldsymbol{\Lambda} | - \frac{1}{2} \mathrm{Tr} \left\{ [\sum_{n=1}^N
+   (\boldsymbol{x}_n - \boldsymbol{\mu})(\boldsymbol{x}_n - \boldsymbol{\mu})^\top + \boldsymbol{W}^{-1}]
+   \boldsymbol{\Lambda} \right\} + C_2
+
+The last step of :eq:`Gauss bayes posterior in prior 2` is established because that for scalar
+:math:`\boldsymbol{x}^\top \boldsymbol{\Lambda x} = \mathrm{Tr}(\boldsymbol{x}^\top \boldsymbol{\Lambda x})` and
+:math:`\mathrm{Tr}(\boldsymbol{ABC}) = \mathrm{Tr}(\boldsymbol{BCA}) = \mathrm{Tr}(\boldsymbol{CAB})`. Consequently,
+the Bayesian posterior in condition of Wishart prior is also another Wishart distribution
+:math:`\mathcal{W}(\boldsymbol{\Lambda} | \hat{\nu}, \hat{\boldsymbol{W}})` that:
+
+.. math::
+   :label: solution of Gauss posterior in prior 2
+
+   \hat{\nu} &= N + \nu \\
+   \hat{\boldsymbol{W}}^{-1} &= \sum_{n=1}^N (\boldsymbol{x}_n - \boldsymbol{\mu})(\boldsymbol{x}_n -
+   \boldsymbol{\mu})^\top + \boldsymbol{W}^{-1}
+
+Because :math:`p(\boldsymbol{x}^*|\boldsymbol{\Lambda})\propto p(\boldsymbol{\Lambda}|\boldsymbol{x}^*)
+p(\boldsymbol{x}^*)`, the predictive under Wishart prior can be calculated via:
+
+.. math::
+   :label: predictive in Wishart prior 1
+
+   \ln p(\boldsymbol{x}^*) = \ln p(\boldsymbol{x}^* | \boldsymbol{\Lambda}) - \ln p(\boldsymbol{\Lambda} |
+   \boldsymbol{x}^*) + C
+
+Takes one :math:`\boldsymbol{x}^*` sample to explicitly express the :math:`p(\boldsymbol{\Lambda}|\boldsymbol{x}^*)`,
+from the :eq:`solution of Gauss posterior in prior 2`, the following relationship can be ascertained:
+
+.. math::
+   :label: predictive in Wishart prior 2
+
+   p(\boldsymbol{\Lambda} | \boldsymbol{x}^*) = \mathcal{W} (\boldsymbol{\Lambda} | 1 + \nu, [(\boldsymbol{x}^* -
+   \boldsymbol{\mu})(\boldsymbol{x}^* - \boldsymbol{\mu})^\top + \boldsymbol{W}^{-1}]^{-1})
+
+await updating...
+
+- **Gauss Wishart prior**
+
+in preparation...
 
 ----
 
