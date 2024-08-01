@@ -510,11 +510,175 @@ from the :eq:`solution of Gauss posterior in prior 2`, the following relationshi
    p(\boldsymbol{\Lambda} | \boldsymbol{x}^*) = \mathcal{W} (\boldsymbol{\Lambda} | 1 + \nu, [(\boldsymbol{x}^* -
    \boldsymbol{\mu})(\boldsymbol{x}^* - \boldsymbol{\mu})^\top + \boldsymbol{W}^{-1}]^{-1})
 
-await updating...
+In this circumstance, the :eq:`predictive in Wishart prior 1` can be simplified by the following steps:
 
-- **Gauss Wishart prior**
+.. math::
+   :label: predictive in Wishart prior 3
 
-in preparation...
+   \ln p(\boldsymbol{x}^*) =& -\frac{1}{2} (\boldsymbol{x}^* - \boldsymbol{\mu})^\top \boldsymbol{\Lambda}
+   (\boldsymbol{x}^* - \boldsymbol{\mu}) + \frac{1}{2}\mathrm{Tr} \left\{ \left[ (\boldsymbol{x}^* -
+   \boldsymbol{\mu})(\boldsymbol{x}^* - \boldsymbol{\mu})^\top + \boldsymbol{W}^{-1} \right]\boldsymbol{\Lambda}
+   \right\} \\
+   &+ \frac{\nu+1}{2} \ln | [(\boldsymbol{x}^* - \boldsymbol{\mu})(\boldsymbol{x}^* - \boldsymbol{\mu})^\top +
+   \boldsymbol{W}^{-1}]^{-1} | + C_1 \\
+   =& -\frac{\nu+1}{2} \ln | (\boldsymbol{x}^* - \boldsymbol{\mu})(\boldsymbol{x}^* - \boldsymbol{\mu})^\top +
+   \boldsymbol{W}^{-1} | + C_2 \\
+   =& -\frac{\nu+1}{2} \ln | \boldsymbol{I} + \boldsymbol{W} (\boldsymbol{x}^* - \boldsymbol{\mu})(\boldsymbol{x}^* -
+   \boldsymbol{\mu})^\top | + C_3 \\
+   =& -\frac{\nu+1}{2} \ln \left[1 + (\boldsymbol{x}^* - \boldsymbol{\mu})^\top \boldsymbol{W} (\boldsymbol{x}^* -
+   \boldsymbol{\mu}) \right] + C_3
+
+The reduction process in :eq:`predictive in Wishart prior 3` has employed the relation
+:math:`| \boldsymbol{I} + \boldsymbol{ab}^\top | = | 1 + \boldsymbol{b}^\top \boldsymbol{a} |`. From final
+expression of :eq:`predictive in Wishart prior 3`, it reveals the kernel of multivariate student-t distribution
+:math:`\mathrm{Stu}(\boldsymbol{x} | \boldsymbol{\mu}_s, \boldsymbol{\Lambda}_s, \nu_s)` where:
+
+.. math::
+   :label: solution of Gauss predictive in prior 2
+
+   \boldsymbol{\mu}_s &= \boldsymbol{\mu} \\
+   \nu_s &= \nu + 1 - D \\
+   \boldsymbol{\Lambda}_s &= \nu_s \boldsymbol{W}
+
+For Bayesian posterior predictive in the condition of Wishart prior, replace all the :math:`\nu` and
+:math:`\boldsymbol{W}` with :math:`\hat{\nu}` and :math:`\hat{\boldsymbol{W}}` respectively, as noted
+in :eq:`solution of Gauss posterior in prior 2`.
+
+If it confines all dimension related variables into the domain :math:`\mathbb{R}^1`, the Wishart distribution
+will collapse to :math:`\mathcal{W}(\Lambda | \nu, W)` so that:
+
+.. math::
+   :label: degeneration of Wishart
+
+   \ln \mathcal{W}(\Lambda | \nu, W) &\propto \frac{\nu - 2}{2} \ln \Lambda - \frac{\Lambda}{2W} + C_1 \\
+   &= (\frac{\nu}{2} - 1) \ln \Lambda - \frac{1}{2W} \Lambda + C_1 \sim \ln \mathrm{Gam} (\Lambda | \frac{\nu}{2},
+   \frac{1}{2W})
+
+The multivariate student-t distribution will collapse to univariate one as well.
+
+- **Gauss-Wishart prior**
+
+For the likelihood :math:`\mathcal{N}(\boldsymbol{x} | \boldsymbol{\mu}, \boldsymbol{\Lambda}^{-1})`, if
+mean :math:`\boldsymbol{\mu}` and precision :math:`\boldsymbol{\Lambda}` are both unknown, it employs the
+Gaussian-Wishart distribution as conjugate prior to infer those two parameters. A Gaussian-Wishart distribution
+:math:`\mathcal{NW}(\boldsymbol{\mu}, \boldsymbol{\Lambda} | \boldsymbol{m}, \beta, \nu, \boldsymbol{W})` can be
+seen as the coupling of Wishart and Gauss distribution:
+
+.. math::
+   :label: Gaussian-Wishart distribution
+
+   p(\boldsymbol{\mu}, \boldsymbol{\Lambda}) &= \mathcal{NW}(\boldsymbol{\mu}, \boldsymbol{\Lambda} | \boldsymbol{m},
+   \beta, \nu, \boldsymbol{W}) \\
+   &= \mathcal{N}(\boldsymbol{\mu}, \boldsymbol{\Lambda} | \boldsymbol{m}, (\beta \boldsymbol{\Lambda})^{-1})
+   \mathcal{W}(\boldsymbol{\Lambda} | \nu, \boldsymbol{W})
+
+In reduction, firstly uses the
+:math:`\mathcal{N}(\boldsymbol{\mu}, \boldsymbol{\Lambda} | \boldsymbol{m}, (\beta \boldsymbol{\Lambda})^{-1})` only
+to infer the posterior :math:`\hat{\boldsymbol{m}}` and :math:`\hat{\beta}`. Takes the precision
+:math:`\boldsymbol{\Lambda}` as a given condition in this step, according to
+:eq:`solution of Gauss posterior in prior 1`, the posterior will be like:
+
+.. math::
+   :label: Gauss bayes posterior in prior 3
+
+   p(\boldsymbol{\mu} | \boldsymbol{\Lambda}, \boldsymbol{X}) = \mathcal{N} (\boldsymbol{\mu} | \hat{\boldsymbol{m}},
+   (\hat{\beta} \boldsymbol{\Lambda})^{-1})
+
+Where:
+
+.. math::
+   :label: solution of Gauss posterior in prior 3
+
+   \hat{\beta} \boldsymbol{\Lambda} &= N \boldsymbol{\Lambda} + \beta \boldsymbol{\Lambda} \\
+   \hat{\beta} &= N + \beta \\
+   \hat{\boldsymbol{m}} &= (\hat{\beta} \boldsymbol{\Lambda})^{-1} (\boldsymbol{\Lambda} \sum_{n=1}^N
+   \boldsymbol{x}_n + \beta \boldsymbol{\Lambda m}) \\
+   &= \frac{1}{N+\beta} (\sum_{n=1}^N \boldsymbol{x}_n + \beta \boldsymbol{m})
+
+Because the Bayesian formula:
+
+.. math::
+   :label: Gauss bayes posterior in prior 3 distribution relation
+
+   \because&\ p(\boldsymbol{\mu} | \boldsymbol{\Lambda}, \boldsymbol{X}) p(\boldsymbol{\Lambda} | \boldsymbol{X})
+   = \frac{p(\boldsymbol{X} | \boldsymbol{\mu}, \boldsymbol{\Lambda})p(\boldsymbol{\mu},
+   \boldsymbol{\Lambda})}{p(\boldsymbol{X})} \\
+   \therefore&\ \ln p(\boldsymbol{\Lambda} | \boldsymbol{X}) = \ln p(\boldsymbol{X} | \boldsymbol{\mu},
+   \boldsymbol{\Lambda}) + \ln p(\boldsymbol{\mu}, \boldsymbol{\Lambda}) - \ln p(\boldsymbol{\mu} |
+   \boldsymbol{\Lambda}, \boldsymbol{X}) + C
+
+Put :eq:`Gaussian-Wishart distribution` and :eq:`Gauss bayes posterior in prior 3` into the
+:eq:`Gauss bayes posterior in prior 3 distribution relation`, reduce the :math:`\boldsymbol{\Lambda}` related terms:
+
+.. math::
+   :label: Gauss bayes posterior in prior 3 reduction 1
+
+   \ln p(\boldsymbol{\Lambda} | \boldsymbol{X}) =& \ln \mathcal{N} (\boldsymbol{X} | \boldsymbol{\mu},
+   \boldsymbol{\Lambda}^{-1}) + \ln \mathcal{N} (\boldsymbol{\mu} | \boldsymbol{m}, (\beta \boldsymbol{\Lambda})^{-1})
+   + \ln \mathcal{W} (\boldsymbol{\Lambda} | \nu, \boldsymbol{W}) - \ln \mathcal{N} (\boldsymbol{\mu} |
+   \hat{\boldsymbol{m}}, (\hat{\beta} \boldsymbol{\Lambda})^{-1}) + C_1 \\
+   =& \frac{1}{2} \sum_{n=1}^N [ \ln | \boldsymbol{\Lambda} | - (\boldsymbol{x}_n - \boldsymbol{\mu})^\top
+   \boldsymbol{\Lambda} (\boldsymbol{x}_n - \boldsymbol{\mu}) ] + \frac{1}{2} [ \ln | \beta \boldsymbol{\Lambda} | -
+   \beta (\boldsymbol{\mu} - \boldsymbol{m})^\top \boldsymbol{\Lambda} (\boldsymbol{\mu} - \boldsymbol{m}) ] \\
+   &+ \frac{\nu + D - 1}{2} \ln | \boldsymbol{\Lambda} | - \frac{1}{2} \mathrm{Tr}(\boldsymbol{W}^{-1}
+   \boldsymbol{\Lambda}) - \frac{1}{2} [ \ln | \hat{\beta} \boldsymbol{\Lambda} | - \hat{\beta} (\boldsymbol{\mu} -
+   \hat{\boldsymbol{m}})^\top \boldsymbol{\Lambda} (\boldsymbol{\mu} - \hat{\boldsymbol{m}}) ] + C_2 \\
+   =& \frac{1}{2} [ \hat{\beta} (\boldsymbol{\mu} - \hat{\boldsymbol{m}})^\top \boldsymbol{\Lambda}
+   (\boldsymbol{\mu} - \hat{\boldsymbol{m}}) - \sum_{n=1}^N (\boldsymbol{x}_n - \boldsymbol{\mu})^\top
+   \boldsymbol{\Lambda} (\boldsymbol{x}_n - \boldsymbol{\mu}) - \beta (\boldsymbol{\mu} - \boldsymbol{m})^\top
+   \boldsymbol{\Lambda} (\boldsymbol{\mu} - \boldsymbol{m}) - \mathrm{Tr}(\boldsymbol{W}^{-1}\boldsymbol{\Lambda}) ] \\
+   &+ \frac{N+\nu-D-1}{2} \ln | \boldsymbol{\Lambda} | + C_3
+
+Substitute part of variables in the :eq:`Gauss bayes posterior in prior 3 reduction 1` with
+:eq:`solution of Gauss posterior in prior 3`, the first term in :eq:`Gauss bayes posterior in prior 3 reduction 1`
+will be like:
+
+.. math::
+   :label: Gauss bayes posterior in prior 3 reduction 2
+
+   \frac{1}{2}[\cdot] =& \frac{1}{2} [(N+\beta) \boldsymbol{\mu}^\top \boldsymbol{\Lambda \mu} -
+   2 \boldsymbol{\mu}^\top \boldsymbol{\Lambda} (\sum_{n=1}^N \boldsymbol{x}_n + \beta \boldsymbol{m}) + \hat{\beta}
+   \hat{\boldsymbol{m}}^\top \boldsymbol{\Lambda} \hat{\boldsymbol{m}} - \sum_{n=1}^N \boldsymbol{x}_n^\top
+   \boldsymbol{\Lambda} \boldsymbol{x}_n + 2\boldsymbol{\mu}^\top \boldsymbol{\Lambda} \sum_{n=1}^N \boldsymbol{x}_n \\
+   &- N \boldsymbol{\mu}^\top \boldsymbol{\Lambda} \boldsymbol{\mu} - \beta \boldsymbol{\mu}^\top \boldsymbol{\Lambda}
+   \boldsymbol{\mu} + 2\beta \boldsymbol{\mu}^\top \boldsymbol{\Lambda} \boldsymbol{m} - \beta \boldsymbol{m}^\top
+   \boldsymbol{\Lambda} \boldsymbol{m} - \mathrm{Tr}(\boldsymbol{W}^{-1}\boldsymbol{\Lambda})] \\
+   =& \frac{1}{2} [\hat{\beta} \hat{\boldsymbol{m}}^\top \boldsymbol{\Lambda} \hat{\boldsymbol{m}} - \sum_{n=1}^N
+   \boldsymbol{x}_n^\top \boldsymbol{\Lambda} \boldsymbol{x}_n - \beta \boldsymbol{m}^\top \boldsymbol{\Lambda m}
+   - \mathrm{Tr}(\boldsymbol{W}^{-1}\boldsymbol{\Lambda}) ] \\
+   =& \frac{1}{2} [\mathrm{Tr}(\hat{\beta} \hat{\boldsymbol{m}} \hat{\boldsymbol{m}}^\top \boldsymbol{\Lambda}) -
+   \mathrm{Tr}(\sum_{n=1}^N \boldsymbol{x}_n \boldsymbol{x}_n^\top \boldsymbol{\Lambda} ) - \mathrm{Tr} (
+   \beta \boldsymbol{m} \boldsymbol{m}^\top \boldsymbol{\Lambda}) - \mathrm{Tr}(\boldsymbol{W}^{-1}
+   \boldsymbol{\Lambda})] \\
+   =& -\frac{1}{2} \mathrm{Tr}[(\sum_{n=1}^N \boldsymbol{x}_n \boldsymbol{x}_n^\top + \beta \boldsymbol{m}
+   \boldsymbol{m}^\top - \hat{\beta} \hat{\boldsymbol{m}} \hat{\boldsymbol{m}}^\top + \boldsymbol{W}^{-1})
+   \boldsymbol{\Lambda}]
+
+Therefore the final expression of :eq:`Gauss bayes posterior in prior 3 reduction 1` can be further simplified
+as:
+
+.. math::
+   :label: Gauss bayes posterior in prior 3 reduction 3
+
+   \ln p(\boldsymbol{\Lambda} | \boldsymbol{X}) = \frac{N+\nu-D-1}{2} \ln | \boldsymbol{\Lambda} | -\frac{1}{2}
+   \mathrm{Tr}[(\sum_{n=1}^N \boldsymbol{x}_n \boldsymbol{x}_n^\top + \beta \boldsymbol{m} \boldsymbol{m}^\top
+   - \hat{\beta} \hat{\boldsymbol{m}} \hat{\boldsymbol{m}}^\top + \boldsymbol{W}^{-1})
+   \boldsymbol{\Lambda}] + C
+
+Obviously for the Wishart part of conjugate, the :eq:`Gauss bayes posterior in prior 3 reduction 3` shows the
+kernel of another Wishart :math:`\mathcal{W} (\boldsymbol{\Lambda} | \hat{\mu}, \hat{\boldsymbol{W}})` where:
+
+.. math::
+   :label: solution of Gauss posterior in prior 3 extra
+
+   \hat{\nu} &= N + \nu \\
+   \hat{\boldsymbol{W}}^{-1} &= \sum_{n=1}^N \boldsymbol{x}_n \boldsymbol{x}_n^\top + \beta \boldsymbol{m}
+   \boldsymbol{m}^\top - \hat{\beta} \hat{\boldsymbol{m}} \hat{\boldsymbol{m}}^\top + \boldsymbol{W}^{-1}
+
+The solutions in :eq:`solution of Gauss posterior in prior 3` and :eq:`solution of Gauss posterior in prior 3 extra`
+simultaneously constitute the Bayesian posterior :math:`\mathcal{NW}(\boldsymbol{\mu}, \boldsymbol{\Lambda} |
+\hat{\boldsymbol{m}}, \hat{\beta}, \hat{\nu}, \hat{\boldsymbol{W}})`, in the condition of using Gauss-Wishart
+prior.
 
 ----
 
