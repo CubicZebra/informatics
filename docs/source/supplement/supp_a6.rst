@@ -680,6 +680,98 @@ simultaneously constitute the Bayesian posterior :math:`\mathcal{NW}(\boldsymbol
 \hat{\boldsymbol{m}}, \hat{\beta}, \hat{\nu}, \hat{\boldsymbol{W}})`, in the condition of using Gauss-Wishart
 prior.
 
+For the Bayesian posterior predictive under the Gauss-Wishart distribution, use one single point
+:math:`\boldsymbol{x}^*` likely to express the marginalized :math:`p(\boldsymbol{x}^*)`, merge all
+:math:`\boldsymbol{x}^*` involved terms so that:
+
+.. math::
+   :label: predictive in Gauss-Wishart prior 1
+
+   \ln p(\boldsymbol{x}^*) =& \ln p(\boldsymbol{x}^* | \boldsymbol{\mu}, \boldsymbol{\Lambda}) - \ln
+   p(\boldsymbol{\mu}, \boldsymbol{\Lambda} | \boldsymbol{x}^*) + C_1 \\
+   =& \ln \mathcal{N}(\boldsymbol{x}^* | \boldsymbol{\mu}, \boldsymbol{\Lambda}) - \ln \mathcal{N}(\boldsymbol{\mu} |
+   \boldsymbol{m}(\boldsymbol{x}^*), ((1+\beta)\boldsymbol{\Lambda})^{-1}) - \ln \mathcal{W} (\boldsymbol{\Lambda} |
+   1+\nu, \boldsymbol{W}(\boldsymbol{x}^*)) + C_1 \\
+   =& -\frac{1}{2} [(\boldsymbol{x}^* - \boldsymbol{\mu})^\top \boldsymbol{\Lambda} (\boldsymbol{x}^* -
+   \boldsymbol{\mu})] + \frac{1}{2} \left\{ [\boldsymbol{\mu} - \boldsymbol{m}(\boldsymbol{x}^*)]^\top [(1+\beta)
+   \boldsymbol{\Lambda} ] [\boldsymbol{\mu} - \boldsymbol{m}(\boldsymbol{x}^*)] \right\} + \frac{1}{2} \mathrm{Tr}[
+   \boldsymbol{W}^{-1}(\boldsymbol{x}^*) \boldsymbol{\Lambda} ] \\
+   &+  \frac{\nu+1}{2} \ln | \boldsymbol{W}(\boldsymbol{x}^*) | + C_2
+
+On basis of :eq:`solution of Gauss posterior in prior 3` and :eq:`solution of Gauss posterior in prior 3 extra`,
+replace :math:`\boldsymbol{m}(\boldsymbol{x}^*)` and :math:`\boldsymbol{W}^{-1}(\boldsymbol{x}^*)` by:
+
+.. math::
+   :label: predictive in Gauss-Wishart prior 2
+
+   \boldsymbol{m}(\boldsymbol{x}^*) &= \frac{\boldsymbol{x}^* + \beta \boldsymbol{m}}{1 + \beta} \\
+   \boldsymbol{W}^{-1}(\boldsymbol{x}^*) &= \boldsymbol{x}^* \boldsymbol{x}^{*\top} + \beta \boldsymbol{m}
+   \boldsymbol{m}^\top - \frac{1}{1+\beta} (\boldsymbol{x}^* + \beta \boldsymbol{m})(\boldsymbol{x}^* + \beta
+   \boldsymbol{m})^\top + \boldsymbol{W}^{-1} \\
+   &= \frac{\beta}{1+\beta} \boldsymbol{x}^* \boldsymbol{x}^{*\top} + \frac{\beta(1+\beta) - \beta^2}{1+\beta}
+   \boldsymbol{m} \boldsymbol{m}^\top - \frac{\boldsymbol{x}^* \boldsymbol{x}^{*\top} + 2\beta
+   \boldsymbol{x}^* \boldsymbol{m}^\top+\beta^2 \boldsymbol{m}\boldsymbol{m}^\top }{1+\beta} + \boldsymbol{W}^{-1} \\
+   &= \frac{\beta (\boldsymbol{x}^* \boldsymbol{x}^{*\top}  + \boldsymbol{m} \boldsymbol{m}^\top - 2 \beta
+   \boldsymbol{x}^* \boldsymbol{m}^\top )}{1+\beta} + \boldsymbol{W}^{-1} \\
+   &= \frac{\beta}{1+\beta} (\boldsymbol{x}^* - \boldsymbol{m})(\boldsymbol{x}^* - \boldsymbol{m})^\top +
+   \boldsymbol{W}^{-1}
+
+Under which condition, the :eq:`predictive in Gauss-Wishart prior 1` can be further simplified as:
+
+.. math::
+   :label: predictive in Gauss-Wishart prior 3
+
+   \ln p(\boldsymbol{x}^*) =& - \frac{1}{2} [ \boldsymbol{x}^{*\top} \boldsymbol{\Lambda x}^* - 2
+   \boldsymbol{x}^{*\top} \boldsymbol{\Lambda \mu}  - \frac{\boldsymbol{x}^* \boldsymbol{\Lambda x}^* }{1+\beta}
+   + 2 \boldsymbol{x}^{*\top} \boldsymbol{\Lambda} (\boldsymbol{\mu} - \frac{\beta}{1+\beta} \boldsymbol{m}) -
+   \frac{\beta}{1+\beta} \boldsymbol{x}^{*\top} \boldsymbol{\Lambda x}^* \\
+   &+ \frac{\beta}{1+\beta} \cdot 2 \boldsymbol{x}^{*\top} \boldsymbol{\Lambda m} + \mathrm{Tr} (\boldsymbol{W}^{-1}
+   \boldsymbol{\Lambda} ) ] + \frac{\nu+1}{2} \ln | \boldsymbol{W} (\boldsymbol{x}^*) | + C_3 \\
+   =& -\frac{\nu+1}{2} \ln | \boldsymbol{W}^{-1} (\boldsymbol{x}^*) | + C_3 \\
+   =& -\frac{\nu+1}{2} \ln | \frac{\beta}{1+\beta} (\boldsymbol{x}^* - \boldsymbol{m}) (\boldsymbol{x}^* -
+   \boldsymbol{m})^\top + \boldsymbol{W}^{-1} | + C_3 \\
+   =& -\frac{\nu+1}{2} \ln | \boldsymbol{I} + \frac{\beta}{1+\beta} [\boldsymbol{W}(\boldsymbol{x}^* -
+   \boldsymbol{m})] (\boldsymbol{x}^* - \boldsymbol{m})^\top | + C_4 \\
+   =& -\frac{\nu+1}{2} \ln \left[ 1 + \frac{\beta}{1+\beta} (\boldsymbol{x}^* - \boldsymbol{m})^\top \boldsymbol{W}
+   (\boldsymbol{x}^* - \boldsymbol{m}) \right] + C_4
+
+Be similar to :eq:`predictive in Wishart prior 3`, the final expression of :eq:`predictive in Gauss-Wishart prior 3`
+shows the kernel of a multivariate student-t
+:math:`\mathrm{Stu}(\boldsymbol{x} | \boldsymbol{\mu}_s, \boldsymbol{\Lambda}_s, \nu_s)` with the parameters that:
+
+.. math::
+   :label: solution of Gauss predictive in prior 3
+
+   \boldsymbol{\mu}_s &= \boldsymbol{\mu} \\
+   \nu_s &= \nu + 1 - D \\
+   \boldsymbol{\Lambda}_s &= \frac{\nu_s \beta}{1+\beta} \boldsymbol{W}
+
+As for its Bayesian posterior predictive, replace all the :math:`\boldsymbol{m}`, :math:`\beta`, :math:`\nu`, and
+:math:`\boldsymbol{W}` by :math:`\hat{\boldsymbol{m}}`, :math:`\hat{\beta}`, :math:`\hat{\mu}` and
+:math:`\hat{\boldsymbol{W}}` as determined by :eq:`solution of Gauss posterior in prior 3` and
+:eq:`solution of Gauss posterior in prior 3 extra` respectively.
+
+In the condition if univariate Gauss likelihood, the conjugate distribution will collapse from Gauss-Wishart to
+Gauss-Gamma, while its predictive distribution will correspondingly become the univariate student-t as well.
+
+For summary, the common continuous Gauss likelihood functions can be referred using the following
+:numref:`Table %s <summary of gauss family>`:
+
+.. table:: Bayesian statistics of Gauss distributions
+   :name: summary of gauss family
+   :align: center
+
+   ================== ============================================== ============================ ================== ======================
+   likelihood         parameter                                      condition                    conjugate          predictive
+   ================== ============================================== ============================ ================== ======================
+   univariate gauss   :math:`\mu`                                    :math:`\lambda`              univariate gauss   univariate gauss
+   univariate gauss   :math:`\lambda`                                :math:`\mu`                  gamma              univariate student-t
+   univariate gauss   :math:`\mu, \lambda`                           :math:`-`                    gauss-gamma        univariate student-t
+   multivariate gauss :math:`\boldsymbol{\mu}`                       :math:`\boldsymbol{\Lambda}` multivariate gauss multivariate gauss
+   multivariate gauss :math:`\boldsymbol{\Lambda}`                   :math:`\boldsymbol{\mu}`     wishart            multivariate student-t
+   multivariate gauss :math:`\boldsymbol{\mu}, \boldsymbol{\Lambda}` :math:`-`                    gauss-wishart      multivariate student-t
+   ================== ============================================== ============================ ================== ======================
+
 ----
 
 :Authors: Chen Zhang
