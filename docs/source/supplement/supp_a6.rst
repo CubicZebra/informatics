@@ -26,7 +26,7 @@ seek to navigate the complexities of decision-making under uncertainty.
 _`The basic theories`
 ---------------------
 
-In the context of classical statistics, the classical model of probability customarily utilize the maximum likelihood
+In terms of classical statistics, the statistical model of probability customarily utilize the maximum likelihood
 estimation (MLE) to solve the interested distribution. For an observed data set :math:`\mathcal{D}`,
 assume there is a statistical model and its corresponding parameter :math:`\theta`. The MLE approach actually
 calculate the :math:`\arg\max_{\theta} p(\mathcal{D} | \theta)`. In this manner, parameter :math:`\theta` is
