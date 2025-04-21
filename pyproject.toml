@@ -1,6 +1,6 @@
 [project]
 name = 'informatics'
-version = '0.0.5rc1'
+version = '0.0.6rc0'
 license = {file = "LICENSE"}
 description = 'Framework of fast implementation data processing and operating pipelines'
 readme = "README.rst"
@@ -68,7 +68,7 @@ classifiers = [
 
 [project.optional-dependencies]
 ins = ['pillow', 'requests']
-vis = ['pyqtgraph']  # suggest backend: PySide6, PyOpenGL, PyOpenGL_accelerate
+vis = ['pyqtgraph', 'PyOpenGL']  # suggest backend: PySide6, PyOpenGL_accelerate
 med = ['pydicom', 'SimpleITK']
 
 
