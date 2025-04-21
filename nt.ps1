@@ -1,13 +1,13 @@
 # author: Chen Zhang
 # usage:
-#     * compiling for python 3.9 | 3.10 | 3.11 | 3.12 with documents embedded
+#     * compiling for python 3.9 | 3.10 | 3.11 | 3.12 | 3.13 without documents embedded
 #       PS> nt.ps1
-#     * compiling for python 3.11 without documents embedded
-#       PS> nt.ps1 '311' -add_doc $FALSE
+#     * compiling for python 3.11 with documents embedded
+#       PS> nt.ps1 '311' -add_doc $TRUE
 
 
-param([Array]$envs=('39', '310', '311', '312'), [String]$root=$PWD.ToString(),
-      [Bool]$add_doc=$TRUE)
+param([Array]$envs=('39', '310', '311', '312', '313'), [String]$root=$PWD.ToString(),
+      [Bool]$add_doc=$FALSE)
 $dist_dir = $root+'/dist'
 $doc_dir = $root+'/docs'
 

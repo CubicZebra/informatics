@@ -1,19 +1,19 @@
 #!/bin/bash
 # author: Chen Zhang
 # usage:
-#     * compiling for python 3.9 | 3.10 | 3.11 | 3.12 with documents embedded
+#     * compiling for python 3.9 | 3.10 | 3.11 | 3.12 | 3.13 with documents embedded
 #       shell> bash posix.sh
 #     * compiling for python 3.10 | 3.11 without documents embedded
 #       shell> bash posix.sh '310 311' false
 
 
-envs="39 310 311 312"
+envs="39 310 311 312 313"
 add_doc=$([ "$#" == 0 ] && echo "true" || echo "${2}")
 root="$(pwd .)"
 dist_dir="${root}/dist"
 doc_dir="${root}/docs"
 if [[ $(uname) == 'Linux' ]]; then target='Linux_x86_64.whl'; else target='macosx_10_9_x86_64'; fi
-if [[ $(uname) == 'Linux' ]]; then prefix="/home/chen"; esle prefix="/Users/chen_zhang"; fi
+if [[ $(uname) == 'Linux' ]]; then prefix="/home/chen"; else prefix="/Users/chen_zhang"; fi
 
 
 function single_compiler() {
