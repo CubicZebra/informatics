@@ -55,6 +55,15 @@ Ensure Python (|ge| 3.9) is installed. Install :code:`informatics` via pip-based
 
       (.venv) $ pip install informatics[med]
 
+.. tab:: Networks
+
+   Install basic :code:`informatics` with configurable neural network with dynamic architecture. For normal use,
+   :code:`torch` is required.
+
+   .. code-block:: console
+
+      (.venv) $ pip install informatics[net]
+
 _`Check installation`
 ~~~~~~~~~~~~~~~~~~~~~
 
