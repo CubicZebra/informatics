@@ -1,14 +1,14 @@
 [project]
 name = 'informatics'
-version = '0.0.6rc0'
-license = {file = "LICENSE"}
+dynamic = ['version']
+license = { file = "LICENSE" }
 description = 'Framework of fast implementation data processing and operating pipelines'
 readme = "README.rst"
 authors = [
     { name="Chen Zhang", email="chen.zhang_06sept@foxmail.com" },
 ]
 maintainers = [
-    {name = "Chen Zhang", email = "chen.zhang_06sept@foxmail.com"},
+    { name="Chen Zhang", email="chen.zhang_06sept@foxmail.com" },
 ]
 keywords = [
     'mathematical statistics',
@@ -49,6 +49,7 @@ classifiers = [
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
     'Topic :: Documentation :: Sphinx',
     'Topic :: Education',
     'Topic :: Scientific/Engineering',
@@ -70,6 +71,7 @@ classifiers = [
 ins = ['pillow', 'requests']
 vis = ['pyqtgraph', 'PyOpenGL']  # suggest backend: PySide6, PyOpenGL_accelerate
 med = ['pydicom', 'SimpleITK']
+net = ['torch']
 
 
 [project.urls]
@@ -86,9 +88,14 @@ requires = ['setuptools', 'cython']
 
 [tool.setuptools]
 package-dir = {"" = "."}
+license-files = []  # twine upload unsupport field: 'license-files'
 
 
 [tool.setuptools.packages.find]
 where = ["."]  # ["."] by default
 include = ["info*"]
 namespaces = false  # true by default
+
+
+[tool.setuptools.dynamic]
+version = { attr = 'info.__version__' }

@@ -1,3 +1,5 @@
+import sys
+import os
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
@@ -12,8 +14,9 @@ today_fmt = '%B %d, %Y'
 project = 'informatics'
 copyright = '2023, Chen Zhang'
 author = 'Chen Zhang'
-version = '0.0.6'
-release = '0.0.6rc0'
+sys.path.insert(0, os.path.abspath('..'))
+release = __import__('info', fromlist=['__version__']).__version__
+version = '.'.join(_r[:3]) if [_r := release.split('.'), len(_r) > 3][-1] else release
 
 numfig = True
 numfig_format = {'figure': 'Figure %s', 'code-block': 'Code %s'}
