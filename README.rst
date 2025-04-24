@@ -2,9 +2,6 @@
 informatics
 ===========
 
-.. CodeFactor for documentation only; sphinx use sphinx-inline-tabs ext;
-   https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_0.jpg
-
 .. image:: https://img.shields.io/pypi/pyversions/informatics
    :alt: PyPI - Python Version
 
