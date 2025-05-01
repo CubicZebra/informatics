@@ -24,6 +24,19 @@ practical application.
    Applying data augmentation <tut_aug>
    :maxdepth: 2
 
+_`Edge devices and self-adaption AI`
+------------------------------------
+
+This tutorial explores how intelligent edge systems unify streaming data, edge computing, and adaptive machine
+learning to enable self-improving AI in resource-constrained environments. Learn to process raw data streams
+locally into real-time insights—eliminating cloud dependency—while addressing hardware limits, dynamic data shifts,
+and privacy risks.   Through real-world examples, explore systems where AI models improve themselves using live
+data—without sacrificing speed, precision, or edge-device performance.
+
+.. toctree::
+   From streaming to edge AI <tut_edge>
+   Edge-deployed models <tut_online>
+
 ----
 
 :Authors: Chen Zhang

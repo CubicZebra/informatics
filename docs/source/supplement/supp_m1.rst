@@ -118,6 +118,8 @@ _`Acronyms`
 
 * _`ANN`: Artificial Neural Network
 
+* _`IoT`: Internet of Things
+
 ----
 
 :Authors: Chen Zhang
