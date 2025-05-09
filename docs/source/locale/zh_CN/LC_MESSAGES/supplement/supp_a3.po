@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/supplement/supp_a3.rst:2
 msgid "_`Factor analysis`"
@@ -53,6 +53,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:24
+#, python-brace-format
 msgid ""
 "The set _`partitioning` in mathematics refers for a group of :math:`n` "
 "subsets :math:`P_i,\\ i \\in \\{1, \\dots, n\\}` for a certain non-empty "
@@ -60,16 +61,19 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:27
+#, python-brace-format
 msgid ":math:`P_i \\neq \\varnothing,\\ \\forall\\ i \\in \\{1, \\dots, n\\}`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:28
+#, python-brace-format
 msgid ""
 ":math:`P_i \\cap P_j = \\varnothing,\\ \\forall\\ i,j \\in \\{1, \\dots, "
 "n\\},\\ i \\neq j`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:29
+#, python-brace-format
 msgid ":math:`\\bigcup_{i=0}^n P_i = A`"
 msgstr ""
 
@@ -78,7 +82,7 @@ msgid "_`Factorize indexing`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:34
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "Based on the previous concept, any of the observable variables, either "
 "continuous or discrete, can be interpreted as factors. In practice, the "
@@ -199,7 +203,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:114
-#, python-format
+#, python-brace-format, python-format
 msgid ""
 "Priori scoring utilizes :ref:`Shapiro-Wilk test <Shapiro-Wilk test>` to "
 "measure the normality, as showed in :numref:`Figure %s "
@@ -216,6 +220,7 @@ msgid "normality statistic of priori scoring"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:127
+#, python-brace-format
 msgid ""
 "This design naturally satisfies aforementioned two requirements. For the "
 "data set with 0 variation (all equal), the :math:`s_{sw}` and "
@@ -255,6 +260,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:148
+#, python-brace-format
 msgid ""
 "Suppose :math:`\\boldsymbol{S} \\in \\mathbb{C}^{d_1 \\times d_2}` is the"
 " complex matrix obtained from pseudo-tensor after normality statistics. "
@@ -265,10 +271,12 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:152
+#, python-brace-format
 msgid "\\boldsymbol{P} = \\frac{1}{2} (\\boldsymbol{S}+\\boldsymbol{S}^\\ast)"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:157
+#, python-brace-format
 msgid ""
 "After dealing with the empty values (usually omitting), the variation of "
 ":math:`\\boldsymbol{P}` among and within groups is implemented via :ref"
@@ -279,6 +287,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:162
+#, python-brace-format
 msgid "{e}_{ps} = -\\text{log}({p}_{ow})"
 msgstr ""
 
@@ -326,26 +335,31 @@ msgid "priori scoring algorithm"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:189
+#, python-brace-format
 msgid ""
 "Requires: :math:`\\boldsymbol{D}`, :math:`\\boldsymbol{c}`, "
 ":math:`\\mathrm{P}` or :math:`\\mathrm{P}^\\prime`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:190
+#, python-brace-format
 msgid "Export: evaluated scores :math:`\\{e_1, e_2, \\dots, e_m\\}`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:191
+#, python-brace-format
 msgid "for i in :math:`\\{1, 2, \\dots, m\\}`:"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:193
+#, python-brace-format
 msgid ""
 "fold :math:`D_{:, i}` to :math:`\\mathrm{T}_{i}^+` via :math:`f_1(D_{:, "
 "i}, \\boldsymbol{c}, \\mathrm{P})`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:195
+#, python-brace-format
 msgid ""
 "calculate :math:`\\boldsymbol{S}_{i}` and "
 ":math:`\\boldsymbol{S}_{i}^\\ast` through normality statistic "
@@ -353,12 +367,14 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:198
+#, python-brace-format
 msgid ""
 "obtain real projection matrix :math:`\\mathrm{P}_{i}` from "
 ":math:`0.5(\\boldsymbol{S}_{i}+\\boldsymbol{S}_{i}^\\ast)`"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:201
+#, python-brace-format
 msgid ""
 "from variation statistic :math:`f_3(\\mathrm{P}_i)` calculate "
 ":math:`p`-value :math:`p_{i}`, with logarithmic space obtain its final "
@@ -366,6 +382,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:204
+#, python-brace-format
 msgid "return :math:`\\{e_1, e_2, \\dots, e_m\\}`"
 msgstr ""
 
@@ -392,7 +409,7 @@ msgid "Version"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst:214
-msgid "0.0.4"
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/supplement/supp_a3.rst
@@ -402,4 +419,7 @@ msgstr ""
 #: ../../source/supplement/supp_a3.rst:215
 msgid "May 24, 2023"
 msgstr ""
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

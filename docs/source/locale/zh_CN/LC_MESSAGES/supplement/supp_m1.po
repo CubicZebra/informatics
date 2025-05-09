@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/supplement/supp_m1.rst:2
 msgid "_`Math symbols and abbreviations`"
@@ -29,274 +29,306 @@ msgid "_`Math symbols`"
 msgstr "数学符号"
 
 #: ../../source/supplement/supp_m1.rst:7
+#, python-brace-format
 msgid ":math:`\\boldsymbol{x}`: bold lowercase for vector"
-msgstr ":math:`\\boldsymbol{x}`\ ：小写加粗表示向量"
+msgstr ":math:`\\boldsymbol{x}`\\ ：小写加粗表示向量"
 
 #: ../../source/supplement/supp_m1.rst:9
+#, python-brace-format
 msgid ":math:`\\boldsymbol{X}`: bold italic uppercase for matrix"
-msgstr ":math:`\\boldsymbol{X}`\ ：大写斜体加粗表示矩阵"
+msgstr ":math:`\\boldsymbol{X}`\\ ：大写斜体加粗表示矩阵"
 
 #: ../../source/supplement/supp_m1.rst:11
+#, python-brace-format
 msgid ":math:`\\textbf{X}`: bold orthographic uppercase for tensor"
-msgstr ":math:`\\textbf{X}`\ ：大写正体加粗表示张量"
+msgstr ":math:`\\textbf{X}`\\ ：大写正体加粗表示张量"
 
 #: ../../source/supplement/supp_m1.rst:13
+#, python-brace-format
 msgid ""
 ":math:`\\mathrm{r}(\\boldsymbol{A})`: the rank of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\mathrm{r}(\\boldsymbol{A})`\ ：矩阵 "
-":math:`\\boldsymbol{A}` 的秩"
+msgstr ":math:`\\mathrm{r}(\\boldsymbol{A})`\\ ：矩阵 :math:`\\boldsymbol{A}` 的秩"
 
 #: ../../source/supplement/supp_m1.rst:15
+#, python-brace-format
 msgid ""
 ":math:`\\mathrm{Tr}(\\boldsymbol{A})`: the trace of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\mathrm{Tr}(\\boldsymbol{A})`\ ：矩阵 "
-":math:`\\boldsymbol{A}` 的迹"
+msgstr ":math:`\\mathrm{Tr}(\\boldsymbol{A})`\\ ：矩阵 :math:`\\boldsymbol{A}` 的迹"
 
 #: ../../source/supplement/supp_m1.rst:17
+#, python-brace-format
 msgid ""
 ":math:`\\mathrm{det}(\\boldsymbol{A})`: the determinant of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\mathrm{det}(\\boldsymbol{A})`\ ：矩阵 "
-":math:`\\boldsymbol{A}` 的行列式"
+msgstr ":math:`\\mathrm{det}(\\boldsymbol{A})`\\ ：矩阵 :math:`\\boldsymbol{A}` 的行列式"
 
 #: ../../source/supplement/supp_m1.rst:19
+#, python-brace-format
 msgid ""
 ":math:`\\boldsymbol{A}^{-1}`: the inverse of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\boldsymbol{A}^{-1}`\ ：矩阵 "
-":math:`\\boldsymbol{A}` 的逆矩阵"
+msgstr ":math:`\\boldsymbol{A}^{-1}`\\ ：矩阵 :math:`\\boldsymbol{A}` 的逆矩阵"
 
 #: ../../source/supplement/supp_m1.rst:21
+#, python-brace-format
 msgid ""
 ":math:`\\boldsymbol{A}^\\top`: the transpose of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\boldsymbol{A}^\\top`\ ：矩阵 "
-":math:`\\boldsymbol{A}` 的转置矩阵"
+msgstr ":math:`\\boldsymbol{A}^\\top`\\ ：矩阵 :math:`\\boldsymbol{A}` 的转置矩阵"
 
 #: ../../source/supplement/supp_m1.rst:23
+#, python-brace-format
 msgid ""
 ":math:`\\boldsymbol{A}^\\ast`: the conjugate of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\boldsymbol{A}^\\ast`\ ；矩阵 "
-":math:`\\boldsymbol{A}` 的共轭矩阵"
+msgstr ":math:`\\boldsymbol{A}^\\ast`\\ ；矩阵 :math:`\\boldsymbol{A}` 的共轭矩阵"
 
 #: ../../source/supplement/supp_m1.rst:25
+#, python-brace-format
 msgid ""
 ":math:`\\boldsymbol{A}^\\mathrm{H}`: the Hermitian of matrix "
 ":math:`\\boldsymbol{A}`"
-msgstr ""
-":math:`\\boldsymbol{A}^\\mathrm{H}`\ ：矩阵 "
-":math:`\\boldsymbol{A}` 的厄密特矩阵"
+msgstr ":math:`\\boldsymbol{A}^\\mathrm{H}`\\ ：矩阵 :math:`\\boldsymbol{A}` 的厄密特矩阵"
 
 #: ../../source/supplement/supp_m1.rst:27
 msgid ":math:`\\varnothing`: empty set"
-msgstr ":math:`\\varnothing`\ ：空集"
+msgstr ":math:`\\varnothing`\\ ：空集"
 
 #: ../../source/supplement/supp_m1.rst:29
 msgid ":math:`\\in`: in"
-msgstr ":math:`\\in`\ ：在（集合）内"
+msgstr ":math:`\\in`\\ ：在（集合）内"
 
 #: ../../source/supplement/supp_m1.rst:31
+#, python-brace-format
 msgid ":math:`\\mathbb{Z}`: integer numerical domain"
-msgstr ":math:`\\mathbb{Z}`\ ：整数域"
+msgstr ":math:`\\mathbb{Z}`\\ ：整数域"
 
 #: ../../source/supplement/supp_m1.rst:33
+#, python-brace-format
 msgid ":math:`\\mathbb{N}`: natural numerical domain"
-msgstr ":math:`\\mathbb{N}`\ ：自然数域"
+msgstr ":math:`\\mathbb{N}`\\ ：自然数域"
 
 #: ../../source/supplement/supp_m1.rst:35
+#, python-brace-format
 msgid ":math:`\\mathbb{R}`: real numerical domain"
-msgstr ":math:`\\mathbb{R}`\ ：实数域"
+msgstr ":math:`\\mathbb{R}`\\ ：实数域"
 
 #: ../../source/supplement/supp_m1.rst:37
+#, python-brace-format
 msgid ":math:`\\mathbb{C}`: complex numerical domain"
-msgstr ":math:`\\mathbb{C}`\ ：复数域"
+msgstr ":math:`\\mathbb{C}`\\ ：复数域"
 
 #: ../../source/supplement/supp_m1.rst:39
+#, python-brace-format
 msgid ":math:`\\mathbb{Z}^+`: numerical domain for positive integer"
-msgstr ":math:`\\mathbb{Z}^+`\ ：正整数域"
+msgstr ":math:`\\mathbb{Z}^+`\\ ：正整数域"
 
 #: ../../source/supplement/supp_m1.rst:41
+#, python-brace-format
 msgid ":math:`\\mathbb{R}^+`: numerical domain for positive real number"
-msgstr ":math:`\\mathbb{R}^+`\ ：正实数域"
+msgstr ":math:`\\mathbb{R}^+`\\ ：正实数域"
 
 #: ../../source/supplement/supp_m1.rst:43
 msgid ":math:`\\forall`: for all"
-msgstr ":math:`\\forall`\ ：对于所有的"
+msgstr ":math:`\\forall`\\ ：对于所有的"
 
 #: ../../source/supplement/supp_m1.rst:45
 msgid ":math:`\\cap`: intersection of sets"
-msgstr ":math:`\\cap`\ ：交集"
+msgstr ":math:`\\cap`\\ ：交集"
 
 #: ../../source/supplement/supp_m1.rst:47
 msgid ":math:`\\cup`: union of sets"
-msgstr ":math:`\\cup`\ ：并集"
+msgstr ":math:`\\cup`\\ ：并集"
 
 #: ../../source/supplement/supp_m1.rst:49
 msgid ""
 ":math:`\\subset`: subset; e.g. :math:`A\\ \\subset\\ B` for :math:`A` is "
 "a subset of :math:`B`"
 msgstr ""
-":math:`\\subset`\ ：真子集；例如，\ :math:`A\\ \\subset\\ B`\ 表示\ :math:`A`\ 是"
-"集合\ :math:`B`\ 的真子集"
+":math:`\\subset`\\ ：真子集；例如，\\ :math:`A\\ \\subset\\ B`\\ 表示\\ :math:`A`\\"
+" 是集合\\ :math:`B`\\ 的真子集"
 
 #: ../../source/supplement/supp_m1.rst:51
 msgid ""
 ":math:`\\subseteq`: subset or equal; e.g. :math:`A\\ \\subseteq\\ B` for "
 ":math:`A\\ \\subset\\ B` or :math:`A = B`"
 msgstr ""
-":math:`\\subseteq`\ ：子集；例如，\ :math:`A\\ \\subseteq\\ B`\ 表示\ "
-":math:`A\\ \\subset\\ B`\ 或者\ :math:`A = B`\ "
+":math:`\\subseteq`\\ ：子集；例如，\\ :math:`A\\ \\subseteq\\ B`\\ 表示\\ "
+":math:`A\\ \\subset\\ B`\\ 或者\\ :math:`A = B`\\ "
 
 #: ../../source/supplement/supp_m1.rst:53
+#, python-brace-format
 msgid ""
 ":math:`\\sum`: sum; e.g. :math:`\\sum_{i=1}^n a_i = a_1 + a_2 + \\dots + "
 "a_{n-1} + a_n`"
 msgstr ""
-":math:`\\sum`\ ：求和；例如，\ :math:`\\sum_{i=1}^n a_i = a_1 + a_2 + \\dots + "
-"a_{n-1} + a_n`\ "
+":math:`\\sum`\\ ：求和；例如，\\ :math:`\\sum_{i=1}^n a_i = a_1 + a_2 + \\dots +"
+" a_{n-1} + a_n`\\ "
 
 #: ../../source/supplement/supp_m1.rst:55
+#, python-brace-format
 msgid ""
 ":math:`\\prod`: product; e.g. :math:`\\prod_{i=1}^n a_i = a_1 \\times a_2"
 " \\times \\dots \\times a_{n-1} \\times a_n`"
 msgstr ""
-":math:`\\prod`\ ：求积；例如，\ :math:`\\prod_{i=1}^n a_i = a_1 \\times a_2"
-" \\times \\dots \\times a_{n-1} \\times a_n`\ "
+":math:`\\prod`\\ ：求积；例如，\\ :math:`\\prod_{i=1}^n a_i = a_1 \\times a_2 "
+"\\times \\dots \\times a_{n-1} \\times a_n`\\ "
 
 #: ../../source/supplement/supp_m1.rst:57
 msgid ":math:`p(X)`: the probability of :math:`X`"
-msgstr ":math:`p(X)`\ ：事件\ :math:`X`\ 的概率"
+msgstr ":math:`p(X)`\\ ：事件\\ :math:`X`\\ 的概率"
 
 #: ../../source/supplement/supp_m1.rst:59
+#, python-brace-format
 msgid ":math:`x_i`: the :math:`i`-th element in series :math:`\\boldsymbol{x}`"
-msgstr ":math:`x_i`\ ：在序列\ :math:`\\boldsymbol{x}`\ 中，第\ :math:`i`\ 个元素"
+msgstr ":math:`x_i`\\ ：在序列\\ :math:`\\boldsymbol{x}`\\ 中，第\\ :math:`i`\\ 个元素"
 
 #: ../../source/supplement/supp_m1.rst:61
+#, python-brace-format
 msgid ""
 ":math:`x_{(i)}`: the :math:`i`-th smallest in series "
 ":math:`\\boldsymbol{x}`"
-msgstr ""
-":math:`x_{(i)}`\ ： 在序列\ :math:`\\boldsymbol{x}`\ 中，第\ :math:`i`\ 小"
-"的元素"
+msgstr ":math:`x_{(i)}`\\ ： 在序列\\ :math:`\\boldsymbol{x}`\\ 中，第\\ :math:`i`\\ 小的元素"
 
 #: ../../source/supplement/supp_m1.rst:63
+#, python-brace-format
 msgid ":math:`\\bar{x}`: the sample mean of a series :math:`\\boldsymbol{x}`"
-msgstr ":math:`\\bar{x}`\ ：序列\ :math:`\\boldsymbol{x}`\ 的样本平均"
+msgstr ":math:`\\bar{x}`\\ ：序列\\ :math:`\\boldsymbol{x}`\\ 的样本平均"
 
 #: ../../source/supplement/supp_m1.rst:65
 msgid ":math:`\\Vert\\cdot\\Vert_2`: the Euclidean norm of something"
-msgstr ":math:`\\Vert\\cdot\\Vert_2`\ ：某（数学变量）的欧几里德范数"
+msgstr ":math:`\\Vert\\cdot\\Vert_2`\\ ：某（数学变量）的欧几里德范数"
 
 #: ../../source/supplement/supp_m1.rst:67
+#, python-brace-format
 msgid ""
 ":math:`\\mathrm{sgn}(\\cdot)`: sign function of something; e.g. "
 ":math:`\\mathrm{sgn}(x) = 1` if :math:`x \\geq 0` otherwise -1"
 msgstr ""
-":math:`\\mathrm{sgn}(\\cdot)`\ ：某（数学变量）的符号函数；例如，\ "
-":math:`\\mathrm{sgn}(x) = 1`\ 如果\ :math:`x \\geq 0`\ ，否则等于-1"
+":math:`\\mathrm{sgn}(\\cdot)`\\ ：某（数学变量）的符号函数；例如，\\ "
+":math:`\\mathrm{sgn}(x) = 1`\\ 如果\\ :math:`x \\geq 0`\\ ，否则等于-1"
 
 #: ../../source/supplement/supp_m1.rst:70
 msgid ""
 ":math:`I_A(\\cdot)`: indicator function of something; e.g. :math:`I_A(x) "
 "= 1` if :math:`x \\in A` otherwise 0"
 msgstr ""
-":math:`I_A(\\cdot)`\ ：某（数学变量）的指示函数；例如，\ :math:`I_A(x) "
-"= 1`\ 如果\ :math:`x \\in A`\ ，否则等于0"
+":math:`I_A(\\cdot)`\\ ：某（数学变量）的指示函数；例如，\\ :math:`I_A(x) = 1`\\ 如果\\ "
+":math:`x \\in A`\\ ，否则等于0"
 
 #: ../../source/supplement/supp_m1.rst:72
+#, python-brace-format
 msgid ":math:`\\mathrm{sup}(\\cdot)`: supremum of something"
-msgstr ":math:`\\mathrm{sup}(\\cdot)`\ ：某（数学变量）的上确界"
+msgstr ":math:`\\mathrm{sup}(\\cdot)`\\ ：某（数学变量）的上确界"
 
-#: ../../source/supplement/supp_m1.rst:75
+#: ../../source/supplement/supp_m1.rst:74
+#, fuzzy, python-brace-format
+msgid ""
+":math:`\\left[ \\cdot \\right]_{+}`: the rectified linear function of "
+"something; e.g. :math:`\\left[ x \\right]_{+} = x` if :math:`x > 0` "
+"otherwise :math:`\\left[ x \\right]_{+} = 0`"
+msgstr ""
+":math:`I_A(\\cdot)`\\ ：某（数学变量）的指示函数；例如，\\ :math:`I_A(x) = 1`\\ 如果\\ "
+":math:`x \\in A`\\ ，否则等于0"
+
+#: ../../source/supplement/supp_m1.rst:77
+msgid ""
+":math:`\\delta ( \\cdot )`: Dirac's delta function; 1 if and only if the "
+"expression inside established, otherwise 0; also called unit impulse "
+"function"
+msgstr ""
+
+#: ../../source/supplement/supp_m1.rst:81
 msgid "_`Acronyms`"
 msgstr "短语缩写"
 
-#: ../../source/supplement/supp_m1.rst:77
-msgid "_`AI`: Artificial Intelligence"
-msgstr "_`AI`\ ：人工智能"
-
-#: ../../source/supplement/supp_m1.rst:79
-msgid "_`LoG`: Laplacian of Gaussian"
-msgstr "_`LoG`\ ：高斯-拉普拉斯"
-
-#: ../../source/supplement/supp_m1.rst:81
-msgid "_`DoG`: Difference of Gaussian"
-msgstr "_`DoG`\ ：高斯差分"
-
 #: ../../source/supplement/supp_m1.rst:83
-msgid "_`FCA`: Formal Concept Analysis"
-msgstr "_`FCA`\ ：形式概念分析"
+msgid "_`AI`: Artificial Intelligence"
+msgstr "_`AI`\\ ：人工智能"
 
 #: ../../source/supplement/supp_m1.rst:85
-msgid "_`DOE`: Design of Experiments"
-msgstr "_`DOE`\ ：实验设计方法"
+msgid "_`LoG`: Laplacian of Gaussian"
+msgstr "_`LoG`\\ ：高斯-拉普拉斯"
 
 #: ../../source/supplement/supp_m1.rst:87
-msgid "_`MC`: Monte Carlo methods"
-msgstr "_`MC`\ ：蒙特卡罗方法"
+msgid "_`DoG`: Difference of Gaussian"
+msgstr "_`DoG`\\ ：高斯差分"
 
 #: ../../source/supplement/supp_m1.rst:89
-msgid "_`ANOVA`: Analysis of Variance"
-msgstr "_`ANOVA`\ ：方差分析"
+msgid "_`FCA`: Formal Concept Analysis"
+msgstr "_`FCA`\\ ：形式概念分析"
 
 #: ../../source/supplement/supp_m1.rst:91
-msgid "_`ROI`: Region of Interest"
-msgstr "_`ROI`\ ：感兴趣区域"
+msgid "_`DOE`: Design of Experiments"
+msgstr "_`DOE`\\ ：实验设计方法"
 
 #: ../../source/supplement/supp_m1.rst:93
-msgid "_`DVH`: Dose Volume Histogram"
-msgstr "_`DVH`\ ：剂量体积直方图"
+msgid "_`MC`: Monte Carlo methods"
+msgstr "_`MC`\\ ：蒙特卡罗方法"
 
 #: ../../source/supplement/supp_m1.rst:95
-msgid "_`IO`: Input and Output"
-msgstr "_`IO`\ ：输入与输出"
+msgid "_`ANOVA`: Analysis of Variance"
+msgstr "_`ANOVA`\\ ：方差分析"
 
 #: ../../source/supplement/supp_m1.rst:97
-msgid "_`GPU`: Graphic Processing Unit"
-msgstr "_`GPU`\ ：图形处理单元"
+msgid "_`ROI`: Region of Interest"
+msgstr "_`ROI`\\ ：感兴趣区域"
 
 #: ../../source/supplement/supp_m1.rst:99
-msgid "_`DICOM`: Digital Imaging and Communications in Medicine"
-msgstr "_`DICOM`\ ：数字医学成像及通讯标准"
+msgid "_`DVH`: Dose Volume Histogram"
+msgstr "_`DVH`\\ ：剂量体积直方图"
 
 #: ../../source/supplement/supp_m1.rst:101
-msgid "_`I.I.D.`: Independent and Identically Distributed"
-msgstr "_`I.I.D.`\ ：独立同分布"
+msgid "_`IO`: Input and Output"
+msgstr "_`IO`\\ ：输入与输出"
 
 #: ../../source/supplement/supp_m1.rst:103
-msgid "_`DoF`: Degree of Freedom"
-msgstr "_`DoF`\ ：自由度"
+msgid "_`GPU`: Graphic Processing Unit"
+msgstr "_`GPU`\\ ：图形处理单元"
 
 #: ../../source/supplement/supp_m1.rst:105
-msgid "_`CT`: Computed Tomography"
-msgstr "_`CT`\ ：计算机断层扫描"
+msgid "_`DICOM`: Digital Imaging and Communications in Medicine"
+msgstr "_`DICOM`\\ ：数字医学成像及通讯标准"
 
 #: ../../source/supplement/supp_m1.rst:107
-msgid "_`MR`: Magnetic Resonance"
-msgstr "_`MR`\ ：磁共振成像"
+msgid "_`NIfTI`: Neuroimaging Informatics Technology Initiative"
+msgstr ""
 
 #: ../../source/supplement/supp_m1.rst:109
-msgid "_`SNR`: Signal to Noise Ratio"
-msgstr "_`SNR`\ ：信号噪音比率"
+msgid "_`I.I.D.`: Independent and Identically Distributed"
+msgstr "_`I.I.D.`\\ ：独立同分布"
 
 #: ../../source/supplement/supp_m1.rst:111
+msgid "_`DoF`: Degree of Freedom"
+msgstr "_`DoF`\\ ：自由度"
+
+#: ../../source/supplement/supp_m1.rst:113
+msgid "_`CT`: Computed Tomography"
+msgstr "_`CT`\\ ：计算机断层扫描"
+
+#: ../../source/supplement/supp_m1.rst:115
+msgid "_`MR`: Magnetic Resonance"
+msgstr "_`MR`\\ ：磁共振成像"
+
+#: ../../source/supplement/supp_m1.rst:117
+msgid "_`SNR`: Signal to Noise Ratio"
+msgstr "_`SNR`\\ ：信号噪音比率"
+
+#: ../../source/supplement/supp_m1.rst:119
 msgid "_`ANN`: Artificial Neural Network"
-msgstr "_`ANN`\ ：人工神经网络"
+msgstr "_`ANN`\\ ：人工神经网络"
+
+#: ../../source/supplement/supp_m1.rst:121
+msgid "_`IoT`: Internet of Things"
+msgstr ""
 
 #: ../../source/supplement/supp_m1.rst
 msgid "Authors"
 msgstr "译者"
 
-#: ../../source/supplement/supp_m1.rst:115
+#: ../../source/supplement/supp_m1.rst:125
 msgid "Chen Zhang"
 msgstr ""
 
@@ -304,15 +336,18 @@ msgstr ""
 msgid "Version"
 msgstr "版本"
 
-#: ../../source/supplement/supp_m1.rst:116
-msgid "0.0.4"
+#: ../../source/supplement/supp_m1.rst:126
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/supplement/supp_m1.rst
 msgid "|create|"
 msgstr "创建于"
 
-#: ../../source/supplement/supp_m1.rst:117
+#: ../../source/supplement/supp_m1.rst:127
 msgid "Jul 19, 2023"
 msgstr "2023年7月19日"
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

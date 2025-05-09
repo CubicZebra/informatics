@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:44+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/interface/api_ana.rst:2
 msgid "_`Modules for analysis`"
@@ -414,19 +414,7 @@ msgstr ""
 msgid "Docstrings"
 msgstr ""
 
-#: ../../docstring info.docfunc.hypoi_ab info.docfunc.hypoi_ad
-#: info.docfunc.hypoi_ag info.docfunc.hypoi_bartlett info.docfunc.hypoi_bm
-#: info.docfunc.hypoi_chi2 info.docfunc.hypoi_cvm info.docfunc.hypoi_es
-#: info.docfunc.hypoi_f info.docfunc.hypoi_fk info.docfunc.hypoi_jb
-#: info.docfunc.hypoi_ks info.docfunc.hypoi_kurtosis info.docfunc.hypoi_kw
-#: info.docfunc.hypoi_levene info.docfunc.hypoi_mood
-#: info.docfunc.hypoi_normality info.docfunc.hypoi_pd info.docfunc.hypoi_rank
-#: info.docfunc.hypoi_skew info.docfunc.hypoi_sw info.docfunc.hypoi_t
-#: info.docfunc.hypoi_thsd info.docfunc.hypoi_u info.docfunc.hypoj_friedman
-#: info.docfunc.hypoj_kendall info.docfunc.hypoj_mgc info.docfunc.hypoj_pearson
-#: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
-#: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
-#: of
+#: ../../source/interface/api_ana.rst
 msgid "参数"
 msgstr ""
 
@@ -447,19 +435,7 @@ msgstr ""
 msgid "dict composed of group names as keywords and corresponding values"
 msgstr ""
 
-#: ../../docstring info.docfunc.hypoi_ab info.docfunc.hypoi_ad
-#: info.docfunc.hypoi_ag info.docfunc.hypoi_bartlett info.docfunc.hypoi_bm
-#: info.docfunc.hypoi_chi2 info.docfunc.hypoi_cvm info.docfunc.hypoi_es
-#: info.docfunc.hypoi_f info.docfunc.hypoi_fk info.docfunc.hypoi_jb
-#: info.docfunc.hypoi_ks info.docfunc.hypoi_kurtosis info.docfunc.hypoi_kw
-#: info.docfunc.hypoi_levene info.docfunc.hypoi_mood
-#: info.docfunc.hypoi_normality info.docfunc.hypoi_pd info.docfunc.hypoi_rank
-#: info.docfunc.hypoi_skew info.docfunc.hypoi_sw info.docfunc.hypoi_t
-#: info.docfunc.hypoi_thsd info.docfunc.hypoi_u info.docfunc.hypoj_friedman
-#: info.docfunc.hypoj_kendall info.docfunc.hypoj_mgc info.docfunc.hypoj_pearson
-#: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
-#: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
-#: of
+#: ../../source/interface/api_ana.rst
 msgid "返回"
 msgstr ""
 
@@ -467,19 +443,7 @@ msgstr ""
 msgid "F statistic and :math:`p`-value"
 msgstr ""
 
-#: ../../docstring info.docfunc.hypoi_ab info.docfunc.hypoi_ad
-#: info.docfunc.hypoi_ag info.docfunc.hypoi_bartlett info.docfunc.hypoi_bm
-#: info.docfunc.hypoi_chi2 info.docfunc.hypoi_cvm info.docfunc.hypoi_es
-#: info.docfunc.hypoi_f info.docfunc.hypoi_fk info.docfunc.hypoi_jb
-#: info.docfunc.hypoi_ks info.docfunc.hypoi_kurtosis info.docfunc.hypoi_kw
-#: info.docfunc.hypoi_levene info.docfunc.hypoi_mood
-#: info.docfunc.hypoi_normality info.docfunc.hypoi_pd info.docfunc.hypoi_rank
-#: info.docfunc.hypoi_skew info.docfunc.hypoi_sw info.docfunc.hypoi_t
-#: info.docfunc.hypoi_thsd info.docfunc.hypoi_u info.docfunc.hypoj_friedman
-#: info.docfunc.hypoj_kendall info.docfunc.hypoj_mgc info.docfunc.hypoj_pearson
-#: info.docfunc.hypoj_rank info.docfunc.hypoj_spearman info.docfunc.hypoj_t
-#: info.docfunc.hypos_mc info.docfunc.hypos_permu info.docfunc.priori_scoring
-#: of
+#: ../../source/interface/api_ana.rst
 msgid "返回类型"
 msgstr ""
 
@@ -525,6 +489,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring info.docfunc.hypoi_t:11 of
+#, python-brace-format
 msgid ""
 ":math:`\\mathbb{N}`, number of permutations used for calculating "
 "numerical solution for :math:`p`-value; 0 or ``None`` for analytical "
@@ -658,9 +623,7 @@ msgstr ""
 msgid "Alexander Govern test on multi groups"
 msgstr ""
 
-#: ../../docstring info.docfunc.hypoi_ad info.docfunc.hypoi_mood
-#: info.docfunc.hypoi_thsd info.docfunc.hypoj_mgc info.docfunc.hypoj_rank
-#: info.docfunc.hypoj_t info.docfunc.hypos_mc info.docfunc.hypos_permu of
+#: ../../source/interface/api_ana.rst
 msgid "变量"
 msgstr ""
 
@@ -871,6 +834,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring info.docfunc.hypoj_kendall:25 of
+#, python-brace-format
 msgid ""
 "trigger to determine whether using weight when computing rank :math:`r`; "
 "acceptable mapping must be able to convert positive integer into weight "
@@ -985,6 +949,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring info.docfunc.hypos_mc:10 of
+#, python-brace-format
 msgid ""
 "dict composed of name and aggregation function mapping to calculate "
 "statistic; ``{'mean': lambda x: numpy.mean(x)}`` as default"
@@ -1020,6 +985,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring info.docfunc.hypos_permu:15 of
+#, python-brace-format
 msgid ""
 "dict composed of name and aggregation mapping to calculate statistic; "
 "``{'std_of_mean': lambda *x: np.std([np.mean(_) for _ in x])}`` as "
@@ -1126,7 +1092,7 @@ msgid "Version"
 msgstr ""
 
 #: ../../source/interface/api_ana.rst:187
-msgid "0.0.4"
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/interface/api_ana.rst
@@ -1136,4 +1102,7 @@ msgstr ""
 #: ../../source/interface/api_ana.rst:188
 msgid "Jun 30, 2023"
 msgstr ""
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

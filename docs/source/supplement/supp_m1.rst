@@ -120,6 +120,8 @@ _`Acronyms`
 
 * _`IoT`: Internet of Things
 
+* _`WHO`: World Health Organization
+
 ----
 
 :Authors: Chen Zhang

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/supplement/supp_a4.rst:2
 msgid "_`Mathematical statistics`"
@@ -37,25 +37,27 @@ msgid "_`Parameters`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:15
+#, python-brace-format
 msgid ""
 "Most of probabilities, discrete or continuous ones, can be uniquely "
 "described using several numbers. Those numbers are commonly expressed by "
 "Greek letter. These numbers are called parameters of distribution. For "
-"examples, uni-variate gaussian is expressed as :math:`\mathcal{N}(\\mu, \\sigma)`, "
-"beta distribution is expressed as :math:`\\mathrm{Beta}(\\alpha, "
-"\\beta)`."
+"examples, uni-variate gaussian is expressed as :math:`\\mathcal{N}(\\mu, "
+"\\sigma)`, beta distribution is expressed as "
+":math:`\\mathrm{Beta}(\\alpha, \\beta)`."
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:20
+#, python-brace-format
 msgid ""
 "Generally, those numbers are unknown variate. Customarily it uses hat "
 ":math:`\\hat{a}` as example, to describe a certain calculation rule to "
 "obtained approximated result for the parameter :math:`a` from some data "
 "points (samples). Or in terminology, *parameter estimation*. As example, "
 "we assume some data sampled from a certain uni-variate gaussian "
-":math:`\mathcal{N}(\\mu, \\sigma)`, the parameter :math:`\\mu` is actually unknown,"
-" however, we can estimate via :math:`\\hat{\\mu} = (\\sum_{i=1}^n "
-"x_i)/n`."
+":math:`\\mathcal{N}(\\mu, \\sigma)`, the parameter :math:`\\mu` is "
+"actually unknown, however, we can estimate via :math:`\\hat{\\mu} = "
+"(\\sum_{i=1}^n x_i)/n`."
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:27
@@ -89,6 +91,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:49
+#, python-brace-format
 msgid ""
 "Additionally, it is unnecessary for :math:`k = k(x)` to guarantee its sum"
 " or integral as 1. But for :math:`s \\cdot k`, :math:`\\sum_{i} s \\cdot "
@@ -101,17 +104,19 @@ msgid "_`Parametric and non-parametric`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:55
+#, python-brace-format
 msgid ""
 "In statistics, there is a system with strong assumption relying on "
 "probability distribution, called *parametric* methods in terminology. We "
-"*believe* the data sourced from a uni-variate gaussian :math:`\mathcal{N}(\\mu, "
-"\\sigma)`, therefore we use :math:`\\hat{\\mu} = \\mathbb{E}[X]` and "
-":math:`\\hat{\\sigma^2} = \\mathbb{E}[X^2] - (\\mathbb{E}[X])^2` to make "
-"estimation. It works well unless the priori belief is actually "
-"guaranteed."
+"*believe* the data sourced from a uni-variate gaussian "
+":math:`\\mathcal{N}(\\mu, \\sigma)`, therefore we use :math:`\\hat{\\mu} "
+"= \\mathbb{E}[X]` and :math:`\\hat{\\sigma^2} = \\mathbb{E}[X^2] - "
+"(\\mathbb{E}[X])^2` to make estimation. It works well unless the priori "
+"belief is actually guaranteed."
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:60
+#, python-brace-format
 msgid ""
 "*Non-parametric*, correspondingly, is the method to focus the rank of "
 "values, rather than the values themselves. Considering sets with two "
@@ -163,6 +168,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:94
+#, python-brace-format
 msgid ""
 "Apparently, the marginal probability :math:`f(X_{s_1}, X_{s_2}, \\dots, "
 "X_{s_m})` is in a :math:`m`-dimensional subspace. Particularly, if "
@@ -180,6 +186,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:107
+#, python-brace-format
 msgid ""
 "Degeneracy also occurs in probability distribution. One-point "
 "distribution can be degenerated from an uni-variate Gaussian "
@@ -247,37 +254,37 @@ msgid ""
 "one-way ANOVA:"
 msgstr ""
 
-#: ../../source/supplement/supp_a4.rst:149
-#: ../../source/supplement/supp_a4.rst:181
-#: ../../source/supplement/supp_a4.rst:233
-#: ../../source/supplement/supp_a4.rst:263
-#: ../../source/supplement/supp_a4.rst:290
-#: ../../source/supplement/supp_a4.rst:326
-#: ../../source/supplement/supp_a4.rst:360
-#: ../../source/supplement/supp_a4.rst:386
-#: ../../source/supplement/supp_a4.rst:413
-#: ../../source/supplement/supp_a4.rst:444
-#: ../../source/supplement/supp_a4.rst:476
-#: ../../source/supplement/supp_a4.rst:506
-#: ../../source/supplement/supp_a4.rst:536
-#: ../../source/supplement/supp_a4.rst:565
-#: ../../source/supplement/supp_a4.rst:594
-#: ../../source/supplement/supp_a4.rst:631
-#: ../../source/supplement/supp_a4.rst:662
-#: ../../source/supplement/supp_a4.rst:688
-#: ../../source/supplement/supp_a4.rst:714
-#: ../../source/supplement/supp_a4.rst:740
-#: ../../source/supplement/supp_a4.rst:793
-#: ../../source/supplement/supp_a4.rst:854
-#: ../../source/supplement/supp_a4.rst:880
-#: ../../source/supplement/supp_a4.rst:908
-#: ../../source/supplement/supp_a4.rst:944
-#: ../../source/supplement/supp_a4.rst:970
-#: ../../source/supplement/supp_a4.rst:998
-#: ../../source/supplement/supp_a4.rst:1021
-#: ../../source/supplement/supp_a4.rst:1052
-#: ../../source/supplement/supp_a4.rst:1077
-#: ../../source/supplement/supp_a4.rst:1102
+#: ../../source/supplement/supp_a4.rst:148
+#: ../../source/supplement/supp_a4.rst:180
+#: ../../source/supplement/supp_a4.rst:232
+#: ../../source/supplement/supp_a4.rst:262
+#: ../../source/supplement/supp_a4.rst:289
+#: ../../source/supplement/supp_a4.rst:324
+#: ../../source/supplement/supp_a4.rst:359
+#: ../../source/supplement/supp_a4.rst:385
+#: ../../source/supplement/supp_a4.rst:412
+#: ../../source/supplement/supp_a4.rst:443
+#: ../../source/supplement/supp_a4.rst:475
+#: ../../source/supplement/supp_a4.rst:505
+#: ../../source/supplement/supp_a4.rst:535
+#: ../../source/supplement/supp_a4.rst:564
+#: ../../source/supplement/supp_a4.rst:593
+#: ../../source/supplement/supp_a4.rst:630
+#: ../../source/supplement/supp_a4.rst:661
+#: ../../source/supplement/supp_a4.rst:687
+#: ../../source/supplement/supp_a4.rst:713
+#: ../../source/supplement/supp_a4.rst:739
+#: ../../source/supplement/supp_a4.rst:792
+#: ../../source/supplement/supp_a4.rst:853
+#: ../../source/supplement/supp_a4.rst:879
+#: ../../source/supplement/supp_a4.rst:907
+#: ../../source/supplement/supp_a4.rst:943
+#: ../../source/supplement/supp_a4.rst:969
+#: ../../source/supplement/supp_a4.rst:997
+#: ../../source/supplement/supp_a4.rst:1020
+#: ../../source/supplement/supp_a4.rst:1051
+#: ../../source/supplement/supp_a4.rst:1076
+#: ../../source/supplement/supp_a4.rst:1101
 msgid ":math:`H_0`:"
 msgstr ""
 
@@ -287,37 +294,37 @@ msgstr ""
 msgid "Samples of all groups are drawn from the populations with the same mean"
 msgstr ""
 
-#: ../../source/supplement/supp_a4.rst:152
-#: ../../source/supplement/supp_a4.rst:184
-#: ../../source/supplement/supp_a4.rst:236
-#: ../../source/supplement/supp_a4.rst:266
-#: ../../source/supplement/supp_a4.rst:293
-#: ../../source/supplement/supp_a4.rst:329
-#: ../../source/supplement/supp_a4.rst:363
-#: ../../source/supplement/supp_a4.rst:389
-#: ../../source/supplement/supp_a4.rst:416
-#: ../../source/supplement/supp_a4.rst:447
-#: ../../source/supplement/supp_a4.rst:479
-#: ../../source/supplement/supp_a4.rst:509
-#: ../../source/supplement/supp_a4.rst:539
-#: ../../source/supplement/supp_a4.rst:568
-#: ../../source/supplement/supp_a4.rst:597
-#: ../../source/supplement/supp_a4.rst:634
-#: ../../source/supplement/supp_a4.rst:665
-#: ../../source/supplement/supp_a4.rst:691
-#: ../../source/supplement/supp_a4.rst:717
-#: ../../source/supplement/supp_a4.rst:743
-#: ../../source/supplement/supp_a4.rst:796
-#: ../../source/supplement/supp_a4.rst:857
-#: ../../source/supplement/supp_a4.rst:883
-#: ../../source/supplement/supp_a4.rst:911
-#: ../../source/supplement/supp_a4.rst:947
-#: ../../source/supplement/supp_a4.rst:973
-#: ../../source/supplement/supp_a4.rst:1001
-#: ../../source/supplement/supp_a4.rst:1024
-#: ../../source/supplement/supp_a4.rst:1055
-#: ../../source/supplement/supp_a4.rst:1080
-#: ../../source/supplement/supp_a4.rst:1105
+#: ../../source/supplement/supp_a4.rst:151
+#: ../../source/supplement/supp_a4.rst:183
+#: ../../source/supplement/supp_a4.rst:235
+#: ../../source/supplement/supp_a4.rst:265
+#: ../../source/supplement/supp_a4.rst:292
+#: ../../source/supplement/supp_a4.rst:328
+#: ../../source/supplement/supp_a4.rst:362
+#: ../../source/supplement/supp_a4.rst:388
+#: ../../source/supplement/supp_a4.rst:415
+#: ../../source/supplement/supp_a4.rst:446
+#: ../../source/supplement/supp_a4.rst:478
+#: ../../source/supplement/supp_a4.rst:508
+#: ../../source/supplement/supp_a4.rst:538
+#: ../../source/supplement/supp_a4.rst:567
+#: ../../source/supplement/supp_a4.rst:596
+#: ../../source/supplement/supp_a4.rst:633
+#: ../../source/supplement/supp_a4.rst:664
+#: ../../source/supplement/supp_a4.rst:690
+#: ../../source/supplement/supp_a4.rst:716
+#: ../../source/supplement/supp_a4.rst:742
+#: ../../source/supplement/supp_a4.rst:795
+#: ../../source/supplement/supp_a4.rst:856
+#: ../../source/supplement/supp_a4.rst:882
+#: ../../source/supplement/supp_a4.rst:910
+#: ../../source/supplement/supp_a4.rst:946
+#: ../../source/supplement/supp_a4.rst:972
+#: ../../source/supplement/supp_a4.rst:1000
+#: ../../source/supplement/supp_a4.rst:1023
+#: ../../source/supplement/supp_a4.rst:1054
+#: ../../source/supplement/supp_a4.rst:1079
+#: ../../source/supplement/supp_a4.rst:1104
 msgid ":math:`H_1`:"
 msgstr ""
 
@@ -338,17 +345,19 @@ msgid "Statistic:"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:156
-msgid "s = \\frac{{MS}_{B}}{{MS}_{W}} \\sim F"
+msgid "s = \\frac{{MS}_{B}}{{MS}_{W}} \\sim \\mathcal{F}"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:161
+#, python-brace-format
 msgid ""
 "Where :math:`MS_{B}` and :math:`MS_{W}` are the mean squares between and "
 "within groups respectively. This statistic :math:`s` follows a certain "
-":math:`F` distribution."
+":math:`\\mathcal{F}` distribution."
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:164
+#, python-brace-format
 msgid ""
 "More specifically, :math:`MS_{B} = S_{B}/f_{B}`, where :math:`S_{B}` is "
 "the sum of squared difference, and the :math:`f_{B}` is the degrees of "
@@ -414,6 +423,7 @@ msgid "s = \\frac{\\mu_1 - \\mu_2}{{s}_{\\Delta}}"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:193
+#, python-brace-format
 msgid ""
 ":math:`s_{\\Delta}` differs when data possess in different variance level"
 " in two groups. Assume :math:`n_1` and :math:`n_2` are number of samples,"
@@ -438,6 +448,7 @@ msgid "{s}_{\\Delta} = \\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:210
+#, python-brace-format
 msgid ""
 "Specifically, if :math:`n_1 = n_2 = n`, those :math:`s_{\\Delta}` will "
 "simultaneously converge into the form of :math:`\\sqrt{s_1^2 + "
@@ -481,6 +492,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:245
+#, python-brace-format
 msgid ""
 "Where :math:`a_i` is :math:`i`-th element in coefficient vector "
 ":math:`\\boldsymbol{a}`, as defined in :ref:`[Davis1977] <[Davis1977]>`."
@@ -539,6 +551,7 @@ msgid ":math:`F(x) \\neq F^\\prime(x)`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:297
+#, python-brace-format
 msgid "s = \\mathrm{sup}_x \\mid F(x) - F^\\prime(x) \\mid"
 msgstr ""
 
@@ -547,6 +560,7 @@ msgid "Where:"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:304
+#, python-brace-format
 msgid "F(x) = F_n(x) = \\frac{1}{n} \\sum_{i=1}^{n} {I}_{(-\\inf, x]}(X)"
 msgstr ""
 
@@ -571,6 +585,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:325
+#, python-brace-format
 msgid ""
 "For empirical distribution and cumulative distribution function "
 ":math:`F_{n}(x)` and :math:`F^\\prime(x)`, :math:`F_{n}(x) = "
@@ -578,14 +593,17 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:329
+#, python-brace-format
 msgid ":math:`F_{n}(x) \\neq F^\\prime(x)`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:333
+#, python-brace-format
 msgid "s = \\frac{1}{12n} + \\sum_{i=1}^{n} [\\frac{2i-1}{2n} - F^\\prime(x_i)]^2"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:338
+#, python-brace-format
 msgid ""
 "Specially, if the :math:`F^\\prime(x)` sources from another empirical "
 "distribution :math:`F_{m}(y)`, it will be two-sample test with the "
@@ -599,6 +617,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:346
+#, python-brace-format
 msgid ""
 "Where :math:`r_{v, a}` are rank of :math:`v` in series :math:`a = \\{x_1,"
 " x_2, \\dots, x_n, y_1, y_2, \\dots, y_m\\}`"
@@ -616,6 +635,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:367
+#, python-brace-format
 msgid "s = \\sum_{j=1}^{J} Z_j^2"
 msgstr ""
 
@@ -642,6 +662,7 @@ msgid "{s}_{i, j} = \\frac{\\mu_{i} -\\mu_{j}}{SE} \\sim Q"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:398
+#, python-brace-format
 msgid ""
 "Where :math:`\\mu_{i}` and :math:`\\mu_{j}` are means of group :math:`i` "
 "and :math:`j`; :math:`SE` is the standard error of the sum of means. "
@@ -680,6 +701,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:426
+#, python-brace-format
 msgid ""
 "Where :math:`N` is the number of all observations; :math:`n_i` is the "
 "number of observation in :math:`i`-th group; :math:`g` is the number of "
@@ -708,6 +730,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:456
+#, python-brace-format
 msgid ""
 "Assume the grand median is :math:`\\bar{m}`. :math:`A_{i,0}` is the "
 "counts of observations less than or equal as :math:`\\bar{m}` in "
@@ -758,6 +781,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:489
+#, python-brace-format
 msgid ""
 "Where :math:`n_i` is the number of observations in :math:`i`-th group "
 "among :math:`g` groups; :math:`S_i^2` is variance of group :math:`i`; "
@@ -786,6 +810,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:519
+#, python-brace-format
 msgid ""
 "Where :math:`z_{i,j}` is the absolute distance to the mean (trimmed or "
 "not), or median of all observations of :math:`i`-th group, from "
@@ -813,6 +838,7 @@ msgid "s = \\frac{\\sum_{i=1}^g n_i (\\bar{z}_i - \\bar{z})^2}{s^2}"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:548
+#, python-brace-format
 msgid ""
 "Where :math:`\\bar{z}_i` is the mean of :math:`z` scores of :math:`i`-th "
 "group among :math:`g` groups. :math:`\\bar{z}` and :math:`s^2` are grand "
@@ -849,6 +875,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:577
+#, python-brace-format
 msgid ""
 "Where :math:`n_i` is the number of all observations of the :math:`i`-th "
 "group, among :math:`g` groups. :math:`N` is the total number of "
@@ -882,10 +909,12 @@ msgid "Samples of two groups are not drawn from the same distribution"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:601
+#, python-brace-format
 msgid "s = \\sum_{j=1}^{n_1} {r}_{1, j}"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:606
+#, python-brace-format
 msgid ""
 "Where :math:`n_1` is the number of observations in first group, "
 ":math:`r_{1, j}` refers the rank of all 1st group observations in pooled "
@@ -897,10 +926,12 @@ msgid "Additionally, for single rank version, the statistic will be like:"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:611
+#, python-brace-format
 msgid "s = \\sum_{i=1}^{n} \\mathrm{sgn}(x_i - y_i) r_i"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:616
+#, python-brace-format
 msgid ""
 "Where :math:`r_i` is the rank of :math:`i`-th item in the set of "
 ":math:`\\{|x_1 - y_1|, |x_2 - y_2|, \\dots, |x_n - y_n|\\}`."
@@ -932,9 +963,10 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:638
+#, python-brace-format
 msgid ""
-"s  = \\sqrt{n_1+n_2} \\cdot (g_1-g_2) \\sim \mathcal{N}(\\boldsymbol{0}, "
-"\\boldsymbol{\\Omega})"
+"s  = \\sqrt{n_1+n_2} \\cdot (g_1-g_2) \\sim \\mathcal{N}(\\boldsymbol{0},"
+" \\boldsymbol{\\Omega})"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:643
@@ -946,7 +978,7 @@ msgid ""
 "e^{itX_{ij}}`). The item :math:`g(X_{ij}) = e^{itX_{ij}}` is expressed "
 "via Euler number as 4-dimensional vector. This statistic will "
 "asymptotically approximates to a multivariate gaussian "
-":math:`\mathcal{N}(\\boldsymbol{0}, \\boldsymbol{\\Omega})`. For "
+":math:`\\mathcal{N}(\\boldsymbol{0}, \\boldsymbol{\\Omega})`. For "
 ":math:`\\boldsymbol{\\Omega}`, it can be estimated as "
 ":math:`\\hat{\\boldsymbol{\\Omega}}=\\sum_{i=1}^{2}[(n_{i}-1)(\\sum_{i=1}^{2}n_i)/n_{i}^2]\\mathrm{cov}\\{g(X_{ij})\\}`."
 msgstr ""
@@ -963,6 +995,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:669
+#, python-brace-format
 msgid "s  = \\sum_{i=1}^{n} \\sum_{j=1}^{m} S(x_i, y_j)"
 msgstr ""
 
@@ -995,6 +1028,7 @@ msgid ":math:`P(X > Y) \\neq P(X < Y)`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:695
+#, python-brace-format
 msgid "s  = \\frac{U}{n_1 \\cdot n_2}"
 msgstr ""
 
@@ -1026,10 +1060,12 @@ msgid ":math:`\\sigma_x \\neq \\sigma_y`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:721
+#, python-brace-format
 msgid "s  = \\sum_{i=1}^{n_x} {r}_{x_i}"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:726
+#, python-brace-format
 msgid ""
 "Where :math:`n_x` is the number of observations for :math:`x`, "
 ":math:`r_{x_i}` is the rank assigned to :math:`x_i` in pooled set of "
@@ -1058,6 +1094,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:747
+#, python-brace-format
 msgid ""
 "s  = \\delta + \\log{[\\frac{y}{\\alpha} + \\sqrt{(\\frac{y}{\\alpha})^2 "
 "+ 1}]}"
@@ -1086,6 +1123,7 @@ msgid "And for :math:`W_2` and :math:`b_2` (skewness know as :math:`z^3`):"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:771
+#, python-brace-format
 msgid ""
 "W_2 &= -1 + \\sqrt{2(\\beta_2 - 1)} \\\\\n"
 "\\mathrm{for}\\ \\beta_2 &= "
@@ -1126,6 +1164,7 @@ msgid "Where for :math:`T_1`, :math:`T_2` and :math:`A`:"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:807
+#, python-brace-format
 msgid "T_1 = 1 - \\frac{2}{9A}"
 msgstr ""
 
@@ -1192,6 +1231,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:861
+#, python-brace-format
 msgid "s  = \\frac{n}{6} [S^2 + \\frac{1}{4} (K-3)^2]"
 msgstr ""
 
@@ -1221,6 +1261,7 @@ msgid "observations not match the given categorical frequencies"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:887
+#, python-brace-format
 msgid ""
 "s  = \\frac{2}{\\lambda (\\lambda + 1)} \\sum_{i=1}^k o_i "
 "[(\\frac{o_i}{e_i})^\\lambda - 1]"
@@ -1261,6 +1302,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:920
+#, python-brace-format
 msgid ""
 "Assume there are :math:`n` options of variable 1 coupled with :math:`m` "
 "options of variable 2. :math:`o_{i,j}` is the observed frequency of "
@@ -1308,6 +1350,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:956
+#, python-brace-format
 msgid ""
 "Notes that :math:`\\rho_X` and :math:`\\rho_Y` are standard deviation for"
 " two factors :math:`X` and :math:`Y`; "
@@ -1354,6 +1397,7 @@ msgid "_`Kendall's tau correlation coefficient`"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:990
+#, python-brace-format
 msgid ""
 "The statistic :math:`\\tau` measure the fraction of difference from "
 "concordant to discordant pairs, over all number of pairs. For any "
@@ -1364,6 +1408,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1005
+#, python-brace-format
 msgid ""
 "s  = \\frac{1}{n(n-1)} \\sum_{i < j} \\mathrm{sgn} (x_i - x_j) "
 "\\mathrm{sgn} (y_i - y_j)"
@@ -1389,6 +1434,7 @@ msgid "repeated samples not have the same distribution"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1028
+#, python-brace-format
 msgid ""
 "s  = \\frac{12n}{g(g+1)} \\sum_{j=1}^{g} (\\bar{r}_{\\cdot j} - "
 "\\frac{g+1}{2})^2 \\sim \\chi_{g-1}^2"
@@ -1419,12 +1465,14 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1052
+#, python-brace-format
 msgid ""
 "two high-dimensional data :math:`\\boldsymbol{X}` and "
 ":math:`\\boldsymbol{Y}` are independent"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1055
+#, python-brace-format
 msgid ""
 "two high-dimensional data :math:`\\boldsymbol{X}` and "
 ":math:`\\boldsymbol{Y}` are not independent"
@@ -1460,10 +1508,12 @@ msgid "test data are not randomly sampled from specified distribution"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1084
+#, python-brace-format
 msgid "s  = f({s}_{agg}(X), {s}_{agg}({X}_{d}^\\prime))"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1089
+#, python-brace-format
 msgid ""
 "Where the aggregation function :math:`s_{agg}` is predefined as statistic"
 " by user. :math:`X^\\prime` is the randomly sampling data generated from "
@@ -1493,10 +1543,12 @@ msgid ""
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1109
+#, python-brace-format
 msgid "s  = f({s}_{agg}(X_1), {s}_{agg}(X_2), \\dots, {s}_{agg}(X_n))"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1114
+#, python-brace-format
 msgid "Where the aggregation function :math:`s_{agg}` is predefined by user."
 msgstr ""
 
@@ -1513,7 +1565,7 @@ msgid "Version"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst:1119
-msgid "0.0.4"
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/supplement/supp_a4.rst
@@ -1523,4 +1575,18 @@ msgstr ""
 #: ../../source/supplement/supp_a4.rst:1120
 msgid "May 26, 2023"
 msgstr ""
+
+#~ msgid "s = \\frac{{MS}_{B}}{{MS}_{W}} \\sim F"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Where :math:`MS_{B}` and :math:`MS_{W}` are"
+#~ " the mean squares between and within"
+#~ " groups respectively. This statistic "
+#~ ":math:`s` follows a certain :math:`F` "
+#~ "distribution."
+#~ msgstr ""
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

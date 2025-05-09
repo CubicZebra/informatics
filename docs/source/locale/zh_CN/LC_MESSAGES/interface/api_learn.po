@@ -1,0 +1,1031 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.6rc0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/interface/api_learn.rst:2
+msgid "_`Modules for learning`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:7
+msgid "_`Module Bayes`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:10
+#: ../../source/interface/api_learn.rst:57
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:12
+msgid ""
+"For infrastructure used for Bayesian statistical inference and further "
+"constructional components of online or self adaption featured algorithms,"
+" utilize the functions in namespace ``info.toolbox.libs.bayes._frame``, "
+"or alternatively import ``bayes`` from the main entry ``info.me``."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`Bayes <info.docfunc.Bayes>`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1 info.docfunc.Bayes:1
+#: of
+msgid "Essential Bayes framework."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`GaussianWishart <info.docfunc.GaussianWishart>`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.GaussianWishart:1 of
+msgid "the initializer of gauss-wishart distribution."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`bernoulli <info.docfunc.bernoulli>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.bernoulli:1 of
+msgid "Bayesian framework of bernoulli kernel."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`categorical <info.docfunc.categorical>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.categorical:1 of
+msgid "Bayesian framework of categorical kernel."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`binomial <info.docfunc.binomial>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.binomial:1 of
+msgid "Bayesian framework of binomial kernel."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`multinomial <info.docfunc.multinomial>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.multinomial:1 of
+msgid "Bayesian framework of multinomial kernel."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`poisson <info.docfunc.poisson>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.poisson:1 of
+msgid "Bayesian framework of poisson kernel."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:27:<autosummary>:1
+msgid ":py:obj:`gaussian <info.docfunc.gaussian>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_learn.rst:27:<autosummary>:1
+#: info.docfunc.gaussian:1 of
+msgid "Bayesian framework of gauss kernel."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:29
+#: ../../source/interface/api_learn.rst:71
+msgid "Docstrings"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst
+msgid "参数"
+msgstr ""
+
+#: info.docfunc.Bayes:5 of
+msgid "the name of the kernel likelihood function"
+msgstr ""
+
+#: info.docfunc.Bayes:6 of
+msgid "the kernel likelihood distribution"
+msgstr ""
+
+#: info.docfunc.Bayes:7 of
+msgid "the Bayesian prior distribution"
+msgstr ""
+
+#: info.docfunc.Bayes:8 of
+msgid "likelihood checker to validate the investigated data or distribution"
+msgstr ""
+
+#: info.docfunc.Bayes:10 of
+msgid ""
+"method to update the Bayesian conjugate posterior distribution; its "
+"arguments should be the corresponding Bayesian conjugate prior, and "
+"followed by the likelihood data set in presentation of numpy array or the"
+" form of certain distribution"
+msgstr ""
+
+#: info.docfunc.Bayes:14 of
+msgid ""
+"method to update the Bayesian posterior predictive distribution; its "
+"arguments should be the updated Bayesian conjugate prior, and followed by"
+" the likelihood data set in presentation of numpy array or the form of "
+"certain distribution if necessary"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst
+msgid "返回"
+msgstr ""
+
+#: info.docfunc.Bayes:18 of
+msgid "a kind of Bayesian family"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst
+msgid "返回类型"
+msgstr ""
+
+#: info.docfunc.Bayes:25 of
+msgid ""
+"Name of Bayesian framework. It suggests to use the family name of "
+"likelihood function during declaration."
+msgstr ""
+
+#: info.docfunc.Bayes:29 of
+msgid "Distribution of likelihood function used in initialization."
+msgstr ""
+
+#: info.docfunc.Bayes:33 of
+msgid ""
+"The Bayesian prior distribution. Its associated parameters be updated by "
+"invoking the method of ``update_posterior`` with input of the likelihood "
+"data set or distribution."
+msgstr ""
+
+#: info.docfunc.Bayes:38 of
+msgid ""
+"The Bayesian predictive distribution under the pre-condition of "
+"``conjugate`` as Bayesian posterior."
+msgstr ""
+
+#: info.docfunc.Bayes:42 of
+msgid ""
+"The callable function to compute conjugate prior and likelihood data set "
+"into conjugate posterior."
+msgstr ""
+
+#: info.docfunc.Bayes:46 of
+msgid ""
+"The callable function to compute conjugate posterior and likelihood data "
+"set into posterior predictive."
+msgstr ""
+
+#: info.docfunc.Bayes:52 of
+msgid ""
+"Update the ``conjugate`` and ``predictive`` distributions, via likelihood"
+" distribution or data set."
+msgstr ""
+
+#: info.docfunc.Bayes:56 of
+msgid ""
+"Test for the ``conjugate`` posterior under the condition of likelihood "
+"distribution or data set, without updating the property ``conjugate`` and"
+" ``predictive`` indeed."
+msgstr ""
+
+#: info.docfunc.Bayes:61 of
+#, python-format
+msgid ""
+"A Bayes instance should be a set of correlated distributions and their "
+"corresponding rules of calculations that basically follows the principles"
+" of :ref:`Bayes theory <The basic theories>`. In real implementations, "
+"without the loss of the scientific rigorousness, our informatics still "
+"consider the degeneration relationship of distributions, induced by "
+"dimensional collapse. For example, the likelihood functions used "
+"bernoulli, binomial, and categorical are all fulfilled from the "
+"multinomial framework. Their relationship can be ascertained in "
+":numref:`Table %s <discrete distribution relations>`, and the concrete "
+"reduction tutorial can be referred in the chapter of :ref:`multinomial "
+"distribution <Multinomial distribution>`. Similarly, the Gauss family is "
+"basically achieved from the multivariate Gauss distribution, on the basis"
+" of :ref:`Gauss Bayesian framework <summary of gauss family>` as "
+"established in the chapter of :ref:`continuous Gauss <Continuous "
+"distribution family>`."
+msgstr ""
+
+#: info.docfunc.Bayes:72 of
+msgid ""
+"Customarily, the parameters ``update_conjugate`` and "
+"``update_predictive`` takes conjugate distribution and likelihood "
+"function or data set as input arguments, then return the corresponding "
+"Bayesian posterior and predictive distributions, respectively."
+msgstr ""
+
+#: info.docfunc.Bayes:78 of
+msgid ":py:func:`~info.docfunc.bernoulli`"
+msgstr ""
+
+#: ../../docstring info.docfunc.Bayes:80 info.docfunc.bernoulli:41 of
+msgid ":py:func:`~info.docfunc.categorical`"
+msgstr ""
+
+#: info.docfunc.Bayes:82 of
+msgid ":py:func:`~info.docfunc.binomial`"
+msgstr ""
+
+#: info.docfunc.Bayes:84 of
+msgid ":py:func:`~info.docfunc.multinomial`"
+msgstr ""
+
+#: info.docfunc.Bayes:86 of
+msgid ":py:func:`~info.docfunc.poisson`"
+msgstr ""
+
+#: info.docfunc.Bayes:88 of
+msgid ":py:func:`~info.docfunc.gaussian`"
+msgstr ""
+
+#: ../../docstring info.docfunc.Bayes:94 info.docfunc.GaussianWishart:28
+#: info.docfunc.Hotelling:77 info.docfunc.NaiveBayes:46
+#: info.docfunc.Neighbors:134 info.docfunc.VonMisesFisher:122
+#: info.docfunc.bernoulli:55 info.docfunc.binomial:52
+#: info.docfunc.categorical:42 info.docfunc.gaussian:88
+#: info.docfunc.multinomial:40 info.docfunc.poisson:53 of
+msgid "-- |signature|"
+msgstr ""
+
+#: info.docfunc.GaussianWishart:5 of
+msgid "mean vector of gauss distribution."
+msgstr ""
+
+#: info.docfunc.GaussianWishart:6 of
+msgid "coefficient for the distribution of precision matrix."
+msgstr ""
+
+#: info.docfunc.GaussianWishart:7 of
+msgid ""
+"degree of freedom, should be no less than 1 minus the number of "
+"dimensions of ``w``."
+msgstr ""
+
+#: info.docfunc.GaussianWishart:8 of
+msgid "a positive definite matrix."
+msgstr ""
+
+#: info.docfunc.GaussianWishart:9 of
+msgid ""
+"a gauss-wishart distribution if all arguments are configured valid, "
+"otherwise 0."
+msgstr ""
+
+#: info.docfunc.GaussianWishart:14 of
+msgid "gauss wishart instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:5 of
+msgid ""
+"a certain bernoulli distribution, a certain binomial distribution with "
+"only one trial, or a certain multinomial distribution with one trial and "
+"two categories."
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:8 of
+msgid ""
+"a certain beta distribution or dirichlet distribution with a two-length "
+"alpha; ``None`` as default to use uniform prior."
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:10 of
+msgid "the bernoulli Bayesian instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:11 info.docfunc.binomial:10
+#: info.docfunc.categorical:8 info.docfunc.gaussian:19
+#: info.docfunc.multinomial:8 info.docfunc.poisson:9 of
+msgid ":py:func:`~info.docfunc.Bayes`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:15 of
+msgid "Bayesian of bernoulli kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:32 of
+msgid ""
+"On the basis of the degeneration with :math:`M = 1` and :math:`K = 2` "
+"from the :ref:`Bayesian multinomial distribution <Multinomial "
+"distribution>`, although the kernel and prior support to be initialized "
+"via multiple types of valid distributions, the kernel, conjugate and "
+"predictive distributions are all fulfilled in multinomial context."
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:39 of
+msgid ":py:func:`~scipy.stats.bernoulli`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:43 info.docfunc.binomial:40
+#: info.docfunc.categorical:32 info.docfunc.multinomial:30 of
+msgid ":py:func:`~scipy.stats.multinomial`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:45 info.docfunc.binomial:42 of
+msgid ":py:func:`~scipy.stats.beta`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:47 info.docfunc.binomial:44
+#: info.docfunc.categorical:34 info.docfunc.multinomial:32 of
+msgid ":py:func:`~scipy.stats.dirichlet`"
+msgstr ""
+
+#: ../../docstring info.docfunc.bernoulli:49 info.docfunc.binomial:46
+#: info.docfunc.categorical:36 info.docfunc.multinomial:34 of
+msgid ":py:func:`~scipy.stats.dirichlet_multinomial`"
+msgstr ""
+
+#: ../../docstring info.docfunc.categorical:5 of
+msgid "a certain multinomial distribution instance with one trial."
+msgstr ""
+
+#: ../../docstring info.docfunc.categorical:6 info.docfunc.multinomial:6 of
+msgid ""
+"a certain dirichlet distribution; ``None`` as default to use uniform "
+"dirichlet prior."
+msgstr ""
+
+#: ../../docstring info.docfunc.categorical:7 of
+msgid "the categorical Bayesian instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.categorical:12 of
+msgid "Bayesian of categorical kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.categorical:25 of
+msgid ""
+"Implementation is on the basis of the first degeneration situation with "
+":math:`M = 1` from the :ref:`Bayesian multinomial distribution "
+"<Multinomial distribution>`. There is temporarily no explicit application"
+" programming interface of categorical distribution in scipy, it employs "
+"the collapsed multinomial one with single trial."
+msgstr ""
+
+#: ../../docstring info.docfunc.binomial:5 of
+msgid ""
+"a certain binomial distribution or a certain two-categorical multinomial "
+"distributions with multiple trials."
+msgstr ""
+
+#: ../../docstring info.docfunc.binomial:7 of
+msgid ""
+"a certain beta distribution or dirichlet distribution with a two-length "
+"alpha; ``None`` as default to use uniform dirichlet prior."
+msgstr ""
+
+#: ../../docstring info.docfunc.binomial:9 of
+msgid "the binomial Bayesian instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.binomial:14 of
+msgid "Bayesian of binomial kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.binomial:31 of
+msgid ""
+"On the basis of the second degeneration situation with :math:`K = 2` from"
+" the :ref:`Bayesian multinomial distribution <Multinomial distribution>`,"
+" although the kernel and prior support to be initialized via multiple "
+"types of valid distributions, the kernel, conjugate and predictive "
+"distributions are all fulfilled in multinomial context."
+msgstr ""
+
+#: ../../docstring info.docfunc.binomial:38 of
+msgid ":py:func:`~scipy.stats.binom`"
+msgstr ""
+
+#: ../../docstring info.docfunc.multinomial:5 of
+msgid "a certain multinomial distribution instance multiple trials."
+msgstr ""
+
+#: ../../docstring info.docfunc.multinomial:7 of
+msgid "the multinomial Bayesian instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.multinomial:12 of
+msgid "Bayesian of multinomial kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.multinomial:25 of
+msgid ""
+"Implementation is on the basis of the general situation with :math:`M > "
+"1` and :math:`K > 2` of the :ref:`Bayesian multinomial distribution "
+"<Multinomial distribution>`."
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:5 of
+msgid "a certain poisson distribution instance."
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:6 of
+#, python-brace-format
+msgid ""
+"a certain gamma distribution; ``None`` as default to use "
+":math:`\\mathrm{Gam}(x|1, 1)` prior."
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:8 of
+msgid "the poisson Bayesian instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:13 of
+msgid "Bayesian of poisson kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:26 of
+msgid ""
+"Implementation is on the basis of the deduction in the :ref:`poisson "
+"distribution <Poisson distribution>`. In addition, consider the "
+"exponential and erlang distributions are too specific forms of gamma "
+"distribution, however all the prior should be here reinterpreted under "
+"the gamma context."
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:30 of
+msgid ""
+"For example, the initialization method in :numref:`Bayesian of poisson "
+"kernel` can also be equivalently achieved by:"
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:33 of
+msgid "Bayesian of poisson with other priors"
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:43 of
+msgid ":py:func:`~scipy.stats.poisson`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:78 info.docfunc.poisson:45 of
+msgid ":py:func:`~scipy.stats.gamma`"
+msgstr ""
+
+#: ../../docstring info.docfunc.poisson:47 of
+msgid ":py:func:`~scipy.stats.nbinom`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:5 of
+msgid "a certain gauss distribution instance."
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:6 of
+#, python-brace-format, python-format
+msgid ""
+"a certain prior distribution; in case of univariate gauss kernel, it "
+"supports initializing using univariate gauss, gamma, or one dimension "
+"confined multivariate gauss, wishart, or gauss-wishart; in case of "
+"multivariate gauss kernel, it supports initializing using multivariate "
+"gauss, wishart, or gauss-wishart; their detailed relationships and "
+"deduction can refer :numref:`Table %s <summary of gauss family>`; "
+"``None`` as default to automatically employ the gauss-wishart "
+":math:`\\mathcal{NW}(\\boldsymbol{x} | \\boldsymbol{0}_D, 1, D, "
+"\\boldsymbol{I}_D)`."
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:18 of
+msgid "the gauss Bayesian instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:23 of
+msgid "Bayesian of gauss kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:49 of
+msgid ""
+"Implementation is on the basis of the deduction in the :ref:`gauss "
+"distribution family <Continuous distribution family>`. According to the "
+"deduction, application programming interface of gauss here also support "
+"the Bayesian inference in context of univariate gauss:"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:53 of
+msgid "Bayesian of univariate gauss kernel"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:74 of
+msgid ":py:func:`~scipy.stats.norm`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:76 of
+msgid ":py:func:`~scipy.stats.multivariate_normal`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:80 of
+msgid ":py:func:`~scipy.stats.wishart`"
+msgstr ""
+
+#: ../../docstring info.docfunc.gaussian:82 of
+msgid ":py:func:`~info.docfunc.GaussianWishart`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:54
+msgid "_`Module anomaly`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:59
+msgid ""
+"Utilities used for training models for anomaly and change detection. "
+"Functions and classes here mainly in namespace "
+"``info.toolbox.libs.anomaly``. All those objects are also integrated into"
+" ``info.me`` as well."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid ":py:obj:`Hotelling <info.docfunc.Hotelling>`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+#: info.docfunc.Hotelling:1 of
+msgid "Hotelling T\\ :sup:`2` constructor for multivariate gaussian distribution."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid ":py:obj:`NaiveBayes <info.docfunc.NaiveBayes>`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid "NaiveBayes framework."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid ":py:obj:`Neighbors <info.docfunc.Neighbors>`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid "Neighbor algorithm frame for modeling based on empirical distribution."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid ":py:obj:`VonMisesFisher <info.docfunc.VonMisesFisher>`"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:69:<autosummary>:1
+msgid "Algorithm frame for spherical like data."
+msgstr ""
+
+#: info.docfunc.Hotelling:5 info.docfunc.NaiveBayes:5 info.docfunc.Neighbors:7
+#: info.docfunc.VonMisesFisher:6 of
+#, python-brace-format
+msgid ""
+":math:`\\boldsymbol{R}^{n \\times m}` matrix with :math:`n` observations "
+"of :math:`m` dimensions"
+msgstr ""
+
+#: info.docfunc.Hotelling:7 info.docfunc.VonMisesFisher:8 of
+msgid ""
+"significance level used for anomaly threshold determination; 0.05 as "
+"default"
+msgstr ""
+
+#: info.docfunc.Hotelling:8 of
+msgid "Hotelling T\\ :sup:`2` distribution"
+msgstr ""
+
+#: info.docfunc.Hotelling:15 of
+msgid "Hotelling configuration when initializing"
+msgstr ""
+
+#: info.docfunc.Hotelling:19 info.docfunc.Neighbors:41
+#: info.docfunc.VonMisesFisher:20 of
+#, python-brace-format
+msgid ""
+":math:`\\boldsymbol{R}^{n \\times m}` data container; the number of "
+"observations :math:`n` will increase when use data updating"
+msgstr ""
+
+#: info.docfunc.Hotelling:24 of
+#, python-brace-format
+msgid ":math:`\\boldsymbol{R}^m` mean vector of all observations"
+msgstr ""
+
+#: info.docfunc.Hotelling:28 of
+#, python-brace-format
+msgid ""
+":math:`\\boldsymbol{R}^{m \\times m}` covariance matrix of all "
+"observations"
+msgstr ""
+
+#: info.docfunc.Hotelling:32 of
+msgid ""
+"threshold calculated for determining anomalous observations, under "
+"assigned significance level"
+msgstr ""
+
+#: info.docfunc.Hotelling:38 of
+msgid "append new observations via ``data``, then synchronize related properties"
+msgstr ""
+
+#: info.docfunc.Hotelling:42 info.docfunc.VonMisesFisher:52 of
+msgid ""
+"calculate anomaly scores of new observations, via ``data`` keyword "
+"assignment; will return a numeric sequence"
+msgstr ""
+
+#: info.docfunc.Hotelling:47 info.docfunc.VonMisesFisher:57 of
+msgid ""
+"determine whether anomalous or not for new observations, via ``data`` "
+"keyword assignment; will return a boolean sequence"
+msgstr ""
+
+#: info.docfunc.Hotelling:52 of
+msgid "Hotelling T2 for anomaly determination"
+msgstr ""
+
+#: info.docfunc.Hotelling:68 of
+msgid ""
+"Hotelling T\\ :sup:`2` is a classic method to detect outliers, from "
+":ref:`I.I.D. <I.I.D.>` observations which in consistence of multivariate "
+"gaussian distribution (definition see :eq:`multivariate Gaussian`). It "
+"can be seen as the multivariate extension for :ref:`uni-variate t-test "
+"<Student's T test>`. The related :ref:`section <Hotelling T-squared>` "
+"collected the detailed mathematical deduction of this method."
+msgstr ""
+
+#: info.docfunc.NaiveBayes:1 of
+msgid ""
+"NaiveBayes framework. await for :ref:`completion <Bayesian and mixture "
+"Gaussian>`."
+msgstr ""
+
+#: info.docfunc.NaiveBayes:7 of
+msgid ""
+"1D boolean label of ``data``, ``False`` for normal instances while "
+"``True``  for anomalous ones"
+msgstr ""
+
+#: info.docfunc.NaiveBayes:9 of
+msgid ""
+"list composed dirichlet distributions of normal and anomalous "
+"respectively; ``None`` as default to initialize two dirichlet "
+"distributions with 1 for all :math:`\\alpha`"
+msgstr ""
+
+#: info.docfunc.NaiveBayes:11 of
+msgid ""
+"the ratio of test data in cross validation, to determine the threshold; "
+"0.2 as default to use 5-fold validation"
+msgstr ""
+
+#: info.docfunc.NaiveBayes:13 of
+msgid ""
+"whether cache the data points; ``True`` will save the ``data``, ``label``"
+" and the calculated anomalous statistic; ``False`` merely update those "
+"two models; the default value uses ``True``"
+msgstr ""
+
+#: info.docfunc.NaiveBayes:16 of
+msgid "naive Bayes model"
+msgstr ""
+
+#: info.docfunc.NaiveBayes:21 of
+msgid "Naive Bayes for anomaly determination"
+msgstr ""
+
+#: info.docfunc.NaiveBayes:40 of
+msgid "await for :ref:`completion <Bayesian and mixture Gaussian>`."
+msgstr ""
+
+#: info.docfunc.Neighbors:1 of
+msgid ""
+"Neighbor algorithm frame for modeling based on empirical distribution. "
+"For definition of empirical distribution, see :eq:`empirical "
+"distribution`, and :ref:`supplementary material <Empirical distribution "
+"and neighbors>` for the principles."
+msgstr ""
+
+#: info.docfunc.Neighbors:9 of
+msgid ""
+"non-negative integer array as labels in consistence of ``data``; if for "
+"anomaly detection, suggest labeling the normal data as 0 while other "
+"integers for anomalies with other patterns."
+msgstr ""
+
+#: info.docfunc.Neighbors:12 of
+msgid "order of norm to calculate distance; ``2`` as default for Euclidean"
+msgstr ""
+
+#: info.docfunc.Neighbors:13 of
+msgid ""
+"method to determine the optimal :math:`k_{i,j}`, and threshold "
+":math:`a_{i,j}` to distinguish the :math:`i`- and :math:`j`-class; the "
+"value should be capable to accept :math:`k` vs. :math:`a` map, axes of "
+":math:`k` and :math:`a` as three arguments, then return the optimal "
+"values of :math:`k_{\\mathrm{opt}}` and :math:`a_{\\mathrm{opt}}`; "
+"``None`` as default to call a built-in method, that determines these two "
+"optimal values via local minial of 1st order differentiation of "
+":math:`k`, and the global maximum of :math:`a`"
+msgstr ""
+
+#: info.docfunc.Neighbors:20 of
+msgid ""
+"use which method to initiate the transformation; valid options are "
+"``'KNN'``, and ``'LMNN'``; ``'KNN'`` is for computation in original "
+"Cartesian space, ``'LMNN'`` is in a computed Riemannian space (see "
+":ref:`related definitions <Empirical distribution and neighbors>`); "
+"``'KNN'`` as default"
+msgstr ""
+
+#: info.docfunc.Neighbors:24 of
+msgid "the maximum number of :math:`k` during initiative training; 10 as default"
+msgstr ""
+
+#: info.docfunc.Neighbors:25 of
+msgid ""
+"the coefficient used for updating (sub)gradient during initiative "
+"training, if spatial calculation and transformation is necessary; 0.05 as"
+" default"
+msgstr ""
+
+#: info.docfunc.Neighbors:27 of
+#, python-brace-format
+msgid ""
+"prior weights assigned for all classes; in consistence with "
+":math:`\\boldsymbol{\\alpha}` of certain dirichlet distribution; ``None``"
+" as default using all-equal weights"
+msgstr ""
+
+#: info.docfunc.Neighbors:30 of
+msgid "optimal data set based on an empirical distribution"
+msgstr ""
+
+#: info.docfunc.Neighbors:37 of
+msgid "Neighbors configuration when initializing"
+msgstr ""
+
+#: info.docfunc.Neighbors:46 of
+#, python-brace-format
+msgid ":math:`\\boldsymbol{R}^n` vector of integers in consistence with ``x``"
+msgstr ""
+
+#: info.docfunc.Neighbors:50 of
+#, python-brace-format
+msgid ""
+":math:`\\boldsymbol{C}^{m \\times m}` transformation; real domain for "
+"``'KNN'`` while complex domain for ``'LMNN'``"
+msgstr ""
+
+#: info.docfunc.Neighbors:55 of
+msgid ""
+"dict constructed as ``dict[tuple[i, j], tuple[k_ij, a_ij]]`` determined "
+"by ``kamap_optimizer``; ``i``, ``j`` are indicators for different classes"
+msgstr ""
+
+#: info.docfunc.Neighbors:62 of
+msgid ""
+"append new observations and corresponding labels via ``data`` and "
+"``labels``, then synchronize related properties"
+msgstr ""
+
+#: info.docfunc.Neighbors:67 of
+msgid ""
+"calculate anomaly scores of new observations, via ``data`` keyword "
+"assignment; will return a dict with construction as ``dict[tuple[i, j], "
+"ndarray]``; ``i`` and ``j`` are indicators for different classes"
+msgstr ""
+
+#: info.docfunc.Neighbors:72 of
+msgid ""
+"determine which maximum likely class, via ``data`` keyword assignment; "
+"will return a sequence of integers"
+msgstr ""
+
+#: info.docfunc.Neighbors:76 of
+msgid "Neighbors frame for multi classification"
+msgstr ""
+
+#: info.docfunc.Neighbors:94 of
+msgid "initialization differs from defined method:"
+msgstr ""
+
+#: info.docfunc.Neighbors:96 of
+msgid "**KNN**:"
+msgstr ""
+
+#: info.docfunc.Neighbors:98 of
+#, python-brace-format
+msgid ""
+":math:`k`-nearest neighbors uses the unit matrix :math:`\\boldsymbol{I}` "
+"as transformation, for calculation in original Cartesian space"
+msgstr ""
+
+#: info.docfunc.Neighbors:101 of
+msgid "**LMNN**:"
+msgstr ""
+
+#: info.docfunc.Neighbors:103 of
+#, python-brace-format
+msgid ""
+"Large margin nearest neighbors (LMNN) needs to initialize a Riemannian "
+"space. In each updating step, use the gradient of :eq:`Riemannian "
+"optimization` (:math:`\\boldsymbol{R} = \\boldsymbol{R} - \\eta "
+"(\\partial \\Psi (\\boldsymbol{R}) / \\partial \\boldsymbol{R})`)."
+msgstr ""
+
+#: info.docfunc.Neighbors:107 of
+msgid ""
+"In :eq:`Riemannian optimization`, the major form of item is "
+":math:`d^2_{\\boldsymbol{R}} (\\boldsymbol{a}, \\boldsymbol{b}) = "
+"(\\boldsymbol{a} - \\boldsymbol{b})^T \\boldsymbol{R} (\\boldsymbol{a} - "
+"\\boldsymbol{b})`. Because :math:`\\boldsymbol{m}^\\top \\boldsymbol{A} "
+"\\boldsymbol{n} = \\mathrm{Tr} (\\boldsymbol{m}^\\top \\boldsymbol{A} "
+"\\boldsymbol{n})`, and :math:`(\\partial \\mathrm{Tr} [ "
+"\\boldsymbol{m}^\\top \\boldsymbol{A} \\boldsymbol{n} ]) / (\\partial "
+"\\boldsymbol{A}) = \\boldsymbol{m} \\boldsymbol{n}^\\top`. Therefore:"
+msgstr ""
+
+#: info.docfunc.Neighbors:113 of
+msgid ""
+"\\frac{\\partial d^2_{\\boldsymbol{R}} (\\boldsymbol{a}, "
+"\\boldsymbol{b})}{\\partial \\boldsymbol{R}} =\n"
+"\\frac{\\partial \\mathrm{Tr} [ (\\boldsymbol{a} - \\boldsymbol{b})^\\top"
+" \\boldsymbol{R} (\\boldsymbol{a} -\n"
+"\\boldsymbol{b}) ]}{\\partial \\boldsymbol{R}} = (\\boldsymbol{a} - "
+"\\boldsymbol{b}) (\\boldsymbol{a} -\n"
+"\\boldsymbol{b})^\\top"
+msgstr ""
+
+#: info.docfunc.Neighbors:121 of
+#, python-brace-format
+msgid ""
+"As the result, the computation for gradient is in series of linear "
+"subspaces on original space. Using the eigen decomposition of updated "
+":math:`\\boldsymbol{R}=\\boldsymbol{L}\\boldsymbol{\\Lambda}\\boldsymbol{L}^\\top`,"
+" to guarantee the semi-positive constraint in :eq:`Riemannian "
+"optimization`, floor the negative eigen values as 0 in "
+":math:`\\boldsymbol{\\Lambda}` (denoted as "
+":math:`[\\boldsymbol{\\Lambda}]_{+}`). Then final Riemannian space can be"
+" updated through :math:`\\boldsymbol{L} [\\boldsymbol{\\Lambda}]_{+} "
+"\\boldsymbol{L}^\\top`."
+msgstr ""
+
+#: info.docfunc.Neighbors:127 of
+#, python-brace-format
+msgid ""
+"Repeating the previous calculation until :math:`\\boldsymbol{R}` "
+"converge. The final :math:`\\boldsymbol{R}^*` is the optimal Riemannian "
+"space based on the trained data."
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:1 of
+msgid ""
+"Algorithm frame for spherical like data. Theoretical definition of Von "
+"Mises Fisher distribution can refer :eq:`Von Mises Fisher pdf`. And the "
+":ref:`associated deduction <Directional data>` is also provided."
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:9 info.docfunc.VonMisesFisher:42 of
+msgid "the Von Mises Fisher distribution"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:16 of
+msgid "VonMisesFisher configuration when initializing"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:25 of
+#, python-brace-format
+msgid ""
+"mean vector :math:`\\boldsymbol{s}` of all observations as referred in "
+"the :ref:`supplementary materials <Directional data>`"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:30 of
+msgid "degree of anomalies for all observations"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:34 of
+msgid ""
+"the estimation on degree of freedom for the calculated :math:`\\chi^2` "
+"distribution"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:38 of
+msgid "the scale factor for the calculated :math:`\\chi^2` distribution"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:48 of
+msgid ""
+"append new observations and corresponding labels via ``data``, then "
+"synchronize related properties"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:62 of
+msgid "Von Mises Fisher for anomaly determination"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:78 of
+msgid ""
+"From the :ref:`supplementary deduction <Directional data>` it is known "
+"the degree of anomaly in the context of Von Mises Fisher distribution is "
+"in consistent with a certain :math:`\\chi^2(a | m, s)`."
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:81 of
+msgid ""
+"Using the substitution :math:`\\Gamma(m/2) = (2/m) \\Gamma((m/2)+1) = "
+"(2/(m+2)) (2/m) \\Gamma((m/2)+2)`, the moment estimation for solving "
+":math:`E[a]` and :math:`E[a^2]` can be obtained through:"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:84 of
+msgid ""
+"E[a] &= \\int_0^{\\infty} da \\cdot a \\cdot \\chi^2 (a | m, s) \\\\\n"
+"&= \\int_0^{\\infty} da \\cdot a \\cdot "
+"\\frac{1}{2s\\Gamma(\\frac{m}{2})} (\\frac{a}{2s})^{\\frac{m}{2}-1}\n"
+"\\exp(-\\frac{a}{2s}) \\\\\n"
+"&= ms \\cdot \\int_0^{\\infty} da \\cdot (\\frac{a}{2s}) \\cdot "
+"\\frac{1}{2s\\Gamma(\\frac{m}{2}+1)}\n"
+"(\\frac{a}{2s})^{\\frac{m}{2}-1} \\exp(-\\frac{a}{2s}) \\\\\n"
+"&= ms \\cdot \\int_0^{\\infty} da \\cdot \\chi^2(a | m+2, s) = ms"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:94 of
+msgid ""
+"E[a^2] &= \\int_0^{\\infty} da \\cdot a^2 \\chi^2 (a | m, s) \\\\\n"
+"&= \\int_0^{\\infty} da \\cdot a^2 \\cdot "
+"\\frac{1}{2s\\Gamma(\\frac{m}{2})} (\\frac{a}{2s})^{\\frac{m}{2}-1}\n"
+"\\exp(-\\frac{a}{2s}) \\\\\n"
+"&= m(m+2)s^2 \\cdot \\int_0^{\\infty} da \\cdot (\\frac{a}{2s})^2 \\cdot "
+"\\frac{1}{2s\\Gamma(\\frac{m}{2}+2)}\n"
+"(\\frac{a}{2s})^{\\frac{m}{2}-1} \\exp(-\\frac{a}{2s}) \\\\\n"
+"&= m(m+2)s^2 \\cdot \\int_0^{\\infty} da \\cdot \\chi^2(a | m+4, s) = "
+"m(m+2)s^2"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:104 of
+#, python-brace-format
+msgid ""
+":math:`\\hat{m}` and :math:`\\hat{s}` represent for the estimations on "
+":math:`m` and :math:`s` respectively. Simultaneously consider the "
+":eq:`1st moment of chi2 in vmf` and :eq:`2nd moment of chi2 in vmf`, the "
+"following formula can be established:"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:108 of
+#, python-brace-format
+msgid ""
+"\\hat{m} = \\frac{2(E[a])^2}{E[a^2] - (E[a])^2};\\ \\hat{s} = "
+"\\frac{E[a^2] - (E[a])^2}{E[a]}"
+msgstr ""
+
+#: info.docfunc.VonMisesFisher:113 of
+#, python-brace-format
+msgid ""
+"Compare to the form of :math:`\\chi^2 (M-1, 0.5\\kappa)`, the estimation "
+":math:`\\hat{s}` is nothing else but :math:`0.5\\kappa`, while the "
+":math:`\\hat{m}` is generally no greater than :math:`M-1`. In the view "
+"point of informatics, the estimation :math:`\\hat{m}` represents to some "
+"extent the valid number of dimension that takes part in the subsequent "
+"modeling and calculations."
+msgstr ""
+
+#: ../../source/interface/api_learn.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:83
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:84
+msgid "0.0.5"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_learn.rst:85
+msgid "Apr 23, 2024"
+msgstr ""
+

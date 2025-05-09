@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:44+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/interface/api_visual.rst:2
 msgid "_`Option visualization`"
@@ -81,17 +81,18 @@ msgid ""
 " to be listed as the identical size as the number of groups."
 msgstr ""
 
-#: info.docfunc.Canvas info.docfunc.GrpSettings info.docfunc.ImageViewer of
+#: ../../source/interface/api_visual.rst
 msgid "参数"
 msgstr ""
 
 #: info.docfunc.GrpSettings:6 of
+#, python-brace-format
 msgid ""
 "initiate using keywords and values; no assignment for empty dict ``{}`` "
 "as default"
 msgstr ""
 
-#: info.docfunc.GrpSettings info.docfunc.ImageViewer of
+#: ../../source/interface/api_visual.rst
 msgid "变量"
 msgstr ""
 
@@ -99,8 +100,7 @@ msgstr ""
 msgid "show warning or not; ``False`` as default"
 msgstr ""
 
-#: info.docfunc.Canvas info.docfunc.FigConfigs info.docfunc.GrpSettings
-#: info.docfunc.ImageViewer of
+#: ../../source/interface/api_visual.rst
 msgid "返回"
 msgstr ""
 
@@ -108,12 +108,11 @@ msgstr ""
 msgid "figure configuration dict"
 msgstr ""
 
-#: info.docfunc.Canvas info.docfunc.FigConfigs info.docfunc.GrpSettings
-#: info.docfunc.ImageViewer of
+#: ../../source/interface/api_visual.rst
 msgid "返回类型"
 msgstr ""
 
-#: info.docfunc.Canvas info.docfunc.GrpSettings of
+#: ../../source/interface/api_visual.rst
 msgid "抛出"
 msgstr ""
 
@@ -152,8 +151,8 @@ msgstr ""
 msgid ":py:class:`~info.docfunc.Canvas`"
 msgstr ""
 
-#: info.docfunc.Canvas:238 info.docfunc.FigConfigs:86
-#: info.docfunc.GrpSettings:74 info.docfunc.ImageViewer:86 of
+#: info.docfunc.Canvas:260 info.docfunc.FigConfigs:86
+#: info.docfunc.GrpSettings:74 info.docfunc.ImageViewer:94 of
 msgid "-- |signature|"
 msgstr ""
 
@@ -216,7 +215,7 @@ msgstr ""
 msgid "histogram with customized width"
 msgstr ""
 
-#: info.docfunc.Canvas:222 info.docfunc.FigConfigs:74 of
+#: info.docfunc.Canvas:239 info.docfunc.FigConfigs:74 of
 msgid ":py:class:`~info.docfunc.GrpSettings`"
 msgstr ""
 
@@ -227,8 +226,8 @@ msgstr ""
 #: info.docfunc.Canvas:1 of
 msgid ""
 "generic visualization utility. making line, scatter, histogram, beeswarm,"
-" box, heatmap, radar, pie figures for group and ungrouped data, or viewer"
-" for images."
+" box, heatmap, radar, pie, contour figures for group and ungrouped data, "
+"or viewer for images."
 msgstr ""
 
 #: info.docfunc.Canvas:6 of
@@ -239,7 +238,8 @@ msgstr ""
 msgid ""
 "figure type for visualizer; should be option among ``'line'``, "
 "``'scatter'``, ``'histogram'``, ``'beeswarm'``, ``'box'``, ``'heatmap'``,"
-" ``'radar'``, ``'pie'`` and ``'image'``; ``'line'`` as default"
+" ``'radar'``, ``'pie'``, ``'contour'`` and ``'image'``; ``'line'`` as "
+"default"
 msgstr ""
 
 #: info.docfunc.Canvas:11 of
@@ -265,6 +265,7 @@ msgid "background color for canvas; ``'w'`` as default"
 msgstr ""
 
 #: info.docfunc.Canvas:19 of
+#, python-brace-format
 msgid ""
 "trigger to (un)enable grids of x and y in figure; ``{'x': True, 'y': "
 "True}`` as default"
@@ -275,6 +276,7 @@ msgid "title of figure; ``None`` as default"
 msgstr ""
 
 #: info.docfunc.Canvas:21 of
+#, python-brace-format
 msgid ""
 "configurations of figure title; ``{'color': 'k', 'size': '15pt'}`` as "
 "default"
@@ -289,6 +291,7 @@ msgid "text content for bottom label; ``None`` as default"
 msgstr ""
 
 #: info.docfunc.Canvas:24 of
+#, python-brace-format
 msgid ""
 "configurations of left and bottom labels; ``{'color': 'b', 'font-size': "
 "'13pt'}`` as default"
@@ -299,6 +302,7 @@ msgid "trigger to (un)enable figure legend; ``False`` as default"
 msgstr ""
 
 #: info.docfunc.Canvas:27 of
+#, python-brace-format
 msgid ""
 "(un)display axes triggers; ``{'left': True, 'top': False, 'right': False,"
 " 'bottom': True}`` as default"
@@ -309,7 +313,7 @@ msgid "a visualization application"
 msgstr ""
 
 #: info.docfunc.Canvas:31 of
-msgid "when number of groups exceeds 10 (the default max number of groups)"
+msgid "invalid argument exists"
 msgstr ""
 
 #: info.docfunc.Canvas:37 of
@@ -318,13 +322,13 @@ msgstr ""
 
 #: info.docfunc.Canvas:41 of
 msgid ""
-"statistic method; ``save_as`` to specify the file name for figure to be "
+"static method; ``save_as`` to specify the file name for figure to be "
 "exported; ``figure.png`` as default"
 msgstr ""
 
 #: info.docfunc.Canvas:45 of
 msgid ""
-"statistic method; create a new canvas then show figure. all ``**kwargs`` "
+"static method; create a new canvas then show figure. all ``**kwargs`` "
 "assignment supported."
 msgstr ""
 
@@ -425,36 +429,57 @@ msgid "canvas used for pie plot"
 msgstr ""
 
 #: info.docfunc.Canvas:199 of
-msgid "Use as an image viewer:"
+msgid "For contour plot:"
 msgstr ""
 
 #: info.docfunc.Canvas:201 of
+msgid "Canvas for iso-contour plot"
+msgstr ""
+
+#: info.docfunc.Canvas:214 of
+msgid "canvas used for contour plot"
+msgstr ""
+
+#: info.docfunc.Canvas:216 of
+msgid "Use as an image viewer:"
+msgstr ""
+
+#: info.docfunc.Canvas:218 of
 msgid "Canvas as image viewer"
 msgstr ""
 
-#: info.docfunc.Canvas:213 of
+#: info.docfunc.Canvas:230 of
 msgid "canvas used for image viewer"
 msgstr ""
 
-#: info.docfunc.Canvas:217 of
+#: info.docfunc.Canvas:234 of
 msgid ""
 "If ``IndexError`` raised, reassign ``name`` in ``fig_configs`` by "
 ":py:class:`~info.docfunc.GrpSettings`, or by updating default "
 "configuration set :py:class:`~info.docfunc.FigConfigs`."
 msgstr ""
 
-#: info.docfunc.Canvas:224 of
+#: info.docfunc.Canvas:241 of
 msgid ":py:class:`~info.docfunc.FigConfigs`"
 msgstr ""
 
-#: info.docfunc.Canvas:232 of
+#: info.docfunc.Canvas:249 of
 msgid ""
 "support heatmap, radar, and pie plot. heuristically guess and "
 "configuration of ``fig_configs``."
 msgstr ""
 
-#: info.docfunc.Canvas:236 of
-msgid "support writing image via ``save`` method."
+#: info.docfunc.Canvas:253 of
+msgid ""
+"support writing image via ``save`` method. no limitation for 10 groups of"
+" data in maximum anymore."
+msgstr ""
+
+#: info.docfunc.Canvas:257 of
+msgid ""
+"support iso contour plot. attach interactive color bar item to heatmap "
+"and contour plot. add logic of length check, as well as horizontal label "
+"trigger for tags in heatmap."
 msgstr ""
 
 #: info.docfunc.ImageViewer:5 of
@@ -474,69 +499,80 @@ msgid "3-dimensional ndarray"
 msgstr ""
 
 #: info.docfunc.ImageViewer:16 of
-msgid ""
-"list of bool ndarray with 3 dimension; Support observing 3 masks "
-"simultaneously in maximum; ``None`` as default"
+msgid "list of bool ndarray with 3 dimension; ``None`` as default for no mask"
 msgstr ""
 
-#: info.docfunc.ImageViewer:18 of
+#: info.docfunc.ImageViewer:17 of
 msgid ""
 "iterable object with length of 3 to specify spacing values; ``(1, 1, 1)``"
 " as default"
 msgstr ""
 
-#: info.docfunc.ImageViewer:20 of
+#: info.docfunc.ImageViewer:19 of
 msgid ""
 "iterable object with length of 3 to specify origin values; ``(0, 0, 0)`` "
 "as default"
 msgstr ""
 
-#: info.docfunc.ImageViewer:22 of
+#: info.docfunc.ImageViewer:21 of
 msgid "title to be displayed in main window; ``None`` as default"
 msgstr ""
 
-#: info.docfunc.ImageViewer:23 of
+#: info.docfunc.ImageViewer:22 of
 msgid ""
 "initial low and high values of grey level; values should be numeric; if "
 "those values range from 0. to 1. simultaneously, grey level percentage "
 "will be applied; ``(0.688, 0.997)`` as default"
 msgstr ""
 
-#: info.docfunc.ImageViewer:29 of
+#: info.docfunc.ImageViewer:25 of
 msgid ""
-"statistic method; create a new ImageViewer then view 3D image. all "
+"RGB shader colors if ``mask`` was assigned; value ranges from 0.0 to 1.0 "
+"in each channel; ``None`` as default for random colors; if specified, "
+"substitution for mask shaders takes places sequentially"
+msgstr ""
+
+#: info.docfunc.ImageViewer:32 of
+msgid ""
+"static method; create a new ImageViewer then view 3D image. all "
 "parameters defined the same as those when calling ``view``."
 msgstr ""
 
-#: info.docfunc.ImageViewer:34 of
+#: info.docfunc.ImageViewer:37 of
 msgid "interactively view 3D image"
 msgstr ""
 
-#: info.docfunc.ImageViewer:50 of
+#: info.docfunc.ImageViewer:53 of
 msgid "Following :ref:`figure <image viewer for 3D image>` for preview:"
 msgstr ""
 
-#: info.docfunc.ImageViewer:57 of
+#: info.docfunc.ImageViewer:60 of
 msgid "ImageViewer for 3D image"
 msgstr ""
 
-#: info.docfunc.ImageViewer:59 of
+#: info.docfunc.ImageViewer:62 of
 msgid "Or if the images have the corresponding segmentations:"
 msgstr ""
 
-#: info.docfunc.ImageViewer:61 of
+#: info.docfunc.ImageViewer:64 of
 msgid "interactively view 3D image with segmentation"
 msgstr ""
 
-#: info.docfunc.ImageViewer:75 of
+#: info.docfunc.ImageViewer:78 of
 msgid "ImageViewer for 3D image with segmentation"
 msgstr ""
 
-#: info.docfunc.ImageViewer:83 of
+#: info.docfunc.ImageViewer:86 of
 msgid ""
 "Implementation uses linked views, instead of projection with sliced "
 "segmentation line. Support origin, colored segmentations, and 3D "
 "visualization with OpenGL rendering."
+msgstr ""
+
+#: info.docfunc.ImageViewer:91 of
+msgid ""
+"No limitation for mask numbers during visualization (3 in maximum the "
+"former); fix the exception raised in sequential playing."
 msgstr ""
 
 #: ../../source/interface/api_visual.rst
@@ -552,7 +588,7 @@ msgid "Version"
 msgstr ""
 
 #: ../../source/interface/api_visual.rst:36
-msgid "0.0.4"
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/interface/api_visual.rst
@@ -562,4 +598,55 @@ msgstr ""
 #: ../../source/interface/api_visual.rst:37
 msgid "Jun 29, 2023"
 msgstr ""
+
+#~ msgid ""
+#~ "generic visualization utility. making line,"
+#~ " scatter, histogram, beeswarm, box, "
+#~ "heatmap, radar, pie figures for group"
+#~ " and ungrouped data, or viewer for"
+#~ " images."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "figure type for visualizer; should be"
+#~ " option among ``'line'``, ``'scatter'``, "
+#~ "``'histogram'``, ``'beeswarm'``, ``'box'``, "
+#~ "``'heatmap'``, ``'radar'``, ``'pie'`` and "
+#~ "``'image'``; ``'line'`` as default"
+#~ msgstr ""
+
+#~ msgid "when number of groups exceeds 10 (the default max number of groups)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "statistic method; ``save_as`` to specify "
+#~ "the file name for figure to be "
+#~ "exported; ``figure.png`` as default"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "statistic method; create a new canvas"
+#~ " then show figure. all ``**kwargs`` "
+#~ "assignment supported."
+#~ msgstr ""
+
+#~ msgid "support writing image via ``save`` method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "list of bool ndarray with 3 "
+#~ "dimension; Support observing 3 masks "
+#~ "simultaneously in maximum; ``None`` as "
+#~ "default"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "statistic method; create a new "
+#~ "ImageViewer then view 3D image. all "
+#~ "parameters defined the same as those "
+#~ "when calling ``view``."
+#~ msgstr ""
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

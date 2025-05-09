@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:44+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/interface/api_medical.rst:2
 msgid "_`Option digitmed`"
@@ -30,90 +30,121 @@ msgstr ""
 
 #: ../../source/interface/api_medical.rst:9
 msgid ""
-"Medical image related tools (data mainly in :ref:`DICOM <DICOM>` "
-"protocol). Operations include regrouping and re-sorting slices, read meta"
-" information, link to other type of DICOM files and etc. In addition, "
-"measurement for images as feature extraction is also supported. "
-"Dependencies of `SimpltITK <http://simpleitk.org>`_ and `pydicom "
+"Medical image related tools (data mainly in :ref:`DICOM <DICOM>` or "
+":ref:`NIfTI <NIfTI>` protocol). For DICOM, Operations include regrouping "
+"and re-sorting slices, read meta information, link to other type of DICOM"
+" files and etc. In addition, measurement for images as feature extraction"
+" is also supported. For NIfTI image, the relation between pixel and voxel"
+" space requires computation. Dependencies of `SimpltITK "
+"<http://simpleitk.org>`_ and `pydicom "
 "<https://github.com/pydicom/pydicom>`_ are required."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:14
+#: ../../source/interface/api_medical.rst:15
 msgid ""
 "Namespace of this module is mainly in ``info.toolbox.digitmed.rebuild``. "
-"For convenience in practice, use main entry of ``info.med``."
+"For convenience in practice, use main entry of ``info.med``. As for the "
+"image reconstruction related functions, import the ``rebuild`` module "
+"from ``info.med``."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid ":py:obj:`DcmSetConstructor <info.docfunc.DcmSetConstructor>`"
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 #: info.docfunc.DcmSetConstructor:1 of
 msgid "load and re-organize a set of dicom slices in memory."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid ":py:obj:`DcmSeries <info.docfunc.DcmSeries>`"
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 #: info.docfunc.DcmSeries:1 of
 msgid "build 3D image from a dicom series."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid ":py:obj:`dcm_hierarchical_parser <info.docfunc.dcm_hierarchical_parser>`"
 msgstr ""
 
-#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../docstring ../../source/interface/api_medical.rst:30:<autosummary>:1
 #: info.docfunc.dcm_hierarchical_parser:1 of
 msgid "parse keywords in dicom headers recursively."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid ":py:obj:`dcm_attr_loader <info.docfunc.dcm_attr_loader>`"
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid "generic attribute loader for dicom file."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid ":py:obj:`dcm_constructor <info.docfunc.dcm_constructor>`"
 msgstr ""
 
-#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../docstring ../../source/interface/api_medical.rst:30:<autosummary>:1
 #: info.docfunc.dcm_constructor:1 of
 msgid "rebuild dicom image(s) from a set of dicom slice files."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
 msgid ":py:obj:`dcm_regroup <info.docfunc.dcm_regroup>`"
 msgstr ""
 
-#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../docstring ../../source/interface/api_medical.rst:30:<autosummary>:1
 #: info.docfunc.dcm_regroup:1 of
 msgid "generate a cache for logging regrouped dicom files."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:27:<autosummary>:1
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
+msgid ":py:obj:`NIfTI <info.docfunc.NIfTI>`"
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
+#: info.docfunc.NIfTI:1 of
+msgid "build 3D image from a NIfTI file."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:30:<autosummary>:1
+msgid ":py:obj:`nii_constructor <info.docfunc.nii_constructor>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_medical.rst:30:<autosummary>:1
+#: info.docfunc.nii_constructor:1 of
+msgid "build 3D image(s) from NIfTI file(s)."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:31
+msgid "While for other functional units, directly import from ``info.med``."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:38:<autosummary>:1
 msgid ":py:obj:`radiomics_features <info.docfunc.radiomics_features>`"
 msgstr ""
 
-#: ../../docstring ../../source/interface/api_medical.rst:27:<autosummary>:1
-#: info.docfunc.radiomics_features:1 of
+#: ../../source/interface/api_medical.rst:38:<autosummary>:1
 msgid "feature extraction automation."
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:29
+#: ../../source/interface/api_medical.rst:38:<autosummary>:1
+msgid ":py:obj:`vascular_invasion <info.docfunc.vascular_invasion>`"
+msgstr ""
+
+#: ../../docstring ../../source/interface/api_medical.rst:38:<autosummary>:1
+#: info.docfunc.vascular_invasion:1 of
+msgid "vascular invasion angle evaluation."
+msgstr ""
+
+#: ../../source/interface/api_medical.rst:40
 msgid "Docstrings"
 msgstr ""
 
-#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
-#: info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor
-#: info.docfunc.dcm_hierarchical_parser info.docfunc.dcm_regroup
-#: info.docfunc.radiomics_features of
+#: ../../source/interface/api_medical.rst
 msgid "参数"
 msgstr ""
 
@@ -163,8 +194,7 @@ msgstr ""
 msgid "keyword or tag of Spacing Between Slices; ``\"0018|0088\"`` as default"
 msgstr ""
 
-#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
-#: info.docfunc.dcm_constructor info.docfunc.dcm_regroup of
+#: ../../source/interface/api_medical.rst
 msgid "变量"
 msgstr ""
 
@@ -183,10 +213,7 @@ msgid ""
 "``None`` as default to use ``pydicom`` or ``SimpleITK`` automatically"
 msgstr ""
 
-#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
-#: info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor
-#: info.docfunc.dcm_hierarchical_parser info.docfunc.dcm_regroup
-#: info.docfunc.radiomics_features of
+#: ../../source/interface/api_medical.rst
 msgid "返回"
 msgstr ""
 
@@ -194,10 +221,7 @@ msgstr ""
 msgid "a DcmSetConstructor instance"
 msgstr ""
 
-#: ../../docstring info.docfunc.DcmSeries info.docfunc.DcmSetConstructor
-#: info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor
-#: info.docfunc.dcm_hierarchical_parser info.docfunc.dcm_regroup
-#: info.docfunc.radiomics_features of
+#: ../../source/interface/api_medical.rst
 msgid "返回类型"
 msgstr ""
 
@@ -262,13 +286,15 @@ msgid ""
 msgstr ""
 
 #: ../../docstring info.docfunc.DcmSeries:232 info.docfunc.DcmSetConstructor:84
-#: info.docfunc.dcm_attr_loader:57 info.docfunc.dcm_constructor:58
-#: info.docfunc.dcm_hierarchical_parser:43 info.docfunc.dcm_regroup:69
-#: info.docfunc.radiomics_features:44 of
+#: info.docfunc.NIfTI:76 info.docfunc.dcm_attr_loader:57
+#: info.docfunc.dcm_constructor:58 info.docfunc.dcm_hierarchical_parser:43
+#: info.docfunc.dcm_regroup:69 info.docfunc.nii_constructor:35
+#: info.docfunc.radiomics_features:65 info.docfunc.vascular_invasion:41 of
 msgid "-- |signature|"
 msgstr ""
 
-#: ../../docstring info.docfunc.DcmSeries:14 info.docfunc.dcm_constructor:14 of
+#: ../../docstring info.docfunc.DcmSeries:14 info.docfunc.NIfTI:9
+#: info.docfunc.dcm_constructor:14 info.docfunc.nii_constructor:9 of
 msgid ""
 "combination of ``'x'``, ``'y'`` and ``'z'`` to specify axis order; "
 "``'zyx'`` as default"
@@ -291,46 +317,49 @@ msgid "dict composed of header information for a set of dicom file series."
 msgstr ""
 
 #: info.docfunc.DcmSeries:30 of
+#, python-brace-format
 msgid ""
 "a :math:`\\mathbb{R}^{4 \\times 4}` ndarray of affine matrix. affine "
 "describe the transformation from pixel to voxel space (see `affine matrix"
 " <https://dicom.innolitics.com/ciods/ct-image/image-plane/00200037>`_)."
 msgstr ""
 
-#: info.docfunc.DcmSeries:36 of
+#: info.docfunc.DcmSeries:36 info.docfunc.NIfTI:27 of
+#, python-brace-format
 msgid ""
 "a :math:`\\mathbb{R}^3` ndarray of voxel spacing in order of "
 "``_intrinsic_order`` attribute."
 msgstr ""
 
-#: info.docfunc.DcmSeries:40 of
+#: info.docfunc.DcmSeries:40 info.docfunc.NIfTI:31 of
+#, python-brace-format
 msgid ""
 "a :math:`\\mathbb{R}^3` ndarray of original location in order of "
 "``_intrinsic_order`` attribute."
 msgstr ""
 
-#: info.docfunc.DcmSeries:44 of
+#: info.docfunc.DcmSeries:44 info.docfunc.NIfTI:35 of
 msgid ""
 "tuple composed of ndarray as coordinate in order of ``_intrinsic_order`` "
 "attribute."
 msgstr ""
 
-#: info.docfunc.DcmSeries:48 of
+#: info.docfunc.DcmSeries:48 info.docfunc.NIfTI:39 of
 msgid "3-dimensional ndarray of image."
 msgstr ""
 
-#: info.docfunc.DcmSeries:52 of
+#: info.docfunc.DcmSeries:52 info.docfunc.NIfTI:43 of
 msgid ""
 "3-dimensional ndarray of standard uptake values built from image. applied"
 " exclusively in positron emission tomography (:ref:`PET "
 "<[Wiyaporn2011]>`) modality."
 msgstr ""
 
-#: info.docfunc.DcmSeries:57 of
+#: info.docfunc.DcmSeries:57 info.docfunc.NIfTI:48 of
 msgid "the same as ``affine``."
 msgstr ""
 
-#: info.docfunc.DcmSeries:61 of
+#: info.docfunc.DcmSeries:61 info.docfunc.NIfTI:52 of
 msgid ""
 "a certain combination of ``(0, 1, 2)``, determined by parameter "
 "``axis_order``. for example, the default ``axis_order`` used ``'zyx'`` "
@@ -489,11 +518,11 @@ msgstr ""
 msgid "rebuild re-organized dicom slices"
 msgstr ""
 
-#: info.docfunc.DcmSeries:220 of
+#: info.docfunc.DcmSeries:220 info.docfunc.NIfTI:68 of
 msgid ":py:class:`~info.docfunc.SingleMap`"
 msgstr ""
 
-#: info.docfunc.DcmSeries:222 of
+#: info.docfunc.DcmSeries:222 info.docfunc.NIfTI:70 of
 msgid ":py:func:`~info.docfunc.dcm_constructor`"
 msgstr ""
 
@@ -538,7 +567,7 @@ msgstr ""
 msgid "values in dicom headers"
 msgstr ""
 
-#: ../../docstring info.docfunc.dcm_attr_loader info.docfunc.dcm_constructor of
+#: ../../source/interface/api_medical.rst
 msgid "抛出"
 msgstr ""
 
@@ -654,30 +683,91 @@ msgstr ""
 msgid ":py:func:`~info.docfunc.DcmSetConstructor`"
 msgstr ""
 
-#: ../../docstring info.docfunc.radiomics_features:5 of
-msgid "generator to yield case name, ndarray image, ndarray segmentation, spacing"
+#: info.docfunc.NIfTI:5 of
+msgid "path of *nii* or *nii.gz* NIfTI file"
+msgstr ""
+
+#: ../../docstring info.docfunc.NIfTI:6 info.docfunc.nii_constructor:6 of
+msgid ""
+"callable object to preprocess header information, should be capable to "
+"convert keyword and value pairs, into accessible data type in Python; "
+"default uses a built-in function"
+msgstr ""
+
+#: info.docfunc.NIfTI:10 of
+msgid "NIfTI image"
+msgstr ""
+
+#: info.docfunc.NIfTI:17 of
+msgid "dict composed of header information for NIfTI image."
+msgstr ""
+
+#: info.docfunc.NIfTI:21 of
+#, python-brace-format
+msgid ""
+"a :math:`\\mathbb{R}^{4 \\times 4}` ndarray of affine matrix. affine "
+"describe the transformation from pixel to a relative, or absolute voxel "
+"space (see `NIfTI-1 Data Format <https://nifti.nimh.nih.gov/nifti-1/>`_)."
+msgstr ""
+
+#: info.docfunc.NIfTI:57 of
+msgid "rebuild a NIfTI image"
+msgstr ""
+
+#: ../../docstring info.docfunc.nii_constructor:5 of
+msgid "path, or list of paths of *nii* or *nii.gz* NIfTI file"
+msgstr ""
+
+#: ../../docstring info.docfunc.nii_constructor:10 of
+msgid ""
+"customized loader to transfer string of file path, to object in memory; "
+"``None`` as default to use ``SimpleITK`` automatically"
+msgstr ""
+
+#: ../../docstring info.docfunc.nii_constructor:12 of
+msgid "NIfTI image(s)"
+msgstr ""
+
+#: ../../docstring info.docfunc.nii_constructor:17 of
+msgid "rebuild NIfTI images"
+msgstr ""
+
+#: ../../docstring info.docfunc.nii_constructor:29 of
+msgid ":py:class:`~info.docfunc.NIfTI`"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:1 of
+msgid ""
+"feature extraction automation. this function requires the readiness of a "
+"configured `pyradiomics <https://pypi.org/project/pyradiomics/>`_ "
+"environment."
 msgstr ""
 
 #: ../../docstring info.docfunc.radiomics_features:6 of
+msgid "generator to yield case name, ndarray image, ndarray segmentation, spacing"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:7 of
+#, python-brace-format
 msgid ""
 "parameters passed on radiomics extractor when initiation; empty dict "
 "``{}`` as default to use default setting"
 msgstr ""
 
-#: ../../docstring info.docfunc.radiomics_features:8 of
+#: ../../docstring info.docfunc.radiomics_features:9 of
 msgid ""
 "log to note down exceptive case; ``None`` as default to use "
 "'err_case.log' inplace, if any exceptive case captured during extraction"
 msgstr ""
 
-#: ../../docstring info.docfunc.radiomics_features:10 of
+#: ../../docstring info.docfunc.radiomics_features:11 of
 msgid ""
 "parameters use image type as keyword to specify desired modality; value "
 "should be extraction setting during extraction, empty dict for using "
 "default setting; ``None`` as default to apply all image types"
 msgstr ""
 
-#: ../../docstring info.docfunc.radiomics_features:14 of
+#: ../../docstring info.docfunc.radiomics_features:15 of
 msgid ""
 "customize selection features from sub feature class; keyword should be "
 "valid name of sub feature class, and the value is list composed of "
@@ -686,19 +776,106 @@ msgid ""
 "applying customized feature selection"
 msgstr ""
 
-#: ../../docstring info.docfunc.radiomics_features:21 of
+#: ../../docstring info.docfunc.radiomics_features:22 of
 msgid "table uses case names as indexing, and feature names as column names"
 msgstr ""
 
-#: ../../docstring info.docfunc.radiomics_features:26 of
+#: ../../docstring info.docfunc.radiomics_features:27 of
 msgid "radiomic feature extraction implementation"
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:43 of
+msgid ""
+"Default installation might result in no valid export for certain feature "
+"classes. If all features are desired, in case, ensure that `PyWavelets "
+"<https://pypi.org/project/PyWavelets/>`_, `trimesh "
+"<https://pypi.org/project/trimesh/>`_ and `scikit-image "
+"<https://pypi.org/project/scikit-image/>`_ are installed in the "
+"environment."
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:48 of
+msgid ""
+"The dependent pyradiomics package raises some unaddressed build issues in"
+" Python greater than 3.9 until now Aug 4, 2024. Recreate a downgraded "
+"Python (:math:`\\leq` 3.9) environment if necessary, otherwise await for "
+"the bugs-fixing from develop team of pyradiomics."
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:52 of
+msgid ""
+"Incompatibility of some dependencies might raise due to `numpy "
+"<https://pypi.org/project/numpy/>`_ with version greater than 2.0.0.; "
+"Further test is required. If unknown error has been raised, try to "
+"downgrade numpy."
+msgstr ""
+
+#: ../../docstring info.docfunc.radiomics_features:62 of
+msgid ""
+"remove `pyradiomics <https://pypi.org/project/pyradiomics/>`_ from "
+"dependencies due to its unaddressed issues from source code building and "
+"no support for up-to-date Python version among its binary releases."
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:5 of
+msgid "tuple contained vascular and tumor masks"
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:6 of
+msgid ""
+"spacing for each dimension in the unit voxel; ``None`` as default for "
+"using 1 on each dimension"
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:8 of
+msgid ""
+"radius of scope to make constraint on mask of vessel, to determine the "
+"center point of vessel; ``None`` as default to automatically calculate "
+"the vector from the mass center of overlapped region, to the geometric "
+"center of tumor as its radius"
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:11 of
+msgid ""
+"positive integer used as differential operator to evaluate the status of "
+"penetration; 3 as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:13 of
+msgid ""
+"1-length dict with boolean keyword as referred to whether was invaded, "
+"while value as represented for the spatial distance if no-connection; "
+"radian angle if invaded. If a list of numerical numbers was calculated, "
+"it is the set of radian angles for multiple invasion regions."
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:20 of
+msgid "evaluation on vascular invasion state"
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:30 of
+msgid ""
+"Implemented via dimension-irrelevant paradigm, with compatibility for "
+"tensor in 2-rank or higher."
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:32 of
+msgid ""
+"No warranty in precision and efficiency for calculation on 3-dimensional "
+"case currently. This issue will be addressed in next official release."
+msgstr ""
+
+#: ../../docstring info.docfunc.vascular_invasion:39 of
+msgid ""
+"Scheme determination and clinical validation are conducted by Yajiao "
+"Zhang and Haoran Zhang."
 msgstr ""
 
 #: ../../source/interface/api_medical.rst
 msgid "Authors"
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:52
+#: ../../source/interface/api_medical.rst:71
 msgid "Chen Zhang"
 msgstr ""
 
@@ -706,15 +883,38 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:53
-msgid "0.0.4"
+#: ../../source/interface/api_medical.rst:72
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/interface/api_medical.rst
 msgid "|create|"
 msgstr ""
 
-#: ../../source/interface/api_medical.rst:54
+#: ../../source/interface/api_medical.rst:73
 msgid "Jun 29, 2023"
 msgstr ""
+
+#~ msgid ""
+#~ "Medical image related tools (data mainly"
+#~ " in :ref:`DICOM <DICOM>` protocol). "
+#~ "Operations include regrouping and re-"
+#~ "sorting slices, read meta information, "
+#~ "link to other type of DICOM files"
+#~ " and etc. In addition, measurement "
+#~ "for images as feature extraction is "
+#~ "also supported. Dependencies of `SimpltITK "
+#~ "<http://simpleitk.org>`_ and `pydicom "
+#~ "<https://github.com/pydicom/pydicom>`_ are required."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Namespace of this module is mainly "
+#~ "in ``info.toolbox.digitmed.rebuild``. For "
+#~ "convenience in practice, use main entry"
+#~ " of ``info.med``."
+#~ msgstr ""
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

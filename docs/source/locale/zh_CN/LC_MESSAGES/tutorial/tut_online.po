@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.6rc0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/tutorial/tut_online.rst:2
+msgid "_`Adaptive AI with online learning`"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:4
+msgid ""
+"The architectural analysis of edge intelligence systems across domains "
+"mentioned in :ref:`previous tutorial <Streaming data, edge computing and "
+"online learning>`, from life-saving surgical robotics to ambient-aware "
+"smart homes, reveals a fundamental truth: true device autonomy hinges on "
+"an algorithm's capacity for perpetual contextual adaptation. As "
+"established in our prior examination of streaming data ecosystems, edge "
+"devices operate in inherently nonstationary environments where sensor "
+"patterns, user behaviors, and operational constraints evolve "
+"continuously. This dynamism renders conventional static models obsolete, "
+"demanding instead AI systems that implement *sustained environmental "
+"symbiosis* through online learning mechanisms."
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:13
+msgid ""
+"The critical differentiator lies not in hardware specifications, but in a"
+" model's architectural capacity to organically assimilate streaming data."
+" Successful edge intelligence implementations share a common DNA: machine"
+" learning architectures that treat data ingestion as a continuous "
+"calibration process rather than discrete training episodes."
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:19
+msgid "_`Redefining intelligence via adaptive models`"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:22
+msgid "_`Breaking the infinite modeling cycle`"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:24
+msgid ""
+"While the term \"model\" remains ubiquitous in AI practice, practitioners"
+" often find themselves trapped in an infinite loop of model-design → "
+"deployment → concept drift → re-modeling. This Sisyphean cycle stems from"
+" treating models as fixed-parameter predictors frozen in temporal "
+"specificity. In edge intelligence contexts, successful implementations "
+"redefine models as *continuously evolving entities* - dynamic systems "
+"that self-calibrate through perpetual interaction with their operational "
+"environments."
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:31
+msgid "_`Mathematical metaphors for adaptive systems`"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:33
+msgid ""
+"Effective edge AI mirrors how mathematicians distinguish between function"
+" families (e.g., quadratic functions) and specific implementations (e.g.,"
+" y=2x²+3). Consider economic policymaking: while applying Shanghai's "
+"income benchmarks to rural Gansu would fail, the underlying methodology "
+"of per-capita analysis remains sound. This reveals the core paradigm the "
+"edge AI implementations require:"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:38
+msgid "**Meta-architectures** providing methodological frameworks"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:40
+msgid "**Contextual instantiation** through localized data streams"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:42
+msgid "**Bayesian adaptability** enabling probabilistic adjustments"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:44
+msgid ""
+"This approach transforms models from static equations into \"smart "
+"containers\" that maintain core analytical principles, dynamically adjust"
+" parameters like regulatory policies adapting to regional economies, and "
+"preserve computational efficiency through selective updates."
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:49
+msgid "_`Meta model `"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:51
+msgid "text"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:55
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:56
+msgid "0.0.6"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_online.rst:57
+msgid "May 10, 2025"
+msgstr ""
+

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/tutorial/tut_main.rst:9
 msgid "Scripting via function"
@@ -28,21 +28,29 @@ msgstr "通过函数编写脚本"
 msgid "Pipelining data process"
 msgstr "数据处理管道化"
 
-#: ../../source/tutorial/tut_main.rst:20
+#: ../../source/tutorial/tut_main.rst:23
 msgid "Preparing batch processing"
 msgstr "数据批处理准备"
 
-#: ../../source/tutorial/tut_main.rst:20
+#: ../../source/tutorial/tut_main.rst:23
 msgid "Transform and identification"
 msgstr "转换与标定"
 
-#: ../../source/tutorial/tut_main.rst:20
+#: ../../source/tutorial/tut_main.rst:23
 msgid "DICOM related operations"
 msgstr "DICOM相关操作"
 
-#: ../../source/tutorial/tut_main.rst:20
+#: ../../source/tutorial/tut_main.rst:23
 msgid "Applying data augmentation"
 msgstr "应用数据增强"
+
+#: ../../source/tutorial/tut_main.rst:39
+msgid "From streaming to edge AI"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:39
+msgid "Adaptive AI with online learning"
+msgstr ""
 
 #: ../../source/tutorial/tut_main.rst:2
 msgid "_`Tutorials`"
@@ -57,22 +65,41 @@ msgid "Collection for concept and practice for Python in functional programming.
 msgstr "Python函数式编程相关概念与工程实践的集合。"
 
 #: ../../source/tutorial/tut_main.rst:15
-msgid "_`Example navigation`"
-msgstr "示例导航"
+msgid "_`Data access and processing`"
+msgstr ""
 
 #: ../../source/tutorial/tut_main.rst:17
 msgid ""
-"Gallery of examples on various scientific computing fields, with scopes "
-"from theoretical simulation to practical application."
+"This collection of tutorials provides foundational guidance on managing, "
+"transforming, and preparing data for biomedical and imaging workflows.  "
+"Topics include efficient data inflow strategies, format conversion "
+"techniques, specialized handling of DICOM metadata, and practical methods"
+" for data augmentation to enhance dataset utility. Explore these guides "
+"to streamline data workflows, ensure compatibility across tools, and "
+"optimize inputs for downstream analysis or machine learning applications."
 msgstr ""
-"各种科学计算领域的案例教程，"
-"涉及范围从理论层面模拟、到实践应用展示。"
+
+#: ../../source/tutorial/tut_main.rst:31
+msgid "_`Edge devices and self-adaption AI`"
+msgstr ""
+
+#: ../../source/tutorial/tut_main.rst:33
+msgid ""
+"These tutorials explore how intelligent edge systems unify streaming "
+"data, edge computing, and adaptive machine learning to enable self-"
+"improving AI in resource-constrained environments. Learn to process raw "
+"data streams locally into real-time insights—eliminating cloud "
+"dependency—while addressing hardware limits, dynamic data shifts, and "
+"privacy risks. Through real-world examples, explore systems where AI "
+"models improve themselves using live data—without sacrificing speed, "
+"precision, or edge-device performance."
+msgstr ""
 
 #: ../../source/tutorial/tut_main.rst
 msgid "Authors"
 msgstr "译者"
 
-#: ../../source/tutorial/tut_main.rst:29
+#: ../../source/tutorial/tut_main.rst:45
 msgid "Chen Zhang"
 msgstr "Chen Zhang, `Marin <381017759@qq.com>`_ "
 
@@ -80,15 +107,28 @@ msgstr "Chen Zhang, `Marin <381017759@qq.com>`_ "
 msgid "Version"
 msgstr "版本"
 
-#: ../../source/tutorial/tut_main.rst:30
-msgid "0.0.4"
+#: ../../source/tutorial/tut_main.rst:46
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/tutorial/tut_main.rst
 msgid "|create|"
 msgstr "创建于"
 
-#: ../../source/tutorial/tut_main.rst:31
+#: ../../source/tutorial/tut_main.rst:47
 msgid "Jan 2, 2024"
 msgstr "2024年1月2日"
+
+#~ msgid "_`Example navigation`"
+#~ msgstr "示例导航"
+
+#~ msgid ""
+#~ "Gallery of examples on various "
+#~ "scientific computing fields, with scopes "
+#~ "from theoretical simulation to practical "
+#~ "application."
+#~ msgstr "各种科学计算领域的案例教程，涉及范围从理论层面模拟、到实践应用展示。"
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

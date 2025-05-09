@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.6rc0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-09 22:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/tutorial/tut_edge.rst:2
+msgid "_`Streaming data, edge computing and online learning`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:6
+msgid ""
+"Streaming data—generated continuously from sensors, :ref:`IoT <IoT>` "
+"devices, and real-time transactions—requires low-latency processing due "
+"to its high velocity and unbounded nature. Edge computing addresses these"
+" demands by decentralizing computation to devices near data sources, "
+"enabling faster response times, reduced cloud dependency, and bandwidth "
+"optimization."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:12
+msgid "_`Edge computing on data stream`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:14
+#, python-format
+msgid ""
+"As a decentralized counterpart to centralized cloud computing, edge "
+"computing enhances data privacy and security by processing information "
+"locally (:numref:`Figure %s <cloud and edge computing>`). This approach "
+"significantly reduces network transmissions, minimizes attack surfaces, "
+"and strengthens defenses against cyber threats. However, despite these "
+"advantages, edge computing's application in streaming data processing "
+"remains constrained by three key factors: limited data throughput, "
+"heterogeneous computational capabilities, and diverse hardware "
+"architectures across edge devices. Addressing these limitations would "
+"enable direct, real-time manipulation of device-generated data streams, "
+"thereby unlocking the full potential of localized artificial intelligence"
+" (AI) for instant decision-making."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:27
+msgid "cloud and edge computing paradigm"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:30
+msgid "_`Incremental online learning and edge AI`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:32
+msgid ""
+"Incremental online learning (IOL) and edge artificial intelligence (Edge "
+"AI) represent a transformative paradigm for deploying adaptive machine "
+"learning models in resource-constrained, latency-sensitive environments. "
+"Unlike traditional cloud-centric approaches reliant on batch training "
+"with static datasets, IOL enables models to update dynamically using "
+"streaming data, while edge AI embeds lightweight inference and training "
+"capabilities directly on edge devices. This synergy addresses critical "
+"challenges in real-time data processing, such as latency reduction, "
+"bandwidth optimization, and privacy preservation."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:39
+#, python-format
+msgid ""
+"The interplay among streaming data, edge computing, and online learning "
+"is schematically depicted in :numref:`Figure %s <streaming data for edge "
+"computing>`. This framework highlights how edge-deployed AI models aim to"
+" balance two critical objectives: (1) efficient utilization of "
+"constrained computational resources (e.g., limited memory, energy "
+"budgets), and (2) real-time responsiveness with self-adaptation to "
+"concept drift (e.g., evolving sensor patterns or environmental dynamics)."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:50
+msgid "streaming data, edge computing and AI"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:53
+msgid "_`Edge intelligence implementation strategies`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:55
+msgid ""
+"Real-world edge intelligence systems rarely rely on a single "
+"technique—they weave together streaming data, adaptive learning, and "
+"hardware-aware optimizations to address domain-specific constraints. We "
+"now dissect three canonical strategies that epitomize how these "
+"components interact, balancing latency, resource efficiency, and privacy."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:60
+msgid "_`Real-time priority system`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:62
+msgid "Latency-sensitive edge systems require:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:64
+msgid "**hard deadlines**: predictable execution windows (20ms-1s)"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:66
+msgid "**guaranteed throughput**: processing rate ≥ peak data ingestion rate"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:68
+msgid ""
+"**decoupled architecture**: isolation between data ingestion/compute "
+"stages"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:70
+msgid ""
+"The template in :numref:`generic latency-sensitive pipe` enforces these "
+"requirements through thread-safe queues and modular processing:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:73
+msgid "generic latency-sensitive pipe"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:86
+msgid ""
+"This pattern's value lies in its field-agnostic structure. The same "
+"queue-driven pipeline can power endoscopic video analysis in surgical "
+"robots, defect detection on manufacturing lines, or obstacle avoidance in"
+" autonomous vehicles—simply by substituting domain-specific "
+":code:`processing` logic and :code:`model` implementations while "
+"retaining the core deadline control mechanism."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:92
+msgid "_`Resource-aware hybrid pipelines`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:96
+msgid ""
+"Balancing immediate inference needs with periodic model refinement "
+"requires hybrid architectures that dynamically allocate resources based "
+"on operational context (e.g., power availability, CPU load). These "
+"pipelines prioritize critical tasks while opportunistically utilizing "
+"idle resources for model improvement. Its technical mechanisms are "
+"generally featured as:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:101
+msgid "**queue prioritization**: split data streams into urgent/non-urgent queues"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:103
+msgid "**dynamic batching**: aggregate training data during low-activity periods"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:105
+msgid ""
+"**power-sensitive scheduling**: trigger model updates only when external "
+"power is available"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:107
+msgid ""
+"The template in :numref:`dynamic priority scheduling` enforces these "
+"requirements through thread-safe queues and modular processing:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:110
+msgid ""
+"The :numref:`dynamic priority scheduling` operationalizes this strategy "
+"through three key components:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:112
+msgid "dynamic priority scheduling"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:132
+msgid ""
+"This pattern’s modular design allows seamless adaptation across domains. "
+"For instance, surgical robots may prioritize real-time tissue "
+"segmentation (:code:`urgent` queue) while deferring post-operative model "
+"updates to charging intervals (:code:`delay` queue). Similarly, smart "
+"home gateways could process security alerts immediately but delay "
+"learning user behavior patterns until nighttime."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:137
+msgid ""
+"By retaining the core mechanisms—priority queues, dynamic batching, and "
+"power-aware triggers—developers need only redefine domain-specific "
+"handlers for urgent tasks, delayed operations, and hardware interfaces, "
+"ensuring adaptability without compromising deterministic execution "
+"guarantees."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:142
+msgid "_`Federated edge adaptation`"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:144
+msgid "Decentralized edge intelligence systems require:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:146
+msgid "**data isolation**: no raw data leaves source devices"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:148
+msgid ""
+"**concept drift resilience**: local adaptation to device-specific data "
+"shifts"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:150
+msgid ""
+"**secure knowledge fusion**: cryptographic aggregation of localized "
+"updates"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:152
+msgid ""
+"The template in :numref:`federated edge system` implements these "
+"requirements through encrypted parameter exchange and localized learning:"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:155
+msgid "federated edge system"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:199
+msgid ""
+"Federated edge adaptation establishes a privacy-preserving framework for "
+"decentralized intelligence systems, where edge devices collaboratively "
+"evolve models without exposing raw data. By enforcing data isolation "
+"through encrypted parameter exchange, enabling concept drift resilience "
+"via localized model adjustments, and ensuring secure knowledge fusion via"
+" cryptographic aggregation, this architecture bridges the gap between "
+"distributed autonomy and collective intelligence. The provided template "
+"supports diverse learning paradigms—from Bayesian updates to online rule "
+"refinement—by decoupling domain-specific implementations (e.g., medical "
+"image analysis, industrial IoT monitoring) from core mechanisms like "
+"drift detection and secure synchronization. This balance of adaptability "
+"and security positions federated edge adaptation as a foundational pillar"
+" for next-generation applications demanding both privacy and real-time "
+"responsiveness."
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:211
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:212
+msgid "0.0.6"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/tutorial/tut_edge.rst:213
+msgid "Apr 26, 2025"
+msgstr ""
+

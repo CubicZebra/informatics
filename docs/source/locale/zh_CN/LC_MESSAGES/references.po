@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/references.rst:2
 msgid "_`References`"
@@ -450,11 +450,58 @@ msgid ""
 "Carlo statistical methods (Vol. 2). New York: Springer."
 msgstr ""
 
+#: ../../source/references.rst:189
+msgid ""
+"_`[Ramirez1991]` Ramirez, D. E., & Jensen, D. R. (1991). Misspecified T2 "
+"tests. II. series expansions. Communications in Statistics - Simulation "
+"and Computation, 97–108. https://doi.org/10.1080/03610919108812941"
+msgstr ""
+
+#: ../../source/references.rst:192
+msgid ""
+"_`[Holst2011]` Holst, E., & Kulahci, M. (2011). Hotelling’s T 2–an "
+"introduction to theory and applications. In 33rd Symposium in Applied "
+"Statistics."
+msgstr ""
+
+#: ../../source/references.rst:195
+msgid ""
+"_`[Hubbard2012]` Hubbard, J. H., & West, B. H. (2012). Differential "
+"equations: a dynamical systems approach: higher-dimensional systems (Vol."
+" 18). Springer Science & Business Media."
+msgstr ""
+
+#: ../../source/references.rst:198
+msgid ""
+"_`[Oinar2023]` Oinar, C., Le, B. M., & Woo, S. S. (2023). Kappaface: "
+"adaptive additive angular margin loss for deep face recognition. IEEE "
+"Access."
+msgstr ""
+
+#: ../../source/references.rst:201
+msgid ""
+"_`[Bayes1958]` Bayes, T. (1958). An essay towards solving a problem in "
+"the doctrine of chances. Biometrika, 45(3-4), 296-315."
+msgstr ""
+
+#: ../../source/references.rst:204
+msgid ""
+"_`[Glüsenkamp]` Glüsenkamp, T. (2018). Probabilistic treatment of the "
+"uncertainty from the finite size of weighted Monte Carlo data. The "
+"European Physical Journal Plus, 133(6), 218."
+msgstr ""
+
+#: ../../source/references.rst:207
+msgid ""
+"_`[Higham2002]` Higham, N. J. (2002). Accuracy and stability of numerical"
+" algorithms. Society for industrial and applied mathematics."
+msgstr ""
+
 #: ../../source/references.rst
 msgid "Authors"
 msgstr "译者"
 
-#: ../../source/references.rst:191
+#: ../../source/references.rst:212
 msgid "Chen Zhang"
 msgstr ""
 
@@ -462,15 +509,18 @@ msgstr ""
 msgid "Version"
 msgstr "版本"
 
-#: ../../source/references.rst:192
-msgid "0.0.4"
+#: ../../source/references.rst:213
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/references.rst
 msgid "|create|"
 msgstr "创建于"
 
-#: ../../source/references.rst:193
+#: ../../source/references.rst:214
 msgid "May 8, 2023"
 msgstr "2023年5月8日"
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

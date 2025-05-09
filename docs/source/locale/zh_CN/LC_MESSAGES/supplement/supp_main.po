@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/supplement/supp_main.rst:9
 msgid "Math symbols and abbreviations"
@@ -44,15 +44,24 @@ msgstr "数理统计"
 msgid "Monte Carlo method"
 msgstr "蒙特卡罗方法"
 
-#: ../../source/supplement/supp_main.rst:33
+#: ../../source/supplement/supp_main.rst:19
+#, fuzzy
+msgid "Bayesian statistics"
+msgstr "数理统计"
+
+#: ../../source/supplement/supp_main.rst:34
 msgid "Feature capturing"
 msgstr "特征捕获"
 
-#: ../../source/supplement/supp_main.rst:42
+#: ../../source/supplement/supp_main.rst:34
+msgid "Anomaly and change"
+msgstr ""
+
+#: ../../source/supplement/supp_main.rst:44
 msgid "Functional programming primer"
 msgstr "函数式编程入门"
 
-#: ../../source/supplement/supp_main.rst:42
+#: ../../source/supplement/supp_main.rst:44
 msgid "Basic concepts in informatics"
 msgstr "informatics基础概念"
 
@@ -68,8 +77,7 @@ msgstr "命名法"
 msgid ""
 "Collection of mathematical notations and abbreviations in this "
 "documentation."
-msgstr ""
-"本文档中所使用数学符号及简写的集合。"
+msgstr "本文档中所使用数学符号及简写的集合。"
 
 #: ../../source/supplement/supp_main.rst:13
 msgid "_`Data science essentials`"
@@ -83,41 +91,37 @@ msgid ""
 ":ref:`[MacCrimmon1968, <[MacCrimmon1968]>` :ref:`Slovic1977, "
 "<[Slovic1977]>` :ref:`Nelder1990] <[Nelder1990]>`."
 msgstr ""
-"多元统计分析基础。可应用于统计学算法、数据挖掘、决策理论、"
-"自动化、及\ :ref:`人工智能 <AI>`\ 系统的分析学基础概念"
-"\ :ref:`[MacCrimmon1968, <[MacCrimmon1968]>`\ :ref:`Slovic1977, <[Slovic1977]>`\ :ref:`Nelder1990] <[Nelder1990]>`\ 。"
+"多元统计分析基础。可应用于统计学算法、数据挖掘、决策理论、自动化、及\\ :ref:`人工智能 <AI>`\\ 系统的分析学基础概念\\ "
+":ref:`[MacCrimmon1968, <[MacCrimmon1968]>`\\ :ref:`Slovic1977, "
+"<[Slovic1977]>`\\ :ref:`Nelder1990] <[Nelder1990]>`\\ 。"
 
-#: ../../source/supplement/supp_main.rst:28
+#: ../../source/supplement/supp_main.rst:29
 msgid "_`Scientific calculation essentials`"
 msgstr "科学计算基础"
 
-#: ../../source/supplement/supp_main.rst:30
+#: ../../source/supplement/supp_main.rst:31
 msgid ""
 "Essentials of scientific calculation from principle to implementation. "
 "Basic technical foundations to construct functions for data pre- and "
 "post-processing, modality transition, applying statistics, and etc."
-msgstr ""
-"科学计算从基本原理到应用实现。本篇目是构建数据前后处理、"
-"模态转换、统计应用等功能的技术基础。"
+msgstr "科学计算从基本原理到应用实现。本篇目是构建数据前后处理、模态转换、统计应用等功能的技术基础。"
 
-#: ../../source/supplement/supp_main.rst:37
+#: ../../source/supplement/supp_main.rst:39
 msgid "_`Informatics essentials`"
 msgstr "informatics基础"
 
-#: ../../source/supplement/supp_main.rst:39
+#: ../../source/supplement/supp_main.rst:41
 msgid ""
 "Essentials of functional programming and computing flow control in "
 "informatics. The indispensable concepts for building functional units and"
 " pipelines via informatics."
-msgstr ""
-"informatics中关于函数式编程和计算流程控制的基础。"
-"通过informatics构建函数单元和管道的必不可少的概念。"
+msgstr "informatics中关于函数式编程和计算流程控制的基础。通过informatics构建函数单元和管道的必不可少的概念。"
 
 #: ../../source/supplement/supp_main.rst
 msgid "Authors"
 msgstr "译者"
 
-#: ../../source/supplement/supp_main.rst:48
+#: ../../source/supplement/supp_main.rst:50
 msgid "Chen Zhang"
 msgstr ""
 
@@ -125,15 +129,18 @@ msgstr ""
 msgid "Version"
 msgstr "版本"
 
-#: ../../source/supplement/supp_main.rst:49
-msgid "0.0.4"
+#: ../../source/supplement/supp_main.rst:51
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/supplement/supp_main.rst
 msgid "|create|"
 msgstr "创建于"
 
-#: ../../source/supplement/supp_main.rst:50
+#: ../../source/supplement/supp_main.rst:52
 msgid "Apr 26, 2023"
 msgstr "2023年4月26日"
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 

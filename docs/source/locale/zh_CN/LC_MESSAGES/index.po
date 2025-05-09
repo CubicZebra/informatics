@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 18:16+0800\n"
+"POT-Creation-Date: 2025-05-09 22:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../source/index.rst:22
 msgid "Home"
@@ -32,37 +32,31 @@ msgstr "informatics项目欢迎文档！"
 msgid ""
 "**informatics** is a fast construction utility for scientific computation"
 " pipeline in Python. With this project we aim to establish:"
-msgstr ""
-"\ **informatics**\ 是Python中用于快速构建科学计算管道的实用程序。"
-"通过这个项目，我们的目标是建立："
+msgstr "\\ **informatics**\\ 是Python中用于快速构建科学计算管道的实用程序。通过这个项目，我们的目标是建立："
 
 #: ../../source/index.rst:7
 msgid ""
 "a generic and prototypical AI development-oriented tool-kit for "
 "scientific computation, analytics, and data visualization;"
-msgstr ""
-"用于科学计算、分析和数据可视化的通用原型人工智能开发工具包；"
+msgstr "用于科学计算、分析和数据可视化的通用原型人工智能开发工具包；"
 
 #: ../../source/index.rst:10
 msgid ""
 "an uniform protocol for packaging abstract data processing flow, in order"
 " to integrating workflows from varying code styles;"
-msgstr ""
-"统一的抽象数据处理流封装协议，以便对来自不同代码风格的工作流进行集成；"
+msgstr "统一的抽象数据处理流封装协议，以便对来自不同代码风格的工作流进行集成；"
 
 #: ../../source/index.rst:13
 msgid ""
 "the tutorial materials about numerical computation and mathematical "
 "modeling on essential principles, and programming practices."
-msgstr ""
-"关于数值计算、统计建模相关基本原理及编程实践的参考资料；"
+msgstr "关于数值计算、统计建模相关基本原理及编程实践的参考资料；"
 
 #: ../../source/index.rst:16
 msgid ""
 "The data to be supported mainly with this platform, targeted for but not "
 "limited to `numpy <https://numpy.org/>`_ array."
-msgstr ""
-"该平台所支持的主要数据形式，针对但不限于\ `numpy <https://numpy.org/>`_\ 数组。"
+msgstr "该平台所支持的主要数据形式，针对但不限于\\ `numpy <https://numpy.org/>`_\\ 数组。"
 
 #: ../../source/index.rst:20
 msgid "_`Table of Contents`"
@@ -81,7 +75,7 @@ msgid "Version"
 msgstr "版本"
 
 #: ../../source/index.rst:38
-msgid "0.0.4"
+msgid "0.0.5"
 msgstr ""
 
 #: ../../source/index.rst
@@ -91,4 +85,7 @@ msgstr "创建于"
 #: ../../source/index.rst:39
 msgid "Apr 25, 2023"
 msgstr "2023年4月25日"
+
+#~ msgid "0.0.4"
+#~ msgstr ""
 
