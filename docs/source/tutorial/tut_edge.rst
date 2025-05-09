@@ -149,7 +149,7 @@ Decentralized edge intelligence systems require:
 
 - **secure knowledge fusion**: cryptographic aggregation of localized updates
 
-The template in :numref:`federated-edge-pipeline` implements these requirements through encrypted parameter exchange
+The template in :numref:`federated edge system` implements these requirements through encrypted parameter exchange
 and localized learning:
 
 .. code-block:: python
