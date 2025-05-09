@@ -11,11 +11,14 @@ Collection for concept and practice for Python in functional programming.
    Pipelining data process <tut_pipe>
    :maxdepth: 2
 
-_`Example navigation`
----------------------
+_`Data access and processing`
+-----------------------------
 
-Gallery of examples on various scientific computing fields, with scopes from theoretical simulation to
-practical application.
+This collection of tutorials provides foundational guidance on managing, transforming, and preparing data for
+biomedical and imaging workflows.  Topics include efficient data inflow strategies, format conversion techniques,
+specialized handling of DICOM metadata, and practical methods for data augmentation to enhance dataset utility.
+Explore these guides to streamline data workflows, ensure compatibility across tools, and optimize inputs for
+downstream analysis or machine learning applications.
 
 .. toctree::
    Preparing batch processing <tut_inflow>
@@ -27,15 +30,15 @@ practical application.
 _`Edge devices and self-adaption AI`
 ------------------------------------
 
-This tutorial explores how intelligent edge systems unify streaming data, edge computing, and adaptive machine
+These tutorials explore how intelligent edge systems unify streaming data, edge computing, and adaptive machine
 learning to enable self-improving AI in resource-constrained environments. Learn to process raw data streams
 locally into real-time insights—eliminating cloud dependency—while addressing hardware limits, dynamic data shifts,
-and privacy risks.   Through real-world examples, explore systems where AI models improve themselves using live
+and privacy risks. Through real-world examples, explore systems where AI models improve themselves using live
 data—without sacrificing speed, precision, or edge-device performance.
 
 .. toctree::
    From streaming to edge AI <tut_edge>
-   Edge-deployed models <tut_online>
+   Adaptive AI with online learning <tut_online>
 
 ----
 
