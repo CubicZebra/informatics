@@ -115,6 +115,7 @@ The :numref:`dynamic priority scheduling` operationalizes this strategy through 
 
    from queue import Queue
 
+
    urgent, delay, device, model = Queue(maxsize=100), Queue(maxsize=1000), ..., ...
    ...
    while True:

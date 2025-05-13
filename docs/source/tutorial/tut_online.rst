@@ -146,10 +146,48 @@ references for clinical decision-making. In this case, repeated therapies led to
 marrow responses to radiation, challenging the safety and efficacy of conventional radiotherapy. This necessitates
 a more cautious reassessment of therapeutic trade-offs.
 
-_`Style adaptive image segmentation`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_`Personalized adaptive image segmentation`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. demo of info.net.unet here
+Edge medical imaging requires models to self-evolve with anatomical drift. Static segmentation architectures fail to
+track time-dependent tissue variability across patients. Meta U-Net implementations achieve *embedded evolution*
+through dynamic filter calibration continuously adjusting convolutional components using on-device imaging streams.
+This enables medical segmentation pipelines to maintain precision as organ morphology shifts, exemplifying edge
+intelligence's core principle: models as living systems, not frozen artifacts. The
+:numref:`self adaption U-Net for image segmentation` concretes the edge meta AI architecture
+:numref:`dynamic priority scheduling` in medical segmentation model training for patient personalization.
+
+.. code-block:: python
+   :caption: self adaption U-Net for image segmentation
+   :name: self adaption U-Net for image segmentation
+
+   from info.net import unet
+   import os
+
+
+   patient_imgs, patient_segs = ..., ...  # list[img_or_seg_path], pairwise
+   model = unet(mirror_channels=[8, 16, 32], in_dimension=3) if not os.path.exists(_m := 'patient_seg') else load(_m)
+   while True:
+
+       ...  # some AI-assistant application here
+
+       if device.in_idle():
+           with model.infer_session() as md:
+               dice = md.score(train=(img_loader(_) for _ in patient_imgs),
+                               target=(img_loader(_) for _ in patient_segs))
+           if dice > thre:
+               with model.train_session() as md:
+                   md.solve(train=(img_loader(_) for _ in patient_imgs),
+                            target=(img_loader(_) for _ in patient_segs),
+                            stop_conditions={'loss': thre})
+
+This self-adaptive architecture demonstrates how edge-native online learning mechanisms transform static models into
+computational organisms. By selectively activating parameter updates during device idle cycles, the system achieves
+two symbiotic objectives: (1) real-time adaptation to anatomical shifts through dynamic filter recalibration, while
+(2) preserving computational resources via threshold-controlled training triggers. The :code:`dice > thre` condition
+embodies edge intelligence's essential trade-off: evolving only when environmental changes threaten operational
+validity. Such implementations prove that medical AI need not choose between generalization and personalization when
+models architecturally embrace perpetual metamorphosis.
 
 ----
 
