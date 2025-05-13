@@ -146,8 +146,10 @@ references for clinical decision-making. In this case, repeated therapies led to
 marrow responses to radiation, challenging the safety and efficacy of conventional radiotherapy. This necessitates
 a more cautious reassessment of therapeutic trade-offs.
 
-_``
-~~~~~~
+_`Style adaptive image segmentation`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. demo of info.net.unet here
 
 ----
 
