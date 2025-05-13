@@ -136,7 +136,7 @@ treatment modalities.
 
 .. figure:: https://github.com/user-attachments/assets/601e7429-2557-48a8-afb8-f68157ff11b9
    :name: visualization for Bayesian precision radiotherapy
-   :width: 600
+   :width: 750
    :align: center
 
    Bayesian precision radiotherapy
