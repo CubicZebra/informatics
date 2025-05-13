@@ -16,6 +16,8 @@ _`API reference`
 
 * :ref:`Statistical and machine learning <Modules for learning>`
 
+* :ref:`Optional branch of neural networks <Option networks>`
+
 * :ref:`Optional branch of data visualization <Option visualization>`
 
 * :ref:`Optional branch of data organization in medical fields <Option digitmed>`
@@ -33,6 +35,7 @@ _`API reference`
    api_tensor
    api_ana
    api_learn
+   api_network
    api_visual
    api_medical
    api_instance
