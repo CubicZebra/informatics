@@ -45,12 +45,12 @@ msgid "Applying data augmentation"
 msgstr "应用数据增强"
 
 #: ../../source/tutorial/tut_main.rst:39
-msgid "From streaming to edge AI"
-msgstr ""
+msgid "From streaming data to edge AI"
+msgstr "从流式数据到边缘人工智能"
 
 #: ../../source/tutorial/tut_main.rst:39
 msgid "Adaptive AI with online learning"
-msgstr ""
+msgstr "自适应人工智能与在线学习"
 
 #: ../../source/tutorial/tut_main.rst:2
 msgid "_`Tutorials`"
@@ -66,7 +66,7 @@ msgstr "Python函数式编程相关概念与工程实践的集合。"
 
 #: ../../source/tutorial/tut_main.rst:15
 msgid "_`Data access and processing`"
-msgstr ""
+msgstr "数据访问与处理"
 
 #: ../../source/tutorial/tut_main.rst:17
 msgid ""
@@ -77,11 +77,11 @@ msgid ""
 " for data augmentation to enhance dataset utility. Explore these guides "
 "to streamline data workflows, ensure compatibility across tools, and "
 "optimize inputs for downstream analysis or machine learning applications."
-msgstr ""
+msgstr "本教程集为生物医学及影像工作流程的数据管理提供了基础指导，涵盖数据高效管理、格式转换与预处理等关键环节。重点内容包括：优化数据流入策略、实现跨格式数据转换、DICOM元数据的专业化处理，以及提升数据集实用性的数据增强技术。通过探索这些指南，您将能够优化数据工作流程，确保工具链兼容性，并为下游分析或机器学习应用提供最优化的数据输入。"
 
 #: ../../source/tutorial/tut_main.rst:31
 msgid "_`Edge devices and self-adaption AI`"
-msgstr ""
+msgstr "边缘设备和自适应人工智能"
 
 #: ../../source/tutorial/tut_main.rst:33
 msgid ""
@@ -93,7 +93,7 @@ msgid ""
 "privacy risks. Through real-world examples, explore systems where AI "
 "models improve themselves using live data—without sacrificing speed, "
 "precision, or edge-device performance."
-msgstr ""
+msgstr "本教程集合深入探讨智能边缘系统如何整合流式数据处理、边缘计算与自适应机器学习技术，在资源受限环境中实现自主进化的AI系统。您将学习如何通过本地化处理原始数据流生成实时洞见（摆脱对云端计算的依赖），同时解决硬件资源限制、动态数据变化和隐私风险等核心挑战。通过实际案例，探索AI模型如何在保持推理速度、预测精度和设备性能的前提下，借助实时流数据实现自我迭代优化的创新系统架构。"
 
 #: ../../source/tutorial/tut_main.rst
 msgid "Authors"

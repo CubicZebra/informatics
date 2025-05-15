@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 22:42+0800\n"
+"POT-Creation-Date: 2025-05-15 16:30+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
@@ -324,11 +324,15 @@ msgstr "_`ANN`\\ ：人工神经网络"
 msgid "_`IoT`: Internet of Things"
 msgstr ""
 
+#: ../../source/supplement/supp_m1.rst:123
+msgid "_`WHO`: World Health Organization"
+msgstr ""
+
 #: ../../source/supplement/supp_m1.rst
 msgid "Authors"
 msgstr "译者"
 
-#: ../../source/supplement/supp_m1.rst:125
+#: ../../source/supplement/supp_m1.rst:127
 msgid "Chen Zhang"
 msgstr ""
 
@@ -336,7 +340,7 @@ msgstr ""
 msgid "Version"
 msgstr "版本"
 
-#: ../../source/supplement/supp_m1.rst:126
+#: ../../source/supplement/supp_m1.rst:128
 msgid "0.0.5"
 msgstr ""
 
@@ -344,7 +348,7 @@ msgstr ""
 msgid "|create|"
 msgstr "创建于"
 
-#: ../../source/supplement/supp_m1.rst:127
+#: ../../source/supplement/supp_m1.rst:129
 msgid "Jul 19, 2023"
 msgstr "2023年7月19日"
 

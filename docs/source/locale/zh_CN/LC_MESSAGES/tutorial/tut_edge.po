@@ -2,18 +2,18 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.6rc0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 22:46+0800\n"
+"POT-Creation-Date: 2025-05-15 18:20+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_edge.rst:2
 msgid "_`Streaming data, edge computing and online learning`"
-msgstr ""
+msgstr "流式数据、边缘计算与在线学习"
 
 #: ../../source/tutorial/tut_edge.rst:6
 msgid ""
@@ -33,10 +33,12 @@ msgid ""
 "enabling faster response times, reduced cloud dependency, and bandwidth "
 "optimization."
 msgstr ""
+"流式数据（从传感器、\\ :ref:`IoT设备 <IoT>`\\ "
+"和实时交易持续生成）具有高速无界特性，需低延迟处理。边缘计算通过将算力分散至数据源头附近设备，实现快速响应、降低云依赖并优化带宽。"
 
 #: ../../source/tutorial/tut_edge.rst:12
 msgid "_`Edge computing on data stream`"
-msgstr ""
+msgstr "数据流的边缘计算"
 
 #: ../../source/tutorial/tut_edge.rst:14
 #, python-format
@@ -54,14 +56,17 @@ msgid ""
 "thereby unlocking the full potential of localized artificial intelligence"
 " (AI) for instant decision-making."
 msgstr ""
+"作为集中式云计算的分布式替代方案，边缘计算通过本地化处理信息提升数据隐私与安全性（见\\ :numref:`图 %s <cloud and "
+"edge computing>`\\ "
+"）。该方法显著减少网络传输、最小化攻击面并增强网络威胁防御。然而，边缘计算在流式数据处理中的应用仍受三大因素制约：有限数据吞吐量、异构计算能力及边缘设备多样化硬件架构。突破这些限制可实现设备生成数据流的直接实时操控，释放本地化AI即时决策的全部潜能。"
 
 #: ../../source/tutorial/tut_edge.rst:27
 msgid "cloud and edge computing paradigm"
-msgstr ""
+msgstr "云计算与边缘计算范式"
 
 #: ../../source/tutorial/tut_edge.rst:30
 msgid "_`Incremental online learning and edge AI`"
-msgstr ""
+msgstr "增量在线学习与边缘人工智能"
 
 #: ../../source/tutorial/tut_edge.rst:32
 msgid ""
@@ -74,7 +79,7 @@ msgid ""
 "capabilities directly on edge devices. This synergy addresses critical "
 "challenges in real-time data processing, such as latency reduction, "
 "bandwidth optimization, and privacy preservation."
-msgstr ""
+msgstr "增量在线学习（IOL）与边缘人工智能（边缘AI）为资源受限、时敏环境中部署自适应机器学习模型提供了变革范式。不同于依赖静态数据集批量训练的传统云中心方法，IOL使模型能利用流式数据动态更新，而边缘AI将轻量级推理与训练能力直接嵌入边缘设备。这种协同效应解决了实时数据处理中的关键挑战：降低延迟、优化带宽、保护隐私。"
 
 #: ../../source/tutorial/tut_edge.rst:39
 #, python-format
@@ -87,14 +92,17 @@ msgid ""
 "budgets), and (2) real-time responsiveness with self-adaptation to "
 "concept drift (e.g., evolving sensor patterns or environmental dynamics)."
 msgstr ""
+"流式数据、边缘计算与在线学习的交互关系如\\ :numref:`图 %s <streaming data for edge "
+"computing>`\\ "
+"所示。该框架强调边缘部署AI模型需平衡两大目标：(1)受限计算资源的高效利用（如有限内存、能源预算）；(2)实时响应与概念漂移自适应性（如传感器模式演变或环境动态变化）。"
 
 #: ../../source/tutorial/tut_edge.rst:50
 msgid "streaming data, edge computing and AI"
-msgstr ""
+msgstr "流式数据、边缘计算与AI协同架构"
 
 #: ../../source/tutorial/tut_edge.rst:53
 msgid "_`Edge intelligence implementation strategies`"
-msgstr ""
+msgstr "边缘智能实施策略"
 
 #: ../../source/tutorial/tut_edge.rst:55
 msgid ""
@@ -103,39 +111,41 @@ msgid ""
 "hardware-aware optimizations to address domain-specific constraints. We "
 "now dissect three canonical strategies that epitomize how these "
 "components interact, balancing latency, resource efficiency, and privacy."
-msgstr ""
+msgstr "实际边缘智能系统通常融合流式数据、自适应学习与硬件感知优化来应对领域特定约束。以下剖析三种典型策略，展示如何平衡时延、资源效率与隐私。"
 
 #: ../../source/tutorial/tut_edge.rst:60
 msgid "_`Real-time priority system`"
-msgstr ""
+msgstr "实时优先级系统"
 
 #: ../../source/tutorial/tut_edge.rst:62
 msgid "Latency-sensitive edge systems require:"
-msgstr ""
+msgstr "时敏边缘系统需满足："
 
 #: ../../source/tutorial/tut_edge.rst:64
 msgid "**hard deadlines**: predictable execution windows (20ms-1s)"
-msgstr ""
+msgstr "\\ **硬性时限**\\ ：可预测执行窗口（20ms-1s）"
 
 #: ../../source/tutorial/tut_edge.rst:66
 msgid "**guaranteed throughput**: processing rate ≥ peak data ingestion rate"
-msgstr ""
+msgstr "\\ **吞吐保障**\\ ：处理速率≥数据摄入峰值"
 
 #: ../../source/tutorial/tut_edge.rst:68
 msgid ""
 "**decoupled architecture**: isolation between data ingestion/compute "
 "stages"
-msgstr ""
+msgstr "\\ **解耦架构**\\ ：数据摄入与计算阶段隔离"
 
 #: ../../source/tutorial/tut_edge.rst:70
 msgid ""
 "The template in :numref:`generic latency-sensitive pipe` enforces these "
 "requirements through thread-safe queues and modular processing:"
 msgstr ""
+"\\ :numref:`代码 %s <generic latency-sensitive pipe>`\\ "
+"通过线程安全队列与模块化处理实现上述要求："
 
 #: ../../source/tutorial/tut_edge.rst:73
 msgid "generic latency-sensitive pipe"
-msgstr ""
+msgstr "通用时敏处理管道"
 
 #: ../../source/tutorial/tut_edge.rst:86
 msgid ""
@@ -146,10 +156,12 @@ msgid ""
 ":code:`processing` logic and :code:`model` implementations while "
 "retaining the core deadline control mechanism."
 msgstr ""
+"该模式价值在于领域无关性。同一队列驱动管道可支撑手术机器人内窥镜视频分析、产线缺陷检测或自动驾驶避障——只需替换领域特定的\\ "
+":code:`processing`\\ 逻辑与\\ :code:`model`\\ 实现，同时保留核心时限控制机制。"
 
 #: ../../source/tutorial/tut_edge.rst:92
 msgid "_`Resource-aware hybrid pipelines`"
-msgstr ""
+msgstr "资源感知混合管道"
 
 #: ../../source/tutorial/tut_edge.rst:96
 msgid ""
@@ -159,39 +171,35 @@ msgid ""
 "pipelines prioritize critical tasks while opportunistically utilizing "
 "idle resources for model improvement. Its technical mechanisms are "
 "generally featured as:"
-msgstr ""
+msgstr "平衡即时推理需求与周期性模型优化，需构建能根据运行上下文（如供电状态、CPU负载）动态分配资源的混合架构。这类管道优先处理关键任务，并利用空闲资源进行模型改进。其技术特征通常包括："
 
 #: ../../source/tutorial/tut_edge.rst:101
 msgid "**queue prioritization**: split data streams into urgent/non-urgent queues"
-msgstr ""
+msgstr "\\ **队列优先级划分**\\ ：将数据流分为紧急/非紧急队列"
 
 #: ../../source/tutorial/tut_edge.rst:103
 msgid "**dynamic batching**: aggregate training data during low-activity periods"
-msgstr ""
+msgstr "\\ **动态批处理**\\ ：在低活跃期聚合训练数据"
 
 #: ../../source/tutorial/tut_edge.rst:105
 msgid ""
 "**power-sensitive scheduling**: trigger model updates only when external "
 "power is available"
-msgstr ""
+msgstr "\\ **电源敏感调度**\\ ：仅在外接电源时触发模型更新"
 
 #: ../../source/tutorial/tut_edge.rst:107
 msgid ""
 "The template in :numref:`dynamic priority scheduling` enforces these "
 "requirements through thread-safe queues and modular processing:"
 msgstr ""
+"\\ :numref:`代码 %s <dynamic priority scheduling>`\\ "
+"通过线程安全队列和模块化处理来强制执行这些要求："
 
 #: ../../source/tutorial/tut_edge.rst:110
-msgid ""
-"The :numref:`dynamic priority scheduling` operationalizes this strategy "
-"through three key components:"
-msgstr ""
-
-#: ../../source/tutorial/tut_edge.rst:112
 msgid "dynamic priority scheduling"
-msgstr ""
+msgstr "动态优先级调度"
 
-#: ../../source/tutorial/tut_edge.rst:132
+#: ../../source/tutorial/tut_edge.rst:131
 msgid ""
 "This pattern’s modular design allows seamless adaptation across domains. "
 "For instance, surgical robots may prioritize real-time tissue "
@@ -200,51 +208,54 @@ msgid ""
 "home gateways could process security alerts immediately but delay "
 "learning user behavior patterns until nighttime."
 msgstr ""
+"该模块化设计同样也支持跨领域无缝适配。例如手术机器人可优先处理实时组织分割（\\ :code:`urgent`\\ "
+"队列），将术后模型更新推迟至充电时段（\\ :code:`delay`\\ "
+"队列）；智能家居网关可即时处理安全警报，但延迟学习用户行为模式至夜间。开发者只需重定义紧急任务、延迟操作与硬件接口的领域特定处理器，即可保持核心机制（优先级队列、动态批处理、电源感知触发器）不变，确保适应性同时不破坏确定性执行保证。"
 
-#: ../../source/tutorial/tut_edge.rst:137
+#: ../../source/tutorial/tut_edge.rst:136
 msgid ""
 "By retaining the core mechanisms—priority queues, dynamic batching, and "
 "power-aware triggers—developers need only redefine domain-specific "
 "handlers for urgent tasks, delayed operations, and hardware interfaces, "
 "ensuring adaptability without compromising deterministic execution "
 "guarantees."
-msgstr ""
+msgstr "通过保留核心机制——优先级队列、动态批处理与电源感知触发器——开发者只需针对紧急任务、延迟操作及硬件接口重定义领域特定的处理器，从而在确保系统适应性的同时，不破坏确定性执行的保障。"
 
-#: ../../source/tutorial/tut_edge.rst:142
+#: ../../source/tutorial/tut_edge.rst:141
 msgid "_`Federated edge adaptation`"
-msgstr ""
+msgstr "联邦边缘自适应"
 
-#: ../../source/tutorial/tut_edge.rst:144
+#: ../../source/tutorial/tut_edge.rst:143
 msgid "Decentralized edge intelligence systems require:"
-msgstr ""
+msgstr "分布式边缘智能系统需满足："
 
-#: ../../source/tutorial/tut_edge.rst:146
+#: ../../source/tutorial/tut_edge.rst:145
 msgid "**data isolation**: no raw data leaves source devices"
-msgstr ""
+msgstr "\\ **数据隔离**\\ ：原始数据不离开源设备"
 
-#: ../../source/tutorial/tut_edge.rst:148
+#: ../../source/tutorial/tut_edge.rst:147
 msgid ""
 "**concept drift resilience**: local adaptation to device-specific data "
 "shifts"
-msgstr ""
+msgstr "\\ **概念漂移韧性**\\ ：本地适应设备特定数据变化"
 
-#: ../../source/tutorial/tut_edge.rst:150
+#: ../../source/tutorial/tut_edge.rst:149
 msgid ""
 "**secure knowledge fusion**: cryptographic aggregation of localized "
 "updates"
-msgstr ""
+msgstr "\\ **安全知识融合**\\ ：加密聚合本地化更新"
 
-#: ../../source/tutorial/tut_edge.rst:152
+#: ../../source/tutorial/tut_edge.rst:151
 msgid ""
 "The template in :numref:`federated edge system` implements these "
 "requirements through encrypted parameter exchange and localized learning:"
-msgstr ""
+msgstr "\\ :numref:`代码 %s <federated edge system>`\\ 通过加密参数交换与本地化学习实现这些要求："
 
-#: ../../source/tutorial/tut_edge.rst:155
+#: ../../source/tutorial/tut_edge.rst:154
 msgid "federated edge system"
-msgstr ""
+msgstr "联邦边缘系统框架"
 
-#: ../../source/tutorial/tut_edge.rst:199
+#: ../../source/tutorial/tut_edge.rst:198
 msgid ""
 "Federated edge adaptation establishes a privacy-preserving framework for "
 "decentralized intelligence systems, where edge devices collaboratively "
@@ -260,29 +271,35 @@ msgid ""
 "and security positions federated edge adaptation as a foundational pillar"
 " for next-generation applications demanding both privacy and real-time "
 "responsiveness."
-msgstr ""
+msgstr "联邦边缘自适应建立了去中心化智能系统的隐私保护框架，使边缘设备能协作进化模型而不暴露原始数据。通过加密参数交换实施数据隔离，通过本地化模型调整实现概念漂移韧性，通过加密聚合确保安全知识融合，该架构在分布式自治与集体智能间架起桥梁。所提供模板支持多样化学习范式（从贝叶斯更新到在线规则优化），将领域特定实现（如医学影像分析、工业物联网监测）与漂移检测、安全同步等核心机制解耦。这种适应性与安全性的平衡，使联邦边缘自适应成为新一代隐私与实时响应双重要求应用的基石。"
 
 #: ../../source/tutorial/tut_edge.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
-#: ../../source/tutorial/tut_edge.rst:211
+#: ../../source/tutorial/tut_edge.rst:210
 msgid "Chen Zhang"
 msgstr ""
 
 #: ../../source/tutorial/tut_edge.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
-#: ../../source/tutorial/tut_edge.rst:212
+#: ../../source/tutorial/tut_edge.rst:211
 msgid "0.0.6"
 msgstr ""
 
 #: ../../source/tutorial/tut_edge.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
-#: ../../source/tutorial/tut_edge.rst:213
+#: ../../source/tutorial/tut_edge.rst:212
 msgid "Apr 26, 2025"
-msgstr ""
+msgstr "2025年4月26日"
+
+#~ msgid ""
+#~ "The :numref:`dynamic priority scheduling` "
+#~ "operationalizes this strategy through three"
+#~ " key components:"
+#~ msgstr "\\ :numref:`代码 %s <dynamic priority scheduling>`\\ 通过三大核心组件实施该策略："
 

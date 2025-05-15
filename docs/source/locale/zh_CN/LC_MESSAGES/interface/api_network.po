@@ -1,0 +1,587 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Chen Zhang
+# This file is distributed under the same license as the informatics
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: informatics 0.0.6rc0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-15 16:30+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/interface/api_network.rst:2
+msgid "_`Option networks`"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:7
+msgid "Description"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:9
+msgid ""
+"Neural networks related tool-chain and conventional implementation via "
+"meta programming. For normal use, the dependency of `PyTorch "
+"<https://pytorch.org/>`_ is required."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:12
+msgid ""
+"Namespace of this module is mainly in ``info.toolbox.networks``. For "
+"convenience in practice, use main entry of ``info.net``."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ":py:obj:`Module <info.docfunc.Module>`"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ""
+"a flexible neural network base class with enhanced training/inference "
+"capabilities."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ":py:obj:`full_connected_neural <info.docfunc.full_connected_neural>`"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ""
+"a configurable fully connected neural network module with flexible "
+"architecture options."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ":py:obj:`convolutional_neural <info.docfunc.convolutional_neural>`"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ""
+"a configurable convolutional neural network (CNN) module with flexible "
+"architecture."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ":py:obj:`unet <info.docfunc.unet>`"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ""
+"a configurable U-Net architecture for semantic segmentation with dynamic "
+"dimensionality support."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ":py:obj:`transformer <info.docfunc.transformer>`"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:23:<autosummary>:1
+msgid ""
+"a highly configurable transformer architecture supporting multiple "
+"attention mechanisms and embedding methods."
+msgstr ""
+
+#: ../../source/interface/api_network.rst:25
+msgid "Docstrings"
+msgstr ""
+
+#: info.docfunc.Module:1 of
+msgid ""
+"a flexible neural network base class with enhanced training/inference "
+"capabilities. this module extends PyTorch's ``nn.Module`` with additional"
+" features including:"
+msgstr ""
+
+#: info.docfunc.Module:4 of
+msgid "configurable training/inference sessions"
+msgstr ""
+
+#: info.docfunc.Module:6 of
+msgid "automatic data type handling"
+msgstr ""
+
+#: info.docfunc.Module:8 of
+msgid "built-in training loop with stopping conditions"
+msgstr ""
+
+#: info.docfunc.Module:10 of
+msgid "support for both regression and classification tasks"
+msgstr ""
+
+#: info.docfunc.Module:12 of
+msgid "generator-based online learning support"
+msgstr ""
+
+#: ../../docstring info.docfunc.Module:18 info.docfunc.convolutional_neural:98
+#: info.docfunc.full_connected_neural:73 info.docfunc.transformer:115
+#: info.docfunc.unet:93 of
+msgid "-- |signature|"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:1 of
+msgid ""
+"a configurable fully connected neural network module with flexible "
+"architecture options. This implementation provides a multi-layer "
+"perceptron (MLP) with customizable layer dimensions, activation "
+"functions, dropout, and data type specifications. The network can be "
+"either statically sized or dynamically initialized with lazy weight "
+"initialization."
+msgstr ""
+
+#: ../../source/interface/api_network.rst
+msgid "参数"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:8 of
+msgid ""
+"list specifying layer dimensions; its first element can be ``None`` to "
+"enable lazy initialization; e.g. ``[None, 256, 128]`` for lazy input or "
+"``[784, 256, 128]`` for fixed input"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:11 of
+msgid ""
+"activation function(s) between layers; can be single function or list per"
+" layer; ``nn.ReLU``, or ``[nn.ReLU, nn.Sigmoid]`` for different "
+"activation per layer;"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:14 of
+msgid "whether to include bias terms in linear layers; ``True`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:15 of
+msgid ""
+"dropout probability (0-1) applied after last hidden layer; ``None`` as "
+"default to disable dropout"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:17 of
+msgid "torch datatype for network parameters; ``'float32'`` as default"
+msgstr ""
+
+#: ../../source/interface/api_network.rst
+msgid "返回"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:18 of
+msgid "a fully connected neural network"
+msgstr ""
+
+#: ../../source/interface/api_network.rst
+msgid "返回类型"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:37
+#: info.docfunc.full_connected_neural:19 info.docfunc.transformer:50
+#: info.docfunc.unet:30 of
+msgid ":py:func:`~info.docfunc.Module`"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:23 of
+msgid "multi neural network"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:50 of
+msgid ""
+"this implementation provides a flexible fully connected network that "
+"supports:"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:52 of
+msgid "both static and dynamic (lazy) input dimension handling"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:54 of
+msgid "per-layer activation function specification"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:56 of
+msgid "configurable precision through dtype options"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:58 of
+msgid "optional dropout regularization"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:60 of
+msgid ""
+"automatic training configuration (SGD optimizer with CrossEntropy loss by"
+" default)"
+msgstr ""
+
+#: ../../docstring info.docfunc.full_connected_neural:62 of
+msgid ""
+"the network uses PyTorch's LazyLinear when input dimension is unspecified"
+" (None), which automatically infers input size during first forward pass."
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:90
+#: info.docfunc.full_connected_neural:67 info.docfunc.unet:87 of
+msgid ":py:class:`~info.docfunc.Module`"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:1 of
+msgid ""
+"a configurable convolutional neural network (CNN) module with flexible "
+"architecture. This framework provides a convolutional neural network "
+"architecture comprising configurable convolutional blocks cascaded with a"
+" multi-stage fully-connected network.  The modular design enables "
+"flexible customization of both feature extraction components "
+"(convolutional operations) and classification modules (MLP layers), "
+"supporting both baseline configurations and application-specific "
+"topological variations through parameterized layer composition."
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:9 of
+msgid "list specifying the number of output channels for each convolutional block"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:10 of
+msgid "list specifying the layer sizes for the final MLP"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:11 of
+msgid "global activation function; ``nn.ReLU`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:12 info.docfunc.unet:9 of
+msgid ""
+"spatial dimension of input; must be ``1``, ``2``, or ``3``; ``2`` as "
+"default to adapt natural images related tasks"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:14 info.docfunc.unet:12 of
+#, python-brace-format
+msgid ""
+"parameter dict containing ``'kernel_size'``, ``'stride'``, ``'padding'`` "
+"or ``'dilation'``; accepted values can be a positive integer (applied to "
+"all dimensions),  or tuple of positive integers specifying per-dimension "
+"values matching the input  data's dimensional structure; "
+"``{'kernel_size': 3, 'stride': 1, 'padding': 1}`` as  default "
+"configuration"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:14 info.docfunc.unet:12 of
+msgid ""
+"parameter dict containing ``'kernel_size'``, ``'stride'``, ``'padding'`` "
+"or ``'dilation'``; accepted values can be a positive integer (applied to "
+"all dimensions),"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:16 info.docfunc.unet:14 of
+#, python-brace-format
+msgid ""
+"or tuple of positive integers specifying per-dimension values matching "
+"the input data's dimensional structure; ``{'kernel_size': 3, 'stride': 1,"
+" 'padding': 1}`` as default configuration"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:19 of
+msgid ""
+"batch normalization configuration; ``None`` as default to disable batch "
+"normalization; if provided, its accepted value should be a dict with "
+"``'eps'``, ``'momentum'``, ``'affine'``, or ``'track_running_state'`` as "
+"keys, and allowable value for its respective key"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:23 info.docfunc.unet:21 of
+msgid ""
+"whether to use pre-activation ordering before convolution; ``False`` as "
+"default"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:24 info.docfunc.unet:22 of
+#, python-brace-format
+msgid ""
+"1-length dict of pooling configuration; key should be one among "
+"``'Max'``, ``'FractionalMax'``, ``'AdaptiveAvg'``, ``'AdaptiveMax'``, "
+"``'Avg'``, ``'LP'``, ``'MaxUn'``, and the value is of the similar form as"
+" the ``conv_kernel`` parameter; ``{'Max': {'kernel_size': 2, 'stride': "
+"2}}`` as default to apply conventional max pooling approach"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:29 info.docfunc.unet:27 of
+msgid "dropout probability from 0 to 1; ``None`` as default to disable dropout"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:30 of
+#, python-brace-format
+msgid ""
+"list of dictionaries to customize each convolutional block's parameters; "
+"each dict can override default conv parameters (from ``activation`` to "
+"``dropout``); ``None`` as default to apply global configuration; e.g., "
+"``[{'pre_activation': True}, {'dropout': 0.4}]`` to specify a two-"
+"convolutional layers with pre-activation the 1st, and 0.4 dropout the 2nd"
+" if the ``conv_structure`` is of ``[16, 32]``"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:36 of
+msgid "a convolutional neural network"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:41 of
+msgid "convolutional neural network"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:75 of
+msgid "this implementation is featured as:"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:77 of
+msgid "dynamic input dimension handling via lazy layers"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:79 of
+msgid "configurable per-block parameters"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:81 of
+msgid "automatic flattening before MLP"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:83 of
+msgid "default Adam optimizer (lr=0.001) and CrossEntropyLoss"
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:85 of
+msgid ""
+"it employs an MLP-based backend implementation, inheriting its most "
+"features such as adaptive capabilities for both classification and "
+"regression tasks."
+msgstr ""
+
+#: ../../docstring info.docfunc.convolutional_neural:92 of
+msgid ":py:class:`~info.docfunc.full_connected_neural`"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:1 of
+msgid ""
+"a configurable U-Net architecture for semantic segmentation with dynamic "
+"dimensionality support. This implementation follows the classic U-Net "
+"encoder-decoder structure with skip connections, while providing "
+"extensive customization options through parameterized components."
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:7 of
+msgid ""
+"channel dimensions for each level of the encoder-decoder blocks; the "
+"decoder path mirrors the encoder channel structure"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:11 of
+msgid ""
+"activation function factory; default uses in-place ReLU for memory "
+"efficiency"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:17 of
+msgid ""
+"batch normalization configuration with optional keys; ``None`` as default"
+" to disable batch normalization; if provided, its accepted value should "
+"be a dict with ``'eps'``, ``'momentum'``, ``'affine'``, or "
+"``'track_running_state'`` as keys, and allowable value for its respective"
+" key"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:28 of
+msgid ""
+"number of output channels; positive integer no greater than ``3``; ``1`` "
+"as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:29 of
+msgid "an U-Net instance"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:34 of
+msgid "U-Net demonstration"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:97 info.docfunc.unet:69 of
+msgid "architectural features:"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:71 of
+msgid "symmetric encoder-decoder structure with skip connection"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:73 of
+msgid "automatic handling of input dimensions (1D/2D/3D)"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:75 of
+msgid "dynamic channel sizing through ``mirrored_channels`` argument"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:77 of
+msgid "lazy initialization for input flexibility"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:79 of
+msgid "nearest-exact interpolation for precise feature map alignment"
+msgstr ""
+
+#: ../../docstring info.docfunc.unet:81 of
+msgid ""
+"default training configuration utilizes Adam optimizer with ``0.001`` "
+"learning rate, and dice loss with ``1e-5`` smoothing factor; if requires "
+"customization, overwrite the ``criterion`` or ``optimizer`` argument when"
+" invoking the train session."
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:1 of
+msgid ""
+"a highly configurable transformer architecture supporting multiple "
+"attention mechanisms and embedding methods. this implementation provides "
+"dynamic dimensionality handling, flexible positional encoding strategies,"
+" and modular attention configurations suitable for sequence-to-sequence "
+"tasks."
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:7 of
+msgid "hidden dimension size, must be positive integer"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:8 of
+msgid ""
+"number of attention heads, positive integer; If unable to precisely "
+"divide ``dimension_model``, this value will be heuristically adjusted"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:10 of
+#, python-brace-format
+msgid ""
+"dictionary specifying input and output vocabulary sizes; ``{'in': 10000, "
+"'out': 8000}`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:12 of
+msgid ""
+"custom embedding functions for input, output, and final layer; acceptable"
+" value is dictionary containing ``'in'``, ``'out'`` and ``'endmost'`` as "
+"keys, and embedding function as their respective value; default "
+"configuration uses ``None`` to automatically initialize the embedding "
+"function"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:22 of
+msgid ""
+"positional encoding method; accept value must be one option among "
+"``'sinusoid'``, ``'trainable'``, ``'relative'``, and ``'rotation'``; "
+"default uses ``'sinusoid'`` for canonical transformer implementation"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:29 of
+#, python-brace-format
+msgid ""
+"configuration dict for positional encoding (method-specific parameters); "
+"default configuration uses ``{'max_length': 5000, 'base': 10000}`` for "
+"``'sinusoid'`` encoding, ``{'max_relative': 3}`` for ``'relative'``, and "
+"``{'theta': 10000.0, 'start_pos': 0}`` for ``'rotation'``"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:33 of
+msgid "dimension of feed forward network; ``2048`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:34 of
+msgid "global activation function; ``torch.nn.ReLU`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:35 of
+msgid ""
+"encoder and decoder layer counts; support unbalanced encode decode "
+"architecture via tuple assignment; e.g., ``(6, 3)`` for unequal encoder "
+"and decoder transformer"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:38 of
+#, python-brace-format
+msgid ""
+"initialization parameters for attention layer; standard configuration "
+"uses ``{'bias': True, 'add_bias_kv': False, 'add_zero_attn': False, "
+"'batch_first': True}``; as for cross attention, the ``'kdim'`` and "
+"``'vdim'`` will be determined by ``dimension_model`` while ``None`` for "
+"self attention in ``'relative'`` and ``'rotation'`` encoding method "
+"(``'sinusoid'`` and ``'trainable'`` will be ``None`` in both self and "
+"cross); ``'dropout'`` will be adjusted from global dropout"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:44 of
+msgid ""
+"configuration passed in attention forward; the standard setting utilizes "
+"``'need_weights'`` as ``True``, ``'attn_mask'`` as ``None``, "
+"``average_attn_weights`` as ``True``, and ``'is_causal'`` as ``False``; "
+"if customized configuration are provided, the values will be overwrote "
+"from default"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:48 of
+msgid "global dropout rate; ``0.1`` as default"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:49 of
+msgid "a Transformer model"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:54 of
+msgid "transformer demonstration"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:99 of
+msgid "flexibility on encoding method options"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:101 of
+msgid "dynamic attention mechanism selection"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:103 of
+msgid "configurable encoder-decoder asymmetry"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:105 of
+msgid "expandability for integrating on-going works"
+msgstr ""
+
+#: ../../docstring info.docfunc.transformer:109 of
+msgid ""
+"`Multi-head Attention "
+"<https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html>`_"
+msgstr ""
+
+#: ../../source/interface/api_network.rst
+msgid "Authors"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:43
+msgid "Chen Zhang"
+msgstr ""
+
+#: ../../source/interface/api_network.rst
+msgid "Version"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:44
+msgid "0.0.6"
+msgstr ""
+
+#: ../../source/interface/api_network.rst
+msgid "|create|"
+msgstr ""
+
+#: ../../source/interface/api_network.rst:45
+msgid "Jun 11, 2025"
+msgstr ""
+

@@ -2,18 +2,18 @@
 # Copyright (C) 2023, Chen Zhang
 # This file is distributed under the same license as the informatics
 # package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+# Chen Zhang <chen.zhang_06sept@foxmail.com>, 2025.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.6rc0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 22:42+0800\n"
+"POT-Creation-Date: 2025-05-15 16:30+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Language: zh_CN\n"
-"Language-Team: zh_CN <LL@li.org>\n"
+"Language-Team: Chen Zhang <chen.zhang_06sept@foxmail.com>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../source/tutorial/tut_online.rst:2
 msgid "_`Adaptive AI with online learning`"
-msgstr ""
+msgstr "自适应人工智能与在线学习"
 
 #: ../../source/tutorial/tut_online.rst:4
 msgid ""
@@ -37,7 +37,7 @@ msgid ""
 "continuously. This dynamism renders conventional static models obsolete, "
 "demanding instead AI systems that implement *sustained environmental "
 "symbiosis* through online learning mechanisms."
-msgstr ""
+msgstr "从\\ :ref:`先前教程 <Streaming data, edge computing and online learning>`\\中探讨的跨领域边缘智能系统架构分析（涵盖从挽救生命的手术机器人到环境感知智能家居等场景），揭示了一个根本规律：设备的真正自主性取决于算法能否实现持续上下文自适应。正如我们在对流式数据生态系统的前期研究所证实，边缘设备始终运行于非稳态环境中——传感器模式、用户行为模式与运行约束条件均处于持续动态演变中。这种固有动态性使传统静态模型失效，进而要求AI系统通过在线学习机制建立\\ *持续环境共生关系*\\ 。"
 
 #: ../../source/tutorial/tut_online.rst:13
 msgid ""
@@ -46,31 +46,31 @@ msgid ""
 " Successful edge intelligence implementations share a common DNA: machine"
 " learning architectures that treat data ingestion as a continuous "
 "calibration process rather than discrete training episodes."
-msgstr ""
+msgstr "核心差异并非源于硬件规格，而在于模型架构能否有机整合数据流的能力。成功的边缘智能系统具备共同基因：其机器学习架构将数据摄入视为持续校准过程，而非离散训练阶段。"
 
 #: ../../source/tutorial/tut_online.rst:19
 msgid "_`Redefining intelligence via adaptive models`"
-msgstr ""
+msgstr "通过自适应模型重新定义智能"
 
 #: ../../source/tutorial/tut_online.rst:22
 msgid "_`Breaking the infinite modeling cycle`"
-msgstr ""
+msgstr "打破无限建模循环"
 
 #: ../../source/tutorial/tut_online.rst:24
 msgid ""
-"While the term \"model\" remains ubiquitous in AI practice, practitioners"
-" often find themselves trapped in an infinite loop of model-design → "
+"While the term *model* remains ubiquitous in AI practice, practitioners "
+"often find themselves trapped in an infinite loop of model-design → "
 "deployment → concept drift → re-modeling. This Sisyphean cycle stems from"
 " treating models as fixed-parameter predictors frozen in temporal "
 "specificity. In edge intelligence contexts, successful implementations "
 "redefine models as *continuously evolving entities* - dynamic systems "
 "that self-calibrate through perpetual interaction with their operational "
 "environments."
-msgstr ""
+msgstr "虽然\\ *模型*\\ 一词在AI实践中无处不在，但从业者常陷入"模型设计→部署→概念漂移→重新建模"的无限循环。这种西西弗斯式困境源于将模型视为固定参数的静态预测器。在边缘智能场景中，成功的实现将模型重构为\\ *持续进化实体*\\ ——通过与运行环境的持续交互实现自我校准的动态系统。"
 
 #: ../../source/tutorial/tut_online.rst:31
 msgid "_`Mathematical metaphors for adaptive systems`"
-msgstr ""
+msgstr "自适应系统的数学隐喻"
 
 #: ../../source/tutorial/tut_online.rst:33
 msgid ""
@@ -80,57 +80,223 @@ msgid ""
 "income benchmarks to rural Gansu would fail, the underlying methodology "
 "of per-capita analysis remains sound. This reveals the core paradigm the "
 "edge AI implementations require:"
-msgstr ""
+msgstr "优秀边缘AI的实现方式，类似于数学家对函数族（如二次函数）与具体实现（如y=2x²+3）的区分。例如经济政策制定：将上海的收入参考基准直接应用于甘肃农村必然失效，但人均分析的方法论框架仍然有效。这揭示了边缘AI实现所需的核心范式："
 
 #: ../../source/tutorial/tut_online.rst:38
 msgid "**Meta-architectures** providing methodological frameworks"
-msgstr ""
+msgstr "\\ **元架构**\\ ：提供方法论框架"
 
 #: ../../source/tutorial/tut_online.rst:40
 msgid "**Contextual instantiation** through localized data streams"
-msgstr ""
+msgstr "\\ **上下文实例化**\\ ：通过本地数据流实现"
 
 #: ../../source/tutorial/tut_online.rst:42
 msgid "**Bayesian adaptability** enabling probabilistic adjustments"
-msgstr ""
+msgstr "\\ **贝叶斯适性**\\ ：支持概率化调整"
 
 #: ../../source/tutorial/tut_online.rst:44
 msgid ""
-"This approach transforms models from static equations into \"smart "
-"containers\" that maintain core analytical principles, dynamically adjust"
-" parameters like regulatory policies adapting to regional economies, and "
+"This approach transforms models from static equations into *smart "
+"containers* that maintain core analytical principles, dynamically adjust "
+"parameters like regulatory policies adapting to regional economies, and "
 "preserve computational efficiency through selective updates."
-msgstr ""
+msgstr "该方法将模型从静态方程转化为\\ *智能容器*\\ ：既保持核心分析原理（如区域经济调整方法论），又实现参数动态调整（如政策调控参数），并通过选择性更新保持计算效率。"
 
 #: ../../source/tutorial/tut_online.rst:49
-msgid "_`Meta model `"
-msgstr ""
+msgid "_`Self evolving meta models and demonstrations`"
+msgstr "自进化元模型与案例演示"
 
-#: ../../source/tutorial/tut_online.rst:51
-msgid "text"
-msgstr ""
+#: ../../source/tutorial/tut_online.rst:52
+msgid "_`Home blood pressure monitor`"
+msgstr "家庭血压监测系统"
+
+#: ../../source/tutorial/tut_online.rst:54
+msgid ""
+"Here we contextualize the :numref:`generic latency-sensitive pipe` on an "
+"edged blood pressure tracking system. The following implementation "
+"embodies the core principles of edge AI adaptability through a Bayesian "
+"meta-container architecture designed for multi-parameter health "
+"monitoring. This self-evolving system demonstrates how medical diagnostic"
+" devices can maintain operational relevance amidst gradual physiological "
+"shifts."
+msgstr "本节将\\ :numref:`代码 %s <generic latency-sensitive pipe>`\\ 具象化为边缘血压追踪系统。该实现通过贝叶斯元容器架构（专为多参数健康监测设计）展现了边缘AI适应性的核心原则。该自进化系统展示了医疗诊断设备如何在生理参数渐变中保持临床相关性。"
+
+#: ../../source/tutorial/tut_online.rst:59
+msgid "dynamic bayesian blood pressure tracking system"
+msgstr "动态贝叶斯血压追踪系统"
+
+#: ../../source/tutorial/tut_online.rst:82
+msgid ""
+"In the :numref:`dynamic bayesian blood pressure tracking system` we "
+"assumed the independence hypothesis among variable :code:`avg_dbp`, "
+":code:`avg_sbp`, and :code:`avg_pr` for simplification; If any canonical "
+"knowledge is accessible (e.g., :ref:`WHO <WHO>` standards), their "
+"correlation, as prior knowledge, can also be embedded inside when a "
+"Bayesian container is initialized (the highlighted line in "
+":numref:`dynamic bayesian blood pressure tracking system`)."
+msgstr "在\\ :numref:`代码 %s <dynamic bayesian blood pressure tracking system>`\\ 中，我们简化了变量\\ :code:`avg_dbp`\\ 、\\ :code:`avg_sbp`\\ 和\\ :code:`avg_pr`\\ 的独立性假设。若获得规范知识（如\\ :ref:`WHO标准 <WHO>`\\ ），可将先验相关性嵌入贝叶斯容器初始化过程（\\ :numref:`代码 %s <dynamic bayesian blood pressure tracking system>`\\ 高亮部分）。"
+
+#: ../../source/tutorial/tut_online.rst:88
+msgid "_`Individualized treatment program`"
+msgstr "个性化放疗方案"
+
+#: ../../source/tutorial/tut_online.rst:90
+msgid ""
+"Edge intelligence demonstrates universal applicability in personalized "
+"treatment regimens either. The :numref:`pharmacokinetic model for "
+"precision radiotherapy` illustrates how Bayesian solvers enable dynamic "
+"tracking and evaluation throughout radiation therapy. While static models"
+" trained on big data may establish general priors like the "
+":code:`generic_prior`, clinical implementation must address individual "
+"variations in patients' responses to radiation doses. This case study "
+"implements a Bayesian pharmacokinetic framework that initializes with "
+"generic physiological priors, then continuously adapts through dynamic "
+"updates based on real-time biomarkers. The critical challenge lies in "
+"precisely quantifying these inter-patient variations and optimizing "
+"phased treatment plans accordingly. By assimilating observed therapeutic "
+"responses, including tumor regression rates and marrow toxicity events, "
+"the system transforms fixed protocols into adaptive therapeutic "
+"trajectories, exemplifying contextual symbiosis between AI and clinical "
+"workflows."
+msgstr "边缘智能在个体化治疗方案中同样具有普适性。\\ :numref:`代码 %s <pharmacokinetic model for precision radiotherapy>`\\ 展示了贝叶斯求解器如何在放疗过程中实现动态追踪与评估。虽然基于大数据的静态模型可以建立\\ :code:`generic_prior`\\ 等通用先验，但临床实施必须处理患者对辐射剂量反应的个体差异。本案例实现了贝叶斯药代动力学框架：以通用生理先验初始化，通过实时生物标志物动态更新。关键挑战在于精确量化个体间差异并优化分阶段治疗方案。"
+
+#: ../../source/tutorial/tut_online.rst:101
+msgid "pharmacokinetic model for precision radiotherapy"
+msgstr "精准放疗药代动力学模型"
+
+#: ../../source/tutorial/tut_online.rst:121
+#, python-format
+msgid ""
+"The implementation of the pharmacokinetic framework above reveals "
+"critical dynamics through the :numref:`visualization for Bayesian "
+"precision radiotherapy`. :numref:`Figure %s (a) <visualization for "
+"Bayesian precision radiotherapy>` demonstrates leftward shifting of "
+":math:`\\beta_t` posterior distribution after the final update, "
+"indicating increased tumor radiation resistance. Tracking initial priors "
+"and post-treatment sensitivities in :numref:`Figure %s (b) <visualization"
+" for Bayesian precision radiotherapy>` reveals concurrent elevation of "
+"marrow tissue vulnerability as tumor sensitivity declines. Following the "
+"second treatment, Bayesian predictive distributions for varying dose "
+"levels (:numref:`Figure %s (c) <visualization for Bayesian precision "
+"radiotherapy>`) suggest a safe therapeutic window of 5.05-6.50 GBq when "
+"constrained by clinical thresholds (≥10 tumor kill events with ≤3 marrow "
+"toxicity events). Selecting 6.20 GBq enables probabilistic projections of"
+" therapeutic outcomes through dose-specific PMF visualizations "
+"(:numref:`Figure %s (d) <visualization for Bayesian precision "
+"radiotherapy>`). Subsequent posterior updates after phase advancement "
+"(:numref:`Figure %s (e) <visualization for Bayesian precision "
+"radiotherapy>`) expose diminishing returns: the overlapping region "
+"satisfying clinical constraints virtually disappears, suggesting limited "
+"therapeutic benefit from continued radiotherapy. This adaptive "
+"quantification prompts consideration of alternative treatment modalities."
+msgstr "通过\\ :numref:`图 %s <visualization for Bayesian precision radiotherapy>`\\ 分析可见：\\ :numref:`图 %s (a) <visualization for Bayesian precision radiotherapy>`\\ 显示\\ :math:`\\beta_t`\\ 后验分布左移，提示肿瘤辐射抗性增加；\\ :numref:`图 %s (b) <visualization for Bayesian precision radiotherapy>`\\ 显示骨髓组织敏感性同步升高。第二疗程后，不同剂量水平的贝叶斯预测分布（\\ :numref:`图 %s (c) <visualization for Bayesian precision radiotherapy>`\\ ）建议5.05-6.50 GBq为安全治疗窗口（满足≥10肿瘤杀伤且≤3骨髓毒性）。选择6.20 GBq后，将剂量特异性概率质量函数可视化（\\ :numref:`图 %s (d) <visualization for Bayesian precision radiotherapy>`\\ ）可进行疗效概率预测。阶段更新后（\\ :numref:`图 %s (e) <visualization for Bayesian precision radiotherapy>`\\ ）可见满足临床约束的重叠区域消失，意味着继续实施放疗临床收益有限。"
+
+#: ../../source/tutorial/tut_online.rst:142
+msgid "Bayesian precision radiotherapy"
+msgstr "贝叶斯精准放疗可视化"
+
+#: ../../source/tutorial/tut_online.rst:144
+msgid ""
+"The dynamic nature of adaptive AI introduces real-time evaluation "
+"mechanisms during treatment, providing critical references for clinical "
+"decision-making. In this case, repeated therapies led to significant "
+"shifts in tumor and marrow responses to radiation, challenging the safety"
+" and efficacy of conventional radiotherapy. This necessitates a more "
+"cautious reassessment of therapeutic trade-offs."
+msgstr "自适应AI的动态特性在治疗过程中引入实时评估机制，本例中重复治疗导致肿瘤与骨髓反应发生显著偏移，挑战传统放疗方案的安全性，提示需要重新评估治疗权衡。"
+
+#: ../../source/tutorial/tut_online.rst:150
+msgid "_`Personalized adaptive image segmentation`"
+msgstr "个性化自适应医学图像分割"
+
+#: ../../source/tutorial/tut_online.rst:152
+msgid ""
+"Edge medical imaging requires models to self-evolve with anatomical "
+"drift. Static segmentation architectures fail to track time-dependent "
+"tissue variability across patients. Meta U-Net implementations achieve "
+"*embedded evolution* through dynamic filter calibration continuously "
+"adjusting convolutional components using on-device imaging streams. This "
+"enables medical segmentation pipelines to maintain precision as organ "
+"morphology shifts, exemplifying edge intelligence's core principle: "
+"models as living systems, not frozen artifacts. The :numref:`self "
+"adaption U-Net for image segmentation` concretes the edge meta AI "
+"architecture :numref:`dynamic priority scheduling` in medical "
+"segmentation model training for patient personalization."
+msgstr "边缘医学成像需要模型随解剖结构漂移自进化。静态分割架构无法跟踪患者间时变组织差异。元U-Net实现通过动态滤波器校准（利用设备端影像流持续调整卷积组件）达成\\ *嵌入式进化*\\ ，使医学分割流程在器官形态变化时保持精度，印证边缘智能核心原则：模型是生命体而非标本。\\ :numref:`代码 %s <self adaption U-Net for image segmentation>`\\ 具体实现了基于个性化医疗分割模型训练场景中的\\ :ref:`边缘元AI架构 <dynamic priority scheduling>`\\ 。"
+
+#: ../../source/tutorial/tut_online.rst:160
+msgid "self adaption U-Net for image segmentation"
+msgstr "自适应U-Net图像分割"
+
+#: ../../source/tutorial/tut_online.rst:184
+msgid ""
+"This self-adaptive architecture demonstrates how edge-native online "
+"learning mechanisms transform static models into computational organisms."
+" By selectively activating parameter updates during device idle cycles, "
+"the system achieves two symbiotic objectives: (1) real-time adaptation to"
+" anatomical shifts through dynamic filter recalibration, while (2) "
+"preserving computational resources via threshold-controlled training "
+"triggers. The :code:`dice > thre` condition embodies edge intelligence's "
+"essential trade-off: evolving only when environmental changes threaten "
+"operational validity. Such implementations prove that medical AI need not"
+" choose between generalization and personalization when models "
+"architecturally embrace perpetual metamorphosis."
+msgstr "该自适应架构展示了边缘原生在线学习机制如何将静态模型转化为计算有机体。通过在设备空闲周期选择性地激活参数更新，系统达成双重目标：(1)通过动态滤波器校准实时适应解剖结构变化；(2)通过阈值控制训练触发节约计算资源。\\ :code:`dice > thre`\\ 条件体现了边缘智能的核心权衡——仅在环境变化威胁操作有效性时进化。此类实现证明：当模型架构拥抱持续进化时，医疗AI无需在泛化性与个性化之间二选一。"
 
 #: ../../source/tutorial/tut_online.rst
 msgid "Authors"
-msgstr ""
+msgstr "译者"
 
-#: ../../source/tutorial/tut_online.rst:55
+#: ../../source/tutorial/tut_online.rst:194
 msgid "Chen Zhang"
 msgstr ""
 
 #: ../../source/tutorial/tut_online.rst
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
-#: ../../source/tutorial/tut_online.rst:56
+#: ../../source/tutorial/tut_online.rst:195
 msgid "0.0.6"
 msgstr ""
 
 #: ../../source/tutorial/tut_online.rst
 msgid "|create|"
-msgstr ""
+msgstr "创建于"
 
-#: ../../source/tutorial/tut_online.rst:57
+#: ../../source/tutorial/tut_online.rst:196
 msgid "May 10, 2025"
-msgstr ""
+msgstr "2025年5月10日"
+
+#~ msgid ""
+#~ "While the term \"model\" remains "
+#~ "ubiquitous in AI practice, practitioners "
+#~ "often find themselves trapped in an "
+#~ "infinite loop of model-design → "
+#~ "deployment → concept drift → re-"
+#~ "modeling. This Sisyphean cycle stems "
+#~ "from treating models as fixed-parameter"
+#~ " predictors frozen in temporal specificity."
+#~ " In edge intelligence contexts, successful"
+#~ " implementations redefine models as "
+#~ "*continuously evolving entities* - dynamic "
+#~ "systems that self-calibrate through "
+#~ "perpetual interaction with their operational"
+#~ " environments."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This approach transforms models from "
+#~ "static equations into \"smart containers\" "
+#~ "that maintain core analytical principles, "
+#~ "dynamically adjust parameters like regulatory"
+#~ " policies adapting to regional economies,"
+#~ " and preserve computational efficiency "
+#~ "through selective updates."
+#~ msgstr ""
+
+#~ msgid "_`Meta model `"
+#~ msgstr ""
+
+#~ msgid "text"
+#~ msgstr ""
 

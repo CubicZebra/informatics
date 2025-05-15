@@ -91,8 +91,6 @@ retaining the core deadline control mechanism.
 _`Resource-aware hybrid pipelines`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. need deepseek generation like `Real-time priority system` here.
-
 Balancing immediate inference needs with periodic model refinement requires hybrid architectures that dynamically
 allocate resources based on operational context (e.g., power availability, CPU load). These pipelines prioritize
 critical tasks while opportunistically utilizing idle resources for model improvement. Its technical mechanisms
@@ -106,8 +104,6 @@ are generally featured as:
 
 The template in :numref:`dynamic priority scheduling` enforces these requirements through thread-safe queues and
 modular processing:
-
-The :numref:`dynamic priority scheduling` operationalizes this strategy through three key components:
 
 .. code-block:: python
    :caption: dynamic priority scheduling

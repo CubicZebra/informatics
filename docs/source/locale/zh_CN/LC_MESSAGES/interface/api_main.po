@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: informatics 0.0.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 22:42+0800\n"
+"POT-Creation-Date: 2025-05-15 16:30+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_CN\n"
@@ -49,32 +49,36 @@ msgid ":ref:`Statistical and machine learning <Modules for learning>`"
 msgstr ""
 
 #: ../../source/interface/api_main.rst:19
-msgid ":ref:`Optional branch of data visualization <Option visualization>`"
+msgid ":ref:`Optional branch of neural networks <Option networks>`"
 msgstr ""
 
 #: ../../source/interface/api_main.rst:21
+msgid ":ref:`Optional branch of data visualization <Option visualization>`"
+msgstr ""
+
+#: ../../source/interface/api_main.rst:23
 msgid ""
 ":ref:`Optional branch of data organization in medical fields <Option "
 "digitmed>`"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:23
+#: ../../source/interface/api_main.rst:25
 msgid ":ref:`Optional branch for loading example data <Option instances>`"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:25
+#: ../../source/interface/api_main.rst:27
 msgid ":ref:`Misc objects <Misc modules and functions>`"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:42
+#: ../../source/interface/api_main.rst:45
 msgid "_`Related URLs`"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:44
+#: ../../source/interface/api_main.rst:47
 msgid "`repository <https://github.com/CubicZebra/informatics>`_"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:46
+#: ../../source/interface/api_main.rst:49
 msgid "`documentation <https://informatics.readthedocs.io/en/latest/index.html>`_"
 msgstr ""
 
@@ -82,7 +86,7 @@ msgstr ""
 msgid "Authors"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:50
+#: ../../source/interface/api_main.rst:53
 msgid "Chen Zhang"
 msgstr ""
 
@@ -90,7 +94,7 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:51
+#: ../../source/interface/api_main.rst:54
 msgid "0.0.5"
 msgstr ""
 
@@ -98,7 +102,7 @@ msgstr ""
 msgid "|create|"
 msgstr ""
 
-#: ../../source/interface/api_main.rst:52
+#: ../../source/interface/api_main.rst:55
 msgid "Jun 15, 2023"
 msgstr ""
 

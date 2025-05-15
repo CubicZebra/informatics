@@ -37,7 +37,7 @@ and privacy risks. Through real-world examples, explore systems where AI models 
 data—without sacrificing speed, precision, or edge-device performance.
 
 .. toctree::
-   From streaming to edge AI <tut_edge>
+   From streaming data to edge AI <tut_edge>
    Adaptive AI with online learning <tut_online>
 
 ----
