@@ -39,6 +39,7 @@ data—without sacrificing speed, precision, or edge-device performance.
 .. toctree::
    From streaming data to edge AI <tut_edge>
    Adaptive AI with online learning <tut_online>
+   :maxdepth: 2
 
 ----
 

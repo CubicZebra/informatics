@@ -1,8 +1,6 @@
 _`Streaming data, edge computing and online learning`
 =====================================================
 
-.. main title, edge device and self-adaption artificial intelligence
-
 Streaming data—generated continuously from sensors, :ref:`IoT <IoT>` devices, and real-time transactions—requires
 low-latency processing due to its high velocity and unbounded nature. Edge computing addresses these demands by
 decentralizing computation to devices near data sources, enabling faster response times, reduced cloud dependency,
