@@ -29,7 +29,7 @@ The :numref:`Figure %s <kernel framework>` shows the principle of spatial filter
 image. kernel moves globally on image, and values of output image are replaced pixel by pixel based on pre-defined
 computing method.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/1d5d6f73-994d-465d-b4f9-89526af62c86
+.. figure:: ../images/kernel_for_tensor.jpg
    :name: kernel framework
    :width: 450
    :align: center
@@ -44,7 +44,7 @@ are the numeric on :math:`\boldsymbol{F}`, overlapped where the kernel :math:`\b
 convolution, is the order of weight. Additionally, there also some generic filter using certain statistic
 on the localized values (e.g. rank filter).
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/ed951609-0273-48b2-beb7-138dc46bbb73
+.. figure:: ../images/numerical_computing_through_kernel.jpg
    :name: kernel calculation methods
    :width: 450
    :align: center
@@ -58,7 +58,7 @@ anchor location of kernel where the pixel will be replaced. By default, an ancho
 The basic idea in **scipy** is showed in :numref:`Figure %s <anchor in kernel>` which is also applied in informatics,
 for even number, the anchor in that dimension will be located one pixel next to the center.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/9f42e220-e3ad-4623-a10d-49b1fa009218
+.. figure:: ../images/anchor_in_kernel.jpg
    :name: anchor in kernel
    :width: 450
    :align: center
@@ -70,7 +70,7 @@ insufficient for calculation. In this condition it requires padding some pseudo-
 :numref:`Figure %s <edge padding methods>` shows five padding methods. Keep in mind that this factor only makes
 difference on the corner- or edge-like regions.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/c11bf92f-15dc-4999-9ebd-ea55b979757f
+.. figure:: ../images/padding_methods.jpg
    :name: edge padding methods
    :width: 550
    :align: center
@@ -83,14 +83,14 @@ gaussian kernel using contrary signs between center and the area enveloped, to m
 The gaussian kernel and laplacian of gaussian kernel in 2 dimension are illustrated in
 :numref:`Figure %s <gaussian kernel>` and :numref:`Figure %s <LoG kernel>`.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a808ab5c-ea59-44df-a998-f75703fa6441
+.. figure:: ../images/gaussian_kernel.jpg
    :name: gaussian kernel
    :width: 270
    :align: center
 
    gaussian kernel
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/1cfff029-5fc4-44ec-8229-e4c3e009bbb6
+.. figure:: ../images/laplacian_of_gaussian_kernel.jpg
    :name: LoG kernel
    :width: 270
    :align: center
@@ -101,7 +101,7 @@ The gaussian kernel and laplacian of gaussian kernel in 2 dimension are illustra
 The effect of denoising, or object edge and profile detection, through gaussian and some gaussian-related kernels
 filtering will be like:
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/ccce62de-8257-4008-b8a8-4b11da73bbb7
+.. figure:: ../images/spatial_filtering_examples.jpg
    :name: spatial filtering applied on image processing
    :width: 650
    :align: center
@@ -117,7 +117,7 @@ Some kernels are designed to augment features along some certain orientations, d
 the real part of 2-dimensional gabor kernel with radian of :math:`\theta = 0.5\pi` will be like the surface in
 :numref:`Figure %s <gabor kernel>`
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/97e759c3-9ef6-40fc-abca-562f1c32181e
+.. figure:: ../images/gabor_kernel.jpg
    :name: gabor kernel
    :width: 270
    :align: center
@@ -131,7 +131,7 @@ directional information of the data is though to be of importance in analysis. F
 the real and imaginary parts of the case (a) in :numref:`Figure %s <spatial filtering applied on image processing>`
 convolved using gabor filtering, with directions of :math:`(1, 0)` and :math:`(0, 1)`, respectively:
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/3b2938e2-0889-4df6-882c-541277d7211c
+.. figure:: ../images/gabor_filtering_examples.jpg
    :name: gabor filtering applied on image processing
    :width: 650
    :align: center
@@ -157,7 +157,7 @@ convolved using gabor filtering, with directions of :math:`(1, 0)` and :math:`(0
    1-dimension. Here, we use normal to define those hyperplanes, through which the spatial sine function can be
    implemented in different dimensions with the identical interface:
 
-   .. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/717bef0f-4da7-4f12-9087-d44ee26c2326
+   .. figure:: ../images/spatial_sine.jpg
       :name: real part of spatial sine in different dimensions
       :width: 600
       :align: center
@@ -166,7 +166,7 @@ convolved using gabor filtering, with directions of :math:`(1, 0)` and :math:`(0
 
    Then multiply them into the corresponding multivariate gaussian, the gabor kernel will be obtained as:
 
-   .. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/dabbdbbb-0a7e-4ff9-a563-87ae413cb62b
+   .. figure:: ../images/spatial_gabor.jpg
       :name: real part of gabor kernel in different dimensions
       :width: 600
       :align: center
@@ -182,7 +182,7 @@ geometric property in computer vision and image processing. In this context, cur
 quantitative evaluation of the deviation from straightness in the contours or boundaries of objects in an image
 (as shown in :numref:`Figure %s <effect of gaussian curvature via hessian filter>`).
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a237f60a-ab84-4e77-b45a-63a4548df93a
+.. figure:: ../images/gaussian_curvature.jpg
    :name: effect of gaussian curvature via hessian filter
    :width: 600
    :align: center
@@ -191,7 +191,7 @@ quantitative evaluation of the deviation from straightness in the contours or bo
 
 Text here...
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/d286dfce-8635-4663-9b45-6a866426d89c
+.. figure:: ../images/keypoint_detector.jpg
    :name: keypoint determination through curvature
    :width: 600
    :align: center

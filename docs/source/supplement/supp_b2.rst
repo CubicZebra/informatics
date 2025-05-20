@@ -36,7 +36,7 @@ binary classification and anomaly determination, is that for binary classificati
 possible margin between two clusters, however for anomaly determination, it only hypotheses the existence of one
 cluster, then using certain approaches to determine the boundary of this cluster.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/d640b1cc-5eb0-4150-a2bc-f2f5a27c6dbf
+.. figure:: ../images/classification_and_anomaly_diff.jpg
    :name: classification and anomaly
    :width: 600
    :align: center
@@ -258,7 +258,7 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
 
    .. _`Homeomorphism`:
 
-   .. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/52f7cd3a-6ba9-4512-9335-c8ce38aa459e
+   .. figure:: ../images/homeomorphism_donut_mug.gif
       :name: homeomorphism joke animation
       :width: 200
       :align: center
@@ -274,7 +274,7 @@ means certain operation(s) on the original (Cartesian) space. Here we introduce 
 
    .. _`Riemannian metric`:
 
-   .. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/a4f466eb-224b-417e-9373-8ccca2eada9b
+   .. figure:: ../images/deformation_riemannian.jpg
       :name: deformation in riemannian
       :width: 350
       :align: center
@@ -405,7 +405,7 @@ gave an intuitive demonstration for the 3-dimensional Von Mises Fisher distribut
 as showed in :numref:`Figure %s <3-dimensional Von Mises Fisher distribution>`. The lower the :math:`\kappa`, the
 more dispersive the data points are.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/32720e51-87f5-4e72-8857-71cb3170450a
+.. figure:: ../images/vmf3d.jpg
    :name: 3-dimensional Von Mises Fisher distribution
    :width: 300
    :align: center

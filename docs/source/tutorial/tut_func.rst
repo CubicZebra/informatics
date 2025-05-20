@@ -10,7 +10,7 @@ and algorithm flow, while for engineers, it is standardized wrapper for algorith
 :numref:`Figure %s <framework objective>`, it contributes to accelerate forming the practicable data processing flow,
 from the scientific prototype to engineering practice.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/0260830e-297b-41d7-8ae3-4a2807addfe0
+.. figure:: ../images/framework_objective.jpg
    :name: framework objective
    :width: 600
    :align: center

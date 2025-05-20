@@ -134,18 +134,7 @@ diminishing returns: the overlapping region satisfying clinical constraints virt
 therapeutic benefit from continued radiotherapy. This adaptive quantification prompts consideration of alternative
 treatment modalities.
 
-.. https://github.com/user-attachments/assets/601e7429-2557-48a8-afb8-f68157ff11b9
-
-.. figure:: ../images/patho_ana.jpg
-   :name: visualization f1
-   :width: 550
-   :align: center
-
-   Bayesian precision radiotherapy aa
-
-ffff :numref:`Figure %s <visualization f1>`.
-
-.. figure:: https://github.com/user-attachments/assets/601e7429-2557-48a8-afb8-f68157ff11b9
+.. figure:: ../images/precision_radiotherapy.jpg
    :name: visualization for Bayesian precision radiotherapy
    :width: 750
    :align: center

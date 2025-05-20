@@ -17,7 +17,7 @@ limited data throughput, heterogeneous computational capabilities, and diverse h
 devices. Addressing these limitations would enable direct, real-time manipulation of device-generated data streams,
 thereby unlocking the full potential of localized artificial intelligence (AI) for instant decision-making.
 
-.. figure:: https://github.com/user-attachments/assets/f15619fb-54b9-4239-8449-d9608ad224c9
+.. figure:: ../images/cloud_edge.jpg
    :name: cloud and edge computing
    :width: 550
    :align: center
@@ -40,7 +40,7 @@ to balance two critical objectives: (1) efficient utilization of constrained com
 memory, energy budgets), and (2) real-time responsiveness with self-adaptation to concept drift (e.g., evolving sensor
 patterns or environmental dynamics).
 
-.. figure:: https://github.com/user-attachments/assets/fd764cc9-9314-42a1-9848-1be836f0fc59
+.. figure:: ../images/data_stream_and_edge.jpg
    :name: streaming data for edge computing
    :width: 600
    :align: center

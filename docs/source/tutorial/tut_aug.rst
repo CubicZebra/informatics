@@ -28,7 +28,7 @@ immunofluorescence nuclei image. Automation labeling task is as similar as deter
 carcinoma in :numref:`Figure %s <pathological image statistics>`. Reuse that pipeline with arguments fine-tuned for
 immunofluorescence image:
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/fbfe8640-8ea3-477d-9412-86d4422fadbb
+.. figure:: ../images/immunofluorescence.jpg
    :name: immunofluorescence image augmentation
    :width: 600
    :align: center
@@ -42,7 +42,7 @@ Another illustrate case is augmentation for fingerprint recognition via
 :ref:`spatial sine function <spatial sine function>` along different orientations, and corresponding augmented
 images are listed from (b) to (e) in :numref:`Figure %s <gabor fingerprint augmentation>`.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/5e6086cb-6240-4b79-9ed1-23590432074e
+.. figure:: ../images/fingerprint_aug.jpg
    :name: gabor fingerprint augmentation
    :width: 650
    :align: center
@@ -78,7 +78,7 @@ the approximate estimation for its standard deviation (37.632), should be more r
 in :numref:`Figure %s (d) <pathological image statistics>`. Or be more rigorous and comprehensive, compute for its
 multivariate gaussian distribution analytically.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/f5a35efc-9505-467e-a4af-8dc553093224
+.. figure:: ../images/mc_on_path.jpg
    :name: mc on pathological image
    :width: 600
    :align: center

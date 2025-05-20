@@ -18,7 +18,7 @@ The edge of objects, as well as corner-like region can be emphasised through tho
 Different transformations might contribute for varying objectives: de-noising processing possibly prefers the
 bilateral filtered result; to evaluate degree of interspace of bricks, canny response would be helpful.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/54e072ee-e816-41c0-bf74-a557f7172410
+.. figure:: ../images/edge_and_corner.jpg
    :name: transform of edge and corner detection
    :width: 650
    :align: center
@@ -29,14 +29,14 @@ Additionally, those processing transforms can also be called, in consistence wit
 :numref:`Figure %s <harris response 1D>` shows harris response for high curvature, on 1-dimensional series,
 and :numref:`Figure %s <canny filter 3D>` is canny filter applied on a 3-dimensional cubic instance.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/d6365e21-0d8d-4b12-a798-824c7f1a63b3
+.. figure:: ../images/harris_1d.jpg
    :name: harris response 1D
    :width: 600
    :align: center
 
    harris response on 1D series
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/91b76525-0e8f-456b-9fb2-1462088bfa75
+.. figure:: ../images/canny_3d.jpg
    :name: canny filter 3D
    :width: 350
    :align: center
@@ -98,7 +98,7 @@ As illustrated in :numref:`Figure %s <labeling segmentation>`, for determining e
 overlapped area among two or more might occur, proper configuration of distance transform combined with
 connected domain will precisely allocate each basin for initial flooding seed.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/98e3beee-41f1-4964-81b9-523fae0ba4eb
+.. figure:: ../images/watershed_seg.jpg
    :name: labeling segmentation
    :width: 600
    :align: center
@@ -138,7 +138,7 @@ complicated data processing pipelines on many study fields. :numref:`Figure %s <
 is for evaluating equivalent area of tumor cell nucleus. Data is collected from a hepatocellular carcinoma case
 from The Cancer Genome Atlas (`TCGA <https://www.cancer.gov/tcga>`_) program.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/17cc7856-efa2-401e-98c0-aeff4b175914
+.. figure:: ../images/patho_ana.jpg
    :name: pathological image statistics
    :width: 600
    :align: center
@@ -149,7 +149,7 @@ Another example is for surveying and mapping engineering.  After certain preproc
 highlighted, and the envelopes for water, grass, tree cover, and the corresponding area percentages were determined
 as well, as showed in :numref:`Figure %s <semantic on topography>`.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/0d1eb652-69de-4337-83e8-e7795a8d0919
+.. figure:: ../images/topo_ana.jpg
    :name: semantic on topography
    :width: 650
    :align: center
@@ -162,7 +162,7 @@ via 2nd order differential transformation followed by labels identification, the
 radius and area as x- and y-axis, respectively. The test data is from a bulletin published on
 `Vac Aero <https://vacaero.com/information-resources>`_.
 
-.. figure:: https://github.com/users/CubicZebra/projects/6/assets/34041412/db78d2f9-1796-48b2-9b0e-1b020b0a050a
+.. figure:: ../images/topo_ana.jpg
    :name: grain measure
    :width: 550
    :align: center

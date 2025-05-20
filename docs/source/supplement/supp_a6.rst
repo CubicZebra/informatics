@@ -61,7 +61,7 @@ Another important concept in Bayesian context, is that the prediction is also pr
 of concrete numerics. As illustrated in the :numref:`Figure %s <bayes predictive graph>`, the observed data
 :math:`\mathcal{D}` and the variable :math:`x^*` are both in dependence with the parameter :math:`\theta`.
 
-.. figure:: https://github.com/user-attachments/assets/f71b4ea2-7d11-44ed-a540-c724ed1d943e
+.. figure:: ../images/bayes_predictive.jpg
    :name: bayes predictive graph
    :width: 150
    :align: center
