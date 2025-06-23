@@ -12,6 +12,12 @@ informatics
 .. image:: https://img.shields.io/github/license/CubicZebra/informatics
    :target: https://github.com/CubicZebra/informatics/blob/main/LICENSE
 
+.. image:: https://img.shields.io/badge/platforms-Windows_%7C_Linux_%7C_MacOS-blue
+   :alt: Platforms
+
+.. image:: https://img.shields.io/pypi/format/informatics
+   :alt: PyPI - Format
+
 .. image:: https://www.codefactor.io/repository/github/cubiczebra/informatics/badge
    :target: https://www.codefactor.io/repository/github/cubiczebra/informatics
    :alt: CodeFactor
@@ -26,6 +32,17 @@ informatics
 .. image:: https://img.shields.io/pypi/dm/informatics
    :alt: PyPI - Downloads
 
+.. image:: https://socket.dev/api/badge/pypi/package/informatics/0.0.6rc0?artifact_id=cp310-cp310-macosx-10-9-x86-64-whl#1750653573986
+   :target: https://socket.dev/pypi/package/informatics/overview/0.0.6rc0/cp310-cp310-macosx-10-9-x86-64-whl
+   :alt: Socket Badge
+
+.. image:: https://deepwiki.com/badge.svg
+   :target: https://deepwiki.com/CubicZebra/informatics
+   :alt: Ask DeepWiki
+
+.. image:: https://img.shields.io/github/stars/CubicZebra/informatics
+   :alt: GitHub Repo stars
+
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_font.jpg
    :name: informatics logo
    :width: 350
@@ -33,20 +50,36 @@ informatics
 
    informatics
 
-Informatics, sourced from its original meaning: the sciences concerned with gathering, manipulating, storing,
-retrieving, and classifying recorded information.
+Rooted in its foundational definition, informatics is the science of systematically processing information:
+encompassing its collection, manipulation, storage, retrieval, and classification.
 
-It is designed to enable users solve complex problems in science, engineering, and other domains efficiently and
-accurately. Its powerful capabilities are achieved through a combination of cutting-edge software engineering
-techniques and the elegance of Python's functional programming paradigm. The strength of highly modular and extensible
-architecture allows users to quickly assemble and customize data processing pipelines to satisfy their specific needs.
-Whether it's data cleaning, transformation, analysis, or visualization, informatics provides a rich set of tools and
-functions to facilitate these tasks.
+**Why It Matters**
 
-Informatics is built to serve for science as well as engineer domains. It provides ready-made solutions for common
-tasks like feature engineering, model training, evaluation, deployment, and more. Refer the
-`documentation <https://informatics.readthedocs.io/en/latest/index.html>`_ for a detailed information about its
-essential designs, functions, as well as applied scopes.
+Designed for precision and efficiency, this toolkit empowers users to tackle complex challenges across scientific,
+engineering, and analytical domains. By blending modern software engineering practices with Python's functional
+programming strengths, it delivers a **modular and extensible architecture**. Users can effortlessly construct tailored
+data pipelines for tasks like:
+
+- Data cleaning & transformation
+
+- Advanced analysis
+
+- Dynamic visualization
+
+**Key Advantage**
+
+With a curated suite of tools, Informatics streamlines workflows while maintaining flexibility, ensuring adaptability
+to diverse project requirements.
+
+References
+==========
+
+Informatics is designed to support both scientific research and engineering applications. It offers pre-built solutions
+for key workflows including feature engineering, model training, performance evaluation, and production deployment.
+For comprehensive technical specifications covering architectural designs, API functionalities, and domain-specific
+use cases, consult the official `documentation <https://informatics.readthedocs.io/en/latest/index.html>`_. The project
+`wiki <https://deepwiki.com/CubicZebra/informatics>`_ provides in-depth documentation on the underlying knowledge
+architecture and includes design prototypes for specialized data pipelines.
 
 Main Features
 =============
