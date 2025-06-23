@@ -2,46 +2,43 @@
 informatics
 ===========
 
+.. raw:: html
+
+   <div align=‘center’>
+
 .. image:: https://img.shields.io/pypi/pyversions/informatics
    :alt: PyPI - Python Version
-
 .. image:: https://img.shields.io/pypi/v/informatics
    :target: https://pypi.org/project/informatics/
    :alt: PyPI - Version
-
 .. image:: https://img.shields.io/github/license/CubicZebra/informatics
    :target: https://github.com/CubicZebra/informatics/blob/main/LICENSE
-
 .. image:: https://img.shields.io/badge/platforms-Windows_%7C_Linux_%7C_MacOS-blue
    :alt: Platforms
-
 .. image:: https://img.shields.io/pypi/format/informatics
    :alt: PyPI - Format
-
 .. image:: https://www.codefactor.io/repository/github/cubiczebra/informatics/badge
    :target: https://www.codefactor.io/repository/github/cubiczebra/informatics
    :alt: CodeFactor
-
 .. image:: https://img.shields.io/github/commit-activity/m/CubicZebra/informatics
    :alt: GitHub commit activity
-
 .. image:: https://img.shields.io/readthedocs/informatics
    :alt: Read the Docs
    :target: https://informatics.readthedocs.io/en/latest/index.html
-
 .. image:: https://img.shields.io/pypi/dm/informatics
    :alt: PyPI - Downloads
-
 .. image:: https://socket.dev/api/badge/pypi/package/informatics/0.0.6rc0?artifact_id=cp310-cp310-macosx-10-9-x86-64-whl#1750653573986
    :target: https://socket.dev/pypi/package/informatics/overview/0.0.6rc0/cp310-cp310-macosx-10-9-x86-64-whl
    :alt: Socket Badge
-
 .. image:: https://deepwiki.com/badge.svg
    :target: https://deepwiki.com/CubicZebra/informatics
    :alt: Ask DeepWiki
-
 .. image:: https://img.shields.io/github/stars/CubicZebra/informatics
    :alt: GitHub Repo stars
+
+.. raw:: html
+
+   </div>
 
 .. figure:: https://cdn.jsdelivr.net/gh/CubicZebra/PicHost@master/misc/logo_font.jpg
    :name: informatics logo
