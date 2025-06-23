@@ -162,7 +162,7 @@ via 2nd order differential transformation followed by labels identification, the
 radius and area as x- and y-axis, respectively. The test data is from a bulletin published on
 `Vac Aero <https://vacaero.com/information-resources>`_.
 
-.. figure:: ../images/topo_ana.jpg
+.. figure:: ../images/metal_ana.jpg
    :name: grain measure
    :width: 550
    :align: center
