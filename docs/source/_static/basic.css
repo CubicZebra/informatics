@@ -201,14 +201,14 @@ img.toggler {
 div.modindex-jumpbox {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    margin: 1em 0 1em 0;
+    margin: 1em 0;
     padding: 0.4em;
 }
 
 div.genindex-jumpbox {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    margin: 1em 0 1em 0;
+    margin: 1em 0;
     padding: 0.4em;
 }
 
@@ -338,7 +338,7 @@ aside.topic,
 div.topic {
     border: 1px solid #ccc;
     padding: 7px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
 p.topic-title {
@@ -415,9 +415,6 @@ table caption span.caption-number {
     font-style: italic;
 }
 
-table caption span.caption-text {
-}
-
 table.docutils td, table.docutils th {
     padding: 1px 8px 1px 5px;
     border-top: 0;
@@ -464,10 +461,6 @@ div.figure p.caption, figcaption {
 div.figure p.caption span.caption-number,
 figcaption span.caption-number {
     font-style: italic;
-}
-
-div.figure p.caption span.caption-text,
-figcaption span.caption-text {
 }
 
 /* -- field list styles ----------------------------------------------------- */
@@ -829,9 +822,6 @@ div.highlight span.gp {  /* gp: Generic.Prompt */
 div.code-block-caption span.caption-number {
     padding: 0.1em 0.3em;
     font-style: italic;
-}
-
-div.code-block-caption span.caption-text {
 }
 
 div.literal-block-wrapper {
